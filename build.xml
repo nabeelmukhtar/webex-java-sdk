@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="webex-java-sdk">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="webex-java-sdk.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="dev-lib/junit-4.5.jar"/>
+        <pathelement location="lib/commons-cli-1.2.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="schema/src/main/java" excludes="**/*.launch, **/*.java"/>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="schema/src/main/resources" excludes="**/*.launch, **/*.java"/>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="core/src/main/java" excludes="**/*.launch, **/*.java"/>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="core/src/main/resources" excludes="**/*.launch, **/*.java"/>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="core/src/test/java" excludes="**/*.launch, **/*.java"/>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="core/src/test/resources" excludes="**/*.launch, **/*.java"/>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="core/src/examples/java" excludes="**/*.launch, **/*.java"/>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="schema/src/main/java"/>
+            <classpath refid="webex-java-sdk.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="schema/src/main/resources"/>
+            <classpath refid="webex-java-sdk.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="core/src/main/java"/>
+            <classpath refid="webex-java-sdk.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="core/src/main/resources"/>
+            <classpath refid="webex-java-sdk.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="core/src/test/java"/>
+            <classpath refid="webex-java-sdk.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="core/src/test/resources"/>
+            <classpath refid="webex-java-sdk.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="core/src/examples/java"/>
+            <classpath refid="webex-java-sdk.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target name="ClassifyExample">
+        <java classname="com.google.code.webex.client.examples.ClassifyExample" failonerror="true" fork="yes">
+            <arg line="-readKey HSPjrhBwu6pTssGKOLzCUqI -classifier Topics -user webex -text &quot;I am working on hadoop.&quot;"/>
+            <classpath refid="webex-java-sdk.classpath"/>
+        </java>
+    </target>
+    <target name="TrainExample">
+        <java classname="com.google.code.webex.client.examples.TrainExample" failonerror="true" fork="yes">
+            <arg line="-writeKey 8f5MSmbrmcyaaGhyUFU6MiPOrw -classifier testclassifier -text C:\\train.csv"/>
+            <classpath refid="webex-java-sdk.classpath"/>
+        </java>
+    </target>
+    <target name="ClassifierExample">
+        <java classname="com.google.code.webex.client.examples.ClassifierExample" failonerror="true" fork="yes">
+            <arg line="-writeKey 8f5MSmbrmcyaaGhyUFU6MiPOrw -classifier nabeelclassifier"/>
+            <classpath refid="webex-java-sdk.classpath"/>
+        </java>
+    </target>
+</project>
