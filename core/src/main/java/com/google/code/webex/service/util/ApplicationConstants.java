@@ -48,28 +48,22 @@ public final class ApplicationConstants {
     }
 
     /** The Constant VALIDATE_XML. */
-    public static final boolean VALIDATE_XML = getBooleanProperty("com.google.code.uclassify.client.validateXml");
+    public static final boolean VALIDATE_XML = getBooleanProperty("com.google.code.webex.service.validateXml");
 
     /** The Constant REQUEST_VERSION. */
-    public static final double REQUEST_VERSION = getDoubleProperty("com.google.code.uclassify.client.requestVersion");
+    public static final double REQUEST_VERSION = getDoubleProperty("com.google.code.webex.service.requestVersion");
     
     /** The Constant CONTENT_TYPE_XML. */
-    public static final String CONTENT_TYPE_XML = getProperty("com.google.code.uclassify.client.contentTypeXml");
+    public static final String CONTENT_TYPE_XML = getProperty("com.google.code.webex.service.contentTypeXml");
 
     /** The Constant CONTENT_ENCODING. */
-    public static final String CONTENT_ENCODING = getProperty("com.google.code.uclassify.client.encoding");
-
-    /** The Constant CLIENT_DEFAULT_IMPL. */
-    public static final String CLIENT_DEFAULT_IMPL = getProperty("com.google.code.uclassify.client.defaultImpl");
+    public static final String CONTENT_ENCODING = getProperty("com.google.code.webex.service.encoding");
 
     /** The Constant CONNECT_TIMEOUT. */
-    public static final int CONNECT_TIMEOUT = getIntProperty("com.google.code.uclassify.client.connectTimeout");
+    public static final int CONNECT_TIMEOUT = getIntProperty("com.google.code.webex.service.connectTimeout");
     
     /** The Constant READ_TIMEOUT. */
-    public static final int READ_TIMEOUT = getIntProperty("com.google.code.uclassify.client.readTimeout");
-    
-    /** The Constant CVS_REGEX_PATTERN. */
-    public static final Pattern CVS_REGEX_PATTERN = getPatternProperty("com.google.code.uclassify.client.csvRegex");
+    public static final int READ_TIMEOUT = getIntProperty("com.google.code.webex.service.readTimeout");
     
     /**
      * Instantiates a new application constants.

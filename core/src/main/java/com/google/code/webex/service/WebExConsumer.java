@@ -27,65 +27,99 @@ public class WebExConsumer implements Serializable {
 	private static final long serialVersionUID = -3469932939653397548L;
 	
 	/** The read api key. */
-	private String readApiKey;
+	private String webExId;
 	
 	/** The write api key. */
-	private String writeApiKey;
+	private String password;
+	
+	private Long siteId;
+	
+	private String siteName;
+	
+	private String partnerId;
 	
 	/**
-	 * Instantiates a new u classify consumer.
-	 * 
-	 * @param apiKey the api key
+	 * @return the webExId
 	 */
-	public WebExConsumer(String apiKey) {
-		this.readApiKey = apiKey;
-		this.writeApiKey = apiKey;
+	public String getWebExId() {
+		return webExId;
 	}
-	
+
+	/**
+	 * @param webExId the webExId to set
+	 */
+	public void setWebExId(String webExId) {
+		this.webExId = webExId;
+	}
+
+	/**
+	 * @return the password
+	 */
+	public String getPassword() {
+		return password;
+	}
+
+	/**
+	 * @param password the password to set
+	 */
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	/**
+	 * @return the siteId
+	 */
+	public Long getSiteId() {
+		return siteId;
+	}
+
+	/**
+	 * @param siteId the siteId to set
+	 */
+	public void setSiteId(Long siteId) {
+		this.siteId = siteId;
+	}
+
+	/**
+	 * @return the partnerId
+	 */
+	public String getPartnerId() {
+		return partnerId;
+	}
+
+	/**
+	 * @param partnerId the partnerId to set
+	 */
+	public void setPartnerId(String partnerId) {
+		this.partnerId = partnerId;
+	}
+
 	/**
 	 * Instantiates a new u classify consumer.
 	 * 
 	 * @param readApiKey the read api key
 	 * @param writeApiKey the write api key
 	 */
-	public WebExConsumer(String readApiKey, String writeApiKey) {
-		this.readApiKey = readApiKey;
-		this.writeApiKey = writeApiKey;
+	public WebExConsumer(String webExId, String password, Long siteId, String siteName, String partnerId) {
+		this.webExId = webExId;
+		this.password = password;
+		this.siteId = siteId;
+		this.siteName = siteName;
+		this.partnerId = partnerId;
+	}
+
+	/**
+	 * @return the siteName
+	 */
+	public String getSiteName() {
+		return siteName;
+	}
+
+	/**
+	 * @param siteName the siteName to set
+	 */
+	public void setSiteName(String siteName) {
+		this.siteName = siteName;
 	}
 	
-	/**
-	 * Gets the read api key.
-	 * 
-	 * @return the readApiKey
-	 */
-	public String getReadApiKey() {
-		return readApiKey;
-	}
-	
-	/**
-	 * Sets the read api key.
-	 * 
-	 * @param readApiKey the readApiKey to set
-	 */
-	public void setReadApiKey(String readApiKey) {
-		this.readApiKey = readApiKey;
-	}
-	
-	/**
-	 * Gets the write api key.
-	 * 
-	 * @return the writeApiKey
-	 */
-	public String getWriteApiKey() {
-		return writeApiKey;
-	}
-	
-	/**
-	 * Sets the write api key.
-	 * 
-	 * @param writeApiKey the writeApiKey to set
-	 */
-	public void setWriteApiKey(String writeApiKey) {
-		this.writeApiKey = writeApiKey;
-	}
 }
