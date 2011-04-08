@@ -1,3 +1,19 @@
+/*
+ * Copyright 2010-2011 Nabeel Mukhtar 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and
+ * limitations under the License. 
+ * 
+ */
 
 package com.webex.schemas._2002._06.common;
 
@@ -30,43 +46,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link PhoneLabelNumType }
+     * Create an instance of {@link SecurityType }
      * 
      */
-    public PhoneLabelNumType createPhoneLabelNumType() {
-        return new PhoneLabelNumType();
-    }
-
-    /**
-     * Create an instance of {@link CheckBoxTagType }
-     * 
-     */
-    public CheckBoxTagType createCheckBoxTagType() {
-        return new CheckBoxTagType();
-    }
-
-    /**
-     * Create an instance of {@link PsoFieldsType }
-     * 
-     */
-    public PsoFieldsType createPsoFieldsType() {
-        return new PsoFieldsType();
-    }
-
-    /**
-     * Create an instance of {@link PhonesType }
-     * 
-     */
-    public PhonesType createPhonesType() {
-        return new PhonesType();
-    }
-
-    /**
-     * Create an instance of {@link TextBoxTagType }
-     * 
-     */
-    public TextBoxTagType createTextBoxTagType() {
-        return new TextBoxTagType();
+    public SecurityType createSecurityType() {
+        return new SecurityType();
     }
 
     /**
@@ -78,19 +62,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SecurityType }
+     * Create an instance of {@link SessionTemplateType }
      * 
      */
-    public SecurityType createSecurityType() {
-        return new SecurityType();
-    }
-
-    /**
-     * Create an instance of {@link OptionButtonTagType }
-     * 
-     */
-    public OptionButtonTagType createOptionButtonTagType() {
-        return new OptionButtonTagType();
+    public SessionTemplateType createSessionTemplateType() {
+        return new SessionTemplateType();
     }
 
     /**
@@ -102,19 +78,43 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SessionTemplateType }
+     * Create an instance of {@link TextBoxTagType }
      * 
      */
-    public SessionTemplateType createSessionTemplateType() {
-        return new SessionTemplateType();
+    public TextBoxTagType createTextBoxTagType() {
+        return new TextBoxTagType();
     }
 
     /**
-     * Create an instance of {@link CheckBoxItemTagType }
+     * Create an instance of {@link PhoneLabelNumType }
      * 
      */
-    public CheckBoxItemTagType createCheckBoxItemTagType() {
-        return new CheckBoxItemTagType();
+    public PhoneLabelNumType createPhoneLabelNumType() {
+        return new PhoneLabelNumType();
+    }
+
+    /**
+     * Create an instance of {@link PersonType }
+     * 
+     */
+    public PersonType createPersonType() {
+        return new PersonType();
+    }
+
+    /**
+     * Create an instance of {@link CheckBoxTagType }
+     * 
+     */
+    public CheckBoxTagType createCheckBoxTagType() {
+        return new CheckBoxTagType();
+    }
+
+    /**
+     * Create an instance of {@link OptionButtonTagType }
+     * 
+     */
+    public OptionButtonTagType createOptionButtonTagType() {
+        return new OptionButtonTagType();
     }
 
     /**
@@ -126,11 +126,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link PersonType }
+     * Create an instance of {@link CheckBoxItemTagType }
      * 
      */
-    public PersonType createPersonType() {
-        return new PersonType();
+    public CheckBoxItemTagType createCheckBoxItemTagType() {
+        return new CheckBoxItemTagType();
+    }
+
+    /**
+     * Create an instance of {@link PhonesType }
+     * 
+     */
+    public PhonesType createPhonesType() {
+        return new PhonesType();
+    }
+
+    /**
+     * Create an instance of {@link PsoFieldsType }
+     * 
+     */
+    public PsoFieldsType createPsoFieldsType() {
+        return new PsoFieldsType();
     }
 
 }

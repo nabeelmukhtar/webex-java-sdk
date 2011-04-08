@@ -1,6 +1,23 @@
+/*
+ * Copyright 2010-2011 Nabeel Mukhtar 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and
+ * limitations under the License. 
+ * 
+ */
 
 package com.webex.schemas._2002._06.service.trainingsessionqtiasi;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -53,15 +70,17 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
     "materialOrMaterialRefOrResponseLabel",
     "responseNa"
 })
-public class RenderHotspotType {
+public class RenderHotspotType implements Serializable
+{
 
+    private final static long serialVersionUID = 2461660169443089969L;
     @XmlElements({
-        @XmlElement(name = "material_ref", type = MaterialRefType.class),
-        @XmlElement(name = "flow_label", type = FlowLabelType.class),
+        @XmlElement(name = "material", type = MaterialType.class),
         @XmlElement(name = "response_label", type = ResponseLabelType.class),
-        @XmlElement(name = "material", type = MaterialType.class)
+        @XmlElement(name = "flow_label", type = FlowLabelType.class),
+        @XmlElement(name = "material_ref", type = MaterialRefType.class)
     })
-    protected List<Object> materialOrMaterialRefOrResponseLabel;
+    protected List<Serializable> materialOrMaterialRefOrResponseLabel;
     @XmlElement(name = "response_na")
     protected ResponseNaType responseNa;
     @XmlAttribute
@@ -90,16 +109,16 @@ public class RenderHotspotType {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link MaterialRefType }
-     * {@link FlowLabelType }
-     * {@link ResponseLabelType }
      * {@link MaterialType }
+     * {@link ResponseLabelType }
+     * {@link FlowLabelType }
+     * {@link MaterialRefType }
      * 
      * 
      */
-    public List<Object> getMaterialOrMaterialRefOrResponseLabel() {
+    public List<Serializable> getMaterialOrMaterialRefOrResponseLabel() {
         if (materialOrMaterialRefOrResponseLabel == null) {
-            materialOrMaterialRefOrResponseLabel = new ArrayList<Object>();
+            materialOrMaterialRefOrResponseLabel = new ArrayList<Serializable>();
         }
         return this.materialOrMaterialRefOrResponseLabel;
     }

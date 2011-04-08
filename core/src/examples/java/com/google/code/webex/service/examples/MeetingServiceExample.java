@@ -1,5 +1,5 @@
 /*
- * Copyright 2010 Nabeel Mukhtar 
+ * Copyright 2010-2011 Nabeel Mukhtar 
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); 
  * you may not use this file except in compliance with the License. 
@@ -40,6 +40,11 @@ public class MeetingServiceExample {
 		List<MeetingSummaryInstanceType> meetingSummaries = service.getMeetingSummaries();
 		for (MeetingSummaryInstanceType meetingSummary : meetingSummaries) {
 			System.out.println(meetingSummary.getConfName());
+			System.out.println(meetingSummary.getMeetingKey());
+			System.out.println(meetingSummary.getMeetingType());
+			System.out.println(meetingSummary.getStartDate());
+			System.out.println(meetingSummary.getDuration());
+			System.out.println(meetingSummary.getListStatus());
 		}
 	}
 	

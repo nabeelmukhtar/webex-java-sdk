@@ -1,5 +1,5 @@
 /*
- * Copyright 2010 Nabeel Mukhtar 
+ * Copyright 2010-2011 Nabeel Mukhtar 
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); 
  * you may not use this file except in compliance with the License. 
@@ -192,7 +192,7 @@ public abstract class BaseWebExService implements WebExService {
             if (xmlContent != null) {
                 PrintStream out = new PrintStream(new BufferedOutputStream(request.getOutputStream()));
 
-                out.print(unmarshalTemp());
+                out.print(xmlContent);
                 out.flush();
                 out.close();
             }
@@ -397,32 +397,4 @@ public abstract class BaseWebExService implements WebExService {
      * @return the schema element factory
      */
 //    protected abstract SchemaElementFactory createObjectFactory();
-    
-    private String unmarshalTemp() {
-        String reqXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n";
-        reqXML += "<serv:message xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"";
-        reqXML += " xmlns:serv=\"http://www.webex.com/schemas/2002/06/service\"";
-        reqXML += " xsi:schemaLocation=\"http://www.webex.com/schemas/2002/06/service\">\r\n";
-        reqXML += "<header>\r\n";
-        reqXML += "<securityContext>\r\n";
-        reqXML += "<webExID>" + apiConsumer.getWebExId() + "</webExID>\r\n";
-        reqXML += "<password>" + apiConsumer.getPassword() + "</password>\r\n";
-        reqXML += "<siteID>" + apiConsumer.getSiteId() + "</siteID>\r\n";
-        reqXML += "<partnerID>" + apiConsumer.getPartnerId() + "</partnerID>\r\n";
-        reqXML += "</securityContext>\r\n";
-        reqXML += "</header>\r\n";
-        reqXML += "<body>\r\n";
-        reqXML += "<bodyContent xsi:type=\"java:com.webex.service.binding.meeting.LstsummaryMeeting\">";
-        reqXML += "<listControl>";
-        reqXML += "<maximumNum>5</maximumNum>";
-        reqXML += "</listControl>";
-        reqXML += "<order>";
-        reqXML += "<orderBy>STARTTIME</orderBy>";
-        reqXML += "</order>";
-        reqXML += "</bodyContent>\r\n";
-        reqXML += "</body>\r\n";
-        reqXML += "</serv:message>\r\n";
-        
-        return reqXML;
-    }
 }

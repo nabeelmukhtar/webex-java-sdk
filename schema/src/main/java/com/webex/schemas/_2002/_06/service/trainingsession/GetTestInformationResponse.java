@@ -1,13 +1,32 @@
+/*
+ * Copyright 2010-2011 Nabeel Mukhtar 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and
+ * limitations under the License. 
+ * 
+ */
 
 package com.webex.schemas._2002._06.service.trainingsession;
 
-import java.math.BigInteger;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
@@ -55,25 +74,44 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class GetTestInformationResponse
     extends ScheduledTestInstanceType
+    implements Serializable
 {
 
+    private final static long serialVersionUID = 2461660169443089969L;
     protected String description;
     @XmlElement(required = true)
     protected String startDate;
-    protected BigInteger timeLimit;
+    @XmlElement(type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlSchemaType(name = "integer")
+    protected Long timeLimit;
     @XmlElement(required = true)
     protected String author;
-    @XmlElement(required = true)
-    protected BigInteger numQuestions;
-    @XmlElement(required = true)
-    protected BigInteger numSubmitted;
-    @XmlElement(required = true)
-    protected BigInteger numStarted;
-    @XmlElement(required = true)
-    protected BigInteger numSubmittedUnscroed;
-    protected BigInteger numSubmittedUnscored;
+    @XmlElement(required = true, type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlSchemaType(name = "integer")
+    protected Long numQuestions;
+    @XmlElement(required = true, type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlSchemaType(name = "integer")
+    protected Long numSubmitted;
+    @XmlElement(required = true, type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlSchemaType(name = "integer")
+    protected Long numStarted;
+    @XmlElement(required = true, type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlSchemaType(name = "integer")
+    protected Long numSubmittedUnscroed;
+    @XmlElement(type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlSchemaType(name = "integer")
+    protected Long numSubmittedUnscored;
     protected List<SubmittedTestType> submittedTest;
-    protected BigInteger maxScore;
+    @XmlElement(type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlSchemaType(name = "integer")
+    protected Long maxScore;
 
     /**
      * Gets the value of the description property.
@@ -128,10 +166,10 @@ public class GetTestInformationResponse
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getTimeLimit() {
+    public Long getTimeLimit() {
         return timeLimit;
     }
 
@@ -140,10 +178,10 @@ public class GetTestInformationResponse
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setTimeLimit(BigInteger value) {
+    public void setTimeLimit(Long value) {
         this.timeLimit = value;
     }
 
@@ -176,10 +214,10 @@ public class GetTestInformationResponse
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getNumQuestions() {
+    public Long getNumQuestions() {
         return numQuestions;
     }
 
@@ -188,10 +226,10 @@ public class GetTestInformationResponse
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setNumQuestions(BigInteger value) {
+    public void setNumQuestions(Long value) {
         this.numQuestions = value;
     }
 
@@ -200,10 +238,10 @@ public class GetTestInformationResponse
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getNumSubmitted() {
+    public Long getNumSubmitted() {
         return numSubmitted;
     }
 
@@ -212,10 +250,10 @@ public class GetTestInformationResponse
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setNumSubmitted(BigInteger value) {
+    public void setNumSubmitted(Long value) {
         this.numSubmitted = value;
     }
 
@@ -224,10 +262,10 @@ public class GetTestInformationResponse
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getNumStarted() {
+    public Long getNumStarted() {
         return numStarted;
     }
 
@@ -236,10 +274,10 @@ public class GetTestInformationResponse
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setNumStarted(BigInteger value) {
+    public void setNumStarted(Long value) {
         this.numStarted = value;
     }
 
@@ -248,10 +286,10 @@ public class GetTestInformationResponse
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getNumSubmittedUnscroed() {
+    public Long getNumSubmittedUnscroed() {
         return numSubmittedUnscroed;
     }
 
@@ -260,10 +298,10 @@ public class GetTestInformationResponse
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setNumSubmittedUnscroed(BigInteger value) {
+    public void setNumSubmittedUnscroed(Long value) {
         this.numSubmittedUnscroed = value;
     }
 
@@ -272,10 +310,10 @@ public class GetTestInformationResponse
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getNumSubmittedUnscored() {
+    public Long getNumSubmittedUnscored() {
         return numSubmittedUnscored;
     }
 
@@ -284,10 +322,10 @@ public class GetTestInformationResponse
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setNumSubmittedUnscored(BigInteger value) {
+    public void setNumSubmittedUnscored(Long value) {
         this.numSubmittedUnscored = value;
     }
 
@@ -325,10 +363,10 @@ public class GetTestInformationResponse
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getMaxScore() {
+    public Long getMaxScore() {
         return maxScore;
     }
 
@@ -337,10 +375,10 @@ public class GetTestInformationResponse
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setMaxScore(BigInteger value) {
+    public void setMaxScore(Long value) {
         this.maxScore = value;
     }
 

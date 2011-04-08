@@ -1,11 +1,28 @@
+/*
+ * Copyright 2010-2011 Nabeel Mukhtar 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and
+ * limitations under the License. 
+ * 
+ */
 
 package com.webex.schemas._2002._06.service.trainingsessionqti;
 
-import java.math.BigInteger;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
 import javax.xml.bind.annotation.XmlRegistry;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import javax.xml.namespace.QName;
+import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
@@ -86,6 +103,102 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link AsiDescriptionType }
+     * 
+     */
+    public AsiDescriptionType createAsiDescriptionType() {
+        return new AsiDescriptionType();
+    }
+
+    /**
+     * Create an instance of {@link AsiMetadatafieldItemResultType }
+     * 
+     */
+    public AsiMetadatafieldItemResultType createAsiMetadatafieldItemResultType() {
+        return new AsiMetadatafieldItemResultType();
+    }
+
+    /**
+     * Create an instance of {@link NumSectionsType }
+     * 
+     */
+    public NumSectionsType createNumSectionsType() {
+        return new NumSectionsType();
+    }
+
+    /**
+     * Create an instance of {@link GenericIdentifierType }
+     * 
+     */
+    public GenericIdentifierType createGenericIdentifierType() {
+        return new GenericIdentifierType();
+    }
+
+    /**
+     * Create an instance of {@link ExtensionAssessmentResultType }
+     * 
+     */
+    public ExtensionAssessmentResultType createExtensionAssessmentResultType() {
+        return new ExtensionAssessmentResultType();
+    }
+
+    /**
+     * Create an instance of {@link ExtensionResponseType }
+     * 
+     */
+    public ExtensionResponseType createExtensionResponseType() {
+        return new ExtensionResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ContextType }
+     * 
+     */
+    public ContextType createContextType() {
+        return new ContextType();
+    }
+
+    /**
+     * Create an instance of {@link ExtensionItemResultType }
+     * 
+     */
+    public ExtensionItemResultType createExtensionItemResultType() {
+        return new ExtensionItemResultType();
+    }
+
+    /**
+     * Create an instance of {@link ResponseFormType }
+     * 
+     */
+    public ResponseFormType createResponseFormType() {
+        return new ResponseFormType();
+    }
+
+    /**
+     * Create an instance of {@link AssessmentResultType }
+     * 
+     */
+    public AssessmentResultType createAssessmentResultType() {
+        return new AssessmentResultType();
+    }
+
+    /**
+     * Create an instance of {@link ItemResultType }
+     * 
+     */
+    public ItemResultType createItemResultType() {
+        return new ItemResultType();
+    }
+
+    /**
+     * Create an instance of {@link OutcomesItemResultType }
+     * 
+     */
+    public OutcomesItemResultType createOutcomesItemResultType() {
+        return new OutcomesItemResultType();
+    }
+
+    /**
      * Create an instance of {@link ObjectiveType }
      * 
      */
@@ -94,11 +207,43 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ScoreAssessmentResultOutcomesType }
+     * Create an instance of {@link AsiMetadatafieldAssessmentResultType }
      * 
      */
-    public ScoreAssessmentResultOutcomesType createScoreAssessmentResultOutcomesType() {
-        return new ScoreAssessmentResultOutcomesType();
+    public AsiMetadatafieldAssessmentResultType createAsiMetadatafieldAssessmentResultType() {
+        return new AsiMetadatafieldAssessmentResultType();
+    }
+
+    /**
+     * Create an instance of {@link ExtensionSectionResultType }
+     * 
+     */
+    public ExtensionSectionResultType createExtensionSectionResultType() {
+        return new ExtensionSectionResultType();
+    }
+
+    /**
+     * Create an instance of {@link AsiMetadataItemResultType }
+     * 
+     */
+    public AsiMetadataItemResultType createAsiMetadataItemResultType() {
+        return new AsiMetadataItemResultType();
+    }
+
+    /**
+     * Create an instance of {@link SectionResultType }
+     * 
+     */
+    public SectionResultType createSectionResultType() {
+        return new SectionResultType();
+    }
+
+    /**
+     * Create an instance of {@link QtiResultReportType }
+     * 
+     */
+    public QtiResultReportType createQtiResultReportType() {
+        return new QtiResultReportType();
     }
 
     /**
@@ -118,67 +263,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AsiMetadatafieldItemResultType }
+     * Create an instance of {@link ExtensionScoreType }
      * 
      */
-    public AsiMetadatafieldItemResultType createAsiMetadatafieldItemResultType() {
-        return new AsiMetadatafieldItemResultType();
-    }
-
-    /**
-     * Create an instance of {@link AsiMetadataAssessmentResultType }
-     * 
-     */
-    public AsiMetadataAssessmentResultType createAsiMetadataAssessmentResultType() {
-        return new AsiMetadataAssessmentResultType();
-    }
-
-    /**
-     * Create an instance of {@link GradeType }
-     * 
-     */
-    public GradeType createGradeType() {
-        return new GradeType();
-    }
-
-    /**
-     * Create an instance of {@link FeedbackDisplayedType }
-     * 
-     */
-    public FeedbackDisplayedType createFeedbackDisplayedType() {
-        return new FeedbackDisplayedType();
-    }
-
-    /**
-     * Create an instance of {@link CorrectResponseType }
-     * 
-     */
-    public CorrectResponseType createCorrectResponseType() {
-        return new CorrectResponseType();
-    }
-
-    /**
-     * Create an instance of {@link QtiResultReportType }
-     * 
-     */
-    public QtiResultReportType createQtiResultReportType() {
-        return new QtiResultReportType();
-    }
-
-    /**
-     * Create an instance of {@link AssessmentResultType }
-     * 
-     */
-    public AssessmentResultType createAssessmentResultType() {
-        return new AssessmentResultType();
-    }
-
-    /**
-     * Create an instance of {@link ExtensionResultType }
-     * 
-     */
-    public ExtensionResultType createExtensionResultType() {
-        return new ExtensionResultType();
+    public ExtensionScoreType createExtensionScoreType() {
+        return new ExtensionScoreType();
     }
 
     /**
@@ -190,219 +279,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link OutcomesItemResultType }
-     * 
-     */
-    public OutcomesItemResultType createOutcomesItemResultType() {
-        return new OutcomesItemResultType();
-    }
-
-    /**
-     * Create an instance of {@link ExtensionScoreType }
-     * 
-     */
-    public ExtensionScoreType createExtensionScoreType() {
-        return new ExtensionScoreType();
-    }
-
-    /**
-     * Create an instance of {@link ExtensionSectionResultType }
-     * 
-     */
-    public ExtensionSectionResultType createExtensionSectionResultType() {
-        return new ExtensionSectionResultType();
-    }
-
-    /**
-     * Create an instance of {@link ControlType }
-     * 
-     */
-    public ControlType createControlType() {
-        return new ControlType();
-    }
-
-    /**
-     * Create an instance of {@link StatusType }
-     * 
-     */
-    public StatusType createStatusType() {
-        return new StatusType();
-    }
-
-    /**
-     * Create an instance of {@link ResultType }
-     * 
-     */
-    public ResultType createResultType() {
-        return new ResultType();
-    }
-
-    /**
-     * Create an instance of {@link ItemResultType }
-     * 
-     */
-    public ItemResultType createItemResultType() {
-        return new ItemResultType();
-    }
-
-    /**
-     * Create an instance of {@link AsiMetadataItemResultType }
-     * 
-     */
-    public AsiMetadataItemResultType createAsiMetadataItemResultType() {
-        return new AsiMetadataItemResultType();
-    }
-
-    /**
-     * Create an instance of {@link ExtensionItemResultType }
-     * 
-     */
-    public ExtensionItemResultType createExtensionItemResultType() {
-        return new ExtensionItemResultType();
-    }
-
-    /**
-     * Create an instance of {@link ResponseValueType }
-     * 
-     */
-    public ResponseValueType createResponseValueType() {
-        return new ResponseValueType();
-    }
-
-    /**
-     * Create an instance of {@link ScoreItemResultOutcomesType }
-     * 
-     */
-    public ScoreItemResultOutcomesType createScoreItemResultOutcomesType() {
-        return new ScoreItemResultOutcomesType();
-    }
-
-    /**
-     * Create an instance of {@link ResponseType }
-     * 
-     */
-    public ResponseType createResponseType() {
-        return new ResponseType();
-    }
-
-    /**
-     * Create an instance of {@link SectionResultType }
-     * 
-     */
-    public SectionResultType createSectionResultType() {
-        return new SectionResultType();
-    }
-
-    /**
-     * Create an instance of {@link ExtensionGradeType }
-     * 
-     */
-    public ExtensionGradeType createExtensionGradeType() {
-        return new ExtensionGradeType();
-    }
-
-    /**
-     * Create an instance of {@link AsiDescriptionType }
-     * 
-     */
-    public AsiDescriptionType createAsiDescriptionType() {
-        return new AsiDescriptionType();
-    }
-
-    /**
-     * Create an instance of {@link ScoreInterpretationType }
-     * 
-     */
-    public ScoreInterpretationType createScoreInterpretationType() {
-        return new ScoreInterpretationType();
-    }
-
-    /**
      * Create an instance of {@link DateType }
      * 
      */
     public DateType createDateType() {
         return new DateType();
-    }
-
-    /**
-     * Create an instance of {@link VocabularyType }
-     * 
-     */
-    public VocabularyType createVocabularyType() {
-        return new VocabularyType();
-    }
-
-    /**
-     * Create an instance of {@link ContextType }
-     * 
-     */
-    public ContextType createContextType() {
-        return new ContextType();
-    }
-
-    /**
-     * Create an instance of {@link ExtensionResponseType }
-     * 
-     */
-    public ExtensionResponseType createExtensionResponseType() {
-        return new ExtensionResponseType();
-    }
-
-    /**
-     * Create an instance of {@link AsiMetadatafieldAssessmentResultType }
-     * 
-     */
-    public AsiMetadatafieldAssessmentResultType createAsiMetadatafieldAssessmentResultType() {
-        return new AsiMetadatafieldAssessmentResultType();
-    }
-
-    /**
-     * Create an instance of {@link ExtensionContextType }
-     * 
-     */
-    public ExtensionContextType createExtensionContextType() {
-        return new ExtensionContextType();
-    }
-
-    /**
-     * Create an instance of {@link ExtensionAssessmentResultType }
-     * 
-     */
-    public ExtensionAssessmentResultType createExtensionAssessmentResultType() {
-        return new ExtensionAssessmentResultType();
-    }
-
-    /**
-     * Create an instance of {@link NumSectionsType }
-     * 
-     */
-    public NumSectionsType createNumSectionsType() {
-        return new NumSectionsType();
-    }
-
-    /**
-     * Create an instance of {@link ResponseFormType }
-     * 
-     */
-    public ResponseFormType createResponseFormType() {
-        return new ResponseFormType();
-    }
-
-    /**
-     * Create an instance of {@link GenericIdentifierType }
-     * 
-     */
-    public GenericIdentifierType createGenericIdentifierType() {
-        return new GenericIdentifierType();
-    }
-
-    /**
-     * Create an instance of {@link DateType.TypeLabel }
-     * 
-     */
-    public DateType.TypeLabel createDateTypeTypeLabel() {
-        return new DateType.TypeLabel();
     }
 
     /**
@@ -414,6 +295,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link ResponseType }
+     * 
+     */
+    public ResponseType createResponseType() {
+        return new ResponseType();
+    }
+
+    /**
      * Create an instance of {@link ExtensionResponseformType }
      * 
      */
@@ -422,11 +311,139 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link ResultType }
+     * 
+     */
+    public ResultType createResultType() {
+        return new ResultType();
+    }
+
+    /**
+     * Create an instance of {@link FeedbackDisplayedType }
+     * 
+     */
+    public FeedbackDisplayedType createFeedbackDisplayedType() {
+        return new FeedbackDisplayedType();
+    }
+
+    /**
+     * Create an instance of {@link ExtensionGradeType }
+     * 
+     */
+    public ExtensionGradeType createExtensionGradeType() {
+        return new ExtensionGradeType();
+    }
+
+    /**
+     * Create an instance of {@link ScoreItemResultOutcomesType }
+     * 
+     */
+    public ScoreItemResultOutcomesType createScoreItemResultOutcomesType() {
+        return new ScoreItemResultOutcomesType();
+    }
+
+    /**
+     * Create an instance of {@link ResponseValueType }
+     * 
+     */
+    public ResponseValueType createResponseValueType() {
+        return new ResponseValueType();
+    }
+
+    /**
+     * Create an instance of {@link GradeType }
+     * 
+     */
+    public GradeType createGradeType() {
+        return new GradeType();
+    }
+
+    /**
+     * Create an instance of {@link ControlType }
+     * 
+     */
+    public ControlType createControlType() {
+        return new ControlType();
+    }
+
+    /**
+     * Create an instance of {@link AsiMetadataAssessmentResultType }
+     * 
+     */
+    public AsiMetadataAssessmentResultType createAsiMetadataAssessmentResultType() {
+        return new AsiMetadataAssessmentResultType();
+    }
+
+    /**
+     * Create an instance of {@link ExtensionResultType }
+     * 
+     */
+    public ExtensionResultType createExtensionResultType() {
+        return new ExtensionResultType();
+    }
+
+    /**
+     * Create an instance of {@link CorrectResponseType }
+     * 
+     */
+    public CorrectResponseType createCorrectResponseType() {
+        return new CorrectResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ScoreInterpretationType }
+     * 
+     */
+    public ScoreInterpretationType createScoreInterpretationType() {
+        return new ScoreInterpretationType();
+    }
+
+    /**
+     * Create an instance of {@link VocabularyType }
+     * 
+     */
+    public VocabularyType createVocabularyType() {
+        return new VocabularyType();
+    }
+
+    /**
+     * Create an instance of {@link DateType.TypeLabel }
+     * 
+     */
+    public DateType.TypeLabel createDateTypeTypeLabel() {
+        return new DateType.TypeLabel();
+    }
+
+    /**
+     * Create an instance of {@link ScoreAssessmentResultOutcomesType }
+     * 
+     */
+    public ScoreAssessmentResultOutcomesType createScoreAssessmentResultOutcomesType() {
+        return new ScoreAssessmentResultOutcomesType();
+    }
+
+    /**
+     * Create an instance of {@link ExtensionContextType }
+     * 
+     */
+    public ExtensionContextType createExtensionContextType() {
+        return new ExtensionContextType();
+    }
+
+    /**
      * Create an instance of {@link StatusType.TypeLabel }
      * 
      */
     public StatusType.TypeLabel createStatusTypeTypeLabel() {
         return new StatusType.TypeLabel();
+    }
+
+    /**
+     * Create an instance of {@link StatusType }
+     * 
+     */
+    public StatusType createStatusType() {
+        return new StatusType();
     }
 
     /**
@@ -853,12 +870,13 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link BigInteger }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Long }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqti", name = "score_max")
-    public JAXBElement<BigInteger> createScoreMax(BigInteger value) {
-        return new JAXBElement<BigInteger>(_ScoreMax_QNAME, BigInteger.class, null, value);
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    public JAXBElement<Long> createScoreMax(Long value) {
+        return new JAXBElement<Long>(_ScoreMax_QNAME, Long.class, null, value);
     }
 
     /**

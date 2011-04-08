@@ -1,18 +1,37 @@
+/*
+ * Copyright 2010-2011 Nabeel Mukhtar 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and
+ * limitations under the License. 
+ * 
+ */
 
 package com.webex.schemas._2002._06.service.user;
 
-import java.math.BigInteger;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import com.webex.schemas._2002._06.common.AddressType;
 import com.webex.schemas._2002._06.common.TimeZoneType;
 import com.webex.schemas._2002._06.common.TrackingType;
 import com.webex.schemas._2002._06.service.BodyContentType;
+import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
@@ -261,12 +280,17 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 })
 public class UserType
     extends BodyContentType
+    implements Serializable
 {
 
+    private final static long serialVersionUID = 2461660169443089969L;
     protected String firstName;
     protected String lastName;
     protected String title;
-    protected BigInteger categoryId;
+    @XmlElement(type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlSchemaType(name = "integer")
+    protected Long categoryId;
     protected String description;
     protected String officeGreeting;
     protected String company;
@@ -388,10 +412,10 @@ public class UserType
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getCategoryId() {
+    public Long getCategoryId() {
         return categoryId;
     }
 
@@ -400,10 +424,10 @@ public class UserType
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setCategoryId(BigInteger value) {
+    public void setCategoryId(Long value) {
         this.categoryId = value;
     }
 
@@ -1415,8 +1439,11 @@ public class UserType
     @XmlType(name = "", propOrder = {
         "meetingType"
     })
-    public static class MeetingTypes {
+    public static class MeetingTypes
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         @XmlElement(type = Long.class)
         protected List<Long> meetingType;
 
@@ -1475,8 +1502,11 @@ public class UserType
     @XmlType(name = "", propOrder = {
         "account"
     })
-    public static class PersonalTeleconf {
+    public static class PersonalTeleconf
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         protected List<PersonalAccountType> account;
 
         /**
@@ -1560,8 +1590,10 @@ public class UserType
     })
     public static class RemoteSupport
         extends SharingAndRecordingType
+        implements Serializable
     {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         protected UserType.RemoteSupport.AutoRequest autoRequest;
         protected UserType.RemoteSupport.DefaultClient defaultClient;
 
@@ -1639,8 +1671,11 @@ public class UserType
             "enable",
             "request"
         })
-        public static class AutoRequest {
+        public static class AutoRequest
+            implements Serializable
+        {
 
+            private final static long serialVersionUID = 2461660169443089969L;
             protected boolean enable;
             protected ScRequestType request;
 
@@ -1712,8 +1747,11 @@ public class UserType
             "type",
             "singleSessClient"
         })
-        public static class DefaultClient {
+        public static class DefaultClient
+            implements Serializable
+        {
 
+            private final static long serialVersionUID = 2461660169443089969L;
             @XmlElement(required = true)
             protected ScClientType type;
             protected ScConsoleType singleSessClient;
@@ -1816,8 +1854,11 @@ public class UserType
         "orderTabs",
         "serviceDesk"
     })
-    public static class SupportCenter {
+    public static class SupportCenter
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         protected UserType.SupportCenter.OrderTabs orderTabs;
         protected UserType.SupportCenter.ServiceDesk serviceDesk;
 
@@ -1893,8 +1934,11 @@ public class UserType
         @XmlType(name = "", propOrder = {
             "tab"
         })
-        public static class OrderTabs {
+        public static class OrderTabs
+            implements Serializable
+        {
 
+            private final static long serialVersionUID = 2461660169443089969L;
             @XmlElement(required = true)
             protected List<ScTabType> tab;
 
@@ -1953,8 +1997,11 @@ public class UserType
         @XmlType(name = "", propOrder = {
             "enable"
         })
-        public static class ServiceDesk {
+        public static class ServiceDesk
+            implements Serializable
+        {
 
+            private final static long serialVersionUID = 2461660169443089969L;
             protected Boolean enable;
 
             /**
@@ -2009,8 +2056,11 @@ public class UserType
     @XmlType(name = "", propOrder = {
         "account"
     })
-    public static class ThirdPartyTeleconf {
+    public static class ThirdPartyTeleconf
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         protected List<ThirdPartyAccountType> account;
 
         /**
@@ -2068,8 +2118,11 @@ public class UserType
     @XmlType(name = "", propOrder = {
         "tspAccount"
     })
-    public static class TspAccount {
+    public static class TspAccount
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         protected List<TspAccountType> tspAccount;
 
         /**
@@ -2135,8 +2188,10 @@ public class UserType
     })
     public static class WebACDPrefs
         extends WebACDUserRoleType
+        implements Serializable
     {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         protected Integer numAgentSessions;
         protected Boolean agentMonitorAllRSQueues;
         protected Boolean managerMonitorAllRSQueues;

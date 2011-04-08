@@ -1,11 +1,30 @@
+/*
+ * Copyright 2010-2011 Nabeel Mukhtar 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and
+ * limitations under the License. 
+ * 
+ */
 
 package com.webex.schemas._2002._06.service.event;
 
-import java.math.BigInteger;
+import java.io.Serializable;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
@@ -55,20 +74,30 @@ import javax.xml.bind.annotation.XmlType;
     "listStatus",
     "attendeeCount"
 })
-public class EventSummaryInstanceType {
+public class EventSummaryInstanceType
+    implements Serializable
+{
 
+    private final static long serialVersionUID = 2461660169443089969L;
     protected long sessionKey;
     @XmlElement(required = true)
     protected String sessionName;
-    @XmlElement(required = true)
-    protected BigInteger sessionType;
+    @XmlElement(required = true, type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlSchemaType(name = "integer")
+    protected Long sessionType;
     @XmlElement(required = true)
     protected String hostWebExID;
     protected String startDate;
     protected String endDate;
-    protected BigInteger timeZoneID;
-    @XmlElement(required = true)
-    protected BigInteger duration;
+    @XmlElement(type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlSchemaType(name = "integer")
+    protected Long timeZoneID;
+    @XmlElement(required = true, type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlSchemaType(name = "integer")
+    protected Long duration;
     protected String description;
     protected String status;
     protected String panelists;
@@ -120,10 +149,10 @@ public class EventSummaryInstanceType {
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getSessionType() {
+    public Long getSessionType() {
         return sessionType;
     }
 
@@ -132,10 +161,10 @@ public class EventSummaryInstanceType {
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setSessionType(BigInteger value) {
+    public void setSessionType(Long value) {
         this.sessionType = value;
     }
 
@@ -216,10 +245,10 @@ public class EventSummaryInstanceType {
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getTimeZoneID() {
+    public Long getTimeZoneID() {
         return timeZoneID;
     }
 
@@ -228,10 +257,10 @@ public class EventSummaryInstanceType {
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setTimeZoneID(BigInteger value) {
+    public void setTimeZoneID(Long value) {
         this.timeZoneID = value;
     }
 
@@ -240,10 +269,10 @@ public class EventSummaryInstanceType {
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getDuration() {
+    public Long getDuration() {
         return duration;
     }
 
@@ -252,10 +281,10 @@ public class EventSummaryInstanceType {
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setDuration(BigInteger value) {
+    public void setDuration(Long value) {
         this.duration = value;
     }
 

@@ -1,3 +1,19 @@
+/*
+ * Copyright 2010-2011 Nabeel Mukhtar 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and
+ * limitations under the License. 
+ * 
+ */
 
 package com.webex.schemas._2002._06.service.meeting.auo;
 
@@ -30,11 +46,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AudioOnlyType.LimitedAccessAttendees }
+     * Create an instance of {@link AudioOnlyInstanceType.LimitedAccessAttendees }
      * 
      */
-    public AudioOnlyType.LimitedAccessAttendees createAudioOnlyTypeLimitedAccessAttendees() {
-        return new AudioOnlyType.LimitedAccessAttendees();
+    public AudioOnlyInstanceType.LimitedAccessAttendees createAudioOnlyInstanceTypeLimitedAccessAttendees() {
+        return new AudioOnlyInstanceType.LimitedAccessAttendees();
+    }
+
+    /**
+     * Create an instance of {@link AttendeeOptionsType }
+     * 
+     */
+    public AttendeeOptionsType createAttendeeOptionsType() {
+        return new AttendeeOptionsType();
     }
 
     /**
@@ -46,11 +70,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AudioOnlyInstanceType }
+     * Create an instance of {@link TeleconfType }
      * 
      */
-    public AudioOnlyInstanceType createAudioOnlyInstanceType() {
-        return new AudioOnlyInstanceType();
+    public TeleconfType createTeleconfType() {
+        return new TeleconfType();
+    }
+
+    /**
+     * Create an instance of {@link AudioOnlyInstanceType.FullAccessAttendees }
+     * 
+     */
+    public AudioOnlyInstanceType.FullAccessAttendees createAudioOnlyInstanceTypeFullAccessAttendees() {
+        return new AudioOnlyInstanceType.FullAccessAttendees();
     }
 
     /**
@@ -62,35 +94,43 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link TeleconfInstanceType }
+     * Create an instance of {@link MetaDataType }
      * 
      */
-    public TeleconfInstanceType createTeleconfInstanceType() {
-        return new TeleconfInstanceType();
+    public MetaDataType createMetaDataType() {
+        return new MetaDataType();
     }
 
     /**
-     * Create an instance of {@link CreateTeleconferenceSessionResponse }
+     * Create an instance of {@link ScheduleType }
      * 
      */
-    public CreateTeleconferenceSessionResponse createCreateTeleconferenceSessionResponse() {
-        return new CreateTeleconferenceSessionResponse();
+    public ScheduleType createScheduleType() {
+        return new ScheduleType();
     }
 
     /**
-     * Create an instance of {@link AudioOnlyType }
+     * Create an instance of {@link SetTeleconferenceSessionResponse }
      * 
      */
-    public AudioOnlyType createAudioOnlyType() {
-        return new AudioOnlyType();
+    public SetTeleconferenceSessionResponse createSetTeleconferenceSessionResponse() {
+        return new SetTeleconferenceSessionResponse();
     }
 
     /**
-     * Create an instance of {@link AudioOnlyType.FullAccessAttendees }
+     * Create an instance of {@link AudioOnlyType.LimitedAccessAttendees }
      * 
      */
-    public AudioOnlyType.FullAccessAttendees createAudioOnlyTypeFullAccessAttendees() {
-        return new AudioOnlyType.FullAccessAttendees();
+    public AudioOnlyType.LimitedAccessAttendees createAudioOnlyTypeLimitedAccessAttendees() {
+        return new AudioOnlyType.LimitedAccessAttendees();
+    }
+
+    /**
+     * Create an instance of {@link GetTeleconferenceSession }
+     * 
+     */
+    public GetTeleconferenceSession createGetTeleconferenceSession() {
+        return new GetTeleconferenceSession();
     }
 
     /**
@@ -110,62 +150,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AttendeeOptionsType }
-     * 
-     */
-    public AttendeeOptionsType createAttendeeOptionsType() {
-        return new AttendeeOptionsType();
-    }
-
-    /**
-     * Create an instance of {@link SetTeleconferenceSessionResponse }
-     * 
-     */
-    public SetTeleconferenceSessionResponse createSetTeleconferenceSessionResponse() {
-        return new SetTeleconferenceSessionResponse();
-    }
-
-    /**
-     * Create an instance of {@link RepeatType }
-     * 
-     */
-    public RepeatType createRepeatType() {
-        return new RepeatType();
-    }
-
-    /**
-     * Create an instance of {@link AudioOnlyInstanceType.LimitedAccessAttendees }
-     * 
-     */
-    public AudioOnlyInstanceType.LimitedAccessAttendees createAudioOnlyInstanceTypeLimitedAccessAttendees() {
-        return new AudioOnlyInstanceType.LimitedAccessAttendees();
-    }
-
-    /**
-     * Create an instance of {@link TeleconfType }
-     * 
-     */
-    public TeleconfType createTeleconfType() {
-        return new TeleconfType();
-    }
-
-    /**
-     * Create an instance of {@link ScheduleType }
-     * 
-     */
-    public ScheduleType createScheduleType() {
-        return new ScheduleType();
-    }
-
-    /**
-     * Create an instance of {@link SetTeleconferenceSession }
-     * 
-     */
-    public SetTeleconferenceSession createSetTeleconferenceSession() {
-        return new SetTeleconferenceSession();
-    }
-
-    /**
      * Create an instance of {@link TelephonyType }
      * 
      */
@@ -174,19 +158,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link CreateTeleconferenceSession }
+     * Create an instance of {@link AudioOnlyType.FullAccessAttendees }
      * 
      */
-    public CreateTeleconferenceSession createCreateTeleconferenceSession() {
-        return new CreateTeleconferenceSession();
+    public AudioOnlyType.FullAccessAttendees createAudioOnlyTypeFullAccessAttendees() {
+        return new AudioOnlyType.FullAccessAttendees();
     }
 
     /**
-     * Create an instance of {@link GetTeleconferenceSession }
+     * Create an instance of {@link AudioOnlyInstanceType }
      * 
      */
-    public GetTeleconferenceSession createGetTeleconferenceSession() {
-        return new GetTeleconferenceSession();
+    public AudioOnlyInstanceType createAudioOnlyInstanceType() {
+        return new AudioOnlyInstanceType();
     }
 
     /**
@@ -198,19 +182,51 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link MetaDataType }
+     * Create an instance of {@link RepeatType }
      * 
      */
-    public MetaDataType createMetaDataType() {
-        return new MetaDataType();
+    public RepeatType createRepeatType() {
+        return new RepeatType();
     }
 
     /**
-     * Create an instance of {@link AudioOnlyInstanceType.FullAccessAttendees }
+     * Create an instance of {@link CreateTeleconferenceSession }
      * 
      */
-    public AudioOnlyInstanceType.FullAccessAttendees createAudioOnlyInstanceTypeFullAccessAttendees() {
-        return new AudioOnlyInstanceType.FullAccessAttendees();
+    public CreateTeleconferenceSession createCreateTeleconferenceSession() {
+        return new CreateTeleconferenceSession();
+    }
+
+    /**
+     * Create an instance of {@link AudioOnlyType }
+     * 
+     */
+    public AudioOnlyType createAudioOnlyType() {
+        return new AudioOnlyType();
+    }
+
+    /**
+     * Create an instance of {@link SetTeleconferenceSession }
+     * 
+     */
+    public SetTeleconferenceSession createSetTeleconferenceSession() {
+        return new SetTeleconferenceSession();
+    }
+
+    /**
+     * Create an instance of {@link CreateTeleconferenceSessionResponse }
+     * 
+     */
+    public CreateTeleconferenceSessionResponse createCreateTeleconferenceSessionResponse() {
+        return new CreateTeleconferenceSessionResponse();
+    }
+
+    /**
+     * Create an instance of {@link TeleconfInstanceType }
+     * 
+     */
+    public TeleconfInstanceType createTeleconfInstanceType() {
+        return new TeleconfInstanceType();
     }
 
 }

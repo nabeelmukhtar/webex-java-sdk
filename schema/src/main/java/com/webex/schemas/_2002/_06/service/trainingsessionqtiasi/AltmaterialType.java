@@ -1,6 +1,23 @@
+/*
+ * Copyright 2010-2011 Nabeel Mukhtar 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and
+ * limitations under the License. 
+ * 
+ */
 
 package com.webex.schemas._2002._06.service.trainingsessionqtiasi;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -46,20 +63,23 @@ import javax.xml.bind.annotation.XmlType;
     "qticomment",
     "mattextOrMatemtextOrMatimage"
 })
-public class AltmaterialType {
+public class AltmaterialType
+    implements Serializable
+{
 
+    private final static long serialVersionUID = 2461660169443089969L;
     protected QticommentType qticomment;
     @XmlElements({
-        @XmlElement(name = "matemtext", type = MatemtextType.class),
-        @XmlElement(name = "mattext", type = MattextType.class),
-        @XmlElement(name = "mat_extension", type = MatExtensionType.class),
-        @XmlElement(name = "matapplication", type = MatapplicationType.class),
-        @XmlElement(name = "matvideo", type = MatvideoType.class),
-        @XmlElement(name = "matimage", type = MatimageType.class),
-        @XmlElement(name = "matapplet", type = MatappletType.class),
-        @XmlElement(name = "matref", type = MatrefType.class),
         @XmlElement(name = "mataudio", type = MataudioType.class),
-        @XmlElement(name = "matbreak", type = MatbreakType.class)
+        @XmlElement(name = "mat_extension", type = MatExtensionType.class),
+        @XmlElement(name = "matimage", type = MatimageType.class),
+        @XmlElement(name = "matapplication", type = MatapplicationType.class),
+        @XmlElement(name = "mattext", type = MattextType.class),
+        @XmlElement(name = "matapplet", type = MatappletType.class),
+        @XmlElement(name = "matvideo", type = MatvideoType.class),
+        @XmlElement(name = "matbreak", type = MatbreakType.class),
+        @XmlElement(name = "matref", type = MatrefType.class),
+        @XmlElement(name = "matemtext", type = MatemtextType.class)
     })
     protected List<Object> mattextOrMatemtextOrMatimage;
 
@@ -105,16 +125,16 @@ public class AltmaterialType {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link MatemtextType }
-     * {@link MattextType }
-     * {@link MatExtensionType }
-     * {@link MatapplicationType }
-     * {@link MatvideoType }
-     * {@link MatimageType }
-     * {@link MatappletType }
-     * {@link MatrefType }
      * {@link MataudioType }
+     * {@link MatExtensionType }
+     * {@link MatimageType }
+     * {@link MatapplicationType }
+     * {@link MattextType }
+     * {@link MatappletType }
+     * {@link MatvideoType }
      * {@link MatbreakType }
+     * {@link MatrefType }
+     * {@link MatemtextType }
      * 
      * 
      */

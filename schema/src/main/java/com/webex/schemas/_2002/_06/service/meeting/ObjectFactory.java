@@ -1,3 +1,19 @@
+/*
+ * Copyright 2010-2011 Nabeel Mukhtar 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and
+ * limitations under the License. 
+ * 
+ */
 
 package com.webex.schemas._2002._06.service.meeting;
 
@@ -30,147 +46,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ParticipantsType.Attendees }
-     * 
-     */
-    public ParticipantsType.Attendees createParticipantsTypeAttendees() {
-        return new ParticipantsType.Attendees();
-    }
-
-    /**
-     * Create an instance of {@link DateScopeType }
-     * 
-     */
-    public DateScopeType createDateScopeType() {
-        return new DateScopeType();
-    }
-
-    /**
-     * Create an instance of {@link GetjoinurlMeeting }
-     * 
-     */
-    public GetjoinurlMeeting createGetjoinurlMeeting() {
-        return new GetjoinurlMeeting();
-    }
-
-    /**
-     * Create an instance of {@link GethosturlMeetingResponse }
-     * 
-     */
-    public GethosturlMeetingResponse createGethosturlMeetingResponse() {
-        return new GethosturlMeetingResponse();
-    }
-
-    /**
-     * Create an instance of {@link SetMeetingResponse }
-     * 
-     */
-    public SetMeetingResponse createSetMeetingResponse() {
-        return new SetMeetingResponse();
-    }
-
-    /**
-     * Create an instance of {@link DelMeeting }
-     * 
-     */
-    public DelMeeting createDelMeeting() {
-        return new DelMeeting();
-    }
-
-    /**
-     * Create an instance of {@link RegistrationFieldType }
-     * 
-     */
-    public RegistrationFieldType createRegistrationFieldType() {
-        return new RegistrationFieldType();
-    }
-
-    /**
-     * Create an instance of {@link GethosturlMeeting }
-     * 
-     */
-    public GethosturlMeeting createGethosturlMeeting() {
-        return new GethosturlMeeting();
-    }
-
-    /**
-     * Create an instance of {@link SetMeeting }
-     * 
-     */
-    public SetMeeting createSetMeeting() {
-        return new SetMeeting();
-    }
-
-    /**
-     * Create an instance of {@link RemindType.Emails }
-     * 
-     */
-    public RemindType.Emails createRemindTypeEmails() {
-        return new RemindType.Emails();
-    }
-
-    /**
-     * Create an instance of {@link ParticipantsType }
-     * 
-     */
-    public ParticipantsType createParticipantsType() {
-        return new ParticipantsType();
-    }
-
-    /**
      * Create an instance of {@link RemindType }
      * 
      */
     public RemindType createRemindType() {
         return new RemindType();
-    }
-
-    /**
-     * Create an instance of {@link CreateMeeting }
-     * 
-     */
-    public CreateMeeting createCreateMeeting() {
-        return new CreateMeeting();
-    }
-
-    /**
-     * Create an instance of {@link TelephonyType }
-     * 
-     */
-    public TelephonyType createTelephonyType() {
-        return new TelephonyType();
-    }
-
-    /**
-     * Create an instance of {@link EnableOptionsType }
-     * 
-     */
-    public EnableOptionsType createEnableOptionsType() {
-        return new EnableOptionsType();
-    }
-
-    /**
-     * Create an instance of {@link MeetingSummaryInstanceType }
-     * 
-     */
-    public MeetingSummaryInstanceType createMeetingSummaryInstanceType() {
-        return new MeetingSummaryInstanceType();
-    }
-
-    /**
-     * Create an instance of {@link MetaDataType }
-     * 
-     */
-    public MetaDataType createMetaDataType() {
-        return new MetaDataType();
-    }
-
-    /**
-     * Create an instance of {@link LstsummaryMeetingResponse }
-     * 
-     */
-    public LstsummaryMeetingResponse createLstsummaryMeetingResponse() {
-        return new LstsummaryMeetingResponse();
     }
 
     /**
@@ -190,6 +70,54 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link RepeatType }
+     * 
+     */
+    public RepeatType createRepeatType() {
+        return new RepeatType();
+    }
+
+    /**
+     * Create an instance of {@link DateScopeType }
+     * 
+     */
+    public DateScopeType createDateScopeType() {
+        return new DateScopeType();
+    }
+
+    /**
+     * Create an instance of {@link GethosturlMeeting }
+     * 
+     */
+    public GethosturlMeeting createGethosturlMeeting() {
+        return new GethosturlMeeting();
+    }
+
+    /**
+     * Create an instance of {@link MetaDataType }
+     * 
+     */
+    public MetaDataType createMetaDataType() {
+        return new MetaDataType();
+    }
+
+    /**
+     * Create an instance of {@link SetMeeting }
+     * 
+     */
+    public SetMeeting createSetMeeting() {
+        return new SetMeeting();
+    }
+
+    /**
+     * Create an instance of {@link DelMeeting }
+     * 
+     */
+    public DelMeeting createDelMeeting() {
+        return new DelMeeting();
+    }
+
+    /**
      * Create an instance of {@link CreateMeetingResponse }
      * 
      */
@@ -198,35 +126,59 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link LstsummaryMeeting }
+     * Create an instance of {@link GetjoinurlMeetingResponse }
      * 
      */
-    public LstsummaryMeeting createLstsummaryMeeting() {
-        return new LstsummaryMeeting();
+    public GetjoinurlMeetingResponse createGetjoinurlMeetingResponse() {
+        return new GetjoinurlMeetingResponse();
     }
 
     /**
-     * Create an instance of {@link LstMeetingResponse }
+     * Create an instance of {@link ParticipantsType.Attendees }
      * 
      */
-    public LstMeetingResponse createLstMeetingResponse() {
-        return new LstMeetingResponse();
+    public ParticipantsType.Attendees createParticipantsTypeAttendees() {
+        return new ParticipantsType.Attendees();
     }
 
     /**
-     * Create an instance of {@link StandardFieldsType }
+     * Create an instance of {@link SetMeetingResponse }
      * 
      */
-    public StandardFieldsType createStandardFieldsType() {
-        return new StandardFieldsType();
+    public SetMeetingResponse createSetMeetingResponse() {
+        return new SetMeetingResponse();
     }
 
     /**
-     * Create an instance of {@link MeetingInstanceType }
+     * Create an instance of {@link RegistrationFieldType }
      * 
      */
-    public MeetingInstanceType createMeetingInstanceType() {
-        return new MeetingInstanceType();
+    public RegistrationFieldType createRegistrationFieldType() {
+        return new RegistrationFieldType();
+    }
+
+    /**
+     * Create an instance of {@link TelephonyType }
+     * 
+     */
+    public TelephonyType createTelephonyType() {
+        return new TelephonyType();
+    }
+
+    /**
+     * Create an instance of {@link GetjoinurlMeeting }
+     * 
+     */
+    public GetjoinurlMeeting createGetjoinurlMeeting() {
+        return new GetjoinurlMeeting();
+    }
+
+    /**
+     * Create an instance of {@link MeetingType }
+     * 
+     */
+    public MeetingType createMeetingType() {
+        return new MeetingType();
     }
 
     /**
@@ -238,11 +190,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link MeetingType }
+     * Create an instance of {@link LstsummaryMeetingResponse }
      * 
      */
-    public MeetingType createMeetingType() {
-        return new MeetingType();
+    public LstsummaryMeetingResponse createLstsummaryMeetingResponse() {
+        return new LstsummaryMeetingResponse();
+    }
+
+    /**
+     * Create an instance of {@link RepeatType.DayInWeek }
+     * 
+     */
+    public RepeatType.DayInWeek createRepeatTypeDayInWeek() {
+        return new RepeatType.DayInWeek();
     }
 
     /**
@@ -262,19 +222,35 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetMeetingResponse }
+     * Create an instance of {@link EnableOptionsType }
      * 
      */
-    public GetMeetingResponse createGetMeetingResponse() {
-        return new GetMeetingResponse();
+    public EnableOptionsType createEnableOptionsType() {
+        return new EnableOptionsType();
     }
 
     /**
-     * Create an instance of {@link RepeatType }
+     * Create an instance of {@link ParticipantsType }
      * 
      */
-    public RepeatType createRepeatType() {
-        return new RepeatType();
+    public ParticipantsType createParticipantsType() {
+        return new ParticipantsType();
+    }
+
+    /**
+     * Create an instance of {@link MeetingInstanceType }
+     * 
+     */
+    public MeetingInstanceType createMeetingInstanceType() {
+        return new MeetingInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link MeetingSummaryInstanceType }
+     * 
+     */
+    public MeetingSummaryInstanceType createMeetingSummaryInstanceType() {
+        return new MeetingSummaryInstanceType();
     }
 
     /**
@@ -286,27 +262,67 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetjoinurlMeetingResponse }
-     * 
-     */
-    public GetjoinurlMeetingResponse createGetjoinurlMeetingResponse() {
-        return new GetjoinurlMeetingResponse();
-    }
-
-    /**
-     * Create an instance of {@link RepeatType.DayInWeek }
-     * 
-     */
-    public RepeatType.DayInWeek createRepeatTypeDayInWeek() {
-        return new RepeatType.DayInWeek();
-    }
-
-    /**
      * Create an instance of {@link ScheduleType }
      * 
      */
     public ScheduleType createScheduleType() {
         return new ScheduleType();
+    }
+
+    /**
+     * Create an instance of {@link LstMeetingResponse }
+     * 
+     */
+    public LstMeetingResponse createLstMeetingResponse() {
+        return new LstMeetingResponse();
+    }
+
+    /**
+     * Create an instance of {@link LstsummaryMeeting }
+     * 
+     */
+    public LstsummaryMeeting createLstsummaryMeeting() {
+        return new LstsummaryMeeting();
+    }
+
+    /**
+     * Create an instance of {@link GethosturlMeetingResponse }
+     * 
+     */
+    public GethosturlMeetingResponse createGethosturlMeetingResponse() {
+        return new GethosturlMeetingResponse();
+    }
+
+    /**
+     * Create an instance of {@link RemindType.Emails }
+     * 
+     */
+    public RemindType.Emails createRemindTypeEmails() {
+        return new RemindType.Emails();
+    }
+
+    /**
+     * Create an instance of {@link StandardFieldsType }
+     * 
+     */
+    public StandardFieldsType createStandardFieldsType() {
+        return new StandardFieldsType();
+    }
+
+    /**
+     * Create an instance of {@link GetMeetingResponse }
+     * 
+     */
+    public GetMeetingResponse createGetMeetingResponse() {
+        return new GetMeetingResponse();
+    }
+
+    /**
+     * Create an instance of {@link CreateMeeting }
+     * 
+     */
+    public CreateMeeting createCreateMeeting() {
+        return new CreateMeeting();
     }
 
 }

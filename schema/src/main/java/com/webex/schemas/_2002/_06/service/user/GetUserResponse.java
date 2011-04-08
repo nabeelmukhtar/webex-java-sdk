@@ -1,13 +1,32 @@
+/*
+ * Copyright 2010-2011 Nabeel Mukhtar 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and
+ * limitations under the License. 
+ * 
+ */
 
 package com.webex.schemas._2002._06.service.user;
 
-import java.math.BigInteger;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
@@ -80,13 +99,18 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class GetUserResponse
     extends UserInstanceType
+    implements Serializable
 {
 
+    private final static long serialVersionUID = 2461660169443089969L;
     protected SalesCenterInstanceType salesCenter;
     protected Boolean peExpired;
     protected Boolean peActive;
     protected Boolean passwordExpires;
-    protected BigInteger passwordDaysLeft;
+    @XmlElement(type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlSchemaType(name = "integer")
+    protected Long passwordDaysLeft;
     protected GetUserResponse.SchedulingTemplates schedulingTemplates;
     protected List<GetUserResponse.ServiceSessionTypes> serviceSessionTypes;
     protected GetUserResponse.ScheduleFor scheduleFor;
@@ -192,10 +216,10 @@ public class GetUserResponse
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getPasswordDaysLeft() {
+    public Long getPasswordDaysLeft() {
         return passwordDaysLeft;
     }
 
@@ -204,10 +228,10 @@ public class GetUserResponse
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setPasswordDaysLeft(BigInteger value) {
+    public void setPasswordDaysLeft(Long value) {
         this.passwordDaysLeft = value;
     }
 
@@ -312,8 +336,11 @@ public class GetUserResponse
     @XmlType(name = "", propOrder = {
         "webExID"
     })
-    public static class ScheduleFor {
+    public static class ScheduleFor
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         protected List<String> webExID;
 
         /**
@@ -371,8 +398,11 @@ public class GetUserResponse
     @XmlType(name = "", propOrder = {
         "sessionTemplate"
     })
-    public static class SchedulingTemplates {
+    public static class SchedulingTemplates
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         protected List<SessionTemplateSummaryType> sessionTemplate;
 
         /**
@@ -432,8 +462,11 @@ public class GetUserResponse
         "label",
         "value"
     })
-    public static class ServiceSessionTypes {
+    public static class ServiceSessionTypes
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         @XmlElement(required = true)
         protected String label;
         @XmlElement(required = true)

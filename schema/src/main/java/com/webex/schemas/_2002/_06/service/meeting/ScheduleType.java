@@ -1,12 +1,30 @@
+/*
+ * Copyright 2010-2011 Nabeel Mukhtar 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and
+ * limitations under the License. 
+ * 
+ */
 
 package com.webex.schemas._2002._06.service.meeting;
 
-import java.math.BigInteger;
+import java.io.Serializable;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import com.webex.schemas._2002._06.common.TimeZoneType;
+import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
@@ -80,8 +98,11 @@ import com.webex.schemas._2002._06.common.TimeZoneType;
     "joinNotifyURL",
     "joinTeleconfBeforeHost"
 })
-public class ScheduleType {
+public class ScheduleType
+    implements Serializable
+{
 
+    private final static long serialVersionUID = 2461660169443089969L;
     protected String startDate;
     @XmlElement(defaultValue = "-1")
     protected Long timeZoneID;
@@ -96,7 +117,9 @@ public class ScheduleType {
     protected Long showFileInterVal;
     protected Long entryExitTone;
     protected String extURL;
-    protected BigInteger extNotifyTime;
+    @XmlElement(type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    protected Long extNotifyTime;
     protected String joinNotifyURL;
     protected Boolean joinTeleconfBeforeHost;
 
@@ -417,10 +440,10 @@ public class ScheduleType {
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getExtNotifyTime() {
+    public Long getExtNotifyTime() {
         return extNotifyTime;
     }
 
@@ -429,10 +452,10 @@ public class ScheduleType {
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setExtNotifyTime(BigInteger value) {
+    public void setExtNotifyTime(Long value) {
         this.extNotifyTime = value;
     }
 

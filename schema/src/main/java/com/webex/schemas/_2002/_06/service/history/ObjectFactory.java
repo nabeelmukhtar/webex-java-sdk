@@ -1,3 +1,19 @@
+/*
+ * Copyright 2010-2011 Nabeel Mukhtar 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and
+ * limitations under the License. 
+ * 
+ */
 
 package com.webex.schemas._2002._06.service.history;
 
@@ -30,6 +46,102 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link EventAttendeeHistoryInstanceType }
+     * 
+     */
+    public EventAttendeeHistoryInstanceType createEventAttendeeHistoryInstanceType() {
+        return new EventAttendeeHistoryInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link LstsalesSessionHistory }
+     * 
+     */
+    public LstsalesSessionHistory createLstsalesSessionHistory() {
+        return new LstsalesSessionHistory();
+    }
+
+    /**
+     * Create an instance of {@link SourceType }
+     * 
+     */
+    public SourceType createSourceType() {
+        return new SourceType();
+    }
+
+    /**
+     * Create an instance of {@link MeetingUsageHistoryInstanceType }
+     * 
+     */
+    public MeetingUsageHistoryInstanceType createMeetingUsageHistoryInstanceType() {
+        return new MeetingUsageHistoryInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link LstsalesSessionHistoryResponse }
+     * 
+     */
+    public LstsalesSessionHistoryResponse createLstsalesSessionHistoryResponse() {
+        return new LstsalesSessionHistoryResponse();
+    }
+
+    /**
+     * Create an instance of {@link TrainSessionHistoryInstanceType }
+     * 
+     */
+    public TrainSessionHistoryInstanceType createTrainSessionHistoryInstanceType() {
+        return new TrainSessionHistoryInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link LstsupportsessionHistoryResponse }
+     * 
+     */
+    public LstsupportsessionHistoryResponse createLstsupportsessionHistoryResponse() {
+        return new LstsupportsessionHistoryResponse();
+    }
+
+    /**
+     * Create an instance of {@link RegQandAType }
+     * 
+     */
+    public RegQandAType createRegQandAType() {
+        return new RegQandAType();
+    }
+
+    /**
+     * Create an instance of {@link LstsupportattendeeHistory }
+     * 
+     */
+    public LstsupportattendeeHistory createLstsupportattendeeHistory() {
+        return new LstsupportattendeeHistory();
+    }
+
+    /**
+     * Create an instance of {@link LstrecordaccessHistoryResponse }
+     * 
+     */
+    public LstrecordaccessHistoryResponse createLstrecordaccessHistoryResponse() {
+        return new LstrecordaccessHistoryResponse();
+    }
+
+    /**
+     * Create an instance of {@link OrderTCHisType }
+     * 
+     */
+    public OrderTCHisType createOrderTCHisType() {
+        return new OrderTCHisType();
+    }
+
+    /**
+     * Create an instance of {@link LstsupportattendeeHistoryResponse }
+     * 
+     */
+    public LstsupportattendeeHistoryResponse createLstsupportattendeeHistoryResponse() {
+        return new LstsupportattendeeHistoryResponse();
+    }
+
+    /**
      * Create an instance of {@link StartTimeValueType }
      * 
      */
@@ -38,27 +150,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link CreationTimeScopeType }
+     * Create an instance of {@link ViewTimeScopeType }
      * 
      */
-    public CreationTimeScopeType createCreationTimeScopeType() {
-        return new CreationTimeScopeType();
+    public ViewTimeScopeType createViewTimeScopeType() {
+        return new ViewTimeScopeType();
     }
 
     /**
-     * Create an instance of {@link EventSessionHistoryInstanceType }
+     * Create an instance of {@link LsteventsessionHistory }
      * 
      */
-    public EventSessionHistoryInstanceType createEventSessionHistoryInstanceType() {
-        return new EventSessionHistoryInstanceType();
+    public LsteventsessionHistory createLsteventsessionHistory() {
+        return new LsteventsessionHistory();
     }
 
     /**
-     * Create an instance of {@link RecordAccessHistoryInstanceType }
+     * Create an instance of {@link LsttrainingattendeeHistoryResponse }
      * 
      */
-    public RecordAccessHistoryInstanceType createRecordAccessHistoryInstanceType() {
-        return new RecordAccessHistoryInstanceType();
+    public LsttrainingattendeeHistoryResponse createLsttrainingattendeeHistoryResponse() {
+        return new LsttrainingattendeeHistoryResponse();
     }
 
     /**
@@ -70,19 +182,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link LsttrainingattendeeHistory }
+     * Create an instance of {@link SalesSessionHistoryInstanceType }
      * 
      */
-    public LsttrainingattendeeHistory createLsttrainingattendeeHistory() {
-        return new LsttrainingattendeeHistory();
+    public SalesSessionHistoryInstanceType createSalesSessionHistoryInstanceType() {
+        return new SalesSessionHistoryInstanceType();
     }
 
     /**
-     * Create an instance of {@link OrderEcAttenHisType }
+     * Create an instance of {@link LstsupportsessionHistory }
      * 
      */
-    public OrderEcAttenHisType createOrderEcAttenHisType() {
-        return new OrderEcAttenHisType();
+    public LstsupportsessionHistory createLstsupportsessionHistory() {
+        return new LstsupportsessionHistory();
     }
 
     /**
@@ -102,67 +214,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link LstmeetingusageHistory }
+     * Create an instance of {@link MeetingAttendeeHistoryInstanceType }
      * 
      */
-    public LstmeetingusageHistory createLstmeetingusageHistory() {
-        return new LstmeetingusageHistory();
+    public MeetingAttendeeHistoryInstanceType createMeetingAttendeeHistoryInstanceType() {
+        return new MeetingAttendeeHistoryInstanceType();
     }
 
     /**
-     * Create an instance of {@link LstsupportsessionHistoryResponse }
+     * Create an instance of {@link CreationTimeScopeType }
      * 
      */
-    public LstsupportsessionHistoryResponse createLstsupportsessionHistoryResponse() {
-        return new LstsupportsessionHistoryResponse();
-    }
-
-    /**
-     * Create an instance of {@link ViewTimeScopeType }
-     * 
-     */
-    public ViewTimeScopeType createViewTimeScopeType() {
-        return new ViewTimeScopeType();
-    }
-
-    /**
-     * Create an instance of {@link LstsalesSessionHistoryResponse }
-     * 
-     */
-    public LstsalesSessionHistoryResponse createLstsalesSessionHistoryResponse() {
-        return new LstsalesSessionHistoryResponse();
-    }
-
-    /**
-     * Create an instance of {@link RegQandAType }
-     * 
-     */
-    public RegQandAType createRegQandAType() {
-        return new RegQandAType();
-    }
-
-    /**
-     * Create an instance of {@link SupportAttendeeHistoryInstanceType }
-     * 
-     */
-    public SupportAttendeeHistoryInstanceType createSupportAttendeeHistoryInstanceType() {
-        return new SupportAttendeeHistoryInstanceType();
-    }
-
-    /**
-     * Create an instance of {@link EndTimeScopeType }
-     * 
-     */
-    public EndTimeScopeType createEndTimeScopeType() {
-        return new EndTimeScopeType();
-    }
-
-    /**
-     * Create an instance of {@link SalesAttendeeHistoryInstanceType }
-     * 
-     */
-    public SalesAttendeeHistoryInstanceType createSalesAttendeeHistoryInstanceType() {
-        return new SalesAttendeeHistoryInstanceType();
+    public CreationTimeScopeType createCreationTimeScopeType() {
+        return new CreationTimeScopeType();
     }
 
     /**
@@ -174,123 +238,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link LstrecordaccessDetailHistoryResponse }
-     * 
-     */
-    public LstrecordaccessDetailHistoryResponse createLstrecordaccessDetailHistoryResponse() {
-        return new LstrecordaccessDetailHistoryResponse();
-    }
-
-    /**
-     * Create an instance of {@link SalesSessionHistoryInstanceType }
-     * 
-     */
-    public SalesSessionHistoryInstanceType createSalesSessionHistoryInstanceType() {
-        return new SalesSessionHistoryInstanceType();
-    }
-
-    /**
-     * Create an instance of {@link TrainingAttendeeHistoryInstanceType }
-     * 
-     */
-    public TrainingAttendeeHistoryInstanceType createTrainingAttendeeHistoryInstanceType() {
-        return new TrainingAttendeeHistoryInstanceType();
-    }
-
-    /**
-     * Create an instance of {@link LstrecordaccessHistoryResponse }
-     * 
-     */
-    public LstrecordaccessHistoryResponse createLstrecordaccessHistoryResponse() {
-        return new LstrecordaccessHistoryResponse();
-    }
-
-    /**
-     * Create an instance of {@link LstsupportsessionHistory }
-     * 
-     */
-    public LstsupportsessionHistory createLstsupportsessionHistory() {
-        return new LstsupportsessionHistory();
-    }
-
-    /**
-     * Create an instance of {@link TrainSessionHistoryInstanceType }
-     * 
-     */
-    public TrainSessionHistoryInstanceType createTrainSessionHistoryInstanceType() {
-        return new TrainSessionHistoryInstanceType();
-    }
-
-    /**
-     * Create an instance of {@link SourceType }
-     * 
-     */
-    public SourceType createSourceType() {
-        return new SourceType();
-    }
-
-    /**
-     * Create an instance of {@link OrderMCHisType }
-     * 
-     */
-    public OrderMCHisType createOrderMCHisType() {
-        return new OrderMCHisType();
-    }
-
-    /**
-     * Create an instance of {@link LstmeetingusageHistoryResponse }
-     * 
-     */
-    public LstmeetingusageHistoryResponse createLstmeetingusageHistoryResponse() {
-        return new LstmeetingusageHistoryResponse();
-    }
-
-    /**
-     * Create an instance of {@link OrderScHisType }
-     * 
-     */
-    public OrderScHisType createOrderScHisType() {
-        return new OrderScHisType();
-    }
-
-    /**
-     * Create an instance of {@link LsteventattendeeHistory }
-     * 
-     */
-    public LsteventattendeeHistory createLsteventattendeeHistory() {
-        return new LsteventattendeeHistory();
-    }
-
-    /**
      * Create an instance of {@link LstmeetingattendeeHistory }
      * 
      */
     public LstmeetingattendeeHistory createLstmeetingattendeeHistory() {
         return new LstmeetingattendeeHistory();
-    }
-
-    /**
-     * Create an instance of {@link SupportSessionHistoryInstanceType }
-     * 
-     */
-    public SupportSessionHistoryInstanceType createSupportSessionHistoryInstanceType() {
-        return new SupportSessionHistoryInstanceType();
-    }
-
-    /**
-     * Create an instance of {@link OrderTCAttenHisType }
-     * 
-     */
-    public OrderTCAttenHisType createOrderTCAttenHisType() {
-        return new OrderTCAttenHisType();
-    }
-
-    /**
-     * Create an instance of {@link LsttrainingattendeeHistoryResponse }
-     * 
-     */
-    public LsttrainingattendeeHistoryResponse createLsttrainingattendeeHistoryResponse() {
-        return new LsttrainingattendeeHistoryResponse();
     }
 
     /**
@@ -302,131 +254,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link RegFieldsType }
+     * Create an instance of {@link SupportSessionHistoryInstanceType }
      * 
      */
-    public RegFieldsType createRegFieldsType() {
-        return new RegFieldsType();
+    public SupportSessionHistoryInstanceType createSupportSessionHistoryInstanceType() {
+        return new SupportSessionHistoryInstanceType();
     }
 
     /**
-     * Create an instance of {@link EventAttendeeHistoryInstanceType }
+     * Create an instance of {@link TrainingAttendeeHistoryInstanceType }
      * 
      */
-    public EventAttendeeHistoryInstanceType createEventAttendeeHistoryInstanceType() {
-        return new EventAttendeeHistoryInstanceType();
-    }
-
-    /**
-     * Create an instance of {@link LsteventsessionHistory }
-     * 
-     */
-    public LsteventsessionHistory createLsteventsessionHistory() {
-        return new LsteventsessionHistory();
-    }
-
-    /**
-     * Create an instance of {@link CustomFieldsType }
-     * 
-     */
-    public CustomFieldsType createCustomFieldsType() {
-        return new CustomFieldsType();
-    }
-
-    /**
-     * Create an instance of {@link OrderEcHisType }
-     * 
-     */
-    public OrderEcHisType createOrderEcHisType() {
-        return new OrderEcHisType();
-    }
-
-    /**
-     * Create an instance of {@link LsttrainingsessionHistoryResponse }
-     * 
-     */
-    public LsttrainingsessionHistoryResponse createLsttrainingsessionHistoryResponse() {
-        return new LsttrainingsessionHistoryResponse();
-    }
-
-    /**
-     * Create an instance of {@link LstsalesAttendeeHistory }
-     * 
-     */
-    public LstsalesAttendeeHistory createLstsalesAttendeeHistory() {
-        return new LstsalesAttendeeHistory();
-    }
-
-    /**
-     * Create an instance of {@link LsttrainingsessionHistory }
-     * 
-     */
-    public LsttrainingsessionHistory createLsttrainingsessionHistory() {
-        return new LsttrainingsessionHistory();
-    }
-
-    /**
-     * Create an instance of {@link LstmeetingattendeeHistoryResponse }
-     * 
-     */
-    public LstmeetingattendeeHistoryResponse createLstmeetingattendeeHistoryResponse() {
-        return new LstmeetingattendeeHistoryResponse();
-    }
-
-    /**
-     * Create an instance of {@link OrderTCHisType }
-     * 
-     */
-    public OrderTCHisType createOrderTCHisType() {
-        return new OrderTCHisType();
-    }
-
-    /**
-     * Create an instance of {@link MeetingAttendeeHistoryInstanceType }
-     * 
-     */
-    public MeetingAttendeeHistoryInstanceType createMeetingAttendeeHistoryInstanceType() {
-        return new MeetingAttendeeHistoryInstanceType();
-    }
-
-    /**
-     * Create an instance of {@link MeetingUsageHistoryInstanceType }
-     * 
-     */
-    public MeetingUsageHistoryInstanceType createMeetingUsageHistoryInstanceType() {
-        return new MeetingUsageHistoryInstanceType();
-    }
-
-    /**
-     * Create an instance of {@link LstsalesSessionHistory }
-     * 
-     */
-    public LstsalesSessionHistory createLstsalesSessionHistory() {
-        return new LstsalesSessionHistory();
-    }
-
-    /**
-     * Create an instance of {@link LstsupportattendeeHistory }
-     * 
-     */
-    public LstsupportattendeeHistory createLstsupportattendeeHistory() {
-        return new LstsupportattendeeHistory();
-    }
-
-    /**
-     * Create an instance of {@link LstsupportattendeeHistoryResponse }
-     * 
-     */
-    public LstsupportattendeeHistoryResponse createLstsupportattendeeHistoryResponse() {
-        return new LstsupportattendeeHistoryResponse();
-    }
-
-    /**
-     * Create an instance of {@link LsteventattendeeHistoryResponse }
-     * 
-     */
-    public LsteventattendeeHistoryResponse createLsteventattendeeHistoryResponse() {
-        return new LsteventattendeeHistoryResponse();
+    public TrainingAttendeeHistoryInstanceType createTrainingAttendeeHistoryInstanceType() {
+        return new TrainingAttendeeHistoryInstanceType();
     }
 
     /**
@@ -438,11 +278,163 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link SupportAttendeeHistoryInstanceType }
+     * 
+     */
+    public SupportAttendeeHistoryInstanceType createSupportAttendeeHistoryInstanceType() {
+        return new SupportAttendeeHistoryInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link LstsalesAttendeeHistoryResponse }
+     * 
+     */
+    public LstsalesAttendeeHistoryResponse createLstsalesAttendeeHistoryResponse() {
+        return new LstsalesAttendeeHistoryResponse();
+    }
+
+    /**
+     * Create an instance of {@link RecordAccessHistoryInstanceType }
+     * 
+     */
+    public RecordAccessHistoryInstanceType createRecordAccessHistoryInstanceType() {
+        return new RecordAccessHistoryInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link LsttrainingattendeeHistory }
+     * 
+     */
+    public LsttrainingattendeeHistory createLsttrainingattendeeHistory() {
+        return new LsttrainingattendeeHistory();
+    }
+
+    /**
+     * Create an instance of {@link LsteventattendeeHistoryResponse }
+     * 
+     */
+    public LsteventattendeeHistoryResponse createLsteventattendeeHistoryResponse() {
+        return new LsteventattendeeHistoryResponse();
+    }
+
+    /**
+     * Create an instance of {@link LstrecordaccessDetailHistoryResponse }
+     * 
+     */
+    public LstrecordaccessDetailHistoryResponse createLstrecordaccessDetailHistoryResponse() {
+        return new LstrecordaccessDetailHistoryResponse();
+    }
+
+    /**
+     * Create an instance of {@link OrderScHisType }
+     * 
+     */
+    public OrderScHisType createOrderScHisType() {
+        return new OrderScHisType();
+    }
+
+    /**
+     * Create an instance of {@link CustomFieldsType }
+     * 
+     */
+    public CustomFieldsType createCustomFieldsType() {
+        return new CustomFieldsType();
+    }
+
+    /**
+     * Create an instance of {@link LstsalesAttendeeHistory }
+     * 
+     */
+    public LstsalesAttendeeHistory createLstsalesAttendeeHistory() {
+        return new LstsalesAttendeeHistory();
+    }
+
+    /**
+     * Create an instance of {@link LsttrainingsessionHistoryResponse }
+     * 
+     */
+    public LsttrainingsessionHistoryResponse createLsttrainingsessionHistoryResponse() {
+        return new LsttrainingsessionHistoryResponse();
+    }
+
+    /**
      * Create an instance of {@link StartTimeScopeType }
      * 
      */
     public StartTimeScopeType createStartTimeScopeType() {
         return new StartTimeScopeType();
+    }
+
+    /**
+     * Create an instance of {@link RegFieldsType }
+     * 
+     */
+    public RegFieldsType createRegFieldsType() {
+        return new RegFieldsType();
+    }
+
+    /**
+     * Create an instance of {@link SalesAttendeeHistoryInstanceType }
+     * 
+     */
+    public SalesAttendeeHistoryInstanceType createSalesAttendeeHistoryInstanceType() {
+        return new SalesAttendeeHistoryInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link EndTimeScopeType }
+     * 
+     */
+    public EndTimeScopeType createEndTimeScopeType() {
+        return new EndTimeScopeType();
+    }
+
+    /**
+     * Create an instance of {@link LsteventattendeeHistory }
+     * 
+     */
+    public LsteventattendeeHistory createLsteventattendeeHistory() {
+        return new LsteventattendeeHistory();
+    }
+
+    /**
+     * Create an instance of {@link OrderTCAttenHisType }
+     * 
+     */
+    public OrderTCAttenHisType createOrderTCAttenHisType() {
+        return new OrderTCAttenHisType();
+    }
+
+    /**
+     * Create an instance of {@link LsttrainingsessionHistory }
+     * 
+     */
+    public LsttrainingsessionHistory createLsttrainingsessionHistory() {
+        return new LsttrainingsessionHistory();
+    }
+
+    /**
+     * Create an instance of {@link LstmeetingusageHistoryResponse }
+     * 
+     */
+    public LstmeetingusageHistoryResponse createLstmeetingusageHistoryResponse() {
+        return new LstmeetingusageHistoryResponse();
+    }
+
+    /**
+     * Create an instance of {@link LstmeetingusageHistory }
+     * 
+     */
+    public LstmeetingusageHistory createLstmeetingusageHistory() {
+        return new LstmeetingusageHistory();
+    }
+
+    /**
+     * Create an instance of {@link OrderEcAttenHisType }
+     * 
+     */
+    public OrderEcAttenHisType createOrderEcAttenHisType() {
+        return new OrderEcAttenHisType();
     }
 
     /**
@@ -454,6 +446,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link OrderEcHisType }
+     * 
+     */
+    public OrderEcHisType createOrderEcHisType() {
+        return new OrderEcHisType();
+    }
+
+    /**
      * Create an instance of {@link OrderMCAttenHisType }
      * 
      */
@@ -462,11 +462,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link LstsalesAttendeeHistoryResponse }
+     * Create an instance of {@link OrderMCHisType }
      * 
      */
-    public LstsalesAttendeeHistoryResponse createLstsalesAttendeeHistoryResponse() {
-        return new LstsalesAttendeeHistoryResponse();
+    public OrderMCHisType createOrderMCHisType() {
+        return new OrderMCHisType();
+    }
+
+    /**
+     * Create an instance of {@link LstmeetingattendeeHistoryResponse }
+     * 
+     */
+    public LstmeetingattendeeHistoryResponse createLstmeetingattendeeHistoryResponse() {
+        return new LstmeetingattendeeHistoryResponse();
+    }
+
+    /**
+     * Create an instance of {@link EventSessionHistoryInstanceType }
+     * 
+     */
+    public EventSessionHistoryInstanceType createEventSessionHistoryInstanceType() {
+        return new EventSessionHistoryInstanceType();
     }
 
 }

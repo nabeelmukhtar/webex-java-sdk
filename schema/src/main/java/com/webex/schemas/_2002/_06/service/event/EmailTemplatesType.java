@@ -1,6 +1,23 @@
+/*
+ * Copyright 2010-2011 Nabeel Mukhtar 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and
+ * limitations under the License. 
+ * 
+ */
 
 package com.webex.schemas._2002._06.service.event;
 
+import java.io.Serializable;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -167,8 +184,11 @@ import javax.xml.bind.annotation.XmlType;
     "followUpMsgs",
     "iCalendar"
 })
-public class EmailTemplatesType {
+public class EmailTemplatesType
+    implements Serializable
+{
 
+    private final static long serialVersionUID = 2461660169443089969L;
     @XmlElement(defaultValue = "TEXT")
     protected FormatType format;
     protected EmailTemplatesType.InvitationMsgs invitationMsgs;
@@ -388,8 +408,11 @@ public class EmailTemplatesType {
         "rejectedEmail",
         "eventUpdatedEmail"
     })
-    public static class EnrollmentMsgs {
+    public static class EnrollmentMsgs
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         protected EmailTemplatesType.EnrollmentMsgs.PendingEmail pendingEmail;
         protected EmailTemplatesType.EnrollmentMsgs.AcceptedEmail acceptedEmail;
         protected EmailTemplatesType.EnrollmentMsgs.RejectedEmail rejectedEmail;
@@ -517,8 +540,10 @@ public class EmailTemplatesType {
         })
         public static class AcceptedEmail
             extends EmailTemplateType
+            implements Serializable
         {
 
+            private final static long serialVersionUID = 2461660169443089969L;
             @XmlElement(defaultValue = "true")
             protected Boolean send;
 
@@ -569,8 +594,10 @@ public class EmailTemplatesType {
         @XmlType(name = "")
         public static class EventUpdatedEmail
             extends EmailTemplateType
+            implements Serializable
         {
 
+            private final static long serialVersionUID = 2461660169443089969L;
 
         }
 
@@ -600,8 +627,10 @@ public class EmailTemplatesType {
         })
         public static class PendingEmail
             extends EmailTemplateType
+            implements Serializable
         {
 
+            private final static long serialVersionUID = 2461660169443089969L;
             @XmlElement(defaultValue = "true")
             protected Boolean send;
 
@@ -657,8 +686,10 @@ public class EmailTemplatesType {
         })
         public static class RejectedEmail
             extends EmailTemplateType
+            implements Serializable
         {
 
+            private final static long serialVersionUID = 2461660169443089969L;
             @XmlElement(defaultValue = "true")
             protected Boolean send;
 
@@ -738,8 +769,11 @@ public class EmailTemplatesType {
         "thanksForAttending",
         "absenteeFollowUp"
     })
-    public static class FollowUpMsgs {
+    public static class FollowUpMsgs
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         protected EmailTemplatesType.FollowUpMsgs.ThanksForAttending thanksForAttending;
         protected EmailTemplatesType.FollowUpMsgs.AbsenteeFollowUp absenteeFollowUp;
 
@@ -819,8 +853,10 @@ public class EmailTemplatesType {
         })
         public static class AbsenteeFollowUp
             extends EmailTemplateType
+            implements Serializable
         {
 
+            private final static long serialVersionUID = 2461660169443089969L;
             @XmlElement(defaultValue = "true")
             protected Boolean send;
             protected String sendDateTime;
@@ -903,8 +939,10 @@ public class EmailTemplatesType {
         })
         public static class ThanksForAttending
             extends EmailTemplateType
+            implements Serializable
         {
 
+            private final static long serialVersionUID = 2461660169443089969L;
             protected Boolean send;
             protected String sendDateTime;
 
@@ -986,8 +1024,11 @@ public class EmailTemplatesType {
         "participantsEmail",
         "panelistsEmail"
     })
-    public static class InvitationMsgs {
+    public static class InvitationMsgs
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         protected EmailTemplateType participantsEmail;
         protected EmailTemplateType panelistsEmail;
 
@@ -1089,8 +1130,11 @@ public class EmailTemplatesType {
         "firstReminder",
         "secondReminder"
     })
-    public static class ReminderMsgs {
+    public static class ReminderMsgs
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         protected EmailTemplatesType.ReminderMsgs.FirstReminder firstReminder;
         protected EmailTemplatesType.ReminderMsgs.SecondReminder secondReminder;
 
@@ -1170,8 +1214,10 @@ public class EmailTemplatesType {
         })
         public static class FirstReminder
             extends EmailTemplateType
+            implements Serializable
         {
 
+            private final static long serialVersionUID = 2461660169443089969L;
             protected Boolean send;
             protected String sendDateTime;
 
@@ -1253,8 +1299,10 @@ public class EmailTemplatesType {
         })
         public static class SecondReminder
             extends EmailTemplateType
+            implements Serializable
         {
 
+            private final static long serialVersionUID = 2461660169443089969L;
             protected Boolean send;
             protected String sendDateTime;
 

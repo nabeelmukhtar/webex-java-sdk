@@ -1,11 +1,30 @@
+/*
+ * Copyright 2010-2011 Nabeel Mukhtar 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and
+ * limitations under the License. 
+ * 
+ */
 
 package com.webex.schemas._2002._06.service;
 
-import java.math.BigInteger;
+import java.io.Serializable;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
@@ -35,24 +54,33 @@ import javax.xml.bind.annotation.XmlType;
     "returned",
     "startFrom"
 })
-public class MatchingRecordsType {
+public class MatchingRecordsType
+    implements Serializable
+{
 
-    @XmlElement(required = true)
-    protected BigInteger total;
-    @XmlElement(required = true)
-    protected BigInteger returned;
-    @XmlElement(required = true)
-    protected BigInteger startFrom;
+    private final static long serialVersionUID = 2461660169443089969L;
+    @XmlElement(required = true, type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlSchemaType(name = "integer")
+    protected Long total;
+    @XmlElement(required = true, type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlSchemaType(name = "integer")
+    protected Long returned;
+    @XmlElement(required = true, type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlSchemaType(name = "integer")
+    protected Long startFrom;
 
     /**
      * Gets the value of the total property.
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getTotal() {
+    public Long getTotal() {
         return total;
     }
 
@@ -61,10 +89,10 @@ public class MatchingRecordsType {
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setTotal(BigInteger value) {
+    public void setTotal(Long value) {
         this.total = value;
     }
 
@@ -73,10 +101,10 @@ public class MatchingRecordsType {
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getReturned() {
+    public Long getReturned() {
         return returned;
     }
 
@@ -85,10 +113,10 @@ public class MatchingRecordsType {
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setReturned(BigInteger value) {
+    public void setReturned(Long value) {
         this.returned = value;
     }
 
@@ -97,10 +125,10 @@ public class MatchingRecordsType {
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getStartFrom() {
+    public Long getStartFrom() {
         return startFrom;
     }
 
@@ -109,10 +137,10 @@ public class MatchingRecordsType {
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setStartFrom(BigInteger value) {
+    public void setStartFrom(Long value) {
         this.startFrom = value;
     }
 

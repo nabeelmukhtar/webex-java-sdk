@@ -1,11 +1,31 @@
+/*
+ * Copyright 2010-2011 Nabeel Mukhtar 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and
+ * limitations under the License. 
+ * 
+ */
 
 package com.webex.schemas._2002._06.service.event;
 
-import java.math.BigInteger;
+import java.io.Serializable;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import com.webex.schemas._2002._06.common.AttendeeListViewType;
+import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
@@ -53,13 +73,21 @@ import com.webex.schemas._2002._06.common.AttendeeListViewType;
     "emailInvitations",
     "registration"
 })
-public class ExtOptionsType {
+public class ExtOptionsType
+    implements Serializable
+{
 
-    protected BigInteger enrollmentNumber;
+    private final static long serialVersionUID = 2461660169443089969L;
+    @XmlElement(type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlSchemaType(name = "integer")
+    protected Long enrollmentNumber;
     protected String destinationURL;
     protected Boolean allowInviteFriend;
     protected AttendeeListViewType viewAttendeeList;
-    protected BigInteger participantLimit;
+    @XmlElement(type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    protected Long participantLimit;
     protected Boolean displayQuickStartHost;
     protected Boolean voip;
     protected Boolean emailInvitations;
@@ -70,10 +98,10 @@ public class ExtOptionsType {
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getEnrollmentNumber() {
+    public Long getEnrollmentNumber() {
         return enrollmentNumber;
     }
 
@@ -82,10 +110,10 @@ public class ExtOptionsType {
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setEnrollmentNumber(BigInteger value) {
+    public void setEnrollmentNumber(Long value) {
         this.enrollmentNumber = value;
     }
 
@@ -166,10 +194,10 @@ public class ExtOptionsType {
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getParticipantLimit() {
+    public Long getParticipantLimit() {
         return participantLimit;
     }
 
@@ -178,10 +206,10 @@ public class ExtOptionsType {
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setParticipantLimit(BigInteger value) {
+    public void setParticipantLimit(Long value) {
         this.participantLimit = value;
     }
 

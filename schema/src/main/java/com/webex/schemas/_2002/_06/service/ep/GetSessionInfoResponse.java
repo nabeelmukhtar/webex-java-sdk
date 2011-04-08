@@ -1,18 +1,37 @@
+/*
+ * Copyright 2010-2011 Nabeel Mukhtar 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and
+ * limitations under the License. 
+ * 
+ */
 
 package com.webex.schemas._2002._06.service.ep;
 
-import java.math.BigInteger;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import com.webex.schemas._2002._06.common.PhoneLabelNumType;
 import com.webex.schemas._2002._06.common.ServiceTypeType;
 import com.webex.schemas._2002._06.service.BodyContentType;
 import com.webex.schemas._2002._06.service.CallInNumType;
 import com.webex.schemas._2002._06.service.meeting.TelephonySupportType;
+import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
@@ -255,8 +274,10 @@ import com.webex.schemas._2002._06.service.meeting.TelephonySupportType;
 })
 public class GetSessionInfoResponse
     extends BodyContentType
+    implements Serializable
 {
 
+    private final static long serialVersionUID = 2461660169443089969L;
     protected String status;
     protected List<String> presenter;
     protected String panelistsInfo;
@@ -742,8 +763,11 @@ public class GetSessionInfoResponse
         "registrationURL",
         "passwordReq"
     })
-    public static class AccessControl {
+    public static class AccessControl
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         protected String sessionPassword;
         @XmlElement(required = true)
         protected ListingType listStatus;
@@ -889,8 +913,11 @@ public class GetSessionInfoResponse
     @XmlType(name = "", propOrder = {
         "joinRequiresAccount"
     })
-    public static class AttendeeOptions {
+    public static class AttendeeOptions
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         protected Boolean joinRequiresAccount;
 
         /**
@@ -957,8 +984,11 @@ public class GetSessionInfoResponse
         "webExId",
         "alternateHost"
     })
-    public static class Host {
+    public static class Host
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         @XmlElement(required = true)
         protected String firstName;
         @XmlElement(required = true)
@@ -1134,8 +1164,11 @@ public class GetSessionInfoResponse
         "imageURL",
         "document"
     })
-    public static class Material {
+    public static class Material
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         protected String imageURL;
         protected List<GetSessionInfoResponse.Material.Document> document;
 
@@ -1220,14 +1253,19 @@ public class GetSessionInfoResponse
             "url",
             "size"
         })
-        public static class Document {
+        public static class Document
+            implements Serializable
+        {
 
+            private final static long serialVersionUID = 2461660169443089969L;
             @XmlElement(required = true)
             protected String name;
             @XmlElement(name = "URL", required = true)
             protected String url;
-            @XmlElement(required = true)
-            protected BigInteger size;
+            @XmlElement(required = true, type = String.class)
+            @XmlJavaTypeAdapter(Adapter1 .class)
+            @XmlSchemaType(name = "integer")
+            protected Long size;
 
             /**
              * Gets the value of the name property.
@@ -1282,10 +1320,10 @@ public class GetSessionInfoResponse
              * 
              * @return
              *     possible object is
-             *     {@link BigInteger }
+             *     {@link String }
              *     
              */
-            public BigInteger getSize() {
+            public Long getSize() {
                 return size;
             }
 
@@ -1294,10 +1332,10 @@ public class GetSessionInfoResponse
              * 
              * @param value
              *     allowed object is
-             *     {@link BigInteger }
+             *     {@link String }
              *     
              */
-            public void setSize(BigInteger value) {
+            public void setSize(Long value) {
                 this.size = value;
             }
 
@@ -1361,12 +1399,17 @@ public class GetSessionInfoResponse
         "opportunity",
         "isRecurring"
     })
-    public static class MetaData {
+    public static class MetaData
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         @XmlElement(required = true)
         protected String confName;
-        @XmlElement(required = true, defaultValue = "-1")
-        protected BigInteger sessionType;
+        @XmlElement(required = true, type = String.class, defaultValue = "-1")
+        @XmlJavaTypeAdapter(Adapter1 .class)
+        @XmlSchemaType(name = "integer")
+        protected Long sessionType;
         @XmlElement(required = true)
         protected ServiceTypeType serviceType;
         protected String agenda;
@@ -1404,10 +1447,10 @@ public class GetSessionInfoResponse
          * 
          * @return
          *     possible object is
-         *     {@link BigInteger }
+         *     {@link String }
          *     
          */
-        public BigInteger getSessionType() {
+        public Long getSessionType() {
             return sessionType;
         }
 
@@ -1416,10 +1459,10 @@ public class GetSessionInfoResponse
          * 
          * @param value
          *     allowed object is
-         *     {@link BigInteger }
+         *     {@link String }
          *     
          */
-        public void setSessionType(BigInteger value) {
+        public void setSessionType(Long value) {
             this.sessionType = value;
         }
 
@@ -1589,12 +1632,17 @@ public class GetSessionInfoResponse
         "duration",
         "timeZone"
     })
-    public static class Schedule {
+    public static class Schedule
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         @XmlElement(required = true)
         protected String startDate;
-        @XmlElement(required = true)
-        protected BigInteger duration;
+        @XmlElement(required = true, type = String.class)
+        @XmlJavaTypeAdapter(Adapter1 .class)
+        @XmlSchemaType(name = "integer")
+        protected Long duration;
         @XmlElement(required = true)
         protected String timeZone;
 
@@ -1627,10 +1675,10 @@ public class GetSessionInfoResponse
          * 
          * @return
          *     possible object is
-         *     {@link BigInteger }
+         *     {@link String }
          *     
          */
-        public BigInteger getDuration() {
+        public Long getDuration() {
             return duration;
         }
 
@@ -1639,10 +1687,10 @@ public class GetSessionInfoResponse
          * 
          * @param value
          *     allowed object is
-         *     {@link BigInteger }
+         *     {@link String }
          *     
          */
-        public void setDuration(BigInteger value) {
+        public void setDuration(Long value) {
             this.duration = value;
         }
 
@@ -1743,8 +1791,11 @@ public class GetSessionInfoResponse
         "mpProfileNumber",
         "isMPAudio"
     })
-    public static class Telephony {
+    public static class Telephony
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         @XmlElement(required = true)
         protected TelephonySupportType telephonySupport;
         protected String extTelephonyDescription;
@@ -2078,8 +2129,10 @@ public class GetSessionInfoResponse
         })
         public static class CallInNum
             extends CallInNumType
+            implements Serializable
         {
 
+            private final static long serialVersionUID = 2461660169443089969L;
             protected String backupTollNum;
 
             /**
@@ -2142,8 +2195,11 @@ public class GetSessionInfoResponse
             "subscriberAccessLabel",
             "globalCallInNumbersLabel"
         })
-        public static class Labels {
+        public static class Labels
+            implements Serializable
+        {
 
+            private final static long serialVersionUID = 2461660169443089969L;
             @XmlElement(required = true)
             protected String tollFreeCallInLabel;
             @XmlElement(required = true)
@@ -2335,8 +2391,11 @@ public class GetSessionInfoResponse
         "action",
         "actionURL"
     })
-    public static class Test {
+    public static class Test
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         @XmlElement(required = true)
         protected String title;
         @XmlElement(required = true)

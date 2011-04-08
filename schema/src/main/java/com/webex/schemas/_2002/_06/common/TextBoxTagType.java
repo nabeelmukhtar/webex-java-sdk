@@ -1,10 +1,30 @@
+/*
+ * Copyright 2010-2011 Nabeel Mukhtar 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and
+ * limitations under the License. 
+ * 
+ */
 
 package com.webex.schemas._2002._06.common;
 
-import java.math.BigInteger;
+import java.io.Serializable;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
@@ -44,13 +64,22 @@ import javax.xml.bind.annotation.XmlType;
     "isRequired",
     "isDisplay"
 })
-public class TextBoxTagType {
+public class TextBoxTagType
+    implements Serializable
+{
 
+    private final static long serialVersionUID = 2461660169443089969L;
     protected Long fieldID;
     protected String lable;
     protected boolean isMultiLines;
-    protected BigInteger width;
-    protected BigInteger height;
+    @XmlElement(type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlSchemaType(name = "integer")
+    protected Long width;
+    @XmlElement(type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlSchemaType(name = "integer")
+    protected Long height;
     protected String value;
     protected boolean isRequired;
     protected boolean isDisplay;
@@ -124,10 +153,10 @@ public class TextBoxTagType {
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getWidth() {
+    public Long getWidth() {
         return width;
     }
 
@@ -136,10 +165,10 @@ public class TextBoxTagType {
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setWidth(BigInteger value) {
+    public void setWidth(Long value) {
         this.width = value;
     }
 
@@ -148,10 +177,10 @@ public class TextBoxTagType {
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getHeight() {
+    public Long getHeight() {
         return height;
     }
 
@@ -160,10 +189,10 @@ public class TextBoxTagType {
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setHeight(BigInteger value) {
+    public void setHeight(Long value) {
         this.height = value;
     }
 

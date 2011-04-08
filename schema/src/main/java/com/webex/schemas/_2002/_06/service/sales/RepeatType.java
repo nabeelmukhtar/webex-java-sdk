@@ -1,13 +1,33 @@
+/*
+ * Copyright 2010-2011 Nabeel Mukhtar 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and
+ * limitations under the License. 
+ * 
+ */
 
 package com.webex.schemas._2002._06.service.sales;
 
-import java.math.BigInteger;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import com.webex.schemas._2002._06.common.DayOfWeekType;
+import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
@@ -78,16 +98,31 @@ import com.webex.schemas._2002._06.common.DayOfWeekType;
     "weekInMonth",
     "monthInYear"
 })
-public class RepeatType {
+public class RepeatType
+    implements Serializable
+{
 
+    private final static long serialVersionUID = 2461660169443089969L;
     protected RecurrenceType repeatType;
-    protected BigInteger endAfter;
+    @XmlElement(type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlSchemaType(name = "integer")
+    protected Long endAfter;
     protected String expirationDate;
-    protected BigInteger interval;
+    @XmlElement(type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    @XmlSchemaType(name = "integer")
+    protected Long interval;
     protected RepeatType.DayInWeek dayInWeek;
-    protected Integer dayInMonth;
-    protected Integer weekInMonth;
-    protected Integer monthInYear;
+    @XmlElement(type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    protected Long dayInMonth;
+    @XmlElement(type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    protected Long weekInMonth;
+    @XmlElement(type = String.class)
+    @XmlJavaTypeAdapter(Adapter1 .class)
+    protected Long monthInYear;
 
     /**
      * Gets the value of the repeatType property.
@@ -118,10 +153,10 @@ public class RepeatType {
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getEndAfter() {
+    public Long getEndAfter() {
         return endAfter;
     }
 
@@ -130,10 +165,10 @@ public class RepeatType {
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setEndAfter(BigInteger value) {
+    public void setEndAfter(Long value) {
         this.endAfter = value;
     }
 
@@ -166,10 +201,10 @@ public class RepeatType {
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getInterval() {
+    public Long getInterval() {
         return interval;
     }
 
@@ -178,10 +213,10 @@ public class RepeatType {
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setInterval(BigInteger value) {
+    public void setInterval(Long value) {
         this.interval = value;
     }
 
@@ -214,10 +249,10 @@ public class RepeatType {
      * 
      * @return
      *     possible object is
-     *     {@link Integer }
+     *     {@link String }
      *     
      */
-    public Integer getDayInMonth() {
+    public Long getDayInMonth() {
         return dayInMonth;
     }
 
@@ -226,10 +261,10 @@ public class RepeatType {
      * 
      * @param value
      *     allowed object is
-     *     {@link Integer }
+     *     {@link String }
      *     
      */
-    public void setDayInMonth(Integer value) {
+    public void setDayInMonth(Long value) {
         this.dayInMonth = value;
     }
 
@@ -238,10 +273,10 @@ public class RepeatType {
      * 
      * @return
      *     possible object is
-     *     {@link Integer }
+     *     {@link String }
      *     
      */
-    public Integer getWeekInMonth() {
+    public Long getWeekInMonth() {
         return weekInMonth;
     }
 
@@ -250,10 +285,10 @@ public class RepeatType {
      * 
      * @param value
      *     allowed object is
-     *     {@link Integer }
+     *     {@link String }
      *     
      */
-    public void setWeekInMonth(Integer value) {
+    public void setWeekInMonth(Long value) {
         this.weekInMonth = value;
     }
 
@@ -262,10 +297,10 @@ public class RepeatType {
      * 
      * @return
      *     possible object is
-     *     {@link Integer }
+     *     {@link String }
      *     
      */
-    public Integer getMonthInYear() {
+    public Long getMonthInYear() {
         return monthInYear;
     }
 
@@ -274,10 +309,10 @@ public class RepeatType {
      * 
      * @param value
      *     allowed object is
-     *     {@link Integer }
+     *     {@link String }
      *     
      */
-    public void setMonthInYear(Integer value) {
+    public void setMonthInYear(Long value) {
         this.monthInYear = value;
     }
 
@@ -305,8 +340,11 @@ public class RepeatType {
     @XmlType(name = "", propOrder = {
         "day"
     })
-    public static class DayInWeek {
+    public static class DayInWeek
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         protected List<DayOfWeekType> day;
 
         /**

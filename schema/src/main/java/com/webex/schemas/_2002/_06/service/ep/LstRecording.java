@@ -1,6 +1,23 @@
+/*
+ * Copyright 2010-2011 Nabeel Mukhtar 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and
+ * limitations under the License. 
+ * 
+ */
 
 package com.webex.schemas._2002._06.service.ep;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -58,8 +75,10 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 })
 public class LstRecording
     extends BodyContentType
+    implements Serializable
 {
 
+    private final static long serialVersionUID = 2461660169443089969L;
     protected ListControlType listControl;
     protected CreateTimeScopeType createTimeScope;
     protected String hostWebExID;
@@ -261,8 +280,11 @@ public class LstRecording
     @XmlType(name = "", propOrder = {
         "serviceType"
     })
-    public static class ServiceTypes {
+    public static class ServiceTypes
+        implements Serializable
+    {
 
+        private final static long serialVersionUID = 2461660169443089969L;
         protected List<ServiceTypeType> serviceType;
 
         /**
