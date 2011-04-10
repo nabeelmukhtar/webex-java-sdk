@@ -80,7 +80,6 @@ public class WebExJaxbService extends BaseWebExService {
      * 
      * @return the string
      */
-    @SuppressWarnings("unchecked")
 	protected String marshallObject(Object element) {
         try {
             StringWriter writer = new StringWriter();
