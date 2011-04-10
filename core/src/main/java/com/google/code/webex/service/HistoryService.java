@@ -16,10 +16,22 @@
  */
 package com.google.code.webex.service;
 
+import java.util.List;
+
+import com.webex.schemas._2002._06.service.history.EndTimeScopeType;
+import com.webex.schemas._2002._06.service.history.EventAttendeeHistoryInstanceType;
+import com.webex.schemas._2002._06.service.history.EventSessionHistoryInstanceType;
+import com.webex.schemas._2002._06.service.history.MeetingAttendeeHistoryInstanceType;
+import com.webex.schemas._2002._06.service.history.StartTimeScopeType;
+import com.webex.schemas._2002._06.service.history.StartTimeValueType;
+
 /**
  * @author nmukhtar
  *
  */
 public interface HistoryService extends WebExService {
+	public List<EventAttendeeHistoryInstanceType> getEventAttendeeHistory(StartTimeScopeType startTimeScope, EndTimeScopeType endTimeScope, Long sessionKey, String confName, Long confID, Boolean attendeeStats);
+	public List<EventSessionHistoryInstanceType> getEventSessionHistory(String hostWebExID, String confName, StartTimeValueType startTimeScope, EndTimeScopeType endTimeScope, Long sessionKey, Long confID, Integer timeZoneID);
+	public List<MeetingAttendeeHistoryInstanceType> getMeetingAttendeeHistory(Long meetingKey, StartTimeValueType startTimeScope, EndTimeScopeType endTimeScope, String confName, Long confID, Boolean inclAudioOnly);
 
 }

@@ -16,7 +16,31 @@
  */
 package com.google.code.webex.service.impl;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.google.code.webex.service.MeetingAttendeeService;
+import com.google.code.webex.service.util.ApplicationConstants;
+import com.google.code.webex.service.util.WebExUrls;
+import com.google.code.webex.service.util.WebExUrls.WebExUrlBuilder;
+import com.webex.schemas._2002._06.service.BodyContentType;
+import com.webex.schemas._2002._06.service.MessageType;
+import com.webex.schemas._2002._06.service.attendee.AttendeeEmailType;
+import com.webex.schemas._2002._06.service.attendee.AttendeeInstanceType;
+import com.webex.schemas._2002._06.service.attendee.CreateMeetingAttendee;
+import com.webex.schemas._2002._06.service.attendee.CreateMeetingAttendeeResponse;
+import com.webex.schemas._2002._06.service.attendee.DelMeetingAttendee;
+import com.webex.schemas._2002._06.service.attendee.EnrollSessionType;
+import com.webex.schemas._2002._06.service.attendee.GetEnrollmentInfo;
+import com.webex.schemas._2002._06.service.attendee.GetEnrollmentInfoResponse;
+import com.webex.schemas._2002._06.service.attendee.JoinStatusType;
+import com.webex.schemas._2002._06.service.attendee.LstMeetingAttendee;
+import com.webex.schemas._2002._06.service.attendee.LstMeetingAttendeeResponse;
+import com.webex.schemas._2002._06.service.attendee.ObjectFactory;
+import com.webex.schemas._2002._06.service.attendee.RegisterAttendeeType;
+import com.webex.schemas._2002._06.service.attendee.RegisterMeetingAttendee;
+import com.webex.schemas._2002._06.service.attendee.RegisterMeetingAttendeeResponse;
+import com.webex.schemas._2002._06.service.attendee.RegisterMeetingAttendeeResponse.Register;
 
 public class MeetingAttendeeServiceImpl extends WebExJaxbService implements
 	MeetingAttendeeService {
@@ -24,5 +48,102 @@ public class MeetingAttendeeServiceImpl extends WebExJaxbService implements
 	public MeetingAttendeeServiceImpl(String webExId, String password,
 			Long siteId, String siteName, String partnerId) {
 		super(webExId, password, siteId, siteName, partnerId);
+	}
+
+	@Override
+	public CreateMeetingAttendeeResponse createMeetingAttendee(
+			CreateMeetingAttendee attendee) {
+		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
+		
+		MessageType request = createRequest(attendee);
+		MessageType response = unmarshallObject(MessageType.class, callApiMethod(builder.buildUrl(), marshallObject(request), ApplicationConstants.CONTENT_TYPE_XML, HttpMethod.POST, 200));
+		
+		List<BodyContentType> bodyContents = response.getBody().getBodyContent();
+		if (!bodyContents.isEmpty()) {
+			return ((CreateMeetingAttendeeResponse) bodyContents.get(0));			
+		}
+		
+		return null;
+	}
+
+	@Override
+	public void deleteMeetingAttendees(List<Long> attendeeIDs,
+			List<AttendeeEmailType> attendeeEmail, Boolean sendEmail) {
+		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
+		ObjectFactory factory = new ObjectFactory();
+		DelMeetingAttendee delMeetingAttendee = factory.createDelMeetingAttendee();
+		delMeetingAttendee.getAttendeeID().addAll(attendeeIDs);
+		delMeetingAttendee.getAttendeeEmail().addAll(attendeeEmail);
+		delMeetingAttendee.setSendEmail(sendEmail);
+		
+		MessageType request = createRequest(delMeetingAttendee);
+		MessageType response = unmarshallObject(MessageType.class, callApiMethod(builder.buildUrl(), marshallObject(request), ApplicationConstants.CONTENT_TYPE_XML, HttpMethod.POST, 200));
+		
+		List<BodyContentType> bodyContents = response.getBody().getBodyContent();
+		if (!bodyContents.isEmpty()) {
+		}
+	}
+
+	@Override
+	public List<EnrollSessionType> getEnrollmentInformation(Long confID,
+			Long sessionKey) {
+		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
+		ObjectFactory factory = new ObjectFactory();
+		GetEnrollmentInfo enrollmentInfo = factory.createGetEnrollmentInfo();
+		enrollmentInfo.setConfID(confID);
+		enrollmentInfo.setSessionKey(sessionKey);
+		
+		MessageType request = createRequest(enrollmentInfo);
+		MessageType response = unmarshallObject(MessageType.class, callApiMethod(builder.buildUrl(), marshallObject(request), ApplicationConstants.CONTENT_TYPE_XML, HttpMethod.POST, 200));
+		
+		List<BodyContentType> bodyContents = response.getBody().getBodyContent();
+		if (!bodyContents.isEmpty()) {
+			return ((GetEnrollmentInfoResponse) bodyContents.get(0)).getSession();			
+		}
+		
+		return new ArrayList<EnrollSessionType>();
+	}
+
+	@Override
+	public List<AttendeeInstanceType> getMeetingAttendees(Long meetingKey,
+			Long sessionKey, JoinStatusType joinStatus, Long confID,
+			Boolean inclHistory) {
+		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
+		ObjectFactory factory = new ObjectFactory();
+		LstMeetingAttendee attendee = factory.createLstMeetingAttendee();
+		attendee.setMeetingKey(meetingKey);
+		attendee.setJoinStatus(joinStatus);
+		attendee.setConfID(confID);
+		attendee.setSessionKey(sessionKey);
+		attendee.setInclHistory(inclHistory);
+		
+		MessageType request = createRequest(attendee);
+		MessageType response = unmarshallObject(MessageType.class, callApiMethod(builder.buildUrl(), marshallObject(request), ApplicationConstants.CONTENT_TYPE_XML, HttpMethod.POST, 200));
+		
+		List<BodyContentType> bodyContents = response.getBody().getBodyContent();
+		if (!bodyContents.isEmpty()) {
+			return ((LstMeetingAttendeeResponse) bodyContents.get(0)).getAttendee();			
+		}
+		
+		return new ArrayList<AttendeeInstanceType>();
+	}
+
+	@Override
+	public List<Register> registerMeetingAttendees(
+			List<RegisterAttendeeType> attendees) {
+		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
+		ObjectFactory factory = new ObjectFactory();
+		RegisterMeetingAttendee attendee = factory.createRegisterMeetingAttendee();
+		attendee.getAttendees().addAll(attendees);
+		
+		MessageType request = createRequest(attendee);
+		MessageType response = unmarshallObject(MessageType.class, callApiMethod(builder.buildUrl(), marshallObject(request), ApplicationConstants.CONTENT_TYPE_XML, HttpMethod.POST, 200));
+		
+		List<BodyContentType> bodyContents = response.getBody().getBodyContent();
+		if (!bodyContents.isEmpty()) {
+			return ((RegisterMeetingAttendeeResponse) bodyContents.get(0)).getRegister();			
+		}
+		
+		return new ArrayList<Register>();
 	}
 }

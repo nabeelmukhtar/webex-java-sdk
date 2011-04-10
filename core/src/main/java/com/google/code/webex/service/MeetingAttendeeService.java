@@ -16,10 +16,26 @@
  */
 package com.google.code.webex.service;
 
+import java.util.List;
+
+import com.webex.schemas._2002._06.service.attendee.AttendeeEmailType;
+import com.webex.schemas._2002._06.service.attendee.AttendeeInstanceType;
+import com.webex.schemas._2002._06.service.attendee.CreateMeetingAttendee;
+import com.webex.schemas._2002._06.service.attendee.CreateMeetingAttendeeResponse;
+import com.webex.schemas._2002._06.service.attendee.EnrollSessionType;
+import com.webex.schemas._2002._06.service.attendee.JoinStatusType;
+import com.webex.schemas._2002._06.service.attendee.RegisterAttendeeType;
+import com.webex.schemas._2002._06.service.attendee.RegisterMeetingAttendeeResponse;
+
 /**
  * @author nmukhtar
  *
  */
 public interface MeetingAttendeeService extends WebExService {
+	public CreateMeetingAttendeeResponse createMeetingAttendee(CreateMeetingAttendee attendee);
+	public void deleteMeetingAttendees(List<Long> attendeeIDs, List<AttendeeEmailType> attendeeEmail, Boolean sendEmail);
+	public List<EnrollSessionType> getEnrollmentInformation(Long confID, Long sessionKey);
+	public List<AttendeeInstanceType> getMeetingAttendees(Long meetingKey, Long sessionKey, JoinStatusType joinStatus, Long confID, Boolean inclHistory);
+	public List<RegisterMeetingAttendeeResponse.Register> registerMeetingAttendees(List<RegisterAttendeeType> attendees);
 
 }
