@@ -16,7 +16,22 @@
  */
 package com.google.code.webex.service.impl;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.google.code.webex.service.SiteService;
+import com.google.code.webex.service.util.ApplicationConstants;
+import com.google.code.webex.service.util.WebExUrls;
+import com.google.code.webex.service.util.WebExUrls.WebExUrlBuilder;
+import com.webex.schemas._2002._06.service.BodyContentType;
+import com.webex.schemas._2002._06.service.MessageType;
+import com.webex.schemas._2002._06.service.site.GetSite;
+import com.webex.schemas._2002._06.service.site.GetSiteResponse;
+import com.webex.schemas._2002._06.service.site.LstTimeZone;
+import com.webex.schemas._2002._06.service.site.LstTimeZoneResponse;
+import com.webex.schemas._2002._06.service.site.ObjectFactory;
+import com.webex.schemas._2002._06.service.site.SiteType;
+import com.webex.schemas._2002._06.service.site.TimeZoneType;
 
 public class SiteServiceImpl extends WebExJaxbService implements
 	SiteService {
@@ -24,5 +39,40 @@ public class SiteServiceImpl extends WebExJaxbService implements
 	public SiteServiceImpl(String webExId, String password,
 			Long siteId, String siteName, String partnerId) {
 		super(webExId, password, siteId, siteName, partnerId);
+	}
+
+	@Override
+	public SiteType getSite(boolean eventCenter) {
+		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
+		ObjectFactory factory = new ObjectFactory();
+		GetSite getSite = factory.createGetSite();
+		getSite.setReturnSettings(factory.createGetSiteReturnSettings());
+		getSite.getReturnSettings().setEventCenter(eventCenter);
+		MessageType request = createRequest(getSite);
+		MessageType response = unmarshallObject(MessageType.class, callApiMethod(builder.buildUrl(), marshallObject(request), ApplicationConstants.CONTENT_TYPE_XML, HttpMethod.POST, 200));
+		
+		List<BodyContentType> bodyContents = response.getBody().getBodyContent();
+		if (!bodyContents.isEmpty()) {
+			return ((GetSiteResponse) bodyContents.get(0)).getSiteInstance();			
+		}
+		
+		return null;
+	}
+
+	@Override
+	public List<TimeZoneType> getTimezones(List<Long> timeZoneID, String date) {
+		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
+		ObjectFactory factory = new ObjectFactory();
+		LstTimeZone getTimeZones = factory.createLstTimeZone();
+		getTimeZones.getTimeZoneID().addAll(timeZoneID);
+		getTimeZones.setDate(date);
+		MessageType request = createRequest(getTimeZones);
+		MessageType response = unmarshallObject(MessageType.class, callApiMethod(builder.buildUrl(), marshallObject(request), ApplicationConstants.CONTENT_TYPE_XML, HttpMethod.POST, 200));
+		
+		List<BodyContentType> bodyContents = response.getBody().getBodyContent();
+		if (!bodyContents.isEmpty()) {
+			return ((LstTimeZoneResponse) bodyContents.get(0)).getTimeZone();			
+		}
+		return new ArrayList<TimeZoneType>();
 	}
 }

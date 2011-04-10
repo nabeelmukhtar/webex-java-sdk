@@ -16,10 +16,16 @@
  */
 package com.google.code.webex.service;
 
+import java.util.List;
+
+import com.webex.schemas._2002._06.service.site.SiteType;
+import com.webex.schemas._2002._06.service.site.TimeZoneType;
+
 /**
  * @author nmukhtar
  *
  */
 public interface SiteService extends WebExService {
-
+	public SiteType getSite(boolean eventCenter);
+	public List<TimeZoneType> getTimezones(List<Long> timeZoneID, String date);
 }

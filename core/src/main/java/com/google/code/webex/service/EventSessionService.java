@@ -16,10 +16,30 @@
  */
 package com.google.code.webex.service;
 
+import java.util.List;
+
+import com.webex.schemas._2002._06.service.event.CreateEvent;
+import com.webex.schemas._2002._06.service.event.CreateEventResponse;
+import com.webex.schemas._2002._06.service.event.DateScopeType;
+import com.webex.schemas._2002._06.service.event.EventSummaryInstanceType;
+import com.webex.schemas._2002._06.service.event.GetEventResponse;
+import com.webex.schemas._2002._06.service.event.ImageTypeType;
+import com.webex.schemas._2002._06.service.event.ProgramSummaryType;
+import com.webex.schemas._2002._06.service.event.RecordedEventsType;
+import com.webex.schemas._2002._06.service.event.SetEvent;
+
 /**
  * @author nmukhtar
  *
  */
 public interface EventSessionService extends WebExService {
-
+	public CreateEventResponse createEvent(CreateEvent event);
+	public void deleteEvent(long sessionKey);
+	public GetEventResponse getEvent(long sessionKey);
+	public List<RecordedEventsType> getRecordedEvents(DateScopeType dateScope, String hostWebExID, Long programID);
+	public List<EventSummaryInstanceType> getEventSummaries(DateScopeType dateScope, Long sessionKey, String hostWebExID, Long programID, Boolean attendeeStats);
+	public List<ProgramSummaryType> getProgramSummaries(Long programID);
+	public List<String> sendInvitationEmails(long sessionKey, Boolean attendees, Boolean panelists);
+	public void setEvent(SetEvent event);
+	public void uploadEventImage(long sessionKey, ImageTypeType imageType, byte[] imageData);
 }

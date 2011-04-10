@@ -16,10 +16,16 @@
  */
 package com.google.code.webex.service;
 
+import java.util.List;
+
+import com.webex.schemas._2002._06.service.meetingtype.GetMeetingTypeResponse;
+import com.webex.schemas._2002._06.service.meetingtype.MeetingTypeInstanceType;
+
 /**
  * @author nmukhtar
  *
  */
 public interface MeetingTypeService extends WebExService {
-
+	public GetMeetingTypeResponse getMeetingType(Long meetingTypeID);
+	public List<MeetingTypeInstanceType> getMeetingTypes(List<Long> meetingTypeIDs);
 }

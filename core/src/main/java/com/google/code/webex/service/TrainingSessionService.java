@@ -16,10 +16,39 @@
  */
 package com.google.code.webex.service;
 
+import java.util.List;
+
+import com.webex.schemas._2002._06.service.session.DateScopeType;
+import com.webex.schemas._2002._06.service.trainingsession.AvailabilityLabType;
+import com.webex.schemas._2002._06.service.trainingsession.CreateTrainingSession;
+import com.webex.schemas._2002._06.service.trainingsession.CreateTrainingSessionResponse;
+import com.webex.schemas._2002._06.service.trainingsession.GetTestInformationResponse;
+import com.webex.schemas._2002._06.service.trainingsession.GetTrainingSessionResponse;
+import com.webex.schemas._2002._06.service.trainingsession.LabInfoType;
+import com.webex.schemas._2002._06.service.trainingsession.ScheduleLabType;
+import com.webex.schemas._2002._06.service.trainingsession.ScheduledTestInstanceType;
+import com.webex.schemas._2002._06.service.trainingsession.SetTrainingSession;
+import com.webex.schemas._2002._06.service.trainingsession.TestStatusType;
+import com.webex.schemas._2002._06.service.trainingsession.TrainingSessionSummaryInstanceType;
+import com.webex.schemas._2002._06.service.trainingsessionqti.QtiResultReportType;
+import com.webex.schemas._2002._06.service.trainingsessionqtiasi.QuestestinteropType;
+
 /**
  * @author nmukhtar
  *
  */
 public interface TrainingSessionService extends WebExService {
+	public List<AvailabilityLabType> checkLabAvailability(String labName, int timeZoneID, String sessionStartTime, String sessionEndTime, int numComputers);
+	public CreateTrainingSessionResponse createTrainingSession(CreateTrainingSession trainingSession);
+	public void deleteTrainingSession(long sessionKey);
+	public QuestestinteropType getImsTestDetails(Long testID);
+	public QtiResultReportType getImsTestResult(Long testID, String participantEmail);
+	public List<LabInfoType> getLabInformation(String labName);
+	public List<ScheduleLabType> getLabSchedule(String labName, int timeZoneID, String sessionStartTime, String sessionEndTime);
+	public GetTestInformationResponse getTestInformation(Long testID);
+	public GetTrainingSessionResponse getTrainingSession(long sessionKey);
+	public List<ScheduledTestInstanceType> getScheduledTests(DateScopeType dateScope, Long sessionKey, TestStatusType status, String author);
+	public List<TrainingSessionSummaryInstanceType> getTrainingSessionSummaries(DateScopeType dateScope, Long sessionKey, String hostWebExID);
+	public void setTrainingSession(SetTrainingSession trainingSession);
 
 }

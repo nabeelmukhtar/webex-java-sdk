@@ -16,10 +16,16 @@
  */
 package com.google.code.webex.service;
 
+import java.util.List;
+
+import com.webex.schemas._2002._06.service.attendee.FeedbackSessionType;
+import com.webex.schemas._2002._06.service.supportsession.CreateSupportSession;
+
 /**
  * @author nmukhtar
  *
  */
 public interface SupportSessionService extends WebExService {
-
+	public Long createSupportSession(CreateSupportSession session);
+	public List<FeedbackSessionType> getFeedbackInformation(long confID);
 }

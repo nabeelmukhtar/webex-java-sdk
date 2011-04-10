@@ -16,7 +16,21 @@
  */
 package com.google.code.webex.service.impl;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.google.code.webex.service.MeetingTypeService;
+import com.google.code.webex.service.util.ApplicationConstants;
+import com.google.code.webex.service.util.WebExUrls;
+import com.google.code.webex.service.util.WebExUrls.WebExUrlBuilder;
+import com.webex.schemas._2002._06.service.BodyContentType;
+import com.webex.schemas._2002._06.service.MessageType;
+import com.webex.schemas._2002._06.service.meetingtype.GetMeetingType;
+import com.webex.schemas._2002._06.service.meetingtype.GetMeetingTypeResponse;
+import com.webex.schemas._2002._06.service.meetingtype.LstMeetingType;
+import com.webex.schemas._2002._06.service.meetingtype.LstMeetingTypeResponse;
+import com.webex.schemas._2002._06.service.meetingtype.MeetingTypeInstanceType;
+import com.webex.schemas._2002._06.service.meetingtype.ObjectFactory;
 
 public class MeetingTypeServiceImpl extends WebExJaxbService implements
 	MeetingTypeService {
@@ -24,5 +38,39 @@ public class MeetingTypeServiceImpl extends WebExJaxbService implements
 	public MeetingTypeServiceImpl(String webExId, String password,
 			Long siteId, String siteName, String partnerId) {
 		super(webExId, password, siteId, siteName, partnerId);
+	}
+
+	@Override
+	public GetMeetingTypeResponse getMeetingType(Long meetingTypeID) {
+		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
+		ObjectFactory factory = new ObjectFactory();
+		GetMeetingType meetingType = factory.createGetMeetingType();
+		meetingType.setMeetingTypeID(meetingTypeID);
+		MessageType request = createRequest(meetingType);
+		MessageType response = unmarshallObject(MessageType.class, callApiMethod(builder.buildUrl(), marshallObject(request), ApplicationConstants.CONTENT_TYPE_XML, HttpMethod.POST, 200));
+		
+		List<BodyContentType> bodyContents = response.getBody().getBodyContent();
+		if (!bodyContents.isEmpty()) {
+			return ((GetMeetingTypeResponse) bodyContents.get(0));			
+		}
+		
+		return null;
+	}
+
+	@Override
+	public List<MeetingTypeInstanceType> getMeetingTypes(
+			List<Long> meetingTypeIDs) {
+		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
+		ObjectFactory factory = new ObjectFactory();
+		LstMeetingType meetingType = factory.createLstMeetingType();
+		meetingType.getMeetingTypeID().addAll(meetingTypeIDs);
+		MessageType request = createRequest(meetingType);
+		MessageType response = unmarshallObject(MessageType.class, callApiMethod(builder.buildUrl(), marshallObject(request), ApplicationConstants.CONTENT_TYPE_XML, HttpMethod.POST, 200));
+		
+		List<BodyContentType> bodyContents = response.getBody().getBodyContent();
+		if (!bodyContents.isEmpty()) {
+			return ((LstMeetingTypeResponse) bodyContents.get(0)).getMeetingType();			
+		}
+		return new ArrayList<MeetingTypeInstanceType>();
 	}
 }
