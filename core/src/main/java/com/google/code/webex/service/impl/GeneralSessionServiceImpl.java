@@ -27,6 +27,7 @@ import com.webex.schemas._2002._06.common.AddressTypeType;
 import com.webex.schemas._2002._06.common.ServiceTypeType;
 import com.webex.schemas._2002._06.service.BodyContentType;
 import com.webex.schemas._2002._06.service.MessageType;
+import com.webex.schemas._2002._06.service.ep.ContactOperationType;
 import com.webex.schemas._2002._06.service.ep.ContactType;
 import com.webex.schemas._2002._06.service.ep.CreateContacts;
 import com.webex.schemas._2002._06.service.ep.CreateContactsResponse;
@@ -39,7 +40,13 @@ import com.webex.schemas._2002._06.service.ep.DistListInstanceType;
 import com.webex.schemas._2002._06.service.ep.DistListWithContactType;
 import com.webex.schemas._2002._06.service.ep.GetAPIVersion;
 import com.webex.schemas._2002._06.service.ep.GetAPIVersionResponse;
+import com.webex.schemas._2002._06.service.ep.GetOneClickSettings;
+import com.webex.schemas._2002._06.service.ep.GetOneClickSettingsResponse;
+import com.webex.schemas._2002._06.service.ep.GetSessionInfo;
+import com.webex.schemas._2002._06.service.ep.GetSessionInfoResponse;
 import com.webex.schemas._2002._06.service.ep.ListControlType;
+import com.webex.schemas._2002._06.service.ep.LstContact;
+import com.webex.schemas._2002._06.service.ep.LstContactResponse;
 import com.webex.schemas._2002._06.service.ep.LstDistList;
 import com.webex.schemas._2002._06.service.ep.LstDistListResponse;
 import com.webex.schemas._2002._06.service.ep.LstOpenSession;
@@ -51,6 +58,10 @@ import com.webex.schemas._2002._06.service.ep.LstsummarySessionResponse;
 import com.webex.schemas._2002._06.service.ep.ObjectFactory;
 import com.webex.schemas._2002._06.service.ep.RecordingType;
 import com.webex.schemas._2002._06.service.ep.SessionSummaryInstanceType;
+import com.webex.schemas._2002._06.service.ep.SetDistList;
+import com.webex.schemas._2002._06.service.ep.SetRecordingInfo;
+import com.webex.schemas._2002._06.service.ep.SetRecordingInfoResponse;
+import com.webex.schemas._2002._06.service.ep.SetupOneClickSettings;
 import com.webex.schemas._2002._06.service.ep.LstOpenSessionResponse.Services;
 
 public class GeneralSessionServiceImpl extends WebExJaxbService implements
@@ -220,5 +231,104 @@ public class GeneralSessionServiceImpl extends WebExJaxbService implements
 			return ((LstsummarySessionResponse) bodyContents.get(0)).getSession();			
 		}
 		return new ArrayList<SessionSummaryInstanceType>();
+	}
+
+	@Override
+	public void setDistributionList(Long distListID, String name, String description, List<Long> contactIds, ContactOperationType operationType) {
+		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
+		ObjectFactory factory = new ObjectFactory();
+		SetDistList setDistList = factory.createSetDistList();
+		SetDistList.DistList distList = factory.createSetDistListDistList();
+		distList.setName(name);
+		distList.setDesc(description);
+		distList.getContactID().addAll(contactIds);
+		distList.setContactOperation(operationType);
+		setDistList.setDistList(distList);
+		MessageType request = createRequest(setDistList);
+		MessageType response = unmarshallObject(MessageType.class, callApiMethod(builder.buildUrl(), marshallObject(request), ApplicationConstants.CONTENT_TYPE_XML, HttpMethod.POST, 200));
+
+		List<BodyContentType> bodyContents = response.getBody().getBodyContent();
+		if (!bodyContents.isEmpty()) {
+		}
+	}
+
+	@Override
+	public GetOneClickSettingsResponse getOneClickSettings(String hostWebExID) {
+		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
+		ObjectFactory factory = new ObjectFactory();
+		GetOneClickSettings oneClickSettings = factory.createGetOneClickSettings();
+		oneClickSettings.setHostWebExID(hostWebExID);
+		MessageType request = createRequest(oneClickSettings);
+		MessageType response = unmarshallObject(MessageType.class, callApiMethod(builder.buildUrl(), marshallObject(request), ApplicationConstants.CONTENT_TYPE_XML, HttpMethod.POST, 200));
+		
+		List<BodyContentType> bodyContents = response.getBody().getBodyContent();
+		if (!bodyContents.isEmpty()) {
+			return ((GetOneClickSettingsResponse) bodyContents.get(0));			
+		}
+		return null;
+	}
+
+	@Override
+	public void setupOneClickSettings(SetupOneClickSettings oneClickSettings) {
+		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
+		MessageType request = createRequest(oneClickSettings);
+		MessageType response = unmarshallObject(MessageType.class, callApiMethod(builder.buildUrl(), marshallObject(request), ApplicationConstants.CONTENT_TYPE_XML, HttpMethod.POST, 200));
+		
+		List<BodyContentType> bodyContents = response.getBody().getBodyContent();
+		if (!bodyContents.isEmpty()) {
+		}
+	}
+
+	@Override
+	public GetSessionInfoResponse getSessionInfo(long sessionKey,
+			String sessionPassword) {
+		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
+		ObjectFactory factory = new ObjectFactory();
+		GetSessionInfo sessionInfo = factory.createGetSessionInfo();
+		sessionInfo.setSessionKey(sessionKey);
+		sessionInfo.setSessionPassword(sessionPassword);
+		MessageType request = createRequest(sessionInfo);
+		MessageType response = unmarshallObject(MessageType.class, callApiMethod(builder.buildUrl(), marshallObject(request), ApplicationConstants.CONTENT_TYPE_XML, HttpMethod.POST, 200));
+		
+		List<BodyContentType> bodyContents = response.getBody().getBodyContent();
+		if (!bodyContents.isEmpty()) {
+			return ((GetSessionInfoResponse) bodyContents.get(0));			
+		}
+		return null;
+	}
+
+	@Override
+	public List<ContactType> getContacts(Long distListID, String distListName,
+			AddressTypeType addressType, String hostWebExID) {
+		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
+		ObjectFactory factory = new ObjectFactory();
+		LstContact listContacts = factory.createLstContact();
+		listContacts.setDistListID(distListID);
+		listContacts.setDistListName(distListName);
+		listContacts.setAddressType(addressType);
+		listContacts.setHostWebExID(hostWebExID);
+		MessageType request = createRequest(listContacts);
+		MessageType response = unmarshallObject(MessageType.class, callApiMethod(builder.buildUrl(), marshallObject(request), ApplicationConstants.CONTENT_TYPE_XML, HttpMethod.POST, 200));
+		
+		List<BodyContentType> bodyContents = response.getBody().getBodyContent();
+		if (!bodyContents.isEmpty()) {
+			return ((LstContactResponse) bodyContents.get(0)).getContact();			
+		}
+		
+		return new ArrayList<ContactType>();
+	}
+
+	@Override
+	public Integer setRecordingInfo(SetRecordingInfo recordingInfo) {
+		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
+		MessageType request = createRequest(recordingInfo);
+		MessageType response = unmarshallObject(MessageType.class, callApiMethod(builder.buildUrl(), marshallObject(request), ApplicationConstants.CONTENT_TYPE_XML, HttpMethod.POST, 200));
+		
+		List<BodyContentType> bodyContents = response.getBody().getBodyContent();
+		if (!bodyContents.isEmpty()) {
+			return ((SetRecordingInfoResponse) bodyContents.get(0)).getRecordingID();			
+		}
+		
+		return null;
 	}
 }

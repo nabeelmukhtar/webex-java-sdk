@@ -18,7 +18,16 @@ package com.google.code.webex.service;
 
 import java.util.List;
 
+import com.webex.schemas._2002._06.service.ICalendarURLType;
+import com.webex.schemas._2002._06.service.meeting.CreateMeeting;
+import com.webex.schemas._2002._06.service.meeting.CreateMeetingResponse;
+import com.webex.schemas._2002._06.service.meeting.GetMeetingResponse;
+import com.webex.schemas._2002._06.service.meeting.GetjoinurlMeetingResponse;
 import com.webex.schemas._2002._06.service.meeting.MeetingSummaryInstanceType;
+import com.webex.schemas._2002._06.service.meeting.SetMeeting;
+import com.webex.schemas._2002._06.service.meeting.auo.CreateTeleconferenceSession;
+import com.webex.schemas._2002._06.service.meeting.auo.GetTeleconferenceSessionResponse;
+import com.webex.schemas._2002._06.service.meeting.auo.SetTeleconferenceSession;
 
 /**
  * @author nmukhtar
@@ -27,4 +36,13 @@ import com.webex.schemas._2002._06.service.meeting.MeetingSummaryInstanceType;
 public interface MeetingService extends WebExService {
 	
 	public List<MeetingSummaryInstanceType> getMeetingSummaries();
+	public CreateMeetingResponse createMeeting(CreateMeeting meeting);
+	public Long createTeleconferenceSession(CreateTeleconferenceSession teleconference);
+	public ICalendarURLType deleteMeeting(long meetingKey);
+	public String getMeetingHostUrl(Long meetingKey, Long sessionKey);
+	public GetjoinurlMeetingResponse getMeetingJoinUrl(Long meetingKey, Long sessionKey, String attendeeName, String attendeeEmail, String meetingPW, String regID);
+	public GetMeetingResponse getMeeting(Long meetingKey);
+	public GetTeleconferenceSessionResponse getTeleconferenceSession(Long sessionKey);
+	public ICalendarURLType setMeeting(SetMeeting setMeeting);
+	public void setTeleconferenceSession(SetTeleconferenceSession setSession);
 }
