@@ -18,12 +18,24 @@ package com.google.code.webex.service;
 
 import java.util.List;
 
+import com.webex.schemas._2002._06.common.PsoFieldsType;
+import com.webex.schemas._2002._06.service.history.CreationTimeScopeType;
 import com.webex.schemas._2002._06.service.history.EndTimeScopeType;
 import com.webex.schemas._2002._06.service.history.EventAttendeeHistoryInstanceType;
 import com.webex.schemas._2002._06.service.history.EventSessionHistoryInstanceType;
 import com.webex.schemas._2002._06.service.history.MeetingAttendeeHistoryInstanceType;
+import com.webex.schemas._2002._06.service.history.MeetingUsageHistoryInstanceType;
+import com.webex.schemas._2002._06.service.history.RecordAccessDetailHistoryType;
+import com.webex.schemas._2002._06.service.history.RecordAccessHistoryInstanceType;
+import com.webex.schemas._2002._06.service.history.SalesAttendeeHistoryInstanceType;
+import com.webex.schemas._2002._06.service.history.SalesSessionHistoryInstanceType;
 import com.webex.schemas._2002._06.service.history.StartTimeScopeType;
 import com.webex.schemas._2002._06.service.history.StartTimeValueType;
+import com.webex.schemas._2002._06.service.history.SupportAttendeeHistoryInstanceType;
+import com.webex.schemas._2002._06.service.history.SupportSessionHistoryInstanceType;
+import com.webex.schemas._2002._06.service.history.TrainSessionHistoryInstanceType;
+import com.webex.schemas._2002._06.service.history.TrainingAttendeeHistoryInstanceType;
+import com.webex.schemas._2002._06.service.history.ViewTimeScopeType;
 
 /**
  * @author nmukhtar
@@ -33,5 +45,14 @@ public interface HistoryService extends WebExService {
 	public List<EventAttendeeHistoryInstanceType> getEventAttendeeHistory(StartTimeScopeType startTimeScope, EndTimeScopeType endTimeScope, Long sessionKey, String confName, Long confID, Boolean attendeeStats);
 	public List<EventSessionHistoryInstanceType> getEventSessionHistory(String hostWebExID, String confName, StartTimeValueType startTimeScope, EndTimeScopeType endTimeScope, Long sessionKey, Long confID, Integer timeZoneID);
 	public List<MeetingAttendeeHistoryInstanceType> getMeetingAttendeeHistory(Long meetingKey, StartTimeValueType startTimeScope, EndTimeScopeType endTimeScope, String confName, Long confID, Boolean inclAudioOnly);
+	public List<MeetingUsageHistoryInstanceType> getMeetingUsageHistory(String confName, Long meetingKey, String hostWebExID, Long confID, Boolean inclAudioOnly, Integer timeZoneID, StartTimeScopeType startTimeScope, EndTimeScopeType endTimeScope);
+	public List<RecordAccessDetailHistoryType> getRecordAccessDetailHistory(Long recordID, Integer timeZoneID, Boolean returnRegFields);
+	public List<RecordAccessHistoryInstanceType> getRecordAccessHistory(CreationTimeScopeType creationTimeScope, ViewTimeScopeType viewTimeScope, Integer timeZoneID, String recordName, String hostWebExID);
+	public List<SalesAttendeeHistoryInstanceType> getSalesAttendeeHistory(Long meetingKey, StartTimeValueType startTimeScope, EndTimeScopeType endTimeScope, String confName, Long confID, Long timeZoneID, Boolean inclAudioOnly);
+	public List<SalesSessionHistoryInstanceType> getSalesSessionHistory(String confName, Long meetingKey, String hostWebExID, Long confID, Boolean inclAudioOnly, Integer timeZoneID, StartTimeScopeType startTimeScope, EndTimeScopeType endTimeScope, String account, String opportunity);
+	public List<SupportAttendeeHistoryInstanceType> getSupportAttendeeHistory(Long sessionKey, StartTimeScopeType startTimeScope, EndTimeScopeType endTimeScope, Long confID);
+	public List<SupportSessionHistoryInstanceType> getSupportSessionHistory(Long sessionKey, String hostWebExID, StartTimeValueType startTimeScope, EndTimeScopeType endTimeScope, Long confID, Integer timeZoneID);
+	public List<TrainingAttendeeHistoryInstanceType> getTrainingAttendeeHistory(Long sessionKey, StartTimeScopeType startTimeScope, EndTimeScopeType endTimeScope, Long confID, Integer timeZoneID);
+	public List<TrainSessionHistoryInstanceType> getTrainingSessionHistory(Long sessionKey, String confName, StartTimeScopeType startTimeScope, EndTimeScopeType endTimeScope, String hostWebExID, Long confID, Integer timeZoneID, Boolean returnPSOFields, PsoFieldsType psoFields);
 
 }
