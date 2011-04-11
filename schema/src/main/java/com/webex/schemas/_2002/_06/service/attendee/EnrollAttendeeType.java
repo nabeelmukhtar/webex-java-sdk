@@ -26,7 +26,49 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class EnrollAttendeeType.
+ * <p>Java class for enrollAttendeeType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="enrollAttendeeType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="attendeeID" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="enrollFields" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="defaultFields" type="{http://www.webex.com/schemas/2002/06/service/attendee}enrollDefaultFieldsType" minOccurs="0"/>
+ *                   &lt;element name="customFields" minOccurs="0">
+ *                     &lt;complexType>
+ *                       &lt;complexContent>
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                           &lt;sequence>
+ *                             &lt;element name="field" type="{http://www.webex.com/schemas/2002/06/service/attendee}fieldType" maxOccurs="unbounded" minOccurs="0"/>
+ *                           &lt;/sequence>
+ *                         &lt;/restriction>
+ *                       &lt;/complexContent>
+ *                     &lt;/complexType>
+ *                   &lt;/element>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="domain" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="ipAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="submitTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="status" type="{http://www.webex.com/schemas/2002/06/service/attendee}attendeeEnrollStatusType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "enrollAttendeeType", propOrder = {
@@ -41,130 +83,145 @@ public class EnrollAttendeeType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The attendee id. */
     protected long attendeeID;
-    
-    /** The enroll fields. */
     protected EnrollAttendeeType.EnrollFields enrollFields;
-    
-    /** The domain. */
     protected String domain;
-    
-    /** The ip address. */
     protected String ipAddress;
-    
-    /** The submit time. */
     protected String submitTime;
-    
-    /** The status. */
     protected AttendeeEnrollStatusType status;
 
     /**
-     * Gets the attendee id.
+     * Gets the value of the attendeeID property.
      * 
-     * @return the attendee id
      */
     public long getAttendeeID() {
         return attendeeID;
     }
 
     /**
-     * Sets the attendee id.
+     * Sets the value of the attendeeID property.
      * 
-     * @param value the new attendee id
      */
     public void setAttendeeID(long value) {
         this.attendeeID = value;
     }
 
     /**
-     * Gets the enroll fields.
+     * Gets the value of the enrollFields property.
      * 
-     * @return the enroll fields
+     * @return
+     *     possible object is
+     *     {@link EnrollAttendeeType.EnrollFields }
+     *     
      */
     public EnrollAttendeeType.EnrollFields getEnrollFields() {
         return enrollFields;
     }
 
     /**
-     * Sets the enroll fields.
+     * Sets the value of the enrollFields property.
      * 
-     * @param value the new enroll fields
+     * @param value
+     *     allowed object is
+     *     {@link EnrollAttendeeType.EnrollFields }
+     *     
      */
     public void setEnrollFields(EnrollAttendeeType.EnrollFields value) {
         this.enrollFields = value;
     }
 
     /**
-     * Gets the domain.
+     * Gets the value of the domain property.
      * 
-     * @return the domain
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDomain() {
         return domain;
     }
 
     /**
-     * Sets the domain.
+     * Sets the value of the domain property.
      * 
-     * @param value the new domain
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDomain(String value) {
         this.domain = value;
     }
 
     /**
-     * Gets the ip address.
+     * Gets the value of the ipAddress property.
      * 
-     * @return the ip address
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getIpAddress() {
         return ipAddress;
     }
 
     /**
-     * Sets the ip address.
+     * Sets the value of the ipAddress property.
      * 
-     * @param value the new ip address
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setIpAddress(String value) {
         this.ipAddress = value;
     }
 
     /**
-     * Gets the submit time.
+     * Gets the value of the submitTime property.
      * 
-     * @return the submit time
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSubmitTime() {
         return submitTime;
     }
 
     /**
-     * Sets the submit time.
+     * Sets the value of the submitTime property.
      * 
-     * @param value the new submit time
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSubmitTime(String value) {
         this.submitTime = value;
     }
 
     /**
-     * Gets the status.
+     * Gets the value of the status property.
      * 
-     * @return the status
+     * @return
+     *     possible object is
+     *     {@link AttendeeEnrollStatusType }
+     *     
      */
     public AttendeeEnrollStatusType getStatus() {
         return status;
     }
 
     /**
-     * Sets the status.
+     * Sets the value of the status property.
      * 
-     * @param value the new status
+     * @param value
+     *     allowed object is
+     *     {@link AttendeeEnrollStatusType }
+     *     
      */
     public void setStatus(AttendeeEnrollStatusType value) {
         this.status = value;
@@ -172,7 +229,34 @@ public class EnrollAttendeeType
 
 
     /**
-     * The Class EnrollFields.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="defaultFields" type="{http://www.webex.com/schemas/2002/06/service/attendee}enrollDefaultFieldsType" minOccurs="0"/>
+     *         &lt;element name="customFields" minOccurs="0">
+     *           &lt;complexType>
+     *             &lt;complexContent>
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *                 &lt;sequence>
+     *                   &lt;element name="field" type="{http://www.webex.com/schemas/2002/06/service/attendee}fieldType" maxOccurs="unbounded" minOccurs="0"/>
+     *                 &lt;/sequence>
+     *               &lt;/restriction>
+     *             &lt;/complexContent>
+     *           &lt;/complexType>
+     *         &lt;/element>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -183,46 +267,53 @@ public class EnrollAttendeeType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The default fields. */
         protected EnrollDefaultFieldsType defaultFields;
-        
-        /** The custom fields. */
         protected EnrollAttendeeType.EnrollFields.CustomFields customFields;
 
         /**
-         * Gets the default fields.
+         * Gets the value of the defaultFields property.
          * 
-         * @return the default fields
+         * @return
+         *     possible object is
+         *     {@link EnrollDefaultFieldsType }
+         *     
          */
         public EnrollDefaultFieldsType getDefaultFields() {
             return defaultFields;
         }
 
         /**
-         * Sets the default fields.
+         * Sets the value of the defaultFields property.
          * 
-         * @param value the new default fields
+         * @param value
+         *     allowed object is
+         *     {@link EnrollDefaultFieldsType }
+         *     
          */
         public void setDefaultFields(EnrollDefaultFieldsType value) {
             this.defaultFields = value;
         }
 
         /**
-         * Gets the custom fields.
+         * Gets the value of the customFields property.
          * 
-         * @return the custom fields
+         * @return
+         *     possible object is
+         *     {@link EnrollAttendeeType.EnrollFields.CustomFields }
+         *     
          */
         public EnrollAttendeeType.EnrollFields.CustomFields getCustomFields() {
             return customFields;
         }
 
         /**
-         * Sets the custom fields.
+         * Sets the value of the customFields property.
          * 
-         * @param value the new custom fields
+         * @param value
+         *     allowed object is
+         *     {@link EnrollAttendeeType.EnrollFields.CustomFields }
+         *     
          */
         public void setCustomFields(EnrollAttendeeType.EnrollFields.CustomFields value) {
             this.customFields = value;
@@ -230,7 +321,23 @@ public class EnrollAttendeeType
 
 
         /**
-         * The Class CustomFields.
+         * <p>Java class for anonymous complex type.
+         * 
+         * <p>The following schema fragment specifies the expected content contained within this class.
+         * 
+         * <pre>
+         * &lt;complexType>
+         *   &lt;complexContent>
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         *       &lt;sequence>
+         *         &lt;element name="field" type="{http://www.webex.com/schemas/2002/06/service/attendee}fieldType" maxOccurs="unbounded" minOccurs="0"/>
+         *       &lt;/sequence>
+         *     &lt;/restriction>
+         *   &lt;/complexContent>
+         * &lt;/complexType>
+         * </pre>
+         * 
+         * 
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -240,16 +347,30 @@ public class EnrollAttendeeType
             implements Serializable
         {
 
-            /** The Constant serialVersionUID. */
             private final static long serialVersionUID = 2461660169443089969L;
-            
-            /** The field. */
             protected List<FieldType> field;
 
             /**
-             * Gets the field.
+             * Gets the value of the field property.
              * 
-             * @return the field
+             * <p>
+             * This accessor method returns a reference to the live list,
+             * not a snapshot. Therefore any modification you make to the
+             * returned list will be present inside the JAXB object.
+             * This is why there is not a <CODE>set</CODE> method for the field property.
+             * 
+             * <p>
+             * For example, to add a new item, do as follows:
+             * <pre>
+             *    getField().add(newItem);
+             * </pre>
+             * 
+             * 
+             * <p>
+             * Objects of the following type(s) are allowed in the list
+             * {@link FieldType }
+             * 
+             * 
              */
             public List<FieldType> getField() {
                 if (field == null) {

@@ -22,37 +22,33 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum OrderScHisByType.
+ * <p>Java class for orderScHisByType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="orderScHisByType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="CONFID"/>
+ *     &lt;enumeration value="SESSIONSTARTTIME"/>
+ *     &lt;enumeration value="CONFNAME"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "orderScHisByType")
 @XmlEnum
 public enum OrderScHisByType {
 
-    /** The CONFID. */
     CONFID,
-    
-    /** The SESSIONSTARTTIME. */
     SESSIONSTARTTIME,
-    
-    /** The CONFNAME. */
     CONFNAME;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the order sc his by type
-     */
     public static OrderScHisByType fromValue(String v) {
         return valueOf(v);
     }

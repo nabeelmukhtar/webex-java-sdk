@@ -24,7 +24,20 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class CreateSupportSession.
+ * <p>Java class for createSupportSession complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="createSupportSession">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/supportsession}supportType">
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "createSupportSession")
@@ -33,7 +46,6 @@ public class CreateSupportSession
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
 
 }

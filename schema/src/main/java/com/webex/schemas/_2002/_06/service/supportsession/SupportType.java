@@ -27,7 +27,24 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class SupportType.
+ * <p>Java class for supportType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="supportType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="metaData" type="{http://www.webex.com/schemas/2002/06/service/supportsession}metaDataType" minOccurs="0"/>
+ *         &lt;element name="tracking" type="{http://www.webex.com/schemas/2002/06/common}trackingType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "supportType", propOrder = {
@@ -43,46 +60,53 @@ public class SupportType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The meta data. */
     protected MetaDataType metaData;
-    
-    /** The tracking. */
     protected TrackingType tracking;
 
     /**
-     * Gets the meta data.
+     * Gets the value of the metaData property.
      * 
-     * @return the meta data
+     * @return
+     *     possible object is
+     *     {@link MetaDataType }
+     *     
      */
     public MetaDataType getMetaData() {
         return metaData;
     }
 
     /**
-     * Sets the meta data.
+     * Sets the value of the metaData property.
      * 
-     * @param value the new meta data
+     * @param value
+     *     allowed object is
+     *     {@link MetaDataType }
+     *     
      */
     public void setMetaData(MetaDataType value) {
         this.metaData = value;
     }
 
     /**
-     * Gets the tracking.
+     * Gets the value of the tracking property.
      * 
-     * @return the tracking
+     * @return
+     *     possible object is
+     *     {@link TrackingType }
+     *     
      */
     public TrackingType getTracking() {
         return tracking;
     }
 
     /**
-     * Sets the tracking.
+     * Sets the value of the tracking property.
      * 
-     * @param value the new tracking
+     * @param value
+     *     allowed object is
+     *     {@link TrackingType }
+     *     
      */
     public void setTracking(TrackingType value) {
         this.tracking = value;

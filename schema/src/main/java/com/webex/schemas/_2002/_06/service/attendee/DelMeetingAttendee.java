@@ -28,7 +28,25 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class DelMeetingAttendee.
+ * <p>Java class for delMeetingAttendee complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="delMeetingAttendee">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="attendeeID" type="{http://www.w3.org/2001/XMLSchema}long" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="attendeeEmail" type="{http://www.webex.com/schemas/2002/06/service/attendee}attendeeEmailType" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="sendEmail" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "delMeetingAttendee", propOrder = {
@@ -41,23 +59,33 @@ public class DelMeetingAttendee
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The attendee id. */
     @XmlElement(type = Long.class)
     protected List<Long> attendeeID;
-    
-    /** The attendee email. */
     protected List<AttendeeEmailType> attendeeEmail;
-    
-    /** The send email. */
     protected Boolean sendEmail;
 
     /**
-     * Gets the attendee id.
+     * Gets the value of the attendeeID property.
      * 
-     * @return the attendee id
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the attendeeID property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getAttendeeID().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link Long }
+     * 
+     * 
      */
     public List<Long> getAttendeeID() {
         if (attendeeID == null) {
@@ -67,9 +95,26 @@ public class DelMeetingAttendee
     }
 
     /**
-     * Gets the attendee email.
+     * Gets the value of the attendeeEmail property.
      * 
-     * @return the attendee email
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the attendeeEmail property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getAttendeeEmail().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link AttendeeEmailType }
+     * 
+     * 
      */
     public List<AttendeeEmailType> getAttendeeEmail() {
         if (attendeeEmail == null) {
@@ -79,18 +124,24 @@ public class DelMeetingAttendee
     }
 
     /**
-     * Checks if is send email.
+     * Gets the value of the sendEmail property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSendEmail() {
         return sendEmail;
     }
 
     /**
-     * Sets the send email.
+     * Sets the value of the sendEmail property.
      * 
-     * @param value the new send email
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSendEmail(Boolean value) {
         this.sendEmail = value;

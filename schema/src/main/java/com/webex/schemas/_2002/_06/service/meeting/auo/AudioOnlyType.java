@@ -29,7 +29,53 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class AudioOnlyType.
+ * <p>Java class for audioOnlyType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="audioOnlyType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="accessControl" type="{http://www.webex.com/schemas/2002/06/service/meeting/auo}accessControlType" minOccurs="0"/>
+ *         &lt;element name="metaData" type="{http://www.webex.com/schemas/2002/06/service/meeting/auo}metaDataType" minOccurs="0"/>
+ *         &lt;element name="schedule" type="{http://www.webex.com/schemas/2002/06/service/meeting/auo}scheduleType" minOccurs="0"/>
+ *         &lt;element name="teleconference" type="{http://www.webex.com/schemas/2002/06/service/meeting/auo}teleconfType" minOccurs="0"/>
+ *         &lt;element name="tracking" type="{http://www.webex.com/schemas/2002/06/common}trackingType" minOccurs="0"/>
+ *         &lt;element name="repeat" type="{http://www.webex.com/schemas/2002/06/service/meeting/auo}repeatType" minOccurs="0"/>
+ *         &lt;element name="remind" type="{http://www.webex.com/schemas/2002/06/service/meeting/auo}remindType" minOccurs="0"/>
+ *         &lt;element name="fullAccessAttendees" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="attendee" type="{http://www.webex.com/schemas/2002/06/service/meeting/auo}attendeeType" maxOccurs="unbounded" minOccurs="0"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="limitedAccessAttendees" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="attendee" type="{http://www.webex.com/schemas/2002/06/service/meeting/auo}attendeeType" maxOccurs="unbounded" minOccurs="0"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="attendeeOptions" type="{http://www.webex.com/schemas/2002/06/service/meeting/auo}attendeeOptionsType" minOccurs="0"/>
+ *         &lt;element name="validateFormat" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "audioOnlyType", propOrder = {
@@ -54,235 +100,278 @@ public class AudioOnlyType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The access control. */
     protected AccessControlType accessControl;
-    
-    /** The meta data. */
     protected MetaDataType metaData;
-    
-    /** The schedule. */
     protected ScheduleType schedule;
-    
-    /** The teleconference. */
     protected TeleconfType teleconference;
-    
-    /** The tracking. */
     protected TrackingType tracking;
-    
-    /** The repeat. */
     protected RepeatType repeat;
-    
-    /** The remind. */
     protected RemindType remind;
-    
-    /** The full access attendees. */
     protected AudioOnlyType.FullAccessAttendees fullAccessAttendees;
-    
-    /** The limited access attendees. */
     protected AudioOnlyType.LimitedAccessAttendees limitedAccessAttendees;
-    
-    /** The attendee options. */
     protected AttendeeOptionsType attendeeOptions;
-    
-    /** The validate format. */
     protected Boolean validateFormat;
 
     /**
-     * Gets the access control.
+     * Gets the value of the accessControl property.
      * 
-     * @return the access control
+     * @return
+     *     possible object is
+     *     {@link AccessControlType }
+     *     
      */
     public AccessControlType getAccessControl() {
         return accessControl;
     }
 
     /**
-     * Sets the access control.
+     * Sets the value of the accessControl property.
      * 
-     * @param value the new access control
+     * @param value
+     *     allowed object is
+     *     {@link AccessControlType }
+     *     
      */
     public void setAccessControl(AccessControlType value) {
         this.accessControl = value;
     }
 
     /**
-     * Gets the meta data.
+     * Gets the value of the metaData property.
      * 
-     * @return the meta data
+     * @return
+     *     possible object is
+     *     {@link MetaDataType }
+     *     
      */
     public MetaDataType getMetaData() {
         return metaData;
     }
 
     /**
-     * Sets the meta data.
+     * Sets the value of the metaData property.
      * 
-     * @param value the new meta data
+     * @param value
+     *     allowed object is
+     *     {@link MetaDataType }
+     *     
      */
     public void setMetaData(MetaDataType value) {
         this.metaData = value;
     }
 
     /**
-     * Gets the schedule.
+     * Gets the value of the schedule property.
      * 
-     * @return the schedule
+     * @return
+     *     possible object is
+     *     {@link ScheduleType }
+     *     
      */
     public ScheduleType getSchedule() {
         return schedule;
     }
 
     /**
-     * Sets the schedule.
+     * Sets the value of the schedule property.
      * 
-     * @param value the new schedule
+     * @param value
+     *     allowed object is
+     *     {@link ScheduleType }
+     *     
      */
     public void setSchedule(ScheduleType value) {
         this.schedule = value;
     }
 
     /**
-     * Gets the teleconference.
+     * Gets the value of the teleconference property.
      * 
-     * @return the teleconference
+     * @return
+     *     possible object is
+     *     {@link TeleconfType }
+     *     
      */
     public TeleconfType getTeleconference() {
         return teleconference;
     }
 
     /**
-     * Sets the teleconference.
+     * Sets the value of the teleconference property.
      * 
-     * @param value the new teleconference
+     * @param value
+     *     allowed object is
+     *     {@link TeleconfType }
+     *     
      */
     public void setTeleconference(TeleconfType value) {
         this.teleconference = value;
     }
 
     /**
-     * Gets the tracking.
+     * Gets the value of the tracking property.
      * 
-     * @return the tracking
+     * @return
+     *     possible object is
+     *     {@link TrackingType }
+     *     
      */
     public TrackingType getTracking() {
         return tracking;
     }
 
     /**
-     * Sets the tracking.
+     * Sets the value of the tracking property.
      * 
-     * @param value the new tracking
+     * @param value
+     *     allowed object is
+     *     {@link TrackingType }
+     *     
      */
     public void setTracking(TrackingType value) {
         this.tracking = value;
     }
 
     /**
-     * Gets the repeat.
+     * Gets the value of the repeat property.
      * 
-     * @return the repeat
+     * @return
+     *     possible object is
+     *     {@link RepeatType }
+     *     
      */
     public RepeatType getRepeat() {
         return repeat;
     }
 
     /**
-     * Sets the repeat.
+     * Sets the value of the repeat property.
      * 
-     * @param value the new repeat
+     * @param value
+     *     allowed object is
+     *     {@link RepeatType }
+     *     
      */
     public void setRepeat(RepeatType value) {
         this.repeat = value;
     }
 
     /**
-     * Gets the remind.
+     * Gets the value of the remind property.
      * 
-     * @return the remind
+     * @return
+     *     possible object is
+     *     {@link RemindType }
+     *     
      */
     public RemindType getRemind() {
         return remind;
     }
 
     /**
-     * Sets the remind.
+     * Sets the value of the remind property.
      * 
-     * @param value the new remind
+     * @param value
+     *     allowed object is
+     *     {@link RemindType }
+     *     
      */
     public void setRemind(RemindType value) {
         this.remind = value;
     }
 
     /**
-     * Gets the full access attendees.
+     * Gets the value of the fullAccessAttendees property.
      * 
-     * @return the full access attendees
+     * @return
+     *     possible object is
+     *     {@link AudioOnlyType.FullAccessAttendees }
+     *     
      */
     public AudioOnlyType.FullAccessAttendees getFullAccessAttendees() {
         return fullAccessAttendees;
     }
 
     /**
-     * Sets the full access attendees.
+     * Sets the value of the fullAccessAttendees property.
      * 
-     * @param value the new full access attendees
+     * @param value
+     *     allowed object is
+     *     {@link AudioOnlyType.FullAccessAttendees }
+     *     
      */
     public void setFullAccessAttendees(AudioOnlyType.FullAccessAttendees value) {
         this.fullAccessAttendees = value;
     }
 
     /**
-     * Gets the limited access attendees.
+     * Gets the value of the limitedAccessAttendees property.
      * 
-     * @return the limited access attendees
+     * @return
+     *     possible object is
+     *     {@link AudioOnlyType.LimitedAccessAttendees }
+     *     
      */
     public AudioOnlyType.LimitedAccessAttendees getLimitedAccessAttendees() {
         return limitedAccessAttendees;
     }
 
     /**
-     * Sets the limited access attendees.
+     * Sets the value of the limitedAccessAttendees property.
      * 
-     * @param value the new limited access attendees
+     * @param value
+     *     allowed object is
+     *     {@link AudioOnlyType.LimitedAccessAttendees }
+     *     
      */
     public void setLimitedAccessAttendees(AudioOnlyType.LimitedAccessAttendees value) {
         this.limitedAccessAttendees = value;
     }
 
     /**
-     * Gets the attendee options.
+     * Gets the value of the attendeeOptions property.
      * 
-     * @return the attendee options
+     * @return
+     *     possible object is
+     *     {@link AttendeeOptionsType }
+     *     
      */
     public AttendeeOptionsType getAttendeeOptions() {
         return attendeeOptions;
     }
 
     /**
-     * Sets the attendee options.
+     * Sets the value of the attendeeOptions property.
      * 
-     * @param value the new attendee options
+     * @param value
+     *     allowed object is
+     *     {@link AttendeeOptionsType }
+     *     
      */
     public void setAttendeeOptions(AttendeeOptionsType value) {
         this.attendeeOptions = value;
     }
 
     /**
-     * Checks if is validate format.
+     * Gets the value of the validateFormat property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isValidateFormat() {
         return validateFormat;
     }
 
     /**
-     * Sets the validate format.
+     * Sets the value of the validateFormat property.
      * 
-     * @param value the new validate format
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setValidateFormat(Boolean value) {
         this.validateFormat = value;
@@ -290,7 +379,23 @@ public class AudioOnlyType
 
 
     /**
-     * The Class FullAccessAttendees.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="attendee" type="{http://www.webex.com/schemas/2002/06/service/meeting/auo}attendeeType" maxOccurs="unbounded" minOccurs="0"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -300,16 +405,30 @@ public class AudioOnlyType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The attendee. */
         protected List<AttendeeType> attendee;
 
         /**
-         * Gets the attendee.
+         * Gets the value of the attendee property.
          * 
-         * @return the attendee
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the attendee property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getAttendee().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link AttendeeType }
+         * 
+         * 
          */
         public List<AttendeeType> getAttendee() {
             if (attendee == null) {
@@ -322,7 +441,23 @@ public class AudioOnlyType
 
 
     /**
-     * The Class LimitedAccessAttendees.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="attendee" type="{http://www.webex.com/schemas/2002/06/service/meeting/auo}attendeeType" maxOccurs="unbounded" minOccurs="0"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -332,16 +467,30 @@ public class AudioOnlyType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The attendee. */
         protected List<AttendeeType> attendee;
 
         /**
-         * Gets the attendee.
+         * Gets the value of the attendee property.
          * 
-         * @return the attendee
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the attendee property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getAttendee().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link AttendeeType }
+         * 
+         * 
          */
         public List<AttendeeType> getAttendee() {
             if (attendee == null) {

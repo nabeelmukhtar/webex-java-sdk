@@ -32,7 +32,32 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class LstProducts.
+ * <p>Java class for lstProducts complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="lstProducts">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="listControl" type="{http://www.webex.com/schemas/2002/06/service}lstControlType" minOccurs="0"/>
+ *         &lt;element name="order" type="{http://www.webex.com/schemas/2002/06/service/sales}productOrderType" minOccurs="0"/>
+ *         &lt;element name="name" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="128"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="prodID" type="{http://www.w3.org/2001/XMLSchema}integer" maxOccurs="unbounded" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstProducts", propOrder = {
@@ -46,82 +71,108 @@ public class LstProducts
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The list control. */
     protected LstControlType listControl;
-    
-    /** The order. */
     protected ProductOrderType order;
-    
-    /** The name. */
     protected String name;
-    
-    /** The prod id. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected List<Long> prodID;
 
     /**
-     * Gets the list control.
+     * Gets the value of the listControl property.
      * 
-     * @return the list control
+     * @return
+     *     possible object is
+     *     {@link LstControlType }
+     *     
      */
     public LstControlType getListControl() {
         return listControl;
     }
 
     /**
-     * Sets the list control.
+     * Sets the value of the listControl property.
      * 
-     * @param value the new list control
+     * @param value
+     *     allowed object is
+     *     {@link LstControlType }
+     *     
      */
     public void setListControl(LstControlType value) {
         this.listControl = value;
     }
 
     /**
-     * Gets the order.
+     * Gets the value of the order property.
      * 
-     * @return the order
+     * @return
+     *     possible object is
+     *     {@link ProductOrderType }
+     *     
      */
     public ProductOrderType getOrder() {
         return order;
     }
 
     /**
-     * Sets the order.
+     * Sets the value of the order property.
      * 
-     * @param value the new order
+     * @param value
+     *     allowed object is
+     *     {@link ProductOrderType }
+     *     
      */
     public void setOrder(ProductOrderType value) {
         this.order = value;
     }
 
     /**
-     * Gets the name.
+     * Gets the value of the name property.
      * 
-     * @return the name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Sets the name.
+     * Sets the value of the name property.
      * 
-     * @param value the new name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setName(String value) {
         this.name = value;
     }
 
     /**
-     * Gets the prod id.
+     * Gets the value of the prodID property.
      * 
-     * @return the prod id
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the prodID property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getProdID().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link String }
+     * 
+     * 
      */
     public List<Long> getProdID() {
         if (prodID == null) {

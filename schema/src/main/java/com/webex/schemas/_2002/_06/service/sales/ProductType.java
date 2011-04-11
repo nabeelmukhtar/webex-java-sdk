@@ -25,7 +25,36 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class ProductType.
+ * <p>Java class for productType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="productType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="name" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="128"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="description" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="256"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "productType", propOrder = {
@@ -39,46 +68,53 @@ public class ProductType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The name. */
     protected String name;
-    
-    /** The description. */
     protected String description;
 
     /**
-     * Gets the name.
+     * Gets the value of the name property.
      * 
-     * @return the name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Sets the name.
+     * Sets the value of the name property.
      * 
-     * @param value the new name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setName(String value) {
         this.name = value;
     }
 
     /**
-     * Gets the description.
+     * Gets the value of the description property.
      * 
-     * @return the description
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDescription() {
         return description;
     }
 
     /**
-     * Sets the description.
+     * Sets the value of the description property.
      * 
-     * @param value the new description
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDescription(String value) {
         this.description = value;

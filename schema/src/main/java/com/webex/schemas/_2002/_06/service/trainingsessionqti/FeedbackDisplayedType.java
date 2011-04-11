@@ -26,7 +26,21 @@ import javax.xml.bind.annotation.XmlValue;
 
 
 /**
- * The Class FeedbackDisplayedType.
+ * <p>Java class for feedback_displayedType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="feedback_displayedType">
+ *   &lt;simpleContent>
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
+ *       &lt;attribute name="ident" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *     &lt;/extension>
+ *   &lt;/simpleContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "feedback_displayedType", propOrder = {
@@ -36,48 +50,55 @@ public class FeedbackDisplayedType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The value. */
     @XmlValue
     protected String value;
-    
-    /** The ident. */
     @XmlAttribute
     protected String ident;
 
     /**
-     * Gets the value.
+     * Gets the value of the value property.
      * 
-     * @return the value
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value.
+     * Sets the value of the value property.
      * 
-     * @param value the new value
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setValue(String value) {
         this.value = value;
     }
 
     /**
-     * Gets the ident.
+     * Gets the value of the ident property.
      * 
-     * @return the ident
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getIdent() {
         return ident;
     }
 
     /**
-     * Sets the ident.
+     * Sets the value of the ident property.
      * 
-     * @param value the new ident
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setIdent(String value) {
         this.ident = value;

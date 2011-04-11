@@ -31,7 +31,32 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class ChoiceGroupType.
+ * <p>Java class for choiceGroupType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="choiceGroupType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/trainingsession}enrollmentFieldType">
+ *       &lt;sequence>
+ *         &lt;element name="label">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="256"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="defaultChoice" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="index" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="choice" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}choiceType" maxOccurs="unbounded" minOccurs="2"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "choiceGroupType", propOrder = {
@@ -48,87 +73,113 @@ public class ChoiceGroupType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The label. */
     @XmlElement(required = true)
     protected String label;
-    
-    /** The default choice. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long defaultChoice;
-    
-    /** The index. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long index;
-    
-    /** The choice. */
     @XmlElement(required = true)
     protected List<ChoiceType> choice;
 
     /**
-     * Gets the label.
+     * Gets the value of the label property.
      * 
-     * @return the label
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLabel() {
         return label;
     }
 
     /**
-     * Sets the label.
+     * Sets the value of the label property.
      * 
-     * @param value the new label
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLabel(String value) {
         this.label = value;
     }
 
     /**
-     * Gets the default choice.
+     * Gets the value of the defaultChoice property.
      * 
-     * @return the default choice
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getDefaultChoice() {
         return defaultChoice;
     }
 
     /**
-     * Sets the default choice.
+     * Sets the value of the defaultChoice property.
      * 
-     * @param value the new default choice
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDefaultChoice(Long value) {
         this.defaultChoice = value;
     }
 
     /**
-     * Gets the index.
+     * Gets the value of the index property.
      * 
-     * @return the index
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getIndex() {
         return index;
     }
 
     /**
-     * Sets the index.
+     * Sets the value of the index property.
      * 
-     * @param value the new index
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setIndex(Long value) {
         this.index = value;
     }
 
     /**
-     * Gets the choice.
+     * Gets the value of the choice property.
      * 
-     * @return the choice
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the choice property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getChoice().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link ChoiceType }
+     * 
+     * 
      */
     public List<ChoiceType> getChoice() {
         if (choice == null) {

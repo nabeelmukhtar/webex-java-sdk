@@ -26,7 +26,23 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class AuthenticateUser.
+ * <p>Java class for authenticateUser complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="authenticateUser">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="samlResponse" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "authenticateUser", propOrder = {
@@ -37,26 +53,29 @@ public class AuthenticateUser
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The saml response. */
     @XmlElement(required = true)
     protected String samlResponse;
 
     /**
-     * Gets the saml response.
+     * Gets the value of the samlResponse property.
      * 
-     * @return the saml response
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSamlResponse() {
         return samlResponse;
     }
 
     /**
-     * Sets the saml response.
+     * Sets the value of the samlResponse property.
      * 
-     * @param value the new saml response
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSamlResponse(String value) {
         this.samlResponse = value;

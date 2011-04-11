@@ -26,7 +26,33 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class SetDistList.
+ * <p>Java class for setDistList complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="setDistList">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="distList">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;extension base="{http://www.webex.com/schemas/2002/06/service/ep}distListWithContactInstanceType">
+ *                 &lt;sequence>
+ *                   &lt;element name="contactOperation" type="{http://www.webex.com/schemas/2002/06/service/ep}contactOperationType" minOccurs="0"/>
+ *                 &lt;/sequence>
+ *               &lt;/extension>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "setDistList", propOrder = {
@@ -37,26 +63,29 @@ public class SetDistList
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The dist list. */
     @XmlElement(required = true)
     protected SetDistList.DistList distList;
 
     /**
-     * Gets the dist list.
+     * Gets the value of the distList property.
      * 
-     * @return the dist list
+     * @return
+     *     possible object is
+     *     {@link SetDistList.DistList }
+     *     
      */
     public SetDistList.DistList getDistList() {
         return distList;
     }
 
     /**
-     * Sets the dist list.
+     * Sets the value of the distList property.
      * 
-     * @param value the new dist list
+     * @param value
+     *     allowed object is
+     *     {@link SetDistList.DistList }
+     *     
      */
     public void setDistList(SetDistList.DistList value) {
         this.distList = value;
@@ -64,7 +93,23 @@ public class SetDistList
 
 
     /**
-     * The Class DistList.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/ep}distListWithContactInstanceType">
+     *       &lt;sequence>
+     *         &lt;element name="contactOperation" type="{http://www.webex.com/schemas/2002/06/service/ep}contactOperationType" minOccurs="0"/>
+     *       &lt;/sequence>
+     *     &lt;/extension>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -75,25 +120,28 @@ public class SetDistList
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The contact operation. */
         protected ContactOperationType contactOperation;
 
         /**
-         * Gets the contact operation.
+         * Gets the value of the contactOperation property.
          * 
-         * @return the contact operation
+         * @return
+         *     possible object is
+         *     {@link ContactOperationType }
+         *     
          */
         public ContactOperationType getContactOperation() {
             return contactOperation;
         }
 
         /**
-         * Sets the contact operation.
+         * Sets the value of the contactOperation property.
          * 
-         * @param value the new contact operation
+         * @param value
+         *     allowed object is
+         *     {@link ContactOperationType }
+         *     
          */
         public void setContactOperation(ContactOperationType value) {
             this.contactOperation = value;

@@ -24,7 +24,26 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class AttendeeInstanceType.
+ * <p>Java class for attendeeInstanceType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="attendeeInstanceType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/attendee}attendeeType">
+ *       &lt;sequence>
+ *         &lt;element name="attendeeId" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="confID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="status" type="{http://www.webex.com/schemas/2002/06/service/attendee}attendeeStatusType" minOccurs="0"/>
+ *         &lt;element name="registerID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "attendeeInstanceType", propOrder = {
@@ -38,88 +57,95 @@ public class AttendeeInstanceType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The attendee id. */
     protected long attendeeId;
-    
-    /** The conf id. */
     protected Long confID;
-    
-    /** The status. */
     protected AttendeeStatusType status;
-    
-    /** The register id. */
     protected Long registerID;
 
     /**
-     * Gets the attendee id.
+     * Gets the value of the attendeeId property.
      * 
-     * @return the attendee id
      */
     public long getAttendeeId() {
         return attendeeId;
     }
 
     /**
-     * Sets the attendee id.
+     * Sets the value of the attendeeId property.
      * 
-     * @param value the new attendee id
      */
     public void setAttendeeId(long value) {
         this.attendeeId = value;
     }
 
     /**
-     * Gets the conf id.
+     * Gets the value of the confID property.
      * 
-     * @return the conf id
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getConfID() {
         return confID;
     }
 
     /**
-     * Sets the conf id.
+     * Sets the value of the confID property.
      * 
-     * @param value the new conf id
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setConfID(Long value) {
         this.confID = value;
     }
 
     /**
-     * Gets the status.
+     * Gets the value of the status property.
      * 
-     * @return the status
+     * @return
+     *     possible object is
+     *     {@link AttendeeStatusType }
+     *     
      */
     public AttendeeStatusType getStatus() {
         return status;
     }
 
     /**
-     * Sets the status.
+     * Sets the value of the status property.
      * 
-     * @param value the new status
+     * @param value
+     *     allowed object is
+     *     {@link AttendeeStatusType }
+     *     
      */
     public void setStatus(AttendeeStatusType value) {
         this.status = value;
     }
 
     /**
-     * Gets the register id.
+     * Gets the value of the registerID property.
      * 
-     * @return the register id
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getRegisterID() {
         return registerID;
     }
 
     /**
-     * Sets the register id.
+     * Sets the value of the registerID property.
      * 
-     * @param value the new register id
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setRegisterID(Long value) {
         this.registerID = value;

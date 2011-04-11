@@ -24,7 +24,34 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class RecordingPlaybackType.
+ * <p>Java class for recordingPlaybackType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="recordingPlaybackType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="chat" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportQandA" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="video" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="polling" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="notes" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="fileShare" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="attendeeList" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="toc" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="range" type="{http://www.webex.com/schemas/2002/06/service/ep}playbackRangeType" minOccurs="0"/>
+ *         &lt;element name="partialStart" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="partialEnd" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="includeNBRcontrols" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "recordingPlaybackType", propOrder = {
@@ -45,256 +72,303 @@ public class RecordingPlaybackType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The chat. */
     protected Boolean chat;
-    
-    /** The support qand a. */
     protected Boolean supportQandA;
-    
-    /** The video. */
     protected Boolean video;
-    
-    /** The polling. */
     protected Boolean polling;
-    
-    /** The notes. */
     protected Boolean notes;
-    
-    /** The file share. */
     protected Boolean fileShare;
-    
-    /** The attendee list. */
     protected Boolean attendeeList;
-    
-    /** The toc. */
     protected Boolean toc;
-    
-    /** The range. */
     protected PlaybackRangeType range;
-    
-    /** The partial start. */
     protected Long partialStart;
-    
-    /** The partial end. */
     protected Long partialEnd;
-    
-    /** The include nb rcontrols. */
     protected Boolean includeNBRcontrols;
 
     /**
-     * Checks if is chat.
+     * Gets the value of the chat property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isChat() {
         return chat;
     }
 
     /**
-     * Sets the chat.
+     * Sets the value of the chat property.
      * 
-     * @param value the new chat
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setChat(Boolean value) {
         this.chat = value;
     }
 
     /**
-     * Checks if is support qand a.
+     * Gets the value of the supportQandA property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportQandA() {
         return supportQandA;
     }
 
     /**
-     * Sets the support qand a.
+     * Sets the value of the supportQandA property.
      * 
-     * @param value the new support qand a
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportQandA(Boolean value) {
         this.supportQandA = value;
     }
 
     /**
-     * Checks if is video.
+     * Gets the value of the video property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isVideo() {
         return video;
     }
 
     /**
-     * Sets the video.
+     * Sets the value of the video property.
      * 
-     * @param value the new video
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setVideo(Boolean value) {
         this.video = value;
     }
 
     /**
-     * Checks if is polling.
+     * Gets the value of the polling property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isPolling() {
         return polling;
     }
 
     /**
-     * Sets the polling.
+     * Sets the value of the polling property.
      * 
-     * @param value the new polling
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setPolling(Boolean value) {
         this.polling = value;
     }
 
     /**
-     * Checks if is notes.
+     * Gets the value of the notes property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isNotes() {
         return notes;
     }
 
     /**
-     * Sets the notes.
+     * Sets the value of the notes property.
      * 
-     * @param value the new notes
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setNotes(Boolean value) {
         this.notes = value;
     }
 
     /**
-     * Checks if is file share.
+     * Gets the value of the fileShare property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isFileShare() {
         return fileShare;
     }
 
     /**
-     * Sets the file share.
+     * Sets the value of the fileShare property.
      * 
-     * @param value the new file share
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setFileShare(Boolean value) {
         this.fileShare = value;
     }
 
     /**
-     * Checks if is attendee list.
+     * Gets the value of the attendeeList property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAttendeeList() {
         return attendeeList;
     }
 
     /**
-     * Sets the attendee list.
+     * Sets the value of the attendeeList property.
      * 
-     * @param value the new attendee list
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAttendeeList(Boolean value) {
         this.attendeeList = value;
     }
 
     /**
-     * Checks if is toc.
+     * Gets the value of the toc property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isToc() {
         return toc;
     }
 
     /**
-     * Sets the toc.
+     * Sets the value of the toc property.
      * 
-     * @param value the new toc
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setToc(Boolean value) {
         this.toc = value;
     }
 
     /**
-     * Gets the range.
+     * Gets the value of the range property.
      * 
-     * @return the range
+     * @return
+     *     possible object is
+     *     {@link PlaybackRangeType }
+     *     
      */
     public PlaybackRangeType getRange() {
         return range;
     }
 
     /**
-     * Sets the range.
+     * Sets the value of the range property.
      * 
-     * @param value the new range
+     * @param value
+     *     allowed object is
+     *     {@link PlaybackRangeType }
+     *     
      */
     public void setRange(PlaybackRangeType value) {
         this.range = value;
     }
 
     /**
-     * Gets the partial start.
+     * Gets the value of the partialStart property.
      * 
-     * @return the partial start
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getPartialStart() {
         return partialStart;
     }
 
     /**
-     * Sets the partial start.
+     * Sets the value of the partialStart property.
      * 
-     * @param value the new partial start
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setPartialStart(Long value) {
         this.partialStart = value;
     }
 
     /**
-     * Gets the partial end.
+     * Gets the value of the partialEnd property.
      * 
-     * @return the partial end
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getPartialEnd() {
         return partialEnd;
     }
 
     /**
-     * Sets the partial end.
+     * Sets the value of the partialEnd property.
      * 
-     * @param value the new partial end
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setPartialEnd(Long value) {
         this.partialEnd = value;
     }
 
     /**
-     * Checks if is include nb rcontrols.
+     * Gets the value of the includeNBRcontrols property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isIncludeNBRcontrols() {
         return includeNBRcontrols;
     }
 
     /**
-     * Sets the include nb rcontrols.
+     * Sets the value of the includeNBRcontrols property.
      * 
-     * @param value the new include nb rcontrols
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setIncludeNBRcontrols(Boolean value) {
         this.includeNBRcontrols = value;

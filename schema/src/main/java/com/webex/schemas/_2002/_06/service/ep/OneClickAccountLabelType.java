@@ -25,7 +25,29 @@ import com.webex.schemas._2002._06.service.TspAccountLabelType;
 
 
 /**
- * The Class OneClickAccountLabelType.
+ * <p>Java class for oneClickAccountLabelType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="oneClickAccountLabelType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}tspAccountLabelType">
+ *       &lt;sequence>
+ *         &lt;element name="participantLimitedAccessCodeLabel" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="512"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "oneClickAccountLabelType", propOrder = {
@@ -36,25 +58,28 @@ public class OneClickAccountLabelType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The participant limited access code label. */
     protected String participantLimitedAccessCodeLabel;
 
     /**
-     * Gets the participant limited access code label.
+     * Gets the value of the participantLimitedAccessCodeLabel property.
      * 
-     * @return the participant limited access code label
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getParticipantLimitedAccessCodeLabel() {
         return participantLimitedAccessCodeLabel;
     }
 
     /**
-     * Sets the participant limited access code label.
+     * Sets the value of the participantLimitedAccessCodeLabel property.
      * 
-     * @param value the new participant limited access code label
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setParticipantLimitedAccessCodeLabel(String value) {
         this.participantLimitedAccessCodeLabel = value;

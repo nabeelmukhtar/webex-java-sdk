@@ -28,7 +28,33 @@ import com.webex.schemas._2002._06.service.MeetingAssistType;
 
 
 /**
- * The Class MeetingType.
+ * <p>Java class for meetingType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="meetingType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="accessControl" type="{http://www.webex.com/schemas/2002/06/service/meeting}accessControlType" minOccurs="0"/>
+ *         &lt;element name="metaData" type="{http://www.webex.com/schemas/2002/06/service/meeting}metaDataType" minOccurs="0"/>
+ *         &lt;element name="participants" type="{http://www.webex.com/schemas/2002/06/service/meeting}participantsType" minOccurs="0"/>
+ *         &lt;element name="enableOptions" type="{http://www.webex.com/schemas/2002/06/service/meeting}enableOptionsType" minOccurs="0"/>
+ *         &lt;element name="schedule" type="{http://www.webex.com/schemas/2002/06/service/meeting}scheduleType" minOccurs="0"/>
+ *         &lt;element name="telephony" type="{http://www.webex.com/schemas/2002/06/service/meeting}telephonyType" minOccurs="0"/>
+ *         &lt;element name="tracking" type="{http://www.webex.com/schemas/2002/06/common}trackingType" minOccurs="0"/>
+ *         &lt;element name="repeat" type="{http://www.webex.com/schemas/2002/06/service/meeting}repeatType" minOccurs="0"/>
+ *         &lt;element name="remind" type="{http://www.webex.com/schemas/2002/06/service/meeting}remindType" minOccurs="0"/>
+ *         &lt;element name="attendeeOptions" type="{http://www.webex.com/schemas/2002/06/service/meeting}attendeeOptionsType" minOccurs="0"/>
+ *         &lt;element name="assistService" type="{http://www.webex.com/schemas/2002/06/service}meetingAssistType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "meetingType", propOrder = {
@@ -53,235 +79,278 @@ public class MeetingType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The access control. */
     protected AccessControlType accessControl;
-    
-    /** The meta data. */
     protected MetaDataType metaData;
-    
-    /** The participants. */
     protected ParticipantsType participants;
-    
-    /** The enable options. */
     protected EnableOptionsType enableOptions;
-    
-    /** The schedule. */
     protected ScheduleType schedule;
-    
-    /** The telephony. */
     protected TelephonyType telephony;
-    
-    /** The tracking. */
     protected TrackingType tracking;
-    
-    /** The repeat. */
     protected RepeatType repeat;
-    
-    /** The remind. */
     protected RemindType remind;
-    
-    /** The attendee options. */
     protected AttendeeOptionsType attendeeOptions;
-    
-    /** The assist service. */
     protected MeetingAssistType assistService;
 
     /**
-     * Gets the access control.
+     * Gets the value of the accessControl property.
      * 
-     * @return the access control
+     * @return
+     *     possible object is
+     *     {@link AccessControlType }
+     *     
      */
     public AccessControlType getAccessControl() {
         return accessControl;
     }
 
     /**
-     * Sets the access control.
+     * Sets the value of the accessControl property.
      * 
-     * @param value the new access control
+     * @param value
+     *     allowed object is
+     *     {@link AccessControlType }
+     *     
      */
     public void setAccessControl(AccessControlType value) {
         this.accessControl = value;
     }
 
     /**
-     * Gets the meta data.
+     * Gets the value of the metaData property.
      * 
-     * @return the meta data
+     * @return
+     *     possible object is
+     *     {@link MetaDataType }
+     *     
      */
     public MetaDataType getMetaData() {
         return metaData;
     }
 
     /**
-     * Sets the meta data.
+     * Sets the value of the metaData property.
      * 
-     * @param value the new meta data
+     * @param value
+     *     allowed object is
+     *     {@link MetaDataType }
+     *     
      */
     public void setMetaData(MetaDataType value) {
         this.metaData = value;
     }
 
     /**
-     * Gets the participants.
+     * Gets the value of the participants property.
      * 
-     * @return the participants
+     * @return
+     *     possible object is
+     *     {@link ParticipantsType }
+     *     
      */
     public ParticipantsType getParticipants() {
         return participants;
     }
 
     /**
-     * Sets the participants.
+     * Sets the value of the participants property.
      * 
-     * @param value the new participants
+     * @param value
+     *     allowed object is
+     *     {@link ParticipantsType }
+     *     
      */
     public void setParticipants(ParticipantsType value) {
         this.participants = value;
     }
 
     /**
-     * Gets the enable options.
+     * Gets the value of the enableOptions property.
      * 
-     * @return the enable options
+     * @return
+     *     possible object is
+     *     {@link EnableOptionsType }
+     *     
      */
     public EnableOptionsType getEnableOptions() {
         return enableOptions;
     }
 
     /**
-     * Sets the enable options.
+     * Sets the value of the enableOptions property.
      * 
-     * @param value the new enable options
+     * @param value
+     *     allowed object is
+     *     {@link EnableOptionsType }
+     *     
      */
     public void setEnableOptions(EnableOptionsType value) {
         this.enableOptions = value;
     }
 
     /**
-     * Gets the schedule.
+     * Gets the value of the schedule property.
      * 
-     * @return the schedule
+     * @return
+     *     possible object is
+     *     {@link ScheduleType }
+     *     
      */
     public ScheduleType getSchedule() {
         return schedule;
     }
 
     /**
-     * Sets the schedule.
+     * Sets the value of the schedule property.
      * 
-     * @param value the new schedule
+     * @param value
+     *     allowed object is
+     *     {@link ScheduleType }
+     *     
      */
     public void setSchedule(ScheduleType value) {
         this.schedule = value;
     }
 
     /**
-     * Gets the telephony.
+     * Gets the value of the telephony property.
      * 
-     * @return the telephony
+     * @return
+     *     possible object is
+     *     {@link TelephonyType }
+     *     
      */
     public TelephonyType getTelephony() {
         return telephony;
     }
 
     /**
-     * Sets the telephony.
+     * Sets the value of the telephony property.
      * 
-     * @param value the new telephony
+     * @param value
+     *     allowed object is
+     *     {@link TelephonyType }
+     *     
      */
     public void setTelephony(TelephonyType value) {
         this.telephony = value;
     }
 
     /**
-     * Gets the tracking.
+     * Gets the value of the tracking property.
      * 
-     * @return the tracking
+     * @return
+     *     possible object is
+     *     {@link TrackingType }
+     *     
      */
     public TrackingType getTracking() {
         return tracking;
     }
 
     /**
-     * Sets the tracking.
+     * Sets the value of the tracking property.
      * 
-     * @param value the new tracking
+     * @param value
+     *     allowed object is
+     *     {@link TrackingType }
+     *     
      */
     public void setTracking(TrackingType value) {
         this.tracking = value;
     }
 
     /**
-     * Gets the repeat.
+     * Gets the value of the repeat property.
      * 
-     * @return the repeat
+     * @return
+     *     possible object is
+     *     {@link RepeatType }
+     *     
      */
     public RepeatType getRepeat() {
         return repeat;
     }
 
     /**
-     * Sets the repeat.
+     * Sets the value of the repeat property.
      * 
-     * @param value the new repeat
+     * @param value
+     *     allowed object is
+     *     {@link RepeatType }
+     *     
      */
     public void setRepeat(RepeatType value) {
         this.repeat = value;
     }
 
     /**
-     * Gets the remind.
+     * Gets the value of the remind property.
      * 
-     * @return the remind
+     * @return
+     *     possible object is
+     *     {@link RemindType }
+     *     
      */
     public RemindType getRemind() {
         return remind;
     }
 
     /**
-     * Sets the remind.
+     * Sets the value of the remind property.
      * 
-     * @param value the new remind
+     * @param value
+     *     allowed object is
+     *     {@link RemindType }
+     *     
      */
     public void setRemind(RemindType value) {
         this.remind = value;
     }
 
     /**
-     * Gets the attendee options.
+     * Gets the value of the attendeeOptions property.
      * 
-     * @return the attendee options
+     * @return
+     *     possible object is
+     *     {@link AttendeeOptionsType }
+     *     
      */
     public AttendeeOptionsType getAttendeeOptions() {
         return attendeeOptions;
     }
 
     /**
-     * Sets the attendee options.
+     * Sets the value of the attendeeOptions property.
      * 
-     * @param value the new attendee options
+     * @param value
+     *     allowed object is
+     *     {@link AttendeeOptionsType }
+     *     
      */
     public void setAttendeeOptions(AttendeeOptionsType value) {
         this.attendeeOptions = value;
     }
 
     /**
-     * Gets the assist service.
+     * Gets the value of the assistService property.
      * 
-     * @return the assist service
+     * @return
+     *     possible object is
+     *     {@link MeetingAssistType }
+     *     
      */
     public MeetingAssistType getAssistService() {
         return assistService;
     }
 
     /**
-     * Sets the assist service.
+     * Sets the value of the assistService property.
      * 
-     * @param value the new assist service
+     * @param value
+     *     allowed object is
+     *     {@link MeetingAssistType }
+     *     
      */
     public void setAssistService(MeetingAssistType value) {
         this.assistService = value;

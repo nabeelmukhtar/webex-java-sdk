@@ -28,7 +28,30 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * The Class VarsubsetType.
+ * <p>Java class for varsubsetType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="varsubsetType">
+ *   &lt;simpleContent>
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
+ *       &lt;attribute name="respident" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       &lt;attribute name="setmatch" default="Exact">
+ *         &lt;simpleType>
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
+ *             &lt;enumeration value="Exact"/>
+ *             &lt;enumeration value="Partial"/>
+ *           &lt;/restriction>
+ *         &lt;/simpleType>
+ *       &lt;/attribute>
+ *       &lt;attribute name="index" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *     &lt;/extension>
+ *   &lt;/simpleContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "varsubsetType", propOrder = {
@@ -38,66 +61,72 @@ public class VarsubsetType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The value. */
     @XmlValue
     protected String value;
-    
-    /** The respident. */
     @XmlAttribute(required = true)
     protected String respident;
-    
-    /** The setmatch. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String setmatch;
-    
-    /** The index. */
     @XmlAttribute
     protected String index;
 
     /**
-     * Gets the value.
+     * Gets the value of the value property.
      * 
-     * @return the value
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value.
+     * Sets the value of the value property.
      * 
-     * @param value the new value
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setValue(String value) {
         this.value = value;
     }
 
     /**
-     * Gets the respident.
+     * Gets the value of the respident property.
      * 
-     * @return the respident
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getRespident() {
         return respident;
     }
 
     /**
-     * Sets the respident.
+     * Sets the value of the respident property.
      * 
-     * @param value the new respident
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setRespident(String value) {
         this.respident = value;
     }
 
     /**
-     * Gets the setmatch.
+     * Gets the value of the setmatch property.
      * 
-     * @return the setmatch
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSetmatch() {
         if (setmatch == null) {
@@ -108,27 +137,36 @@ public class VarsubsetType
     }
 
     /**
-     * Sets the setmatch.
+     * Sets the value of the setmatch property.
      * 
-     * @param value the new setmatch
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSetmatch(String value) {
         this.setmatch = value;
     }
 
     /**
-     * Gets the index.
+     * Gets the value of the index property.
      * 
-     * @return the index
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getIndex() {
         return index;
     }
 
     /**
-     * Sets the index.
+     * Sets the value of the index property.
      * 
-     * @param value the new index
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setIndex(String value) {
         this.index = value;

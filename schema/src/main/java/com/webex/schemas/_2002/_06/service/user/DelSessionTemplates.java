@@ -28,7 +28,24 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class DelSessionTemplates.
+ * <p>Java class for delSessionTemplates complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="delSessionTemplates">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="sessionTemplate" type="{http://www.webex.com/schemas/2002/06/service/user}sessionTemplateType" maxOccurs="unbounded"/>
+ *         &lt;element name="templateType" type="{http://www.webex.com/schemas/2002/06/service/user}templateTypeType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "delSessionTemplates", propOrder = {
@@ -40,21 +57,33 @@ public class DelSessionTemplates
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The session template. */
     @XmlElement(required = true)
     protected List<SessionTemplateType> sessionTemplate;
-    
-    /** The template type. */
     @XmlElement(defaultValue = "User")
     protected TemplateTypeType templateType;
 
     /**
-     * Gets the session template.
+     * Gets the value of the sessionTemplate property.
      * 
-     * @return the session template
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the sessionTemplate property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getSessionTemplate().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link SessionTemplateType }
+     * 
+     * 
      */
     public List<SessionTemplateType> getSessionTemplate() {
         if (sessionTemplate == null) {
@@ -64,18 +93,24 @@ public class DelSessionTemplates
     }
 
     /**
-     * Gets the template type.
+     * Gets the value of the templateType property.
      * 
-     * @return the template type
+     * @return
+     *     possible object is
+     *     {@link TemplateTypeType }
+     *     
      */
     public TemplateTypeType getTemplateType() {
         return templateType;
     }
 
     /**
-     * Sets the template type.
+     * Sets the value of the templateType property.
      * 
-     * @param value the new template type
+     * @param value
+     *     allowed object is
+     *     {@link TemplateTypeType }
+     *     
      */
     public void setTemplateType(TemplateTypeType value) {
         this.templateType = value;

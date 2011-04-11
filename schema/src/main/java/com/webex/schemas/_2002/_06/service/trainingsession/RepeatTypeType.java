@@ -22,37 +22,33 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum RepeatTypeType.
+ * <p>Java class for repeatTypeType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="repeatTypeType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="SINGLE"/>
+ *     &lt;enumeration value="RECURRING_SINGLE"/>
+ *     &lt;enumeration value="MULTIPLE_SESSION"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "repeatTypeType")
 @XmlEnum
 public enum RepeatTypeType {
 
-    /** The SINGLE. */
     SINGLE,
-    
-    /** The RECURRIN g_ single. */
     RECURRING_SINGLE,
-    
-    /** The MULTIPL e_ session. */
     MULTIPLE_SESSION;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the repeat type type
-     */
     public static RepeatTypeType fromValue(String v) {
         return valueOf(v);
     }

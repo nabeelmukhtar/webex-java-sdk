@@ -28,7 +28,24 @@ import com.webex.schemas._2002._06.service.MatchingRecordsType;
 
 
 /**
- * The Class LstUserResponse.
+ * <p>Java class for lstUserResponse complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="lstUserResponse">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="user" type="{http://www.webex.com/schemas/2002/06/service/user}userInstanceType" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="matchingRecords" type="{http://www.webex.com/schemas/2002/06/service}matchingRecordsType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstUserResponse", propOrder = {
@@ -40,19 +57,31 @@ public class LstUserResponse
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The user. */
     protected List<UserInstanceType> user;
-    
-    /** The matching records. */
     protected MatchingRecordsType matchingRecords;
 
     /**
-     * Gets the user.
+     * Gets the value of the user property.
      * 
-     * @return the user
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the user property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getUser().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link UserInstanceType }
+     * 
+     * 
      */
     public List<UserInstanceType> getUser() {
         if (user == null) {
@@ -62,18 +91,24 @@ public class LstUserResponse
     }
 
     /**
-     * Gets the matching records.
+     * Gets the value of the matchingRecords property.
      * 
-     * @return the matching records
+     * @return
+     *     possible object is
+     *     {@link MatchingRecordsType }
+     *     
      */
     public MatchingRecordsType getMatchingRecords() {
         return matchingRecords;
     }
 
     /**
-     * Sets the matching records.
+     * Sets the value of the matchingRecords property.
      * 
-     * @param value the new matching records
+     * @param value
+     *     allowed object is
+     *     {@link MatchingRecordsType }
+     *     
      */
     public void setMatchingRecords(MatchingRecordsType value) {
         this.matchingRecords = value;

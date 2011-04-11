@@ -29,7 +29,28 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class ScheduleType.
+ * <p>Java class for scheduleType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="scheduleType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="startDate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="timeZone" type="{http://www.webex.com/schemas/2002/06/common}timeZoneType" minOccurs="0"/>
+ *         &lt;element name="duration" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="entryExitTone" type="{http://www.webex.com/schemas/2002/06/service/meeting/auo}entryExitToneType" minOccurs="0"/>
+ *         &lt;element name="hostWebExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "scheduleType", propOrder = {
@@ -44,136 +65,159 @@ public class ScheduleType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The start date. */
     protected String startDate;
-    
-    /** The time zone id. */
     @XmlElement(type = String.class, defaultValue = "-1")
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long timeZoneID;
-    
-    /** The time zone. */
     protected TimeZoneType timeZone;
-    
-    /** The duration. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long duration;
-    
-    /** The entry exit tone. */
     protected EntryExitToneType entryExitTone;
-    
-    /** The host web ex id. */
     protected String hostWebExID;
 
     /**
-     * Gets the start date.
+     * Gets the value of the startDate property.
      * 
-     * @return the start date
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getStartDate() {
         return startDate;
     }
 
     /**
-     * Sets the start date.
+     * Sets the value of the startDate property.
      * 
-     * @param value the new start date
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setStartDate(String value) {
         this.startDate = value;
     }
 
     /**
-     * Gets the time zone id.
+     * Gets the value of the timeZoneID property.
      * 
-     * @return the time zone id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the time zone id.
+     * Sets the value of the timeZoneID property.
      * 
-     * @param value the new time zone id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTimeZoneID(Long value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the time zone.
+     * Gets the value of the timeZone property.
      * 
-     * @return the time zone
+     * @return
+     *     possible object is
+     *     {@link TimeZoneType }
+     *     
      */
     public TimeZoneType getTimeZone() {
         return timeZone;
     }
 
     /**
-     * Sets the time zone.
+     * Sets the value of the timeZone property.
      * 
-     * @param value the new time zone
+     * @param value
+     *     allowed object is
+     *     {@link TimeZoneType }
+     *     
      */
     public void setTimeZone(TimeZoneType value) {
         this.timeZone = value;
     }
 
     /**
-     * Gets the duration.
+     * Gets the value of the duration property.
      * 
-     * @return the duration
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getDuration() {
         return duration;
     }
 
     /**
-     * Sets the duration.
+     * Sets the value of the duration property.
      * 
-     * @param value the new duration
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDuration(Long value) {
         this.duration = value;
     }
 
     /**
-     * Gets the entry exit tone.
+     * Gets the value of the entryExitTone property.
      * 
-     * @return the entry exit tone
+     * @return
+     *     possible object is
+     *     {@link EntryExitToneType }
+     *     
      */
     public EntryExitToneType getEntryExitTone() {
         return entryExitTone;
     }
 
     /**
-     * Sets the entry exit tone.
+     * Sets the value of the entryExitTone property.
      * 
-     * @param value the new entry exit tone
+     * @param value
+     *     allowed object is
+     *     {@link EntryExitToneType }
+     *     
      */
     public void setEntryExitTone(EntryExitToneType value) {
         this.entryExitTone = value;
     }
 
     /**
-     * Gets the host web ex id.
+     * Gets the value of the hostWebExID property.
      * 
-     * @return the host web ex id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHostWebExID() {
         return hostWebExID;
     }
 
     /**
-     * Sets the host web ex id.
+     * Sets the value of the hostWebExID property.
      * 
-     * @param value the new host web ex id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHostWebExID(String value) {
         this.hostWebExID = value;

@@ -28,7 +28,57 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class SiteType.
+ * <p>Java class for siteType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="siteType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="metaData" type="{http://www.webex.com/schemas/2002/06/service/site}metaDataType" minOccurs="0"/>
+ *         &lt;element name="ucf" type="{http://www.webex.com/schemas/2002/06/service/site}ucfType"/>
+ *         &lt;element name="clientPlatforms" type="{http://www.webex.com/schemas/2002/06/service/site}clientPlatformsType" minOccurs="0"/>
+ *         &lt;element name="resourceRestrictions" type="{http://www.webex.com/schemas/2002/06/service/site}resourceRestrictionsType"/>
+ *         &lt;element name="supportAPI" type="{http://www.webex.com/schemas/2002/06/service/site}supportAPIType"/>
+ *         &lt;element name="myWebExConfig" type="{http://www.webex.com/schemas/2002/06/service/site}myWebExConfigType" minOccurs="0"/>
+ *         &lt;element name="telephonyConfig" type="{http://www.webex.com/schemas/2002/06/service/site}telephonyConfigType" minOccurs="0"/>
+ *         &lt;element name="commerceAndReporting" type="{http://www.webex.com/schemas/2002/06/service/site}commerceAndReportingType" minOccurs="0"/>
+ *         &lt;element name="tools" type="{http://www.webex.com/schemas/2002/06/service/site}toolsType" minOccurs="0"/>
+ *         &lt;element name="custCommunications" type="{http://www.webex.com/schemas/2002/06/service/site}custCommunicationsType" minOccurs="0"/>
+ *         &lt;element name="trackingCodes" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="trackingCode" type="{http://www.webex.com/schemas/2002/06/service/site}trackingCodeType" maxOccurs="10" minOccurs="0"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="supportedServices" type="{http://www.webex.com/schemas/2002/06/service/site}supportedServicesType" minOccurs="0"/>
+ *         &lt;element name="securityOptions" type="{http://www.webex.com/schemas/2002/06/service/site}securityOptionsType" minOccurs="0"/>
+ *         &lt;element name="defaults" type="{http://www.webex.com/schemas/2002/06/service/site}defaultsType" minOccurs="0"/>
+ *         &lt;element name="scheduleMeetingOptions" type="{http://www.webex.com/schemas/2002/06/service/site}scheduleOptionsType" minOccurs="0"/>
+ *         &lt;element name="navBarTop" type="{http://www.webex.com/schemas/2002/06/service/site}topBarType" minOccurs="0"/>
+ *         &lt;element name="navMyWebEx" type="{http://www.webex.com/schemas/2002/06/service/site}myWebExBarType" minOccurs="0"/>
+ *         &lt;element name="navAllServices" type="{http://www.webex.com/schemas/2002/06/service/site}allServiceBarType" minOccurs="0"/>
+ *         &lt;element name="passwordCriteria" type="{http://www.webex.com/schemas/2002/06/service/site}passwordCriteriaType"/>
+ *         &lt;element name="accountPasswordCriteria" type="{http://www.webex.com/schemas/2002/06/service/site}accountPasswordCriteriaType"/>
+ *         &lt;element name="productivityTools" type="{http://www.webex.com/schemas/2002/06/service/site}productivityToolType" minOccurs="0"/>
+ *         &lt;element name="meetingPlace" type="{http://www.webex.com/schemas/2002/06/service/site}meetingPlaceType"/>
+ *         &lt;element name="eventCenter" type="{http://www.webex.com/schemas/2002/06/service/site}eventCenterType" minOccurs="0"/>
+ *         &lt;element name="salesCenter" type="{http://www.webex.com/schemas/2002/06/service/site}SalesCenterType" minOccurs="0"/>
+ *         &lt;element name="connectIntegration" type="{http://www.webex.com/schemas/2002/06/service/site}connectIntegrationType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "siteType", propOrder = {
@@ -63,535 +113,634 @@ public class SiteType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The meta data. */
     protected MetaDataType metaData;
-    
-    /** The ucf. */
     @XmlElement(required = true)
     protected UcfType ucf;
-    
-    /** The client platforms. */
     protected ClientPlatformsType clientPlatforms;
-    
-    /** The resource restrictions. */
     @XmlElement(required = true)
     protected ResourceRestrictionsType resourceRestrictions;
-    
-    /** The support api. */
     @XmlElement(required = true)
     protected SupportAPIType supportAPI;
-    
-    /** The my web ex config. */
     protected MyWebExConfigType myWebExConfig;
-    
-    /** The telephony config. */
     protected TelephonyConfigType telephonyConfig;
-    
-    /** The commerce and reporting. */
     protected CommerceAndReportingType commerceAndReporting;
-    
-    /** The tools. */
     protected ToolsType tools;
-    
-    /** The cust communications. */
     protected CustCommunicationsType custCommunications;
-    
-    /** The tracking codes. */
     protected SiteType.TrackingCodes trackingCodes;
-    
-    /** The supported services. */
     protected SupportedServicesType supportedServices;
-    
-    /** The security options. */
     protected SecurityOptionsType securityOptions;
-    
-    /** The defaults. */
     protected DefaultsType defaults;
-    
-    /** The schedule meeting options. */
     protected ScheduleOptionsType scheduleMeetingOptions;
-    
-    /** The nav bar top. */
     protected TopBarType navBarTop;
-    
-    /** The nav my web ex. */
     protected MyWebExBarType navMyWebEx;
-    
-    /** The nav all services. */
     protected AllServiceBarType navAllServices;
-    
-    /** The password criteria. */
     @XmlElement(required = true)
     protected PasswordCriteriaType passwordCriteria;
-    
-    /** The account password criteria. */
     @XmlElement(required = true)
     protected AccountPasswordCriteriaType accountPasswordCriteria;
-    
-    /** The productivity tools. */
     protected ProductivityToolType productivityTools;
-    
-    /** The meeting place. */
     @XmlElement(required = true)
     protected MeetingPlaceType meetingPlace;
-    
-    /** The event center. */
     protected EventCenterType eventCenter;
-    
-    /** The sales center. */
     protected SalesCenterType salesCenter;
-    
-    /** The connect integration. */
     protected ConnectIntegrationType connectIntegration;
 
     /**
-     * Gets the meta data.
+     * Gets the value of the metaData property.
      * 
-     * @return the meta data
+     * @return
+     *     possible object is
+     *     {@link MetaDataType }
+     *     
      */
     public MetaDataType getMetaData() {
         return metaData;
     }
 
     /**
-     * Sets the meta data.
+     * Sets the value of the metaData property.
      * 
-     * @param value the new meta data
+     * @param value
+     *     allowed object is
+     *     {@link MetaDataType }
+     *     
      */
     public void setMetaData(MetaDataType value) {
         this.metaData = value;
     }
 
     /**
-     * Gets the ucf.
+     * Gets the value of the ucf property.
      * 
-     * @return the ucf
+     * @return
+     *     possible object is
+     *     {@link UcfType }
+     *     
      */
     public UcfType getUcf() {
         return ucf;
     }
 
     /**
-     * Sets the ucf.
+     * Sets the value of the ucf property.
      * 
-     * @param value the new ucf
+     * @param value
+     *     allowed object is
+     *     {@link UcfType }
+     *     
      */
     public void setUcf(UcfType value) {
         this.ucf = value;
     }
 
     /**
-     * Gets the client platforms.
+     * Gets the value of the clientPlatforms property.
      * 
-     * @return the client platforms
+     * @return
+     *     possible object is
+     *     {@link ClientPlatformsType }
+     *     
      */
     public ClientPlatformsType getClientPlatforms() {
         return clientPlatforms;
     }
 
     /**
-     * Sets the client platforms.
+     * Sets the value of the clientPlatforms property.
      * 
-     * @param value the new client platforms
+     * @param value
+     *     allowed object is
+     *     {@link ClientPlatformsType }
+     *     
      */
     public void setClientPlatforms(ClientPlatformsType value) {
         this.clientPlatforms = value;
     }
 
     /**
-     * Gets the resource restrictions.
+     * Gets the value of the resourceRestrictions property.
      * 
-     * @return the resource restrictions
+     * @return
+     *     possible object is
+     *     {@link ResourceRestrictionsType }
+     *     
      */
     public ResourceRestrictionsType getResourceRestrictions() {
         return resourceRestrictions;
     }
 
     /**
-     * Sets the resource restrictions.
+     * Sets the value of the resourceRestrictions property.
      * 
-     * @param value the new resource restrictions
+     * @param value
+     *     allowed object is
+     *     {@link ResourceRestrictionsType }
+     *     
      */
     public void setResourceRestrictions(ResourceRestrictionsType value) {
         this.resourceRestrictions = value;
     }
 
     /**
-     * Gets the support api.
+     * Gets the value of the supportAPI property.
      * 
-     * @return the support api
+     * @return
+     *     possible object is
+     *     {@link SupportAPIType }
+     *     
      */
     public SupportAPIType getSupportAPI() {
         return supportAPI;
     }
 
     /**
-     * Sets the support api.
+     * Sets the value of the supportAPI property.
      * 
-     * @param value the new support api
+     * @param value
+     *     allowed object is
+     *     {@link SupportAPIType }
+     *     
      */
     public void setSupportAPI(SupportAPIType value) {
         this.supportAPI = value;
     }
 
     /**
-     * Gets the my web ex config.
+     * Gets the value of the myWebExConfig property.
      * 
-     * @return the my web ex config
+     * @return
+     *     possible object is
+     *     {@link MyWebExConfigType }
+     *     
      */
     public MyWebExConfigType getMyWebExConfig() {
         return myWebExConfig;
     }
 
     /**
-     * Sets the my web ex config.
+     * Sets the value of the myWebExConfig property.
      * 
-     * @param value the new my web ex config
+     * @param value
+     *     allowed object is
+     *     {@link MyWebExConfigType }
+     *     
      */
     public void setMyWebExConfig(MyWebExConfigType value) {
         this.myWebExConfig = value;
     }
 
     /**
-     * Gets the telephony config.
+     * Gets the value of the telephonyConfig property.
      * 
-     * @return the telephony config
+     * @return
+     *     possible object is
+     *     {@link TelephonyConfigType }
+     *     
      */
     public TelephonyConfigType getTelephonyConfig() {
         return telephonyConfig;
     }
 
     /**
-     * Sets the telephony config.
+     * Sets the value of the telephonyConfig property.
      * 
-     * @param value the new telephony config
+     * @param value
+     *     allowed object is
+     *     {@link TelephonyConfigType }
+     *     
      */
     public void setTelephonyConfig(TelephonyConfigType value) {
         this.telephonyConfig = value;
     }
 
     /**
-     * Gets the commerce and reporting.
+     * Gets the value of the commerceAndReporting property.
      * 
-     * @return the commerce and reporting
+     * @return
+     *     possible object is
+     *     {@link CommerceAndReportingType }
+     *     
      */
     public CommerceAndReportingType getCommerceAndReporting() {
         return commerceAndReporting;
     }
 
     /**
-     * Sets the commerce and reporting.
+     * Sets the value of the commerceAndReporting property.
      * 
-     * @param value the new commerce and reporting
+     * @param value
+     *     allowed object is
+     *     {@link CommerceAndReportingType }
+     *     
      */
     public void setCommerceAndReporting(CommerceAndReportingType value) {
         this.commerceAndReporting = value;
     }
 
     /**
-     * Gets the tools.
+     * Gets the value of the tools property.
      * 
-     * @return the tools
+     * @return
+     *     possible object is
+     *     {@link ToolsType }
+     *     
      */
     public ToolsType getTools() {
         return tools;
     }
 
     /**
-     * Sets the tools.
+     * Sets the value of the tools property.
      * 
-     * @param value the new tools
+     * @param value
+     *     allowed object is
+     *     {@link ToolsType }
+     *     
      */
     public void setTools(ToolsType value) {
         this.tools = value;
     }
 
     /**
-     * Gets the cust communications.
+     * Gets the value of the custCommunications property.
      * 
-     * @return the cust communications
+     * @return
+     *     possible object is
+     *     {@link CustCommunicationsType }
+     *     
      */
     public CustCommunicationsType getCustCommunications() {
         return custCommunications;
     }
 
     /**
-     * Sets the cust communications.
+     * Sets the value of the custCommunications property.
      * 
-     * @param value the new cust communications
+     * @param value
+     *     allowed object is
+     *     {@link CustCommunicationsType }
+     *     
      */
     public void setCustCommunications(CustCommunicationsType value) {
         this.custCommunications = value;
     }
 
     /**
-     * Gets the tracking codes.
+     * Gets the value of the trackingCodes property.
      * 
-     * @return the tracking codes
+     * @return
+     *     possible object is
+     *     {@link SiteType.TrackingCodes }
+     *     
      */
     public SiteType.TrackingCodes getTrackingCodes() {
         return trackingCodes;
     }
 
     /**
-     * Sets the tracking codes.
+     * Sets the value of the trackingCodes property.
      * 
-     * @param value the new tracking codes
+     * @param value
+     *     allowed object is
+     *     {@link SiteType.TrackingCodes }
+     *     
      */
     public void setTrackingCodes(SiteType.TrackingCodes value) {
         this.trackingCodes = value;
     }
 
     /**
-     * Gets the supported services.
+     * Gets the value of the supportedServices property.
      * 
-     * @return the supported services
+     * @return
+     *     possible object is
+     *     {@link SupportedServicesType }
+     *     
      */
     public SupportedServicesType getSupportedServices() {
         return supportedServices;
     }
 
     /**
-     * Sets the supported services.
+     * Sets the value of the supportedServices property.
      * 
-     * @param value the new supported services
+     * @param value
+     *     allowed object is
+     *     {@link SupportedServicesType }
+     *     
      */
     public void setSupportedServices(SupportedServicesType value) {
         this.supportedServices = value;
     }
 
     /**
-     * Gets the security options.
+     * Gets the value of the securityOptions property.
      * 
-     * @return the security options
+     * @return
+     *     possible object is
+     *     {@link SecurityOptionsType }
+     *     
      */
     public SecurityOptionsType getSecurityOptions() {
         return securityOptions;
     }
 
     /**
-     * Sets the security options.
+     * Sets the value of the securityOptions property.
      * 
-     * @param value the new security options
+     * @param value
+     *     allowed object is
+     *     {@link SecurityOptionsType }
+     *     
      */
     public void setSecurityOptions(SecurityOptionsType value) {
         this.securityOptions = value;
     }
 
     /**
-     * Gets the defaults.
+     * Gets the value of the defaults property.
      * 
-     * @return the defaults
+     * @return
+     *     possible object is
+     *     {@link DefaultsType }
+     *     
      */
     public DefaultsType getDefaults() {
         return defaults;
     }
 
     /**
-     * Sets the defaults.
+     * Sets the value of the defaults property.
      * 
-     * @param value the new defaults
+     * @param value
+     *     allowed object is
+     *     {@link DefaultsType }
+     *     
      */
     public void setDefaults(DefaultsType value) {
         this.defaults = value;
     }
 
     /**
-     * Gets the schedule meeting options.
+     * Gets the value of the scheduleMeetingOptions property.
      * 
-     * @return the schedule meeting options
+     * @return
+     *     possible object is
+     *     {@link ScheduleOptionsType }
+     *     
      */
     public ScheduleOptionsType getScheduleMeetingOptions() {
         return scheduleMeetingOptions;
     }
 
     /**
-     * Sets the schedule meeting options.
+     * Sets the value of the scheduleMeetingOptions property.
      * 
-     * @param value the new schedule meeting options
+     * @param value
+     *     allowed object is
+     *     {@link ScheduleOptionsType }
+     *     
      */
     public void setScheduleMeetingOptions(ScheduleOptionsType value) {
         this.scheduleMeetingOptions = value;
     }
 
     /**
-     * Gets the nav bar top.
+     * Gets the value of the navBarTop property.
      * 
-     * @return the nav bar top
+     * @return
+     *     possible object is
+     *     {@link TopBarType }
+     *     
      */
     public TopBarType getNavBarTop() {
         return navBarTop;
     }
 
     /**
-     * Sets the nav bar top.
+     * Sets the value of the navBarTop property.
      * 
-     * @param value the new nav bar top
+     * @param value
+     *     allowed object is
+     *     {@link TopBarType }
+     *     
      */
     public void setNavBarTop(TopBarType value) {
         this.navBarTop = value;
     }
 
     /**
-     * Gets the nav my web ex.
+     * Gets the value of the navMyWebEx property.
      * 
-     * @return the nav my web ex
+     * @return
+     *     possible object is
+     *     {@link MyWebExBarType }
+     *     
      */
     public MyWebExBarType getNavMyWebEx() {
         return navMyWebEx;
     }
 
     /**
-     * Sets the nav my web ex.
+     * Sets the value of the navMyWebEx property.
      * 
-     * @param value the new nav my web ex
+     * @param value
+     *     allowed object is
+     *     {@link MyWebExBarType }
+     *     
      */
     public void setNavMyWebEx(MyWebExBarType value) {
         this.navMyWebEx = value;
     }
 
     /**
-     * Gets the nav all services.
+     * Gets the value of the navAllServices property.
      * 
-     * @return the nav all services
+     * @return
+     *     possible object is
+     *     {@link AllServiceBarType }
+     *     
      */
     public AllServiceBarType getNavAllServices() {
         return navAllServices;
     }
 
     /**
-     * Sets the nav all services.
+     * Sets the value of the navAllServices property.
      * 
-     * @param value the new nav all services
+     * @param value
+     *     allowed object is
+     *     {@link AllServiceBarType }
+     *     
      */
     public void setNavAllServices(AllServiceBarType value) {
         this.navAllServices = value;
     }
 
     /**
-     * Gets the password criteria.
+     * Gets the value of the passwordCriteria property.
      * 
-     * @return the password criteria
+     * @return
+     *     possible object is
+     *     {@link PasswordCriteriaType }
+     *     
      */
     public PasswordCriteriaType getPasswordCriteria() {
         return passwordCriteria;
     }
 
     /**
-     * Sets the password criteria.
+     * Sets the value of the passwordCriteria property.
      * 
-     * @param value the new password criteria
+     * @param value
+     *     allowed object is
+     *     {@link PasswordCriteriaType }
+     *     
      */
     public void setPasswordCriteria(PasswordCriteriaType value) {
         this.passwordCriteria = value;
     }
 
     /**
-     * Gets the account password criteria.
+     * Gets the value of the accountPasswordCriteria property.
      * 
-     * @return the account password criteria
+     * @return
+     *     possible object is
+     *     {@link AccountPasswordCriteriaType }
+     *     
      */
     public AccountPasswordCriteriaType getAccountPasswordCriteria() {
         return accountPasswordCriteria;
     }
 
     /**
-     * Sets the account password criteria.
+     * Sets the value of the accountPasswordCriteria property.
      * 
-     * @param value the new account password criteria
+     * @param value
+     *     allowed object is
+     *     {@link AccountPasswordCriteriaType }
+     *     
      */
     public void setAccountPasswordCriteria(AccountPasswordCriteriaType value) {
         this.accountPasswordCriteria = value;
     }
 
     /**
-     * Gets the productivity tools.
+     * Gets the value of the productivityTools property.
      * 
-     * @return the productivity tools
+     * @return
+     *     possible object is
+     *     {@link ProductivityToolType }
+     *     
      */
     public ProductivityToolType getProductivityTools() {
         return productivityTools;
     }
 
     /**
-     * Sets the productivity tools.
+     * Sets the value of the productivityTools property.
      * 
-     * @param value the new productivity tools
+     * @param value
+     *     allowed object is
+     *     {@link ProductivityToolType }
+     *     
      */
     public void setProductivityTools(ProductivityToolType value) {
         this.productivityTools = value;
     }
 
     /**
-     * Gets the meeting place.
+     * Gets the value of the meetingPlace property.
      * 
-     * @return the meeting place
+     * @return
+     *     possible object is
+     *     {@link MeetingPlaceType }
+     *     
      */
     public MeetingPlaceType getMeetingPlace() {
         return meetingPlace;
     }
 
     /**
-     * Sets the meeting place.
+     * Sets the value of the meetingPlace property.
      * 
-     * @param value the new meeting place
+     * @param value
+     *     allowed object is
+     *     {@link MeetingPlaceType }
+     *     
      */
     public void setMeetingPlace(MeetingPlaceType value) {
         this.meetingPlace = value;
     }
 
     /**
-     * Gets the event center.
+     * Gets the value of the eventCenter property.
      * 
-     * @return the event center
+     * @return
+     *     possible object is
+     *     {@link EventCenterType }
+     *     
      */
     public EventCenterType getEventCenter() {
         return eventCenter;
     }
 
     /**
-     * Sets the event center.
+     * Sets the value of the eventCenter property.
      * 
-     * @param value the new event center
+     * @param value
+     *     allowed object is
+     *     {@link EventCenterType }
+     *     
      */
     public void setEventCenter(EventCenterType value) {
         this.eventCenter = value;
     }
 
     /**
-     * Gets the sales center.
+     * Gets the value of the salesCenter property.
      * 
-     * @return the sales center
+     * @return
+     *     possible object is
+     *     {@link SalesCenterType }
+     *     
      */
     public SalesCenterType getSalesCenter() {
         return salesCenter;
     }
 
     /**
-     * Sets the sales center.
+     * Sets the value of the salesCenter property.
      * 
-     * @param value the new sales center
+     * @param value
+     *     allowed object is
+     *     {@link SalesCenterType }
+     *     
      */
     public void setSalesCenter(SalesCenterType value) {
         this.salesCenter = value;
     }
 
     /**
-     * Gets the connect integration.
+     * Gets the value of the connectIntegration property.
      * 
-     * @return the connect integration
+     * @return
+     *     possible object is
+     *     {@link ConnectIntegrationType }
+     *     
      */
     public ConnectIntegrationType getConnectIntegration() {
         return connectIntegration;
     }
 
     /**
-     * Sets the connect integration.
+     * Sets the value of the connectIntegration property.
      * 
-     * @param value the new connect integration
+     * @param value
+     *     allowed object is
+     *     {@link ConnectIntegrationType }
+     *     
      */
     public void setConnectIntegration(ConnectIntegrationType value) {
         this.connectIntegration = value;
@@ -599,7 +748,23 @@ public class SiteType
 
 
     /**
-     * The Class TrackingCodes.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="trackingCode" type="{http://www.webex.com/schemas/2002/06/service/site}trackingCodeType" maxOccurs="10" minOccurs="0"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -609,16 +774,30 @@ public class SiteType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The tracking code. */
         protected List<TrackingCodeType> trackingCode;
 
         /**
-         * Gets the tracking code.
+         * Gets the value of the trackingCode property.
          * 
-         * @return the tracking code
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the trackingCode property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getTrackingCode().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link TrackingCodeType }
+         * 
+         * 
          */
         public List<TrackingCodeType> getTrackingCode() {
             if (trackingCode == null) {

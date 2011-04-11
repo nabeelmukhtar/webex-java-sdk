@@ -25,7 +25,24 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class ActivateUser.
+ * <p>Java class for activateUser complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="activateUser">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;choice>
+ *         &lt;element name="userID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="webexID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/choice>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "activateUser", propOrder = {
@@ -37,46 +54,53 @@ public class ActivateUser
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The user id. */
     protected Long userID;
-    
-    /** The webex id. */
     protected String webexID;
 
     /**
-     * Gets the user id.
+     * Gets the value of the userID property.
      * 
-     * @return the user id
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getUserID() {
         return userID;
     }
 
     /**
-     * Sets the user id.
+     * Sets the value of the userID property.
      * 
-     * @param value the new user id
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setUserID(Long value) {
         this.userID = value;
     }
 
     /**
-     * Gets the webex id.
+     * Gets the value of the webexID property.
      * 
-     * @return the webex id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getWebexID() {
         return webexID;
     }
 
     /**
-     * Sets the webex id.
+     * Sets the value of the webexID property.
      * 
-     * @param value the new webex id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setWebexID(String value) {
         this.webexID = value;

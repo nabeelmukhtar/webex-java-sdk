@@ -24,7 +24,25 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class CreateEvent.
+ * <p>Java class for createEvent complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="createEvent">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}eventType">
+ *       &lt;sequence>
+ *         &lt;element name="enrollment" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentType" minOccurs="0"/>
+ *         &lt;element name="enrollmentForm" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFormCreateType" minOccurs="0"/>
+ *         &lt;element name="validateFormat" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "createEvent", propOrder = {
@@ -37,67 +55,78 @@ public class CreateEvent
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The enrollment. */
     protected EnrollmentType enrollment;
-    
-    /** The enrollment form. */
     protected EnrollmentFormCreateType enrollmentForm;
-    
-    /** The validate format. */
     protected Boolean validateFormat;
 
     /**
-     * Gets the enrollment.
+     * Gets the value of the enrollment property.
      * 
-     * @return the enrollment
+     * @return
+     *     possible object is
+     *     {@link EnrollmentType }
+     *     
      */
     public EnrollmentType getEnrollment() {
         return enrollment;
     }
 
     /**
-     * Sets the enrollment.
+     * Sets the value of the enrollment property.
      * 
-     * @param value the new enrollment
+     * @param value
+     *     allowed object is
+     *     {@link EnrollmentType }
+     *     
      */
     public void setEnrollment(EnrollmentType value) {
         this.enrollment = value;
     }
 
     /**
-     * Gets the enrollment form.
+     * Gets the value of the enrollmentForm property.
      * 
-     * @return the enrollment form
+     * @return
+     *     possible object is
+     *     {@link EnrollmentFormCreateType }
+     *     
      */
     public EnrollmentFormCreateType getEnrollmentForm() {
         return enrollmentForm;
     }
 
     /**
-     * Sets the enrollment form.
+     * Sets the value of the enrollmentForm property.
      * 
-     * @param value the new enrollment form
+     * @param value
+     *     allowed object is
+     *     {@link EnrollmentFormCreateType }
+     *     
      */
     public void setEnrollmentForm(EnrollmentFormCreateType value) {
         this.enrollmentForm = value;
     }
 
     /**
-     * Checks if is validate format.
+     * Gets the value of the validateFormat property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isValidateFormat() {
         return validateFormat;
     }
 
     /**
-     * Sets the validate format.
+     * Sets the value of the validateFormat property.
      * 
-     * @param value the new validate format
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setValidateFormat(Boolean value) {
         this.validateFormat = value;

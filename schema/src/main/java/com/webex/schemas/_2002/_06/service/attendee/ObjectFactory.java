@@ -21,295 +21,276 @@ import javax.xml.bind.annotation.XmlRegistry;
 
 
 /**
- * A factory for creating Object objects.
+ * This object contains factory methods for each 
+ * Java content interface and Java element interface 
+ * generated in the com.webex.schemas._2002._06.service.attendee package. 
+ * <p>An ObjectFactory allows you to programatically 
+ * construct new instances of the Java representation 
+ * for XML content. The Java representation of XML 
+ * content can consist of schema derived interfaces 
+ * and classes representing the binding of schema 
+ * type definitions, element declarations and model 
+ * groups.  Factory methods for each of these are 
+ * provided in this class.
+ * 
  */
 @XmlRegistry
 public class ObjectFactory {
 
 
     /**
-     * Instantiates a new object factory.
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.webex.schemas._2002._06.service.attendee
+     * 
      */
     public ObjectFactory() {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link RegisterMeetingAttendeeResponse.Register }
      * 
-     * @return the creates the meeting attendee response
-     */
-    public CreateMeetingAttendeeResponse createCreateMeetingAttendeeResponse() {
-        return new CreateMeetingAttendeeResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the feedback attendee type
-     */
-    public FeedbackAttendeeType createFeedbackAttendeeType() {
-        return new FeedbackAttendeeType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the enroll fields
-     */
-    public EnrollAttendeeType.EnrollFields createEnrollAttendeeTypeEnrollFields() {
-        return new EnrollAttendeeType.EnrollFields();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the creates the meeting attendee
-     */
-    public CreateMeetingAttendee createCreateMeetingAttendee() {
-        return new CreateMeetingAttendee();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lst meeting attendee response
-     */
-    public LstMeetingAttendeeResponse createLstMeetingAttendeeResponse() {
-        return new LstMeetingAttendeeResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the register
      */
     public RegisterMeetingAttendeeResponse.Register createRegisterMeetingAttendeeResponseRegister() {
         return new RegisterMeetingAttendeeResponse.Register();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link AttendeeStatusType }
      * 
-     * @return the register attendee type
-     */
-    public RegisterAttendeeType createRegisterAttendeeType() {
-        return new RegisterAttendeeType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the feedback default fields type
-     */
-    public FeedbackDefaultFieldsType createFeedbackDefaultFieldsType() {
-        return new FeedbackDefaultFieldsType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the attendee status type
      */
     public AttendeeStatusType createAttendeeStatusType() {
         return new AttendeeStatusType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link RegisterAttendeeType }
      * 
-     * @return the gets the enrollment info
      */
-    public GetEnrollmentInfo createGetEnrollmentInfo() {
-        return new GetEnrollmentInfo();
+    public RegisterAttendeeType createRegisterAttendeeType() {
+        return new RegisterAttendeeType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link GetEnrollmentInfoResponse }
      * 
-     * @return the custom fields
-     */
-    public EnrollAttendeeType.EnrollFields.CustomFields createEnrollAttendeeTypeEnrollFieldsCustomFields() {
-        return new EnrollAttendeeType.EnrollFields.CustomFields();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the attendee email type
-     */
-    public AttendeeEmailType createAttendeeEmailType() {
-        return new AttendeeEmailType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the feedback fields
-     */
-    public FeedbackAttendeeType.FeedbackFields createFeedbackAttendeeTypeFeedbackFields() {
-        return new FeedbackAttendeeType.FeedbackFields();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the attendee instance type
-     */
-    public AttendeeInstanceType createAttendeeInstanceType() {
-        return new AttendeeInstanceType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the gets the feedback info
-     */
-    public GetFeedbackInfo createGetFeedbackInfo() {
-        return new GetFeedbackInfo();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the gets the feedback info response
-     */
-    public GetFeedbackInfoResponse createGetFeedbackInfoResponse() {
-        return new GetFeedbackInfoResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lst meeting attendee
-     */
-    public LstMeetingAttendee createLstMeetingAttendee() {
-        return new LstMeetingAttendee();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the del meeting attendee response
-     */
-    public DelMeetingAttendeeResponse createDelMeetingAttendeeResponse() {
-        return new DelMeetingAttendeeResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the gets the enrollment info response
      */
     public GetEnrollmentInfoResponse createGetEnrollmentInfoResponse() {
         return new GetEnrollmentInfoResponse();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link GetFeedbackInfo }
      * 
-     * @return the enroll attendee type
+     */
+    public GetFeedbackInfo createGetFeedbackInfo() {
+        return new GetFeedbackInfo();
+    }
+
+    /**
+     * Create an instance of {@link EnrollAttendeeType }
+     * 
      */
     public EnrollAttendeeType createEnrollAttendeeType() {
         return new EnrollAttendeeType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link RegisterMeetingAttendee }
      * 
-     * @return the enroll default fields type
-     */
-    public EnrollDefaultFieldsType createEnrollDefaultFieldsType() {
-        return new EnrollDefaultFieldsType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the custom fields
-     */
-    public FeedbackAttendeeType.FeedbackFields.CustomFields createFeedbackAttendeeTypeFeedbackFieldsCustomFields() {
-        return new FeedbackAttendeeType.FeedbackFields.CustomFields();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the del meeting attendee
-     */
-    public DelMeetingAttendee createDelMeetingAttendee() {
-        return new DelMeetingAttendee();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the order type
-     */
-    public OrderType createOrderType() {
-        return new OrderType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the register meeting attendee response
-     */
-    public RegisterMeetingAttendeeResponse createRegisterMeetingAttendeeResponse() {
-        return new RegisterMeetingAttendeeResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the feedback session type
-     */
-    public FeedbackSessionType createFeedbackSessionType() {
-        return new FeedbackSessionType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the enroll session type
-     */
-    public EnrollSessionType createEnrollSessionType() {
-        return new EnrollSessionType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the register meeting attendee
      */
     public RegisterMeetingAttendee createRegisterMeetingAttendee() {
         return new RegisterMeetingAttendee();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link EnrollSessionType }
      * 
-     * @return the register
      */
-    public CreateMeetingAttendeeResponse.Register createCreateMeetingAttendeeResponseRegister() {
-        return new CreateMeetingAttendeeResponse.Register();
+    public EnrollSessionType createEnrollSessionType() {
+        return new EnrollSessionType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link FieldType }
      * 
-     * @return the field type
      */
     public FieldType createFieldType() {
         return new FieldType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link CreateMeetingAttendeeResponse }
      * 
-     * @return the attendee type
+     */
+    public CreateMeetingAttendeeResponse createCreateMeetingAttendeeResponse() {
+        return new CreateMeetingAttendeeResponse();
+    }
+
+    /**
+     * Create an instance of {@link FeedbackSessionType }
+     * 
+     */
+    public FeedbackSessionType createFeedbackSessionType() {
+        return new FeedbackSessionType();
+    }
+
+    /**
+     * Create an instance of {@link EnrollDefaultFieldsType }
+     * 
+     */
+    public EnrollDefaultFieldsType createEnrollDefaultFieldsType() {
+        return new EnrollDefaultFieldsType();
+    }
+
+    /**
+     * Create an instance of {@link DelMeetingAttendeeResponse }
+     * 
+     */
+    public DelMeetingAttendeeResponse createDelMeetingAttendeeResponse() {
+        return new DelMeetingAttendeeResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetEnrollmentInfo }
+     * 
+     */
+    public GetEnrollmentInfo createGetEnrollmentInfo() {
+        return new GetEnrollmentInfo();
+    }
+
+    /**
+     * Create an instance of {@link FeedbackAttendeeType }
+     * 
+     */
+    public FeedbackAttendeeType createFeedbackAttendeeType() {
+        return new FeedbackAttendeeType();
+    }
+
+    /**
+     * Create an instance of {@link AttendeeType }
+     * 
      */
     public AttendeeType createAttendeeType() {
         return new AttendeeType();
+    }
+
+    /**
+     * Create an instance of {@link FeedbackAttendeeType.FeedbackFields.CustomFields }
+     * 
+     */
+    public FeedbackAttendeeType.FeedbackFields.CustomFields createFeedbackAttendeeTypeFeedbackFieldsCustomFields() {
+        return new FeedbackAttendeeType.FeedbackFields.CustomFields();
+    }
+
+    /**
+     * Create an instance of {@link AttendeeEmailType }
+     * 
+     */
+    public AttendeeEmailType createAttendeeEmailType() {
+        return new AttendeeEmailType();
+    }
+
+    /**
+     * Create an instance of {@link FeedbackAttendeeType.FeedbackFields }
+     * 
+     */
+    public FeedbackAttendeeType.FeedbackFields createFeedbackAttendeeTypeFeedbackFields() {
+        return new FeedbackAttendeeType.FeedbackFields();
+    }
+
+    /**
+     * Create an instance of {@link AttendeeInstanceType }
+     * 
+     */
+    public AttendeeInstanceType createAttendeeInstanceType() {
+        return new AttendeeInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link CreateMeetingAttendeeResponse.Register }
+     * 
+     */
+    public CreateMeetingAttendeeResponse.Register createCreateMeetingAttendeeResponseRegister() {
+        return new CreateMeetingAttendeeResponse.Register();
+    }
+
+    /**
+     * Create an instance of {@link OrderType }
+     * 
+     */
+    public OrderType createOrderType() {
+        return new OrderType();
+    }
+
+    /**
+     * Create an instance of {@link GetFeedbackInfoResponse }
+     * 
+     */
+    public GetFeedbackInfoResponse createGetFeedbackInfoResponse() {
+        return new GetFeedbackInfoResponse();
+    }
+
+    /**
+     * Create an instance of {@link CreateMeetingAttendee }
+     * 
+     */
+    public CreateMeetingAttendee createCreateMeetingAttendee() {
+        return new CreateMeetingAttendee();
+    }
+
+    /**
+     * Create an instance of {@link LstMeetingAttendee }
+     * 
+     */
+    public LstMeetingAttendee createLstMeetingAttendee() {
+        return new LstMeetingAttendee();
+    }
+
+    /**
+     * Create an instance of {@link EnrollAttendeeType.EnrollFields.CustomFields }
+     * 
+     */
+    public EnrollAttendeeType.EnrollFields.CustomFields createEnrollAttendeeTypeEnrollFieldsCustomFields() {
+        return new EnrollAttendeeType.EnrollFields.CustomFields();
+    }
+
+    /**
+     * Create an instance of {@link LstMeetingAttendeeResponse }
+     * 
+     */
+    public LstMeetingAttendeeResponse createLstMeetingAttendeeResponse() {
+        return new LstMeetingAttendeeResponse();
+    }
+
+    /**
+     * Create an instance of {@link DelMeetingAttendee }
+     * 
+     */
+    public DelMeetingAttendee createDelMeetingAttendee() {
+        return new DelMeetingAttendee();
+    }
+
+    /**
+     * Create an instance of {@link FeedbackDefaultFieldsType }
+     * 
+     */
+    public FeedbackDefaultFieldsType createFeedbackDefaultFieldsType() {
+        return new FeedbackDefaultFieldsType();
+    }
+
+    /**
+     * Create an instance of {@link EnrollAttendeeType.EnrollFields }
+     * 
+     */
+    public EnrollAttendeeType.EnrollFields createEnrollAttendeeTypeEnrollFields() {
+        return new EnrollAttendeeType.EnrollFields();
+    }
+
+    /**
+     * Create an instance of {@link RegisterMeetingAttendeeResponse }
+     * 
+     */
+    public RegisterMeetingAttendeeResponse createRegisterMeetingAttendeeResponse() {
+        return new RegisterMeetingAttendeeResponse();
     }
 
 }

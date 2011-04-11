@@ -27,7 +27,34 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class RegisterMeetingAttendeeResponse.
+ * <p>Java class for registerMeetingAttendeeResponse complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="registerMeetingAttendeeResponse">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="register" maxOccurs="unbounded" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="attendeeID" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *                   &lt;element name="registerID" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "registerMeetingAttendeeResponse", propOrder = {
@@ -38,16 +65,30 @@ public class RegisterMeetingAttendeeResponse
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The register. */
     protected List<RegisterMeetingAttendeeResponse.Register> register;
 
     /**
-     * Gets the register.
+     * Gets the value of the register property.
      * 
-     * @return the register
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the register property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getRegister().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link RegisterMeetingAttendeeResponse.Register }
+     * 
+     * 
      */
     public List<RegisterMeetingAttendeeResponse.Register> getRegister() {
         if (register == null) {
@@ -58,7 +99,24 @@ public class RegisterMeetingAttendeeResponse
 
 
     /**
-     * The Class Register.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="attendeeID" type="{http://www.w3.org/2001/XMLSchema}long"/>
+     *         &lt;element name="registerID" type="{http://www.w3.org/2001/XMLSchema}long"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -69,46 +127,37 @@ public class RegisterMeetingAttendeeResponse
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The attendee id. */
         protected long attendeeID;
-        
-        /** The register id. */
         protected long registerID;
 
         /**
-         * Gets the attendee id.
+         * Gets the value of the attendeeID property.
          * 
-         * @return the attendee id
          */
         public long getAttendeeID() {
             return attendeeID;
         }
 
         /**
-         * Sets the attendee id.
+         * Sets the value of the attendeeID property.
          * 
-         * @param value the new attendee id
          */
         public void setAttendeeID(long value) {
             this.attendeeID = value;
         }
 
         /**
-         * Gets the register id.
+         * Gets the value of the registerID property.
          * 
-         * @return the register id
          */
         public long getRegisterID() {
             return registerID;
         }
 
         /**
-         * Sets the register id.
+         * Sets the value of the registerID property.
          * 
-         * @param value the new register id
          */
         public void setRegisterID(long value) {
             this.registerID = value;

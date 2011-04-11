@@ -25,7 +25,34 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class LimitsType.
+ * <p>Java class for limitsType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="limitsType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="maxAppShareDuration" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="maxAppShareUser" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="maxDesktopShareDuration" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="maxDesktopShareUser" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="maxFileTransferUser" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="maxMeetingDuration" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="maxMeetingUser" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="maxRecordUser" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="maxVideoDuration" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="maxVideoUser" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="maxWebTourDuration" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="maxWebTourUser" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "limitsType", propOrder = {
@@ -46,268 +73,315 @@ public class LimitsType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The max app share duration. */
     @XmlElement(defaultValue = "999999")
     protected Long maxAppShareDuration;
-    
-    /** The max app share user. */
     @XmlElement(defaultValue = "999999")
     protected Long maxAppShareUser;
-    
-    /** The max desktop share duration. */
     @XmlElement(defaultValue = "999999")
     protected Long maxDesktopShareDuration;
-    
-    /** The max desktop share user. */
     @XmlElement(defaultValue = "999999")
     protected Long maxDesktopShareUser;
-    
-    /** The max file transfer user. */
     @XmlElement(defaultValue = "999999")
     protected Long maxFileTransferUser;
-    
-    /** The max meeting duration. */
     @XmlElement(defaultValue = "999999")
     protected Long maxMeetingDuration;
-    
-    /** The max meeting user. */
     @XmlElement(defaultValue = "999999")
     protected Long maxMeetingUser;
-    
-    /** The max record user. */
     @XmlElement(defaultValue = "999999")
     protected Long maxRecordUser;
-    
-    /** The max video duration. */
     @XmlElement(defaultValue = "999999")
     protected Long maxVideoDuration;
-    
-    /** The max video user. */
     @XmlElement(defaultValue = "999999")
     protected Long maxVideoUser;
-    
-    /** The max web tour duration. */
     @XmlElement(defaultValue = "999999")
     protected Long maxWebTourDuration;
-    
-    /** The max web tour user. */
     @XmlElement(defaultValue = "999999")
     protected Long maxWebTourUser;
 
     /**
-     * Gets the max app share duration.
+     * Gets the value of the maxAppShareDuration property.
      * 
-     * @return the max app share duration
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getMaxAppShareDuration() {
         return maxAppShareDuration;
     }
 
     /**
-     * Sets the max app share duration.
+     * Sets the value of the maxAppShareDuration property.
      * 
-     * @param value the new max app share duration
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setMaxAppShareDuration(Long value) {
         this.maxAppShareDuration = value;
     }
 
     /**
-     * Gets the max app share user.
+     * Gets the value of the maxAppShareUser property.
      * 
-     * @return the max app share user
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getMaxAppShareUser() {
         return maxAppShareUser;
     }
 
     /**
-     * Sets the max app share user.
+     * Sets the value of the maxAppShareUser property.
      * 
-     * @param value the new max app share user
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setMaxAppShareUser(Long value) {
         this.maxAppShareUser = value;
     }
 
     /**
-     * Gets the max desktop share duration.
+     * Gets the value of the maxDesktopShareDuration property.
      * 
-     * @return the max desktop share duration
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getMaxDesktopShareDuration() {
         return maxDesktopShareDuration;
     }
 
     /**
-     * Sets the max desktop share duration.
+     * Sets the value of the maxDesktopShareDuration property.
      * 
-     * @param value the new max desktop share duration
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setMaxDesktopShareDuration(Long value) {
         this.maxDesktopShareDuration = value;
     }
 
     /**
-     * Gets the max desktop share user.
+     * Gets the value of the maxDesktopShareUser property.
      * 
-     * @return the max desktop share user
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getMaxDesktopShareUser() {
         return maxDesktopShareUser;
     }
 
     /**
-     * Sets the max desktop share user.
+     * Sets the value of the maxDesktopShareUser property.
      * 
-     * @param value the new max desktop share user
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setMaxDesktopShareUser(Long value) {
         this.maxDesktopShareUser = value;
     }
 
     /**
-     * Gets the max file transfer user.
+     * Gets the value of the maxFileTransferUser property.
      * 
-     * @return the max file transfer user
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getMaxFileTransferUser() {
         return maxFileTransferUser;
     }
 
     /**
-     * Sets the max file transfer user.
+     * Sets the value of the maxFileTransferUser property.
      * 
-     * @param value the new max file transfer user
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setMaxFileTransferUser(Long value) {
         this.maxFileTransferUser = value;
     }
 
     /**
-     * Gets the max meeting duration.
+     * Gets the value of the maxMeetingDuration property.
      * 
-     * @return the max meeting duration
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getMaxMeetingDuration() {
         return maxMeetingDuration;
     }
 
     /**
-     * Sets the max meeting duration.
+     * Sets the value of the maxMeetingDuration property.
      * 
-     * @param value the new max meeting duration
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setMaxMeetingDuration(Long value) {
         this.maxMeetingDuration = value;
     }
 
     /**
-     * Gets the max meeting user.
+     * Gets the value of the maxMeetingUser property.
      * 
-     * @return the max meeting user
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getMaxMeetingUser() {
         return maxMeetingUser;
     }
 
     /**
-     * Sets the max meeting user.
+     * Sets the value of the maxMeetingUser property.
      * 
-     * @param value the new max meeting user
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setMaxMeetingUser(Long value) {
         this.maxMeetingUser = value;
     }
 
     /**
-     * Gets the max record user.
+     * Gets the value of the maxRecordUser property.
      * 
-     * @return the max record user
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getMaxRecordUser() {
         return maxRecordUser;
     }
 
     /**
-     * Sets the max record user.
+     * Sets the value of the maxRecordUser property.
      * 
-     * @param value the new max record user
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setMaxRecordUser(Long value) {
         this.maxRecordUser = value;
     }
 
     /**
-     * Gets the max video duration.
+     * Gets the value of the maxVideoDuration property.
      * 
-     * @return the max video duration
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getMaxVideoDuration() {
         return maxVideoDuration;
     }
 
     /**
-     * Sets the max video duration.
+     * Sets the value of the maxVideoDuration property.
      * 
-     * @param value the new max video duration
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setMaxVideoDuration(Long value) {
         this.maxVideoDuration = value;
     }
 
     /**
-     * Gets the max video user.
+     * Gets the value of the maxVideoUser property.
      * 
-     * @return the max video user
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getMaxVideoUser() {
         return maxVideoUser;
     }
 
     /**
-     * Sets the max video user.
+     * Sets the value of the maxVideoUser property.
      * 
-     * @param value the new max video user
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setMaxVideoUser(Long value) {
         this.maxVideoUser = value;
     }
 
     /**
-     * Gets the max web tour duration.
+     * Gets the value of the maxWebTourDuration property.
      * 
-     * @return the max web tour duration
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getMaxWebTourDuration() {
         return maxWebTourDuration;
     }
 
     /**
-     * Sets the max web tour duration.
+     * Sets the value of the maxWebTourDuration property.
      * 
-     * @param value the new max web tour duration
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setMaxWebTourDuration(Long value) {
         this.maxWebTourDuration = value;
     }
 
     /**
-     * Gets the max web tour user.
+     * Gets the value of the maxWebTourUser property.
      * 
-     * @return the max web tour user
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getMaxWebTourUser() {
         return maxWebTourUser;
     }
 
     /**
-     * Sets the max web tour user.
+     * Sets the value of the maxWebTourUser property.
      * 
-     * @param value the new max web tour user
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setMaxWebTourUser(Long value) {
         this.maxWebTourUser = value;

@@ -26,7 +26,24 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class GetLoginTicketResponse.
+ * <p>Java class for getLoginTicketResponse complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="getLoginTicketResponse">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="ticket" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="apiVersion" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getLoginTicketResponse", propOrder = {
@@ -38,48 +55,55 @@ public class GetLoginTicketResponse
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The ticket. */
     @XmlElement(required = true)
     protected String ticket;
-    
-    /** The api version. */
     @XmlElement(required = true)
     protected String apiVersion;
 
     /**
-     * Gets the ticket.
+     * Gets the value of the ticket property.
      * 
-     * @return the ticket
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTicket() {
         return ticket;
     }
 
     /**
-     * Sets the ticket.
+     * Sets the value of the ticket property.
      * 
-     * @param value the new ticket
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTicket(String value) {
         this.ticket = value;
     }
 
     /**
-     * Gets the api version.
+     * Gets the value of the apiVersion property.
      * 
-     * @return the api version
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getApiVersion() {
         return apiVersion;
     }
 
     /**
-     * Sets the api version.
+     * Sets the value of the apiVersion property.
      * 
-     * @param value the new api version
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setApiVersion(String value) {
         this.apiVersion = value;

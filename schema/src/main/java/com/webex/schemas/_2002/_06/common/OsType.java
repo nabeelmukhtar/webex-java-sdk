@@ -23,60 +23,46 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum OsType.
+ * <p>Java class for osType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="osType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="WIN2K"/>
+ *     &lt;enumeration value="WINNT"/>
+ *     &lt;enumeration value="WIN9X"/>
+ *     &lt;enumeration value="LINUX"/>
+ *     &lt;enumeration value="HPUX"/>
+ *     &lt;enumeration value="AIX"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "osType")
 @XmlEnum
 public enum OsType {
 
-    /** The WI n_2_ k. */
     @XmlEnumValue("WIN2K")
     WIN_2_K("WIN2K"),
-    
-    /** The WINNT. */
     WINNT("WINNT"),
-    
-    /** The WI n_9_ x. */
     @XmlEnumValue("WIN9X")
     WIN_9_X("WIN9X"),
-    
-    /** The LINUX. */
     LINUX("LINUX"),
-    
-    /** The HPUX. */
     HPUX("HPUX"),
-    
-    /** The AIX. */
     AIX("AIX");
-    
-    /** The value. */
     private final String value;
 
-    /**
-     * Instantiates a new os type.
-     * 
-     * @param v the v
-     */
     OsType(String v) {
         value = v;
     }
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return value;
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the os type
-     */
     public static OsType fromValue(String v) {
         for (OsType c: OsType.values()) {
             if (c.value.equals(v)) {

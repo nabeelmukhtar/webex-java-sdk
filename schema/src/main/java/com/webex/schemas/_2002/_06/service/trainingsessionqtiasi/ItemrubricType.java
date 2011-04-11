@@ -28,7 +28,39 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * The Class ItemrubricType.
+ * <p>Java class for itemrubricType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="itemrubricType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="material" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}materialType"/>
+ *       &lt;/sequence>
+ *       &lt;attribute name="view" default="All">
+ *         &lt;simpleType>
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
+ *             &lt;enumeration value="All"/>
+ *             &lt;enumeration value="Administrator"/>
+ *             &lt;enumeration value="AdminAuthority"/>
+ *             &lt;enumeration value="Assessor"/>
+ *             &lt;enumeration value="Author"/>
+ *             &lt;enumeration value="Candidate"/>
+ *             &lt;enumeration value="InvigilatorProctor"/>
+ *             &lt;enumeration value="Psychometrician"/>
+ *             &lt;enumeration value="Scorer"/>
+ *             &lt;enumeration value="Tutor"/>
+ *           &lt;/restriction>
+ *         &lt;/simpleType>
+ *       &lt;/attribute>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "itemrubricType", propOrder = {
@@ -38,40 +70,44 @@ public class ItemrubricType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The material. */
     @XmlElement(required = true)
     protected MaterialType material;
-    
-    /** The view. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String view;
 
     /**
-     * Gets the material.
+     * Gets the value of the material property.
      * 
-     * @return the material
+     * @return
+     *     possible object is
+     *     {@link MaterialType }
+     *     
      */
     public MaterialType getMaterial() {
         return material;
     }
 
     /**
-     * Sets the material.
+     * Sets the value of the material property.
      * 
-     * @param value the new material
+     * @param value
+     *     allowed object is
+     *     {@link MaterialType }
+     *     
      */
     public void setMaterial(MaterialType value) {
         this.material = value;
     }
 
     /**
-     * Gets the view.
+     * Gets the value of the view property.
      * 
-     * @return the view
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getView() {
         if (view == null) {
@@ -82,9 +118,12 @@ public class ItemrubricType
     }
 
     /**
-     * Sets the view.
+     * Sets the value of the view property.
      * 
-     * @param value the new view
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setView(String value) {
         this.view = value;

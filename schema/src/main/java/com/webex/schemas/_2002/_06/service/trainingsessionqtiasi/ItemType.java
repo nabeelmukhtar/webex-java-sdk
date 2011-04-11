@@ -28,7 +28,27 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class ItemType.
+ * <p>Java class for itemType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="itemType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="presentation" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}presentationType"/>
+ *         &lt;element name="resprocessing" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}resprocessingType" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="itemfeedback" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}itemfeedbackType" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="qticomment" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qticommentType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *       &lt;attribute name="ident" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "itemType", propOrder = {
@@ -40,48 +60,60 @@ import javax.xml.bind.annotation.XmlType;
 public class ItemType implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The presentation. */
     @XmlElement(required = true)
     protected PresentationType presentation;
-    
-    /** The resprocessing. */
     protected List<ResprocessingType> resprocessing;
-    
-    /** The itemfeedback. */
     protected List<ItemfeedbackType> itemfeedback;
-    
-    /** The qticomment. */
     protected QticommentType qticomment;
-    
-    /** The ident. */
     @XmlAttribute(required = true)
     protected String ident;
 
     /**
-     * Gets the presentation.
+     * Gets the value of the presentation property.
      * 
-     * @return the presentation
+     * @return
+     *     possible object is
+     *     {@link PresentationType }
+     *     
      */
     public PresentationType getPresentation() {
         return presentation;
     }
 
     /**
-     * Sets the presentation.
+     * Sets the value of the presentation property.
      * 
-     * @param value the new presentation
+     * @param value
+     *     allowed object is
+     *     {@link PresentationType }
+     *     
      */
     public void setPresentation(PresentationType value) {
         this.presentation = value;
     }
 
     /**
-     * Gets the resprocessing.
+     * Gets the value of the resprocessing property.
      * 
-     * @return the resprocessing
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the resprocessing property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getResprocessing().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link ResprocessingType }
+     * 
+     * 
      */
     public List<ResprocessingType> getResprocessing() {
         if (resprocessing == null) {
@@ -91,9 +123,26 @@ public class ItemType implements Serializable
     }
 
     /**
-     * Gets the itemfeedback.
+     * Gets the value of the itemfeedback property.
      * 
-     * @return the itemfeedback
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the itemfeedback property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getItemfeedback().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link ItemfeedbackType }
+     * 
+     * 
      */
     public List<ItemfeedbackType> getItemfeedback() {
         if (itemfeedback == null) {
@@ -103,36 +152,48 @@ public class ItemType implements Serializable
     }
 
     /**
-     * Gets the qticomment.
+     * Gets the value of the qticomment property.
      * 
-     * @return the qticomment
+     * @return
+     *     possible object is
+     *     {@link QticommentType }
+     *     
      */
     public QticommentType getQticomment() {
         return qticomment;
     }
 
     /**
-     * Sets the qticomment.
+     * Sets the value of the qticomment property.
      * 
-     * @param value the new qticomment
+     * @param value
+     *     allowed object is
+     *     {@link QticommentType }
+     *     
      */
     public void setQticomment(QticommentType value) {
         this.qticomment = value;
     }
 
     /**
-     * Gets the ident.
+     * Gets the value of the ident property.
      * 
-     * @return the ident
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getIdent() {
         return ident;
     }
 
     /**
-     * Sets the ident.
+     * Sets the value of the ident property.
      * 
-     * @param value the new ident
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setIdent(String value) {
         this.ident = value;

@@ -25,7 +25,29 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class RecordAccessHistoryInstanceType.
+ * <p>Java class for recordAccessHistoryInstanceType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="recordAccessHistoryInstanceType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="recordID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="recordName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="creationTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="registered" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="downloaded" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="viewed" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "recordAccessHistoryInstanceType", propOrder = {
@@ -41,152 +63,179 @@ public class RecordAccessHistoryInstanceType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The record id. */
     protected Long recordID;
-    
-    /** The record name. */
     protected String recordName;
-    
-    /** The creation time. */
     protected String creationTime;
-    
-    /** The registered. */
     protected Long registered;
-    
-    /** The downloaded. */
     protected Long downloaded;
-    
-    /** The viewed. */
     protected Long viewed;
-    
-    /** The time zone id. */
     @XmlElement(defaultValue = "-1")
     protected Integer timeZoneID;
 
     /**
-     * Gets the record id.
+     * Gets the value of the recordID property.
      * 
-     * @return the record id
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getRecordID() {
         return recordID;
     }
 
     /**
-     * Sets the record id.
+     * Sets the value of the recordID property.
      * 
-     * @param value the new record id
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setRecordID(Long value) {
         this.recordID = value;
     }
 
     /**
-     * Gets the record name.
+     * Gets the value of the recordName property.
      * 
-     * @return the record name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getRecordName() {
         return recordName;
     }
 
     /**
-     * Sets the record name.
+     * Sets the value of the recordName property.
      * 
-     * @param value the new record name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setRecordName(String value) {
         this.recordName = value;
     }
 
     /**
-     * Gets the creation time.
+     * Gets the value of the creationTime property.
      * 
-     * @return the creation time
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCreationTime() {
         return creationTime;
     }
 
     /**
-     * Sets the creation time.
+     * Sets the value of the creationTime property.
      * 
-     * @param value the new creation time
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCreationTime(String value) {
         this.creationTime = value;
     }
 
     /**
-     * Gets the registered.
+     * Gets the value of the registered property.
      * 
-     * @return the registered
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getRegistered() {
         return registered;
     }
 
     /**
-     * Sets the registered.
+     * Sets the value of the registered property.
      * 
-     * @param value the new registered
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setRegistered(Long value) {
         this.registered = value;
     }
 
     /**
-     * Gets the downloaded.
+     * Gets the value of the downloaded property.
      * 
-     * @return the downloaded
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getDownloaded() {
         return downloaded;
     }
 
     /**
-     * Sets the downloaded.
+     * Sets the value of the downloaded property.
      * 
-     * @param value the new downloaded
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setDownloaded(Long value) {
         this.downloaded = value;
     }
 
     /**
-     * Gets the viewed.
+     * Gets the value of the viewed property.
      * 
-     * @return the viewed
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getViewed() {
         return viewed;
     }
 
     /**
-     * Sets the viewed.
+     * Sets the value of the viewed property.
      * 
-     * @param value the new viewed
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setViewed(Long value) {
         this.viewed = value;
     }
 
     /**
-     * Gets the time zone id.
+     * Gets the value of the timeZoneID property.
      * 
-     * @return the time zone id
+     * @return
+     *     possible object is
+     *     {@link Integer }
+     *     
      */
     public Integer getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the time zone id.
+     * Sets the value of the timeZoneID property.
      * 
-     * @param value the new time zone id
+     * @param value
+     *     allowed object is
+     *     {@link Integer }
+     *     
      */
     public void setTimeZoneID(Integer value) {
         this.timeZoneID = value;

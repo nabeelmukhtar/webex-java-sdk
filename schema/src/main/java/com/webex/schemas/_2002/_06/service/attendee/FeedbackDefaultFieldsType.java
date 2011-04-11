@@ -24,7 +24,26 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class FeedbackDefaultFieldsType.
+ * <p>Java class for feedbackDefaultFieldsType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="feedbackDefaultFieldsType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="setup" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="easeOfUse" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="performance" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="comment" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "feedbackDefaultFieldsType", propOrder = {
@@ -37,88 +56,103 @@ public class FeedbackDefaultFieldsType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The setup. */
     protected String setup;
-    
-    /** The ease of use. */
     protected String easeOfUse;
-    
-    /** The performance. */
     protected String performance;
-    
-    /** The comment. */
     protected String comment;
 
     /**
-     * Gets the setup.
+     * Gets the value of the setup property.
      * 
-     * @return the setup
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSetup() {
         return setup;
     }
 
     /**
-     * Sets the setup.
+     * Sets the value of the setup property.
      * 
-     * @param value the new setup
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSetup(String value) {
         this.setup = value;
     }
 
     /**
-     * Gets the ease of use.
+     * Gets the value of the easeOfUse property.
      * 
-     * @return the ease of use
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getEaseOfUse() {
         return easeOfUse;
     }
 
     /**
-     * Sets the ease of use.
+     * Sets the value of the easeOfUse property.
      * 
-     * @param value the new ease of use
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setEaseOfUse(String value) {
         this.easeOfUse = value;
     }
 
     /**
-     * Gets the performance.
+     * Gets the value of the performance property.
      * 
-     * @return the performance
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPerformance() {
         return performance;
     }
 
     /**
-     * Sets the performance.
+     * Sets the value of the performance property.
      * 
-     * @param value the new performance
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPerformance(String value) {
         this.performance = value;
     }
 
     /**
-     * Gets the comment.
+     * Gets the value of the comment property.
      * 
-     * @return the comment
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getComment() {
         return comment;
     }
 
     /**
-     * Sets the comment.
+     * Sets the value of the comment property.
      * 
-     * @param value the new comment
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setComment(String value) {
         this.comment = value;

@@ -25,7 +25,23 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class UcfType.
+ * <p>Java class for ucfType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="ucfType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="ucfConfiguration" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ucfType", propOrder = {
@@ -35,26 +51,29 @@ public class UcfType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The ucf configuration. */
     @XmlElement(required = true)
     protected String ucfConfiguration;
 
     /**
-     * Gets the ucf configuration.
+     * Gets the value of the ucfConfiguration property.
      * 
-     * @return the ucf configuration
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getUcfConfiguration() {
         return ucfConfiguration;
     }
 
     /**
-     * Sets the ucf configuration.
+     * Sets the value of the ucfConfiguration property.
      * 
-     * @param value the new ucf configuration
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setUcfConfiguration(String value) {
         this.ucfConfiguration = value;

@@ -27,7 +27,23 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class CustomLinkType.
+ * <p>Java class for customLinkType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="customLinkType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="customLink" type="{http://www.webex.com/schemas/2002/06/service/site}linkType" maxOccurs="unbounded" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "customLinkType", propOrder = {
@@ -40,16 +56,30 @@ public class CustomLinkType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The custom link. */
     protected List<LinkType> customLink;
 
     /**
-     * Gets the custom link.
+     * Gets the value of the customLink property.
      * 
-     * @return the custom link
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the customLink property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getCustomLink().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link LinkType }
+     * 
+     * 
      */
     public List<LinkType> getCustomLink() {
         if (customLink == null) {

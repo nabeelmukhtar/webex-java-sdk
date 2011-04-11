@@ -26,7 +26,25 @@ import com.webex.schemas._2002._06.service.user.UserPhonesType;
 
 
 /**
- * The Class PhonesType.
+ * <p>Java class for phonesType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="phonesType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="phone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="mobilePhone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="fax" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "phonesType", propOrder = {
@@ -41,67 +59,78 @@ public class PhonesType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The phone. */
     protected String phone;
-    
-    /** The mobile phone. */
     protected String mobilePhone;
-    
-    /** The fax. */
     protected String fax;
 
     /**
-     * Gets the phone.
+     * Gets the value of the phone property.
      * 
-     * @return the phone
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPhone() {
         return phone;
     }
 
     /**
-     * Sets the phone.
+     * Sets the value of the phone property.
      * 
-     * @param value the new phone
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPhone(String value) {
         this.phone = value;
     }
 
     /**
-     * Gets the mobile phone.
+     * Gets the value of the mobilePhone property.
      * 
-     * @return the mobile phone
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMobilePhone() {
         return mobilePhone;
     }
 
     /**
-     * Sets the mobile phone.
+     * Sets the value of the mobilePhone property.
      * 
-     * @param value the new mobile phone
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMobilePhone(String value) {
         this.mobilePhone = value;
     }
 
     /**
-     * Gets the fax.
+     * Gets the value of the fax property.
      * 
-     * @return the fax
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFax() {
         return fax;
     }
 
     /**
-     * Sets the fax.
+     * Sets the value of the fax property.
      * 
-     * @param value the new fax
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFax(String value) {
         this.fax = value;

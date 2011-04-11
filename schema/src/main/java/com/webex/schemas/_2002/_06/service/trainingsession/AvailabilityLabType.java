@@ -29,7 +29,28 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class AvailabilityLabType.
+ * <p>Java class for availabilityLabType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="availabilityLabType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="labName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *         &lt;element name="sessionStartTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="sessionEndTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="numComputers" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *         &lt;element name="status" type="{http://www.webex.com/schemas/2002/06/common}labStatusType"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "availabilityLabType", propOrder = {
@@ -44,140 +65,163 @@ public class AvailabilityLabType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The lab name. */
     @XmlElement(required = true)
     protected String labName;
-    
-    /** The time zone id. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long timeZoneID;
-    
-    /** The session start time. */
     @XmlElement(required = true)
     protected String sessionStartTime;
-    
-    /** The session end time. */
     @XmlElement(required = true)
     protected String sessionEndTime;
-    
-    /** The num computers. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long numComputers;
-    
-    /** The status. */
     @XmlElement(required = true)
     protected LabStatusType status;
 
     /**
-     * Gets the lab name.
+     * Gets the value of the labName property.
      * 
-     * @return the lab name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLabName() {
         return labName;
     }
 
     /**
-     * Sets the lab name.
+     * Sets the value of the labName property.
      * 
-     * @param value the new lab name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLabName(String value) {
         this.labName = value;
     }
 
     /**
-     * Gets the time zone id.
+     * Gets the value of the timeZoneID property.
      * 
-     * @return the time zone id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the time zone id.
+     * Sets the value of the timeZoneID property.
      * 
-     * @param value the new time zone id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTimeZoneID(Long value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the session start time.
+     * Gets the value of the sessionStartTime property.
      * 
-     * @return the session start time
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSessionStartTime() {
         return sessionStartTime;
     }
 
     /**
-     * Sets the session start time.
+     * Sets the value of the sessionStartTime property.
      * 
-     * @param value the new session start time
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSessionStartTime(String value) {
         this.sessionStartTime = value;
     }
 
     /**
-     * Gets the session end time.
+     * Gets the value of the sessionEndTime property.
      * 
-     * @return the session end time
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSessionEndTime() {
         return sessionEndTime;
     }
 
     /**
-     * Sets the session end time.
+     * Sets the value of the sessionEndTime property.
      * 
-     * @param value the new session end time
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSessionEndTime(String value) {
         this.sessionEndTime = value;
     }
 
     /**
-     * Gets the num computers.
+     * Gets the value of the numComputers property.
      * 
-     * @return the num computers
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getNumComputers() {
         return numComputers;
     }
 
     /**
-     * Sets the num computers.
+     * Sets the value of the numComputers property.
      * 
-     * @param value the new num computers
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setNumComputers(Long value) {
         this.numComputers = value;
     }
 
     /**
-     * Gets the status.
+     * Gets the value of the status property.
      * 
-     * @return the status
+     * @return
+     *     possible object is
+     *     {@link LabStatusType }
+     *     
      */
     public LabStatusType getStatus() {
         return status;
     }
 
     /**
-     * Sets the status.
+     * Sets the value of the status property.
      * 
-     * @param value the new status
+     * @param value
+     *     allowed object is
+     *     {@link LabStatusType }
+     *     
      */
     public void setStatus(LabStatusType value) {
         this.status = value;

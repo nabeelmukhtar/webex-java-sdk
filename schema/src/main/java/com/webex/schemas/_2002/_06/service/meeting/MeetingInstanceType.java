@@ -25,7 +25,26 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class MeetingInstanceType.
+ * <p>Java class for meetingInstanceType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="meetingInstanceType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/meeting}meetingType">
+ *       &lt;sequence>
+ *         &lt;element name="meetingkey" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="hostJoined" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="participantsJoined" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "meetingInstanceType", propOrder = {
@@ -43,88 +62,95 @@ public class MeetingInstanceType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The meetingkey. */
     protected long meetingkey;
-    
-    /** The status. */
     protected String status;
-    
-    /** The host joined. */
     protected Boolean hostJoined;
-    
-    /** The participants joined. */
     protected Boolean participantsJoined;
 
     /**
-     * Gets the meetingkey.
+     * Gets the value of the meetingkey property.
      * 
-     * @return the meetingkey
      */
     public long getMeetingkey() {
         return meetingkey;
     }
 
     /**
-     * Sets the meetingkey.
+     * Sets the value of the meetingkey property.
      * 
-     * @param value the new meetingkey
      */
     public void setMeetingkey(long value) {
         this.meetingkey = value;
     }
 
     /**
-     * Gets the status.
+     * Gets the value of the status property.
      * 
-     * @return the status
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getStatus() {
         return status;
     }
 
     /**
-     * Sets the status.
+     * Sets the value of the status property.
      * 
-     * @param value the new status
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setStatus(String value) {
         this.status = value;
     }
 
     /**
-     * Checks if is host joined.
+     * Gets the value of the hostJoined property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isHostJoined() {
         return hostJoined;
     }
 
     /**
-     * Sets the host joined.
+     * Sets the value of the hostJoined property.
      * 
-     * @param value the new host joined
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setHostJoined(Boolean value) {
         this.hostJoined = value;
     }
 
     /**
-     * Checks if is participants joined.
+     * Gets the value of the participantsJoined property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isParticipantsJoined() {
         return participantsJoined;
     }
 
     /**
-     * Sets the participants joined.
+     * Sets the value of the participantsJoined property.
      * 
-     * @param value the new participants joined
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setParticipantsJoined(Boolean value) {
         this.participantsJoined = value;

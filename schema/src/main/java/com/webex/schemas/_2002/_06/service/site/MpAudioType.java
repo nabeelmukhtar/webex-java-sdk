@@ -24,7 +24,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class MpAudioType.
+ * <p>Java class for mpAudioType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="mpAudioType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="label" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="phoneNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "mpAudioType", propOrder = {
@@ -35,46 +52,53 @@ public class MpAudioType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The label. */
     protected String label;
-    
-    /** The phone number. */
     protected String phoneNumber;
 
     /**
-     * Gets the label.
+     * Gets the value of the label property.
      * 
-     * @return the label
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLabel() {
         return label;
     }
 
     /**
-     * Sets the label.
+     * Sets the value of the label property.
      * 
-     * @param value the new label
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLabel(String value) {
         this.label = value;
     }
 
     /**
-     * Gets the phone number.
+     * Gets the value of the phoneNumber property.
      * 
-     * @return the phone number
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPhoneNumber() {
         return phoneNumber;
     }
 
     /**
-     * Sets the phone number.
+     * Sets the value of the phoneNumber property.
      * 
-     * @param value the new phone number
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPhoneNumber(String value) {
         this.phoneNumber = value;

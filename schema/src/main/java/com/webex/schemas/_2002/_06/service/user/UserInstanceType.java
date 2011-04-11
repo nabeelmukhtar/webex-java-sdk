@@ -29,7 +29,25 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class UserInstanceType.
+ * <p>Java class for userInstanceType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="userInstanceType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/user}userType">
+ *       &lt;sequence>
+ *         &lt;element name="registrationDate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="visitCount" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="userId" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "userInstanceType", propOrder = {
@@ -46,71 +64,82 @@ public class UserInstanceType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The registration date. */
     protected String registrationDate;
-    
-    /** The visit count. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long visitCount;
-    
-    /** The user id. */
     @XmlElement(defaultValue = "-1")
     protected Long userId;
 
     /**
-     * Gets the registration date.
+     * Gets the value of the registrationDate property.
      * 
-     * @return the registration date
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getRegistrationDate() {
         return registrationDate;
     }
 
     /**
-     * Sets the registration date.
+     * Sets the value of the registrationDate property.
      * 
-     * @param value the new registration date
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setRegistrationDate(String value) {
         this.registrationDate = value;
     }
 
     /**
-     * Gets the visit count.
+     * Gets the value of the visitCount property.
      * 
-     * @return the visit count
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getVisitCount() {
         return visitCount;
     }
 
     /**
-     * Sets the visit count.
+     * Sets the value of the visitCount property.
      * 
-     * @param value the new visit count
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setVisitCount(Long value) {
         this.visitCount = value;
     }
 
     /**
-     * Gets the user id.
+     * Gets the value of the userId property.
      * 
-     * @return the user id
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getUserId() {
         return userId;
     }
 
     /**
-     * Sets the user id.
+     * Sets the value of the userId property.
      * 
-     * @param value the new user id
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setUserId(Long value) {
         this.userId = value;

@@ -23,92 +23,71 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum CurrencyType.
+ * <p>Java class for currencyType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="currencyType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="US Dollars"/>
+ *     &lt;enumeration value="Australian Dollars"/>
+ *     &lt;enumeration value="Canadian Dollars"/>
+ *     &lt;enumeration value="British Pounds"/>
+ *     &lt;enumeration value="Euros"/>
+ *     &lt;enumeration value="French Francs"/>
+ *     &lt;enumeration value="Deutschmarks"/>
+ *     &lt;enumeration value="Hong Kong Dollars"/>
+ *     &lt;enumeration value="Italian Lira"/>
+ *     &lt;enumeration value="Japanese Yen"/>
+ *     &lt;enumeration value="New Zealand Dollars"/>
+ *     &lt;enumeration value="Swiss Francs"/>
+ *     &lt;enumeration value="Korean Won"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "currencyType")
 @XmlEnum
 public enum CurrencyType {
 
-    /** The U s_ dollars. */
     @XmlEnumValue("US Dollars")
     US_DOLLARS("US Dollars"),
-    
-    /** The AUSTRALIA n_ dollars. */
     @XmlEnumValue("Australian Dollars")
     AUSTRALIAN_DOLLARS("Australian Dollars"),
-    
-    /** The CANADIA n_ dollars. */
     @XmlEnumValue("Canadian Dollars")
     CANADIAN_DOLLARS("Canadian Dollars"),
-    
-    /** The BRITIS h_ pounds. */
     @XmlEnumValue("British Pounds")
     BRITISH_POUNDS("British Pounds"),
-    
-    /** The EUROS. */
     @XmlEnumValue("Euros")
     EUROS("Euros"),
-    
-    /** The FRENC h_ francs. */
     @XmlEnumValue("French Francs")
     FRENCH_FRANCS("French Francs"),
-    
-    /** The DEUTSCHMARKS. */
     @XmlEnumValue("Deutschmarks")
     DEUTSCHMARKS("Deutschmarks"),
-    
-    /** The HON g_ kon g_ dollars. */
     @XmlEnumValue("Hong Kong Dollars")
     HONG_KONG_DOLLARS("Hong Kong Dollars"),
-    
-    /** The ITALIA n_ lira. */
     @XmlEnumValue("Italian Lira")
     ITALIAN_LIRA("Italian Lira"),
-    
-    /** The JAPANES e_ yen. */
     @XmlEnumValue("Japanese Yen")
     JAPANESE_YEN("Japanese Yen"),
-    
-    /** The NE w_ zealan d_ dollars. */
     @XmlEnumValue("New Zealand Dollars")
     NEW_ZEALAND_DOLLARS("New Zealand Dollars"),
-    
-    /** The SWIS s_ francs. */
     @XmlEnumValue("Swiss Francs")
     SWISS_FRANCS("Swiss Francs"),
-    
-    /** The KOREA n_ won. */
     @XmlEnumValue("Korean Won")
     KOREAN_WON("Korean Won");
-    
-    /** The value. */
     private final String value;
 
-    /**
-     * Instantiates a new currency type.
-     * 
-     * @param v the v
-     */
     CurrencyType(String v) {
         value = v;
     }
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return value;
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the currency type
-     */
     public static CurrencyType fromValue(String v) {
         for (CurrencyType c: CurrencyType.values()) {
             if (c.value.equals(v)) {

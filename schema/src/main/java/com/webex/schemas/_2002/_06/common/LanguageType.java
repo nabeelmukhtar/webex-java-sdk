@@ -23,98 +23,73 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum LanguageType.
+ * <p>Java class for languageType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="languageType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="ENGLISH"/>
+ *     &lt;enumeration value="INTERNATIONAL ENGLISH"/>
+ *     &lt;enumeration value="SIMPLIFIED CHINESE"/>
+ *     &lt;enumeration value="TRADITIONAL CHINESE"/>
+ *     &lt;enumeration value="JAPANESE"/>
+ *     &lt;enumeration value="KOREAN"/>
+ *     &lt;enumeration value="FRENCH"/>
+ *     &lt;enumeration value="CANADIAN FRENCH"/>
+ *     &lt;enumeration value="GERMAN"/>
+ *     &lt;enumeration value="ITALIAN"/>
+ *     &lt;enumeration value="CASTILIAN SPANISH"/>
+ *     &lt;enumeration value="LATIN AMERICAN SPANISH"/>
+ *     &lt;enumeration value="SWEDISH"/>
+ *     &lt;enumeration value="DUTCH"/>
+ *     &lt;enumeration value="BRAZILIAN PORTUGUESE"/>
+ *     &lt;enumeration value="PORTUGUESE"/>
+ *     &lt;enumeration value="SPANISH"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "languageType")
 @XmlEnum
 public enum LanguageType {
 
-    /** The ENGLISH. */
     ENGLISH("ENGLISH"),
-    
-    /** The INTERNATIONA l_ english. */
     @XmlEnumValue("INTERNATIONAL ENGLISH")
     INTERNATIONAL_ENGLISH("INTERNATIONAL ENGLISH"),
-    
-    /** The SIMPLIFIE d_ chinese. */
     @XmlEnumValue("SIMPLIFIED CHINESE")
     SIMPLIFIED_CHINESE("SIMPLIFIED CHINESE"),
-    
-    /** The TRADITIONA l_ chinese. */
     @XmlEnumValue("TRADITIONAL CHINESE")
     TRADITIONAL_CHINESE("TRADITIONAL CHINESE"),
-    
-    /** The JAPANESE. */
     JAPANESE("JAPANESE"),
-    
-    /** The KOREAN. */
     KOREAN("KOREAN"),
-    
-    /** The FRENCH. */
     FRENCH("FRENCH"),
-    
-    /** The CANADIA n_ french. */
     @XmlEnumValue("CANADIAN FRENCH")
     CANADIAN_FRENCH("CANADIAN FRENCH"),
-    
-    /** The GERMAN. */
     GERMAN("GERMAN"),
-    
-    /** The ITALIAN. */
     ITALIAN("ITALIAN"),
-    
-    /** The CASTILIA n_ spanish. */
     @XmlEnumValue("CASTILIAN SPANISH")
     CASTILIAN_SPANISH("CASTILIAN SPANISH"),
-    
-    /** The LATI n_ america n_ spanish. */
     @XmlEnumValue("LATIN AMERICAN SPANISH")
     LATIN_AMERICAN_SPANISH("LATIN AMERICAN SPANISH"),
-    
-    /** The SWEDISH. */
     SWEDISH("SWEDISH"),
-    
-    /** The DUTCH. */
     DUTCH("DUTCH"),
-    
-    /** The BRAZILIA n_ portuguese. */
     @XmlEnumValue("BRAZILIAN PORTUGUESE")
     BRAZILIAN_PORTUGUESE("BRAZILIAN PORTUGUESE"),
-    
-    /** The PORTUGUESE. */
     PORTUGUESE("PORTUGUESE"),
-    
-    /** The SPANISH. */
     SPANISH("SPANISH");
-    
-    /** The value. */
     private final String value;
 
-    /**
-     * Instantiates a new language type.
-     * 
-     * @param v the v
-     */
     LanguageType(String v) {
         value = v;
     }
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return value;
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the language type
-     */
     public static LanguageType fromValue(String v) {
         for (LanguageType c: LanguageType.values()) {
             if (c.value.equals(v)) {

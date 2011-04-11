@@ -26,7 +26,24 @@ import javax.xml.bind.annotation.XmlValue;
 
 
 /**
- * The Class MatapplicationType.
+ * <p>Java class for matapplicationType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="matapplicationType">
+ *   &lt;simpleContent>
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
+ *       &lt;attribute name="apptype" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       &lt;attribute name="label" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       &lt;attribute name="uri" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       &lt;attribute name="embedded" type="{http://www.w3.org/2001/XMLSchema}string" default="base64" />
+ *     &lt;/extension>
+ *   &lt;/simpleContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "matapplicationType", propOrder = {
@@ -35,105 +52,121 @@ import javax.xml.bind.annotation.XmlValue;
 public class MatapplicationType implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The value. */
     @XmlValue
     protected String value;
-    
-    /** The apptype. */
     @XmlAttribute
     protected String apptype;
-    
-    /** The label. */
     @XmlAttribute
     protected String label;
-    
-    /** The uri. */
     @XmlAttribute
     protected String uri;
-    
-    /** The embedded. */
     @XmlAttribute
     protected String embedded;
 
     /**
-     * Gets the value.
+     * Gets the value of the value property.
      * 
-     * @return the value
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value.
+     * Sets the value of the value property.
      * 
-     * @param value the new value
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setValue(String value) {
         this.value = value;
     }
 
     /**
-     * Gets the apptype.
+     * Gets the value of the apptype property.
      * 
-     * @return the apptype
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getApptype() {
         return apptype;
     }
 
     /**
-     * Sets the apptype.
+     * Sets the value of the apptype property.
      * 
-     * @param value the new apptype
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setApptype(String value) {
         this.apptype = value;
     }
 
     /**
-     * Gets the label.
+     * Gets the value of the label property.
      * 
-     * @return the label
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLabel() {
         return label;
     }
 
     /**
-     * Sets the label.
+     * Sets the value of the label property.
      * 
-     * @param value the new label
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLabel(String value) {
         this.label = value;
     }
 
     /**
-     * Gets the uri.
+     * Gets the value of the uri property.
      * 
-     * @return the uri
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getUri() {
         return uri;
     }
 
     /**
-     * Sets the uri.
+     * Sets the value of the uri property.
      * 
-     * @param value the new uri
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setUri(String value) {
         this.uri = value;
     }
 
     /**
-     * Gets the embedded.
+     * Gets the value of the embedded property.
      * 
-     * @return the embedded
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getEmbedded() {
         if (embedded == null) {
@@ -144,9 +177,12 @@ public class MatapplicationType implements Serializable
     }
 
     /**
-     * Sets the embedded.
+     * Sets the value of the embedded property.
      * 
-     * @param value the new embedded
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setEmbedded(String value) {
         this.embedded = value;

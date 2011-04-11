@@ -24,7 +24,50 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class EmailAttendeeType.
+ * <p>Java class for emailAttendeeType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="emailAttendeeType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="invite" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="reminderAfterStart" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="beforeDays" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}int">
+ *               &lt;minInclusive value="0"/>
+ *               &lt;maxInclusive value="99"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="beforeHours" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}int">
+ *               &lt;minInclusive value="0"/>
+ *               &lt;maxInclusive value="23"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="beforeMinutes" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}int">
+ *               &lt;minInclusive value="0"/>
+ *               &lt;maxInclusive value="59"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="sendToRegister" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="notifySubmits" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "emailAttendeeType", propOrder = {
@@ -40,151 +83,178 @@ public class EmailAttendeeType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The invite. */
     protected Boolean invite;
-    
-    /** The reminder after start. */
     protected Boolean reminderAfterStart;
-    
-    /** The before days. */
     protected Integer beforeDays;
-    
-    /** The before hours. */
     protected Integer beforeHours;
-    
-    /** The before minutes. */
     protected Integer beforeMinutes;
-    
-    /** The send to register. */
     protected Boolean sendToRegister;
-    
-    /** The notify submits. */
     protected Boolean notifySubmits;
 
     /**
-     * Checks if is invite.
+     * Gets the value of the invite property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isInvite() {
         return invite;
     }
 
     /**
-     * Sets the invite.
+     * Sets the value of the invite property.
      * 
-     * @param value the new invite
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setInvite(Boolean value) {
         this.invite = value;
     }
 
     /**
-     * Checks if is reminder after start.
+     * Gets the value of the reminderAfterStart property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isReminderAfterStart() {
         return reminderAfterStart;
     }
 
     /**
-     * Sets the reminder after start.
+     * Sets the value of the reminderAfterStart property.
      * 
-     * @param value the new reminder after start
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setReminderAfterStart(Boolean value) {
         this.reminderAfterStart = value;
     }
 
     /**
-     * Gets the before days.
+     * Gets the value of the beforeDays property.
      * 
-     * @return the before days
+     * @return
+     *     possible object is
+     *     {@link Integer }
+     *     
      */
     public Integer getBeforeDays() {
         return beforeDays;
     }
 
     /**
-     * Sets the before days.
+     * Sets the value of the beforeDays property.
      * 
-     * @param value the new before days
+     * @param value
+     *     allowed object is
+     *     {@link Integer }
+     *     
      */
     public void setBeforeDays(Integer value) {
         this.beforeDays = value;
     }
 
     /**
-     * Gets the before hours.
+     * Gets the value of the beforeHours property.
      * 
-     * @return the before hours
+     * @return
+     *     possible object is
+     *     {@link Integer }
+     *     
      */
     public Integer getBeforeHours() {
         return beforeHours;
     }
 
     /**
-     * Sets the before hours.
+     * Sets the value of the beforeHours property.
      * 
-     * @param value the new before hours
+     * @param value
+     *     allowed object is
+     *     {@link Integer }
+     *     
      */
     public void setBeforeHours(Integer value) {
         this.beforeHours = value;
     }
 
     /**
-     * Gets the before minutes.
+     * Gets the value of the beforeMinutes property.
      * 
-     * @return the before minutes
+     * @return
+     *     possible object is
+     *     {@link Integer }
+     *     
      */
     public Integer getBeforeMinutes() {
         return beforeMinutes;
     }
 
     /**
-     * Sets the before minutes.
+     * Sets the value of the beforeMinutes property.
      * 
-     * @param value the new before minutes
+     * @param value
+     *     allowed object is
+     *     {@link Integer }
+     *     
      */
     public void setBeforeMinutes(Integer value) {
         this.beforeMinutes = value;
     }
 
     /**
-     * Checks if is send to register.
+     * Gets the value of the sendToRegister property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSendToRegister() {
         return sendToRegister;
     }
 
     /**
-     * Sets the send to register.
+     * Sets the value of the sendToRegister property.
      * 
-     * @param value the new send to register
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSendToRegister(Boolean value) {
         this.sendToRegister = value;
     }
 
     /**
-     * Checks if is notify submits.
+     * Gets the value of the notifySubmits property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isNotifySubmits() {
         return notifySubmits;
     }
 
     /**
-     * Sets the notify submits.
+     * Sets the value of the notifySubmits property.
      * 
-     * @param value the new notify submits
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setNotifySubmits(Boolean value) {
         this.notifySubmits = value;

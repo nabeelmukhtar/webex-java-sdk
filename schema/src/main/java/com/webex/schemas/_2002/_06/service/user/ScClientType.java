@@ -22,34 +22,31 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum ScClientType.
+ * <p>Java class for scClientType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="scClientType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="MULTI_SESS"/>
+ *     &lt;enumeration value="SINGLE_SESS"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "scClientType")
 @XmlEnum
 public enum ScClientType {
 
-    /** The MULT i_ sess. */
     MULTI_SESS,
-    
-    /** The SINGL e_ sess. */
     SINGLE_SESS;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the sc client type
-     */
     public static ScClientType fromValue(String v) {
         return valueOf(v);
     }

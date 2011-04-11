@@ -33,7 +33,51 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class SessionSummaryInstanceType.
+ * <p>Java class for sessionSummaryInstanceType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="sessionSummaryInstanceType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="confName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="sessionType" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *         &lt;element name="serviceType" type="{http://www.webex.com/schemas/2002/06/common}serviceTypeType"/>
+ *         &lt;element name="hostWebExID" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="hostFirstName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="hostLastName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="otherHostWebExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *         &lt;element name="timeZone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="startTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="actualStartTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="openTime" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
+ *         &lt;element name="duration" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *         &lt;element name="listStatus" type="{http://www.webex.com/schemas/2002/06/common}listingType"/>
+ *         &lt;element name="hostEmail" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="passwordReq" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="hostJoined" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="participantsJoined" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="confID" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="registration" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="isRecurring" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         &lt;element name="altHost" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="psoFields" type="{http://www.webex.com/schemas/2002/06/common}psoFieldsType" minOccurs="0"/>
+ *         &lt;element name="assistService" type="{http://www.webex.com/schemas/2002/06/service}meetingAssistType" minOccurs="0"/>
+ *         &lt;element name="hostType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="audioStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="isAudioOnly" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "sessionSummaryInstanceType", propOrder = {
@@ -72,627 +116,718 @@ public class SessionSummaryInstanceType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The session key. */
     protected long sessionKey;
-    
-    /** The conf name. */
     @XmlElement(required = true)
     protected String confName;
-    
-    /** The session type. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long sessionType;
-    
-    /** The service type. */
     @XmlElement(required = true)
     protected ServiceTypeType serviceType;
-    
-    /** The host web ex id. */
     @XmlElement(required = true)
     protected String hostWebExID;
-    
-    /** The host first name. */
     protected String hostFirstName;
-    
-    /** The host last name. */
     protected String hostLastName;
-    
-    /** The other host web ex id. */
     protected String otherHostWebExID;
-    
-    /** The time zone id. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long timeZoneID;
-    
-    /** The time zone. */
     protected String timeZone;
-    
-    /** The status. */
     protected String status;
-    
-    /** The start time. */
     @XmlElement(required = true)
     protected String startTime;
-    
-    /** The actual start time. */
     protected String actualStartTime;
-    
-    /** The open time. */
     protected Integer openTime;
-    
-    /** The duration. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long duration;
-    
-    /** The list status. */
     @XmlElement(required = true)
     protected ListingType listStatus;
-    
-    /** The host email. */
     protected String hostEmail;
-    
-    /** The password req. */
     protected Boolean passwordReq;
-    
-    /** The host joined. */
     protected Boolean hostJoined;
-    
-    /** The participants joined. */
     protected Boolean participantsJoined;
-    
-    /** The conf id. */
     protected long confID;
-    
-    /** The registration. */
     protected Boolean registration;
-    
-    /** The is recurring. */
     protected boolean isRecurring;
-    
-    /** The alt host. */
     protected Boolean altHost;
-    
-    /** The pso fields. */
     protected PsoFieldsType psoFields;
-    
-    /** The assist service. */
     protected MeetingAssistType assistService;
-    
-    /** The host type. */
     protected String hostType;
-    
-    /** The audio status. */
     protected String audioStatus;
-    
-    /** The is audio only. */
     protected Boolean isAudioOnly;
 
     /**
-     * Gets the session key.
+     * Gets the value of the sessionKey property.
      * 
-     * @return the session key
      */
     public long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the session key.
+     * Sets the value of the sessionKey property.
      * 
-     * @param value the new session key
      */
     public void setSessionKey(long value) {
         this.sessionKey = value;
     }
 
     /**
-     * Gets the conf name.
+     * Gets the value of the confName property.
      * 
-     * @return the conf name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getConfName() {
         return confName;
     }
 
     /**
-     * Sets the conf name.
+     * Sets the value of the confName property.
      * 
-     * @param value the new conf name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setConfName(String value) {
         this.confName = value;
     }
 
     /**
-     * Gets the session type.
+     * Gets the value of the sessionType property.
      * 
-     * @return the session type
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getSessionType() {
         return sessionType;
     }
 
     /**
-     * Sets the session type.
+     * Sets the value of the sessionType property.
      * 
-     * @param value the new session type
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSessionType(Long value) {
         this.sessionType = value;
     }
 
     /**
-     * Gets the service type.
+     * Gets the value of the serviceType property.
      * 
-     * @return the service type
+     * @return
+     *     possible object is
+     *     {@link ServiceTypeType }
+     *     
      */
     public ServiceTypeType getServiceType() {
         return serviceType;
     }
 
     /**
-     * Sets the service type.
+     * Sets the value of the serviceType property.
      * 
-     * @param value the new service type
+     * @param value
+     *     allowed object is
+     *     {@link ServiceTypeType }
+     *     
      */
     public void setServiceType(ServiceTypeType value) {
         this.serviceType = value;
     }
 
     /**
-     * Gets the host web ex id.
+     * Gets the value of the hostWebExID property.
      * 
-     * @return the host web ex id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHostWebExID() {
         return hostWebExID;
     }
 
     /**
-     * Sets the host web ex id.
+     * Sets the value of the hostWebExID property.
      * 
-     * @param value the new host web ex id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHostWebExID(String value) {
         this.hostWebExID = value;
     }
 
     /**
-     * Gets the host first name.
+     * Gets the value of the hostFirstName property.
      * 
-     * @return the host first name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHostFirstName() {
         return hostFirstName;
     }
 
     /**
-     * Sets the host first name.
+     * Sets the value of the hostFirstName property.
      * 
-     * @param value the new host first name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHostFirstName(String value) {
         this.hostFirstName = value;
     }
 
     /**
-     * Gets the host last name.
+     * Gets the value of the hostLastName property.
      * 
-     * @return the host last name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHostLastName() {
         return hostLastName;
     }
 
     /**
-     * Sets the host last name.
+     * Sets the value of the hostLastName property.
      * 
-     * @param value the new host last name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHostLastName(String value) {
         this.hostLastName = value;
     }
 
     /**
-     * Gets the other host web ex id.
+     * Gets the value of the otherHostWebExID property.
      * 
-     * @return the other host web ex id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getOtherHostWebExID() {
         return otherHostWebExID;
     }
 
     /**
-     * Sets the other host web ex id.
+     * Sets the value of the otherHostWebExID property.
      * 
-     * @param value the new other host web ex id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setOtherHostWebExID(String value) {
         this.otherHostWebExID = value;
     }
 
     /**
-     * Gets the time zone id.
+     * Gets the value of the timeZoneID property.
      * 
-     * @return the time zone id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the time zone id.
+     * Sets the value of the timeZoneID property.
      * 
-     * @param value the new time zone id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTimeZoneID(Long value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the time zone.
+     * Gets the value of the timeZone property.
      * 
-     * @return the time zone
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTimeZone() {
         return timeZone;
     }
 
     /**
-     * Sets the time zone.
+     * Sets the value of the timeZone property.
      * 
-     * @param value the new time zone
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTimeZone(String value) {
         this.timeZone = value;
     }
 
     /**
-     * Gets the status.
+     * Gets the value of the status property.
      * 
-     * @return the status
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getStatus() {
         return status;
     }
 
     /**
-     * Sets the status.
+     * Sets the value of the status property.
      * 
-     * @param value the new status
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setStatus(String value) {
         this.status = value;
     }
 
     /**
-     * Gets the start time.
+     * Gets the value of the startTime property.
      * 
-     * @return the start time
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getStartTime() {
         return startTime;
     }
 
     /**
-     * Sets the start time.
+     * Sets the value of the startTime property.
      * 
-     * @param value the new start time
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setStartTime(String value) {
         this.startTime = value;
     }
 
     /**
-     * Gets the actual start time.
+     * Gets the value of the actualStartTime property.
      * 
-     * @return the actual start time
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getActualStartTime() {
         return actualStartTime;
     }
 
     /**
-     * Sets the actual start time.
+     * Sets the value of the actualStartTime property.
      * 
-     * @param value the new actual start time
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setActualStartTime(String value) {
         this.actualStartTime = value;
     }
 
     /**
-     * Gets the open time.
+     * Gets the value of the openTime property.
      * 
-     * @return the open time
+     * @return
+     *     possible object is
+     *     {@link Integer }
+     *     
      */
     public Integer getOpenTime() {
         return openTime;
     }
 
     /**
-     * Sets the open time.
+     * Sets the value of the openTime property.
      * 
-     * @param value the new open time
+     * @param value
+     *     allowed object is
+     *     {@link Integer }
+     *     
      */
     public void setOpenTime(Integer value) {
         this.openTime = value;
     }
 
     /**
-     * Gets the duration.
+     * Gets the value of the duration property.
      * 
-     * @return the duration
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getDuration() {
         return duration;
     }
 
     /**
-     * Sets the duration.
+     * Sets the value of the duration property.
      * 
-     * @param value the new duration
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDuration(Long value) {
         this.duration = value;
     }
 
     /**
-     * Gets the list status.
+     * Gets the value of the listStatus property.
      * 
-     * @return the list status
+     * @return
+     *     possible object is
+     *     {@link ListingType }
+     *     
      */
     public ListingType getListStatus() {
         return listStatus;
     }
 
     /**
-     * Sets the list status.
+     * Sets the value of the listStatus property.
      * 
-     * @param value the new list status
+     * @param value
+     *     allowed object is
+     *     {@link ListingType }
+     *     
      */
     public void setListStatus(ListingType value) {
         this.listStatus = value;
     }
 
     /**
-     * Gets the host email.
+     * Gets the value of the hostEmail property.
      * 
-     * @return the host email
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHostEmail() {
         return hostEmail;
     }
 
     /**
-     * Sets the host email.
+     * Sets the value of the hostEmail property.
      * 
-     * @param value the new host email
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHostEmail(String value) {
         this.hostEmail = value;
     }
 
     /**
-     * Checks if is password req.
+     * Gets the value of the passwordReq property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isPasswordReq() {
         return passwordReq;
     }
 
     /**
-     * Sets the password req.
+     * Sets the value of the passwordReq property.
      * 
-     * @param value the new password req
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setPasswordReq(Boolean value) {
         this.passwordReq = value;
     }
 
     /**
-     * Checks if is host joined.
+     * Gets the value of the hostJoined property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isHostJoined() {
         return hostJoined;
     }
 
     /**
-     * Sets the host joined.
+     * Sets the value of the hostJoined property.
      * 
-     * @param value the new host joined
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setHostJoined(Boolean value) {
         this.hostJoined = value;
     }
 
     /**
-     * Checks if is participants joined.
+     * Gets the value of the participantsJoined property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isParticipantsJoined() {
         return participantsJoined;
     }
 
     /**
-     * Sets the participants joined.
+     * Sets the value of the participantsJoined property.
      * 
-     * @param value the new participants joined
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setParticipantsJoined(Boolean value) {
         this.participantsJoined = value;
     }
 
     /**
-     * Gets the conf id.
+     * Gets the value of the confID property.
      * 
-     * @return the conf id
      */
     public long getConfID() {
         return confID;
     }
 
     /**
-     * Sets the conf id.
+     * Sets the value of the confID property.
      * 
-     * @param value the new conf id
      */
     public void setConfID(long value) {
         this.confID = value;
     }
 
     /**
-     * Checks if is registration.
+     * Gets the value of the registration property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isRegistration() {
         return registration;
     }
 
     /**
-     * Sets the registration.
+     * Sets the value of the registration property.
      * 
-     * @param value the new registration
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setRegistration(Boolean value) {
         this.registration = value;
     }
 
     /**
-     * Checks if is checks if is recurring.
+     * Gets the value of the isRecurring property.
      * 
-     * @return true, if is checks if is recurring
      */
     public boolean isIsRecurring() {
         return isRecurring;
     }
 
     /**
-     * Sets the checks if is recurring.
+     * Sets the value of the isRecurring property.
      * 
-     * @param value the new checks if is recurring
      */
     public void setIsRecurring(boolean value) {
         this.isRecurring = value;
     }
 
     /**
-     * Checks if is alt host.
+     * Gets the value of the altHost property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAltHost() {
         return altHost;
     }
 
     /**
-     * Sets the alt host.
+     * Sets the value of the altHost property.
      * 
-     * @param value the new alt host
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAltHost(Boolean value) {
         this.altHost = value;
     }
 
     /**
-     * Gets the pso fields.
+     * Gets the value of the psoFields property.
      * 
-     * @return the pso fields
+     * @return
+     *     possible object is
+     *     {@link PsoFieldsType }
+     *     
      */
     public PsoFieldsType getPsoFields() {
         return psoFields;
     }
 
     /**
-     * Sets the pso fields.
+     * Sets the value of the psoFields property.
      * 
-     * @param value the new pso fields
+     * @param value
+     *     allowed object is
+     *     {@link PsoFieldsType }
+     *     
      */
     public void setPsoFields(PsoFieldsType value) {
         this.psoFields = value;
     }
 
     /**
-     * Gets the assist service.
+     * Gets the value of the assistService property.
      * 
-     * @return the assist service
+     * @return
+     *     possible object is
+     *     {@link MeetingAssistType }
+     *     
      */
     public MeetingAssistType getAssistService() {
         return assistService;
     }
 
     /**
-     * Sets the assist service.
+     * Sets the value of the assistService property.
      * 
-     * @param value the new assist service
+     * @param value
+     *     allowed object is
+     *     {@link MeetingAssistType }
+     *     
      */
     public void setAssistService(MeetingAssistType value) {
         this.assistService = value;
     }
 
     /**
-     * Gets the host type.
+     * Gets the value of the hostType property.
      * 
-     * @return the host type
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHostType() {
         return hostType;
     }
 
     /**
-     * Sets the host type.
+     * Sets the value of the hostType property.
      * 
-     * @param value the new host type
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHostType(String value) {
         this.hostType = value;
     }
 
     /**
-     * Gets the audio status.
+     * Gets the value of the audioStatus property.
      * 
-     * @return the audio status
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getAudioStatus() {
         return audioStatus;
     }
 
     /**
-     * Sets the audio status.
+     * Sets the value of the audioStatus property.
      * 
-     * @param value the new audio status
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAudioStatus(String value) {
         this.audioStatus = value;
     }
 
     /**
-     * Checks if is is audio only.
+     * Gets the value of the isAudioOnly property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isIsAudioOnly() {
         return isAudioOnly;
     }
 
     /**
-     * Sets the checks if is audio only.
+     * Sets the value of the isAudioOnly property.
      * 
-     * @param value the new checks if is audio only
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setIsAudioOnly(Boolean value) {
         this.isAudioOnly = value;

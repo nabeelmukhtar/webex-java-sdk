@@ -27,7 +27,24 @@ import com.webex.schemas._2002._06.service.sales.ICalendarURL;
 
 
 /**
- * The Class ICalendarURLType.
+ * <p>Java class for iCalendarURLType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="iCalendarURLType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="host" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="attendee" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "iCalendarURLType", propOrder = {
@@ -41,48 +58,55 @@ public class ICalendarURLType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The host. */
     @XmlElement(required = true)
     protected String host;
-    
-    /** The attendee. */
     @XmlElement(required = true)
     protected String attendee;
 
     /**
-     * Gets the host.
+     * Gets the value of the host property.
      * 
-     * @return the host
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHost() {
         return host;
     }
 
     /**
-     * Sets the host.
+     * Sets the value of the host property.
      * 
-     * @param value the new host
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHost(String value) {
         this.host = value;
     }
 
     /**
-     * Gets the attendee.
+     * Gets the value of the attendee property.
      * 
-     * @return the attendee
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getAttendee() {
         return attendee;
     }
 
     /**
-     * Sets the attendee.
+     * Sets the value of the attendee property.
      * 
-     * @param value the new attendee
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAttendee(String value) {
         this.attendee = value;

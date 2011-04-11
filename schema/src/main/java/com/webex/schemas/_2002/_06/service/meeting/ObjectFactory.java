@@ -21,331 +21,308 @@ import javax.xml.bind.annotation.XmlRegistry;
 
 
 /**
- * A factory for creating Object objects.
+ * This object contains factory methods for each 
+ * Java content interface and Java element interface 
+ * generated in the com.webex.schemas._2002._06.service.meeting package. 
+ * <p>An ObjectFactory allows you to programatically 
+ * construct new instances of the Java representation 
+ * for XML content. The Java representation of XML 
+ * content can consist of schema derived interfaces 
+ * and classes representing the binding of schema 
+ * type definitions, element declarations and model 
+ * groups.  Factory methods for each of these are 
+ * provided in this class.
+ * 
  */
 @XmlRegistry
 public class ObjectFactory {
 
 
     /**
-     * Instantiates a new object factory.
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.webex.schemas._2002._06.service.meeting
+     * 
      */
     public ObjectFactory() {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link RemindType }
      * 
-     * @return the remind type
      */
     public RemindType createRemindType() {
         return new RemindType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link AttendeeOptionsType }
      * 
-     * @return the attendee options type
      */
     public AttendeeOptionsType createAttendeeOptionsType() {
         return new AttendeeOptionsType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link GetjoinurlMeeting }
      * 
-     * @return the gets the meeting
-     */
-    public GetMeeting createGetMeeting() {
-        return new GetMeeting();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the repeat type
-     */
-    public RepeatType createRepeatType() {
-        return new RepeatType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the date scope type
-     */
-    public DateScopeType createDateScopeType() {
-        return new DateScopeType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the gethosturl meeting
-     */
-    public GethosturlMeeting createGethosturlMeeting() {
-        return new GethosturlMeeting();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the meta data type
-     */
-    public MetaDataType createMetaDataType() {
-        return new MetaDataType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the sets the meeting
-     */
-    public SetMeeting createSetMeeting() {
-        return new SetMeeting();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the del meeting
-     */
-    public DelMeeting createDelMeeting() {
-        return new DelMeeting();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the creates the meeting response
-     */
-    public CreateMeetingResponse createCreateMeetingResponse() {
-        return new CreateMeetingResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the getjoinurl meeting response
-     */
-    public GetjoinurlMeetingResponse createGetjoinurlMeetingResponse() {
-        return new GetjoinurlMeetingResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the attendees
-     */
-    public ParticipantsType.Attendees createParticipantsTypeAttendees() {
-        return new ParticipantsType.Attendees();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the sets the meeting response
-     */
-    public SetMeetingResponse createSetMeetingResponse() {
-        return new SetMeetingResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the registration field type
-     */
-    public RegistrationFieldType createRegistrationFieldType() {
-        return new RegistrationFieldType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the telephony type
-     */
-    public TelephonyType createTelephonyType() {
-        return new TelephonyType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the getjoinurl meeting
      */
     public GetjoinurlMeeting createGetjoinurlMeeting() {
         return new GetjoinurlMeeting();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link LstsummaryMeetingResponse }
      * 
-     * @return the meeting type
-     */
-    public MeetingType createMeetingType() {
-        return new MeetingType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the order type
-     */
-    public OrderType createOrderType() {
-        return new OrderType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lstsummary meeting response
      */
     public LstsummaryMeetingResponse createLstsummaryMeetingResponse() {
         return new LstsummaryMeetingResponse();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link RepeatType }
      * 
-     * @return the day in week
      */
-    public RepeatType.DayInWeek createRepeatTypeDayInWeek() {
-        return new RepeatType.DayInWeek();
+    public RepeatType createRepeatType() {
+        return new RepeatType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link DateScopeType }
      * 
-     * @return the access control type
      */
-    public AccessControlType createAccessControlType() {
-        return new AccessControlType();
+    public DateScopeType createDateScopeType() {
+        return new DateScopeType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link GethosturlMeeting }
      * 
-     * @return the del meeting response
      */
-    public DelMeetingResponse createDelMeetingResponse() {
-        return new DelMeetingResponse();
+    public GethosturlMeeting createGethosturlMeeting() {
+        return new GethosturlMeeting();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link GetMeeting }
      * 
-     * @return the enable options type
      */
-    public EnableOptionsType createEnableOptionsType() {
-        return new EnableOptionsType();
+    public GetMeeting createGetMeeting() {
+        return new GetMeeting();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link LstMeeting }
      * 
-     * @return the participants type
-     */
-    public ParticipantsType createParticipantsType() {
-        return new ParticipantsType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the meeting instance type
-     */
-    public MeetingInstanceType createMeetingInstanceType() {
-        return new MeetingInstanceType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the meeting summary instance type
-     */
-    public MeetingSummaryInstanceType createMeetingSummaryInstanceType() {
-        return new MeetingSummaryInstanceType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lst meeting
      */
     public LstMeeting createLstMeeting() {
         return new LstMeeting();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link RegistrationFieldType }
      * 
-     * @return the schedule type
      */
-    public ScheduleType createScheduleType() {
-        return new ScheduleType();
+    public RegistrationFieldType createRegistrationFieldType() {
+        return new RegistrationFieldType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link MetaDataType }
      * 
-     * @return the lst meeting response
      */
-    public LstMeetingResponse createLstMeetingResponse() {
-        return new LstMeetingResponse();
+    public MetaDataType createMetaDataType() {
+        return new MetaDataType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link RemindType.Emails }
      * 
-     * @return the lstsummary meeting
-     */
-    public LstsummaryMeeting createLstsummaryMeeting() {
-        return new LstsummaryMeeting();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the gethosturl meeting response
-     */
-    public GethosturlMeetingResponse createGethosturlMeetingResponse() {
-        return new GethosturlMeetingResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the emails
      */
     public RemindType.Emails createRemindTypeEmails() {
         return new RemindType.Emails();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link DelMeeting }
      * 
-     * @return the standard fields type
+     */
+    public DelMeeting createDelMeeting() {
+        return new DelMeeting();
+    }
+
+    /**
+     * Create an instance of {@link CreateMeetingResponse }
+     * 
+     */
+    public CreateMeetingResponse createCreateMeetingResponse() {
+        return new CreateMeetingResponse();
+    }
+
+    /**
+     * Create an instance of {@link EnableOptionsType }
+     * 
+     */
+    public EnableOptionsType createEnableOptionsType() {
+        return new EnableOptionsType();
+    }
+
+    /**
+     * Create an instance of {@link SetMeetingResponse }
+     * 
+     */
+    public SetMeetingResponse createSetMeetingResponse() {
+        return new SetMeetingResponse();
+    }
+
+    /**
+     * Create an instance of {@link StandardFieldsType }
+     * 
      */
     public StandardFieldsType createStandardFieldsType() {
         return new StandardFieldsType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link SetMeeting }
      * 
-     * @return the gets the meeting response
      */
-    public GetMeetingResponse createGetMeetingResponse() {
-        return new GetMeetingResponse();
+    public SetMeeting createSetMeeting() {
+        return new SetMeeting();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link GetjoinurlMeetingResponse }
      * 
-     * @return the creates the meeting
+     */
+    public GetjoinurlMeetingResponse createGetjoinurlMeetingResponse() {
+        return new GetjoinurlMeetingResponse();
+    }
+
+    /**
+     * Create an instance of {@link ParticipantsType.Attendees }
+     * 
+     */
+    public ParticipantsType.Attendees createParticipantsTypeAttendees() {
+        return new ParticipantsType.Attendees();
+    }
+
+    /**
+     * Create an instance of {@link TelephonyType }
+     * 
+     */
+    public TelephonyType createTelephonyType() {
+        return new TelephonyType();
+    }
+
+    /**
+     * Create an instance of {@link MeetingType }
+     * 
+     */
+    public MeetingType createMeetingType() {
+        return new MeetingType();
+    }
+
+    /**
+     * Create an instance of {@link OrderType }
+     * 
+     */
+    public OrderType createOrderType() {
+        return new OrderType();
+    }
+
+    /**
+     * Create an instance of {@link RepeatType.DayInWeek }
+     * 
+     */
+    public RepeatType.DayInWeek createRepeatTypeDayInWeek() {
+        return new RepeatType.DayInWeek();
+    }
+
+    /**
+     * Create an instance of {@link DelMeetingResponse }
+     * 
+     */
+    public DelMeetingResponse createDelMeetingResponse() {
+        return new DelMeetingResponse();
+    }
+
+    /**
+     * Create an instance of {@link MeetingInstanceType }
+     * 
+     */
+    public MeetingInstanceType createMeetingInstanceType() {
+        return new MeetingInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link CreateMeeting }
+     * 
      */
     public CreateMeeting createCreateMeeting() {
         return new CreateMeeting();
+    }
+
+    /**
+     * Create an instance of {@link MeetingSummaryInstanceType }
+     * 
+     */
+    public MeetingSummaryInstanceType createMeetingSummaryInstanceType() {
+        return new MeetingSummaryInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link ParticipantsType }
+     * 
+     */
+    public ParticipantsType createParticipantsType() {
+        return new ParticipantsType();
+    }
+
+    /**
+     * Create an instance of {@link ScheduleType }
+     * 
+     */
+    public ScheduleType createScheduleType() {
+        return new ScheduleType();
+    }
+
+    /**
+     * Create an instance of {@link LstMeetingResponse }
+     * 
+     */
+    public LstMeetingResponse createLstMeetingResponse() {
+        return new LstMeetingResponse();
+    }
+
+    /**
+     * Create an instance of {@link LstsummaryMeeting }
+     * 
+     */
+    public LstsummaryMeeting createLstsummaryMeeting() {
+        return new LstsummaryMeeting();
+    }
+
+    /**
+     * Create an instance of {@link GethosturlMeetingResponse }
+     * 
+     */
+    public GethosturlMeetingResponse createGethosturlMeetingResponse() {
+        return new GethosturlMeetingResponse();
+    }
+
+    /**
+     * Create an instance of {@link AccessControlType }
+     * 
+     */
+    public AccessControlType createAccessControlType() {
+        return new AccessControlType();
+    }
+
+    /**
+     * Create an instance of {@link GetMeetingResponse }
+     * 
+     */
+    public GetMeetingResponse createGetMeetingResponse() {
+        return new GetMeetingResponse();
     }
 
 }

@@ -26,7 +26,37 @@ import com.webex.schemas._2002._06.common.SessionTemplateType;
 
 
 /**
- * The Class MetaDataType.
+ * <p>Java class for metaDataType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="metaDataType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="confName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="meetingType" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="agenda" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="2500"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="greeting" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="location" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="invitation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="setNonMTOptions" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="sessionTemplate" type="{http://www.webex.com/schemas/2002/06/common}sessionTemplateType" minOccurs="0"/>
+ *         &lt;element name="isInternal" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "metaDataType", propOrder = {
@@ -44,194 +74,229 @@ public class MetaDataType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The conf name. */
     protected String confName;
-    
-    /** The meeting type. */
     @XmlElement(defaultValue = "-1")
     protected Long meetingType;
-    
-    /** The agenda. */
     protected String agenda;
-    
-    /** The greeting. */
     protected String greeting;
-    
-    /** The location. */
     protected String location;
-    
-    /** The invitation. */
     protected String invitation;
-    
-    /** The set non mt options. */
     protected Boolean setNonMTOptions;
-    
-    /** The session template. */
     protected SessionTemplateType sessionTemplate;
-    
-    /** The is internal. */
     protected Boolean isInternal;
 
     /**
-     * Gets the conf name.
+     * Gets the value of the confName property.
      * 
-     * @return the conf name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getConfName() {
         return confName;
     }
 
     /**
-     * Sets the conf name.
+     * Sets the value of the confName property.
      * 
-     * @param value the new conf name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setConfName(String value) {
         this.confName = value;
     }
 
     /**
-     * Gets the meeting type.
+     * Gets the value of the meetingType property.
      * 
-     * @return the meeting type
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getMeetingType() {
         return meetingType;
     }
 
     /**
-     * Sets the meeting type.
+     * Sets the value of the meetingType property.
      * 
-     * @param value the new meeting type
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setMeetingType(Long value) {
         this.meetingType = value;
     }
 
     /**
-     * Gets the agenda.
+     * Gets the value of the agenda property.
      * 
-     * @return the agenda
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getAgenda() {
         return agenda;
     }
 
     /**
-     * Sets the agenda.
+     * Sets the value of the agenda property.
      * 
-     * @param value the new agenda
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAgenda(String value) {
         this.agenda = value;
     }
 
     /**
-     * Gets the greeting.
+     * Gets the value of the greeting property.
      * 
-     * @return the greeting
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getGreeting() {
         return greeting;
     }
 
     /**
-     * Sets the greeting.
+     * Sets the value of the greeting property.
      * 
-     * @param value the new greeting
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setGreeting(String value) {
         this.greeting = value;
     }
 
     /**
-     * Gets the location.
+     * Gets the value of the location property.
      * 
-     * @return the location
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLocation() {
         return location;
     }
 
     /**
-     * Sets the location.
+     * Sets the value of the location property.
      * 
-     * @param value the new location
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLocation(String value) {
         this.location = value;
     }
 
     /**
-     * Gets the invitation.
+     * Gets the value of the invitation property.
      * 
-     * @return the invitation
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getInvitation() {
         return invitation;
     }
 
     /**
-     * Sets the invitation.
+     * Sets the value of the invitation property.
      * 
-     * @param value the new invitation
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setInvitation(String value) {
         this.invitation = value;
     }
 
     /**
-     * Checks if is set non mt options.
+     * Gets the value of the setNonMTOptions property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSetNonMTOptions() {
         return setNonMTOptions;
     }
 
     /**
-     * Sets the sets the non mt options.
+     * Sets the value of the setNonMTOptions property.
      * 
-     * @param value the new sets the non mt options
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSetNonMTOptions(Boolean value) {
         this.setNonMTOptions = value;
     }
 
     /**
-     * Gets the session template.
+     * Gets the value of the sessionTemplate property.
      * 
-     * @return the session template
+     * @return
+     *     possible object is
+     *     {@link SessionTemplateType }
+     *     
      */
     public SessionTemplateType getSessionTemplate() {
         return sessionTemplate;
     }
 
     /**
-     * Sets the session template.
+     * Sets the value of the sessionTemplate property.
      * 
-     * @param value the new session template
+     * @param value
+     *     allowed object is
+     *     {@link SessionTemplateType }
+     *     
      */
     public void setSessionTemplate(SessionTemplateType value) {
         this.sessionTemplate = value;
     }
 
     /**
-     * Checks if is is internal.
+     * Gets the value of the isInternal property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isIsInternal() {
         return isInternal;
     }
 
     /**
-     * Sets the checks if is internal.
+     * Sets the value of the isInternal property.
      * 
-     * @param value the new checks if is internal
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setIsInternal(Boolean value) {
         this.isInternal = value;

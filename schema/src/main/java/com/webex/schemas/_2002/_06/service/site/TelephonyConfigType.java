@@ -26,7 +26,92 @@ import com.webex.schemas._2002._06.service.PersonalTeleServerType;
 
 
 /**
- * The Class TelephonyConfigType.
+ * <p>Java class for telephonyConfigType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="telephonyConfigType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="isTSPUsingTelephonyAPI" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="serviceName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="participantAccessCodeLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="subscriberAccessCodeLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="attendeeIDLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="primaryAdaptorURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="secondaryAdaptorURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="internetPhone" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="callInTeleconferencing" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="tollFreeCallinTeleconferencing" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="callBackTeleconferencing" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="callInNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="defaultTeleServerSubject" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="subscribeName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="subscribePassword" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="defaultPhoneLines" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="defaultSpeakingLines" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="majorCountryCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="majorAreaCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="publicName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="hybridTeleconference" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="instantHelp" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="customerManage" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="TSRouting" type="{http://www.webex.com/schemas/2002/06/service/site}TSRouting" minOccurs="0"/>
+ *         &lt;element name="teleServerName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="maxCallersNumber" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="isSpecified" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="isContinue" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="intlCallBackTeleconferencing" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="personalTeleconf" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="primaryLargeServer" type="{http://www.webex.com/schemas/2002/06/service}personalTeleServerType" minOccurs="0"/>
+ *                   &lt;element name="backup1LargeServer" type="{http://www.webex.com/schemas/2002/06/service}personalTeleServerType" minOccurs="0"/>
+ *                   &lt;element name="backup2LargeServer" type="{http://www.webex.com/schemas/2002/06/service}personalTeleServerType" minOccurs="0"/>
+ *                   &lt;element name="primarySmallServer" type="{http://www.webex.com/schemas/2002/06/service}personalTeleServerType" minOccurs="0"/>
+ *                   &lt;element name="backup1SmallServer" type="{http://www.webex.com/schemas/2002/06/service}personalTeleServerType" minOccurs="0"/>
+ *                   &lt;element name="backup2SmallServer" type="{http://www.webex.com/schemas/2002/06/service}personalTeleServerType" minOccurs="0"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="multiMediaPlatform" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="multiMediaHostName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="broadcastAudioStream" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="tspAdaptorSettings">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="primaryLarge" type="{http://www.webex.com/schemas/2002/06/service/site}tspServerType" minOccurs="0"/>
+ *                   &lt;element name="backup1Large" type="{http://www.webex.com/schemas/2002/06/service/site}tspServerType" minOccurs="0"/>
+ *                   &lt;element name="backup2Large" type="{http://www.webex.com/schemas/2002/06/service/site}tspServerType" minOccurs="0"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="meetingPlace" type="{http://www.webex.com/schemas/2002/06/service/site}meetingPlaceTelephonyType"/>
+ *         &lt;element name="otherTeleServiceName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="supportAdapterlessTSP" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="displayAttendeeID" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="provisionTeleAccount" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="choosePCN" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="audioOnly" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="configTollAndTollFreeNum" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="configPrimaryTS" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "telephonyConfigType", propOrder = {
@@ -78,911 +163,1082 @@ public class TelephonyConfigType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The is tsp using telephony api. */
     protected Boolean isTSPUsingTelephonyAPI;
-    
-    /** The service name. */
     protected String serviceName;
-    
-    /** The participant access code label. */
     protected String participantAccessCodeLabel;
-    
-    /** The subscriber access code label. */
     protected String subscriberAccessCodeLabel;
-    
-    /** The attendee id label. */
     protected String attendeeIDLabel;
-    
-    /** The primary adaptor url. */
     protected String primaryAdaptorURL;
-    
-    /** The secondary adaptor url. */
     protected String secondaryAdaptorURL;
-    
-    /** The internet phone. */
     protected Boolean internetPhone;
-    
-    /** The call in teleconferencing. */
     protected Boolean callInTeleconferencing;
-    
-    /** The toll free callin teleconferencing. */
     protected Boolean tollFreeCallinTeleconferencing;
-    
-    /** The call back teleconferencing. */
     @XmlElement(defaultValue = "false")
     protected Boolean callBackTeleconferencing;
-    
-    /** The call in number. */
     protected String callInNumber;
-    
-    /** The default tele server subject. */
     protected String defaultTeleServerSubject;
-    
-    /** The subscribe name. */
     protected String subscribeName;
-    
-    /** The subscribe password. */
     protected String subscribePassword;
-    
-    /** The default phone lines. */
     protected String defaultPhoneLines;
-    
-    /** The default speaking lines. */
     protected String defaultSpeakingLines;
-    
-    /** The major country code. */
     protected String majorCountryCode;
-    
-    /** The major area code. */
     protected String majorAreaCode;
-    
-    /** The public name. */
     protected String publicName;
-    
-    /** The hybrid teleconference. */
     protected Boolean hybridTeleconference;
-    
-    /** The instant help. */
     protected Boolean instantHelp;
-    
-    /** The customer manage. */
     protected Boolean customerManage;
-    
-    /** The ts routing. */
     @XmlElement(name = "TSRouting")
     protected TSRouting tsRouting;
-    
-    /** The tele server name. */
     protected String teleServerName;
-    
-    /** The max callers number. */
     protected Long maxCallersNumber;
-    
-    /** The is specified. */
     protected Boolean isSpecified;
-    
-    /** The is continue. */
     protected Boolean isContinue;
-    
-    /** The intl call back teleconferencing. */
     protected Boolean intlCallBackTeleconferencing;
-    
-    /** The personal teleconf. */
     protected TelephonyConfigType.PersonalTeleconf personalTeleconf;
-    
-    /** The multi media platform. */
     protected Boolean multiMediaPlatform;
-    
-    /** The multi media host name. */
     protected String multiMediaHostName;
-    
-    /** The broadcast audio stream. */
     protected Boolean broadcastAudioStream;
-    
-    /** The tsp adaptor settings. */
     @XmlElement(required = true)
     protected TelephonyConfigType.TspAdaptorSettings tspAdaptorSettings;
-    
-    /** The meeting place. */
     @XmlElement(required = true)
     protected MeetingPlaceTelephonyType meetingPlace;
-    
-    /** The other tele service name. */
     protected String otherTeleServiceName;
-    
-    /** The support adapterless tsp. */
     protected Boolean supportAdapterlessTSP;
-    
-    /** The display attendee id. */
     protected Boolean displayAttendeeID;
-    
-    /** The provision tele account. */
     protected Boolean provisionTeleAccount;
-    
-    /** The choose pcn. */
     protected Boolean choosePCN;
-    
-    /** The audio only. */
     protected Boolean audioOnly;
-    
-    /** The config toll and toll free num. */
     protected Boolean configTollAndTollFreeNum;
-    
-    /** The config primary ts. */
     protected Boolean configPrimaryTS;
 
     /**
-     * Checks if is is tsp using telephony api.
+     * Gets the value of the isTSPUsingTelephonyAPI property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isIsTSPUsingTelephonyAPI() {
         return isTSPUsingTelephonyAPI;
     }
 
     /**
-     * Sets the checks if is tsp using telephony api.
+     * Sets the value of the isTSPUsingTelephonyAPI property.
      * 
-     * @param value the new checks if is tsp using telephony api
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setIsTSPUsingTelephonyAPI(Boolean value) {
         this.isTSPUsingTelephonyAPI = value;
     }
 
     /**
-     * Gets the service name.
+     * Gets the value of the serviceName property.
      * 
-     * @return the service name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getServiceName() {
         return serviceName;
     }
 
     /**
-     * Sets the service name.
+     * Sets the value of the serviceName property.
      * 
-     * @param value the new service name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setServiceName(String value) {
         this.serviceName = value;
     }
 
     /**
-     * Gets the participant access code label.
+     * Gets the value of the participantAccessCodeLabel property.
      * 
-     * @return the participant access code label
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getParticipantAccessCodeLabel() {
         return participantAccessCodeLabel;
     }
 
     /**
-     * Sets the participant access code label.
+     * Sets the value of the participantAccessCodeLabel property.
      * 
-     * @param value the new participant access code label
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setParticipantAccessCodeLabel(String value) {
         this.participantAccessCodeLabel = value;
     }
 
     /**
-     * Gets the subscriber access code label.
+     * Gets the value of the subscriberAccessCodeLabel property.
      * 
-     * @return the subscriber access code label
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSubscriberAccessCodeLabel() {
         return subscriberAccessCodeLabel;
     }
 
     /**
-     * Sets the subscriber access code label.
+     * Sets the value of the subscriberAccessCodeLabel property.
      * 
-     * @param value the new subscriber access code label
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSubscriberAccessCodeLabel(String value) {
         this.subscriberAccessCodeLabel = value;
     }
 
     /**
-     * Gets the attendee id label.
+     * Gets the value of the attendeeIDLabel property.
      * 
-     * @return the attendee id label
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getAttendeeIDLabel() {
         return attendeeIDLabel;
     }
 
     /**
-     * Sets the attendee id label.
+     * Sets the value of the attendeeIDLabel property.
      * 
-     * @param value the new attendee id label
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAttendeeIDLabel(String value) {
         this.attendeeIDLabel = value;
     }
 
     /**
-     * Gets the primary adaptor url.
+     * Gets the value of the primaryAdaptorURL property.
      * 
-     * @return the primary adaptor url
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPrimaryAdaptorURL() {
         return primaryAdaptorURL;
     }
 
     /**
-     * Sets the primary adaptor url.
+     * Sets the value of the primaryAdaptorURL property.
      * 
-     * @param value the new primary adaptor url
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPrimaryAdaptorURL(String value) {
         this.primaryAdaptorURL = value;
     }
 
     /**
-     * Gets the secondary adaptor url.
+     * Gets the value of the secondaryAdaptorURL property.
      * 
-     * @return the secondary adaptor url
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSecondaryAdaptorURL() {
         return secondaryAdaptorURL;
     }
 
     /**
-     * Sets the secondary adaptor url.
+     * Sets the value of the secondaryAdaptorURL property.
      * 
-     * @param value the new secondary adaptor url
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSecondaryAdaptorURL(String value) {
         this.secondaryAdaptorURL = value;
     }
 
     /**
-     * Checks if is internet phone.
+     * Gets the value of the internetPhone property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isInternetPhone() {
         return internetPhone;
     }
 
     /**
-     * Sets the internet phone.
+     * Sets the value of the internetPhone property.
      * 
-     * @param value the new internet phone
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setInternetPhone(Boolean value) {
         this.internetPhone = value;
     }
 
     /**
-     * Checks if is call in teleconferencing.
+     * Gets the value of the callInTeleconferencing property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isCallInTeleconferencing() {
         return callInTeleconferencing;
     }
 
     /**
-     * Sets the call in teleconferencing.
+     * Sets the value of the callInTeleconferencing property.
      * 
-     * @param value the new call in teleconferencing
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setCallInTeleconferencing(Boolean value) {
         this.callInTeleconferencing = value;
     }
 
     /**
-     * Checks if is toll free callin teleconferencing.
+     * Gets the value of the tollFreeCallinTeleconferencing property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isTollFreeCallinTeleconferencing() {
         return tollFreeCallinTeleconferencing;
     }
 
     /**
-     * Sets the toll free callin teleconferencing.
+     * Sets the value of the tollFreeCallinTeleconferencing property.
      * 
-     * @param value the new toll free callin teleconferencing
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setTollFreeCallinTeleconferencing(Boolean value) {
         this.tollFreeCallinTeleconferencing = value;
     }
 
     /**
-     * Checks if is call back teleconferencing.
+     * Gets the value of the callBackTeleconferencing property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isCallBackTeleconferencing() {
         return callBackTeleconferencing;
     }
 
     /**
-     * Sets the call back teleconferencing.
+     * Sets the value of the callBackTeleconferencing property.
      * 
-     * @param value the new call back teleconferencing
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setCallBackTeleconferencing(Boolean value) {
         this.callBackTeleconferencing = value;
     }
 
     /**
-     * Gets the call in number.
+     * Gets the value of the callInNumber property.
      * 
-     * @return the call in number
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCallInNumber() {
         return callInNumber;
     }
 
     /**
-     * Sets the call in number.
+     * Sets the value of the callInNumber property.
      * 
-     * @param value the new call in number
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCallInNumber(String value) {
         this.callInNumber = value;
     }
 
     /**
-     * Gets the default tele server subject.
+     * Gets the value of the defaultTeleServerSubject property.
      * 
-     * @return the default tele server subject
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDefaultTeleServerSubject() {
         return defaultTeleServerSubject;
     }
 
     /**
-     * Sets the default tele server subject.
+     * Sets the value of the defaultTeleServerSubject property.
      * 
-     * @param value the new default tele server subject
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDefaultTeleServerSubject(String value) {
         this.defaultTeleServerSubject = value;
     }
 
     /**
-     * Gets the subscribe name.
+     * Gets the value of the subscribeName property.
      * 
-     * @return the subscribe name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSubscribeName() {
         return subscribeName;
     }
 
     /**
-     * Sets the subscribe name.
+     * Sets the value of the subscribeName property.
      * 
-     * @param value the new subscribe name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSubscribeName(String value) {
         this.subscribeName = value;
     }
 
     /**
-     * Gets the subscribe password.
+     * Gets the value of the subscribePassword property.
      * 
-     * @return the subscribe password
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSubscribePassword() {
         return subscribePassword;
     }
 
     /**
-     * Sets the subscribe password.
+     * Sets the value of the subscribePassword property.
      * 
-     * @param value the new subscribe password
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSubscribePassword(String value) {
         this.subscribePassword = value;
     }
 
     /**
-     * Gets the default phone lines.
+     * Gets the value of the defaultPhoneLines property.
      * 
-     * @return the default phone lines
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDefaultPhoneLines() {
         return defaultPhoneLines;
     }
 
     /**
-     * Sets the default phone lines.
+     * Sets the value of the defaultPhoneLines property.
      * 
-     * @param value the new default phone lines
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDefaultPhoneLines(String value) {
         this.defaultPhoneLines = value;
     }
 
     /**
-     * Gets the default speaking lines.
+     * Gets the value of the defaultSpeakingLines property.
      * 
-     * @return the default speaking lines
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDefaultSpeakingLines() {
         return defaultSpeakingLines;
     }
 
     /**
-     * Sets the default speaking lines.
+     * Sets the value of the defaultSpeakingLines property.
      * 
-     * @param value the new default speaking lines
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDefaultSpeakingLines(String value) {
         this.defaultSpeakingLines = value;
     }
 
     /**
-     * Gets the major country code.
+     * Gets the value of the majorCountryCode property.
      * 
-     * @return the major country code
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMajorCountryCode() {
         return majorCountryCode;
     }
 
     /**
-     * Sets the major country code.
+     * Sets the value of the majorCountryCode property.
      * 
-     * @param value the new major country code
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMajorCountryCode(String value) {
         this.majorCountryCode = value;
     }
 
     /**
-     * Gets the major area code.
+     * Gets the value of the majorAreaCode property.
      * 
-     * @return the major area code
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMajorAreaCode() {
         return majorAreaCode;
     }
 
     /**
-     * Sets the major area code.
+     * Sets the value of the majorAreaCode property.
      * 
-     * @param value the new major area code
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMajorAreaCode(String value) {
         this.majorAreaCode = value;
     }
 
     /**
-     * Gets the public name.
+     * Gets the value of the publicName property.
      * 
-     * @return the public name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPublicName() {
         return publicName;
     }
 
     /**
-     * Sets the public name.
+     * Sets the value of the publicName property.
      * 
-     * @param value the new public name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPublicName(String value) {
         this.publicName = value;
     }
 
     /**
-     * Checks if is hybrid teleconference.
+     * Gets the value of the hybridTeleconference property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isHybridTeleconference() {
         return hybridTeleconference;
     }
 
     /**
-     * Sets the hybrid teleconference.
+     * Sets the value of the hybridTeleconference property.
      * 
-     * @param value the new hybrid teleconference
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setHybridTeleconference(Boolean value) {
         this.hybridTeleconference = value;
     }
 
     /**
-     * Checks if is instant help.
+     * Gets the value of the instantHelp property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isInstantHelp() {
         return instantHelp;
     }
 
     /**
-     * Sets the instant help.
+     * Sets the value of the instantHelp property.
      * 
-     * @param value the new instant help
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setInstantHelp(Boolean value) {
         this.instantHelp = value;
     }
 
     /**
-     * Checks if is customer manage.
+     * Gets the value of the customerManage property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isCustomerManage() {
         return customerManage;
     }
 
     /**
-     * Sets the customer manage.
+     * Sets the value of the customerManage property.
      * 
-     * @param value the new customer manage
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setCustomerManage(Boolean value) {
         this.customerManage = value;
     }
 
     /**
-     * Gets the tS routing.
+     * Gets the value of the tsRouting property.
      * 
-     * @return the tS routing
+     * @return
+     *     possible object is
+     *     {@link TSRouting }
+     *     
      */
     public TSRouting getTSRouting() {
         return tsRouting;
     }
 
     /**
-     * Sets the tS routing.
+     * Sets the value of the tsRouting property.
      * 
-     * @param value the new tS routing
+     * @param value
+     *     allowed object is
+     *     {@link TSRouting }
+     *     
      */
     public void setTSRouting(TSRouting value) {
         this.tsRouting = value;
     }
 
     /**
-     * Gets the tele server name.
+     * Gets the value of the teleServerName property.
      * 
-     * @return the tele server name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTeleServerName() {
         return teleServerName;
     }
 
     /**
-     * Sets the tele server name.
+     * Sets the value of the teleServerName property.
      * 
-     * @param value the new tele server name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTeleServerName(String value) {
         this.teleServerName = value;
     }
 
     /**
-     * Gets the max callers number.
+     * Gets the value of the maxCallersNumber property.
      * 
-     * @return the max callers number
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getMaxCallersNumber() {
         return maxCallersNumber;
     }
 
     /**
-     * Sets the max callers number.
+     * Sets the value of the maxCallersNumber property.
      * 
-     * @param value the new max callers number
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setMaxCallersNumber(Long value) {
         this.maxCallersNumber = value;
     }
 
     /**
-     * Checks if is is specified.
+     * Gets the value of the isSpecified property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isIsSpecified() {
         return isSpecified;
     }
 
     /**
-     * Sets the checks if is specified.
+     * Sets the value of the isSpecified property.
      * 
-     * @param value the new checks if is specified
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setIsSpecified(Boolean value) {
         this.isSpecified = value;
     }
 
     /**
-     * Checks if is is continue.
+     * Gets the value of the isContinue property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isIsContinue() {
         return isContinue;
     }
 
     /**
-     * Sets the checks if is continue.
+     * Sets the value of the isContinue property.
      * 
-     * @param value the new checks if is continue
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setIsContinue(Boolean value) {
         this.isContinue = value;
     }
 
     /**
-     * Checks if is intl call back teleconferencing.
+     * Gets the value of the intlCallBackTeleconferencing property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isIntlCallBackTeleconferencing() {
         return intlCallBackTeleconferencing;
     }
 
     /**
-     * Sets the intl call back teleconferencing.
+     * Sets the value of the intlCallBackTeleconferencing property.
      * 
-     * @param value the new intl call back teleconferencing
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setIntlCallBackTeleconferencing(Boolean value) {
         this.intlCallBackTeleconferencing = value;
     }
 
     /**
-     * Gets the personal teleconf.
+     * Gets the value of the personalTeleconf property.
      * 
-     * @return the personal teleconf
+     * @return
+     *     possible object is
+     *     {@link TelephonyConfigType.PersonalTeleconf }
+     *     
      */
     public TelephonyConfigType.PersonalTeleconf getPersonalTeleconf() {
         return personalTeleconf;
     }
 
     /**
-     * Sets the personal teleconf.
+     * Sets the value of the personalTeleconf property.
      * 
-     * @param value the new personal teleconf
+     * @param value
+     *     allowed object is
+     *     {@link TelephonyConfigType.PersonalTeleconf }
+     *     
      */
     public void setPersonalTeleconf(TelephonyConfigType.PersonalTeleconf value) {
         this.personalTeleconf = value;
     }
 
     /**
-     * Checks if is multi media platform.
+     * Gets the value of the multiMediaPlatform property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isMultiMediaPlatform() {
         return multiMediaPlatform;
     }
 
     /**
-     * Sets the multi media platform.
+     * Sets the value of the multiMediaPlatform property.
      * 
-     * @param value the new multi media platform
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setMultiMediaPlatform(Boolean value) {
         this.multiMediaPlatform = value;
     }
 
     /**
-     * Gets the multi media host name.
+     * Gets the value of the multiMediaHostName property.
      * 
-     * @return the multi media host name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMultiMediaHostName() {
         return multiMediaHostName;
     }
 
     /**
-     * Sets the multi media host name.
+     * Sets the value of the multiMediaHostName property.
      * 
-     * @param value the new multi media host name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMultiMediaHostName(String value) {
         this.multiMediaHostName = value;
     }
 
     /**
-     * Checks if is broadcast audio stream.
+     * Gets the value of the broadcastAudioStream property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isBroadcastAudioStream() {
         return broadcastAudioStream;
     }
 
     /**
-     * Sets the broadcast audio stream.
+     * Sets the value of the broadcastAudioStream property.
      * 
-     * @param value the new broadcast audio stream
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setBroadcastAudioStream(Boolean value) {
         this.broadcastAudioStream = value;
     }
 
     /**
-     * Gets the tsp adaptor settings.
+     * Gets the value of the tspAdaptorSettings property.
      * 
-     * @return the tsp adaptor settings
+     * @return
+     *     possible object is
+     *     {@link TelephonyConfigType.TspAdaptorSettings }
+     *     
      */
     public TelephonyConfigType.TspAdaptorSettings getTspAdaptorSettings() {
         return tspAdaptorSettings;
     }
 
     /**
-     * Sets the tsp adaptor settings.
+     * Sets the value of the tspAdaptorSettings property.
      * 
-     * @param value the new tsp adaptor settings
+     * @param value
+     *     allowed object is
+     *     {@link TelephonyConfigType.TspAdaptorSettings }
+     *     
      */
     public void setTspAdaptorSettings(TelephonyConfigType.TspAdaptorSettings value) {
         this.tspAdaptorSettings = value;
     }
 
     /**
-     * Gets the meeting place.
+     * Gets the value of the meetingPlace property.
      * 
-     * @return the meeting place
+     * @return
+     *     possible object is
+     *     {@link MeetingPlaceTelephonyType }
+     *     
      */
     public MeetingPlaceTelephonyType getMeetingPlace() {
         return meetingPlace;
     }
 
     /**
-     * Sets the meeting place.
+     * Sets the value of the meetingPlace property.
      * 
-     * @param value the new meeting place
+     * @param value
+     *     allowed object is
+     *     {@link MeetingPlaceTelephonyType }
+     *     
      */
     public void setMeetingPlace(MeetingPlaceTelephonyType value) {
         this.meetingPlace = value;
     }
 
     /**
-     * Gets the other tele service name.
+     * Gets the value of the otherTeleServiceName property.
      * 
-     * @return the other tele service name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getOtherTeleServiceName() {
         return otherTeleServiceName;
     }
 
     /**
-     * Sets the other tele service name.
+     * Sets the value of the otherTeleServiceName property.
      * 
-     * @param value the new other tele service name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setOtherTeleServiceName(String value) {
         this.otherTeleServiceName = value;
     }
 
     /**
-     * Checks if is support adapterless tsp.
+     * Gets the value of the supportAdapterlessTSP property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportAdapterlessTSP() {
         return supportAdapterlessTSP;
     }
 
     /**
-     * Sets the support adapterless tsp.
+     * Sets the value of the supportAdapterlessTSP property.
      * 
-     * @param value the new support adapterless tsp
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportAdapterlessTSP(Boolean value) {
         this.supportAdapterlessTSP = value;
     }
 
     /**
-     * Checks if is display attendee id.
+     * Gets the value of the displayAttendeeID property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isDisplayAttendeeID() {
         return displayAttendeeID;
     }
 
     /**
-     * Sets the display attendee id.
+     * Sets the value of the displayAttendeeID property.
      * 
-     * @param value the new display attendee id
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setDisplayAttendeeID(Boolean value) {
         this.displayAttendeeID = value;
     }
 
     /**
-     * Checks if is provision tele account.
+     * Gets the value of the provisionTeleAccount property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isProvisionTeleAccount() {
         return provisionTeleAccount;
     }
 
     /**
-     * Sets the provision tele account.
+     * Sets the value of the provisionTeleAccount property.
      * 
-     * @param value the new provision tele account
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setProvisionTeleAccount(Boolean value) {
         this.provisionTeleAccount = value;
     }
 
     /**
-     * Checks if is choose pcn.
+     * Gets the value of the choosePCN property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isChoosePCN() {
         return choosePCN;
     }
 
     /**
-     * Sets the choose pcn.
+     * Sets the value of the choosePCN property.
      * 
-     * @param value the new choose pcn
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setChoosePCN(Boolean value) {
         this.choosePCN = value;
     }
 
     /**
-     * Checks if is audio only.
+     * Gets the value of the audioOnly property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAudioOnly() {
         return audioOnly;
     }
 
     /**
-     * Sets the audio only.
+     * Sets the value of the audioOnly property.
      * 
-     * @param value the new audio only
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAudioOnly(Boolean value) {
         this.audioOnly = value;
     }
 
     /**
-     * Checks if is config toll and toll free num.
+     * Gets the value of the configTollAndTollFreeNum property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isConfigTollAndTollFreeNum() {
         return configTollAndTollFreeNum;
     }
 
     /**
-     * Sets the config toll and toll free num.
+     * Sets the value of the configTollAndTollFreeNum property.
      * 
-     * @param value the new config toll and toll free num
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setConfigTollAndTollFreeNum(Boolean value) {
         this.configTollAndTollFreeNum = value;
     }
 
     /**
-     * Checks if is config primary ts.
+     * Gets the value of the configPrimaryTS property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isConfigPrimaryTS() {
         return configPrimaryTS;
     }
 
     /**
-     * Sets the config primary ts.
+     * Sets the value of the configPrimaryTS property.
      * 
-     * @param value the new config primary ts
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setConfigPrimaryTS(Boolean value) {
         this.configPrimaryTS = value;
@@ -990,7 +1246,28 @@ public class TelephonyConfigType
 
 
     /**
-     * The Class PersonalTeleconf.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="primaryLargeServer" type="{http://www.webex.com/schemas/2002/06/service}personalTeleServerType" minOccurs="0"/>
+     *         &lt;element name="backup1LargeServer" type="{http://www.webex.com/schemas/2002/06/service}personalTeleServerType" minOccurs="0"/>
+     *         &lt;element name="backup2LargeServer" type="{http://www.webex.com/schemas/2002/06/service}personalTeleServerType" minOccurs="0"/>
+     *         &lt;element name="primarySmallServer" type="{http://www.webex.com/schemas/2002/06/service}personalTeleServerType" minOccurs="0"/>
+     *         &lt;element name="backup1SmallServer" type="{http://www.webex.com/schemas/2002/06/service}personalTeleServerType" minOccurs="0"/>
+     *         &lt;element name="backup2SmallServer" type="{http://www.webex.com/schemas/2002/06/service}personalTeleServerType" minOccurs="0"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -1005,130 +1282,153 @@ public class TelephonyConfigType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The primary large server. */
         protected PersonalTeleServerType primaryLargeServer;
-        
-        /** The backup1 large server. */
         protected PersonalTeleServerType backup1LargeServer;
-        
-        /** The backup2 large server. */
         protected PersonalTeleServerType backup2LargeServer;
-        
-        /** The primary small server. */
         protected PersonalTeleServerType primarySmallServer;
-        
-        /** The backup1 small server. */
         protected PersonalTeleServerType backup1SmallServer;
-        
-        /** The backup2 small server. */
         protected PersonalTeleServerType backup2SmallServer;
 
         /**
-         * Gets the primary large server.
+         * Gets the value of the primaryLargeServer property.
          * 
-         * @return the primary large server
+         * @return
+         *     possible object is
+         *     {@link PersonalTeleServerType }
+         *     
          */
         public PersonalTeleServerType getPrimaryLargeServer() {
             return primaryLargeServer;
         }
 
         /**
-         * Sets the primary large server.
+         * Sets the value of the primaryLargeServer property.
          * 
-         * @param value the new primary large server
+         * @param value
+         *     allowed object is
+         *     {@link PersonalTeleServerType }
+         *     
          */
         public void setPrimaryLargeServer(PersonalTeleServerType value) {
             this.primaryLargeServer = value;
         }
 
         /**
-         * Gets the backup1 large server.
+         * Gets the value of the backup1LargeServer property.
          * 
-         * @return the backup1 large server
+         * @return
+         *     possible object is
+         *     {@link PersonalTeleServerType }
+         *     
          */
         public PersonalTeleServerType getBackup1LargeServer() {
             return backup1LargeServer;
         }
 
         /**
-         * Sets the backup1 large server.
+         * Sets the value of the backup1LargeServer property.
          * 
-         * @param value the new backup1 large server
+         * @param value
+         *     allowed object is
+         *     {@link PersonalTeleServerType }
+         *     
          */
         public void setBackup1LargeServer(PersonalTeleServerType value) {
             this.backup1LargeServer = value;
         }
 
         /**
-         * Gets the backup2 large server.
+         * Gets the value of the backup2LargeServer property.
          * 
-         * @return the backup2 large server
+         * @return
+         *     possible object is
+         *     {@link PersonalTeleServerType }
+         *     
          */
         public PersonalTeleServerType getBackup2LargeServer() {
             return backup2LargeServer;
         }
 
         /**
-         * Sets the backup2 large server.
+         * Sets the value of the backup2LargeServer property.
          * 
-         * @param value the new backup2 large server
+         * @param value
+         *     allowed object is
+         *     {@link PersonalTeleServerType }
+         *     
          */
         public void setBackup2LargeServer(PersonalTeleServerType value) {
             this.backup2LargeServer = value;
         }
 
         /**
-         * Gets the primary small server.
+         * Gets the value of the primarySmallServer property.
          * 
-         * @return the primary small server
+         * @return
+         *     possible object is
+         *     {@link PersonalTeleServerType }
+         *     
          */
         public PersonalTeleServerType getPrimarySmallServer() {
             return primarySmallServer;
         }
 
         /**
-         * Sets the primary small server.
+         * Sets the value of the primarySmallServer property.
          * 
-         * @param value the new primary small server
+         * @param value
+         *     allowed object is
+         *     {@link PersonalTeleServerType }
+         *     
          */
         public void setPrimarySmallServer(PersonalTeleServerType value) {
             this.primarySmallServer = value;
         }
 
         /**
-         * Gets the backup1 small server.
+         * Gets the value of the backup1SmallServer property.
          * 
-         * @return the backup1 small server
+         * @return
+         *     possible object is
+         *     {@link PersonalTeleServerType }
+         *     
          */
         public PersonalTeleServerType getBackup1SmallServer() {
             return backup1SmallServer;
         }
 
         /**
-         * Sets the backup1 small server.
+         * Sets the value of the backup1SmallServer property.
          * 
-         * @param value the new backup1 small server
+         * @param value
+         *     allowed object is
+         *     {@link PersonalTeleServerType }
+         *     
          */
         public void setBackup1SmallServer(PersonalTeleServerType value) {
             this.backup1SmallServer = value;
         }
 
         /**
-         * Gets the backup2 small server.
+         * Gets the value of the backup2SmallServer property.
          * 
-         * @return the backup2 small server
+         * @return
+         *     possible object is
+         *     {@link PersonalTeleServerType }
+         *     
          */
         public PersonalTeleServerType getBackup2SmallServer() {
             return backup2SmallServer;
         }
 
         /**
-         * Sets the backup2 small server.
+         * Sets the value of the backup2SmallServer property.
          * 
-         * @param value the new backup2 small server
+         * @param value
+         *     allowed object is
+         *     {@link PersonalTeleServerType }
+         *     
          */
         public void setBackup2SmallServer(PersonalTeleServerType value) {
             this.backup2SmallServer = value;
@@ -1138,7 +1438,25 @@ public class TelephonyConfigType
 
 
     /**
-     * The Class TspAdaptorSettings.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="primaryLarge" type="{http://www.webex.com/schemas/2002/06/service/site}tspServerType" minOccurs="0"/>
+     *         &lt;element name="backup1Large" type="{http://www.webex.com/schemas/2002/06/service/site}tspServerType" minOccurs="0"/>
+     *         &lt;element name="backup2Large" type="{http://www.webex.com/schemas/2002/06/service/site}tspServerType" minOccurs="0"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -1150,67 +1468,78 @@ public class TelephonyConfigType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The primary large. */
         protected TspServerType primaryLarge;
-        
-        /** The backup1 large. */
         protected TspServerType backup1Large;
-        
-        /** The backup2 large. */
         protected TspServerType backup2Large;
 
         /**
-         * Gets the primary large.
+         * Gets the value of the primaryLarge property.
          * 
-         * @return the primary large
+         * @return
+         *     possible object is
+         *     {@link TspServerType }
+         *     
          */
         public TspServerType getPrimaryLarge() {
             return primaryLarge;
         }
 
         /**
-         * Sets the primary large.
+         * Sets the value of the primaryLarge property.
          * 
-         * @param value the new primary large
+         * @param value
+         *     allowed object is
+         *     {@link TspServerType }
+         *     
          */
         public void setPrimaryLarge(TspServerType value) {
             this.primaryLarge = value;
         }
 
         /**
-         * Gets the backup1 large.
+         * Gets the value of the backup1Large property.
          * 
-         * @return the backup1 large
+         * @return
+         *     possible object is
+         *     {@link TspServerType }
+         *     
          */
         public TspServerType getBackup1Large() {
             return backup1Large;
         }
 
         /**
-         * Sets the backup1 large.
+         * Sets the value of the backup1Large property.
          * 
-         * @param value the new backup1 large
+         * @param value
+         *     allowed object is
+         *     {@link TspServerType }
+         *     
          */
         public void setBackup1Large(TspServerType value) {
             this.backup1Large = value;
         }
 
         /**
-         * Gets the backup2 large.
+         * Gets the value of the backup2Large property.
          * 
-         * @return the backup2 large
+         * @return
+         *     possible object is
+         *     {@link TspServerType }
+         *     
          */
         public TspServerType getBackup2Large() {
             return backup2Large;
         }
 
         /**
-         * Sets the backup2 large.
+         * Sets the value of the backup2Large property.
          * 
-         * @param value the new backup2 large
+         * @param value
+         *     allowed object is
+         *     {@link TspServerType }
+         *     
          */
         public void setBackup2Large(TspServerType value) {
             this.backup2Large = value;

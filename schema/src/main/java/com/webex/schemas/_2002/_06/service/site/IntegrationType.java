@@ -25,7 +25,46 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class IntegrationType.
+ * <p>Java class for integrationType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="integrationType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="outlook" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="lotusNotes" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="oneClick" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="showSysTrayIcon" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="office" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="excel" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="powerPoint" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="word" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="IE" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="firefox" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="explorerRightClick" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="instantMessenger" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="aolMessenger" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="googleTalk" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="lotusSametime" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="skype" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="windowsMessenger" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="yahooMessenger" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="ciscoIPPhone" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="ciscoCUAEURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="pcNow" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="iGoogle" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="iPhoneDusting" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="CUMAURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "integrationType", propOrder = {
@@ -58,510 +97,605 @@ public class IntegrationType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The outlook. */
     protected Boolean outlook;
-    
-    /** The lotus notes. */
     protected Boolean lotusNotes;
-    
-    /** The one click. */
     protected Boolean oneClick;
-    
-    /** The show sys tray icon. */
     protected Boolean showSysTrayIcon;
-    
-    /** The office. */
     protected Boolean office;
-    
-    /** The excel. */
     protected Boolean excel;
-    
-    /** The power point. */
     protected Boolean powerPoint;
-    
-    /** The word. */
     protected Boolean word;
-    
-    /** The ie. */
     @XmlElement(name = "IE")
     protected Boolean ie;
-    
-    /** The firefox. */
     protected Boolean firefox;
-    
-    /** The explorer right click. */
     protected Boolean explorerRightClick;
-    
-    /** The instant messenger. */
     protected Boolean instantMessenger;
-    
-    /** The aol messenger. */
     protected Boolean aolMessenger;
-    
-    /** The google talk. */
     protected Boolean googleTalk;
-    
-    /** The lotus sametime. */
     protected Boolean lotusSametime;
-    
-    /** The skype. */
     protected Boolean skype;
-    
-    /** The windows messenger. */
     protected Boolean windowsMessenger;
-    
-    /** The yahoo messenger. */
     protected Boolean yahooMessenger;
-    
-    /** The cisco ip phone. */
     protected Boolean ciscoIPPhone;
-    
-    /** The cisco cuaeurl. */
     protected String ciscoCUAEURL;
-    
-    /** The pc now. */
     protected Boolean pcNow;
-    
-    /** The i google. */
     protected Boolean iGoogle;
-    
-    /** The i phone dusting. */
     protected Boolean iPhoneDusting;
-    
-    /** The cumaurl. */
     @XmlElement(name = "CUMAURL")
     protected String cumaurl;
 
     /**
-     * Checks if is outlook.
+     * Gets the value of the outlook property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isOutlook() {
         return outlook;
     }
 
     /**
-     * Sets the outlook.
+     * Sets the value of the outlook property.
      * 
-     * @param value the new outlook
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setOutlook(Boolean value) {
         this.outlook = value;
     }
 
     /**
-     * Checks if is lotus notes.
+     * Gets the value of the lotusNotes property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isLotusNotes() {
         return lotusNotes;
     }
 
     /**
-     * Sets the lotus notes.
+     * Sets the value of the lotusNotes property.
      * 
-     * @param value the new lotus notes
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setLotusNotes(Boolean value) {
         this.lotusNotes = value;
     }
 
     /**
-     * Checks if is one click.
+     * Gets the value of the oneClick property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isOneClick() {
         return oneClick;
     }
 
     /**
-     * Sets the one click.
+     * Sets the value of the oneClick property.
      * 
-     * @param value the new one click
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setOneClick(Boolean value) {
         this.oneClick = value;
     }
 
     /**
-     * Checks if is show sys tray icon.
+     * Gets the value of the showSysTrayIcon property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isShowSysTrayIcon() {
         return showSysTrayIcon;
     }
 
     /**
-     * Sets the show sys tray icon.
+     * Sets the value of the showSysTrayIcon property.
      * 
-     * @param value the new show sys tray icon
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setShowSysTrayIcon(Boolean value) {
         this.showSysTrayIcon = value;
     }
 
     /**
-     * Checks if is office.
+     * Gets the value of the office property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isOffice() {
         return office;
     }
 
     /**
-     * Sets the office.
+     * Sets the value of the office property.
      * 
-     * @param value the new office
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setOffice(Boolean value) {
         this.office = value;
     }
 
     /**
-     * Checks if is excel.
+     * Gets the value of the excel property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isExcel() {
         return excel;
     }
 
     /**
-     * Sets the excel.
+     * Sets the value of the excel property.
      * 
-     * @param value the new excel
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setExcel(Boolean value) {
         this.excel = value;
     }
 
     /**
-     * Checks if is power point.
+     * Gets the value of the powerPoint property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isPowerPoint() {
         return powerPoint;
     }
 
     /**
-     * Sets the power point.
+     * Sets the value of the powerPoint property.
      * 
-     * @param value the new power point
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setPowerPoint(Boolean value) {
         this.powerPoint = value;
     }
 
     /**
-     * Checks if is word.
+     * Gets the value of the word property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isWord() {
         return word;
     }
 
     /**
-     * Sets the word.
+     * Sets the value of the word property.
      * 
-     * @param value the new word
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setWord(Boolean value) {
         this.word = value;
     }
 
     /**
-     * Checks if is ie.
+     * Gets the value of the ie property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isIE() {
         return ie;
     }
 
     /**
-     * Sets the iE.
+     * Sets the value of the ie property.
      * 
-     * @param value the new iE
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setIE(Boolean value) {
         this.ie = value;
     }
 
     /**
-     * Checks if is firefox.
+     * Gets the value of the firefox property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isFirefox() {
         return firefox;
     }
 
     /**
-     * Sets the firefox.
+     * Sets the value of the firefox property.
      * 
-     * @param value the new firefox
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setFirefox(Boolean value) {
         this.firefox = value;
     }
 
     /**
-     * Checks if is explorer right click.
+     * Gets the value of the explorerRightClick property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isExplorerRightClick() {
         return explorerRightClick;
     }
 
     /**
-     * Sets the explorer right click.
+     * Sets the value of the explorerRightClick property.
      * 
-     * @param value the new explorer right click
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setExplorerRightClick(Boolean value) {
         this.explorerRightClick = value;
     }
 
     /**
-     * Checks if is instant messenger.
+     * Gets the value of the instantMessenger property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isInstantMessenger() {
         return instantMessenger;
     }
 
     /**
-     * Sets the instant messenger.
+     * Sets the value of the instantMessenger property.
      * 
-     * @param value the new instant messenger
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setInstantMessenger(Boolean value) {
         this.instantMessenger = value;
     }
 
     /**
-     * Checks if is aol messenger.
+     * Gets the value of the aolMessenger property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAolMessenger() {
         return aolMessenger;
     }
 
     /**
-     * Sets the aol messenger.
+     * Sets the value of the aolMessenger property.
      * 
-     * @param value the new aol messenger
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAolMessenger(Boolean value) {
         this.aolMessenger = value;
     }
 
     /**
-     * Checks if is google talk.
+     * Gets the value of the googleTalk property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isGoogleTalk() {
         return googleTalk;
     }
 
     /**
-     * Sets the google talk.
+     * Sets the value of the googleTalk property.
      * 
-     * @param value the new google talk
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setGoogleTalk(Boolean value) {
         this.googleTalk = value;
     }
 
     /**
-     * Checks if is lotus sametime.
+     * Gets the value of the lotusSametime property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isLotusSametime() {
         return lotusSametime;
     }
 
     /**
-     * Sets the lotus sametime.
+     * Sets the value of the lotusSametime property.
      * 
-     * @param value the new lotus sametime
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setLotusSametime(Boolean value) {
         this.lotusSametime = value;
     }
 
     /**
-     * Checks if is skype.
+     * Gets the value of the skype property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSkype() {
         return skype;
     }
 
     /**
-     * Sets the skype.
+     * Sets the value of the skype property.
      * 
-     * @param value the new skype
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSkype(Boolean value) {
         this.skype = value;
     }
 
     /**
-     * Checks if is windows messenger.
+     * Gets the value of the windowsMessenger property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isWindowsMessenger() {
         return windowsMessenger;
     }
 
     /**
-     * Sets the windows messenger.
+     * Sets the value of the windowsMessenger property.
      * 
-     * @param value the new windows messenger
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setWindowsMessenger(Boolean value) {
         this.windowsMessenger = value;
     }
 
     /**
-     * Checks if is yahoo messenger.
+     * Gets the value of the yahooMessenger property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isYahooMessenger() {
         return yahooMessenger;
     }
 
     /**
-     * Sets the yahoo messenger.
+     * Sets the value of the yahooMessenger property.
      * 
-     * @param value the new yahoo messenger
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setYahooMessenger(Boolean value) {
         this.yahooMessenger = value;
     }
 
     /**
-     * Checks if is cisco ip phone.
+     * Gets the value of the ciscoIPPhone property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isCiscoIPPhone() {
         return ciscoIPPhone;
     }
 
     /**
-     * Sets the cisco ip phone.
+     * Sets the value of the ciscoIPPhone property.
      * 
-     * @param value the new cisco ip phone
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setCiscoIPPhone(Boolean value) {
         this.ciscoIPPhone = value;
     }
 
     /**
-     * Gets the cisco cuaeurl.
+     * Gets the value of the ciscoCUAEURL property.
      * 
-     * @return the cisco cuaeurl
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCiscoCUAEURL() {
         return ciscoCUAEURL;
     }
 
     /**
-     * Sets the cisco cuaeurl.
+     * Sets the value of the ciscoCUAEURL property.
      * 
-     * @param value the new cisco cuaeurl
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCiscoCUAEURL(String value) {
         this.ciscoCUAEURL = value;
     }
 
     /**
-     * Checks if is pc now.
+     * Gets the value of the pcNow property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isPcNow() {
         return pcNow;
     }
 
     /**
-     * Sets the pc now.
+     * Sets the value of the pcNow property.
      * 
-     * @param value the new pc now
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setPcNow(Boolean value) {
         this.pcNow = value;
     }
 
     /**
-     * Checks if is i google.
+     * Gets the value of the iGoogle property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isIGoogle() {
         return iGoogle;
     }
 
     /**
-     * Sets the i google.
+     * Sets the value of the iGoogle property.
      * 
-     * @param value the new i google
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setIGoogle(Boolean value) {
         this.iGoogle = value;
     }
 
     /**
-     * Checks if is i phone dusting.
+     * Gets the value of the iPhoneDusting property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isIPhoneDusting() {
         return iPhoneDusting;
     }
 
     /**
-     * Sets the i phone dusting.
+     * Sets the value of the iPhoneDusting property.
      * 
-     * @param value the new i phone dusting
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setIPhoneDusting(Boolean value) {
         this.iPhoneDusting = value;
     }
 
     /**
-     * Gets the cUMAURL.
+     * Gets the value of the cumaurl property.
      * 
-     * @return the cUMAURL
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCUMAURL() {
         return cumaurl;
     }
 
     /**
-     * Sets the cUMAURL.
+     * Sets the value of the cumaurl property.
      * 
-     * @param value the new cUMAURL
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCUMAURL(String value) {
         this.cumaurl = value;

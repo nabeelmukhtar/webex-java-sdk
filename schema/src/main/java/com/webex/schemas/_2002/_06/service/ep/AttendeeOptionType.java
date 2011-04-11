@@ -24,7 +24,23 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class AttendeeOptionType.
+ * <p>Java class for attendeeOptionType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="attendeeOptionType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="approvalBeforeJoin" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "attendeeOptionType", propOrder = {
@@ -34,25 +50,28 @@ public class AttendeeOptionType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The approval before join. */
     protected Boolean approvalBeforeJoin;
 
     /**
-     * Checks if is approval before join.
+     * Gets the value of the approvalBeforeJoin property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isApprovalBeforeJoin() {
         return approvalBeforeJoin;
     }
 
     /**
-     * Sets the approval before join.
+     * Sets the value of the approvalBeforeJoin property.
      * 
-     * @param value the new approval before join
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setApprovalBeforeJoin(Boolean value) {
         this.approvalBeforeJoin = value;

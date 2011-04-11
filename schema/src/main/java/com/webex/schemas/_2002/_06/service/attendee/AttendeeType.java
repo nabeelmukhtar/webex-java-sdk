@@ -28,7 +28,33 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class AttendeeType.
+ * <p>Java class for attendeeType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="attendeeType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="person" type="{http://www.webex.com/schemas/2002/06/common}personType"/>
+ *         &lt;element name="contactID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="joinStatus" type="{http://www.webex.com/schemas/2002/06/service/attendee}joinStatusType" minOccurs="0"/>
+ *         &lt;element name="meetingKey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="language" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="role" type="{http://www.webex.com/schemas/2002/06/service/attendee}roleType" minOccurs="0"/>
+ *         &lt;element name="emailInvitations" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="locale" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="languageID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "attendeeType", propOrder = {
@@ -53,237 +79,280 @@ public class AttendeeType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The person. */
     @XmlElement(required = true)
     protected PersonType person;
-    
-    /** The contact id. */
     protected Long contactID;
-    
-    /** The join status. */
     protected JoinStatusType joinStatus;
-    
-    /** The meeting key. */
     protected Long meetingKey;
-    
-    /** The session key. */
     protected Long sessionKey;
-    
-    /** The language. */
     protected String language;
-    
-    /** The role. */
     protected RoleType role;
-    
-    /** The email invitations. */
     @XmlElement(defaultValue = "false")
     protected Boolean emailInvitations;
-    
-    /** The locale. */
     protected String locale;
-    
-    /** The time zone id. */
     protected Long timeZoneID;
-    
-    /** The language id. */
     protected Long languageID;
 
     /**
-     * Gets the person.
+     * Gets the value of the person property.
      * 
-     * @return the person
+     * @return
+     *     possible object is
+     *     {@link PersonType }
+     *     
      */
     public PersonType getPerson() {
         return person;
     }
 
     /**
-     * Sets the person.
+     * Sets the value of the person property.
      * 
-     * @param value the new person
+     * @param value
+     *     allowed object is
+     *     {@link PersonType }
+     *     
      */
     public void setPerson(PersonType value) {
         this.person = value;
     }
 
     /**
-     * Gets the contact id.
+     * Gets the value of the contactID property.
      * 
-     * @return the contact id
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getContactID() {
         return contactID;
     }
 
     /**
-     * Sets the contact id.
+     * Sets the value of the contactID property.
      * 
-     * @param value the new contact id
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setContactID(Long value) {
         this.contactID = value;
     }
 
     /**
-     * Gets the join status.
+     * Gets the value of the joinStatus property.
      * 
-     * @return the join status
+     * @return
+     *     possible object is
+     *     {@link JoinStatusType }
+     *     
      */
     public JoinStatusType getJoinStatus() {
         return joinStatus;
     }
 
     /**
-     * Sets the join status.
+     * Sets the value of the joinStatus property.
      * 
-     * @param value the new join status
+     * @param value
+     *     allowed object is
+     *     {@link JoinStatusType }
+     *     
      */
     public void setJoinStatus(JoinStatusType value) {
         this.joinStatus = value;
     }
 
     /**
-     * Gets the meeting key.
+     * Gets the value of the meetingKey property.
      * 
-     * @return the meeting key
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getMeetingKey() {
         return meetingKey;
     }
 
     /**
-     * Sets the meeting key.
+     * Sets the value of the meetingKey property.
      * 
-     * @param value the new meeting key
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setMeetingKey(Long value) {
         this.meetingKey = value;
     }
 
     /**
-     * Gets the session key.
+     * Gets the value of the sessionKey property.
      * 
-     * @return the session key
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the session key.
+     * Sets the value of the sessionKey property.
      * 
-     * @param value the new session key
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setSessionKey(Long value) {
         this.sessionKey = value;
     }
 
     /**
-     * Gets the language.
+     * Gets the value of the language property.
      * 
-     * @return the language
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLanguage() {
         return language;
     }
 
     /**
-     * Sets the language.
+     * Sets the value of the language property.
      * 
-     * @param value the new language
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLanguage(String value) {
         this.language = value;
     }
 
     /**
-     * Gets the role.
+     * Gets the value of the role property.
      * 
-     * @return the role
+     * @return
+     *     possible object is
+     *     {@link RoleType }
+     *     
      */
     public RoleType getRole() {
         return role;
     }
 
     /**
-     * Sets the role.
+     * Sets the value of the role property.
      * 
-     * @param value the new role
+     * @param value
+     *     allowed object is
+     *     {@link RoleType }
+     *     
      */
     public void setRole(RoleType value) {
         this.role = value;
     }
 
     /**
-     * Checks if is email invitations.
+     * Gets the value of the emailInvitations property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isEmailInvitations() {
         return emailInvitations;
     }
 
     /**
-     * Sets the email invitations.
+     * Sets the value of the emailInvitations property.
      * 
-     * @param value the new email invitations
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setEmailInvitations(Boolean value) {
         this.emailInvitations = value;
     }
 
     /**
-     * Gets the locale.
+     * Gets the value of the locale property.
      * 
-     * @return the locale
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLocale() {
         return locale;
     }
 
     /**
-     * Sets the locale.
+     * Sets the value of the locale property.
      * 
-     * @param value the new locale
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLocale(String value) {
         this.locale = value;
     }
 
     /**
-     * Gets the time zone id.
+     * Gets the value of the timeZoneID property.
      * 
-     * @return the time zone id
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the time zone id.
+     * Sets the value of the timeZoneID property.
      * 
-     * @param value the new time zone id
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setTimeZoneID(Long value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the language id.
+     * Gets the value of the languageID property.
      * 
-     * @return the language id
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getLanguageID() {
         return languageID;
     }
 
     /**
-     * Sets the language id.
+     * Sets the value of the languageID property.
      * 
-     * @param value the new language id
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setLanguageID(Long value) {
         this.languageID = value;

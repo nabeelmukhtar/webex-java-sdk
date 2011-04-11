@@ -28,7 +28,33 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * The Class VariableTestType.
+ * <p>Java class for variable_testType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="variable_testType">
+ *   &lt;simpleContent>
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
+ *       &lt;attribute name="varname" type="{http://www.w3.org/2001/XMLSchema}string" default="SCORE" />
+ *       &lt;attribute name="testoperator" use="required">
+ *         &lt;simpleType>
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
+ *             &lt;enumeration value="EQ"/>
+ *             &lt;enumeration value="NEQ"/>
+ *             &lt;enumeration value="LT"/>
+ *             &lt;enumeration value="LTE"/>
+ *             &lt;enumeration value="GT"/>
+ *             &lt;enumeration value="GTE"/>
+ *           &lt;/restriction>
+ *         &lt;/simpleType>
+ *       &lt;/attribute>
+ *     &lt;/extension>
+ *   &lt;/simpleContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "variable_testType", propOrder = {
@@ -37,44 +63,46 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 public class VariableTestType implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The value. */
     @XmlValue
     protected String value;
-    
-    /** The varname. */
     @XmlAttribute
     protected String varname;
-    
-    /** The testoperator. */
     @XmlAttribute(required = true)
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String testoperator;
 
     /**
-     * Gets the value.
+     * Gets the value of the value property.
      * 
-     * @return the value
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value.
+     * Sets the value of the value property.
      * 
-     * @param value the new value
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setValue(String value) {
         this.value = value;
     }
 
     /**
-     * Gets the varname.
+     * Gets the value of the varname property.
      * 
-     * @return the varname
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getVarname() {
         if (varname == null) {
@@ -85,27 +113,36 @@ public class VariableTestType implements Serializable
     }
 
     /**
-     * Sets the varname.
+     * Sets the value of the varname property.
      * 
-     * @param value the new varname
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setVarname(String value) {
         this.varname = value;
     }
 
     /**
-     * Gets the testoperator.
+     * Gets the value of the testoperator property.
      * 
-     * @return the testoperator
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTestoperator() {
         return testoperator;
     }
 
     /**
-     * Sets the testoperator.
+     * Sets the value of the testoperator property.
      * 
-     * @param value the new testoperator
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTestoperator(String value) {
         this.testoperator = value;

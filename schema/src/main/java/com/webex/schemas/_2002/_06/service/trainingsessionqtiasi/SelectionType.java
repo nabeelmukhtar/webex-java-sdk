@@ -25,7 +25,31 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class SelectionType.
+ * <p>Java class for selectionType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="selectionType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}sourcebank_ref" minOccurs="0"/>
+ *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}selection_number" minOccurs="0"/>
+ *         &lt;element name="selection_metadata" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}selection_metadataType" minOccurs="0"/>
+ *         &lt;choice minOccurs="0">
+ *           &lt;element name="and_selection" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}and_selectionType"/>
+ *           &lt;element name="or_selection" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}or_selectionType"/>
+ *           &lt;element name="not_selection" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}not_selectionType"/>
+ *           &lt;element name="selection_extension" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}sectionproc_extensionType"/>
+ *         &lt;/choice>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "selectionType", propOrder = {
@@ -41,158 +65,185 @@ public class SelectionType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The sourcebank ref. */
     @XmlElement(name = "sourcebank_ref")
     protected String sourcebankRef;
-    
-    /** The selection number. */
     @XmlElement(name = "selection_number")
     protected String selectionNumber;
-    
-    /** The selection metadata. */
     @XmlElement(name = "selection_metadata")
     protected SelectionMetadataType selectionMetadata;
-    
-    /** The and selection. */
     @XmlElement(name = "and_selection")
     protected AndSelectionType andSelection;
-    
-    /** The or selection. */
     @XmlElement(name = "or_selection")
     protected OrSelectionType orSelection;
-    
-    /** The not selection. */
     @XmlElement(name = "not_selection")
     protected NotSelectionType notSelection;
-    
-    /** The selection extension. */
     @XmlElement(name = "selection_extension")
     protected SectionprocExtensionType selectionExtension;
 
     /**
-     * Gets the sourcebank ref.
+     * Gets the value of the sourcebankRef property.
      * 
-     * @return the sourcebank ref
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSourcebankRef() {
         return sourcebankRef;
     }
 
     /**
-     * Sets the sourcebank ref.
+     * Sets the value of the sourcebankRef property.
      * 
-     * @param value the new sourcebank ref
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSourcebankRef(String value) {
         this.sourcebankRef = value;
     }
 
     /**
-     * Gets the selection number.
+     * Gets the value of the selectionNumber property.
      * 
-     * @return the selection number
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSelectionNumber() {
         return selectionNumber;
     }
 
     /**
-     * Sets the selection number.
+     * Sets the value of the selectionNumber property.
      * 
-     * @param value the new selection number
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSelectionNumber(String value) {
         this.selectionNumber = value;
     }
 
     /**
-     * Gets the selection metadata.
+     * Gets the value of the selectionMetadata property.
      * 
-     * @return the selection metadata
+     * @return
+     *     possible object is
+     *     {@link SelectionMetadataType }
+     *     
      */
     public SelectionMetadataType getSelectionMetadata() {
         return selectionMetadata;
     }
 
     /**
-     * Sets the selection metadata.
+     * Sets the value of the selectionMetadata property.
      * 
-     * @param value the new selection metadata
+     * @param value
+     *     allowed object is
+     *     {@link SelectionMetadataType }
+     *     
      */
     public void setSelectionMetadata(SelectionMetadataType value) {
         this.selectionMetadata = value;
     }
 
     /**
-     * Gets the and selection.
+     * Gets the value of the andSelection property.
      * 
-     * @return the and selection
+     * @return
+     *     possible object is
+     *     {@link AndSelectionType }
+     *     
      */
     public AndSelectionType getAndSelection() {
         return andSelection;
     }
 
     /**
-     * Sets the and selection.
+     * Sets the value of the andSelection property.
      * 
-     * @param value the new and selection
+     * @param value
+     *     allowed object is
+     *     {@link AndSelectionType }
+     *     
      */
     public void setAndSelection(AndSelectionType value) {
         this.andSelection = value;
     }
 
     /**
-     * Gets the or selection.
+     * Gets the value of the orSelection property.
      * 
-     * @return the or selection
+     * @return
+     *     possible object is
+     *     {@link OrSelectionType }
+     *     
      */
     public OrSelectionType getOrSelection() {
         return orSelection;
     }
 
     /**
-     * Sets the or selection.
+     * Sets the value of the orSelection property.
      * 
-     * @param value the new or selection
+     * @param value
+     *     allowed object is
+     *     {@link OrSelectionType }
+     *     
      */
     public void setOrSelection(OrSelectionType value) {
         this.orSelection = value;
     }
 
     /**
-     * Gets the not selection.
+     * Gets the value of the notSelection property.
      * 
-     * @return the not selection
+     * @return
+     *     possible object is
+     *     {@link NotSelectionType }
+     *     
      */
     public NotSelectionType getNotSelection() {
         return notSelection;
     }
 
     /**
-     * Sets the not selection.
+     * Sets the value of the notSelection property.
      * 
-     * @param value the new not selection
+     * @param value
+     *     allowed object is
+     *     {@link NotSelectionType }
+     *     
      */
     public void setNotSelection(NotSelectionType value) {
         this.notSelection = value;
     }
 
     /**
-     * Gets the selection extension.
+     * Gets the value of the selectionExtension property.
      * 
-     * @return the selection extension
+     * @return
+     *     possible object is
+     *     {@link SectionprocExtensionType }
+     *     
      */
     public SectionprocExtensionType getSelectionExtension() {
         return selectionExtension;
     }
 
     /**
-     * Sets the selection extension.
+     * Sets the value of the selectionExtension property.
      * 
-     * @param value the new selection extension
+     * @param value
+     *     allowed object is
+     *     {@link SectionprocExtensionType }
+     *     
      */
     public void setSelectionExtension(SectionprocExtensionType value) {
         this.selectionExtension = value;

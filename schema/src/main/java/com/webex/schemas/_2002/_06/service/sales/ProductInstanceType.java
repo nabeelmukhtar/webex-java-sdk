@@ -28,7 +28,23 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class ProductInstanceType.
+ * <p>Java class for productInstanceType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="productInstanceType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/sales}productType">
+ *       &lt;sequence>
+ *         &lt;element name="prodID" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "productInstanceType", propOrder = {
@@ -39,28 +55,31 @@ public class ProductInstanceType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The prod id. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long prodID;
 
     /**
-     * Gets the prod id.
+     * Gets the value of the prodID property.
      * 
-     * @return the prod id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getProdID() {
         return prodID;
     }
 
     /**
-     * Sets the prod id.
+     * Sets the value of the prodID property.
      * 
-     * @param value the new prod id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setProdID(Long value) {
         this.prodID = value;

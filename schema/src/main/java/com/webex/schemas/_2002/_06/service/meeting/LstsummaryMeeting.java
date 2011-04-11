@@ -26,7 +26,27 @@ import com.webex.schemas._2002._06.service.LstControlType;
 
 
 /**
- * The Class LstsummaryMeeting.
+ * <p>Java class for lstsummaryMeeting complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="lstsummaryMeeting">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="listControl" type="{http://www.webex.com/schemas/2002/06/service}lstControlType" minOccurs="0"/>
+ *         &lt;element name="order" type="{http://www.webex.com/schemas/2002/06/service/meeting}orderType" minOccurs="0"/>
+ *         &lt;element name="dateScope" type="{http://www.webex.com/schemas/2002/06/service/meeting}dateScopeType" minOccurs="0"/>
+ *         &lt;element name="meetingKey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="hostWebExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstsummaryMeeting", propOrder = {
@@ -41,109 +61,128 @@ public class LstsummaryMeeting
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The list control. */
     protected LstControlType listControl;
-    
-    /** The order. */
     protected OrderType order;
-    
-    /** The date scope. */
     protected DateScopeType dateScope;
-    
-    /** The meeting key. */
     protected Long meetingKey;
-    
-    /** The host web ex id. */
     protected String hostWebExID;
 
     /**
-     * Gets the list control.
+     * Gets the value of the listControl property.
      * 
-     * @return the list control
+     * @return
+     *     possible object is
+     *     {@link LstControlType }
+     *     
      */
     public LstControlType getListControl() {
         return listControl;
     }
 
     /**
-     * Sets the list control.
+     * Sets the value of the listControl property.
      * 
-     * @param value the new list control
+     * @param value
+     *     allowed object is
+     *     {@link LstControlType }
+     *     
      */
     public void setListControl(LstControlType value) {
         this.listControl = value;
     }
 
     /**
-     * Gets the order.
+     * Gets the value of the order property.
      * 
-     * @return the order
+     * @return
+     *     possible object is
+     *     {@link OrderType }
+     *     
      */
     public OrderType getOrder() {
         return order;
     }
 
     /**
-     * Sets the order.
+     * Sets the value of the order property.
      * 
-     * @param value the new order
+     * @param value
+     *     allowed object is
+     *     {@link OrderType }
+     *     
      */
     public void setOrder(OrderType value) {
         this.order = value;
     }
 
     /**
-     * Gets the date scope.
+     * Gets the value of the dateScope property.
      * 
-     * @return the date scope
+     * @return
+     *     possible object is
+     *     {@link DateScopeType }
+     *     
      */
     public DateScopeType getDateScope() {
         return dateScope;
     }
 
     /**
-     * Sets the date scope.
+     * Sets the value of the dateScope property.
      * 
-     * @param value the new date scope
+     * @param value
+     *     allowed object is
+     *     {@link DateScopeType }
+     *     
      */
     public void setDateScope(DateScopeType value) {
         this.dateScope = value;
     }
 
     /**
-     * Gets the meeting key.
+     * Gets the value of the meetingKey property.
      * 
-     * @return the meeting key
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getMeetingKey() {
         return meetingKey;
     }
 
     /**
-     * Sets the meeting key.
+     * Sets the value of the meetingKey property.
      * 
-     * @param value the new meeting key
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setMeetingKey(Long value) {
         this.meetingKey = value;
     }
 
     /**
-     * Gets the host web ex id.
+     * Gets the value of the hostWebExID property.
      * 
-     * @return the host web ex id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHostWebExID() {
         return hostWebExID;
     }
 
     /**
-     * Sets the host web ex id.
+     * Sets the value of the hostWebExID property.
      * 
-     * @param value the new host web ex id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHostWebExID(String value) {
         this.hostWebExID = value;

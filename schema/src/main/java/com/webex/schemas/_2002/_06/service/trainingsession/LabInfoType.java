@@ -28,7 +28,26 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class LabInfoType.
+ * <p>Java class for labInfoType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="labInfoType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="labName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="totalComputers" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="computersInSession" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "labInfoType", propOrder = {
@@ -41,95 +60,110 @@ public class LabInfoType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The lab name. */
     @XmlElement(required = true)
     protected String labName;
-    
-    /** The description. */
     protected String description;
-    
-    /** The total computers. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long totalComputers;
-    
-    /** The computers in session. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long computersInSession;
 
     /**
-     * Gets the lab name.
+     * Gets the value of the labName property.
      * 
-     * @return the lab name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLabName() {
         return labName;
     }
 
     /**
-     * Sets the lab name.
+     * Sets the value of the labName property.
      * 
-     * @param value the new lab name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLabName(String value) {
         this.labName = value;
     }
 
     /**
-     * Gets the description.
+     * Gets the value of the description property.
      * 
-     * @return the description
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDescription() {
         return description;
     }
 
     /**
-     * Sets the description.
+     * Sets the value of the description property.
      * 
-     * @param value the new description
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDescription(String value) {
         this.description = value;
     }
 
     /**
-     * Gets the total computers.
+     * Gets the value of the totalComputers property.
      * 
-     * @return the total computers
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getTotalComputers() {
         return totalComputers;
     }
 
     /**
-     * Sets the total computers.
+     * Sets the value of the totalComputers property.
      * 
-     * @param value the new total computers
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTotalComputers(Long value) {
         this.totalComputers = value;
     }
 
     /**
-     * Gets the computers in session.
+     * Gets the value of the computersInSession property.
      * 
-     * @return the computers in session
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getComputersInSession() {
         return computersInSession;
     }
 
     /**
-     * Sets the computers in session.
+     * Sets the value of the computersInSession property.
      * 
-     * @param value the new computers in session
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setComputersInSession(Long value) {
         this.computersInSession = value;

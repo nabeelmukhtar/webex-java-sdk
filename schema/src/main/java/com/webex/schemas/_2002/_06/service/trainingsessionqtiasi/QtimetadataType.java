@@ -27,7 +27,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class QtimetadataType.
+ * <p>Java class for qtimetadataType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="qtimetadataType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="vocabulary" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}vocabularyType" minOccurs="0"/>
+ *         &lt;element name="qtimetadatafield" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qtimetadatafieldType" maxOccurs="unbounded"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "qtimetadataType", propOrder = {
@@ -38,38 +55,56 @@ public class QtimetadataType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The vocabulary. */
     protected VocabularyType vocabulary;
-    
-    /** The qtimetadatafield. */
     @XmlElement(required = true)
     protected List<QtimetadatafieldType> qtimetadatafield;
 
     /**
-     * Gets the vocabulary.
+     * Gets the value of the vocabulary property.
      * 
-     * @return the vocabulary
+     * @return
+     *     possible object is
+     *     {@link VocabularyType }
+     *     
      */
     public VocabularyType getVocabulary() {
         return vocabulary;
     }
 
     /**
-     * Sets the vocabulary.
+     * Sets the value of the vocabulary property.
      * 
-     * @param value the new vocabulary
+     * @param value
+     *     allowed object is
+     *     {@link VocabularyType }
+     *     
      */
     public void setVocabulary(VocabularyType value) {
         this.vocabulary = value;
     }
 
     /**
-     * Gets the qtimetadatafield.
+     * Gets the value of the qtimetadatafield property.
      * 
-     * @return the qtimetadatafield
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the qtimetadatafield property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getQtimetadatafield().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link QtimetadatafieldType }
+     * 
+     * 
      */
     public List<QtimetadatafieldType> getQtimetadatafield() {
         if (qtimetadatafield == null) {

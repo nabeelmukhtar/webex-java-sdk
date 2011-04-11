@@ -27,7 +27,24 @@ import com.webex.schemas._2002._06.service.trainingsession.TrainingSessionType;
 
 
 /**
- * The Class SessionType.
+ * <p>Java class for sessionType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="sessionType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="accessControl" type="{http://www.webex.com/schemas/2002/06/service/session}accessControlType" minOccurs="0"/>
+ *         &lt;element name="schedule" type="{http://www.webex.com/schemas/2002/06/service/session}scheduleType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "sessionType", propOrder = {
@@ -42,46 +59,53 @@ public class SessionType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The access control. */
     protected AccessControlType accessControl;
-    
-    /** The schedule. */
     protected ScheduleType schedule;
 
     /**
-     * Gets the access control.
+     * Gets the value of the accessControl property.
      * 
-     * @return the access control
+     * @return
+     *     possible object is
+     *     {@link AccessControlType }
+     *     
      */
     public AccessControlType getAccessControl() {
         return accessControl;
     }
 
     /**
-     * Sets the access control.
+     * Sets the value of the accessControl property.
      * 
-     * @param value the new access control
+     * @param value
+     *     allowed object is
+     *     {@link AccessControlType }
+     *     
      */
     public void setAccessControl(AccessControlType value) {
         this.accessControl = value;
     }
 
     /**
-     * Gets the schedule.
+     * Gets the value of the schedule property.
      * 
-     * @return the schedule
+     * @return
+     *     possible object is
+     *     {@link ScheduleType }
+     *     
      */
     public ScheduleType getSchedule() {
         return schedule;
     }
 
     /**
-     * Sets the schedule.
+     * Sets the value of the schedule property.
      * 
-     * @param value the new schedule
+     * @param value
+     *     allowed object is
+     *     {@link ScheduleType }
+     *     
      */
     public void setSchedule(ScheduleType value) {
         this.schedule = value;

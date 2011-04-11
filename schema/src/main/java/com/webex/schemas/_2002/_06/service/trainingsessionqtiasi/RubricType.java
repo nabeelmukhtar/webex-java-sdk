@@ -30,7 +30,43 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * The Class RubricType.
+ * <p>Java class for rubricType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="rubricType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="qticomment" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qticommentType" minOccurs="0"/>
+ *         &lt;choice>
+ *           &lt;element name="material" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}materialType" maxOccurs="unbounded"/>
+ *           &lt;element name="flow_mat" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}flow_matType" maxOccurs="unbounded"/>
+ *         &lt;/choice>
+ *       &lt;/sequence>
+ *       &lt;attribute name="view" default="All">
+ *         &lt;simpleType>
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
+ *             &lt;enumeration value="All"/>
+ *             &lt;enumeration value="Administrator"/>
+ *             &lt;enumeration value="AdminAuthority"/>
+ *             &lt;enumeration value="Assessor"/>
+ *             &lt;enumeration value="Author"/>
+ *             &lt;enumeration value="Candidate"/>
+ *             &lt;enumeration value="InvigilatorProctor"/>
+ *             &lt;enumeration value="Psychometrician"/>
+ *             &lt;enumeration value="Scorer"/>
+ *             &lt;enumeration value="Tutor"/>
+ *           &lt;/restriction>
+ *         &lt;/simpleType>
+ *       &lt;/attribute>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "rubricType", propOrder = {
@@ -42,46 +78,60 @@ public class RubricType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The qticomment. */
     protected QticommentType qticomment;
-    
-    /** The material. */
     protected List<MaterialType> material;
-    
-    /** The flow mat. */
     @XmlElement(name = "flow_mat")
     protected List<FlowMatType> flowMat;
-    
-    /** The view. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String view;
 
     /**
-     * Gets the qticomment.
+     * Gets the value of the qticomment property.
      * 
-     * @return the qticomment
+     * @return
+     *     possible object is
+     *     {@link QticommentType }
+     *     
      */
     public QticommentType getQticomment() {
         return qticomment;
     }
 
     /**
-     * Sets the qticomment.
+     * Sets the value of the qticomment property.
      * 
-     * @param value the new qticomment
+     * @param value
+     *     allowed object is
+     *     {@link QticommentType }
+     *     
      */
     public void setQticomment(QticommentType value) {
         this.qticomment = value;
     }
 
     /**
-     * Gets the material.
+     * Gets the value of the material property.
      * 
-     * @return the material
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the material property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getMaterial().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link MaterialType }
+     * 
+     * 
      */
     public List<MaterialType> getMaterial() {
         if (material == null) {
@@ -91,9 +141,26 @@ public class RubricType
     }
 
     /**
-     * Gets the flow mat.
+     * Gets the value of the flowMat property.
      * 
-     * @return the flow mat
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the flowMat property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getFlowMat().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link FlowMatType }
+     * 
+     * 
      */
     public List<FlowMatType> getFlowMat() {
         if (flowMat == null) {
@@ -103,9 +170,12 @@ public class RubricType
     }
 
     /**
-     * Gets the view.
+     * Gets the value of the view property.
      * 
-     * @return the view
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getView() {
         if (view == null) {
@@ -116,9 +186,12 @@ public class RubricType
     }
 
     /**
-     * Sets the view.
+     * Sets the value of the view property.
      * 
-     * @param value the new view
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setView(String value) {
         this.view = value;

@@ -29,7 +29,38 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class OpptyType.
+ * <p>Java class for opptyType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="opptyType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="name" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="128"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="intAccountID" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="extOpptyID" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="512"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="extSystemID" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "opptyType", propOrder = {
@@ -45,94 +76,109 @@ public class OpptyType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The name. */
     protected String name;
-    
-    /** The int account id. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long intAccountID;
-    
-    /** The ext oppty id. */
     protected String extOpptyID;
-    
-    /** The ext system id. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long extSystemID;
 
     /**
-     * Gets the name.
+     * Gets the value of the name property.
      * 
-     * @return the name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Sets the name.
+     * Sets the value of the name property.
      * 
-     * @param value the new name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setName(String value) {
         this.name = value;
     }
 
     /**
-     * Gets the int account id.
+     * Gets the value of the intAccountID property.
      * 
-     * @return the int account id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getIntAccountID() {
         return intAccountID;
     }
 
     /**
-     * Sets the int account id.
+     * Sets the value of the intAccountID property.
      * 
-     * @param value the new int account id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setIntAccountID(Long value) {
         this.intAccountID = value;
     }
 
     /**
-     * Gets the ext oppty id.
+     * Gets the value of the extOpptyID property.
      * 
-     * @return the ext oppty id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getExtOpptyID() {
         return extOpptyID;
     }
 
     /**
-     * Sets the ext oppty id.
+     * Sets the value of the extOpptyID property.
      * 
-     * @param value the new ext oppty id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setExtOpptyID(String value) {
         this.extOpptyID = value;
     }
 
     /**
-     * Gets the ext system id.
+     * Gets the value of the extSystemID property.
      * 
-     * @return the ext system id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getExtSystemID() {
         return extSystemID;
     }
 
     /**
-     * Sets the ext system id.
+     * Sets the value of the extSystemID property.
      * 
-     * @param value the new ext system id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setExtSystemID(Long value) {
         this.extSystemID = value;

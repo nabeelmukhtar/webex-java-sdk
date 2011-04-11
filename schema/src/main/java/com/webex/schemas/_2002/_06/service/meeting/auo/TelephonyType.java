@@ -24,7 +24,23 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class TelephonyType.
+ * <p>Java class for telephonyType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="telephonyType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="extTelephonyDescription" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "telephonyType", propOrder = {
@@ -34,25 +50,28 @@ public class TelephonyType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The ext telephony description. */
     protected String extTelephonyDescription;
 
     /**
-     * Gets the ext telephony description.
+     * Gets the value of the extTelephonyDescription property.
      * 
-     * @return the ext telephony description
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getExtTelephonyDescription() {
         return extTelephonyDescription;
     }
 
     /**
-     * Sets the ext telephony description.
+     * Sets the value of the extTelephonyDescription property.
      * 
-     * @param value the new ext telephony description
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setExtTelephonyDescription(String value) {
         this.extTelephonyDescription = value;

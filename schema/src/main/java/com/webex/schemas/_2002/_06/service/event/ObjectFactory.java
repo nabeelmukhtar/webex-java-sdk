@@ -21,700 +21,636 @@ import javax.xml.bind.annotation.XmlRegistry;
 
 
 /**
- * A factory for creating Object objects.
+ * This object contains factory methods for each 
+ * Java content interface and Java element interface 
+ * generated in the com.webex.schemas._2002._06.service.event package. 
+ * <p>An ObjectFactory allows you to programatically 
+ * construct new instances of the Java representation 
+ * for XML content. The Java representation of XML 
+ * content can consist of schema derived interfaces 
+ * and classes representing the binding of schema 
+ * type definitions, element declarations and model 
+ * groups.  Factory methods for each of these are 
+ * provided in this class.
+ * 
  */
 @XmlRegistry
 public class ObjectFactory {
 
 
     /**
-     * Instantiates a new object factory.
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.webex.schemas._2002._06.service.event
+     * 
      */
     public ObjectFactory() {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link SendInvitationEmailResponse }
      * 
-     * @return the approval rules
-     */
-    public EnrollmentInstanceType.ApprovalRules createEnrollmentInstanceTypeApprovalRules() {
-        return new EnrollmentInstanceType.ApprovalRules();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the invitation msgs
-     */
-    public EmailTemplatesType.InvitationMsgs createEmailTemplatesTypeInvitationMsgs() {
-        return new EmailTemplatesType.InvitationMsgs();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the thanks for attending
-     */
-    public EmailTemplatesType.FollowUpMsgs.ThanksForAttending createEmailTemplatesTypeFollowUpMsgsThanksForAttending() {
-        return new EmailTemplatesType.FollowUpMsgs.ThanksForAttending();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the send invitation email
-     */
-    public SendInvitationEmail createSendInvitationEmail() {
-        return new SendInvitationEmail();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the panelists type
-     */
-    public PanelistsType createPanelistsType() {
-        return new PanelistsType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lstsummary program
-     */
-    public LstsummaryProgram createLstsummaryProgram() {
-        return new LstsummaryProgram();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the accepted email
-     */
-    public EmailTemplatesType.EnrollmentMsgs.AcceptedEmail createEmailTemplatesTypeEnrollmentMsgsAcceptedEmail() {
-        return new EmailTemplatesType.EnrollmentMsgs.AcceptedEmail();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lstsummary event
-     */
-    public LstsummaryEvent createLstsummaryEvent() {
-        return new LstsummaryEvent();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the approval rules
-     */
-    public EnrollmentType.ApprovalRules createEnrollmentTypeApprovalRules() {
-        return new EnrollmentType.ApprovalRules();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the remind type
-     */
-    public RemindType createRemindType() {
-        return new RemindType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the choice type
-     */
-    public ChoiceType createChoiceType() {
-        return new ChoiceType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the attendee
-     */
-    public AttendeesType.Attendee createAttendeesTypeAttendee() {
-        return new AttendeesType.Attendee();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the enrollment form create type
-     */
-    public EnrollmentFormCreateType createEnrollmentFormCreateType() {
-        return new EnrollmentFormCreateType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the recorded event type
-     */
-    public RecordedEventType createRecordedEventType() {
-        return new RecordedEventType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the gets the event
-     */
-    public GetEvent createGetEvent() {
-        return new GetEvent();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the follow up msgs
-     */
-    public EmailTemplatesType.FollowUpMsgs createEmailTemplatesTypeFollowUpMsgs() {
-        return new EmailTemplatesType.FollowUpMsgs();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the order type
-     */
-    public OrderType createOrderType() {
-        return new OrderType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the upload event image
-     */
-    public UploadEventImage createUploadEventImage() {
-        return new UploadEventImage();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the enrollment type
-     */
-    public EnrollmentType createEnrollmentType() {
-        return new EnrollmentType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the event type
-     */
-    public EventType createEventType() {
-        return new EventType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the event updated email
-     */
-    public EmailTemplatesType.EnrollmentMsgs.EventUpdatedEmail createEmailTemplatesTypeEnrollmentMsgsEventUpdatedEmail() {
-        return new EmailTemplatesType.EnrollmentMsgs.EventUpdatedEmail();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the textbox type
-     */
-    public TextboxType createTextboxType() {
-        return new TextboxType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the enrollment field instance type
-     */
-    public EnrollmentFieldInstanceType createEnrollmentFieldInstanceType() {
-        return new EnrollmentFieldInstanceType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the meta data type
-     */
-    public MetaDataType createMetaDataType() {
-        return new MetaDataType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the custom fields type
-     */
-    public CustomFieldsType createCustomFieldsType() {
-        return new CustomFieldsType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the del event
-     */
-    public DelEvent createDelEvent() {
-        return new DelEvent();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the enrollment instance type
-     */
-    public EnrollmentInstanceType createEnrollmentInstanceType() {
-        return new EnrollmentInstanceType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the standard fields instance type
-     */
-    public StandardFieldsInstanceType createStandardFieldsInstanceType() {
-        return new StandardFieldsInstanceType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the access control type
-     */
-    public AccessControlType createAccessControlType() {
-        return new AccessControlType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the choice group instance type
-     */
-    public ChoiceGroupInstanceType createChoiceGroupInstanceType() {
-        return new ChoiceGroupInstanceType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the event summary instance type
-     */
-    public EventSummaryInstanceType createEventSummaryInstanceType() {
-        return new EventSummaryInstanceType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lstrecorded event
-     */
-    public LstrecordedEvent createLstrecordedEvent() {
-        return new LstrecordedEvent();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the telephony type
-     */
-    public TelephonyType createTelephonyType() {
-        return new TelephonyType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the textbox instance type
-     */
-    public TextboxInstanceType createTextboxInstanceType() {
-        return new TextboxInstanceType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the email templates type
-     */
-    public EmailTemplatesType createEmailTemplatesType() {
-        return new EmailTemplatesType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the attendees type
-     */
-    public AttendeesType createAttendeesType() {
-        return new AttendeesType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the second reminder
-     */
-    public EmailTemplatesType.ReminderMsgs.SecondReminder createEmailTemplatesTypeReminderMsgsSecondReminder() {
-        return new EmailTemplatesType.ReminderMsgs.SecondReminder();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the approval rule type
-     */
-    public ApprovalRuleType createApprovalRuleType() {
-        return new ApprovalRuleType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the post event survey type
-     */
-    public PostEventSurveyType createPostEventSurveyType() {
-        return new PostEventSurveyType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the sets the event response
-     */
-    public SetEventResponse createSetEventResponse() {
-        return new SetEventResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the approval rule instance type
-     */
-    public ApprovalRuleInstanceType createApprovalRuleInstanceType() {
-        return new ApprovalRuleInstanceType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the send invitation email response
      */
     public SendInvitationEmailResponse createSendInvitationEmailResponse() {
         return new SendInvitationEmailResponse();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link RecordedEventType }
      * 
-     * @return the del event response
      */
-    public DelEventResponse createDelEventResponse() {
-        return new DelEventResponse();
+    public RecordedEventType createRecordedEventType() {
+        return new RecordedEventType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link AttendeesType }
      * 
-     * @return the standard fields type
      */
-    public StandardFieldsType createStandardFieldsType() {
-        return new StandardFieldsType();
+    public AttendeesType createAttendeesType() {
+        return new AttendeesType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link GetEvent }
      * 
-     * @return the enrollment form set type
      */
-    public EnrollmentFormSetType createEnrollmentFormSetType() {
-        return new EnrollmentFormSetType();
+    public GetEvent createGetEvent() {
+        return new GetEvent();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link AttendeesType.Attendee }
      * 
-     * @return the creates the event
      */
-    public CreateEvent createCreateEvent() {
-        return new CreateEvent();
+    public AttendeesType.Attendee createAttendeesTypeAttendee() {
+        return new AttendeesType.Attendee();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link ScheduleType }
      * 
-     * @return the enrollment form get type
-     */
-    public EnrollmentFormGetType createEnrollmentFormGetType() {
-        return new EnrollmentFormGetType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lstsummary event response
-     */
-    public LstsummaryEventResponse createLstsummaryEventResponse() {
-        return new LstsummaryEventResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the first reminder
-     */
-    public EmailTemplatesType.ReminderMsgs.FirstReminder createEmailTemplatesTypeReminderMsgsFirstReminder() {
-        return new EmailTemplatesType.ReminderMsgs.FirstReminder();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the checkbox type
-     */
-    public CheckboxType createCheckboxType() {
-        return new CheckboxType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the upload event image response
-     */
-    public UploadEventImageResponse createUploadEventImageResponse() {
-        return new UploadEventImageResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the sets the event
-     */
-    public SetEvent createSetEvent() {
-        return new SetEvent();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the checkbox group type
-     */
-    public CheckboxGroupType createCheckboxGroupType() {
-        return new CheckboxGroupType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the absentee follow up
-     */
-    public EmailTemplatesType.FollowUpMsgs.AbsenteeFollowUp createEmailTemplatesTypeFollowUpMsgsAbsenteeFollowUp() {
-        return new EmailTemplatesType.FollowUpMsgs.AbsenteeFollowUp();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lstsummary program response
-     */
-    public LstsummaryProgramResponse createLstsummaryProgramResponse() {
-        return new LstsummaryProgramResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the program summary type
-     */
-    public ProgramSummaryType createProgramSummaryType() {
-        return new ProgramSummaryType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the gets the event response
-     */
-    public GetEventResponse createGetEventResponse() {
-        return new GetEventResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the creates the event response
-     */
-    public CreateEventResponse createCreateEventResponse() {
-        return new CreateEventResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the event instance type
-     */
-    public EventInstanceType createEventInstanceType() {
-        return new EventInstanceType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the ext options type
-     */
-    public ExtOptionsType createExtOptionsType() {
-        return new ExtOptionsType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the enrollment msgs
-     */
-    public EmailTemplatesType.EnrollmentMsgs createEmailTemplatesTypeEnrollmentMsgs() {
-        return new EmailTemplatesType.EnrollmentMsgs();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the rejected email
-     */
-    public EmailTemplatesType.EnrollmentMsgs.RejectedEmail createEmailTemplatesTypeEnrollmentMsgsRejectedEmail() {
-        return new EmailTemplatesType.EnrollmentMsgs.RejectedEmail();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the date scope type
-     */
-    public DateScopeType createDateScopeType() {
-        return new DateScopeType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the source type
-     */
-    public SourceType createSourceType() {
-        return new SourceType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the program order type
-     */
-    public ProgramOrderType createProgramOrderType() {
-        return new ProgramOrderType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the reminder msgs
-     */
-    public EmailTemplatesType.ReminderMsgs createEmailTemplatesTypeReminderMsgs() {
-        return new EmailTemplatesType.ReminderMsgs();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lstrecorded event response
-     */
-    public LstrecordedEventResponse createLstrecordedEventResponse() {
-        return new LstrecordedEventResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the recorded events type
-     */
-    public RecordedEventsType createRecordedEventsType() {
-        return new RecordedEventsType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the attendee count type
-     */
-    public AttendeeCountType createAttendeeCountType() {
-        return new AttendeeCountType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the schedule type
      */
     public ScheduleType createScheduleType() {
         return new ScheduleType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link DateScopeType }
      * 
-     * @return the pending email
      */
-    public EmailTemplatesType.EnrollmentMsgs.PendingEmail createEmailTemplatesTypeEnrollmentMsgsPendingEmail() {
-        return new EmailTemplatesType.EnrollmentMsgs.PendingEmail();
+    public DateScopeType createDateScopeType() {
+        return new DateScopeType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link EnrollmentInstanceType }
      * 
-     * @return the custom fields instance type
+     */
+    public EnrollmentInstanceType createEnrollmentInstanceType() {
+        return new EnrollmentInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link LstsummaryEvent }
+     * 
+     */
+    public LstsummaryEvent createLstsummaryEvent() {
+        return new LstsummaryEvent();
+    }
+
+    /**
+     * Create an instance of {@link EmailTemplatesType.InvitationMsgs }
+     * 
+     */
+    public EmailTemplatesType.InvitationMsgs createEmailTemplatesTypeInvitationMsgs() {
+        return new EmailTemplatesType.InvitationMsgs();
+    }
+
+    /**
+     * Create an instance of {@link EmailTemplatesType.FollowUpMsgs.AbsenteeFollowUp }
+     * 
+     */
+    public EmailTemplatesType.FollowUpMsgs.AbsenteeFollowUp createEmailTemplatesTypeFollowUpMsgsAbsenteeFollowUp() {
+        return new EmailTemplatesType.FollowUpMsgs.AbsenteeFollowUp();
+    }
+
+    /**
+     * Create an instance of {@link ApprovalRuleType }
+     * 
+     */
+    public ApprovalRuleType createApprovalRuleType() {
+        return new ApprovalRuleType();
+    }
+
+    /**
+     * Create an instance of {@link EnrollmentFormGetType }
+     * 
+     */
+    public EnrollmentFormGetType createEnrollmentFormGetType() {
+        return new EnrollmentFormGetType();
+    }
+
+    /**
+     * Create an instance of {@link EnrollmentFormSetType }
+     * 
+     */
+    public EnrollmentFormSetType createEnrollmentFormSetType() {
+        return new EnrollmentFormSetType();
+    }
+
+    /**
+     * Create an instance of {@link MetaDataType }
+     * 
+     */
+    public MetaDataType createMetaDataType() {
+        return new MetaDataType();
+    }
+
+    /**
+     * Create an instance of {@link StandardFieldsInstanceType }
+     * 
+     */
+    public StandardFieldsInstanceType createStandardFieldsInstanceType() {
+        return new StandardFieldsInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link UploadEventImageResponse }
+     * 
+     */
+    public UploadEventImageResponse createUploadEventImageResponse() {
+        return new UploadEventImageResponse();
+    }
+
+    /**
+     * Create an instance of {@link LstrecordedEventResponse }
+     * 
+     */
+    public LstrecordedEventResponse createLstrecordedEventResponse() {
+        return new LstrecordedEventResponse();
+    }
+
+    /**
+     * Create an instance of {@link ChoiceGroupInstanceType }
+     * 
+     */
+    public ChoiceGroupInstanceType createChoiceGroupInstanceType() {
+        return new ChoiceGroupInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link CustomFieldsInstanceType }
+     * 
      */
     public CustomFieldsInstanceType createCustomFieldsInstanceType() {
         return new CustomFieldsInstanceType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link CustomFieldsType }
      * 
-     * @return the email template type
      */
-    public EmailTemplateType createEmailTemplateType() {
-        return new EmailTemplateType();
+    public CustomFieldsType createCustomFieldsType() {
+        return new CustomFieldsType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link EmailTemplatesType.EnrollmentMsgs.AcceptedEmail }
      * 
-     * @return the checkbox group instance type
      */
-    public CheckboxGroupInstanceType createCheckboxGroupInstanceType() {
-        return new CheckboxGroupInstanceType();
+    public EmailTemplatesType.EnrollmentMsgs.AcceptedEmail createEmailTemplatesTypeEnrollmentMsgsAcceptedEmail() {
+        return new EmailTemplatesType.EnrollmentMsgs.AcceptedEmail();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link CreateEventResponse }
      * 
-     * @return the enrollment field type
+     */
+    public CreateEventResponse createCreateEventResponse() {
+        return new CreateEventResponse();
+    }
+
+    /**
+     * Create an instance of {@link EmailTemplatesType.ReminderMsgs.SecondReminder }
+     * 
+     */
+    public EmailTemplatesType.ReminderMsgs.SecondReminder createEmailTemplatesTypeReminderMsgsSecondReminder() {
+        return new EmailTemplatesType.ReminderMsgs.SecondReminder();
+    }
+
+    /**
+     * Create an instance of {@link EnrollmentInstanceType.ApprovalRules }
+     * 
+     */
+    public EnrollmentInstanceType.ApprovalRules createEnrollmentInstanceTypeApprovalRules() {
+        return new EnrollmentInstanceType.ApprovalRules();
+    }
+
+    /**
+     * Create an instance of {@link ChoiceType }
+     * 
+     */
+    public ChoiceType createChoiceType() {
+        return new ChoiceType();
+    }
+
+    /**
+     * Create an instance of {@link EnrollmentFieldType }
+     * 
      */
     public EnrollmentFieldType createEnrollmentFieldType() {
         return new EnrollmentFieldType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link PostEventSurveyType }
      * 
-     * @return the choice group type
+     */
+    public PostEventSurveyType createPostEventSurveyType() {
+        return new PostEventSurveyType();
+    }
+
+    /**
+     * Create an instance of {@link CheckboxType }
+     * 
+     */
+    public CheckboxType createCheckboxType() {
+        return new CheckboxType();
+    }
+
+    /**
+     * Create an instance of {@link EmailTemplatesType.FollowUpMsgs }
+     * 
+     */
+    public EmailTemplatesType.FollowUpMsgs createEmailTemplatesTypeFollowUpMsgs() {
+        return new EmailTemplatesType.FollowUpMsgs();
+    }
+
+    /**
+     * Create an instance of {@link AccessControlType }
+     * 
+     */
+    public AccessControlType createAccessControlType() {
+        return new AccessControlType();
+    }
+
+    /**
+     * Create an instance of {@link EmailTemplatesType.EnrollmentMsgs.RejectedEmail }
+     * 
+     */
+    public EmailTemplatesType.EnrollmentMsgs.RejectedEmail createEmailTemplatesTypeEnrollmentMsgsRejectedEmail() {
+        return new EmailTemplatesType.EnrollmentMsgs.RejectedEmail();
+    }
+
+    /**
+     * Create an instance of {@link TextboxInstanceType }
+     * 
+     */
+    public TextboxInstanceType createTextboxInstanceType() {
+        return new TextboxInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link AttendeeCountType }
+     * 
+     */
+    public AttendeeCountType createAttendeeCountType() {
+        return new AttendeeCountType();
+    }
+
+    /**
+     * Create an instance of {@link EventSummaryInstanceType }
+     * 
+     */
+    public EventSummaryInstanceType createEventSummaryInstanceType() {
+        return new EventSummaryInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link LstrecordedEvent }
+     * 
+     */
+    public LstrecordedEvent createLstrecordedEvent() {
+        return new LstrecordedEvent();
+    }
+
+    /**
+     * Create an instance of {@link SetEventResponse }
+     * 
+     */
+    public SetEventResponse createSetEventResponse() {
+        return new SetEventResponse();
+    }
+
+    /**
+     * Create an instance of {@link ApprovalRuleInstanceType }
+     * 
+     */
+    public ApprovalRuleInstanceType createApprovalRuleInstanceType() {
+        return new ApprovalRuleInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link EmailTemplatesType.FollowUpMsgs.ThanksForAttending }
+     * 
+     */
+    public EmailTemplatesType.FollowUpMsgs.ThanksForAttending createEmailTemplatesTypeFollowUpMsgsThanksForAttending() {
+        return new EmailTemplatesType.FollowUpMsgs.ThanksForAttending();
+    }
+
+    /**
+     * Create an instance of {@link ChoiceGroupType }
+     * 
      */
     public ChoiceGroupType createChoiceGroupType() {
         return new ChoiceGroupType();
+    }
+
+    /**
+     * Create an instance of {@link EnrollmentType.ApprovalRules }
+     * 
+     */
+    public EnrollmentType.ApprovalRules createEnrollmentTypeApprovalRules() {
+        return new EnrollmentType.ApprovalRules();
+    }
+
+    /**
+     * Create an instance of {@link EventType }
+     * 
+     */
+    public EventType createEventType() {
+        return new EventType();
+    }
+
+    /**
+     * Create an instance of {@link ExtOptionsType }
+     * 
+     */
+    public ExtOptionsType createExtOptionsType() {
+        return new ExtOptionsType();
+    }
+
+    /**
+     * Create an instance of {@link CheckboxGroupInstanceType }
+     * 
+     */
+    public CheckboxGroupInstanceType createCheckboxGroupInstanceType() {
+        return new CheckboxGroupInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link EnrollmentFieldInstanceType }
+     * 
+     */
+    public EnrollmentFieldInstanceType createEnrollmentFieldInstanceType() {
+        return new EnrollmentFieldInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link DelEventResponse }
+     * 
+     */
+    public DelEventResponse createDelEventResponse() {
+        return new DelEventResponse();
+    }
+
+    /**
+     * Create an instance of {@link DelEvent }
+     * 
+     */
+    public DelEvent createDelEvent() {
+        return new DelEvent();
+    }
+
+    /**
+     * Create an instance of {@link TelephonyType }
+     * 
+     */
+    public TelephonyType createTelephonyType() {
+        return new TelephonyType();
+    }
+
+    /**
+     * Create an instance of {@link EmailTemplatesType.EnrollmentMsgs }
+     * 
+     */
+    public EmailTemplatesType.EnrollmentMsgs createEmailTemplatesTypeEnrollmentMsgs() {
+        return new EmailTemplatesType.EnrollmentMsgs();
+    }
+
+    /**
+     * Create an instance of {@link EventInstanceType }
+     * 
+     */
+    public EventInstanceType createEventInstanceType() {
+        return new EventInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link LstsummaryProgram }
+     * 
+     */
+    public LstsummaryProgram createLstsummaryProgram() {
+        return new LstsummaryProgram();
+    }
+
+    /**
+     * Create an instance of {@link GetEventResponse }
+     * 
+     */
+    public GetEventResponse createGetEventResponse() {
+        return new GetEventResponse();
+    }
+
+    /**
+     * Create an instance of {@link TextboxType }
+     * 
+     */
+    public TextboxType createTextboxType() {
+        return new TextboxType();
+    }
+
+    /**
+     * Create an instance of {@link SourceType }
+     * 
+     */
+    public SourceType createSourceType() {
+        return new SourceType();
+    }
+
+    /**
+     * Create an instance of {@link EmailTemplatesType.ReminderMsgs.FirstReminder }
+     * 
+     */
+    public EmailTemplatesType.ReminderMsgs.FirstReminder createEmailTemplatesTypeReminderMsgsFirstReminder() {
+        return new EmailTemplatesType.ReminderMsgs.FirstReminder();
+    }
+
+    /**
+     * Create an instance of {@link LstsummaryEventResponse }
+     * 
+     */
+    public LstsummaryEventResponse createLstsummaryEventResponse() {
+        return new LstsummaryEventResponse();
+    }
+
+    /**
+     * Create an instance of {@link EmailTemplatesType.EnrollmentMsgs.PendingEmail }
+     * 
+     */
+    public EmailTemplatesType.EnrollmentMsgs.PendingEmail createEmailTemplatesTypeEnrollmentMsgsPendingEmail() {
+        return new EmailTemplatesType.EnrollmentMsgs.PendingEmail();
+    }
+
+    /**
+     * Create an instance of {@link RemindType }
+     * 
+     */
+    public RemindType createRemindType() {
+        return new RemindType();
+    }
+
+    /**
+     * Create an instance of {@link CreateEvent }
+     * 
+     */
+    public CreateEvent createCreateEvent() {
+        return new CreateEvent();
+    }
+
+    /**
+     * Create an instance of {@link SetEvent }
+     * 
+     */
+    public SetEvent createSetEvent() {
+        return new SetEvent();
+    }
+
+    /**
+     * Create an instance of {@link EmailTemplatesType.ReminderMsgs }
+     * 
+     */
+    public EmailTemplatesType.ReminderMsgs createEmailTemplatesTypeReminderMsgs() {
+        return new EmailTemplatesType.ReminderMsgs();
+    }
+
+    /**
+     * Create an instance of {@link UploadEventImage }
+     * 
+     */
+    public UploadEventImage createUploadEventImage() {
+        return new UploadEventImage();
+    }
+
+    /**
+     * Create an instance of {@link OrderType }
+     * 
+     */
+    public OrderType createOrderType() {
+        return new OrderType();
+    }
+
+    /**
+     * Create an instance of {@link EmailTemplatesType.EnrollmentMsgs.EventUpdatedEmail }
+     * 
+     */
+    public EmailTemplatesType.EnrollmentMsgs.EventUpdatedEmail createEmailTemplatesTypeEnrollmentMsgsEventUpdatedEmail() {
+        return new EmailTemplatesType.EnrollmentMsgs.EventUpdatedEmail();
+    }
+
+    /**
+     * Create an instance of {@link EmailTemplatesType }
+     * 
+     */
+    public EmailTemplatesType createEmailTemplatesType() {
+        return new EmailTemplatesType();
+    }
+
+    /**
+     * Create an instance of {@link CheckboxGroupType }
+     * 
+     */
+    public CheckboxGroupType createCheckboxGroupType() {
+        return new CheckboxGroupType();
+    }
+
+    /**
+     * Create an instance of {@link ProgramSummaryType }
+     * 
+     */
+    public ProgramSummaryType createProgramSummaryType() {
+        return new ProgramSummaryType();
+    }
+
+    /**
+     * Create an instance of {@link EnrollmentFormCreateType }
+     * 
+     */
+    public EnrollmentFormCreateType createEnrollmentFormCreateType() {
+        return new EnrollmentFormCreateType();
+    }
+
+    /**
+     * Create an instance of {@link StandardFieldsType }
+     * 
+     */
+    public StandardFieldsType createStandardFieldsType() {
+        return new StandardFieldsType();
+    }
+
+    /**
+     * Create an instance of {@link ProgramOrderType }
+     * 
+     */
+    public ProgramOrderType createProgramOrderType() {
+        return new ProgramOrderType();
+    }
+
+    /**
+     * Create an instance of {@link RecordedEventsType }
+     * 
+     */
+    public RecordedEventsType createRecordedEventsType() {
+        return new RecordedEventsType();
+    }
+
+    /**
+     * Create an instance of {@link EmailTemplateType }
+     * 
+     */
+    public EmailTemplateType createEmailTemplateType() {
+        return new EmailTemplateType();
+    }
+
+    /**
+     * Create an instance of {@link SendInvitationEmail }
+     * 
+     */
+    public SendInvitationEmail createSendInvitationEmail() {
+        return new SendInvitationEmail();
+    }
+
+    /**
+     * Create an instance of {@link PanelistsType }
+     * 
+     */
+    public PanelistsType createPanelistsType() {
+        return new PanelistsType();
+    }
+
+    /**
+     * Create an instance of {@link EnrollmentType }
+     * 
+     */
+    public EnrollmentType createEnrollmentType() {
+        return new EnrollmentType();
+    }
+
+    /**
+     * Create an instance of {@link LstsummaryProgramResponse }
+     * 
+     */
+    public LstsummaryProgramResponse createLstsummaryProgramResponse() {
+        return new LstsummaryProgramResponse();
     }
 
 }

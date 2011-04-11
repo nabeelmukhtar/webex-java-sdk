@@ -23,56 +23,44 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum ScTabType.
+ * <p>Java class for scTabType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="scTabType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="Tools"/>
+ *     &lt;enumeration value="Desktop"/>
+ *     &lt;enumeration value="Application"/>
+ *     &lt;enumeration value="Session"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "scTabType")
 @XmlEnum
 public enum ScTabType {
 
-    /** The TOOLS. */
     @XmlEnumValue("Tools")
     TOOLS("Tools"),
-    
-    /** The DESKTOP. */
     @XmlEnumValue("Desktop")
     DESKTOP("Desktop"),
-    
-    /** The APPLICATION. */
     @XmlEnumValue("Application")
     APPLICATION("Application"),
-    
-    /** The SESSION. */
     @XmlEnumValue("Session")
     SESSION("Session");
-    
-    /** The value. */
     private final String value;
 
-    /**
-     * Instantiates a new sc tab type.
-     * 
-     * @param v the v
-     */
     ScTabType(String v) {
         value = v;
     }
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return value;
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the sc tab type
-     */
     public static ScTabType fromValue(String v) {
         for (ScTabType c: ScTabType.values()) {
             if (c.value.equals(v)) {

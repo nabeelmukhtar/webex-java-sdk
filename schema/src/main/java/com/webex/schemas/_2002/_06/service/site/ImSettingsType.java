@@ -24,7 +24,23 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class ImSettingsType.
+ * <p>Java class for imSettingsType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="imSettingsType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="attendeeInviteOther" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "imSettingsType", propOrder = {
@@ -34,25 +50,28 @@ public class ImSettingsType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The attendee invite other. */
     protected Boolean attendeeInviteOther;
 
     /**
-     * Checks if is attendee invite other.
+     * Gets the value of the attendeeInviteOther property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAttendeeInviteOther() {
         return attendeeInviteOther;
     }
 
     /**
-     * Sets the attendee invite other.
+     * Sets the value of the attendeeInviteOther property.
      * 
-     * @param value the new attendee invite other
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAttendeeInviteOther(Boolean value) {
         this.attendeeInviteOther = value;

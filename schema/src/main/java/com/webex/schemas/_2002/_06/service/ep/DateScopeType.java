@@ -28,7 +28,28 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class DateScopeType.
+ * <p>Java class for dateScopeType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="dateScopeType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="startDateStart" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="startDateEnd" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="endDateStart" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="endDateEnd" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="returnSpecifiedTimeZone" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "dateScopeType", propOrder = {
@@ -43,133 +64,156 @@ public class DateScopeType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The start date start. */
     protected String startDateStart;
-    
-    /** The start date end. */
     protected String startDateEnd;
-    
-    /** The end date start. */
     protected String endDateStart;
-    
-    /** The end date end. */
     protected String endDateEnd;
-    
-    /** The time zone id. */
     @XmlElement(type = String.class, defaultValue = "-1")
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long timeZoneID;
-    
-    /** The return specified time zone. */
     protected Boolean returnSpecifiedTimeZone;
 
     /**
-     * Gets the start date start.
+     * Gets the value of the startDateStart property.
      * 
-     * @return the start date start
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getStartDateStart() {
         return startDateStart;
     }
 
     /**
-     * Sets the start date start.
+     * Sets the value of the startDateStart property.
      * 
-     * @param value the new start date start
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setStartDateStart(String value) {
         this.startDateStart = value;
     }
 
     /**
-     * Gets the start date end.
+     * Gets the value of the startDateEnd property.
      * 
-     * @return the start date end
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getStartDateEnd() {
         return startDateEnd;
     }
 
     /**
-     * Sets the start date end.
+     * Sets the value of the startDateEnd property.
      * 
-     * @param value the new start date end
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setStartDateEnd(String value) {
         this.startDateEnd = value;
     }
 
     /**
-     * Gets the end date start.
+     * Gets the value of the endDateStart property.
      * 
-     * @return the end date start
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getEndDateStart() {
         return endDateStart;
     }
 
     /**
-     * Sets the end date start.
+     * Sets the value of the endDateStart property.
      * 
-     * @param value the new end date start
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setEndDateStart(String value) {
         this.endDateStart = value;
     }
 
     /**
-     * Gets the end date end.
+     * Gets the value of the endDateEnd property.
      * 
-     * @return the end date end
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getEndDateEnd() {
         return endDateEnd;
     }
 
     /**
-     * Sets the end date end.
+     * Sets the value of the endDateEnd property.
      * 
-     * @param value the new end date end
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setEndDateEnd(String value) {
         this.endDateEnd = value;
     }
 
     /**
-     * Gets the time zone id.
+     * Gets the value of the timeZoneID property.
      * 
-     * @return the time zone id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the time zone id.
+     * Sets the value of the timeZoneID property.
      * 
-     * @param value the new time zone id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTimeZoneID(Long value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Checks if is return specified time zone.
+     * Gets the value of the returnSpecifiedTimeZone property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isReturnSpecifiedTimeZone() {
         return returnSpecifiedTimeZone;
     }
 
     /**
-     * Sets the return specified time zone.
+     * Sets the value of the returnSpecifiedTimeZone property.
      * 
-     * @param value the new return specified time zone
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setReturnSpecifiedTimeZone(Boolean value) {
         this.returnSpecifiedTimeZone = value;

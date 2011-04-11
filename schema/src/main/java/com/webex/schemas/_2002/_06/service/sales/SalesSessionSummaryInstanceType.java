@@ -29,7 +29,46 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class SalesSessionSummaryInstanceType.
+ * <p>Java class for salesSessionSummaryInstanceType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="salesSessionSummaryInstanceType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="meetingKey" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="confName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="meetingType" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *         &lt;element name="hostWebExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="timeZone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="startDate" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="duration" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *         &lt;element name="listStatus" type="{http://www.webex.com/schemas/2002/06/service/sales}listingType" minOccurs="0"/>
+ *         &lt;element name="account" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="128"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="opportunity" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="128"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "salesSessionSummaryInstanceType", propOrder = {
@@ -51,267 +90,306 @@ public class SalesSessionSummaryInstanceType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The meeting key. */
     protected long meetingKey;
-    
-    /** The conf name. */
     @XmlElement(required = true)
     protected String confName;
-    
-    /** The meeting type. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long meetingType;
-    
-    /** The host web ex id. */
     protected String hostWebExID;
-    
-    /** The time zone id. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long timeZoneID;
-    
-    /** The time zone. */
     protected String timeZone;
-    
-    /** The status. */
     protected String status;
-    
-    /** The start date. */
     @XmlElement(required = true)
     protected String startDate;
-    
-    /** The duration. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long duration;
-    
-    /** The list status. */
     protected ListingType listStatus;
-    
-    /** The account. */
     protected String account;
-    
-    /** The opportunity. */
     protected String opportunity;
 
     /**
-     * Gets the meeting key.
+     * Gets the value of the meetingKey property.
      * 
-     * @return the meeting key
      */
     public long getMeetingKey() {
         return meetingKey;
     }
 
     /**
-     * Sets the meeting key.
+     * Sets the value of the meetingKey property.
      * 
-     * @param value the new meeting key
      */
     public void setMeetingKey(long value) {
         this.meetingKey = value;
     }
 
     /**
-     * Gets the conf name.
+     * Gets the value of the confName property.
      * 
-     * @return the conf name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getConfName() {
         return confName;
     }
 
     /**
-     * Sets the conf name.
+     * Sets the value of the confName property.
      * 
-     * @param value the new conf name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setConfName(String value) {
         this.confName = value;
     }
 
     /**
-     * Gets the meeting type.
+     * Gets the value of the meetingType property.
      * 
-     * @return the meeting type
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getMeetingType() {
         return meetingType;
     }
 
     /**
-     * Sets the meeting type.
+     * Sets the value of the meetingType property.
      * 
-     * @param value the new meeting type
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMeetingType(Long value) {
         this.meetingType = value;
     }
 
     /**
-     * Gets the host web ex id.
+     * Gets the value of the hostWebExID property.
      * 
-     * @return the host web ex id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHostWebExID() {
         return hostWebExID;
     }
 
     /**
-     * Sets the host web ex id.
+     * Sets the value of the hostWebExID property.
      * 
-     * @param value the new host web ex id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHostWebExID(String value) {
         this.hostWebExID = value;
     }
 
     /**
-     * Gets the time zone id.
+     * Gets the value of the timeZoneID property.
      * 
-     * @return the time zone id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the time zone id.
+     * Sets the value of the timeZoneID property.
      * 
-     * @param value the new time zone id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTimeZoneID(Long value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the time zone.
+     * Gets the value of the timeZone property.
      * 
-     * @return the time zone
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTimeZone() {
         return timeZone;
     }
 
     /**
-     * Sets the time zone.
+     * Sets the value of the timeZone property.
      * 
-     * @param value the new time zone
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTimeZone(String value) {
         this.timeZone = value;
     }
 
     /**
-     * Gets the status.
+     * Gets the value of the status property.
      * 
-     * @return the status
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getStatus() {
         return status;
     }
 
     /**
-     * Sets the status.
+     * Sets the value of the status property.
      * 
-     * @param value the new status
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setStatus(String value) {
         this.status = value;
     }
 
     /**
-     * Gets the start date.
+     * Gets the value of the startDate property.
      * 
-     * @return the start date
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getStartDate() {
         return startDate;
     }
 
     /**
-     * Sets the start date.
+     * Sets the value of the startDate property.
      * 
-     * @param value the new start date
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setStartDate(String value) {
         this.startDate = value;
     }
 
     /**
-     * Gets the duration.
+     * Gets the value of the duration property.
      * 
-     * @return the duration
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getDuration() {
         return duration;
     }
 
     /**
-     * Sets the duration.
+     * Sets the value of the duration property.
      * 
-     * @param value the new duration
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDuration(Long value) {
         this.duration = value;
     }
 
     /**
-     * Gets the list status.
+     * Gets the value of the listStatus property.
      * 
-     * @return the list status
+     * @return
+     *     possible object is
+     *     {@link ListingType }
+     *     
      */
     public ListingType getListStatus() {
         return listStatus;
     }
 
     /**
-     * Sets the list status.
+     * Sets the value of the listStatus property.
      * 
-     * @param value the new list status
+     * @param value
+     *     allowed object is
+     *     {@link ListingType }
+     *     
      */
     public void setListStatus(ListingType value) {
         this.listStatus = value;
     }
 
     /**
-     * Gets the account.
+     * Gets the value of the account property.
      * 
-     * @return the account
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getAccount() {
         return account;
     }
 
     /**
-     * Sets the account.
+     * Sets the value of the account property.
      * 
-     * @param value the new account
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAccount(String value) {
         this.account = value;
     }
 
     /**
-     * Gets the opportunity.
+     * Gets the value of the opportunity property.
      * 
-     * @return the opportunity
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getOpportunity() {
         return opportunity;
     }
 
     /**
-     * Sets the opportunity.
+     * Sets the value of the opportunity property.
      * 
-     * @param value the new opportunity
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setOpportunity(String value) {
         this.opportunity = value;

@@ -25,7 +25,25 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class GetjoinurlMeetingResponse.
+ * <p>Java class for getjoinurlMeetingResponse complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="getjoinurlMeetingResponse">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="joinMeetingURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="inviteMeetingURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="registerMeetingURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getjoinurlMeetingResponse", propOrder = {
@@ -38,67 +56,78 @@ public class GetjoinurlMeetingResponse
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The join meeting url. */
     protected String joinMeetingURL;
-    
-    /** The invite meeting url. */
     protected String inviteMeetingURL;
-    
-    /** The register meeting url. */
     protected String registerMeetingURL;
 
     /**
-     * Gets the join meeting url.
+     * Gets the value of the joinMeetingURL property.
      * 
-     * @return the join meeting url
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getJoinMeetingURL() {
         return joinMeetingURL;
     }
 
     /**
-     * Sets the join meeting url.
+     * Sets the value of the joinMeetingURL property.
      * 
-     * @param value the new join meeting url
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setJoinMeetingURL(String value) {
         this.joinMeetingURL = value;
     }
 
     /**
-     * Gets the invite meeting url.
+     * Gets the value of the inviteMeetingURL property.
      * 
-     * @return the invite meeting url
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getInviteMeetingURL() {
         return inviteMeetingURL;
     }
 
     /**
-     * Sets the invite meeting url.
+     * Sets the value of the inviteMeetingURL property.
      * 
-     * @param value the new invite meeting url
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setInviteMeetingURL(String value) {
         this.inviteMeetingURL = value;
     }
 
     /**
-     * Gets the register meeting url.
+     * Gets the value of the registerMeetingURL property.
      * 
-     * @return the register meeting url
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getRegisterMeetingURL() {
         return registerMeetingURL;
     }
 
     /**
-     * Sets the register meeting url.
+     * Sets the value of the registerMeetingURL property.
      * 
-     * @param value the new register meeting url
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setRegisterMeetingURL(String value) {
         this.registerMeetingURL = value;

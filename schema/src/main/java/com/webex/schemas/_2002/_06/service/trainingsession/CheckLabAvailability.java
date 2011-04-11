@@ -26,7 +26,27 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class CheckLabAvailability.
+ * <p>Java class for checkLabAvailability complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="checkLabAvailability">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="labName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="sessionStartTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="sessionEndTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="numComputers" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "checkLabAvailability", propOrder = {
@@ -41,113 +61,116 @@ public class CheckLabAvailability
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The lab name. */
     @XmlElement(required = true)
     protected String labName;
-    
-    /** The time zone id. */
     @XmlElement(defaultValue = "-1")
     protected int timeZoneID;
-    
-    /** The session start time. */
     @XmlElement(required = true)
     protected String sessionStartTime;
-    
-    /** The session end time. */
     @XmlElement(required = true)
     protected String sessionEndTime;
-    
-    /** The num computers. */
     protected int numComputers;
 
     /**
-     * Gets the lab name.
+     * Gets the value of the labName property.
      * 
-     * @return the lab name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLabName() {
         return labName;
     }
 
     /**
-     * Sets the lab name.
+     * Sets the value of the labName property.
      * 
-     * @param value the new lab name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLabName(String value) {
         this.labName = value;
     }
 
     /**
-     * Gets the time zone id.
+     * Gets the value of the timeZoneID property.
      * 
-     * @return the time zone id
      */
     public int getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the time zone id.
+     * Sets the value of the timeZoneID property.
      * 
-     * @param value the new time zone id
      */
     public void setTimeZoneID(int value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the session start time.
+     * Gets the value of the sessionStartTime property.
      * 
-     * @return the session start time
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSessionStartTime() {
         return sessionStartTime;
     }
 
     /**
-     * Sets the session start time.
+     * Sets the value of the sessionStartTime property.
      * 
-     * @param value the new session start time
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSessionStartTime(String value) {
         this.sessionStartTime = value;
     }
 
     /**
-     * Gets the session end time.
+     * Gets the value of the sessionEndTime property.
      * 
-     * @return the session end time
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSessionEndTime() {
         return sessionEndTime;
     }
 
     /**
-     * Sets the session end time.
+     * Sets the value of the sessionEndTime property.
      * 
-     * @param value the new session end time
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSessionEndTime(String value) {
         this.sessionEndTime = value;
     }
 
     /**
-     * Gets the num computers.
+     * Gets the value of the numComputers property.
      * 
-     * @return the num computers
      */
     public int getNumComputers() {
         return numComputers;
     }
 
     /**
-     * Sets the num computers.
+     * Sets the value of the numComputers property.
      * 
-     * @param value the new num computers
      */
     public void setNumComputers(int value) {
         this.numComputers = value;

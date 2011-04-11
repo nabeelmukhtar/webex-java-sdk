@@ -25,7 +25,75 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class EnableOptionsType.
+ * <p>Java class for enableOptionsType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="enableOptionsType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="chat" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="poll" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="audioVideo" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="attendeeList" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="fileShare" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="presentation" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="applicationShare" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="desktopShare" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="webTour" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="meetingRecord" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="annotation" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="importDocument" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="saveDocument" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="printDocument" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="pointer" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="switchPage" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="fullScreen" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="thumbnail" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="zoom" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="copyPage" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="rcAppShare" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="rcDesktopShare" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="rcWebTour" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="javaClient" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="nativeClient" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="attendeeRecordMeeting" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="voip" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="faxIntoMeeting" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="enableReg" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportQandA" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportFeedback" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportBreakoutSessions" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportPanelists" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportRemoteComputer" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportShareWebContent" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportUCFWebPages" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportUCFRichMedia" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="autoDeleteAfterMeetingEnd" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="viewAnyDoc" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="viewAnyPage" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="allowContactPrivate" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="chatHost" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="chatPresenter" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="chatAllAttendees" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="multiVideo" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="notes" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="closedCaptions" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="singleNote" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="sendFeedback" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="displayQuickStartHost" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="displayQuickStartAttendees" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportE2E" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportPKI" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "enableOptionsType", propOrder = {
@@ -87,1120 +155,1331 @@ public class EnableOptionsType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The chat. */
     @XmlElement(defaultValue = "false")
     protected Boolean chat;
-    
-    /** The poll. */
     @XmlElement(defaultValue = "false")
     protected Boolean poll;
-    
-    /** The audio video. */
     protected Boolean audioVideo;
-    
-    /** The attendee list. */
     protected Boolean attendeeList;
-    
-    /** The file share. */
     protected Boolean fileShare;
-    
-    /** The presentation. */
     protected Boolean presentation;
-    
-    /** The application share. */
     protected Boolean applicationShare;
-    
-    /** The desktop share. */
     protected Boolean desktopShare;
-    
-    /** The web tour. */
     @XmlElement(defaultValue = "false")
     protected Boolean webTour;
-    
-    /** The meeting record. */
     protected Boolean meetingRecord;
-    
-    /** The annotation. */
     protected Boolean annotation;
-    
-    /** The import document. */
     protected Boolean importDocument;
-    
-    /** The save document. */
     protected Boolean saveDocument;
-    
-    /** The print document. */
     protected Boolean printDocument;
-    
-    /** The pointer. */
     protected Boolean pointer;
-    
-    /** The switch page. */
     protected Boolean switchPage;
-    
-    /** The full screen. */
     protected Boolean fullScreen;
-    
-    /** The thumbnail. */
     protected Boolean thumbnail;
-    
-    /** The zoom. */
     protected Boolean zoom;
-    
-    /** The copy page. */
     protected Boolean copyPage;
-    
-    /** The rc app share. */
     protected Boolean rcAppShare;
-    
-    /** The rc desktop share. */
     protected Boolean rcDesktopShare;
-    
-    /** The rc web tour. */
     protected Boolean rcWebTour;
-    
-    /** The java client. */
     protected Boolean javaClient;
-    
-    /** The native client. */
     protected Boolean nativeClient;
-    
-    /** The attendee record meeting. */
     protected Boolean attendeeRecordMeeting;
-    
-    /** The voip. */
     protected Boolean voip;
-    
-    /** The fax into meeting. */
     protected Boolean faxIntoMeeting;
-    
-    /** The enable reg. */
     protected Boolean enableReg;
-    
-    /** The support qand a. */
     protected Boolean supportQandA;
-    
-    /** The support feedback. */
     protected Boolean supportFeedback;
-    
-    /** The support breakout sessions. */
     protected Boolean supportBreakoutSessions;
-    
-    /** The support panelists. */
     protected Boolean supportPanelists;
-    
-    /** The support remote computer. */
     protected Boolean supportRemoteComputer;
-    
-    /** The support share web content. */
     protected Boolean supportShareWebContent;
-    
-    /** The support ucf web pages. */
     protected Boolean supportUCFWebPages;
-    
-    /** The support ucf rich media. */
     protected Boolean supportUCFRichMedia;
-    
-    /** The auto delete after meeting end. */
     protected Boolean autoDeleteAfterMeetingEnd;
-    
-    /** The view any doc. */
     protected Boolean viewAnyDoc;
-    
-    /** The view any page. */
     protected Boolean viewAnyPage;
-    
-    /** The allow contact private. */
     protected Boolean allowContactPrivate;
-    
-    /** The chat host. */
     protected Boolean chatHost;
-    
-    /** The chat presenter. */
     protected Boolean chatPresenter;
-    
-    /** The chat all attendees. */
     protected Boolean chatAllAttendees;
-    
-    /** The multi video. */
     protected Boolean multiVideo;
-    
-    /** The notes. */
     protected Boolean notes;
-    
-    /** The closed captions. */
     protected Boolean closedCaptions;
-    
-    /** The single note. */
     protected Boolean singleNote;
-    
-    /** The send feedback. */
     protected Boolean sendFeedback;
-    
-    /** The display quick start host. */
     protected Boolean displayQuickStartHost;
-    
-    /** The display quick start attendees. */
     protected Boolean displayQuickStartAttendees;
-    
-    /** The support e2 e. */
     protected Boolean supportE2E;
-    
-    /** The support pki. */
     protected Boolean supportPKI;
 
     /**
-     * Checks if is chat.
+     * Gets the value of the chat property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isChat() {
         return chat;
     }
 
     /**
-     * Sets the chat.
+     * Sets the value of the chat property.
      * 
-     * @param value the new chat
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setChat(Boolean value) {
         this.chat = value;
     }
 
     /**
-     * Checks if is poll.
+     * Gets the value of the poll property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isPoll() {
         return poll;
     }
 
     /**
-     * Sets the poll.
+     * Sets the value of the poll property.
      * 
-     * @param value the new poll
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setPoll(Boolean value) {
         this.poll = value;
     }
 
     /**
-     * Checks if is audio video.
+     * Gets the value of the audioVideo property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAudioVideo() {
         return audioVideo;
     }
 
     /**
-     * Sets the audio video.
+     * Sets the value of the audioVideo property.
      * 
-     * @param value the new audio video
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAudioVideo(Boolean value) {
         this.audioVideo = value;
     }
 
     /**
-     * Checks if is attendee list.
+     * Gets the value of the attendeeList property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAttendeeList() {
         return attendeeList;
     }
 
     /**
-     * Sets the attendee list.
+     * Sets the value of the attendeeList property.
      * 
-     * @param value the new attendee list
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAttendeeList(Boolean value) {
         this.attendeeList = value;
     }
 
     /**
-     * Checks if is file share.
+     * Gets the value of the fileShare property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isFileShare() {
         return fileShare;
     }
 
     /**
-     * Sets the file share.
+     * Sets the value of the fileShare property.
      * 
-     * @param value the new file share
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setFileShare(Boolean value) {
         this.fileShare = value;
     }
 
     /**
-     * Checks if is presentation.
+     * Gets the value of the presentation property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isPresentation() {
         return presentation;
     }
 
     /**
-     * Sets the presentation.
+     * Sets the value of the presentation property.
      * 
-     * @param value the new presentation
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setPresentation(Boolean value) {
         this.presentation = value;
     }
 
     /**
-     * Checks if is application share.
+     * Gets the value of the applicationShare property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isApplicationShare() {
         return applicationShare;
     }
 
     /**
-     * Sets the application share.
+     * Sets the value of the applicationShare property.
      * 
-     * @param value the new application share
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setApplicationShare(Boolean value) {
         this.applicationShare = value;
     }
 
     /**
-     * Checks if is desktop share.
+     * Gets the value of the desktopShare property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isDesktopShare() {
         return desktopShare;
     }
 
     /**
-     * Sets the desktop share.
+     * Sets the value of the desktopShare property.
      * 
-     * @param value the new desktop share
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setDesktopShare(Boolean value) {
         this.desktopShare = value;
     }
 
     /**
-     * Checks if is web tour.
+     * Gets the value of the webTour property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isWebTour() {
         return webTour;
     }
 
     /**
-     * Sets the web tour.
+     * Sets the value of the webTour property.
      * 
-     * @param value the new web tour
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setWebTour(Boolean value) {
         this.webTour = value;
     }
 
     /**
-     * Checks if is meeting record.
+     * Gets the value of the meetingRecord property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isMeetingRecord() {
         return meetingRecord;
     }
 
     /**
-     * Sets the meeting record.
+     * Sets the value of the meetingRecord property.
      * 
-     * @param value the new meeting record
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setMeetingRecord(Boolean value) {
         this.meetingRecord = value;
     }
 
     /**
-     * Checks if is annotation.
+     * Gets the value of the annotation property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAnnotation() {
         return annotation;
     }
 
     /**
-     * Sets the annotation.
+     * Sets the value of the annotation property.
      * 
-     * @param value the new annotation
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAnnotation(Boolean value) {
         this.annotation = value;
     }
 
     /**
-     * Checks if is import document.
+     * Gets the value of the importDocument property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isImportDocument() {
         return importDocument;
     }
 
     /**
-     * Sets the import document.
+     * Sets the value of the importDocument property.
      * 
-     * @param value the new import document
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setImportDocument(Boolean value) {
         this.importDocument = value;
     }
 
     /**
-     * Checks if is save document.
+     * Gets the value of the saveDocument property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSaveDocument() {
         return saveDocument;
     }
 
     /**
-     * Sets the save document.
+     * Sets the value of the saveDocument property.
      * 
-     * @param value the new save document
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSaveDocument(Boolean value) {
         this.saveDocument = value;
     }
 
     /**
-     * Checks if is print document.
+     * Gets the value of the printDocument property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isPrintDocument() {
         return printDocument;
     }
 
     /**
-     * Sets the prints the document.
+     * Sets the value of the printDocument property.
      * 
-     * @param value the new prints the document
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setPrintDocument(Boolean value) {
         this.printDocument = value;
     }
 
     /**
-     * Checks if is pointer.
+     * Gets the value of the pointer property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isPointer() {
         return pointer;
     }
 
     /**
-     * Sets the pointer.
+     * Sets the value of the pointer property.
      * 
-     * @param value the new pointer
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setPointer(Boolean value) {
         this.pointer = value;
     }
 
     /**
-     * Checks if is switch page.
+     * Gets the value of the switchPage property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSwitchPage() {
         return switchPage;
     }
 
     /**
-     * Sets the switch page.
+     * Sets the value of the switchPage property.
      * 
-     * @param value the new switch page
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSwitchPage(Boolean value) {
         this.switchPage = value;
     }
 
     /**
-     * Checks if is full screen.
+     * Gets the value of the fullScreen property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isFullScreen() {
         return fullScreen;
     }
 
     /**
-     * Sets the full screen.
+     * Sets the value of the fullScreen property.
      * 
-     * @param value the new full screen
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setFullScreen(Boolean value) {
         this.fullScreen = value;
     }
 
     /**
-     * Checks if is thumbnail.
+     * Gets the value of the thumbnail property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isThumbnail() {
         return thumbnail;
     }
 
     /**
-     * Sets the thumbnail.
+     * Sets the value of the thumbnail property.
      * 
-     * @param value the new thumbnail
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setThumbnail(Boolean value) {
         this.thumbnail = value;
     }
 
     /**
-     * Checks if is zoom.
+     * Gets the value of the zoom property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isZoom() {
         return zoom;
     }
 
     /**
-     * Sets the zoom.
+     * Sets the value of the zoom property.
      * 
-     * @param value the new zoom
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setZoom(Boolean value) {
         this.zoom = value;
     }
 
     /**
-     * Checks if is copy page.
+     * Gets the value of the copyPage property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isCopyPage() {
         return copyPage;
     }
 
     /**
-     * Sets the copy page.
+     * Sets the value of the copyPage property.
      * 
-     * @param value the new copy page
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setCopyPage(Boolean value) {
         this.copyPage = value;
     }
 
     /**
-     * Checks if is rc app share.
+     * Gets the value of the rcAppShare property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isRcAppShare() {
         return rcAppShare;
     }
 
     /**
-     * Sets the rc app share.
+     * Sets the value of the rcAppShare property.
      * 
-     * @param value the new rc app share
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setRcAppShare(Boolean value) {
         this.rcAppShare = value;
     }
 
     /**
-     * Checks if is rc desktop share.
+     * Gets the value of the rcDesktopShare property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isRcDesktopShare() {
         return rcDesktopShare;
     }
 
     /**
-     * Sets the rc desktop share.
+     * Sets the value of the rcDesktopShare property.
      * 
-     * @param value the new rc desktop share
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setRcDesktopShare(Boolean value) {
         this.rcDesktopShare = value;
     }
 
     /**
-     * Checks if is rc web tour.
+     * Gets the value of the rcWebTour property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isRcWebTour() {
         return rcWebTour;
     }
 
     /**
-     * Sets the rc web tour.
+     * Sets the value of the rcWebTour property.
      * 
-     * @param value the new rc web tour
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setRcWebTour(Boolean value) {
         this.rcWebTour = value;
     }
 
     /**
-     * Checks if is java client.
+     * Gets the value of the javaClient property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isJavaClient() {
         return javaClient;
     }
 
     /**
-     * Sets the java client.
+     * Sets the value of the javaClient property.
      * 
-     * @param value the new java client
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setJavaClient(Boolean value) {
         this.javaClient = value;
     }
 
     /**
-     * Checks if is native client.
+     * Gets the value of the nativeClient property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isNativeClient() {
         return nativeClient;
     }
 
     /**
-     * Sets the native client.
+     * Sets the value of the nativeClient property.
      * 
-     * @param value the new native client
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setNativeClient(Boolean value) {
         this.nativeClient = value;
     }
 
     /**
-     * Checks if is attendee record meeting.
+     * Gets the value of the attendeeRecordMeeting property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAttendeeRecordMeeting() {
         return attendeeRecordMeeting;
     }
 
     /**
-     * Sets the attendee record meeting.
+     * Sets the value of the attendeeRecordMeeting property.
      * 
-     * @param value the new attendee record meeting
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAttendeeRecordMeeting(Boolean value) {
         this.attendeeRecordMeeting = value;
     }
 
     /**
-     * Checks if is voip.
+     * Gets the value of the voip property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isVoip() {
         return voip;
     }
 
     /**
-     * Sets the voip.
+     * Sets the value of the voip property.
      * 
-     * @param value the new voip
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setVoip(Boolean value) {
         this.voip = value;
     }
 
     /**
-     * Checks if is fax into meeting.
+     * Gets the value of the faxIntoMeeting property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isFaxIntoMeeting() {
         return faxIntoMeeting;
     }
 
     /**
-     * Sets the fax into meeting.
+     * Sets the value of the faxIntoMeeting property.
      * 
-     * @param value the new fax into meeting
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setFaxIntoMeeting(Boolean value) {
         this.faxIntoMeeting = value;
     }
 
     /**
-     * Checks if is enable reg.
+     * Gets the value of the enableReg property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isEnableReg() {
         return enableReg;
     }
 
     /**
-     * Sets the enable reg.
+     * Sets the value of the enableReg property.
      * 
-     * @param value the new enable reg
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setEnableReg(Boolean value) {
         this.enableReg = value;
     }
 
     /**
-     * Checks if is support qand a.
+     * Gets the value of the supportQandA property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportQandA() {
         return supportQandA;
     }
 
     /**
-     * Sets the support qand a.
+     * Sets the value of the supportQandA property.
      * 
-     * @param value the new support qand a
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportQandA(Boolean value) {
         this.supportQandA = value;
     }
 
     /**
-     * Checks if is support feedback.
+     * Gets the value of the supportFeedback property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportFeedback() {
         return supportFeedback;
     }
 
     /**
-     * Sets the support feedback.
+     * Sets the value of the supportFeedback property.
      * 
-     * @param value the new support feedback
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportFeedback(Boolean value) {
         this.supportFeedback = value;
     }
 
     /**
-     * Checks if is support breakout sessions.
+     * Gets the value of the supportBreakoutSessions property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportBreakoutSessions() {
         return supportBreakoutSessions;
     }
 
     /**
-     * Sets the support breakout sessions.
+     * Sets the value of the supportBreakoutSessions property.
      * 
-     * @param value the new support breakout sessions
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportBreakoutSessions(Boolean value) {
         this.supportBreakoutSessions = value;
     }
 
     /**
-     * Checks if is support panelists.
+     * Gets the value of the supportPanelists property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportPanelists() {
         return supportPanelists;
     }
 
     /**
-     * Sets the support panelists.
+     * Sets the value of the supportPanelists property.
      * 
-     * @param value the new support panelists
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportPanelists(Boolean value) {
         this.supportPanelists = value;
     }
 
     /**
-     * Checks if is support remote computer.
+     * Gets the value of the supportRemoteComputer property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportRemoteComputer() {
         return supportRemoteComputer;
     }
 
     /**
-     * Sets the support remote computer.
+     * Sets the value of the supportRemoteComputer property.
      * 
-     * @param value the new support remote computer
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportRemoteComputer(Boolean value) {
         this.supportRemoteComputer = value;
     }
 
     /**
-     * Checks if is support share web content.
+     * Gets the value of the supportShareWebContent property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportShareWebContent() {
         return supportShareWebContent;
     }
 
     /**
-     * Sets the support share web content.
+     * Sets the value of the supportShareWebContent property.
      * 
-     * @param value the new support share web content
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportShareWebContent(Boolean value) {
         this.supportShareWebContent = value;
     }
 
     /**
-     * Checks if is support ucf web pages.
+     * Gets the value of the supportUCFWebPages property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportUCFWebPages() {
         return supportUCFWebPages;
     }
 
     /**
-     * Sets the support ucf web pages.
+     * Sets the value of the supportUCFWebPages property.
      * 
-     * @param value the new support ucf web pages
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportUCFWebPages(Boolean value) {
         this.supportUCFWebPages = value;
     }
 
     /**
-     * Checks if is support ucf rich media.
+     * Gets the value of the supportUCFRichMedia property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportUCFRichMedia() {
         return supportUCFRichMedia;
     }
 
     /**
-     * Sets the support ucf rich media.
+     * Sets the value of the supportUCFRichMedia property.
      * 
-     * @param value the new support ucf rich media
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportUCFRichMedia(Boolean value) {
         this.supportUCFRichMedia = value;
     }
 
     /**
-     * Checks if is auto delete after meeting end.
+     * Gets the value of the autoDeleteAfterMeetingEnd property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAutoDeleteAfterMeetingEnd() {
         return autoDeleteAfterMeetingEnd;
     }
 
     /**
-     * Sets the auto delete after meeting end.
+     * Sets the value of the autoDeleteAfterMeetingEnd property.
      * 
-     * @param value the new auto delete after meeting end
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAutoDeleteAfterMeetingEnd(Boolean value) {
         this.autoDeleteAfterMeetingEnd = value;
     }
 
     /**
-     * Checks if is view any doc.
+     * Gets the value of the viewAnyDoc property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isViewAnyDoc() {
         return viewAnyDoc;
     }
 
     /**
-     * Sets the view any doc.
+     * Sets the value of the viewAnyDoc property.
      * 
-     * @param value the new view any doc
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setViewAnyDoc(Boolean value) {
         this.viewAnyDoc = value;
     }
 
     /**
-     * Checks if is view any page.
+     * Gets the value of the viewAnyPage property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isViewAnyPage() {
         return viewAnyPage;
     }
 
     /**
-     * Sets the view any page.
+     * Sets the value of the viewAnyPage property.
      * 
-     * @param value the new view any page
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setViewAnyPage(Boolean value) {
         this.viewAnyPage = value;
     }
 
     /**
-     * Checks if is allow contact private.
+     * Gets the value of the allowContactPrivate property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAllowContactPrivate() {
         return allowContactPrivate;
     }
 
     /**
-     * Sets the allow contact private.
+     * Sets the value of the allowContactPrivate property.
      * 
-     * @param value the new allow contact private
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAllowContactPrivate(Boolean value) {
         this.allowContactPrivate = value;
     }
 
     /**
-     * Checks if is chat host.
+     * Gets the value of the chatHost property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isChatHost() {
         return chatHost;
     }
 
     /**
-     * Sets the chat host.
+     * Sets the value of the chatHost property.
      * 
-     * @param value the new chat host
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setChatHost(Boolean value) {
         this.chatHost = value;
     }
 
     /**
-     * Checks if is chat presenter.
+     * Gets the value of the chatPresenter property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isChatPresenter() {
         return chatPresenter;
     }
 
     /**
-     * Sets the chat presenter.
+     * Sets the value of the chatPresenter property.
      * 
-     * @param value the new chat presenter
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setChatPresenter(Boolean value) {
         this.chatPresenter = value;
     }
 
     /**
-     * Checks if is chat all attendees.
+     * Gets the value of the chatAllAttendees property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isChatAllAttendees() {
         return chatAllAttendees;
     }
 
     /**
-     * Sets the chat all attendees.
+     * Sets the value of the chatAllAttendees property.
      * 
-     * @param value the new chat all attendees
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setChatAllAttendees(Boolean value) {
         this.chatAllAttendees = value;
     }
 
     /**
-     * Checks if is multi video.
+     * Gets the value of the multiVideo property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isMultiVideo() {
         return multiVideo;
     }
 
     /**
-     * Sets the multi video.
+     * Sets the value of the multiVideo property.
      * 
-     * @param value the new multi video
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setMultiVideo(Boolean value) {
         this.multiVideo = value;
     }
 
     /**
-     * Checks if is notes.
+     * Gets the value of the notes property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isNotes() {
         return notes;
     }
 
     /**
-     * Sets the notes.
+     * Sets the value of the notes property.
      * 
-     * @param value the new notes
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setNotes(Boolean value) {
         this.notes = value;
     }
 
     /**
-     * Checks if is closed captions.
+     * Gets the value of the closedCaptions property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isClosedCaptions() {
         return closedCaptions;
     }
 
     /**
-     * Sets the closed captions.
+     * Sets the value of the closedCaptions property.
      * 
-     * @param value the new closed captions
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setClosedCaptions(Boolean value) {
         this.closedCaptions = value;
     }
 
     /**
-     * Checks if is single note.
+     * Gets the value of the singleNote property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSingleNote() {
         return singleNote;
     }
 
     /**
-     * Sets the single note.
+     * Sets the value of the singleNote property.
      * 
-     * @param value the new single note
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSingleNote(Boolean value) {
         this.singleNote = value;
     }
 
     /**
-     * Checks if is send feedback.
+     * Gets the value of the sendFeedback property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSendFeedback() {
         return sendFeedback;
     }
 
     /**
-     * Sets the send feedback.
+     * Sets the value of the sendFeedback property.
      * 
-     * @param value the new send feedback
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSendFeedback(Boolean value) {
         this.sendFeedback = value;
     }
 
     /**
-     * Checks if is display quick start host.
+     * Gets the value of the displayQuickStartHost property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isDisplayQuickStartHost() {
         return displayQuickStartHost;
     }
 
     /**
-     * Sets the display quick start host.
+     * Sets the value of the displayQuickStartHost property.
      * 
-     * @param value the new display quick start host
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setDisplayQuickStartHost(Boolean value) {
         this.displayQuickStartHost = value;
     }
 
     /**
-     * Checks if is display quick start attendees.
+     * Gets the value of the displayQuickStartAttendees property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isDisplayQuickStartAttendees() {
         return displayQuickStartAttendees;
     }
 
     /**
-     * Sets the display quick start attendees.
+     * Sets the value of the displayQuickStartAttendees property.
      * 
-     * @param value the new display quick start attendees
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setDisplayQuickStartAttendees(Boolean value) {
         this.displayQuickStartAttendees = value;
     }
 
     /**
-     * Checks if is support e2 e.
+     * Gets the value of the supportE2E property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportE2E() {
         return supportE2E;
     }
 
     /**
-     * Sets the support e2 e.
+     * Sets the value of the supportE2E property.
      * 
-     * @param value the new support e2 e
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportE2E(Boolean value) {
         this.supportE2E = value;
     }
 
     /**
-     * Checks if is support pki.
+     * Gets the value of the supportPKI property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportPKI() {
         return supportPKI;
     }
 
     /**
-     * Sets the support pki.
+     * Sets the value of the supportPKI property.
      * 
-     * @param value the new support pki
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportPKI(Boolean value) {
         this.supportPKI = value;

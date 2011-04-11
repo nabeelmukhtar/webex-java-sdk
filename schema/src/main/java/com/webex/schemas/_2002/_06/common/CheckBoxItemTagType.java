@@ -25,7 +25,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class CheckBoxItemTagType.
+ * <p>Java class for checkBoxItemTagType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="checkBoxItemTagType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="itemName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="isSelected" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "checkBoxItemTagType", propOrder = {
@@ -36,47 +53,46 @@ public class CheckBoxItemTagType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The item name. */
     @XmlElement(required = true)
     protected String itemName;
-    
-    /** The is selected. */
     protected boolean isSelected;
 
     /**
-     * Gets the item name.
+     * Gets the value of the itemName property.
      * 
-     * @return the item name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getItemName() {
         return itemName;
     }
 
     /**
-     * Sets the item name.
+     * Sets the value of the itemName property.
      * 
-     * @param value the new item name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setItemName(String value) {
         this.itemName = value;
     }
 
     /**
-     * Checks if is checks if is selected.
+     * Gets the value of the isSelected property.
      * 
-     * @return true, if is checks if is selected
      */
     public boolean isIsSelected() {
         return isSelected;
     }
 
     /**
-     * Sets the checks if is selected.
+     * Sets the value of the isSelected property.
      * 
-     * @param value the new checks if is selected
      */
     public void setIsSelected(boolean value) {
         this.isSelected = value;

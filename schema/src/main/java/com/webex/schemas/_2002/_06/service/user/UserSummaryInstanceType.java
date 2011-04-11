@@ -26,7 +26,30 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class UserSummaryInstanceType.
+ * <p>Java class for userSummaryInstanceType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="userSummaryInstanceType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="webExId" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="firstName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="lastName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="email" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="registrationDate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="active" type="{http://www.webex.com/schemas/2002/06/service/user}activeType"/>
+ *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="webACD" type="{http://www.webex.com/schemas/2002/06/service/user}webACDUserRoleType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "userSummaryInstanceType", propOrder = {
@@ -44,178 +67,209 @@ public class UserSummaryInstanceType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The web ex id. */
     @XmlElement(required = true)
     protected String webExId;
-    
-    /** The first name. */
     @XmlElement(required = true)
     protected String firstName;
-    
-    /** The last name. */
     @XmlElement(required = true)
     protected String lastName;
-    
-    /** The email. */
     @XmlElement(required = true)
     protected String email;
-    
-    /** The registration date. */
     protected String registrationDate;
-    
-    /** The active. */
     @XmlElement(required = true)
     protected ActiveType active;
-    
-    /** The time zone id. */
     @XmlElement(defaultValue = "-1")
     protected Long timeZoneID;
-    
-    /** The web acd. */
     protected WebACDUserRoleType webACD;
 
     /**
-     * Gets the web ex id.
+     * Gets the value of the webExId property.
      * 
-     * @return the web ex id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getWebExId() {
         return webExId;
     }
 
     /**
-     * Sets the web ex id.
+     * Sets the value of the webExId property.
      * 
-     * @param value the new web ex id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setWebExId(String value) {
         this.webExId = value;
     }
 
     /**
-     * Gets the first name.
+     * Gets the value of the firstName property.
      * 
-     * @return the first name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFirstName() {
         return firstName;
     }
 
     /**
-     * Sets the first name.
+     * Sets the value of the firstName property.
      * 
-     * @param value the new first name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFirstName(String value) {
         this.firstName = value;
     }
 
     /**
-     * Gets the last name.
+     * Gets the value of the lastName property.
      * 
-     * @return the last name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLastName() {
         return lastName;
     }
 
     /**
-     * Sets the last name.
+     * Sets the value of the lastName property.
      * 
-     * @param value the new last name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLastName(String value) {
         this.lastName = value;
     }
 
     /**
-     * Gets the email.
+     * Gets the value of the email property.
      * 
-     * @return the email
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getEmail() {
         return email;
     }
 
     /**
-     * Sets the email.
+     * Sets the value of the email property.
      * 
-     * @param value the new email
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setEmail(String value) {
         this.email = value;
     }
 
     /**
-     * Gets the registration date.
+     * Gets the value of the registrationDate property.
      * 
-     * @return the registration date
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getRegistrationDate() {
         return registrationDate;
     }
 
     /**
-     * Sets the registration date.
+     * Sets the value of the registrationDate property.
      * 
-     * @param value the new registration date
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setRegistrationDate(String value) {
         this.registrationDate = value;
     }
 
     /**
-     * Gets the active.
+     * Gets the value of the active property.
      * 
-     * @return the active
+     * @return
+     *     possible object is
+     *     {@link ActiveType }
+     *     
      */
     public ActiveType getActive() {
         return active;
     }
 
     /**
-     * Sets the active.
+     * Sets the value of the active property.
      * 
-     * @param value the new active
+     * @param value
+     *     allowed object is
+     *     {@link ActiveType }
+     *     
      */
     public void setActive(ActiveType value) {
         this.active = value;
     }
 
     /**
-     * Gets the time zone id.
+     * Gets the value of the timeZoneID property.
      * 
-     * @return the time zone id
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the time zone id.
+     * Sets the value of the timeZoneID property.
      * 
-     * @param value the new time zone id
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setTimeZoneID(Long value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the web acd.
+     * Gets the value of the webACD property.
      * 
-     * @return the web acd
+     * @return
+     *     possible object is
+     *     {@link WebACDUserRoleType }
+     *     
      */
     public WebACDUserRoleType getWebACD() {
         return webACD;
     }
 
     /**
-     * Sets the web acd.
+     * Sets the value of the webACD property.
      * 
-     * @param value the new web acd
+     * @param value
+     *     allowed object is
+     *     {@link WebACDUserRoleType }
+     *     
      */
     public void setWebACD(WebACDUserRoleType value) {
         this.webACD = value;

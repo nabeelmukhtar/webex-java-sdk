@@ -25,7 +25,25 @@ import com.webex.schemas._2002._06.common.PhonesType;
 
 
 /**
- * The Class UserPhonesType.
+ * <p>Java class for userPhonesType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="userPhonesType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/common}phonesType">
+ *       &lt;sequence>
+ *         &lt;element name="phone2" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="mobilePhone2" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="pager" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "userPhonesType", propOrder = {
@@ -38,67 +56,78 @@ public class UserPhonesType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The phone2. */
     protected String phone2;
-    
-    /** The mobile phone2. */
     protected String mobilePhone2;
-    
-    /** The pager. */
     protected String pager;
 
     /**
-     * Gets the phone2.
+     * Gets the value of the phone2 property.
      * 
-     * @return the phone2
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPhone2() {
         return phone2;
     }
 
     /**
-     * Sets the phone2.
+     * Sets the value of the phone2 property.
      * 
-     * @param value the new phone2
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPhone2(String value) {
         this.phone2 = value;
     }
 
     /**
-     * Gets the mobile phone2.
+     * Gets the value of the mobilePhone2 property.
      * 
-     * @return the mobile phone2
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMobilePhone2() {
         return mobilePhone2;
     }
 
     /**
-     * Sets the mobile phone2.
+     * Sets the value of the mobilePhone2 property.
      * 
-     * @param value the new mobile phone2
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMobilePhone2(String value) {
         this.mobilePhone2 = value;
     }
 
     /**
-     * Gets the pager.
+     * Gets the value of the pager property.
      * 
-     * @return the pager
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPager() {
         return pager;
     }
 
     /**
-     * Sets the pager.
+     * Sets the value of the pager property.
      * 
-     * @param value the new pager
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPager(String value) {
         this.pager = value;

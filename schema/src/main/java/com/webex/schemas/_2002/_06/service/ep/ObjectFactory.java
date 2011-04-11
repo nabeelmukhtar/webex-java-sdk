@@ -21,763 +21,692 @@ import javax.xml.bind.annotation.XmlRegistry;
 
 
 /**
- * A factory for creating Object objects.
+ * This object contains factory methods for each 
+ * Java content interface and Java element interface 
+ * generated in the com.webex.schemas._2002._06.service.ep package. 
+ * <p>An ObjectFactory allows you to programatically 
+ * construct new instances of the Java representation 
+ * for XML content. The Java representation of XML 
+ * content can consist of schema derived interfaces 
+ * and classes representing the binding of schema 
+ * type definitions, element declarations and model 
+ * groups.  Factory methods for each of these are 
+ * provided in this class.
+ * 
  */
 @XmlRegistry
 public class ObjectFactory {
 
 
     /**
-     * Instantiates a new object factory.
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.webex.schemas._2002._06.service.ep
+     * 
      */
     public ObjectFactory() {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link GetSessionInfoResponse.MetaData }
      * 
-     * @return the services
-     */
-    public LstOpenSessionResponse.Services createLstOpenSessionResponseServices() {
-        return new LstOpenSessionResponse.Services();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the tracking
-     */
-    public SetupOneClickSettings.Tracking createSetupOneClickSettingsTracking() {
-        return new SetupOneClickSettings.Tracking();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the gets the one click settings response
-     */
-    public GetOneClickSettingsResponse createGetOneClickSettingsResponse() {
-        return new GetOneClickSettingsResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the gets the api version
-     */
-    public GetAPIVersion createGetAPIVersion() {
-        return new GetAPIVersion();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the gets the session info response
-     */
-    public GetSessionInfoResponse createGetSessionInfoResponse() {
-        return new GetSessionInfoResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lst dist list response
-     */
-    public LstDistListResponse createLstDistListResponse() {
-        return new LstDistListResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the sets the dist list
-     */
-    public SetDistList createSetDistList() {
-        return new SetDistList();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the dist list with contact instance type
-     */
-    public DistListWithContactInstanceType createDistListWithContactInstanceType() {
-        return new DistListWithContactInstanceType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the date scope type
-     */
-    public DateScopeType createDateScopeType() {
-        return new DateScopeType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the call in num
-     */
-    public GetSessionInfoResponse.Telephony.CallInNum createGetSessionInfoResponseTelephonyCallInNum() {
-        return new GetSessionInfoResponse.Telephony.CallInNum();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the sets the dist list response
-     */
-    public SetDistListResponse createSetDistListResponse() {
-        return new SetDistListResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the session template type
-     */
-    public SessionTemplateType createSessionTemplateType() {
-        return new SessionTemplateType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the recording file access type
-     */
-    public RecordingFileAccessType createRecordingFileAccessType() {
-        return new RecordingFileAccessType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the del session
-     */
-    public DelSession createDelSession() {
-        return new DelSession();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the sets the recording info
-     */
-    public SetRecordingInfo createSetRecordingInfo() {
-        return new SetRecordingInfo();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lst recording
-     */
-    public LstRecording createLstRecording() {
-        return new LstRecording();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the service types
-     */
-    public LstsummarySession.ServiceTypes createLstsummarySessionServiceTypes() {
-        return new LstsummarySession.ServiceTypes();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the setup one click settings
-     */
-    public SetupOneClickSettings createSetupOneClickSettings() {
-        return new SetupOneClickSettings();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the session types
-     */
-    public LstsummarySession.SessionTypes createLstsummarySessionSessionTypes() {
-        return new LstsummarySession.SessionTypes();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the one click account label type
-     */
-    public OneClickAccountLabelType createOneClickAccountLabelType() {
-        return new OneClickAccountLabelType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the enable options type
-     */
-    public EnableOptionsType createEnableOptionsType() {
-        return new EnableOptionsType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lst open session response
-     */
-    public LstOpenSessionResponse createLstOpenSessionResponse() {
-        return new LstOpenSessionResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the basic
-     */
-    public GetRecordingInfoResponse.Basic createGetRecordingInfoResponseBasic() {
-        return new GetRecordingInfoResponse.Basic();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lst dist list
-     */
-    public LstDistList createLstDistList() {
-        return new LstDistList();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the attendee option type
-     */
-    public AttendeeOptionType createAttendeeOptionType() {
-        return new AttendeeOptionType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the open session type
-     */
-    public OpenSessionType createOpenSessionType() {
-        return new OpenSessionType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the del recording
-     */
-    public DelRecording createDelRecording() {
-        return new DelRecording();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the del session response
-     */
-    public DelSessionResponse createDelSessionResponse() {
-        return new DelSessionResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the gets the recording info response
-     */
-    public GetRecordingInfoResponse createGetRecordingInfoResponse() {
-        return new GetRecordingInfoResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the telephony
-     */
-    public GetSessionInfoResponse.Telephony createGetSessionInfoResponseTelephony() {
-        return new GetSessionInfoResponse.Telephony();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the gets the recording info
-     */
-    public GetRecordingInfo createGetRecordingInfo() {
-        return new GetRecordingInfo();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the creates the dist list response
-     */
-    public CreateDistListResponse createCreateDistListResponse() {
-        return new CreateDistListResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the one click tracking code type
-     */
-    public OneClickTrackingCodeType createOneClickTrackingCodeType() {
-        return new OneClickTrackingCodeType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lstsummary session response
-     */
-    public LstsummarySessionResponse createLstsummarySessionResponse() {
-        return new LstsummarySessionResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the attendee options type
-     */
-    public AttendeeOptionsType createAttendeeOptionsType() {
-        return new AttendeeOptionsType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lst contact
-     */
-    public LstContact createLstContact() {
-        return new LstContact();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the creates the time scope type
-     */
-    public CreateTimeScopeType createCreateTimeScopeType() {
-        return new CreateTimeScopeType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the test
-     */
-    public GetSessionInfoResponse.Test createGetSessionInfoResponseTest() {
-        return new GetSessionInfoResponse.Test();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the one click meta data type
-     */
-    public OneClickMetaDataType createOneClickMetaDataType() {
-        return new OneClickMetaDataType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the list control type
-     */
-    public ListControlType createListControlType() {
-        return new ListControlType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the gets the join session info
-     */
-    public GetJoinSessionInfo createGetJoinSessionInfo() {
-        return new GetJoinSessionInfo();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the gets the api version response
-     */
-    public GetAPIVersionResponse createGetAPIVersionResponse() {
-        return new GetAPIVersionResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lstsummary session
-     */
-    public LstsummarySession createLstsummarySession() {
-        return new LstsummarySession();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the tracking codes
-     */
-    public GetOneClickSettingsResponse.TrackingCodes createGetOneClickSettingsResponseTrackingCodes() {
-        return new GetOneClickSettingsResponse.TrackingCodes();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the material
-     */
-    public GetSessionInfoResponse.Material createGetSessionInfoResponseMaterial() {
-        return new GetSessionInfoResponse.Material();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the oc tracking code type
-     */
-    public OcTrackingCodeType createOcTrackingCodeType() {
-        return new OcTrackingCodeType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the one click meta data
-     */
-    public OneClickMetaData createOneClickMetaData() {
-        return new OneClickMetaData();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the document
-     */
-    public GetSessionInfoResponse.Material.Document createGetSessionInfoResponseMaterialDocument() {
-        return new GetSessionInfoResponse.Material.Document();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lst recording response
-     */
-    public LstRecordingResponse createLstRecordingResponse() {
-        return new LstRecordingResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the service types
-     */
-    public LstRecording.ServiceTypes createLstRecordingServiceTypes() {
-        return new LstRecording.ServiceTypes();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the meta data
      */
     public GetSessionInfoResponse.MetaData createGetSessionInfoResponseMetaData() {
         return new GetSessionInfoResponse.MetaData();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link GetSessionInfoResponse }
      * 
-     * @return the attendee options
      */
-    public GetSessionInfoResponse.AttendeeOptions createGetSessionInfoResponseAttendeeOptions() {
-        return new GetSessionInfoResponse.AttendeeOptions();
+    public GetSessionInfoResponse createGetSessionInfoResponse() {
+        return new GetSessionInfoResponse();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link DelSession }
      * 
-     * @return the one click telephony type
      */
-    public OneClickTelephonyType createOneClickTelephonyType() {
-        return new OneClickTelephonyType();
+    public DelSession createDelSession() {
+        return new DelSession();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link GetSessionInfoResponse.Telephony }
      * 
-     * @return the recording basic type
+     */
+    public GetSessionInfoResponse.Telephony createGetSessionInfoResponseTelephony() {
+        return new GetSessionInfoResponse.Telephony();
+    }
+
+    /**
+     * Create an instance of {@link GetSessionInfoResponse.Telephony.CallInNum }
+     * 
+     */
+    public GetSessionInfoResponse.Telephony.CallInNum createGetSessionInfoResponseTelephonyCallInNum() {
+        return new GetSessionInfoResponse.Telephony.CallInNum();
+    }
+
+    /**
+     * Create an instance of {@link GetRecordingInfo }
+     * 
+     */
+    public GetRecordingInfo createGetRecordingInfo() {
+        return new GetRecordingInfo();
+    }
+
+    /**
+     * Create an instance of {@link OneClickMetaData }
+     * 
+     */
+    public OneClickMetaData createOneClickMetaData() {
+        return new OneClickMetaData();
+    }
+
+    /**
+     * Create an instance of {@link SetRecordingInfo }
+     * 
+     */
+    public SetRecordingInfo createSetRecordingInfo() {
+        return new SetRecordingInfo();
+    }
+
+    /**
+     * Create an instance of {@link RecordingBasicType }
+     * 
      */
     public RecordingBasicType createRecordingBasicType() {
         return new RecordingBasicType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link GetSessionInfoResponse.Material.Document }
      * 
-     * @return the contact type
      */
-    public ContactType createContactType() {
-        return new ContactType();
+    public GetSessionInfoResponse.Material.Document createGetSessionInfoResponseMaterialDocument() {
+        return new GetSessionInfoResponse.Material.Document();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link OneClickTelephonyType }
      * 
-     * @return the access control
      */
-    public GetSessionInfoResponse.AccessControl createGetSessionInfoResponseAccessControl() {
-        return new GetSessionInfoResponse.AccessControl();
+    public OneClickTelephonyType createOneClickTelephonyType() {
+        return new OneClickTelephonyType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link DelRecording }
      * 
-     * @return the oc telephony type
      */
-    public OcTelephonyType createOcTelephonyType() {
-        return new OcTelephonyType();
+    public DelRecording createDelRecording() {
+        return new DelRecording();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link SessionTemplateType }
      * 
-     * @return the creates the contacts
      */
-    public CreateContacts createCreateContacts() {
-        return new CreateContacts();
+    public SessionTemplateType createSessionTemplateType() {
+        return new SessionTemplateType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link GetOneClickSettingsResponse.TrackingCodes }
      * 
-     * @return the recording
      */
-    public SetRecordingInfo.Recording createSetRecordingInfoRecording() {
-        return new SetRecordingInfo.Recording();
+    public GetOneClickSettingsResponse.TrackingCodes createGetOneClickSettingsResponseTrackingCodes() {
+        return new GetOneClickSettingsResponse.TrackingCodes();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link GetOneClickSettingsResponse }
      * 
-     * @return the del recording response
      */
-    public DelRecordingResponse createDelRecordingResponse() {
-        return new DelRecordingResponse();
+    public GetOneClickSettingsResponse createGetOneClickSettingsResponse() {
+        return new GetOneClickSettingsResponse();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link GetSessionInfoResponse.Schedule }
      * 
-     * @return the recording type
-     */
-    public RecordingType createRecordingType() {
-        return new RecordingType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the oc meta data type
-     */
-    public OcMetaDataType createOcMetaDataType() {
-        return new OcMetaDataType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the gets the session info
-     */
-    public GetSessionInfo createGetSessionInfo() {
-        return new GetSessionInfo();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the dist list with contact type
-     */
-    public DistListWithContactType createDistListWithContactType() {
-        return new DistListWithContactType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the file access
-     */
-    public GetRecordingInfoResponse.FileAccess createGetRecordingInfoResponseFileAccess() {
-        return new GetRecordingInfoResponse.FileAccess();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the session summary instance type
-     */
-    public SessionSummaryInstanceType createSessionSummaryInstanceType() {
-        return new SessionSummaryInstanceType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the labels
-     */
-    public GetSessionInfoResponse.Telephony.Labels createGetSessionInfoResponseTelephonyLabels() {
-        return new GetSessionInfoResponse.Telephony.Labels();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the creates the contacts response
-     */
-    public CreateContactsResponse createCreateContactsResponse() {
-        return new CreateContactsResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the one click enable options type
-     */
-    public OneClickEnableOptionsType createOneClickEnableOptionsType() {
-        return new OneClickEnableOptionsType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lst contact response
-     */
-    public LstContactResponse createLstContactResponse() {
-        return new LstContactResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the sets the recording info response
-     */
-    public SetRecordingInfoResponse createSetRecordingInfoResponse() {
-        return new SetRecordingInfoResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the creates the dist list
-     */
-    public CreateDistList createCreateDistList() {
-        return new CreateDistList();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the schedule
      */
     public GetSessionInfoResponse.Schedule createGetSessionInfoResponseSchedule() {
         return new GetSessionInfoResponse.Schedule();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link EnableOptionsType }
      * 
-     * @return the dist list instance type
+     */
+    public EnableOptionsType createEnableOptionsType() {
+        return new EnableOptionsType();
+    }
+
+    /**
+     * Create an instance of {@link GetAPIVersion }
+     * 
+     */
+    public GetAPIVersion createGetAPIVersion() {
+        return new GetAPIVersion();
+    }
+
+    /**
+     * Create an instance of {@link SetupOneClickSettings }
+     * 
+     */
+    public SetupOneClickSettings createSetupOneClickSettings() {
+        return new SetupOneClickSettings();
+    }
+
+    /**
+     * Create an instance of {@link GetJoinSessionInfo }
+     * 
+     */
+    public GetJoinSessionInfo createGetJoinSessionInfo() {
+        return new GetJoinSessionInfo();
+    }
+
+    /**
+     * Create an instance of {@link GetSessionInfoResponse.AttendeeOptions }
+     * 
+     */
+    public GetSessionInfoResponse.AttendeeOptions createGetSessionInfoResponseAttendeeOptions() {
+        return new GetSessionInfoResponse.AttendeeOptions();
+    }
+
+    /**
+     * Create an instance of {@link LstRecording.ServiceTypes }
+     * 
+     */
+    public LstRecording.ServiceTypes createLstRecordingServiceTypes() {
+        return new LstRecording.ServiceTypes();
+    }
+
+    /**
+     * Create an instance of {@link OneClickTrackingCodeType }
+     * 
+     */
+    public OneClickTrackingCodeType createOneClickTrackingCodeType() {
+        return new OneClickTrackingCodeType();
+    }
+
+    /**
+     * Create an instance of {@link GetRecordingInfoResponse }
+     * 
+     */
+    public GetRecordingInfoResponse createGetRecordingInfoResponse() {
+        return new GetRecordingInfoResponse();
+    }
+
+    /**
+     * Create an instance of {@link CreateTimeScopeType }
+     * 
+     */
+    public CreateTimeScopeType createCreateTimeScopeType() {
+        return new CreateTimeScopeType();
+    }
+
+    /**
+     * Create an instance of {@link LstRecording }
+     * 
+     */
+    public LstRecording createLstRecording() {
+        return new LstRecording();
+    }
+
+    /**
+     * Create an instance of {@link LstOpenSessionResponse }
+     * 
+     */
+    public LstOpenSessionResponse createLstOpenSessionResponse() {
+        return new LstOpenSessionResponse();
+    }
+
+    /**
+     * Create an instance of {@link LstOpenSessionResponse.Services }
+     * 
+     */
+    public LstOpenSessionResponse.Services createLstOpenSessionResponseServices() {
+        return new LstOpenSessionResponse.Services();
+    }
+
+    /**
+     * Create an instance of {@link DistListInstanceType }
+     * 
      */
     public DistListInstanceType createDistListInstanceType() {
         return new DistListInstanceType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link LstsummarySession }
      * 
-     * @return the order type
      */
-    public OrderType createOrderType() {
-        return new OrderType();
+    public LstsummarySession createLstsummarySession() {
+        return new LstsummarySession();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link OcMetaDataType }
      * 
-     * @return the one click account type
      */
-    public OneClickAccountType createOneClickAccountType() {
-        return new OneClickAccountType();
+    public OcMetaDataType createOcMetaDataType() {
+        return new OcMetaDataType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link LstOpenSession }
      * 
-     * @return the recording playback type
-     */
-    public RecordingPlaybackType createRecordingPlaybackType() {
-        return new RecordingPlaybackType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the gets the one click settings
-     */
-    public GetOneClickSettings createGetOneClickSettings() {
-        return new GetOneClickSettings();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the host
-     */
-    public GetSessionInfoResponse.Host createGetSessionInfoResponseHost() {
-        return new GetSessionInfoResponse.Host();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the dist list
-     */
-    public SetDistList.DistList createSetDistListDistList() {
-        return new SetDistList.DistList();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the setup one click settings response
-     */
-    public SetupOneClickSettingsResponse createSetupOneClickSettingsResponse() {
-        return new SetupOneClickSettingsResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lst open session
      */
     public LstOpenSession createLstOpenSession() {
         return new LstOpenSession();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link SetRecordingInfo.Recording }
      * 
-     * @return the gets the join session info response
+     */
+    public SetRecordingInfo.Recording createSetRecordingInfoRecording() {
+        return new SetRecordingInfo.Recording();
+    }
+
+    /**
+     * Create an instance of {@link OneClickAccountType }
+     * 
+     */
+    public OneClickAccountType createOneClickAccountType() {
+        return new OneClickAccountType();
+    }
+
+    /**
+     * Create an instance of {@link SessionSummaryInstanceType }
+     * 
+     */
+    public SessionSummaryInstanceType createSessionSummaryInstanceType() {
+        return new SessionSummaryInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link GetAPIVersionResponse }
+     * 
+     */
+    public GetAPIVersionResponse createGetAPIVersionResponse() {
+        return new GetAPIVersionResponse();
+    }
+
+    /**
+     * Create an instance of {@link RecordingType }
+     * 
+     */
+    public RecordingType createRecordingType() {
+        return new RecordingType();
+    }
+
+    /**
+     * Create an instance of {@link LstContactResponse }
+     * 
+     */
+    public LstContactResponse createLstContactResponse() {
+        return new LstContactResponse();
+    }
+
+    /**
+     * Create an instance of {@link SetDistListResponse }
+     * 
+     */
+    public SetDistListResponse createSetDistListResponse() {
+        return new SetDistListResponse();
+    }
+
+    /**
+     * Create an instance of {@link RecordingFileAccessType }
+     * 
+     */
+    public RecordingFileAccessType createRecordingFileAccessType() {
+        return new RecordingFileAccessType();
+    }
+
+    /**
+     * Create an instance of {@link SetDistList }
+     * 
+     */
+    public SetDistList createSetDistList() {
+        return new SetDistList();
+    }
+
+    /**
+     * Create an instance of {@link GetRecordingInfoResponse.Basic }
+     * 
+     */
+    public GetRecordingInfoResponse.Basic createGetRecordingInfoResponseBasic() {
+        return new GetRecordingInfoResponse.Basic();
+    }
+
+    /**
+     * Create an instance of {@link GetOneClickSettings }
+     * 
+     */
+    public GetOneClickSettings createGetOneClickSettings() {
+        return new GetOneClickSettings();
+    }
+
+    /**
+     * Create an instance of {@link OcTrackingCodeType }
+     * 
+     */
+    public OcTrackingCodeType createOcTrackingCodeType() {
+        return new OcTrackingCodeType();
+    }
+
+    /**
+     * Create an instance of {@link LstsummarySession.ServiceTypes }
+     * 
+     */
+    public LstsummarySession.ServiceTypes createLstsummarySessionServiceTypes() {
+        return new LstsummarySession.ServiceTypes();
+    }
+
+    /**
+     * Create an instance of {@link OneClickAccountLabelType }
+     * 
+     */
+    public OneClickAccountLabelType createOneClickAccountLabelType() {
+        return new OneClickAccountLabelType();
+    }
+
+    /**
+     * Create an instance of {@link SetupOneClickSettingsResponse }
+     * 
+     */
+    public SetupOneClickSettingsResponse createSetupOneClickSettingsResponse() {
+        return new SetupOneClickSettingsResponse();
+    }
+
+    /**
+     * Create an instance of {@link LstContact }
+     * 
+     */
+    public LstContact createLstContact() {
+        return new LstContact();
+    }
+
+    /**
+     * Create an instance of {@link GetSessionInfoResponse.AccessControl }
+     * 
+     */
+    public GetSessionInfoResponse.AccessControl createGetSessionInfoResponseAccessControl() {
+        return new GetSessionInfoResponse.AccessControl();
+    }
+
+    /**
+     * Create an instance of {@link LstRecordingResponse }
+     * 
+     */
+    public LstRecordingResponse createLstRecordingResponse() {
+        return new LstRecordingResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetSessionInfoResponse.Telephony.Labels }
+     * 
+     */
+    public GetSessionInfoResponse.Telephony.Labels createGetSessionInfoResponseTelephonyLabels() {
+        return new GetSessionInfoResponse.Telephony.Labels();
+    }
+
+    /**
+     * Create an instance of {@link CreateContactsResponse }
+     * 
+     */
+    public CreateContactsResponse createCreateContactsResponse() {
+        return new CreateContactsResponse();
+    }
+
+    /**
+     * Create an instance of {@link LstsummarySessionResponse }
+     * 
+     */
+    public LstsummarySessionResponse createLstsummarySessionResponse() {
+        return new LstsummarySessionResponse();
+    }
+
+    /**
+     * Create an instance of {@link AttendeeOptionType }
+     * 
+     */
+    public AttendeeOptionType createAttendeeOptionType() {
+        return new AttendeeOptionType();
+    }
+
+    /**
+     * Create an instance of {@link SetRecordingInfoResponse }
+     * 
+     */
+    public SetRecordingInfoResponse createSetRecordingInfoResponse() {
+        return new SetRecordingInfoResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetSessionInfoResponse.Material }
+     * 
+     */
+    public GetSessionInfoResponse.Material createGetSessionInfoResponseMaterial() {
+        return new GetSessionInfoResponse.Material();
+    }
+
+    /**
+     * Create an instance of {@link DelRecordingResponse }
+     * 
+     */
+    public DelRecordingResponse createDelRecordingResponse() {
+        return new DelRecordingResponse();
+    }
+
+    /**
+     * Create an instance of {@link SetDistList.DistList }
+     * 
+     */
+    public SetDistList.DistList createSetDistListDistList() {
+        return new SetDistList.DistList();
+    }
+
+    /**
+     * Create an instance of {@link ContactType }
+     * 
+     */
+    public ContactType createContactType() {
+        return new ContactType();
+    }
+
+    /**
+     * Create an instance of {@link GetJoinSessionInfoResponse }
+     * 
      */
     public GetJoinSessionInfoResponse createGetJoinSessionInfoResponse() {
         return new GetJoinSessionInfoResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetSessionInfoResponse.Host }
+     * 
+     */
+    public GetSessionInfoResponse.Host createGetSessionInfoResponseHost() {
+        return new GetSessionInfoResponse.Host();
+    }
+
+    /**
+     * Create an instance of {@link CreateDistListResponse }
+     * 
+     */
+    public CreateDistListResponse createCreateDistListResponse() {
+        return new CreateDistListResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetRecordingInfoResponse.FileAccess }
+     * 
+     */
+    public GetRecordingInfoResponse.FileAccess createGetRecordingInfoResponseFileAccess() {
+        return new GetRecordingInfoResponse.FileAccess();
+    }
+
+    /**
+     * Create an instance of {@link OneClickEnableOptionsType }
+     * 
+     */
+    public OneClickEnableOptionsType createOneClickEnableOptionsType() {
+        return new OneClickEnableOptionsType();
+    }
+
+    /**
+     * Create an instance of {@link GetSessionInfo }
+     * 
+     */
+    public GetSessionInfo createGetSessionInfo() {
+        return new GetSessionInfo();
+    }
+
+    /**
+     * Create an instance of {@link GetSessionInfoResponse.Test }
+     * 
+     */
+    public GetSessionInfoResponse.Test createGetSessionInfoResponseTest() {
+        return new GetSessionInfoResponse.Test();
+    }
+
+    /**
+     * Create an instance of {@link SetupOneClickSettings.Tracking }
+     * 
+     */
+    public SetupOneClickSettings.Tracking createSetupOneClickSettingsTracking() {
+        return new SetupOneClickSettings.Tracking();
+    }
+
+    /**
+     * Create an instance of {@link DistListWithContactInstanceType }
+     * 
+     */
+    public DistListWithContactInstanceType createDistListWithContactInstanceType() {
+        return new DistListWithContactInstanceType();
+    }
+
+    /**
+     * Create an instance of {@link CreateContacts }
+     * 
+     */
+    public CreateContacts createCreateContacts() {
+        return new CreateContacts();
+    }
+
+    /**
+     * Create an instance of {@link OrderType }
+     * 
+     */
+    public OrderType createOrderType() {
+        return new OrderType();
+    }
+
+    /**
+     * Create an instance of {@link AttendeeOptionsType }
+     * 
+     */
+    public AttendeeOptionsType createAttendeeOptionsType() {
+        return new AttendeeOptionsType();
+    }
+
+    /**
+     * Create an instance of {@link RecordingPlaybackType }
+     * 
+     */
+    public RecordingPlaybackType createRecordingPlaybackType() {
+        return new RecordingPlaybackType();
+    }
+
+    /**
+     * Create an instance of {@link LstDistListResponse }
+     * 
+     */
+    public LstDistListResponse createLstDistListResponse() {
+        return new LstDistListResponse();
+    }
+
+    /**
+     * Create an instance of {@link OpenSessionType }
+     * 
+     */
+    public OpenSessionType createOpenSessionType() {
+        return new OpenSessionType();
+    }
+
+    /**
+     * Create an instance of {@link ListControlType }
+     * 
+     */
+    public ListControlType createListControlType() {
+        return new ListControlType();
+    }
+
+    /**
+     * Create an instance of {@link DateScopeType }
+     * 
+     */
+    public DateScopeType createDateScopeType() {
+        return new DateScopeType();
+    }
+
+    /**
+     * Create an instance of {@link OcTelephonyType }
+     * 
+     */
+    public OcTelephonyType createOcTelephonyType() {
+        return new OcTelephonyType();
+    }
+
+    /**
+     * Create an instance of {@link LstDistList }
+     * 
+     */
+    public LstDistList createLstDistList() {
+        return new LstDistList();
+    }
+
+    /**
+     * Create an instance of {@link DistListWithContactType }
+     * 
+     */
+    public DistListWithContactType createDistListWithContactType() {
+        return new DistListWithContactType();
+    }
+
+    /**
+     * Create an instance of {@link CreateDistList }
+     * 
+     */
+    public CreateDistList createCreateDistList() {
+        return new CreateDistList();
+    }
+
+    /**
+     * Create an instance of {@link OneClickMetaDataType }
+     * 
+     */
+    public OneClickMetaDataType createOneClickMetaDataType() {
+        return new OneClickMetaDataType();
+    }
+
+    /**
+     * Create an instance of {@link LstsummarySession.SessionTypes }
+     * 
+     */
+    public LstsummarySession.SessionTypes createLstsummarySessionSessionTypes() {
+        return new LstsummarySession.SessionTypes();
+    }
+
+    /**
+     * Create an instance of {@link DelSessionResponse }
+     * 
+     */
+    public DelSessionResponse createDelSessionResponse() {
+        return new DelSessionResponse();
     }
 
 }

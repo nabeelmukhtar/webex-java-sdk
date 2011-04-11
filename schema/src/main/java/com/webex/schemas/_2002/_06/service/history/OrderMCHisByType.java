@@ -22,46 +22,39 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum OrderMCHisByType.
+ * <p>Java class for orderMCHisByType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="orderMCHisByType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="CONFNAME"/>
+ *     &lt;enumeration value="STARTTIME"/>
+ *     &lt;enumeration value="TOTALATTENDEE"/>
+ *     &lt;enumeration value="HOSTNAME"/>
+ *     &lt;enumeration value="ASSISTREQUEST"/>
+ *     &lt;enumeration value="ASSISTCONFIRM"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "orderMCHisByType")
 @XmlEnum
 public enum OrderMCHisByType {
 
-    /** The CONFNAME. */
     CONFNAME,
-    
-    /** The STARTTIME. */
     STARTTIME,
-    
-    /** The TOTALATTENDEE. */
     TOTALATTENDEE,
-    
-    /** The HOSTNAME. */
     HOSTNAME,
-    
-    /** The ASSISTREQUEST. */
     ASSISTREQUEST,
-    
-    /** The ASSISTCONFIRM. */
     ASSISTCONFIRM;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the order mc his by type
-     */
     public static OrderMCHisByType fromValue(String v) {
         return valueOf(v);
     }

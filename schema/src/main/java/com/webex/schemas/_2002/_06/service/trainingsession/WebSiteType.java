@@ -25,7 +25,30 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class WebSiteType.
+ * <p>Java class for webSiteType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="webSiteType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="startDate">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="dueDate" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="emailAttendee" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}emailAttendeeType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "webSiteType", propOrder = {
@@ -37,69 +60,80 @@ public class WebSiteType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The start date. */
     @XmlElement(required = true)
     protected String startDate;
-    
-    /** The due date. */
     @XmlElement(required = true)
     protected String dueDate;
-    
-    /** The email attendee. */
     protected EmailAttendeeType emailAttendee;
 
     /**
-     * Gets the start date.
+     * Gets the value of the startDate property.
      * 
-     * @return the start date
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getStartDate() {
         return startDate;
     }
 
     /**
-     * Sets the start date.
+     * Sets the value of the startDate property.
      * 
-     * @param value the new start date
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setStartDate(String value) {
         this.startDate = value;
     }
 
     /**
-     * Gets the due date.
+     * Gets the value of the dueDate property.
      * 
-     * @return the due date
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDueDate() {
         return dueDate;
     }
 
     /**
-     * Sets the due date.
+     * Sets the value of the dueDate property.
      * 
-     * @param value the new due date
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDueDate(String value) {
         this.dueDate = value;
     }
 
     /**
-     * Gets the email attendee.
+     * Gets the value of the emailAttendee property.
      * 
-     * @return the email attendee
+     * @return
+     *     possible object is
+     *     {@link EmailAttendeeType }
+     *     
      */
     public EmailAttendeeType getEmailAttendee() {
         return emailAttendee;
     }
 
     /**
-     * Sets the email attendee.
+     * Sets the value of the emailAttendee property.
      * 
-     * @param value the new email attendee
+     * @param value
+     *     allowed object is
+     *     {@link EmailAttendeeType }
+     *     
      */
     public void setEmailAttendee(EmailAttendeeType value) {
         this.emailAttendee = value;

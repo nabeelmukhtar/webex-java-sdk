@@ -25,7 +25,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class CreationTimeScopeType.
+ * <p>Java class for creationTimeScopeType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="creationTimeScopeType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="creationTimeStart" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="creationTimeEnd" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "creationTimeScopeType", propOrder = {
@@ -36,48 +53,55 @@ public class CreationTimeScopeType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The creation time start. */
     @XmlElement(required = true)
     protected String creationTimeStart;
-    
-    /** The creation time end. */
     @XmlElement(required = true)
     protected String creationTimeEnd;
 
     /**
-     * Gets the creation time start.
+     * Gets the value of the creationTimeStart property.
      * 
-     * @return the creation time start
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCreationTimeStart() {
         return creationTimeStart;
     }
 
     /**
-     * Sets the creation time start.
+     * Sets the value of the creationTimeStart property.
      * 
-     * @param value the new creation time start
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCreationTimeStart(String value) {
         this.creationTimeStart = value;
     }
 
     /**
-     * Gets the creation time end.
+     * Gets the value of the creationTimeEnd property.
      * 
-     * @return the creation time end
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCreationTimeEnd() {
         return creationTimeEnd;
     }
 
     /**
-     * Sets the creation time end.
+     * Sets the value of the creationTimeEnd property.
      * 
-     * @param value the new creation time end
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCreationTimeEnd(String value) {
         this.creationTimeEnd = value;

@@ -24,7 +24,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class LockDownPTType.
+ * <p>Java class for lockDownPTType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="lockDownPTType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="lockDown" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="version" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lockDownPTType", propOrder = {
@@ -35,46 +52,53 @@ public class LockDownPTType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The lock down. */
     protected Boolean lockDown;
-    
-    /** The version. */
     protected String version;
 
     /**
-     * Checks if is lock down.
+     * Gets the value of the lockDown property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isLockDown() {
         return lockDown;
     }
 
     /**
-     * Sets the lock down.
+     * Sets the value of the lockDown property.
      * 
-     * @param value the new lock down
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setLockDown(Boolean value) {
         this.lockDown = value;
     }
 
     /**
-     * Gets the version.
+     * Gets the value of the version property.
      * 
-     * @return the version
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getVersion() {
         return version;
     }
 
     /**
-     * Sets the version.
+     * Sets the value of the version property.
      * 
-     * @param value the new version
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setVersion(String value) {
         this.version = value;

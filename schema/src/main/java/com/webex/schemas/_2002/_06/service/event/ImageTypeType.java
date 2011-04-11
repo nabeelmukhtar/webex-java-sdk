@@ -22,34 +22,31 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum ImageTypeType.
+ * <p>Java class for imageTypeType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="imageTypeType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="JPG"/>
+ *     &lt;enumeration value="GIF"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "imageTypeType")
 @XmlEnum
 public enum ImageTypeType {
 
-    /** The JPG. */
     JPG,
-    
-    /** The GIF. */
     GIF;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the image type type
-     */
     public static ImageTypeType fromValue(String v) {
         return valueOf(v);
     }

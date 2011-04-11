@@ -22,49 +22,41 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum OrderTCAttenHisByType.
+ * <p>Java class for orderTCAttenHisByType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="orderTCAttenHisByType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="NAME"/>
+ *     &lt;enumeration value="STARTTIME"/>
+ *     &lt;enumeration value="COMPANY"/>
+ *     &lt;enumeration value="COUNTRY"/>
+ *     &lt;enumeration value="STATE"/>
+ *     &lt;enumeration value="CITY"/>
+ *     &lt;enumeration value="CONFID"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "orderTCAttenHisByType")
 @XmlEnum
 public enum OrderTCAttenHisByType {
 
-    /** The NAME. */
     NAME,
-    
-    /** The STARTTIME. */
     STARTTIME,
-    
-    /** The COMPANY. */
     COMPANY,
-    
-    /** The COUNTRY. */
     COUNTRY,
-    
-    /** The STATE. */
     STATE,
-    
-    /** The CITY. */
     CITY,
-    
-    /** The CONFID. */
     CONFID;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the order tc atten his by type
-     */
     public static OrderTCAttenHisByType fromValue(String v) {
         return valueOf(v);
     }

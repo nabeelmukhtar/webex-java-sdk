@@ -28,7 +28,23 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class MetaDataType.
+ * <p>Java class for metaDataType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="metaDataType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="sessionType" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "metaDataType", propOrder = {
@@ -38,28 +54,31 @@ public class MetaDataType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The session type. */
     @XmlElement(type = String.class, defaultValue = "-1")
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long sessionType;
 
     /**
-     * Gets the session type.
+     * Gets the value of the sessionType property.
      * 
-     * @return the session type
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getSessionType() {
         return sessionType;
     }
 
     /**
-     * Sets the session type.
+     * Sets the value of the sessionType property.
      * 
-     * @param value the new session type
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSessionType(Long value) {
         this.sessionType = value;

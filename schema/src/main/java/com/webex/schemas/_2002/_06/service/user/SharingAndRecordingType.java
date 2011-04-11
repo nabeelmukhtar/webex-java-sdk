@@ -27,7 +27,37 @@ import com.webex.schemas._2002._06.common.SharingViewType;
 
 
 /**
- * The Class SharingAndRecordingType.
+ * <p>Java class for sharingAndRecordingType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="sharingAndRecordingType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="sharingView" type="{http://www.webex.com/schemas/2002/06/common}sharingViewType" minOccurs="0"/>
+ *         &lt;element name="sharingColor" type="{http://www.webex.com/schemas/2002/06/common}sharingColorType" minOccurs="0"/>
+ *         &lt;element name="recording" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="enforce" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *                   &lt;element name="type" type="{http://www.webex.com/schemas/2002/06/common}recordingType" minOccurs="0"/>
+ *                   &lt;element name="location" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "sharingAndRecordingType", propOrder = {
@@ -42,67 +72,78 @@ public class SharingAndRecordingType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The sharing view. */
     protected SharingViewType sharingView;
-    
-    /** The sharing color. */
     protected String sharingColor;
-    
-    /** The recording. */
     protected SharingAndRecordingType.Recording recording;
 
     /**
-     * Gets the sharing view.
+     * Gets the value of the sharingView property.
      * 
-     * @return the sharing view
+     * @return
+     *     possible object is
+     *     {@link SharingViewType }
+     *     
      */
     public SharingViewType getSharingView() {
         return sharingView;
     }
 
     /**
-     * Sets the sharing view.
+     * Sets the value of the sharingView property.
      * 
-     * @param value the new sharing view
+     * @param value
+     *     allowed object is
+     *     {@link SharingViewType }
+     *     
      */
     public void setSharingView(SharingViewType value) {
         this.sharingView = value;
     }
 
     /**
-     * Gets the sharing color.
+     * Gets the value of the sharingColor property.
      * 
-     * @return the sharing color
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSharingColor() {
         return sharingColor;
     }
 
     /**
-     * Sets the sharing color.
+     * Sets the value of the sharingColor property.
      * 
-     * @param value the new sharing color
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSharingColor(String value) {
         this.sharingColor = value;
     }
 
     /**
-     * Gets the recording.
+     * Gets the value of the recording property.
      * 
-     * @return the recording
+     * @return
+     *     possible object is
+     *     {@link SharingAndRecordingType.Recording }
+     *     
      */
     public SharingAndRecordingType.Recording getRecording() {
         return recording;
     }
 
     /**
-     * Sets the recording.
+     * Sets the value of the recording property.
      * 
-     * @param value the new recording
+     * @param value
+     *     allowed object is
+     *     {@link SharingAndRecordingType.Recording }
+     *     
      */
     public void setRecording(SharingAndRecordingType.Recording value) {
         this.recording = value;
@@ -110,7 +151,25 @@ public class SharingAndRecordingType
 
 
     /**
-     * The Class Recording.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="enforce" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+     *         &lt;element name="type" type="{http://www.webex.com/schemas/2002/06/common}recordingType" minOccurs="0"/>
+     *         &lt;element name="location" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -122,67 +181,70 @@ public class SharingAndRecordingType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The enforce. */
         protected boolean enforce;
-        
-        /** The type. */
         protected RecordingType type;
-        
-        /** The location. */
         protected String location;
 
         /**
-         * Checks if is enforce.
+         * Gets the value of the enforce property.
          * 
-         * @return true, if is enforce
          */
         public boolean isEnforce() {
             return enforce;
         }
 
         /**
-         * Sets the enforce.
+         * Sets the value of the enforce property.
          * 
-         * @param value the new enforce
          */
         public void setEnforce(boolean value) {
             this.enforce = value;
         }
 
         /**
-         * Gets the type.
+         * Gets the value of the type property.
          * 
-         * @return the type
+         * @return
+         *     possible object is
+         *     {@link RecordingType }
+         *     
          */
         public RecordingType getType() {
             return type;
         }
 
         /**
-         * Sets the type.
+         * Sets the value of the type property.
          * 
-         * @param value the new type
+         * @param value
+         *     allowed object is
+         *     {@link RecordingType }
+         *     
          */
         public void setType(RecordingType value) {
             this.type = value;
         }
 
         /**
-         * Gets the location.
+         * Gets the value of the location property.
          * 
-         * @return the location
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
          */
         public String getLocation() {
             return location;
         }
 
         /**
-         * Sets the location.
+         * Sets the value of the location property.
          * 
-         * @param value the new location
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
          */
         public void setLocation(String value) {
             this.location = value;

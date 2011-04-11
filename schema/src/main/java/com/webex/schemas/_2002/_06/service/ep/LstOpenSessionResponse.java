@@ -30,7 +30,35 @@ import com.webex.schemas._2002._06.service.MatchingRecordsType;
 
 
 /**
- * The Class LstOpenSessionResponse.
+ * <p>Java class for lstOpenSessionResponse complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="lstOpenSessionResponse">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="matchingRecords" type="{http://www.webex.com/schemas/2002/06/service}matchingRecordsType" minOccurs="0"/>
+ *         &lt;element name="services" maxOccurs="unbounded" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="serviceType" type="{http://www.webex.com/schemas/2002/06/common}serviceTypeType"/>
+ *                   &lt;element name="sessions" type="{http://www.webex.com/schemas/2002/06/service/ep}openSessionType" maxOccurs="unbounded" minOccurs="0"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstOpenSessionResponse", propOrder = {
@@ -42,37 +70,55 @@ public class LstOpenSessionResponse
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The matching records. */
     protected MatchingRecordsType matchingRecords;
-    
-    /** The services. */
     protected List<LstOpenSessionResponse.Services> services;
 
     /**
-     * Gets the matching records.
+     * Gets the value of the matchingRecords property.
      * 
-     * @return the matching records
+     * @return
+     *     possible object is
+     *     {@link MatchingRecordsType }
+     *     
      */
     public MatchingRecordsType getMatchingRecords() {
         return matchingRecords;
     }
 
     /**
-     * Sets the matching records.
+     * Sets the value of the matchingRecords property.
      * 
-     * @param value the new matching records
+     * @param value
+     *     allowed object is
+     *     {@link MatchingRecordsType }
+     *     
      */
     public void setMatchingRecords(MatchingRecordsType value) {
         this.matchingRecords = value;
     }
 
     /**
-     * Gets the services.
+     * Gets the value of the services property.
      * 
-     * @return the services
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the services property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getServices().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link LstOpenSessionResponse.Services }
+     * 
+     * 
      */
     public List<LstOpenSessionResponse.Services> getServices() {
         if (services == null) {
@@ -83,7 +129,24 @@ public class LstOpenSessionResponse
 
 
     /**
-     * The Class Services.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="serviceType" type="{http://www.webex.com/schemas/2002/06/common}serviceTypeType"/>
+     *         &lt;element name="sessions" type="{http://www.webex.com/schemas/2002/06/service/ep}openSessionType" maxOccurs="unbounded" minOccurs="0"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -94,38 +157,56 @@ public class LstOpenSessionResponse
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The service type. */
         @XmlElement(required = true)
         protected ServiceTypeType serviceType;
-        
-        /** The sessions. */
         protected List<OpenSessionType> sessions;
 
         /**
-         * Gets the service type.
+         * Gets the value of the serviceType property.
          * 
-         * @return the service type
+         * @return
+         *     possible object is
+         *     {@link ServiceTypeType }
+         *     
          */
         public ServiceTypeType getServiceType() {
             return serviceType;
         }
 
         /**
-         * Sets the service type.
+         * Sets the value of the serviceType property.
          * 
-         * @param value the new service type
+         * @param value
+         *     allowed object is
+         *     {@link ServiceTypeType }
+         *     
          */
         public void setServiceType(ServiceTypeType value) {
             this.serviceType = value;
         }
 
         /**
-         * Gets the sessions.
+         * Gets the value of the sessions property.
          * 
-         * @return the sessions
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the sessions property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getSessions().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link OpenSessionType }
+         * 
+         * 
          */
         public List<OpenSessionType> getSessions() {
             if (sessions == null) {

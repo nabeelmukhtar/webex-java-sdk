@@ -26,7 +26,25 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class SendInvitationEmail.
+ * <p>Java class for sendInvitationEmail complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="sendInvitationEmail">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="attendees" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="panelists" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "sendInvitationEmail", propOrder = {
@@ -39,68 +57,71 @@ public class SendInvitationEmail
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The session key. */
     protected long sessionKey;
-    
-    /** The attendees. */
     @XmlElement(defaultValue = "true")
     protected Boolean attendees;
-    
-    /** The panelists. */
     protected Boolean panelists;
 
     /**
-     * Gets the session key.
+     * Gets the value of the sessionKey property.
      * 
-     * @return the session key
      */
     public long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the session key.
+     * Sets the value of the sessionKey property.
      * 
-     * @param value the new session key
      */
     public void setSessionKey(long value) {
         this.sessionKey = value;
     }
 
     /**
-     * Checks if is attendees.
+     * Gets the value of the attendees property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAttendees() {
         return attendees;
     }
 
     /**
-     * Sets the attendees.
+     * Sets the value of the attendees property.
      * 
-     * @param value the new attendees
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAttendees(Boolean value) {
         this.attendees = value;
     }
 
     /**
-     * Checks if is panelists.
+     * Gets the value of the panelists property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isPanelists() {
         return panelists;
     }
 
     /**
-     * Sets the panelists.
+     * Sets the value of the panelists property.
      * 
-     * @param value the new panelists
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setPanelists(Boolean value) {
         this.panelists = value;

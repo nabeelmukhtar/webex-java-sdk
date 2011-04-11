@@ -27,7 +27,26 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class TspServerType.
+ * <p>Java class for tspServerType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="tspServerType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="enableAdaptor" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         &lt;element name="serverIP" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="mpAudio" type="{http://www.webex.com/schemas/2002/06/service/site}mpAudioType" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="globalCallInNumURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "tspServerType", propOrder = {
@@ -40,62 +59,74 @@ public class TspServerType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The enable adaptor. */
     protected boolean enableAdaptor;
-    
-    /** The server ip. */
     @XmlElement(required = true)
     protected String serverIP;
-    
-    /** The mp audio. */
     protected List<MpAudioType> mpAudio;
-    
-    /** The global call in num url. */
     protected String globalCallInNumURL;
 
     /**
-     * Checks if is enable adaptor.
+     * Gets the value of the enableAdaptor property.
      * 
-     * @return true, if is enable adaptor
      */
     public boolean isEnableAdaptor() {
         return enableAdaptor;
     }
 
     /**
-     * Sets the enable adaptor.
+     * Sets the value of the enableAdaptor property.
      * 
-     * @param value the new enable adaptor
      */
     public void setEnableAdaptor(boolean value) {
         this.enableAdaptor = value;
     }
 
     /**
-     * Gets the server ip.
+     * Gets the value of the serverIP property.
      * 
-     * @return the server ip
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getServerIP() {
         return serverIP;
     }
 
     /**
-     * Sets the server ip.
+     * Sets the value of the serverIP property.
      * 
-     * @param value the new server ip
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setServerIP(String value) {
         this.serverIP = value;
     }
 
     /**
-     * Gets the mp audio.
+     * Gets the value of the mpAudio property.
      * 
-     * @return the mp audio
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the mpAudio property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getMpAudio().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link MpAudioType }
+     * 
+     * 
      */
     public List<MpAudioType> getMpAudio() {
         if (mpAudio == null) {
@@ -105,18 +136,24 @@ public class TspServerType
     }
 
     /**
-     * Gets the global call in num url.
+     * Gets the value of the globalCallInNumURL property.
      * 
-     * @return the global call in num url
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getGlobalCallInNumURL() {
         return globalCallInNumURL;
     }
 
     /**
-     * Sets the global call in num url.
+     * Sets the value of the globalCallInNumURL property.
      * 
-     * @param value the new global call in num url
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setGlobalCallInNumURL(String value) {
         this.globalCallInNumURL = value;

@@ -30,7 +30,24 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class OneClickMetaData.
+ * <p>Java class for oneClickMetaData complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="oneClickMetaData">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="serviceType" type="{http://www.webex.com/schemas/2002/06/common}serviceTypeType"/>
+ *         &lt;element name="sessionType" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "oneClickMetaData", propOrder = {
@@ -44,50 +61,57 @@ public class OneClickMetaData
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The service type. */
     @XmlElement(required = true)
     protected ServiceTypeType serviceType;
-    
-    /** The session type. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long sessionType;
 
     /**
-     * Gets the service type.
+     * Gets the value of the serviceType property.
      * 
-     * @return the service type
+     * @return
+     *     possible object is
+     *     {@link ServiceTypeType }
+     *     
      */
     public ServiceTypeType getServiceType() {
         return serviceType;
     }
 
     /**
-     * Sets the service type.
+     * Sets the value of the serviceType property.
      * 
-     * @param value the new service type
+     * @param value
+     *     allowed object is
+     *     {@link ServiceTypeType }
+     *     
      */
     public void setServiceType(ServiceTypeType value) {
         this.serviceType = value;
     }
 
     /**
-     * Gets the session type.
+     * Gets the value of the sessionType property.
      * 
-     * @return the session type
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getSessionType() {
         return sessionType;
     }
 
     /**
-     * Sets the session type.
+     * Sets the value of the sessionType property.
      * 
-     * @param value the new session type
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSessionType(Long value) {
         this.sessionType = value;

@@ -29,7 +29,27 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class SessionOptionsType.
+ * <p>Java class for sessionOptionsType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="sessionOptionsType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="defaultSessionType" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="defaultServiceType" type="{http://www.webex.com/schemas/2002/06/common}serviceTypeType" minOccurs="0"/>
+ *         &lt;element name="autoDeleteAfterMeetingEnd" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="displayQuickStartHost" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="displayQuickStartAttendees" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "sessionOptionsType", propOrder = {
@@ -43,112 +63,131 @@ public class SessionOptionsType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The default session type. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long defaultSessionType;
-    
-    /** The default service type. */
     protected ServiceTypeType defaultServiceType;
-    
-    /** The auto delete after meeting end. */
     protected Boolean autoDeleteAfterMeetingEnd;
-    
-    /** The display quick start host. */
     protected Boolean displayQuickStartHost;
-    
-    /** The display quick start attendees. */
     protected Boolean displayQuickStartAttendees;
 
     /**
-     * Gets the default session type.
+     * Gets the value of the defaultSessionType property.
      * 
-     * @return the default session type
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getDefaultSessionType() {
         return defaultSessionType;
     }
 
     /**
-     * Sets the default session type.
+     * Sets the value of the defaultSessionType property.
      * 
-     * @param value the new default session type
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDefaultSessionType(Long value) {
         this.defaultSessionType = value;
     }
 
     /**
-     * Gets the default service type.
+     * Gets the value of the defaultServiceType property.
      * 
-     * @return the default service type
+     * @return
+     *     possible object is
+     *     {@link ServiceTypeType }
+     *     
      */
     public ServiceTypeType getDefaultServiceType() {
         return defaultServiceType;
     }
 
     /**
-     * Sets the default service type.
+     * Sets the value of the defaultServiceType property.
      * 
-     * @param value the new default service type
+     * @param value
+     *     allowed object is
+     *     {@link ServiceTypeType }
+     *     
      */
     public void setDefaultServiceType(ServiceTypeType value) {
         this.defaultServiceType = value;
     }
 
     /**
-     * Checks if is auto delete after meeting end.
+     * Gets the value of the autoDeleteAfterMeetingEnd property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAutoDeleteAfterMeetingEnd() {
         return autoDeleteAfterMeetingEnd;
     }
 
     /**
-     * Sets the auto delete after meeting end.
+     * Sets the value of the autoDeleteAfterMeetingEnd property.
      * 
-     * @param value the new auto delete after meeting end
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAutoDeleteAfterMeetingEnd(Boolean value) {
         this.autoDeleteAfterMeetingEnd = value;
     }
 
     /**
-     * Checks if is display quick start host.
+     * Gets the value of the displayQuickStartHost property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isDisplayQuickStartHost() {
         return displayQuickStartHost;
     }
 
     /**
-     * Sets the display quick start host.
+     * Sets the value of the displayQuickStartHost property.
      * 
-     * @param value the new display quick start host
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setDisplayQuickStartHost(Boolean value) {
         this.displayQuickStartHost = value;
     }
 
     /**
-     * Checks if is display quick start attendees.
+     * Gets the value of the displayQuickStartAttendees property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isDisplayQuickStartAttendees() {
         return displayQuickStartAttendees;
     }
 
     /**
-     * Sets the display quick start attendees.
+     * Sets the value of the displayQuickStartAttendees property.
      * 
-     * @param value the new display quick start attendees
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setDisplayQuickStartAttendees(Boolean value) {
         this.displayQuickStartAttendees = value;

@@ -28,7 +28,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class ConditionvarType.
+ * <p>Java class for conditionvarType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="conditionvarType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;choice maxOccurs="unbounded">
+ *         &lt;element name="not" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}notType"/>
+ *         &lt;element name="varequal" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}varequalType"/>
+ *       &lt;/choice>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "conditionvarType", propOrder = {
@@ -38,24 +55,39 @@ public class ConditionvarType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The not or varequal. */
     @XmlElements({
-        @XmlElement(name = "not", type = NotType.class),
-        @XmlElement(name = "varequal", type = VarequalType.class)
+        @XmlElement(name = "varequal", type = VarequalType.class),
+        @XmlElement(name = "not", type = NotType.class)
     })
-    protected List<Serializable> notOrVarequal;
+    protected List<Object> notOrVarequal;
 
     /**
-     * Gets the not or varequal.
+     * Gets the value of the notOrVarequal property.
      * 
-     * @return the not or varequal
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the notOrVarequal property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getNotOrVarequal().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link VarequalType }
+     * {@link NotType }
+     * 
+     * 
      */
-    public List<Serializable> getNotOrVarequal() {
+    public List<Object> getNotOrVarequal() {
         if (notOrVarequal == null) {
-            notOrVarequal = new ArrayList<Serializable>();
+            notOrVarequal = new ArrayList<Object>();
         }
         return this.notOrVarequal;
     }

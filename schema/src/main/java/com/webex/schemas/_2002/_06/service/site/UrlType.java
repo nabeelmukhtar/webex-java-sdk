@@ -24,7 +24,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class UrlType.
+ * <p>Java class for urlType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="urlType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="url" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="target" type="{http://www.webex.com/schemas/2002/06/service/site}windowTargetType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "urlType", propOrder = {
@@ -35,46 +52,53 @@ public class UrlType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The url. */
     protected String url;
-    
-    /** The target. */
     protected WindowTargetType target;
 
     /**
-     * Gets the url.
+     * Gets the value of the url property.
      * 
-     * @return the url
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getUrl() {
         return url;
     }
 
     /**
-     * Sets the url.
+     * Sets the value of the url property.
      * 
-     * @param value the new url
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setUrl(String value) {
         this.url = value;
     }
 
     /**
-     * Gets the target.
+     * Gets the value of the target property.
      * 
-     * @return the target
+     * @return
+     *     possible object is
+     *     {@link WindowTargetType }
+     *     
      */
     public WindowTargetType getTarget() {
         return target;
     }
 
     /**
-     * Sets the target.
+     * Sets the value of the target property.
      * 
-     * @param value the new target
+     * @param value
+     *     allowed object is
+     *     {@link WindowTargetType }
+     *     
      */
     public void setTarget(WindowTargetType value) {
         this.target = value;

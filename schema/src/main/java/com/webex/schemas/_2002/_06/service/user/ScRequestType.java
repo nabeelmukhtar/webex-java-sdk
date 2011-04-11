@@ -22,40 +22,35 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum ScRequestType.
+ * <p>Java class for scRequestType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="scRequestType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="DESK_VIEW"/>
+ *     &lt;enumeration value="DESK_CTRL"/>
+ *     &lt;enumeration value="APP_VIEW"/>
+ *     &lt;enumeration value="APP_CTRL"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "scRequestType")
 @XmlEnum
 public enum ScRequestType {
 
-    /** The DES k_ view. */
     DESK_VIEW,
-    
-    /** The DES k_ ctrl. */
     DESK_CTRL,
-    
-    /** The AP p_ view. */
     APP_VIEW,
-    
-    /** The AP p_ ctrl. */
     APP_CTRL;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the sc request type
-     */
     public static ScRequestType fromValue(String v) {
         return valueOf(v);
     }

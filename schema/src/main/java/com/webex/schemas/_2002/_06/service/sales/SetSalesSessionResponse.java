@@ -25,7 +25,23 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class SetSalesSessionResponse.
+ * <p>Java class for setSalesSessionResponse complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="setSalesSessionResponse">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="iCalendarURL" type="{http://www.webex.com/schemas/2002/06/service/sales}iCalendarURL" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "setSalesSessionResponse", propOrder = {
@@ -36,25 +52,28 @@ public class SetSalesSessionResponse
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The i calendar url. */
     protected ICalendarURL iCalendarURL;
 
     /**
-     * Gets the i calendar url.
+     * Gets the value of the iCalendarURL property.
      * 
-     * @return the i calendar url
+     * @return
+     *     possible object is
+     *     {@link ICalendarURL }
+     *     
      */
     public ICalendarURL getICalendarURL() {
         return iCalendarURL;
     }
 
     /**
-     * Sets the i calendar url.
+     * Sets the value of the iCalendarURL property.
      * 
-     * @param value the new i calendar url
+     * @param value
+     *     allowed object is
+     *     {@link ICalendarURL }
+     *     
      */
     public void setICalendarURL(ICalendarURL value) {
         this.iCalendarURL = value;

@@ -22,37 +22,33 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum ProductOrderByType.
+ * <p>Java class for productOrderByType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="productOrderByType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="PRODID"/>
+ *     &lt;enumeration value="NAME"/>
+ *     &lt;enumeration value="DESCRIPTION"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "productOrderByType")
 @XmlEnum
 public enum ProductOrderByType {
 
-    /** The PRODID. */
     PRODID,
-    
-    /** The NAME. */
     NAME,
-    
-    /** The DESCRIPTION. */
     DESCRIPTION;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the product order by type
-     */
     public static ProductOrderByType fromValue(String v) {
         return valueOf(v);
     }

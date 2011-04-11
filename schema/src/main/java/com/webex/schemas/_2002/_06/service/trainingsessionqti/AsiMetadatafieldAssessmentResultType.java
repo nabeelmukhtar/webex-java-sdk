@@ -25,7 +25,38 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class AsiMetadatafieldAssessmentResultType.
+ * <p>Java class for asi_metadatafield_assessment_resultType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="asi_metadatafield_assessment_resultType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="field_name">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;minLength value="1"/>
+ *               &lt;maxLength value="256"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="field_value">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;minLength value="1"/>
+ *               &lt;maxLength value="256"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "asi_metadatafield_assessment_resultType", propOrder = {
@@ -36,48 +67,55 @@ public class AsiMetadatafieldAssessmentResultType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The field name. */
     @XmlElement(name = "field_name", required = true, defaultValue = "overall_comments")
     protected String fieldName;
-    
-    /** The field value. */
     @XmlElement(name = "field_value", required = true)
     protected String fieldValue;
 
     /**
-     * Gets the field name.
+     * Gets the value of the fieldName property.
      * 
-     * @return the field name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFieldName() {
         return fieldName;
     }
 
     /**
-     * Sets the field name.
+     * Sets the value of the fieldName property.
      * 
-     * @param value the new field name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFieldName(String value) {
         this.fieldName = value;
     }
 
     /**
-     * Gets the field value.
+     * Gets the value of the fieldValue property.
      * 
-     * @return the field value
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFieldValue() {
         return fieldValue;
     }
 
     /**
-     * Sets the field value.
+     * Sets the value of the fieldValue property.
      * 
-     * @param value the new field value
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFieldValue(String value) {
         this.fieldValue = value;

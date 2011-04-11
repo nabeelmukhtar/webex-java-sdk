@@ -28,7 +28,31 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * The Class VarinsideType.
+ * <p>Java class for varinsideType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="varinsideType">
+ *   &lt;simpleContent>
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
+ *       &lt;attribute name="areatype" use="required">
+ *         &lt;simpleType>
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
+ *             &lt;enumeration value="Ellipse"/>
+ *             &lt;enumeration value="Rectangle"/>
+ *             &lt;enumeration value="Bounded"/>
+ *           &lt;/restriction>
+ *         &lt;/simpleType>
+ *       &lt;/attribute>
+ *       &lt;attribute name="respident" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       &lt;attribute name="index" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *     &lt;/extension>
+ *   &lt;/simpleContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "varinsideType", propOrder = {
@@ -38,93 +62,108 @@ public class VarinsideType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The value. */
     @XmlValue
     protected String value;
-    
-    /** The areatype. */
     @XmlAttribute(required = true)
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String areatype;
-    
-    /** The respident. */
     @XmlAttribute(required = true)
     protected String respident;
-    
-    /** The index. */
     @XmlAttribute
     protected String index;
 
     /**
-     * Gets the value.
+     * Gets the value of the value property.
      * 
-     * @return the value
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value.
+     * Sets the value of the value property.
      * 
-     * @param value the new value
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setValue(String value) {
         this.value = value;
     }
 
     /**
-     * Gets the areatype.
+     * Gets the value of the areatype property.
      * 
-     * @return the areatype
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getAreatype() {
         return areatype;
     }
 
     /**
-     * Sets the areatype.
+     * Sets the value of the areatype property.
      * 
-     * @param value the new areatype
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAreatype(String value) {
         this.areatype = value;
     }
 
     /**
-     * Gets the respident.
+     * Gets the value of the respident property.
      * 
-     * @return the respident
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getRespident() {
         return respident;
     }
 
     /**
-     * Sets the respident.
+     * Sets the value of the respident property.
      * 
-     * @param value the new respident
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setRespident(String value) {
         this.respident = value;
     }
 
     /**
-     * Gets the index.
+     * Gets the value of the index property.
      * 
-     * @return the index
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getIndex() {
         return index;
     }
 
     /**
-     * Sets the index.
+     * Sets the value of the index property.
      * 
-     * @param value the new index
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setIndex(String value) {
         this.index = value;

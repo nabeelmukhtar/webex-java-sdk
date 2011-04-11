@@ -25,7 +25,44 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class EmailTemplateType.
+ * <p>Java class for emailTemplateType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="emailTemplateType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="subject" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="512"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="from" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="128"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="replyTo" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="128"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="content" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "emailTemplateType", propOrder = {
@@ -48,88 +85,103 @@ public class EmailTemplateType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The subject. */
     protected String subject;
-    
-    /** The from. */
     protected String from;
-    
-    /** The reply to. */
     protected String replyTo;
-    
-    /** The content. */
     protected String content;
 
     /**
-     * Gets the subject.
+     * Gets the value of the subject property.
      * 
-     * @return the subject
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSubject() {
         return subject;
     }
 
     /**
-     * Sets the subject.
+     * Sets the value of the subject property.
      * 
-     * @param value the new subject
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSubject(String value) {
         this.subject = value;
     }
 
     /**
-     * Gets the from.
+     * Gets the value of the from property.
      * 
-     * @return the from
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFrom() {
         return from;
     }
 
     /**
-     * Sets the from.
+     * Sets the value of the from property.
      * 
-     * @param value the new from
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFrom(String value) {
         this.from = value;
     }
 
     /**
-     * Gets the reply to.
+     * Gets the value of the replyTo property.
      * 
-     * @return the reply to
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getReplyTo() {
         return replyTo;
     }
 
     /**
-     * Sets the reply to.
+     * Sets the value of the replyTo property.
      * 
-     * @param value the new reply to
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setReplyTo(String value) {
         this.replyTo = value;
     }
 
     /**
-     * Gets the content.
+     * Gets the value of the content property.
      * 
-     * @return the content
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getContent() {
         return content;
     }
 
     /**
-     * Sets the content.
+     * Sets the value of the content property.
      * 
-     * @param value the new content
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setContent(String value) {
         this.content = value;

@@ -27,7 +27,26 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class ItemResultType.
+ * <p>Java class for item_resultType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="item_resultType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="asi_metadata" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}asi_metadata_item_resultType" minOccurs="0"/>
+ *         &lt;element name="response" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}responseType" maxOccurs="unbounded"/>
+ *         &lt;element name="outcomes" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}outcomes_item_resultType"/>
+ *         &lt;element name="feedback_displayed" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}feedback_displayedType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "item_resultType", propOrder = {
@@ -40,47 +59,61 @@ public class ItemResultType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The asi metadata. */
     @XmlElement(name = "asi_metadata")
     protected AsiMetadataItemResultType asiMetadata;
-    
-    /** The response. */
     @XmlElement(required = true)
     protected List<ResponseType> response;
-    
-    /** The outcomes. */
     @XmlElement(required = true)
     protected OutcomesItemResultType outcomes;
-    
-    /** The feedback displayed. */
     @XmlElement(name = "feedback_displayed")
     protected FeedbackDisplayedType feedbackDisplayed;
 
     /**
-     * Gets the asi metadata.
+     * Gets the value of the asiMetadata property.
      * 
-     * @return the asi metadata
+     * @return
+     *     possible object is
+     *     {@link AsiMetadataItemResultType }
+     *     
      */
     public AsiMetadataItemResultType getAsiMetadata() {
         return asiMetadata;
     }
 
     /**
-     * Sets the asi metadata.
+     * Sets the value of the asiMetadata property.
      * 
-     * @param value the new asi metadata
+     * @param value
+     *     allowed object is
+     *     {@link AsiMetadataItemResultType }
+     *     
      */
     public void setAsiMetadata(AsiMetadataItemResultType value) {
         this.asiMetadata = value;
     }
 
     /**
-     * Gets the response.
+     * Gets the value of the response property.
      * 
-     * @return the response
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the response property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getResponse().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link ResponseType }
+     * 
+     * 
      */
     public List<ResponseType> getResponse() {
         if (response == null) {
@@ -90,36 +123,48 @@ public class ItemResultType
     }
 
     /**
-     * Gets the outcomes.
+     * Gets the value of the outcomes property.
      * 
-     * @return the outcomes
+     * @return
+     *     possible object is
+     *     {@link OutcomesItemResultType }
+     *     
      */
     public OutcomesItemResultType getOutcomes() {
         return outcomes;
     }
 
     /**
-     * Sets the outcomes.
+     * Sets the value of the outcomes property.
      * 
-     * @param value the new outcomes
+     * @param value
+     *     allowed object is
+     *     {@link OutcomesItemResultType }
+     *     
      */
     public void setOutcomes(OutcomesItemResultType value) {
         this.outcomes = value;
     }
 
     /**
-     * Gets the feedback displayed.
+     * Gets the value of the feedbackDisplayed property.
      * 
-     * @return the feedback displayed
+     * @return
+     *     possible object is
+     *     {@link FeedbackDisplayedType }
+     *     
      */
     public FeedbackDisplayedType getFeedbackDisplayed() {
         return feedbackDisplayed;
     }
 
     /**
-     * Sets the feedback displayed.
+     * Sets the value of the feedbackDisplayed property.
      * 
-     * @param value the new feedback displayed
+     * @param value
+     *     allowed object is
+     *     {@link FeedbackDisplayedType }
+     *     
      */
     public void setFeedbackDisplayed(FeedbackDisplayedType value) {
         this.feedbackDisplayed = value;

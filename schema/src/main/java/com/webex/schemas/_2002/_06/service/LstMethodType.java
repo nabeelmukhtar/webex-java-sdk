@@ -22,34 +22,31 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum LstMethodType.
+ * <p>Java class for lstMethodType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="lstMethodType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="AND"/>
+ *     &lt;enumeration value="OR"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "lstMethodType")
 @XmlEnum
 public enum LstMethodType {
 
-    /** The AND. */
     AND,
-    
-    /** The OR. */
     OR;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the lst method type
-     */
     public static LstMethodType fromValue(String v) {
         return valueOf(v);
     }

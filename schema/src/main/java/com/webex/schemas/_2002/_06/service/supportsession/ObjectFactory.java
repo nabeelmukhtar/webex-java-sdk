@@ -21,58 +21,65 @@ import javax.xml.bind.annotation.XmlRegistry;
 
 
 /**
- * A factory for creating Object objects.
+ * This object contains factory methods for each 
+ * Java content interface and Java element interface 
+ * generated in the com.webex.schemas._2002._06.service.supportsession package. 
+ * <p>An ObjectFactory allows you to programatically 
+ * construct new instances of the Java representation 
+ * for XML content. The Java representation of XML 
+ * content can consist of schema derived interfaces 
+ * and classes representing the binding of schema 
+ * type definitions, element declarations and model 
+ * groups.  Factory methods for each of these are 
+ * provided in this class.
+ * 
  */
 @XmlRegistry
 public class ObjectFactory {
 
 
     /**
-     * Instantiates a new object factory.
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.webex.schemas._2002._06.service.supportsession
+     * 
      */
     public ObjectFactory() {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link SupportType }
      * 
-     * @return the creates the support session
-     */
-    public CreateSupportSession createCreateSupportSession() {
-        return new CreateSupportSession();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the meta data type
-     */
-    public MetaDataType createMetaDataType() {
-        return new MetaDataType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the creates the support session response
-     */
-    public CreateSupportSessionResponse createCreateSupportSessionResponse() {
-        return new CreateSupportSessionResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the support type
      */
     public SupportType createSupportType() {
         return new SupportType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link CreateSupportSession }
      * 
-     * @return the support instance type
+     */
+    public CreateSupportSession createCreateSupportSession() {
+        return new CreateSupportSession();
+    }
+
+    /**
+     * Create an instance of {@link MetaDataType }
+     * 
+     */
+    public MetaDataType createMetaDataType() {
+        return new MetaDataType();
+    }
+
+    /**
+     * Create an instance of {@link CreateSupportSessionResponse }
+     * 
+     */
+    public CreateSupportSessionResponse createCreateSupportSessionResponse() {
+        return new CreateSupportSessionResponse();
+    }
+
+    /**
+     * Create an instance of {@link SupportInstanceType }
+     * 
      */
     public SupportInstanceType createSupportInstanceType() {
         return new SupportInstanceType();

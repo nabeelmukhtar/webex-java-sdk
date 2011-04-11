@@ -33,7 +33,47 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class MeetingUsageHistoryInstanceType.
+ * <p>Java class for meetingUsageHistoryInstanceType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="meetingUsageHistoryInstanceType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="confName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="meetingStartTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="meetingEndTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="duration" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="timezone" type="{http://www.webex.com/schemas/2002/06/common}timeZoneType" minOccurs="0"/>
+ *         &lt;element name="trackingCode" type="{http://www.webex.com/schemas/2002/06/common}trackingType" minOccurs="0"/>
+ *         &lt;element name="meetingType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="hostWebExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="hostName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="hostEmail" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="totalCallInMinutes" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="totalPeopleMinutes" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="totalCallInTollfreeMinutes" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="totalCallOutDomestic" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="totalCallOutInternational" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="totalVoipMinutes" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="userID" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="totalParticipants" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="totalParticipantsVoip" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
+ *         &lt;element name="totalParticipantsCallIn" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="totalParticipantsCallOut" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="confID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="peakAttendee" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="assistService" type="{http://www.webex.com/schemas/2002/06/service}meetingAssistType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "meetingUsageHistoryInstanceType", propOrder = {
@@ -71,541 +111,640 @@ public class MeetingUsageHistoryInstanceType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The session key. */
     protected Long sessionKey;
-    
-    /** The conf name. */
     protected String confName;
-    
-    /** The meeting start time. */
     protected String meetingStartTime;
-    
-    /** The meeting end time. */
     protected String meetingEndTime;
-    
-    /** The duration. */
     protected Long duration;
-    
-    /** The timezone. */
     protected TimeZoneType timezone;
-    
-    /** The tracking code. */
     protected TrackingType trackingCode;
-    
-    /** The meeting type. */
     protected String meetingType;
-    
-    /** The host web ex id. */
     protected String hostWebExID;
-    
-    /** The host name. */
     protected String hostName;
-    
-    /** The host email. */
     protected String hostEmail;
-    
-    /** The total call in minutes. */
     protected Long totalCallInMinutes;
-    
-    /** The total people minutes. */
     protected Long totalPeopleMinutes;
-    
-    /** The total call in tollfree minutes. */
     protected Long totalCallInTollfreeMinutes;
-    
-    /** The total call out domestic. */
     protected Long totalCallOutDomestic;
-    
-    /** The total call out international. */
     protected Long totalCallOutInternational;
-    
-    /** The total voip minutes. */
     protected Long totalVoipMinutes;
-    
-    /** The user id. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long userID;
-    
-    /** The total participants. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long totalParticipants;
-    
-    /** The total participants voip. */
     protected Integer totalParticipantsVoip;
-    
-    /** The total participants call in. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long totalParticipantsCallIn;
-    
-    /** The total participants call out. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long totalParticipantsCallOut;
-    
-    /** The conf id. */
     protected Long confID;
-    
-    /** The peak attendee. */
     protected Long peakAttendee;
-    
-    /** The assist service. */
     protected MeetingAssistType assistService;
 
     /**
-     * Gets the session key.
+     * Gets the value of the sessionKey property.
      * 
-     * @return the session key
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the session key.
+     * Sets the value of the sessionKey property.
      * 
-     * @param value the new session key
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setSessionKey(Long value) {
         this.sessionKey = value;
     }
 
     /**
-     * Gets the conf name.
+     * Gets the value of the confName property.
      * 
-     * @return the conf name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getConfName() {
         return confName;
     }
 
     /**
-     * Sets the conf name.
+     * Sets the value of the confName property.
      * 
-     * @param value the new conf name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setConfName(String value) {
         this.confName = value;
     }
 
     /**
-     * Gets the meeting start time.
+     * Gets the value of the meetingStartTime property.
      * 
-     * @return the meeting start time
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMeetingStartTime() {
         return meetingStartTime;
     }
 
     /**
-     * Sets the meeting start time.
+     * Sets the value of the meetingStartTime property.
      * 
-     * @param value the new meeting start time
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMeetingStartTime(String value) {
         this.meetingStartTime = value;
     }
 
     /**
-     * Gets the meeting end time.
+     * Gets the value of the meetingEndTime property.
      * 
-     * @return the meeting end time
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMeetingEndTime() {
         return meetingEndTime;
     }
 
     /**
-     * Sets the meeting end time.
+     * Sets the value of the meetingEndTime property.
      * 
-     * @param value the new meeting end time
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMeetingEndTime(String value) {
         this.meetingEndTime = value;
     }
 
     /**
-     * Gets the duration.
+     * Gets the value of the duration property.
      * 
-     * @return the duration
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getDuration() {
         return duration;
     }
 
     /**
-     * Sets the duration.
+     * Sets the value of the duration property.
      * 
-     * @param value the new duration
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setDuration(Long value) {
         this.duration = value;
     }
 
     /**
-     * Gets the timezone.
+     * Gets the value of the timezone property.
      * 
-     * @return the timezone
+     * @return
+     *     possible object is
+     *     {@link TimeZoneType }
+     *     
      */
     public TimeZoneType getTimezone() {
         return timezone;
     }
 
     /**
-     * Sets the timezone.
+     * Sets the value of the timezone property.
      * 
-     * @param value the new timezone
+     * @param value
+     *     allowed object is
+     *     {@link TimeZoneType }
+     *     
      */
     public void setTimezone(TimeZoneType value) {
         this.timezone = value;
     }
 
     /**
-     * Gets the tracking code.
+     * Gets the value of the trackingCode property.
      * 
-     * @return the tracking code
+     * @return
+     *     possible object is
+     *     {@link TrackingType }
+     *     
      */
     public TrackingType getTrackingCode() {
         return trackingCode;
     }
 
     /**
-     * Sets the tracking code.
+     * Sets the value of the trackingCode property.
      * 
-     * @param value the new tracking code
+     * @param value
+     *     allowed object is
+     *     {@link TrackingType }
+     *     
      */
     public void setTrackingCode(TrackingType value) {
         this.trackingCode = value;
     }
 
     /**
-     * Gets the meeting type.
+     * Gets the value of the meetingType property.
      * 
-     * @return the meeting type
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMeetingType() {
         return meetingType;
     }
 
     /**
-     * Sets the meeting type.
+     * Sets the value of the meetingType property.
      * 
-     * @param value the new meeting type
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMeetingType(String value) {
         this.meetingType = value;
     }
 
     /**
-     * Gets the host web ex id.
+     * Gets the value of the hostWebExID property.
      * 
-     * @return the host web ex id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHostWebExID() {
         return hostWebExID;
     }
 
     /**
-     * Sets the host web ex id.
+     * Sets the value of the hostWebExID property.
      * 
-     * @param value the new host web ex id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHostWebExID(String value) {
         this.hostWebExID = value;
     }
 
     /**
-     * Gets the host name.
+     * Gets the value of the hostName property.
      * 
-     * @return the host name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHostName() {
         return hostName;
     }
 
     /**
-     * Sets the host name.
+     * Sets the value of the hostName property.
      * 
-     * @param value the new host name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHostName(String value) {
         this.hostName = value;
     }
 
     /**
-     * Gets the host email.
+     * Gets the value of the hostEmail property.
      * 
-     * @return the host email
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHostEmail() {
         return hostEmail;
     }
 
     /**
-     * Sets the host email.
+     * Sets the value of the hostEmail property.
      * 
-     * @param value the new host email
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHostEmail(String value) {
         this.hostEmail = value;
     }
 
     /**
-     * Gets the total call in minutes.
+     * Gets the value of the totalCallInMinutes property.
      * 
-     * @return the total call in minutes
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getTotalCallInMinutes() {
         return totalCallInMinutes;
     }
 
     /**
-     * Sets the total call in minutes.
+     * Sets the value of the totalCallInMinutes property.
      * 
-     * @param value the new total call in minutes
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setTotalCallInMinutes(Long value) {
         this.totalCallInMinutes = value;
     }
 
     /**
-     * Gets the total people minutes.
+     * Gets the value of the totalPeopleMinutes property.
      * 
-     * @return the total people minutes
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getTotalPeopleMinutes() {
         return totalPeopleMinutes;
     }
 
     /**
-     * Sets the total people minutes.
+     * Sets the value of the totalPeopleMinutes property.
      * 
-     * @param value the new total people minutes
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setTotalPeopleMinutes(Long value) {
         this.totalPeopleMinutes = value;
     }
 
     /**
-     * Gets the total call in tollfree minutes.
+     * Gets the value of the totalCallInTollfreeMinutes property.
      * 
-     * @return the total call in tollfree minutes
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getTotalCallInTollfreeMinutes() {
         return totalCallInTollfreeMinutes;
     }
 
     /**
-     * Sets the total call in tollfree minutes.
+     * Sets the value of the totalCallInTollfreeMinutes property.
      * 
-     * @param value the new total call in tollfree minutes
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setTotalCallInTollfreeMinutes(Long value) {
         this.totalCallInTollfreeMinutes = value;
     }
 
     /**
-     * Gets the total call out domestic.
+     * Gets the value of the totalCallOutDomestic property.
      * 
-     * @return the total call out domestic
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getTotalCallOutDomestic() {
         return totalCallOutDomestic;
     }
 
     /**
-     * Sets the total call out domestic.
+     * Sets the value of the totalCallOutDomestic property.
      * 
-     * @param value the new total call out domestic
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setTotalCallOutDomestic(Long value) {
         this.totalCallOutDomestic = value;
     }
 
     /**
-     * Gets the total call out international.
+     * Gets the value of the totalCallOutInternational property.
      * 
-     * @return the total call out international
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getTotalCallOutInternational() {
         return totalCallOutInternational;
     }
 
     /**
-     * Sets the total call out international.
+     * Sets the value of the totalCallOutInternational property.
      * 
-     * @param value the new total call out international
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setTotalCallOutInternational(Long value) {
         this.totalCallOutInternational = value;
     }
 
     /**
-     * Gets the total voip minutes.
+     * Gets the value of the totalVoipMinutes property.
      * 
-     * @return the total voip minutes
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getTotalVoipMinutes() {
         return totalVoipMinutes;
     }
 
     /**
-     * Sets the total voip minutes.
+     * Sets the value of the totalVoipMinutes property.
      * 
-     * @param value the new total voip minutes
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setTotalVoipMinutes(Long value) {
         this.totalVoipMinutes = value;
     }
 
     /**
-     * Gets the user id.
+     * Gets the value of the userID property.
      * 
-     * @return the user id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getUserID() {
         return userID;
     }
 
     /**
-     * Sets the user id.
+     * Sets the value of the userID property.
      * 
-     * @param value the new user id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setUserID(Long value) {
         this.userID = value;
     }
 
     /**
-     * Gets the total participants.
+     * Gets the value of the totalParticipants property.
      * 
-     * @return the total participants
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getTotalParticipants() {
         return totalParticipants;
     }
 
     /**
-     * Sets the total participants.
+     * Sets the value of the totalParticipants property.
      * 
-     * @param value the new total participants
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTotalParticipants(Long value) {
         this.totalParticipants = value;
     }
 
     /**
-     * Gets the total participants voip.
+     * Gets the value of the totalParticipantsVoip property.
      * 
-     * @return the total participants voip
+     * @return
+     *     possible object is
+     *     {@link Integer }
+     *     
      */
     public Integer getTotalParticipantsVoip() {
         return totalParticipantsVoip;
     }
 
     /**
-     * Sets the total participants voip.
+     * Sets the value of the totalParticipantsVoip property.
      * 
-     * @param value the new total participants voip
+     * @param value
+     *     allowed object is
+     *     {@link Integer }
+     *     
      */
     public void setTotalParticipantsVoip(Integer value) {
         this.totalParticipantsVoip = value;
     }
 
     /**
-     * Gets the total participants call in.
+     * Gets the value of the totalParticipantsCallIn property.
      * 
-     * @return the total participants call in
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getTotalParticipantsCallIn() {
         return totalParticipantsCallIn;
     }
 
     /**
-     * Sets the total participants call in.
+     * Sets the value of the totalParticipantsCallIn property.
      * 
-     * @param value the new total participants call in
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTotalParticipantsCallIn(Long value) {
         this.totalParticipantsCallIn = value;
     }
 
     /**
-     * Gets the total participants call out.
+     * Gets the value of the totalParticipantsCallOut property.
      * 
-     * @return the total participants call out
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getTotalParticipantsCallOut() {
         return totalParticipantsCallOut;
     }
 
     /**
-     * Sets the total participants call out.
+     * Sets the value of the totalParticipantsCallOut property.
      * 
-     * @param value the new total participants call out
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTotalParticipantsCallOut(Long value) {
         this.totalParticipantsCallOut = value;
     }
 
     /**
-     * Gets the conf id.
+     * Gets the value of the confID property.
      * 
-     * @return the conf id
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getConfID() {
         return confID;
     }
 
     /**
-     * Sets the conf id.
+     * Sets the value of the confID property.
      * 
-     * @param value the new conf id
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setConfID(Long value) {
         this.confID = value;
     }
 
     /**
-     * Gets the peak attendee.
+     * Gets the value of the peakAttendee property.
      * 
-     * @return the peak attendee
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getPeakAttendee() {
         return peakAttendee;
     }
 
     /**
-     * Sets the peak attendee.
+     * Sets the value of the peakAttendee property.
      * 
-     * @param value the new peak attendee
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setPeakAttendee(Long value) {
         this.peakAttendee = value;
     }
 
     /**
-     * Gets the assist service.
+     * Gets the value of the assistService property.
      * 
-     * @return the assist service
+     * @return
+     *     possible object is
+     *     {@link MeetingAssistType }
+     *     
      */
     public MeetingAssistType getAssistService() {
         return assistService;
     }
 
     /**
-     * Sets the assist service.
+     * Sets the value of the assistService property.
      * 
-     * @param value the new assist service
+     * @param value
+     *     allowed object is
+     *     {@link MeetingAssistType }
+     *     
      */
     public void setAssistService(MeetingAssistType value) {
         this.assistService = value;

@@ -23,48 +23,38 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum DirectoryServiceType.
+ * <p>Java class for directoryServiceType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="directoryServiceType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="WithoutIntegration"/>
+ *     &lt;enumeration value="Integration"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "directoryServiceType")
 @XmlEnum
 public enum DirectoryServiceType {
 
-    /** The WITHOU t_ integration. */
     @XmlEnumValue("WithoutIntegration")
     WITHOUT_INTEGRATION("WithoutIntegration"),
-    
-    /** The INTEGRATION. */
     @XmlEnumValue("Integration")
     INTEGRATION("Integration");
-    
-    /** The value. */
     private final String value;
 
-    /**
-     * Instantiates a new directory service type.
-     * 
-     * @param v the v
-     */
     DirectoryServiceType(String v) {
         value = v;
     }
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return value;
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the directory service type
-     */
     public static DirectoryServiceType fromValue(String v) {
         for (DirectoryServiceType c: DirectoryServiceType.values()) {
             if (c.value.equals(v)) {

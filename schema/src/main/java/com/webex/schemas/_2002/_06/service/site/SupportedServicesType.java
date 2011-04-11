@@ -25,7 +25,47 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class SupportedServicesType.
+ * <p>Java class for supportedServicesType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="supportedServicesType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="meetingCenter" type="{http://www.webex.com/schemas/2002/06/service/site}supportedServiceType"/>
+ *         &lt;element name="trainingCenter" type="{http://www.webex.com/schemas/2002/06/service/site}supportedServiceType"/>
+ *         &lt;element name="supportCenter">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;extension base="{http://www.webex.com/schemas/2002/06/service/site}supportedServiceType">
+ *                 &lt;sequence>
+ *                   &lt;element name="webACD" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *                 &lt;/sequence>
+ *               &lt;/extension>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="eventCenter">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;extension base="{http://www.webex.com/schemas/2002/06/service/site}supportedServiceType">
+ *                 &lt;sequence>
+ *                   &lt;element name="marketingAddOn" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *                 &lt;/sequence>
+ *               &lt;/extension>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="salesCenter" type="{http://www.webex.com/schemas/2002/06/service/site}supportedServiceType"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "supportedServicesType", propOrder = {
@@ -39,114 +79,133 @@ public class SupportedServicesType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The meeting center. */
     @XmlElement(required = true)
     protected SupportedServiceType meetingCenter;
-    
-    /** The training center. */
     @XmlElement(required = true)
     protected SupportedServiceType trainingCenter;
-    
-    /** The support center. */
     @XmlElement(required = true)
     protected SupportedServicesType.SupportCenter supportCenter;
-    
-    /** The event center. */
     @XmlElement(required = true)
     protected SupportedServicesType.EventCenter eventCenter;
-    
-    /** The sales center. */
     @XmlElement(required = true)
     protected SupportedServiceType salesCenter;
 
     /**
-     * Gets the meeting center.
+     * Gets the value of the meetingCenter property.
      * 
-     * @return the meeting center
+     * @return
+     *     possible object is
+     *     {@link SupportedServiceType }
+     *     
      */
     public SupportedServiceType getMeetingCenter() {
         return meetingCenter;
     }
 
     /**
-     * Sets the meeting center.
+     * Sets the value of the meetingCenter property.
      * 
-     * @param value the new meeting center
+     * @param value
+     *     allowed object is
+     *     {@link SupportedServiceType }
+     *     
      */
     public void setMeetingCenter(SupportedServiceType value) {
         this.meetingCenter = value;
     }
 
     /**
-     * Gets the training center.
+     * Gets the value of the trainingCenter property.
      * 
-     * @return the training center
+     * @return
+     *     possible object is
+     *     {@link SupportedServiceType }
+     *     
      */
     public SupportedServiceType getTrainingCenter() {
         return trainingCenter;
     }
 
     /**
-     * Sets the training center.
+     * Sets the value of the trainingCenter property.
      * 
-     * @param value the new training center
+     * @param value
+     *     allowed object is
+     *     {@link SupportedServiceType }
+     *     
      */
     public void setTrainingCenter(SupportedServiceType value) {
         this.trainingCenter = value;
     }
 
     /**
-     * Gets the support center.
+     * Gets the value of the supportCenter property.
      * 
-     * @return the support center
+     * @return
+     *     possible object is
+     *     {@link SupportedServicesType.SupportCenter }
+     *     
      */
     public SupportedServicesType.SupportCenter getSupportCenter() {
         return supportCenter;
     }
 
     /**
-     * Sets the support center.
+     * Sets the value of the supportCenter property.
      * 
-     * @param value the new support center
+     * @param value
+     *     allowed object is
+     *     {@link SupportedServicesType.SupportCenter }
+     *     
      */
     public void setSupportCenter(SupportedServicesType.SupportCenter value) {
         this.supportCenter = value;
     }
 
     /**
-     * Gets the event center.
+     * Gets the value of the eventCenter property.
      * 
-     * @return the event center
+     * @return
+     *     possible object is
+     *     {@link SupportedServicesType.EventCenter }
+     *     
      */
     public SupportedServicesType.EventCenter getEventCenter() {
         return eventCenter;
     }
 
     /**
-     * Sets the event center.
+     * Sets the value of the eventCenter property.
      * 
-     * @param value the new event center
+     * @param value
+     *     allowed object is
+     *     {@link SupportedServicesType.EventCenter }
+     *     
      */
     public void setEventCenter(SupportedServicesType.EventCenter value) {
         this.eventCenter = value;
     }
 
     /**
-     * Gets the sales center.
+     * Gets the value of the salesCenter property.
      * 
-     * @return the sales center
+     * @return
+     *     possible object is
+     *     {@link SupportedServiceType }
+     *     
      */
     public SupportedServiceType getSalesCenter() {
         return salesCenter;
     }
 
     /**
-     * Sets the sales center.
+     * Sets the value of the salesCenter property.
      * 
-     * @param value the new sales center
+     * @param value
+     *     allowed object is
+     *     {@link SupportedServiceType }
+     *     
      */
     public void setSalesCenter(SupportedServiceType value) {
         this.salesCenter = value;
@@ -154,7 +213,23 @@ public class SupportedServicesType
 
 
     /**
-     * The Class EventCenter.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/site}supportedServiceType">
+     *       &lt;sequence>
+     *         &lt;element name="marketingAddOn" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+     *       &lt;/sequence>
+     *     &lt;/extension>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -165,25 +240,20 @@ public class SupportedServicesType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The marketing add on. */
         protected boolean marketingAddOn;
 
         /**
-         * Checks if is marketing add on.
+         * Gets the value of the marketingAddOn property.
          * 
-         * @return true, if is marketing add on
          */
         public boolean isMarketingAddOn() {
             return marketingAddOn;
         }
 
         /**
-         * Sets the marketing add on.
+         * Sets the value of the marketingAddOn property.
          * 
-         * @param value the new marketing add on
          */
         public void setMarketingAddOn(boolean value) {
             this.marketingAddOn = value;
@@ -193,7 +263,23 @@ public class SupportedServicesType
 
 
     /**
-     * The Class SupportCenter.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/site}supportedServiceType">
+     *       &lt;sequence>
+     *         &lt;element name="webACD" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+     *       &lt;/sequence>
+     *     &lt;/extension>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -204,25 +290,28 @@ public class SupportedServicesType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The web acd. */
         protected Boolean webACD;
 
         /**
-         * Checks if is web acd.
+         * Gets the value of the webACD property.
          * 
-         * @return the boolean
+         * @return
+         *     possible object is
+         *     {@link Boolean }
+         *     
          */
         public Boolean isWebACD() {
             return webACD;
         }
 
         /**
-         * Sets the web acd.
+         * Sets the value of the webACD property.
          * 
-         * @param value the new web acd
+         * @param value
+         *     allowed object is
+         *     {@link Boolean }
+         *     
          */
         public void setWebACD(Boolean value) {
             this.webACD = value;

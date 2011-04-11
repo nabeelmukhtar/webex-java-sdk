@@ -26,7 +26,29 @@ import com.webex.schemas._2002._06.common.ListingType;
 
 
 /**
- * The Class OpenSessionType.
+ * <p>Java class for openSessionType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="openSessionType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="sessionName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="hostWebExID" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="startTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="actualStartTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="listStatus" type="{http://www.webex.com/schemas/2002/06/common}listingType"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "openSessionType", propOrder = {
@@ -42,156 +64,167 @@ public class OpenSessionType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The session key. */
     protected long sessionKey;
-    
-    /** The session name. */
     @XmlElement(required = true)
     protected String sessionName;
-    
-    /** The host web ex id. */
     @XmlElement(required = true)
     protected String hostWebExID;
-    
-    /** The start time. */
     @XmlElement(required = true)
     protected String startTime;
-    
-    /** The actual start time. */
     @XmlElement(required = true)
     protected String actualStartTime;
-    
-    /** The time zone id. */
     protected long timeZoneID;
-    
-    /** The list status. */
     @XmlElement(required = true)
     protected ListingType listStatus;
 
     /**
-     * Gets the session key.
+     * Gets the value of the sessionKey property.
      * 
-     * @return the session key
      */
     public long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the session key.
+     * Sets the value of the sessionKey property.
      * 
-     * @param value the new session key
      */
     public void setSessionKey(long value) {
         this.sessionKey = value;
     }
 
     /**
-     * Gets the session name.
+     * Gets the value of the sessionName property.
      * 
-     * @return the session name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSessionName() {
         return sessionName;
     }
 
     /**
-     * Sets the session name.
+     * Sets the value of the sessionName property.
      * 
-     * @param value the new session name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSessionName(String value) {
         this.sessionName = value;
     }
 
     /**
-     * Gets the host web ex id.
+     * Gets the value of the hostWebExID property.
      * 
-     * @return the host web ex id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHostWebExID() {
         return hostWebExID;
     }
 
     /**
-     * Sets the host web ex id.
+     * Sets the value of the hostWebExID property.
      * 
-     * @param value the new host web ex id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHostWebExID(String value) {
         this.hostWebExID = value;
     }
 
     /**
-     * Gets the start time.
+     * Gets the value of the startTime property.
      * 
-     * @return the start time
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getStartTime() {
         return startTime;
     }
 
     /**
-     * Sets the start time.
+     * Sets the value of the startTime property.
      * 
-     * @param value the new start time
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setStartTime(String value) {
         this.startTime = value;
     }
 
     /**
-     * Gets the actual start time.
+     * Gets the value of the actualStartTime property.
      * 
-     * @return the actual start time
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getActualStartTime() {
         return actualStartTime;
     }
 
     /**
-     * Sets the actual start time.
+     * Sets the value of the actualStartTime property.
      * 
-     * @param value the new actual start time
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setActualStartTime(String value) {
         this.actualStartTime = value;
     }
 
     /**
-     * Gets the time zone id.
+     * Gets the value of the timeZoneID property.
      * 
-     * @return the time zone id
      */
     public long getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the time zone id.
+     * Sets the value of the timeZoneID property.
      * 
-     * @param value the new time zone id
      */
     public void setTimeZoneID(long value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the list status.
+     * Gets the value of the listStatus property.
      * 
-     * @return the list status
+     * @return
+     *     possible object is
+     *     {@link ListingType }
+     *     
      */
     public ListingType getListStatus() {
         return listStatus;
     }
 
     /**
-     * Sets the list status.
+     * Sets the value of the listStatus property.
      * 
-     * @param value the new list status
+     * @param value
+     *     allowed object is
+     *     {@link ListingType }
+     *     
      */
     public void setListStatus(ListingType value) {
         this.listStatus = value;

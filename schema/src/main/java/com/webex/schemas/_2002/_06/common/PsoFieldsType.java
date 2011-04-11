@@ -24,7 +24,29 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class PsoFieldsType.
+ * <p>Java class for psoFieldsType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="psoFieldsType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="psoField1" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="128"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "psoFieldsType", propOrder = {
@@ -34,25 +56,28 @@ public class PsoFieldsType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The pso field1. */
     protected String psoField1;
 
     /**
-     * Gets the pso field1.
+     * Gets the value of the psoField1 property.
      * 
-     * @return the pso field1
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPsoField1() {
         return psoField1;
     }
 
     /**
-     * Sets the pso field1.
+     * Sets the value of the psoField1 property.
      * 
-     * @param value the new pso field1
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPsoField1(String value) {
         this.psoField1 = value;

@@ -28,7 +28,24 @@ import com.webex.schemas._2002._06.service.MatchingRecordsType;
 
 
 /**
- * The Class LstRecordingResponse.
+ * <p>Java class for lstRecordingResponse complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="lstRecordingResponse">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="matchingRecords" type="{http://www.webex.com/schemas/2002/06/service}matchingRecordsType" minOccurs="0"/>
+ *         &lt;element name="recording" type="{http://www.webex.com/schemas/2002/06/service/ep}recordingType" maxOccurs="unbounded" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstRecordingResponse", propOrder = {
@@ -40,37 +57,55 @@ public class LstRecordingResponse
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The matching records. */
     protected MatchingRecordsType matchingRecords;
-    
-    /** The recording. */
     protected List<RecordingType> recording;
 
     /**
-     * Gets the matching records.
+     * Gets the value of the matchingRecords property.
      * 
-     * @return the matching records
+     * @return
+     *     possible object is
+     *     {@link MatchingRecordsType }
+     *     
      */
     public MatchingRecordsType getMatchingRecords() {
         return matchingRecords;
     }
 
     /**
-     * Sets the matching records.
+     * Sets the value of the matchingRecords property.
      * 
-     * @param value the new matching records
+     * @param value
+     *     allowed object is
+     *     {@link MatchingRecordsType }
+     *     
      */
     public void setMatchingRecords(MatchingRecordsType value) {
         this.matchingRecords = value;
     }
 
     /**
-     * Gets the recording.
+     * Gets the value of the recording property.
      * 
-     * @return the recording
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the recording property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getRecording().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link RecordingType }
+     * 
+     * 
      */
     public List<RecordingType> getRecording() {
         if (recording == null) {

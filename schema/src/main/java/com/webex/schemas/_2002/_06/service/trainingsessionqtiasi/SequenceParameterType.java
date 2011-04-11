@@ -26,7 +26,21 @@ import javax.xml.bind.annotation.XmlValue;
 
 
 /**
- * The Class SequenceParameterType.
+ * <p>Java class for sequence_parameterType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="sequence_parameterType">
+ *   &lt;simpleContent>
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
+ *       &lt;attribute name="pname" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *     &lt;/extension>
+ *   &lt;/simpleContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "sequence_parameterType", propOrder = {
@@ -36,48 +50,55 @@ public class SequenceParameterType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The value. */
     @XmlValue
     protected String value;
-    
-    /** The pname. */
     @XmlAttribute(required = true)
     protected String pname;
 
     /**
-     * Gets the value.
+     * Gets the value of the value property.
      * 
-     * @return the value
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value.
+     * Sets the value of the value property.
      * 
-     * @param value the new value
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setValue(String value) {
         this.value = value;
     }
 
     /**
-     * Gets the pname.
+     * Gets the value of the pname property.
      * 
-     * @return the pname
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPname() {
         return pname;
     }
 
     /**
-     * Sets the pname.
+     * Sets the value of the pname property.
      * 
-     * @param value the new pname
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPname(String value) {
         this.pname = value;

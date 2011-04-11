@@ -25,7 +25,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class AttendeeEmailType.
+ * <p>Java class for attendeeEmailType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="attendeeEmailType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="email" type="{http://www.webex.com/schemas/2002/06/common}emailType"/>
+ *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "attendeeEmailType", propOrder = {
@@ -36,47 +53,46 @@ public class AttendeeEmailType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The email. */
     @XmlElement(required = true)
     protected String email;
-    
-    /** The session key. */
     protected long sessionKey;
 
     /**
-     * Gets the email.
+     * Gets the value of the email property.
      * 
-     * @return the email
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getEmail() {
         return email;
     }
 
     /**
-     * Sets the email.
+     * Sets the value of the email property.
      * 
-     * @param value the new email
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setEmail(String value) {
         this.email = value;
     }
 
     /**
-     * Gets the session key.
+     * Gets the value of the sessionKey property.
      * 
-     * @return the session key
      */
     public long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the session key.
+     * Sets the value of the sessionKey property.
      * 
-     * @param value the new session key
      */
     public void setSessionKey(long value) {
         this.sessionKey = value;

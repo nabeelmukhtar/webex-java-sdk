@@ -25,7 +25,155 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class EmailTemplatesType.
+ * <p>Java class for emailTemplatesType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="emailTemplatesType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="format" type="{http://www.webex.com/schemas/2002/06/service/event}formatType" minOccurs="0"/>
+ *         &lt;element name="invitationMsgs" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="participantsEmail" type="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType" minOccurs="0"/>
+ *                   &lt;element name="panelistsEmail" type="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType" minOccurs="0"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="enrollmentMsgs" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="pendingEmail" minOccurs="0">
+ *                     &lt;complexType>
+ *                       &lt;complexContent>
+ *                         &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+ *                           &lt;sequence>
+ *                             &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *                           &lt;/sequence>
+ *                         &lt;/extension>
+ *                       &lt;/complexContent>
+ *                     &lt;/complexType>
+ *                   &lt;/element>
+ *                   &lt;element name="acceptedEmail" minOccurs="0">
+ *                     &lt;complexType>
+ *                       &lt;complexContent>
+ *                         &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+ *                           &lt;sequence>
+ *                             &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *                           &lt;/sequence>
+ *                         &lt;/extension>
+ *                       &lt;/complexContent>
+ *                     &lt;/complexType>
+ *                   &lt;/element>
+ *                   &lt;element name="rejectedEmail" minOccurs="0">
+ *                     &lt;complexType>
+ *                       &lt;complexContent>
+ *                         &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+ *                           &lt;sequence>
+ *                             &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *                           &lt;/sequence>
+ *                         &lt;/extension>
+ *                       &lt;/complexContent>
+ *                     &lt;/complexType>
+ *                   &lt;/element>
+ *                   &lt;element name="eventUpdatedEmail" minOccurs="0">
+ *                     &lt;complexType>
+ *                       &lt;complexContent>
+ *                         &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+ *                         &lt;/extension>
+ *                       &lt;/complexContent>
+ *                     &lt;/complexType>
+ *                   &lt;/element>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="reminderMsgs" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="firstReminder" minOccurs="0">
+ *                     &lt;complexType>
+ *                       &lt;complexContent>
+ *                         &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+ *                           &lt;sequence>
+ *                             &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *                             &lt;element name="sendDateTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *                           &lt;/sequence>
+ *                         &lt;/extension>
+ *                       &lt;/complexContent>
+ *                     &lt;/complexType>
+ *                   &lt;/element>
+ *                   &lt;element name="secondReminder" minOccurs="0">
+ *                     &lt;complexType>
+ *                       &lt;complexContent>
+ *                         &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+ *                           &lt;sequence>
+ *                             &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *                             &lt;element name="sendDateTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *                           &lt;/sequence>
+ *                         &lt;/extension>
+ *                       &lt;/complexContent>
+ *                     &lt;/complexType>
+ *                   &lt;/element>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="followUpMsgs" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="thanksForAttending" minOccurs="0">
+ *                     &lt;complexType>
+ *                       &lt;complexContent>
+ *                         &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+ *                           &lt;sequence>
+ *                             &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *                             &lt;element name="sendDateTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *                           &lt;/sequence>
+ *                         &lt;/extension>
+ *                       &lt;/complexContent>
+ *                     &lt;/complexType>
+ *                   &lt;/element>
+ *                   &lt;element name="absenteeFollowUp" minOccurs="0">
+ *                     &lt;complexType>
+ *                       &lt;complexContent>
+ *                         &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+ *                           &lt;sequence>
+ *                             &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *                             &lt;element name="sendDateTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *                           &lt;/sequence>
+ *                         &lt;/extension>
+ *                       &lt;/complexContent>
+ *                     &lt;/complexType>
+ *                   &lt;/element>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="iCalendar" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "emailTemplatesType", propOrder = {
@@ -40,131 +188,154 @@ public class EmailTemplatesType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The format. */
     @XmlElement(defaultValue = "TEXT")
     protected FormatType format;
-    
-    /** The invitation msgs. */
     protected EmailTemplatesType.InvitationMsgs invitationMsgs;
-    
-    /** The enrollment msgs. */
     protected EmailTemplatesType.EnrollmentMsgs enrollmentMsgs;
-    
-    /** The reminder msgs. */
     protected EmailTemplatesType.ReminderMsgs reminderMsgs;
-    
-    /** The follow up msgs. */
     protected EmailTemplatesType.FollowUpMsgs followUpMsgs;
-    
-    /** The i calendar. */
     protected Boolean iCalendar;
 
     /**
-     * Gets the format.
+     * Gets the value of the format property.
      * 
-     * @return the format
+     * @return
+     *     possible object is
+     *     {@link FormatType }
+     *     
      */
     public FormatType getFormat() {
         return format;
     }
 
     /**
-     * Sets the format.
+     * Sets the value of the format property.
      * 
-     * @param value the new format
+     * @param value
+     *     allowed object is
+     *     {@link FormatType }
+     *     
      */
     public void setFormat(FormatType value) {
         this.format = value;
     }
 
     /**
-     * Gets the invitation msgs.
+     * Gets the value of the invitationMsgs property.
      * 
-     * @return the invitation msgs
+     * @return
+     *     possible object is
+     *     {@link EmailTemplatesType.InvitationMsgs }
+     *     
      */
     public EmailTemplatesType.InvitationMsgs getInvitationMsgs() {
         return invitationMsgs;
     }
 
     /**
-     * Sets the invitation msgs.
+     * Sets the value of the invitationMsgs property.
      * 
-     * @param value the new invitation msgs
+     * @param value
+     *     allowed object is
+     *     {@link EmailTemplatesType.InvitationMsgs }
+     *     
      */
     public void setInvitationMsgs(EmailTemplatesType.InvitationMsgs value) {
         this.invitationMsgs = value;
     }
 
     /**
-     * Gets the enrollment msgs.
+     * Gets the value of the enrollmentMsgs property.
      * 
-     * @return the enrollment msgs
+     * @return
+     *     possible object is
+     *     {@link EmailTemplatesType.EnrollmentMsgs }
+     *     
      */
     public EmailTemplatesType.EnrollmentMsgs getEnrollmentMsgs() {
         return enrollmentMsgs;
     }
 
     /**
-     * Sets the enrollment msgs.
+     * Sets the value of the enrollmentMsgs property.
      * 
-     * @param value the new enrollment msgs
+     * @param value
+     *     allowed object is
+     *     {@link EmailTemplatesType.EnrollmentMsgs }
+     *     
      */
     public void setEnrollmentMsgs(EmailTemplatesType.EnrollmentMsgs value) {
         this.enrollmentMsgs = value;
     }
 
     /**
-     * Gets the reminder msgs.
+     * Gets the value of the reminderMsgs property.
      * 
-     * @return the reminder msgs
+     * @return
+     *     possible object is
+     *     {@link EmailTemplatesType.ReminderMsgs }
+     *     
      */
     public EmailTemplatesType.ReminderMsgs getReminderMsgs() {
         return reminderMsgs;
     }
 
     /**
-     * Sets the reminder msgs.
+     * Sets the value of the reminderMsgs property.
      * 
-     * @param value the new reminder msgs
+     * @param value
+     *     allowed object is
+     *     {@link EmailTemplatesType.ReminderMsgs }
+     *     
      */
     public void setReminderMsgs(EmailTemplatesType.ReminderMsgs value) {
         this.reminderMsgs = value;
     }
 
     /**
-     * Gets the follow up msgs.
+     * Gets the value of the followUpMsgs property.
      * 
-     * @return the follow up msgs
+     * @return
+     *     possible object is
+     *     {@link EmailTemplatesType.FollowUpMsgs }
+     *     
      */
     public EmailTemplatesType.FollowUpMsgs getFollowUpMsgs() {
         return followUpMsgs;
     }
 
     /**
-     * Sets the follow up msgs.
+     * Sets the value of the followUpMsgs property.
      * 
-     * @param value the new follow up msgs
+     * @param value
+     *     allowed object is
+     *     {@link EmailTemplatesType.FollowUpMsgs }
+     *     
      */
     public void setFollowUpMsgs(EmailTemplatesType.FollowUpMsgs value) {
         this.followUpMsgs = value;
     }
 
     /**
-     * Checks if is i calendar.
+     * Gets the value of the iCalendar property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isICalendar() {
         return iCalendar;
     }
 
     /**
-     * Sets the i calendar.
+     * Sets the value of the iCalendar property.
      * 
-     * @param value the new i calendar
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setICalendar(Boolean value) {
         this.iCalendar = value;
@@ -172,7 +343,63 @@ public class EmailTemplatesType
 
 
     /**
-     * The Class EnrollmentMsgs.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="pendingEmail" minOccurs="0">
+     *           &lt;complexType>
+     *             &lt;complexContent>
+     *               &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+     *                 &lt;sequence>
+     *                   &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+     *                 &lt;/sequence>
+     *               &lt;/extension>
+     *             &lt;/complexContent>
+     *           &lt;/complexType>
+     *         &lt;/element>
+     *         &lt;element name="acceptedEmail" minOccurs="0">
+     *           &lt;complexType>
+     *             &lt;complexContent>
+     *               &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+     *                 &lt;sequence>
+     *                   &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+     *                 &lt;/sequence>
+     *               &lt;/extension>
+     *             &lt;/complexContent>
+     *           &lt;/complexType>
+     *         &lt;/element>
+     *         &lt;element name="rejectedEmail" minOccurs="0">
+     *           &lt;complexType>
+     *             &lt;complexContent>
+     *               &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+     *                 &lt;sequence>
+     *                   &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+     *                 &lt;/sequence>
+     *               &lt;/extension>
+     *             &lt;/complexContent>
+     *           &lt;/complexType>
+     *         &lt;/element>
+     *         &lt;element name="eventUpdatedEmail" minOccurs="0">
+     *           &lt;complexType>
+     *             &lt;complexContent>
+     *               &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+     *               &lt;/extension>
+     *             &lt;/complexContent>
+     *           &lt;/complexType>
+     *         &lt;/element>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -185,88 +412,103 @@ public class EmailTemplatesType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The pending email. */
         protected EmailTemplatesType.EnrollmentMsgs.PendingEmail pendingEmail;
-        
-        /** The accepted email. */
         protected EmailTemplatesType.EnrollmentMsgs.AcceptedEmail acceptedEmail;
-        
-        /** The rejected email. */
         protected EmailTemplatesType.EnrollmentMsgs.RejectedEmail rejectedEmail;
-        
-        /** The event updated email. */
         protected EmailTemplatesType.EnrollmentMsgs.EventUpdatedEmail eventUpdatedEmail;
 
         /**
-         * Gets the pending email.
+         * Gets the value of the pendingEmail property.
          * 
-         * @return the pending email
+         * @return
+         *     possible object is
+         *     {@link EmailTemplatesType.EnrollmentMsgs.PendingEmail }
+         *     
          */
         public EmailTemplatesType.EnrollmentMsgs.PendingEmail getPendingEmail() {
             return pendingEmail;
         }
 
         /**
-         * Sets the pending email.
+         * Sets the value of the pendingEmail property.
          * 
-         * @param value the new pending email
+         * @param value
+         *     allowed object is
+         *     {@link EmailTemplatesType.EnrollmentMsgs.PendingEmail }
+         *     
          */
         public void setPendingEmail(EmailTemplatesType.EnrollmentMsgs.PendingEmail value) {
             this.pendingEmail = value;
         }
 
         /**
-         * Gets the accepted email.
+         * Gets the value of the acceptedEmail property.
          * 
-         * @return the accepted email
+         * @return
+         *     possible object is
+         *     {@link EmailTemplatesType.EnrollmentMsgs.AcceptedEmail }
+         *     
          */
         public EmailTemplatesType.EnrollmentMsgs.AcceptedEmail getAcceptedEmail() {
             return acceptedEmail;
         }
 
         /**
-         * Sets the accepted email.
+         * Sets the value of the acceptedEmail property.
          * 
-         * @param value the new accepted email
+         * @param value
+         *     allowed object is
+         *     {@link EmailTemplatesType.EnrollmentMsgs.AcceptedEmail }
+         *     
          */
         public void setAcceptedEmail(EmailTemplatesType.EnrollmentMsgs.AcceptedEmail value) {
             this.acceptedEmail = value;
         }
 
         /**
-         * Gets the rejected email.
+         * Gets the value of the rejectedEmail property.
          * 
-         * @return the rejected email
+         * @return
+         *     possible object is
+         *     {@link EmailTemplatesType.EnrollmentMsgs.RejectedEmail }
+         *     
          */
         public EmailTemplatesType.EnrollmentMsgs.RejectedEmail getRejectedEmail() {
             return rejectedEmail;
         }
 
         /**
-         * Sets the rejected email.
+         * Sets the value of the rejectedEmail property.
          * 
-         * @param value the new rejected email
+         * @param value
+         *     allowed object is
+         *     {@link EmailTemplatesType.EnrollmentMsgs.RejectedEmail }
+         *     
          */
         public void setRejectedEmail(EmailTemplatesType.EnrollmentMsgs.RejectedEmail value) {
             this.rejectedEmail = value;
         }
 
         /**
-         * Gets the event updated email.
+         * Gets the value of the eventUpdatedEmail property.
          * 
-         * @return the event updated email
+         * @return
+         *     possible object is
+         *     {@link EmailTemplatesType.EnrollmentMsgs.EventUpdatedEmail }
+         *     
          */
         public EmailTemplatesType.EnrollmentMsgs.EventUpdatedEmail getEventUpdatedEmail() {
             return eventUpdatedEmail;
         }
 
         /**
-         * Sets the event updated email.
+         * Sets the value of the eventUpdatedEmail property.
          * 
-         * @param value the new event updated email
+         * @param value
+         *     allowed object is
+         *     {@link EmailTemplatesType.EnrollmentMsgs.EventUpdatedEmail }
+         *     
          */
         public void setEventUpdatedEmail(EmailTemplatesType.EnrollmentMsgs.EventUpdatedEmail value) {
             this.eventUpdatedEmail = value;
@@ -274,7 +516,23 @@ public class EmailTemplatesType
 
 
         /**
-         * The Class AcceptedEmail.
+         * <p>Java class for anonymous complex type.
+         * 
+         * <p>The following schema fragment specifies the expected content contained within this class.
+         * 
+         * <pre>
+         * &lt;complexType>
+         *   &lt;complexContent>
+         *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+         *       &lt;sequence>
+         *         &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+         *       &lt;/sequence>
+         *     &lt;/extension>
+         *   &lt;/complexContent>
+         * &lt;/complexType>
+         * </pre>
+         * 
+         * 
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -285,26 +543,29 @@ public class EmailTemplatesType
             implements Serializable
         {
 
-            /** The Constant serialVersionUID. */
             private final static long serialVersionUID = 2461660169443089969L;
-            
-            /** The send. */
             @XmlElement(defaultValue = "true")
             protected Boolean send;
 
             /**
-             * Checks if is send.
+             * Gets the value of the send property.
              * 
-             * @return the boolean
+             * @return
+             *     possible object is
+             *     {@link Boolean }
+             *     
              */
             public Boolean isSend() {
                 return send;
             }
 
             /**
-             * Sets the send.
+             * Sets the value of the send property.
              * 
-             * @param value the new send
+             * @param value
+             *     allowed object is
+             *     {@link Boolean }
+             *     
              */
             public void setSend(Boolean value) {
                 this.send = value;
@@ -314,7 +575,20 @@ public class EmailTemplatesType
 
 
         /**
-         * The Class EventUpdatedEmail.
+         * <p>Java class for anonymous complex type.
+         * 
+         * <p>The following schema fragment specifies the expected content contained within this class.
+         * 
+         * <pre>
+         * &lt;complexType>
+         *   &lt;complexContent>
+         *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+         *     &lt;/extension>
+         *   &lt;/complexContent>
+         * &lt;/complexType>
+         * </pre>
+         * 
+         * 
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "")
@@ -323,14 +597,29 @@ public class EmailTemplatesType
             implements Serializable
         {
 
-            /** The Constant serialVersionUID. */
             private final static long serialVersionUID = 2461660169443089969L;
 
         }
 
 
         /**
-         * The Class PendingEmail.
+         * <p>Java class for anonymous complex type.
+         * 
+         * <p>The following schema fragment specifies the expected content contained within this class.
+         * 
+         * <pre>
+         * &lt;complexType>
+         *   &lt;complexContent>
+         *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+         *       &lt;sequence>
+         *         &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+         *       &lt;/sequence>
+         *     &lt;/extension>
+         *   &lt;/complexContent>
+         * &lt;/complexType>
+         * </pre>
+         * 
+         * 
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -341,26 +630,29 @@ public class EmailTemplatesType
             implements Serializable
         {
 
-            /** The Constant serialVersionUID. */
             private final static long serialVersionUID = 2461660169443089969L;
-            
-            /** The send. */
             @XmlElement(defaultValue = "true")
             protected Boolean send;
 
             /**
-             * Checks if is send.
+             * Gets the value of the send property.
              * 
-             * @return the boolean
+             * @return
+             *     possible object is
+             *     {@link Boolean }
+             *     
              */
             public Boolean isSend() {
                 return send;
             }
 
             /**
-             * Sets the send.
+             * Sets the value of the send property.
              * 
-             * @param value the new send
+             * @param value
+             *     allowed object is
+             *     {@link Boolean }
+             *     
              */
             public void setSend(Boolean value) {
                 this.send = value;
@@ -370,7 +662,23 @@ public class EmailTemplatesType
 
 
         /**
-         * The Class RejectedEmail.
+         * <p>Java class for anonymous complex type.
+         * 
+         * <p>The following schema fragment specifies the expected content contained within this class.
+         * 
+         * <pre>
+         * &lt;complexType>
+         *   &lt;complexContent>
+         *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+         *       &lt;sequence>
+         *         &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+         *       &lt;/sequence>
+         *     &lt;/extension>
+         *   &lt;/complexContent>
+         * &lt;/complexType>
+         * </pre>
+         * 
+         * 
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -381,26 +689,29 @@ public class EmailTemplatesType
             implements Serializable
         {
 
-            /** The Constant serialVersionUID. */
             private final static long serialVersionUID = 2461660169443089969L;
-            
-            /** The send. */
             @XmlElement(defaultValue = "true")
             protected Boolean send;
 
             /**
-             * Checks if is send.
+             * Gets the value of the send property.
              * 
-             * @return the boolean
+             * @return
+             *     possible object is
+             *     {@link Boolean }
+             *     
              */
             public Boolean isSend() {
                 return send;
             }
 
             /**
-             * Sets the send.
+             * Sets the value of the send property.
              * 
-             * @param value the new send
+             * @param value
+             *     allowed object is
+             *     {@link Boolean }
+             *     
              */
             public void setSend(Boolean value) {
                 this.send = value;
@@ -412,7 +723,46 @@ public class EmailTemplatesType
 
 
     /**
-     * The Class FollowUpMsgs.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="thanksForAttending" minOccurs="0">
+     *           &lt;complexType>
+     *             &lt;complexContent>
+     *               &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+     *                 &lt;sequence>
+     *                   &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+     *                   &lt;element name="sendDateTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+     *                 &lt;/sequence>
+     *               &lt;/extension>
+     *             &lt;/complexContent>
+     *           &lt;/complexType>
+     *         &lt;/element>
+     *         &lt;element name="absenteeFollowUp" minOccurs="0">
+     *           &lt;complexType>
+     *             &lt;complexContent>
+     *               &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+     *                 &lt;sequence>
+     *                   &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+     *                   &lt;element name="sendDateTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+     *                 &lt;/sequence>
+     *               &lt;/extension>
+     *             &lt;/complexContent>
+     *           &lt;/complexType>
+     *         &lt;/element>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -423,46 +773,53 @@ public class EmailTemplatesType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The thanks for attending. */
         protected EmailTemplatesType.FollowUpMsgs.ThanksForAttending thanksForAttending;
-        
-        /** The absentee follow up. */
         protected EmailTemplatesType.FollowUpMsgs.AbsenteeFollowUp absenteeFollowUp;
 
         /**
-         * Gets the thanks for attending.
+         * Gets the value of the thanksForAttending property.
          * 
-         * @return the thanks for attending
+         * @return
+         *     possible object is
+         *     {@link EmailTemplatesType.FollowUpMsgs.ThanksForAttending }
+         *     
          */
         public EmailTemplatesType.FollowUpMsgs.ThanksForAttending getThanksForAttending() {
             return thanksForAttending;
         }
 
         /**
-         * Sets the thanks for attending.
+         * Sets the value of the thanksForAttending property.
          * 
-         * @param value the new thanks for attending
+         * @param value
+         *     allowed object is
+         *     {@link EmailTemplatesType.FollowUpMsgs.ThanksForAttending }
+         *     
          */
         public void setThanksForAttending(EmailTemplatesType.FollowUpMsgs.ThanksForAttending value) {
             this.thanksForAttending = value;
         }
 
         /**
-         * Gets the absentee follow up.
+         * Gets the value of the absenteeFollowUp property.
          * 
-         * @return the absentee follow up
+         * @return
+         *     possible object is
+         *     {@link EmailTemplatesType.FollowUpMsgs.AbsenteeFollowUp }
+         *     
          */
         public EmailTemplatesType.FollowUpMsgs.AbsenteeFollowUp getAbsenteeFollowUp() {
             return absenteeFollowUp;
         }
 
         /**
-         * Sets the absentee follow up.
+         * Sets the value of the absenteeFollowUp property.
          * 
-         * @param value the new absentee follow up
+         * @param value
+         *     allowed object is
+         *     {@link EmailTemplatesType.FollowUpMsgs.AbsenteeFollowUp }
+         *     
          */
         public void setAbsenteeFollowUp(EmailTemplatesType.FollowUpMsgs.AbsenteeFollowUp value) {
             this.absenteeFollowUp = value;
@@ -470,7 +827,24 @@ public class EmailTemplatesType
 
 
         /**
-         * The Class AbsenteeFollowUp.
+         * <p>Java class for anonymous complex type.
+         * 
+         * <p>The following schema fragment specifies the expected content contained within this class.
+         * 
+         * <pre>
+         * &lt;complexType>
+         *   &lt;complexContent>
+         *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+         *       &lt;sequence>
+         *         &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+         *         &lt;element name="sendDateTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+         *       &lt;/sequence>
+         *     &lt;/extension>
+         *   &lt;/complexContent>
+         * &lt;/complexType>
+         * </pre>
+         * 
+         * 
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -482,47 +856,54 @@ public class EmailTemplatesType
             implements Serializable
         {
 
-            /** The Constant serialVersionUID. */
             private final static long serialVersionUID = 2461660169443089969L;
-            
-            /** The send. */
             @XmlElement(defaultValue = "true")
             protected Boolean send;
-            
-            /** The send date time. */
             protected String sendDateTime;
 
             /**
-             * Checks if is send.
+             * Gets the value of the send property.
              * 
-             * @return the boolean
+             * @return
+             *     possible object is
+             *     {@link Boolean }
+             *     
              */
             public Boolean isSend() {
                 return send;
             }
 
             /**
-             * Sets the send.
+             * Sets the value of the send property.
              * 
-             * @param value the new send
+             * @param value
+             *     allowed object is
+             *     {@link Boolean }
+             *     
              */
             public void setSend(Boolean value) {
                 this.send = value;
             }
 
             /**
-             * Gets the send date time.
+             * Gets the value of the sendDateTime property.
              * 
-             * @return the send date time
+             * @return
+             *     possible object is
+             *     {@link String }
+             *     
              */
             public String getSendDateTime() {
                 return sendDateTime;
             }
 
             /**
-             * Sets the send date time.
+             * Sets the value of the sendDateTime property.
              * 
-             * @param value the new send date time
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *     
              */
             public void setSendDateTime(String value) {
                 this.sendDateTime = value;
@@ -532,7 +913,24 @@ public class EmailTemplatesType
 
 
         /**
-         * The Class ThanksForAttending.
+         * <p>Java class for anonymous complex type.
+         * 
+         * <p>The following schema fragment specifies the expected content contained within this class.
+         * 
+         * <pre>
+         * &lt;complexType>
+         *   &lt;complexContent>
+         *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+         *       &lt;sequence>
+         *         &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+         *         &lt;element name="sendDateTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+         *       &lt;/sequence>
+         *     &lt;/extension>
+         *   &lt;/complexContent>
+         * &lt;/complexType>
+         * </pre>
+         * 
+         * 
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -544,46 +942,53 @@ public class EmailTemplatesType
             implements Serializable
         {
 
-            /** The Constant serialVersionUID. */
             private final static long serialVersionUID = 2461660169443089969L;
-            
-            /** The send. */
             protected Boolean send;
-            
-            /** The send date time. */
             protected String sendDateTime;
 
             /**
-             * Checks if is send.
+             * Gets the value of the send property.
              * 
-             * @return the boolean
+             * @return
+             *     possible object is
+             *     {@link Boolean }
+             *     
              */
             public Boolean isSend() {
                 return send;
             }
 
             /**
-             * Sets the send.
+             * Sets the value of the send property.
              * 
-             * @param value the new send
+             * @param value
+             *     allowed object is
+             *     {@link Boolean }
+             *     
              */
             public void setSend(Boolean value) {
                 this.send = value;
             }
 
             /**
-             * Gets the send date time.
+             * Gets the value of the sendDateTime property.
              * 
-             * @return the send date time
+             * @return
+             *     possible object is
+             *     {@link String }
+             *     
              */
             public String getSendDateTime() {
                 return sendDateTime;
             }
 
             /**
-             * Sets the send date time.
+             * Sets the value of the sendDateTime property.
              * 
-             * @param value the new send date time
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *     
              */
             public void setSendDateTime(String value) {
                 this.sendDateTime = value;
@@ -595,7 +1000,24 @@ public class EmailTemplatesType
 
 
     /**
-     * The Class InvitationMsgs.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="participantsEmail" type="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType" minOccurs="0"/>
+     *         &lt;element name="panelistsEmail" type="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType" minOccurs="0"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -606,46 +1028,53 @@ public class EmailTemplatesType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The participants email. */
         protected EmailTemplateType participantsEmail;
-        
-        /** The panelists email. */
         protected EmailTemplateType panelistsEmail;
 
         /**
-         * Gets the participants email.
+         * Gets the value of the participantsEmail property.
          * 
-         * @return the participants email
+         * @return
+         *     possible object is
+         *     {@link EmailTemplateType }
+         *     
          */
         public EmailTemplateType getParticipantsEmail() {
             return participantsEmail;
         }
 
         /**
-         * Sets the participants email.
+         * Sets the value of the participantsEmail property.
          * 
-         * @param value the new participants email
+         * @param value
+         *     allowed object is
+         *     {@link EmailTemplateType }
+         *     
          */
         public void setParticipantsEmail(EmailTemplateType value) {
             this.participantsEmail = value;
         }
 
         /**
-         * Gets the panelists email.
+         * Gets the value of the panelistsEmail property.
          * 
-         * @return the panelists email
+         * @return
+         *     possible object is
+         *     {@link EmailTemplateType }
+         *     
          */
         public EmailTemplateType getPanelistsEmail() {
             return panelistsEmail;
         }
 
         /**
-         * Sets the panelists email.
+         * Sets the value of the panelistsEmail property.
          * 
-         * @param value the new panelists email
+         * @param value
+         *     allowed object is
+         *     {@link EmailTemplateType }
+         *     
          */
         public void setPanelistsEmail(EmailTemplateType value) {
             this.panelistsEmail = value;
@@ -655,7 +1084,46 @@ public class EmailTemplatesType
 
 
     /**
-     * The Class ReminderMsgs.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="firstReminder" minOccurs="0">
+     *           &lt;complexType>
+     *             &lt;complexContent>
+     *               &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+     *                 &lt;sequence>
+     *                   &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+     *                   &lt;element name="sendDateTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+     *                 &lt;/sequence>
+     *               &lt;/extension>
+     *             &lt;/complexContent>
+     *           &lt;/complexType>
+     *         &lt;/element>
+     *         &lt;element name="secondReminder" minOccurs="0">
+     *           &lt;complexType>
+     *             &lt;complexContent>
+     *               &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+     *                 &lt;sequence>
+     *                   &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+     *                   &lt;element name="sendDateTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+     *                 &lt;/sequence>
+     *               &lt;/extension>
+     *             &lt;/complexContent>
+     *           &lt;/complexType>
+     *         &lt;/element>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -666,46 +1134,53 @@ public class EmailTemplatesType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The first reminder. */
         protected EmailTemplatesType.ReminderMsgs.FirstReminder firstReminder;
-        
-        /** The second reminder. */
         protected EmailTemplatesType.ReminderMsgs.SecondReminder secondReminder;
 
         /**
-         * Gets the first reminder.
+         * Gets the value of the firstReminder property.
          * 
-         * @return the first reminder
+         * @return
+         *     possible object is
+         *     {@link EmailTemplatesType.ReminderMsgs.FirstReminder }
+         *     
          */
         public EmailTemplatesType.ReminderMsgs.FirstReminder getFirstReminder() {
             return firstReminder;
         }
 
         /**
-         * Sets the first reminder.
+         * Sets the value of the firstReminder property.
          * 
-         * @param value the new first reminder
+         * @param value
+         *     allowed object is
+         *     {@link EmailTemplatesType.ReminderMsgs.FirstReminder }
+         *     
          */
         public void setFirstReminder(EmailTemplatesType.ReminderMsgs.FirstReminder value) {
             this.firstReminder = value;
         }
 
         /**
-         * Gets the second reminder.
+         * Gets the value of the secondReminder property.
          * 
-         * @return the second reminder
+         * @return
+         *     possible object is
+         *     {@link EmailTemplatesType.ReminderMsgs.SecondReminder }
+         *     
          */
         public EmailTemplatesType.ReminderMsgs.SecondReminder getSecondReminder() {
             return secondReminder;
         }
 
         /**
-         * Sets the second reminder.
+         * Sets the value of the secondReminder property.
          * 
-         * @param value the new second reminder
+         * @param value
+         *     allowed object is
+         *     {@link EmailTemplatesType.ReminderMsgs.SecondReminder }
+         *     
          */
         public void setSecondReminder(EmailTemplatesType.ReminderMsgs.SecondReminder value) {
             this.secondReminder = value;
@@ -713,7 +1188,24 @@ public class EmailTemplatesType
 
 
         /**
-         * The Class FirstReminder.
+         * <p>Java class for anonymous complex type.
+         * 
+         * <p>The following schema fragment specifies the expected content contained within this class.
+         * 
+         * <pre>
+         * &lt;complexType>
+         *   &lt;complexContent>
+         *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+         *       &lt;sequence>
+         *         &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+         *         &lt;element name="sendDateTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+         *       &lt;/sequence>
+         *     &lt;/extension>
+         *   &lt;/complexContent>
+         * &lt;/complexType>
+         * </pre>
+         * 
+         * 
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -725,46 +1217,53 @@ public class EmailTemplatesType
             implements Serializable
         {
 
-            /** The Constant serialVersionUID. */
             private final static long serialVersionUID = 2461660169443089969L;
-            
-            /** The send. */
             protected Boolean send;
-            
-            /** The send date time. */
             protected String sendDateTime;
 
             /**
-             * Checks if is send.
+             * Gets the value of the send property.
              * 
-             * @return the boolean
+             * @return
+             *     possible object is
+             *     {@link Boolean }
+             *     
              */
             public Boolean isSend() {
                 return send;
             }
 
             /**
-             * Sets the send.
+             * Sets the value of the send property.
              * 
-             * @param value the new send
+             * @param value
+             *     allowed object is
+             *     {@link Boolean }
+             *     
              */
             public void setSend(Boolean value) {
                 this.send = value;
             }
 
             /**
-             * Gets the send date time.
+             * Gets the value of the sendDateTime property.
              * 
-             * @return the send date time
+             * @return
+             *     possible object is
+             *     {@link String }
+             *     
              */
             public String getSendDateTime() {
                 return sendDateTime;
             }
 
             /**
-             * Sets the send date time.
+             * Sets the value of the sendDateTime property.
              * 
-             * @param value the new send date time
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *     
              */
             public void setSendDateTime(String value) {
                 this.sendDateTime = value;
@@ -774,7 +1273,24 @@ public class EmailTemplatesType
 
 
         /**
-         * The Class SecondReminder.
+         * <p>Java class for anonymous complex type.
+         * 
+         * <p>The following schema fragment specifies the expected content contained within this class.
+         * 
+         * <pre>
+         * &lt;complexType>
+         *   &lt;complexContent>
+         *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}emailTemplateType">
+         *       &lt;sequence>
+         *         &lt;element name="send" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+         *         &lt;element name="sendDateTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+         *       &lt;/sequence>
+         *     &lt;/extension>
+         *   &lt;/complexContent>
+         * &lt;/complexType>
+         * </pre>
+         * 
+         * 
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -786,46 +1302,53 @@ public class EmailTemplatesType
             implements Serializable
         {
 
-            /** The Constant serialVersionUID. */
             private final static long serialVersionUID = 2461660169443089969L;
-            
-            /** The send. */
             protected Boolean send;
-            
-            /** The send date time. */
             protected String sendDateTime;
 
             /**
-             * Checks if is send.
+             * Gets the value of the send property.
              * 
-             * @return the boolean
+             * @return
+             *     possible object is
+             *     {@link Boolean }
+             *     
              */
             public Boolean isSend() {
                 return send;
             }
 
             /**
-             * Sets the send.
+             * Sets the value of the send property.
              * 
-             * @param value the new send
+             * @param value
+             *     allowed object is
+             *     {@link Boolean }
+             *     
              */
             public void setSend(Boolean value) {
                 this.send = value;
             }
 
             /**
-             * Gets the send date time.
+             * Gets the value of the sendDateTime property.
              * 
-             * @return the send date time
+             * @return
+             *     possible object is
+             *     {@link String }
+             *     
              */
             public String getSendDateTime() {
                 return sendDateTime;
             }
 
             /**
-             * Sets the send date time.
+             * Sets the value of the sendDateTime property.
              * 
-             * @param value the new send date time
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *     
              */
             public void setSendDateTime(String value) {
                 this.sendDateTime = value;

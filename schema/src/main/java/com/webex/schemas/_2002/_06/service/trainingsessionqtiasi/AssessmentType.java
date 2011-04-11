@@ -29,7 +29,27 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class AssessmentType.
+ * <p>Java class for assessmentType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="assessmentType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="qticomment" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qticommentType" minOccurs="0"/>
+ *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}duration" minOccurs="0"/>
+ *         &lt;element name="section" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}sectionType"/>
+ *       &lt;/sequence>
+ *       &lt;attribute name="ident" type="{http://www.w3.org/2001/XMLSchema}integer" default="0" />
+ *       &lt;attribute name="title" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "assessmentType", propOrder = {
@@ -41,87 +61,97 @@ public class AssessmentType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The qticomment. */
     protected QticommentType qticomment;
-    
-    /** The duration. */
     protected String duration;
-    
-    /** The section. */
     @XmlElement(required = true)
     protected SectionType section;
-    
-    /** The ident. */
     @XmlAttribute
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long ident;
-    
-    /** The title. */
     @XmlAttribute
     protected String title;
 
     /**
-     * Gets the qticomment.
+     * Gets the value of the qticomment property.
      * 
-     * @return the qticomment
+     * @return
+     *     possible object is
+     *     {@link QticommentType }
+     *     
      */
     public QticommentType getQticomment() {
         return qticomment;
     }
 
     /**
-     * Sets the qticomment.
+     * Sets the value of the qticomment property.
      * 
-     * @param value the new qticomment
+     * @param value
+     *     allowed object is
+     *     {@link QticommentType }
+     *     
      */
     public void setQticomment(QticommentType value) {
         this.qticomment = value;
     }
 
     /**
-     * Gets the duration.
+     * Gets the value of the duration property.
      * 
-     * @return the duration
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDuration() {
         return duration;
     }
 
     /**
-     * Sets the duration.
+     * Sets the value of the duration property.
      * 
-     * @param value the new duration
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDuration(String value) {
         this.duration = value;
     }
 
     /**
-     * Gets the section.
+     * Gets the value of the section property.
      * 
-     * @return the section
+     * @return
+     *     possible object is
+     *     {@link SectionType }
+     *     
      */
     public SectionType getSection() {
         return section;
     }
 
     /**
-     * Sets the section.
+     * Sets the value of the section property.
      * 
-     * @param value the new section
+     * @param value
+     *     allowed object is
+     *     {@link SectionType }
+     *     
      */
     public void setSection(SectionType value) {
         this.section = value;
     }
 
     /**
-     * Gets the ident.
+     * Gets the value of the ident property.
      * 
-     * @return the ident
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public long getIdent() {
         if (ident == null) {
@@ -132,27 +162,36 @@ public class AssessmentType
     }
 
     /**
-     * Sets the ident.
+     * Sets the value of the ident property.
      * 
-     * @param value the new ident
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setIdent(Long value) {
         this.ident = value;
     }
 
     /**
-     * Gets the title.
+     * Gets the value of the title property.
      * 
-     * @return the title
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTitle() {
         return title;
     }
 
     /**
-     * Sets the title.
+     * Sets the value of the title property.
      * 
-     * @param value the new title
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTitle(String value) {
         this.title = value;

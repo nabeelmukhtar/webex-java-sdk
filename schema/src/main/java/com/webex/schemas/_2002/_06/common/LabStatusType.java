@@ -22,34 +22,31 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum LabStatusType.
+ * <p>Java class for labStatusType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="labStatusType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="AVAILABLE"/>
+ *     &lt;enumeration value="UNAVAILABLE"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "labStatusType")
 @XmlEnum
 public enum LabStatusType {
 
-    /** The AVAILABLE. */
     AVAILABLE,
-    
-    /** The UNAVAILABLE. */
     UNAVAILABLE;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the lab status type
-     */
     public static LabStatusType fromValue(String v) {
         return valueOf(v);
     }

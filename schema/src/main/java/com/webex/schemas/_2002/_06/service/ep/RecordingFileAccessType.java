@@ -25,7 +25,26 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class RecordingFileAccessType.
+ * <p>Java class for recordingFileAccessType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="recordingFileAccessType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="registration" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="attendeeView" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="attendeeDownload" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="endPlayURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "recordingFileAccessType", propOrder = {
@@ -41,88 +60,103 @@ public class RecordingFileAccessType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The registration. */
     protected Boolean registration;
-    
-    /** The attendee view. */
     protected Boolean attendeeView;
-    
-    /** The attendee download. */
     protected Boolean attendeeDownload;
-    
-    /** The end play url. */
     protected String endPlayURL;
 
     /**
-     * Checks if is registration.
+     * Gets the value of the registration property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isRegistration() {
         return registration;
     }
 
     /**
-     * Sets the registration.
+     * Sets the value of the registration property.
      * 
-     * @param value the new registration
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setRegistration(Boolean value) {
         this.registration = value;
     }
 
     /**
-     * Checks if is attendee view.
+     * Gets the value of the attendeeView property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAttendeeView() {
         return attendeeView;
     }
 
     /**
-     * Sets the attendee view.
+     * Sets the value of the attendeeView property.
      * 
-     * @param value the new attendee view
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAttendeeView(Boolean value) {
         this.attendeeView = value;
     }
 
     /**
-     * Checks if is attendee download.
+     * Gets the value of the attendeeDownload property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAttendeeDownload() {
         return attendeeDownload;
     }
 
     /**
-     * Sets the attendee download.
+     * Sets the value of the attendeeDownload property.
      * 
-     * @param value the new attendee download
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAttendeeDownload(Boolean value) {
         this.attendeeDownload = value;
     }
 
     /**
-     * Gets the end play url.
+     * Gets the value of the endPlayURL property.
      * 
-     * @return the end play url
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getEndPlayURL() {
         return endPlayURL;
     }
 
     /**
-     * Sets the end play url.
+     * Sets the value of the endPlayURL property.
      * 
-     * @param value the new end play url
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setEndPlayURL(String value) {
         this.endPlayURL = value;

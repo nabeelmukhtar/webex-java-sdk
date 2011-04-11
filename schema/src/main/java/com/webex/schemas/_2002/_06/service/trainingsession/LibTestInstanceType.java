@@ -25,7 +25,27 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class LibTestInstanceType.
+ * <p>Java class for libTestInstanceType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="libTestInstanceType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="testID" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="type" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}shareType"/>
+ *         &lt;element name="title" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="author" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "libTestInstanceType", propOrder = {
@@ -39,113 +59,124 @@ public class LibTestInstanceType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The test id. */
     protected long testID;
-    
-    /** The type. */
     @XmlElement(required = true)
     protected ShareType type;
-    
-    /** The title. */
     @XmlElement(required = true)
     protected String title;
-    
-    /** The description. */
     @XmlElement(required = true)
     protected String description;
-    
-    /** The author. */
     @XmlElement(required = true)
     protected String author;
 
     /**
-     * Gets the test id.
+     * Gets the value of the testID property.
      * 
-     * @return the test id
      */
     public long getTestID() {
         return testID;
     }
 
     /**
-     * Sets the test id.
+     * Sets the value of the testID property.
      * 
-     * @param value the new test id
      */
     public void setTestID(long value) {
         this.testID = value;
     }
 
     /**
-     * Gets the type.
+     * Gets the value of the type property.
      * 
-     * @return the type
+     * @return
+     *     possible object is
+     *     {@link ShareType }
+     *     
      */
     public ShareType getType() {
         return type;
     }
 
     /**
-     * Sets the type.
+     * Sets the value of the type property.
      * 
-     * @param value the new type
+     * @param value
+     *     allowed object is
+     *     {@link ShareType }
+     *     
      */
     public void setType(ShareType value) {
         this.type = value;
     }
 
     /**
-     * Gets the title.
+     * Gets the value of the title property.
      * 
-     * @return the title
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTitle() {
         return title;
     }
 
     /**
-     * Sets the title.
+     * Sets the value of the title property.
      * 
-     * @param value the new title
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTitle(String value) {
         this.title = value;
     }
 
     /**
-     * Gets the description.
+     * Gets the value of the description property.
      * 
-     * @return the description
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDescription() {
         return description;
     }
 
     /**
-     * Sets the description.
+     * Sets the value of the description property.
      * 
-     * @param value the new description
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDescription(String value) {
         this.description = value;
     }
 
     /**
-     * Gets the author.
+     * Gets the value of the author property.
      * 
-     * @return the author
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getAuthor() {
         return author;
     }
 
     /**
-     * Sets the author.
+     * Sets the value of the author property.
      * 
-     * @param value the new author
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAuthor(String value) {
         this.author = value;

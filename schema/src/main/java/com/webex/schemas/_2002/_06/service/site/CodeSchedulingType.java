@@ -25,7 +25,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class CodeSchedulingType.
+ * <p>Java class for codeSchedulingType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="codeSchedulingType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="service" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="scheduling" type="{http://www.webex.com/schemas/2002/06/service/site}codeDisplayType"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "codeSchedulingType", propOrder = {
@@ -36,48 +53,55 @@ public class CodeSchedulingType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The service. */
     @XmlElement(required = true)
     protected String service;
-    
-    /** The scheduling. */
     @XmlElement(required = true)
     protected CodeDisplayType scheduling;
 
     /**
-     * Gets the service.
+     * Gets the value of the service property.
      * 
-     * @return the service
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getService() {
         return service;
     }
 
     /**
-     * Sets the service.
+     * Sets the value of the service property.
      * 
-     * @param value the new service
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setService(String value) {
         this.service = value;
     }
 
     /**
-     * Gets the scheduling.
+     * Gets the value of the scheduling property.
      * 
-     * @return the scheduling
+     * @return
+     *     possible object is
+     *     {@link CodeDisplayType }
+     *     
      */
     public CodeDisplayType getScheduling() {
         return scheduling;
     }
 
     /**
-     * Sets the scheduling.
+     * Sets the value of the scheduling property.
      * 
-     * @param value the new scheduling
+     * @param value
+     *     allowed object is
+     *     {@link CodeDisplayType }
+     *     
      */
     public void setScheduling(CodeDisplayType value) {
         this.scheduling = value;

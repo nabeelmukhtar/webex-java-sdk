@@ -24,7 +24,25 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class SessionTemplateType.
+ * <p>Java class for sessionTemplateType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="sessionTemplateType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="type" type="{http://www.webex.com/schemas/2002/06/service/ep}templateTypeType" minOccurs="0"/>
+ *         &lt;element name="value" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "sessionTemplateType", propOrder = {
@@ -36,67 +54,78 @@ public class SessionTemplateType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The name. */
     protected String name;
-    
-    /** The type. */
     protected TemplateTypeType type;
-    
-    /** The value. */
     protected String value;
 
     /**
-     * Gets the name.
+     * Gets the value of the name property.
      * 
-     * @return the name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Sets the name.
+     * Sets the value of the name property.
      * 
-     * @param value the new name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setName(String value) {
         this.name = value;
     }
 
     /**
-     * Gets the type.
+     * Gets the value of the type property.
      * 
-     * @return the type
+     * @return
+     *     possible object is
+     *     {@link TemplateTypeType }
+     *     
      */
     public TemplateTypeType getType() {
         return type;
     }
 
     /**
-     * Sets the type.
+     * Sets the value of the type property.
      * 
-     * @param value the new type
+     * @param value
+     *     allowed object is
+     *     {@link TemplateTypeType }
+     *     
      */
     public void setType(TemplateTypeType value) {
         this.type = value;
     }
 
     /**
-     * Gets the value.
+     * Gets the value of the value property.
      * 
-     * @return the value
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value.
+     * Sets the value of the value property.
      * 
-     * @param value the new value
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setValue(String value) {
         this.value = value;

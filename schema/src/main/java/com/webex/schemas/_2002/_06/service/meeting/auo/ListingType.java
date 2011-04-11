@@ -22,34 +22,31 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum ListingType.
+ * <p>Java class for listingType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="listingType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="PUBLIC"/>
+ *     &lt;enumeration value="PRIVATE"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "listingType")
 @XmlEnum
 public enum ListingType {
 
-    /** The PUBLIC. */
     PUBLIC,
-    
-    /** The PRIVATE. */
     PRIVATE;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the listing type
-     */
     public static ListingType fromValue(String v) {
         return valueOf(v);
     }

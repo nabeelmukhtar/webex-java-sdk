@@ -26,7 +26,28 @@ import com.webex.schemas._2002._06.common.EntryExitToneType;
 
 
 /**
- * The Class DefaultsType.
+ * <p>Java class for defaultsType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="defaultsType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="emailReminders" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         &lt;element name="entryExitTone" type="{http://www.webex.com/schemas/2002/06/common}entryExitToneType"/>
+ *         &lt;element name="voip" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         &lt;element name="teleconference" type="{http://www.webex.com/schemas/2002/06/service/site}teleconferenceType"/>
+ *         &lt;element name="joinTeleconfNotPress1" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         &lt;element name="updateTSPAccount" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "defaultsType", propOrder = {
@@ -41,132 +62,131 @@ public class DefaultsType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The email reminders. */
     protected boolean emailReminders;
-    
-    /** The entry exit tone. */
     @XmlElement(required = true)
     protected EntryExitToneType entryExitTone;
-    
-    /** The voip. */
     protected boolean voip;
-    
-    /** The teleconference. */
     @XmlElement(required = true)
     protected TeleconferenceType teleconference;
-    
-    /** The join teleconf not press1. */
     protected boolean joinTeleconfNotPress1;
-    
-    /** The update tsp account. */
     protected Boolean updateTSPAccount;
 
     /**
-     * Checks if is email reminders.
+     * Gets the value of the emailReminders property.
      * 
-     * @return true, if is email reminders
      */
     public boolean isEmailReminders() {
         return emailReminders;
     }
 
     /**
-     * Sets the email reminders.
+     * Sets the value of the emailReminders property.
      * 
-     * @param value the new email reminders
      */
     public void setEmailReminders(boolean value) {
         this.emailReminders = value;
     }
 
     /**
-     * Gets the entry exit tone.
+     * Gets the value of the entryExitTone property.
      * 
-     * @return the entry exit tone
+     * @return
+     *     possible object is
+     *     {@link EntryExitToneType }
+     *     
      */
     public EntryExitToneType getEntryExitTone() {
         return entryExitTone;
     }
 
     /**
-     * Sets the entry exit tone.
+     * Sets the value of the entryExitTone property.
      * 
-     * @param value the new entry exit tone
+     * @param value
+     *     allowed object is
+     *     {@link EntryExitToneType }
+     *     
      */
     public void setEntryExitTone(EntryExitToneType value) {
         this.entryExitTone = value;
     }
 
     /**
-     * Checks if is voip.
+     * Gets the value of the voip property.
      * 
-     * @return true, if is voip
      */
     public boolean isVoip() {
         return voip;
     }
 
     /**
-     * Sets the voip.
+     * Sets the value of the voip property.
      * 
-     * @param value the new voip
      */
     public void setVoip(boolean value) {
         this.voip = value;
     }
 
     /**
-     * Gets the teleconference.
+     * Gets the value of the teleconference property.
      * 
-     * @return the teleconference
+     * @return
+     *     possible object is
+     *     {@link TeleconferenceType }
+     *     
      */
     public TeleconferenceType getTeleconference() {
         return teleconference;
     }
 
     /**
-     * Sets the teleconference.
+     * Sets the value of the teleconference property.
      * 
-     * @param value the new teleconference
+     * @param value
+     *     allowed object is
+     *     {@link TeleconferenceType }
+     *     
      */
     public void setTeleconference(TeleconferenceType value) {
         this.teleconference = value;
     }
 
     /**
-     * Checks if is join teleconf not press1.
+     * Gets the value of the joinTeleconfNotPress1 property.
      * 
-     * @return true, if is join teleconf not press1
      */
     public boolean isJoinTeleconfNotPress1() {
         return joinTeleconfNotPress1;
     }
 
     /**
-     * Sets the join teleconf not press1.
+     * Sets the value of the joinTeleconfNotPress1 property.
      * 
-     * @param value the new join teleconf not press1
      */
     public void setJoinTeleconfNotPress1(boolean value) {
         this.joinTeleconfNotPress1 = value;
     }
 
     /**
-     * Checks if is update tsp account.
+     * Gets the value of the updateTSPAccount property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isUpdateTSPAccount() {
         return updateTSPAccount;
     }
 
     /**
-     * Sets the update tsp account.
+     * Sets the value of the updateTSPAccount property.
      * 
-     * @param value the new update tsp account
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setUpdateTSPAccount(Boolean value) {
         this.updateTSPAccount = value;

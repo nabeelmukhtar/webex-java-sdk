@@ -28,7 +28,26 @@ import com.webex.schemas._2002._06.service.attendee.RoleType;
 
 
 /**
- * The Class ParticipantType.
+ * <p>Java class for participantType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="participantType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="person" type="{http://www.webex.com/schemas/2002/06/common}personType"/>
+ *         &lt;element name="contactID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="joinStatus" type="{http://www.webex.com/schemas/2002/06/service/session}joinStatusType" minOccurs="0"/>
+ *         &lt;element name="role" type="{http://www.webex.com/schemas/2002/06/service/attendee}roleType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "participantType", propOrder = {
@@ -42,89 +61,104 @@ public class ParticipantType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The person. */
     @XmlElement(required = true)
     protected PersonType person;
-    
-    /** The contact id. */
     protected Long contactID;
-    
-    /** The join status. */
     protected JoinStatusType joinStatus;
-    
-    /** The role. */
     protected RoleType role;
 
     /**
-     * Gets the person.
+     * Gets the value of the person property.
      * 
-     * @return the person
+     * @return
+     *     possible object is
+     *     {@link PersonType }
+     *     
      */
     public PersonType getPerson() {
         return person;
     }
 
     /**
-     * Sets the person.
+     * Sets the value of the person property.
      * 
-     * @param value the new person
+     * @param value
+     *     allowed object is
+     *     {@link PersonType }
+     *     
      */
     public void setPerson(PersonType value) {
         this.person = value;
     }
 
     /**
-     * Gets the contact id.
+     * Gets the value of the contactID property.
      * 
-     * @return the contact id
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getContactID() {
         return contactID;
     }
 
     /**
-     * Sets the contact id.
+     * Sets the value of the contactID property.
      * 
-     * @param value the new contact id
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setContactID(Long value) {
         this.contactID = value;
     }
 
     /**
-     * Gets the join status.
+     * Gets the value of the joinStatus property.
      * 
-     * @return the join status
+     * @return
+     *     possible object is
+     *     {@link JoinStatusType }
+     *     
      */
     public JoinStatusType getJoinStatus() {
         return joinStatus;
     }
 
     /**
-     * Sets the join status.
+     * Sets the value of the joinStatus property.
      * 
-     * @param value the new join status
+     * @param value
+     *     allowed object is
+     *     {@link JoinStatusType }
+     *     
      */
     public void setJoinStatus(JoinStatusType value) {
         this.joinStatus = value;
     }
 
     /**
-     * Gets the role.
+     * Gets the value of the role property.
      * 
-     * @return the role
+     * @return
+     *     possible object is
+     *     {@link RoleType }
+     *     
      */
     public RoleType getRole() {
         return role;
     }
 
     /**
-     * Sets the role.
+     * Sets the value of the role property.
      * 
-     * @param value the new role
+     * @param value
+     *     allowed object is
+     *     {@link RoleType }
+     *     
      */
     public void setRole(RoleType value) {
         this.role = value;

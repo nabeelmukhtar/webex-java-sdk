@@ -29,7 +29,57 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class ScheduleType.
+ * <p>Java class for scheduleType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="scheduleType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="startDate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="timeZone" type="{http://www.webex.com/schemas/2002/06/common}timeZoneType" minOccurs="0"/>
+ *         &lt;element name="duration" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="openTimeEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="openTime" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="templateFilePath" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="showFilePath" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="showFileStartMode" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="showFileContPlayFlag" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="showFileInterVal" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="sendScheduleEmail" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="extURL" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="512"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="extNotifyTime" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}integer">
+ *               &lt;minInclusive value="0"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="joinNotifyURL" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="512"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="joinTeleconfBeforeHost" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="hostWebExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "scheduleType", propOrder = {
@@ -55,373 +105,440 @@ public class ScheduleType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The start date. */
     protected String startDate;
-    
-    /** The time zone id. */
     @XmlElement(type = String.class, defaultValue = "-1")
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long timeZoneID;
-    
-    /** The time zone. */
     protected TimeZoneType timeZone;
-    
-    /** The duration. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long duration;
-    
-    /** The open time enabled. */
     protected Boolean openTimeEnabled;
-    
-    /** The open time. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long openTime;
-    
-    /** The template file path. */
     protected String templateFilePath;
-    
-    /** The show file path. */
     protected String showFilePath;
-    
-    /** The show file start mode. */
     protected Boolean showFileStartMode;
-    
-    /** The show file cont play flag. */
     protected Boolean showFileContPlayFlag;
-    
-    /** The show file inter val. */
     protected Long showFileInterVal;
-    
-    /** The send schedule email. */
     @XmlElement(defaultValue = "false")
     protected Boolean sendScheduleEmail;
-    
-    /** The ext url. */
     protected String extURL;
-    
-    /** The ext notify time. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     protected Long extNotifyTime;
-    
-    /** The join notify url. */
     protected String joinNotifyURL;
-    
-    /** The join teleconf before host. */
     protected Boolean joinTeleconfBeforeHost;
-    
-    /** The host web ex id. */
     protected String hostWebExID;
 
     /**
-     * Gets the start date.
+     * Gets the value of the startDate property.
      * 
-     * @return the start date
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getStartDate() {
         return startDate;
     }
 
     /**
-     * Sets the start date.
+     * Sets the value of the startDate property.
      * 
-     * @param value the new start date
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setStartDate(String value) {
         this.startDate = value;
     }
 
     /**
-     * Gets the time zone id.
+     * Gets the value of the timeZoneID property.
      * 
-     * @return the time zone id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the time zone id.
+     * Sets the value of the timeZoneID property.
      * 
-     * @param value the new time zone id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTimeZoneID(Long value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the time zone.
+     * Gets the value of the timeZone property.
      * 
-     * @return the time zone
+     * @return
+     *     possible object is
+     *     {@link TimeZoneType }
+     *     
      */
     public TimeZoneType getTimeZone() {
         return timeZone;
     }
 
     /**
-     * Sets the time zone.
+     * Sets the value of the timeZone property.
      * 
-     * @param value the new time zone
+     * @param value
+     *     allowed object is
+     *     {@link TimeZoneType }
+     *     
      */
     public void setTimeZone(TimeZoneType value) {
         this.timeZone = value;
     }
 
     /**
-     * Gets the duration.
+     * Gets the value of the duration property.
      * 
-     * @return the duration
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getDuration() {
         return duration;
     }
 
     /**
-     * Sets the duration.
+     * Sets the value of the duration property.
      * 
-     * @param value the new duration
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDuration(Long value) {
         this.duration = value;
     }
 
     /**
-     * Checks if is open time enabled.
+     * Gets the value of the openTimeEnabled property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isOpenTimeEnabled() {
         return openTimeEnabled;
     }
 
     /**
-     * Sets the open time enabled.
+     * Sets the value of the openTimeEnabled property.
      * 
-     * @param value the new open time enabled
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setOpenTimeEnabled(Boolean value) {
         this.openTimeEnabled = value;
     }
 
     /**
-     * Gets the open time.
+     * Gets the value of the openTime property.
      * 
-     * @return the open time
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getOpenTime() {
         return openTime;
     }
 
     /**
-     * Sets the open time.
+     * Sets the value of the openTime property.
      * 
-     * @param value the new open time
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setOpenTime(Long value) {
         this.openTime = value;
     }
 
     /**
-     * Gets the template file path.
+     * Gets the value of the templateFilePath property.
      * 
-     * @return the template file path
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTemplateFilePath() {
         return templateFilePath;
     }
 
     /**
-     * Sets the template file path.
+     * Sets the value of the templateFilePath property.
      * 
-     * @param value the new template file path
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTemplateFilePath(String value) {
         this.templateFilePath = value;
     }
 
     /**
-     * Gets the show file path.
+     * Gets the value of the showFilePath property.
      * 
-     * @return the show file path
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getShowFilePath() {
         return showFilePath;
     }
 
     /**
-     * Sets the show file path.
+     * Sets the value of the showFilePath property.
      * 
-     * @param value the new show file path
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setShowFilePath(String value) {
         this.showFilePath = value;
     }
 
     /**
-     * Checks if is show file start mode.
+     * Gets the value of the showFileStartMode property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isShowFileStartMode() {
         return showFileStartMode;
     }
 
     /**
-     * Sets the show file start mode.
+     * Sets the value of the showFileStartMode property.
      * 
-     * @param value the new show file start mode
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setShowFileStartMode(Boolean value) {
         this.showFileStartMode = value;
     }
 
     /**
-     * Checks if is show file cont play flag.
+     * Gets the value of the showFileContPlayFlag property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isShowFileContPlayFlag() {
         return showFileContPlayFlag;
     }
 
     /**
-     * Sets the show file cont play flag.
+     * Sets the value of the showFileContPlayFlag property.
      * 
-     * @param value the new show file cont play flag
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setShowFileContPlayFlag(Boolean value) {
         this.showFileContPlayFlag = value;
     }
 
     /**
-     * Gets the show file inter val.
+     * Gets the value of the showFileInterVal property.
      * 
-     * @return the show file inter val
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getShowFileInterVal() {
         return showFileInterVal;
     }
 
     /**
-     * Sets the show file inter val.
+     * Sets the value of the showFileInterVal property.
      * 
-     * @param value the new show file inter val
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setShowFileInterVal(Long value) {
         this.showFileInterVal = value;
     }
 
     /**
-     * Checks if is send schedule email.
+     * Gets the value of the sendScheduleEmail property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSendScheduleEmail() {
         return sendScheduleEmail;
     }
 
     /**
-     * Sets the send schedule email.
+     * Sets the value of the sendScheduleEmail property.
      * 
-     * @param value the new send schedule email
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSendScheduleEmail(Boolean value) {
         this.sendScheduleEmail = value;
     }
 
     /**
-     * Gets the ext url.
+     * Gets the value of the extURL property.
      * 
-     * @return the ext url
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getExtURL() {
         return extURL;
     }
 
     /**
-     * Sets the ext url.
+     * Sets the value of the extURL property.
      * 
-     * @param value the new ext url
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setExtURL(String value) {
         this.extURL = value;
     }
 
     /**
-     * Gets the ext notify time.
+     * Gets the value of the extNotifyTime property.
      * 
-     * @return the ext notify time
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getExtNotifyTime() {
         return extNotifyTime;
     }
 
     /**
-     * Sets the ext notify time.
+     * Sets the value of the extNotifyTime property.
      * 
-     * @param value the new ext notify time
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setExtNotifyTime(Long value) {
         this.extNotifyTime = value;
     }
 
     /**
-     * Gets the join notify url.
+     * Gets the value of the joinNotifyURL property.
      * 
-     * @return the join notify url
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getJoinNotifyURL() {
         return joinNotifyURL;
     }
 
     /**
-     * Sets the join notify url.
+     * Sets the value of the joinNotifyURL property.
      * 
-     * @param value the new join notify url
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setJoinNotifyURL(String value) {
         this.joinNotifyURL = value;
     }
 
     /**
-     * Checks if is join teleconf before host.
+     * Gets the value of the joinTeleconfBeforeHost property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isJoinTeleconfBeforeHost() {
         return joinTeleconfBeforeHost;
     }
 
     /**
-     * Sets the join teleconf before host.
+     * Sets the value of the joinTeleconfBeforeHost property.
      * 
-     * @param value the new join teleconf before host
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setJoinTeleconfBeforeHost(Boolean value) {
         this.joinTeleconfBeforeHost = value;
     }
 
     /**
-     * Gets the host web ex id.
+     * Gets the value of the hostWebExID property.
      * 
-     * @return the host web ex id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHostWebExID() {
         return hostWebExID;
     }
 
     /**
-     * Sets the host web ex id.
+     * Sets the value of the hostWebExID property.
      * 
-     * @param value the new host web ex id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHostWebExID(String value) {
         this.hostWebExID = value;

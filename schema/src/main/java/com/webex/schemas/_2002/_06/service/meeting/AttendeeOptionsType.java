@@ -27,7 +27,35 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class AttendeeOptionsType.
+ * <p>Java class for attendeeOptionsType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="attendeeOptionsType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="request" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="registration" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="auto" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="emailInvitations" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="participantLimit" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}integer">
+ *               &lt;minInclusive value="0"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="excludePassword" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="joinRequiresAccount" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "attendeeOptionsType", propOrder = {
@@ -43,156 +71,183 @@ public class AttendeeOptionsType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The request. */
     protected Boolean request;
-    
-    /** The registration. */
     protected Boolean registration;
-    
-    /** The auto. */
     protected Boolean auto;
-    
-    /** The email invitations. */
     @XmlElement(defaultValue = "false")
     protected Boolean emailInvitations;
-    
-    /** The participant limit. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     protected Long participantLimit;
-    
-    /** The exclude password. */
     @XmlElement(defaultValue = "false")
     protected Boolean excludePassword;
-    
-    /** The join requires account. */
     @XmlElement(defaultValue = "false")
     protected Boolean joinRequiresAccount;
 
     /**
-     * Checks if is request.
+     * Gets the value of the request property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isRequest() {
         return request;
     }
 
     /**
-     * Sets the request.
+     * Sets the value of the request property.
      * 
-     * @param value the new request
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setRequest(Boolean value) {
         this.request = value;
     }
 
     /**
-     * Checks if is registration.
+     * Gets the value of the registration property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isRegistration() {
         return registration;
     }
 
     /**
-     * Sets the registration.
+     * Sets the value of the registration property.
      * 
-     * @param value the new registration
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setRegistration(Boolean value) {
         this.registration = value;
     }
 
     /**
-     * Checks if is auto.
+     * Gets the value of the auto property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAuto() {
         return auto;
     }
 
     /**
-     * Sets the auto.
+     * Sets the value of the auto property.
      * 
-     * @param value the new auto
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAuto(Boolean value) {
         this.auto = value;
     }
 
     /**
-     * Checks if is email invitations.
+     * Gets the value of the emailInvitations property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isEmailInvitations() {
         return emailInvitations;
     }
 
     /**
-     * Sets the email invitations.
+     * Sets the value of the emailInvitations property.
      * 
-     * @param value the new email invitations
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setEmailInvitations(Boolean value) {
         this.emailInvitations = value;
     }
 
     /**
-     * Gets the participant limit.
+     * Gets the value of the participantLimit property.
      * 
-     * @return the participant limit
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getParticipantLimit() {
         return participantLimit;
     }
 
     /**
-     * Sets the participant limit.
+     * Sets the value of the participantLimit property.
      * 
-     * @param value the new participant limit
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setParticipantLimit(Long value) {
         this.participantLimit = value;
     }
 
     /**
-     * Checks if is exclude password.
+     * Gets the value of the excludePassword property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isExcludePassword() {
         return excludePassword;
     }
 
     /**
-     * Sets the exclude password.
+     * Sets the value of the excludePassword property.
      * 
-     * @param value the new exclude password
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setExcludePassword(Boolean value) {
         this.excludePassword = value;
     }
 
     /**
-     * Checks if is join requires account.
+     * Gets the value of the joinRequiresAccount property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isJoinRequiresAccount() {
         return joinRequiresAccount;
     }
 
     /**
-     * Sets the join requires account.
+     * Sets the value of the joinRequiresAccount property.
      * 
-     * @param value the new join requires account
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setJoinRequiresAccount(Boolean value) {
         this.joinRequiresAccount = value;

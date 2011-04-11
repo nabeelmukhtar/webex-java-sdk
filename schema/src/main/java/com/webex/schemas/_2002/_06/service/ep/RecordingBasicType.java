@@ -26,7 +26,27 @@ import com.webex.schemas._2002._06.common.ListingType;
 
 
 /**
- * The Class RecordingBasicType.
+ * <p>Java class for recordingBasicType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="recordingBasicType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="topic" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="listing" type="{http://www.webex.com/schemas/2002/06/common}listingType" minOccurs="0"/>
+ *         &lt;element name="presenter" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="email" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="agenda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "recordingBasicType", propOrder = {
@@ -43,109 +63,128 @@ public class RecordingBasicType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The topic. */
     protected String topic;
-    
-    /** The listing. */
     protected ListingType listing;
-    
-    /** The presenter. */
     protected String presenter;
-    
-    /** The email. */
     protected String email;
-    
-    /** The agenda. */
     protected String agenda;
 
     /**
-     * Gets the topic.
+     * Gets the value of the topic property.
      * 
-     * @return the topic
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTopic() {
         return topic;
     }
 
     /**
-     * Sets the topic.
+     * Sets the value of the topic property.
      * 
-     * @param value the new topic
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTopic(String value) {
         this.topic = value;
     }
 
     /**
-     * Gets the listing.
+     * Gets the value of the listing property.
      * 
-     * @return the listing
+     * @return
+     *     possible object is
+     *     {@link ListingType }
+     *     
      */
     public ListingType getListing() {
         return listing;
     }
 
     /**
-     * Sets the listing.
+     * Sets the value of the listing property.
      * 
-     * @param value the new listing
+     * @param value
+     *     allowed object is
+     *     {@link ListingType }
+     *     
      */
     public void setListing(ListingType value) {
         this.listing = value;
     }
 
     /**
-     * Gets the presenter.
+     * Gets the value of the presenter property.
      * 
-     * @return the presenter
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPresenter() {
         return presenter;
     }
 
     /**
-     * Sets the presenter.
+     * Sets the value of the presenter property.
      * 
-     * @param value the new presenter
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPresenter(String value) {
         this.presenter = value;
     }
 
     /**
-     * Gets the email.
+     * Gets the value of the email property.
      * 
-     * @return the email
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getEmail() {
         return email;
     }
 
     /**
-     * Sets the email.
+     * Sets the value of the email property.
      * 
-     * @param value the new email
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setEmail(String value) {
         this.email = value;
     }
 
     /**
-     * Gets the agenda.
+     * Gets the value of the agenda property.
      * 
-     * @return the agenda
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getAgenda() {
         return agenda;
     }
 
     /**
-     * Sets the agenda.
+     * Sets the value of the agenda property.
      * 
-     * @param value the new agenda
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAgenda(String value) {
         this.agenda = value;

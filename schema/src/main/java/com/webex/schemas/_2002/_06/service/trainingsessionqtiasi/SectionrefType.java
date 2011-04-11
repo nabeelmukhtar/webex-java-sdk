@@ -26,7 +26,21 @@ import javax.xml.bind.annotation.XmlValue;
 
 
 /**
- * The Class SectionrefType.
+ * <p>Java class for sectionrefType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="sectionrefType">
+ *   &lt;simpleContent>
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
+ *       &lt;attribute name="linkrefid" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *     &lt;/extension>
+ *   &lt;/simpleContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "sectionrefType", propOrder = {
@@ -36,48 +50,55 @@ public class SectionrefType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The value. */
     @XmlValue
     protected String value;
-    
-    /** The linkrefid. */
     @XmlAttribute(required = true)
     protected String linkrefid;
 
     /**
-     * Gets the value.
+     * Gets the value of the value property.
      * 
-     * @return the value
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value.
+     * Sets the value of the value property.
      * 
-     * @param value the new value
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setValue(String value) {
         this.value = value;
     }
 
     /**
-     * Gets the linkrefid.
+     * Gets the value of the linkrefid property.
      * 
-     * @return the linkrefid
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLinkrefid() {
         return linkrefid;
     }
 
     /**
-     * Sets the linkrefid.
+     * Sets the value of the linkrefid property.
      * 
-     * @param value the new linkrefid
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLinkrefid(String value) {
         this.linkrefid = value;

@@ -22,40 +22,35 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum OrderScAttenHisByType.
+ * <p>Java class for orderScAttenHisByType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="orderScAttenHisByType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="ATTENDEENAME"/>
+ *     &lt;enumeration value="STARTTIME"/>
+ *     &lt;enumeration value="SESSIONKEY"/>
+ *     &lt;enumeration value="CONFID"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "orderScAttenHisByType")
 @XmlEnum
 public enum OrderScAttenHisByType {
 
-    /** The ATTENDEENAME. */
     ATTENDEENAME,
-    
-    /** The STARTTIME. */
     STARTTIME,
-    
-    /** The SESSIONKEY. */
     SESSIONKEY,
-    
-    /** The CONFID. */
     CONFID;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the order sc atten his by type
-     */
     public static OrderScAttenHisByType fromValue(String v) {
         return valueOf(v);
     }

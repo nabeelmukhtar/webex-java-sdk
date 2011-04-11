@@ -28,7 +28,30 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class TextBoxTagType.
+ * <p>Java class for textBoxTagType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="textBoxTagType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="fieldID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="lable" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="isMultiLines" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         &lt;element name="width" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="height" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="value" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="isRequired" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         &lt;element name="isDisplay" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "textBoxTagType", propOrder = {
@@ -45,178 +68,185 @@ public class TextBoxTagType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The field id. */
     protected Long fieldID;
-    
-    /** The lable. */
     protected String lable;
-    
-    /** The is multi lines. */
     protected boolean isMultiLines;
-    
-    /** The width. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long width;
-    
-    /** The height. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long height;
-    
-    /** The value. */
     protected String value;
-    
-    /** The is required. */
     protected boolean isRequired;
-    
-    /** The is display. */
     protected boolean isDisplay;
 
     /**
-     * Gets the field id.
+     * Gets the value of the fieldID property.
      * 
-     * @return the field id
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getFieldID() {
         return fieldID;
     }
 
     /**
-     * Sets the field id.
+     * Sets the value of the fieldID property.
      * 
-     * @param value the new field id
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setFieldID(Long value) {
         this.fieldID = value;
     }
 
     /**
-     * Gets the lable.
+     * Gets the value of the lable property.
      * 
-     * @return the lable
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLable() {
         return lable;
     }
 
     /**
-     * Sets the lable.
+     * Sets the value of the lable property.
      * 
-     * @param value the new lable
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLable(String value) {
         this.lable = value;
     }
 
     /**
-     * Checks if is checks if is multi lines.
+     * Gets the value of the isMultiLines property.
      * 
-     * @return true, if is checks if is multi lines
      */
     public boolean isIsMultiLines() {
         return isMultiLines;
     }
 
     /**
-     * Sets the checks if is multi lines.
+     * Sets the value of the isMultiLines property.
      * 
-     * @param value the new checks if is multi lines
      */
     public void setIsMultiLines(boolean value) {
         this.isMultiLines = value;
     }
 
     /**
-     * Gets the width.
+     * Gets the value of the width property.
      * 
-     * @return the width
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getWidth() {
         return width;
     }
 
     /**
-     * Sets the width.
+     * Sets the value of the width property.
      * 
-     * @param value the new width
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setWidth(Long value) {
         this.width = value;
     }
 
     /**
-     * Gets the height.
+     * Gets the value of the height property.
      * 
-     * @return the height
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getHeight() {
         return height;
     }
 
     /**
-     * Sets the height.
+     * Sets the value of the height property.
      * 
-     * @param value the new height
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHeight(Long value) {
         this.height = value;
     }
 
     /**
-     * Gets the value.
+     * Gets the value of the value property.
      * 
-     * @return the value
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value.
+     * Sets the value of the value property.
      * 
-     * @param value the new value
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setValue(String value) {
         this.value = value;
     }
 
     /**
-     * Checks if is checks if is required.
+     * Gets the value of the isRequired property.
      * 
-     * @return true, if is checks if is required
      */
     public boolean isIsRequired() {
         return isRequired;
     }
 
     /**
-     * Sets the checks if is required.
+     * Sets the value of the isRequired property.
      * 
-     * @param value the new checks if is required
      */
     public void setIsRequired(boolean value) {
         this.isRequired = value;
     }
 
     /**
-     * Checks if is checks if is display.
+     * Gets the value of the isDisplay property.
      * 
-     * @return true, if is checks if is display
      */
     public boolean isIsDisplay() {
         return isDisplay;
     }
 
     /**
-     * Sets the checks if is display.
+     * Sets the value of the isDisplay property.
      * 
-     * @param value the new checks if is display
      */
     public void setIsDisplay(boolean value) {
         this.isDisplay = value;

@@ -25,7 +25,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class QtimetadatafieldType.
+ * <p>Java class for qtimetadatafieldType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="qtimetadatafieldType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}fieldlabel"/>
+ *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}fieldentry"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "qtimetadatafieldType", propOrder = {
@@ -36,48 +53,55 @@ public class QtimetadatafieldType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The fieldlabel. */
     @XmlElement(required = true)
     protected String fieldlabel;
-    
-    /** The fieldentry. */
     @XmlElement(required = true)
     protected String fieldentry;
 
     /**
-     * Gets the fieldlabel.
+     * Gets the value of the fieldlabel property.
      * 
-     * @return the fieldlabel
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFieldlabel() {
         return fieldlabel;
     }
 
     /**
-     * Sets the fieldlabel.
+     * Sets the value of the fieldlabel property.
      * 
-     * @param value the new fieldlabel
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFieldlabel(String value) {
         this.fieldlabel = value;
     }
 
     /**
-     * Gets the fieldentry.
+     * Gets the value of the fieldentry property.
      * 
-     * @return the fieldentry
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFieldentry() {
         return fieldentry;
     }
 
     /**
-     * Sets the fieldentry.
+     * Sets the value of the fieldentry property.
      * 
-     * @param value the new fieldentry
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFieldentry(String value) {
         this.fieldentry = value;

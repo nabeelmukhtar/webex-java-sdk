@@ -24,7 +24,27 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class MyWebExBarType.
+ * <p>Java class for myWebExBarType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="myWebExBarType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="customLinks" type="{http://www.webex.com/schemas/2002/06/service/site}customLinkType" minOccurs="0"/>
+ *         &lt;element name="partnerLinks" type="{http://www.webex.com/schemas/2002/06/service/site}partnerLinkType" minOccurs="0"/>
+ *         &lt;element name="partnerIntegration" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="support" type="{http://www.webex.com/schemas/2002/06/service/site}urlType" minOccurs="0"/>
+ *         &lt;element name="training" type="{http://www.webex.com/schemas/2002/06/service/site}urlType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "myWebExBarType", propOrder = {
@@ -38,109 +58,128 @@ public class MyWebExBarType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The custom links. */
     protected CustomLinkType customLinks;
-    
-    /** The partner links. */
     protected PartnerLinkType partnerLinks;
-    
-    /** The partner integration. */
     protected Boolean partnerIntegration;
-    
-    /** The support. */
     protected UrlType support;
-    
-    /** The training. */
     protected UrlType training;
 
     /**
-     * Gets the custom links.
+     * Gets the value of the customLinks property.
      * 
-     * @return the custom links
+     * @return
+     *     possible object is
+     *     {@link CustomLinkType }
+     *     
      */
     public CustomLinkType getCustomLinks() {
         return customLinks;
     }
 
     /**
-     * Sets the custom links.
+     * Sets the value of the customLinks property.
      * 
-     * @param value the new custom links
+     * @param value
+     *     allowed object is
+     *     {@link CustomLinkType }
+     *     
      */
     public void setCustomLinks(CustomLinkType value) {
         this.customLinks = value;
     }
 
     /**
-     * Gets the partner links.
+     * Gets the value of the partnerLinks property.
      * 
-     * @return the partner links
+     * @return
+     *     possible object is
+     *     {@link PartnerLinkType }
+     *     
      */
     public PartnerLinkType getPartnerLinks() {
         return partnerLinks;
     }
 
     /**
-     * Sets the partner links.
+     * Sets the value of the partnerLinks property.
      * 
-     * @param value the new partner links
+     * @param value
+     *     allowed object is
+     *     {@link PartnerLinkType }
+     *     
      */
     public void setPartnerLinks(PartnerLinkType value) {
         this.partnerLinks = value;
     }
 
     /**
-     * Checks if is partner integration.
+     * Gets the value of the partnerIntegration property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isPartnerIntegration() {
         return partnerIntegration;
     }
 
     /**
-     * Sets the partner integration.
+     * Sets the value of the partnerIntegration property.
      * 
-     * @param value the new partner integration
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setPartnerIntegration(Boolean value) {
         this.partnerIntegration = value;
     }
 
     /**
-     * Gets the support.
+     * Gets the value of the support property.
      * 
-     * @return the support
+     * @return
+     *     possible object is
+     *     {@link UrlType }
+     *     
      */
     public UrlType getSupport() {
         return support;
     }
 
     /**
-     * Sets the support.
+     * Sets the value of the support property.
      * 
-     * @param value the new support
+     * @param value
+     *     allowed object is
+     *     {@link UrlType }
+     *     
      */
     public void setSupport(UrlType value) {
         this.support = value;
     }
 
     /**
-     * Gets the training.
+     * Gets the value of the training property.
      * 
-     * @return the training
+     * @return
+     *     possible object is
+     *     {@link UrlType }
+     *     
      */
     public UrlType getTraining() {
         return training;
     }
 
     /**
-     * Sets the training.
+     * Sets the value of the training property.
      * 
-     * @param value the new training
+     * @param value
+     *     allowed object is
+     *     {@link UrlType }
+     *     
      */
     public void setTraining(UrlType value) {
         this.training = value;

@@ -29,7 +29,26 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class DistListInstanceType.
+ * <p>Java class for distListInstanceType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="distListInstanceType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="distListID" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="desc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="addressType" type="{http://www.webex.com/schemas/2002/06/common}addressTypeType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "distListInstanceType", propOrder = {
@@ -42,92 +61,107 @@ public class DistListInstanceType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The dist list id. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long distListID;
-    
-    /** The name. */
     @XmlElement(required = true)
     protected String name;
-    
-    /** The desc. */
     protected String desc;
-    
-    /** The address type. */
     protected AddressTypeType addressType;
 
     /**
-     * Gets the dist list id.
+     * Gets the value of the distListID property.
      * 
-     * @return the dist list id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getDistListID() {
         return distListID;
     }
 
     /**
-     * Sets the dist list id.
+     * Sets the value of the distListID property.
      * 
-     * @param value the new dist list id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDistListID(Long value) {
         this.distListID = value;
     }
 
     /**
-     * Gets the name.
+     * Gets the value of the name property.
      * 
-     * @return the name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Sets the name.
+     * Sets the value of the name property.
      * 
-     * @param value the new name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setName(String value) {
         this.name = value;
     }
 
     /**
-     * Gets the desc.
+     * Gets the value of the desc property.
      * 
-     * @return the desc
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDesc() {
         return desc;
     }
 
     /**
-     * Sets the desc.
+     * Sets the value of the desc property.
      * 
-     * @param value the new desc
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDesc(String value) {
         this.desc = value;
     }
 
     /**
-     * Gets the address type.
+     * Gets the value of the addressType property.
      * 
-     * @return the address type
+     * @return
+     *     possible object is
+     *     {@link AddressTypeType }
+     *     
      */
     public AddressTypeType getAddressType() {
         return addressType;
     }
 
     /**
-     * Sets the address type.
+     * Sets the value of the addressType property.
      * 
-     * @param value the new address type
+     * @param value
+     *     allowed object is
+     *     {@link AddressTypeType }
+     *     
      */
     public void setAddressType(AddressTypeType value) {
         this.addressType = value;

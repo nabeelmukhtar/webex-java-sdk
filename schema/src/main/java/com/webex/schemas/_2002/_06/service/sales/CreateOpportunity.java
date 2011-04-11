@@ -26,7 +26,24 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class CreateOpportunity.
+ * <p>Java class for createOpportunity complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="createOpportunity">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="webExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="opportunity" type="{http://www.webex.com/schemas/2002/06/service/sales}opptyType"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "createOpportunity", propOrder = {
@@ -38,47 +55,54 @@ public class CreateOpportunity
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The web ex id. */
     protected String webExID;
-    
-    /** The opportunity. */
     @XmlElement(required = true)
     protected OpptyType opportunity;
 
     /**
-     * Gets the web ex id.
+     * Gets the value of the webExID property.
      * 
-     * @return the web ex id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getWebExID() {
         return webExID;
     }
 
     /**
-     * Sets the web ex id.
+     * Sets the value of the webExID property.
      * 
-     * @param value the new web ex id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setWebExID(String value) {
         this.webExID = value;
     }
 
     /**
-     * Gets the opportunity.
+     * Gets the value of the opportunity property.
      * 
-     * @return the opportunity
+     * @return
+     *     possible object is
+     *     {@link OpptyType }
+     *     
      */
     public OpptyType getOpportunity() {
         return opportunity;
     }
 
     /**
-     * Sets the opportunity.
+     * Sets the value of the opportunity property.
      * 
-     * @param value the new opportunity
+     * @param value
+     *     allowed object is
+     *     {@link OpptyType }
+     *     
      */
     public void setOpportunity(OpptyType value) {
         this.opportunity = value;

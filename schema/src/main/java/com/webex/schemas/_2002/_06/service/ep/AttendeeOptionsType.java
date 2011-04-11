@@ -24,7 +24,23 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class AttendeeOptionsType.
+ * <p>Java class for attendeeOptionsType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="attendeeOptionsType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="joinApproval" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "attendeeOptionsType", propOrder = {
@@ -34,25 +50,28 @@ public class AttendeeOptionsType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The join approval. */
     protected Boolean joinApproval;
 
     /**
-     * Checks if is join approval.
+     * Gets the value of the joinApproval property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isJoinApproval() {
         return joinApproval;
     }
 
     /**
-     * Sets the join approval.
+     * Sets the value of the joinApproval property.
      * 
-     * @param value the new join approval
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setJoinApproval(Boolean value) {
         this.joinApproval = value;

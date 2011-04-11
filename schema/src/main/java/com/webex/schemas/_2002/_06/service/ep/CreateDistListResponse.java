@@ -29,7 +29,23 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class CreateDistListResponse.
+ * <p>Java class for createDistListResponse complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="createDistListResponse">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="distListID" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "createDistListResponse", propOrder = {
@@ -40,28 +56,31 @@ public class CreateDistListResponse
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The dist list id. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long distListID;
 
     /**
-     * Gets the dist list id.
+     * Gets the value of the distListID property.
      * 
-     * @return the dist list id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getDistListID() {
         return distListID;
     }
 
     /**
-     * Sets the dist list id.
+     * Sets the value of the distListID property.
      * 
-     * @param value the new dist list id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDistListID(Long value) {
         this.distListID = value;

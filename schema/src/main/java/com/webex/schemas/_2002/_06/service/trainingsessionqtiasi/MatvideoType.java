@@ -26,7 +26,28 @@ import javax.xml.bind.annotation.XmlValue;
 
 
 /**
- * The Class MatvideoType.
+ * <p>Java class for matvideoType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="matvideoType">
+ *   &lt;simpleContent>
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
+ *       &lt;attribute name="videotype" type="{http://www.w3.org/2001/XMLSchema}string" default="video/avi" />
+ *       &lt;attribute name="label" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       &lt;attribute name="uri" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       &lt;attribute name="width" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       &lt;attribute name="height" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       &lt;attribute name="y0" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       &lt;attribute name="x0" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       &lt;attribute name="embedded" type="{http://www.w3.org/2001/XMLSchema}string" default="base64" />
+ *     &lt;/extension>
+ *   &lt;/simpleContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "matvideoType", propOrder = {
@@ -35,67 +56,57 @@ import javax.xml.bind.annotation.XmlValue;
 public class MatvideoType implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The value. */
     @XmlValue
     protected String value;
-    
-    /** The videotype. */
     @XmlAttribute
     protected String videotype;
-    
-    /** The label. */
     @XmlAttribute
     protected String label;
-    
-    /** The uri. */
     @XmlAttribute
     protected String uri;
-    
-    /** The width. */
     @XmlAttribute
     protected String width;
-    
-    /** The height. */
     @XmlAttribute
     protected String height;
-    
-    /** The y0. */
     @XmlAttribute
     protected String y0;
-    
-    /** The x0. */
     @XmlAttribute
     protected String x0;
-    
-    /** The embedded. */
     @XmlAttribute
     protected String embedded;
 
     /**
-     * Gets the value.
+     * Gets the value of the value property.
      * 
-     * @return the value
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value.
+     * Sets the value of the value property.
      * 
-     * @param value the new value
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setValue(String value) {
         this.value = value;
     }
 
     /**
-     * Gets the videotype.
+     * Gets the value of the videotype property.
      * 
-     * @return the videotype
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getVideotype() {
         if (videotype == null) {
@@ -106,126 +117,168 @@ public class MatvideoType implements Serializable
     }
 
     /**
-     * Sets the videotype.
+     * Sets the value of the videotype property.
      * 
-     * @param value the new videotype
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setVideotype(String value) {
         this.videotype = value;
     }
 
     /**
-     * Gets the label.
+     * Gets the value of the label property.
      * 
-     * @return the label
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLabel() {
         return label;
     }
 
     /**
-     * Sets the label.
+     * Sets the value of the label property.
      * 
-     * @param value the new label
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLabel(String value) {
         this.label = value;
     }
 
     /**
-     * Gets the uri.
+     * Gets the value of the uri property.
      * 
-     * @return the uri
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getUri() {
         return uri;
     }
 
     /**
-     * Sets the uri.
+     * Sets the value of the uri property.
      * 
-     * @param value the new uri
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setUri(String value) {
         this.uri = value;
     }
 
     /**
-     * Gets the width.
+     * Gets the value of the width property.
      * 
-     * @return the width
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getWidth() {
         return width;
     }
 
     /**
-     * Sets the width.
+     * Sets the value of the width property.
      * 
-     * @param value the new width
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setWidth(String value) {
         this.width = value;
     }
 
     /**
-     * Gets the height.
+     * Gets the value of the height property.
      * 
-     * @return the height
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHeight() {
         return height;
     }
 
     /**
-     * Sets the height.
+     * Sets the value of the height property.
      * 
-     * @param value the new height
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHeight(String value) {
         this.height = value;
     }
 
     /**
-     * Gets the y0.
+     * Gets the value of the y0 property.
      * 
-     * @return the y0
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getY0() {
         return y0;
     }
 
     /**
-     * Sets the y0.
+     * Sets the value of the y0 property.
      * 
-     * @param value the new y0
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setY0(String value) {
         this.y0 = value;
     }
 
     /**
-     * Gets the x0.
+     * Gets the value of the x0 property.
      * 
-     * @return the x0
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getX0() {
         return x0;
     }
 
     /**
-     * Sets the x0.
+     * Sets the value of the x0 property.
      * 
-     * @param value the new x0
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setX0(String value) {
         this.x0 = value;
     }
 
     /**
-     * Gets the embedded.
+     * Gets the value of the embedded property.
      * 
-     * @return the embedded
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getEmbedded() {
         if (embedded == null) {
@@ -236,9 +289,12 @@ public class MatvideoType implements Serializable
     }
 
     /**
-     * Sets the embedded.
+     * Sets the value of the embedded property.
      * 
-     * @param value the new embedded
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setEmbedded(String value) {
         this.embedded = value;

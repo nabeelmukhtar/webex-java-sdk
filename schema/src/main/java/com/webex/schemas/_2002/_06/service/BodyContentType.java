@@ -252,7 +252,20 @@ import com.webex.schemas._2002._06.service.user.UserType;
 
 
 /**
- * The Class BodyContentType.
+ * <p>Java class for bodyContentType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="bodyContentType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "bodyContentType")
@@ -489,7 +502,6 @@ public class BodyContentType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
 
 }

@@ -27,7 +27,37 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class GetOneClickSettingsResponse.
+ * <p>Java class for getOneClickSettingsResponse complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="getOneClickSettingsResponse">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="metaData" type="{http://www.webex.com/schemas/2002/06/service/ep}ocMetaDataType" minOccurs="0"/>
+ *         &lt;element name="trackingCodes" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="trackingCode" type="{http://www.webex.com/schemas/2002/06/service/ep}oneClickTrackingCodeType" maxOccurs="10" minOccurs="0"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="telephony" type="{http://www.webex.com/schemas/2002/06/service/ep}oneClickTelephonyType" minOccurs="0"/>
+ *         &lt;element name="enableOptions" type="{http://www.webex.com/schemas/2002/06/service/ep}oneClickEnableOptionsType" minOccurs="0"/>
+ *         &lt;element name="attendeeOptions" type="{http://www.webex.com/schemas/2002/06/service/ep}attendeeOptionsType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getOneClickSettingsResponse", propOrder = {
@@ -42,109 +72,128 @@ public class GetOneClickSettingsResponse
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The meta data. */
     protected OcMetaDataType metaData;
-    
-    /** The tracking codes. */
     protected GetOneClickSettingsResponse.TrackingCodes trackingCodes;
-    
-    /** The telephony. */
     protected OneClickTelephonyType telephony;
-    
-    /** The enable options. */
     protected OneClickEnableOptionsType enableOptions;
-    
-    /** The attendee options. */
     protected AttendeeOptionsType attendeeOptions;
 
     /**
-     * Gets the meta data.
+     * Gets the value of the metaData property.
      * 
-     * @return the meta data
+     * @return
+     *     possible object is
+     *     {@link OcMetaDataType }
+     *     
      */
     public OcMetaDataType getMetaData() {
         return metaData;
     }
 
     /**
-     * Sets the meta data.
+     * Sets the value of the metaData property.
      * 
-     * @param value the new meta data
+     * @param value
+     *     allowed object is
+     *     {@link OcMetaDataType }
+     *     
      */
     public void setMetaData(OcMetaDataType value) {
         this.metaData = value;
     }
 
     /**
-     * Gets the tracking codes.
+     * Gets the value of the trackingCodes property.
      * 
-     * @return the tracking codes
+     * @return
+     *     possible object is
+     *     {@link GetOneClickSettingsResponse.TrackingCodes }
+     *     
      */
     public GetOneClickSettingsResponse.TrackingCodes getTrackingCodes() {
         return trackingCodes;
     }
 
     /**
-     * Sets the tracking codes.
+     * Sets the value of the trackingCodes property.
      * 
-     * @param value the new tracking codes
+     * @param value
+     *     allowed object is
+     *     {@link GetOneClickSettingsResponse.TrackingCodes }
+     *     
      */
     public void setTrackingCodes(GetOneClickSettingsResponse.TrackingCodes value) {
         this.trackingCodes = value;
     }
 
     /**
-     * Gets the telephony.
+     * Gets the value of the telephony property.
      * 
-     * @return the telephony
+     * @return
+     *     possible object is
+     *     {@link OneClickTelephonyType }
+     *     
      */
     public OneClickTelephonyType getTelephony() {
         return telephony;
     }
 
     /**
-     * Sets the telephony.
+     * Sets the value of the telephony property.
      * 
-     * @param value the new telephony
+     * @param value
+     *     allowed object is
+     *     {@link OneClickTelephonyType }
+     *     
      */
     public void setTelephony(OneClickTelephonyType value) {
         this.telephony = value;
     }
 
     /**
-     * Gets the enable options.
+     * Gets the value of the enableOptions property.
      * 
-     * @return the enable options
+     * @return
+     *     possible object is
+     *     {@link OneClickEnableOptionsType }
+     *     
      */
     public OneClickEnableOptionsType getEnableOptions() {
         return enableOptions;
     }
 
     /**
-     * Sets the enable options.
+     * Sets the value of the enableOptions property.
      * 
-     * @param value the new enable options
+     * @param value
+     *     allowed object is
+     *     {@link OneClickEnableOptionsType }
+     *     
      */
     public void setEnableOptions(OneClickEnableOptionsType value) {
         this.enableOptions = value;
     }
 
     /**
-     * Gets the attendee options.
+     * Gets the value of the attendeeOptions property.
      * 
-     * @return the attendee options
+     * @return
+     *     possible object is
+     *     {@link AttendeeOptionsType }
+     *     
      */
     public AttendeeOptionsType getAttendeeOptions() {
         return attendeeOptions;
     }
 
     /**
-     * Sets the attendee options.
+     * Sets the value of the attendeeOptions property.
      * 
-     * @param value the new attendee options
+     * @param value
+     *     allowed object is
+     *     {@link AttendeeOptionsType }
+     *     
      */
     public void setAttendeeOptions(AttendeeOptionsType value) {
         this.attendeeOptions = value;
@@ -152,7 +201,23 @@ public class GetOneClickSettingsResponse
 
 
     /**
-     * The Class TrackingCodes.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="trackingCode" type="{http://www.webex.com/schemas/2002/06/service/ep}oneClickTrackingCodeType" maxOccurs="10" minOccurs="0"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -162,16 +227,30 @@ public class GetOneClickSettingsResponse
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The tracking code. */
         protected List<OneClickTrackingCodeType> trackingCode;
 
         /**
-         * Gets the tracking code.
+         * Gets the value of the trackingCode property.
          * 
-         * @return the tracking code
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the trackingCode property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getTrackingCode().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link OneClickTrackingCodeType }
+         * 
+         * 
          */
         public List<OneClickTrackingCodeType> getTrackingCode() {
             if (trackingCode == null) {

@@ -28,7 +28,26 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class RemindType.
+ * <p>Java class for remindType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="remindType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="enableReminder" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="daysAhead" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="hoursAhead" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="minutesAhead" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "remindType", propOrder = {
@@ -41,97 +60,112 @@ public class RemindType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The enable reminder. */
     protected Boolean enableReminder;
-    
-    /** The days ahead. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long daysAhead;
-    
-    /** The hours ahead. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long hoursAhead;
-    
-    /** The minutes ahead. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long minutesAhead;
 
     /**
-     * Checks if is enable reminder.
+     * Gets the value of the enableReminder property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isEnableReminder() {
         return enableReminder;
     }
 
     /**
-     * Sets the enable reminder.
+     * Sets the value of the enableReminder property.
      * 
-     * @param value the new enable reminder
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setEnableReminder(Boolean value) {
         this.enableReminder = value;
     }
 
     /**
-     * Gets the days ahead.
+     * Gets the value of the daysAhead property.
      * 
-     * @return the days ahead
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getDaysAhead() {
         return daysAhead;
     }
 
     /**
-     * Sets the days ahead.
+     * Sets the value of the daysAhead property.
      * 
-     * @param value the new days ahead
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDaysAhead(Long value) {
         this.daysAhead = value;
     }
 
     /**
-     * Gets the hours ahead.
+     * Gets the value of the hoursAhead property.
      * 
-     * @return the hours ahead
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getHoursAhead() {
         return hoursAhead;
     }
 
     /**
-     * Sets the hours ahead.
+     * Sets the value of the hoursAhead property.
      * 
-     * @param value the new hours ahead
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHoursAhead(Long value) {
         this.hoursAhead = value;
     }
 
     /**
-     * Gets the minutes ahead.
+     * Gets the value of the minutesAhead property.
      * 
-     * @return the minutes ahead
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getMinutesAhead() {
         return minutesAhead;
     }
 
     /**
-     * Sets the minutes ahead.
+     * Sets the value of the minutesAhead property.
      * 
-     * @param value the new minutes ahead
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMinutesAhead(Long value) {
         this.minutesAhead = value;

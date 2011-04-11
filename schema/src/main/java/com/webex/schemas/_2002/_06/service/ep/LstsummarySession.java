@@ -33,7 +33,58 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class LstsummarySession.
+ * <p>Java class for lstsummarySession complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="lstsummarySession">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="listControl" type="{http://www.webex.com/schemas/2002/06/service}lstControlType" minOccurs="0"/>
+ *         &lt;element name="order" type="{http://www.webex.com/schemas/2002/06/service/ep}orderType" minOccurs="0"/>
+ *         &lt;element name="dateScope" type="{http://www.webex.com/schemas/2002/06/service/ep}dateScopeType" minOccurs="0"/>
+ *         &lt;element name="sessionTypes" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="sessionType" type="{http://www.w3.org/2001/XMLSchema}integer" maxOccurs="unbounded" minOccurs="0"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="serviceTypes" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="serviceType" type="{http://www.webex.com/schemas/2002/06/common}serviceTypeType" maxOccurs="unbounded" minOccurs="0"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="hostWebExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="hostEmail" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="status" type="{http://www.webex.com/schemas/2002/06/service/ep}statusType" minOccurs="0"/>
+ *         &lt;element name="recurrence" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="invited" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="confID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="confName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="inclAudioOnly" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="returnPSOFields" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="returnAssistFields" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstsummarySession", propOrder = {
@@ -59,341 +110,404 @@ public class LstsummarySession
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The list control. */
     protected LstControlType listControl;
-    
-    /** The order. */
     protected OrderType order;
-    
-    /** The date scope. */
     protected DateScopeType dateScope;
-    
-    /** The session types. */
     protected LstsummarySession.SessionTypes sessionTypes;
-    
-    /** The service types. */
     protected LstsummarySession.ServiceTypes serviceTypes;
-    
-    /** The session key. */
     protected Long sessionKey;
-    
-    /** The host web ex id. */
     protected String hostWebExID;
-    
-    /** The host email. */
     protected String hostEmail;
-    
-    /** The status. */
     protected StatusType status;
-    
-    /** The recurrence. */
     protected Boolean recurrence;
-    
-    /** The invited. */
     protected Boolean invited;
-    
-    /** The conf id. */
     protected Long confID;
-    
-    /** The conf name. */
     protected String confName;
-    
-    /** The incl audio only. */
     protected Boolean inclAudioOnly;
-    
-    /** The return pso fields. */
     protected Boolean returnPSOFields;
-    
-    /** The return assist fields. */
     @XmlElement(defaultValue = "false")
     protected Boolean returnAssistFields;
 
     /**
-     * Gets the list control.
+     * Gets the value of the listControl property.
      * 
-     * @return the list control
+     * @return
+     *     possible object is
+     *     {@link LstControlType }
+     *     
      */
     public LstControlType getListControl() {
         return listControl;
     }
 
     /**
-     * Sets the list control.
+     * Sets the value of the listControl property.
      * 
-     * @param value the new list control
+     * @param value
+     *     allowed object is
+     *     {@link LstControlType }
+     *     
      */
     public void setListControl(LstControlType value) {
         this.listControl = value;
     }
 
     /**
-     * Gets the order.
+     * Gets the value of the order property.
      * 
-     * @return the order
+     * @return
+     *     possible object is
+     *     {@link OrderType }
+     *     
      */
     public OrderType getOrder() {
         return order;
     }
 
     /**
-     * Sets the order.
+     * Sets the value of the order property.
      * 
-     * @param value the new order
+     * @param value
+     *     allowed object is
+     *     {@link OrderType }
+     *     
      */
     public void setOrder(OrderType value) {
         this.order = value;
     }
 
     /**
-     * Gets the date scope.
+     * Gets the value of the dateScope property.
      * 
-     * @return the date scope
+     * @return
+     *     possible object is
+     *     {@link DateScopeType }
+     *     
      */
     public DateScopeType getDateScope() {
         return dateScope;
     }
 
     /**
-     * Sets the date scope.
+     * Sets the value of the dateScope property.
      * 
-     * @param value the new date scope
+     * @param value
+     *     allowed object is
+     *     {@link DateScopeType }
+     *     
      */
     public void setDateScope(DateScopeType value) {
         this.dateScope = value;
     }
 
     /**
-     * Gets the session types.
+     * Gets the value of the sessionTypes property.
      * 
-     * @return the session types
+     * @return
+     *     possible object is
+     *     {@link LstsummarySession.SessionTypes }
+     *     
      */
     public LstsummarySession.SessionTypes getSessionTypes() {
         return sessionTypes;
     }
 
     /**
-     * Sets the session types.
+     * Sets the value of the sessionTypes property.
      * 
-     * @param value the new session types
+     * @param value
+     *     allowed object is
+     *     {@link LstsummarySession.SessionTypes }
+     *     
      */
     public void setSessionTypes(LstsummarySession.SessionTypes value) {
         this.sessionTypes = value;
     }
 
     /**
-     * Gets the service types.
+     * Gets the value of the serviceTypes property.
      * 
-     * @return the service types
+     * @return
+     *     possible object is
+     *     {@link LstsummarySession.ServiceTypes }
+     *     
      */
     public LstsummarySession.ServiceTypes getServiceTypes() {
         return serviceTypes;
     }
 
     /**
-     * Sets the service types.
+     * Sets the value of the serviceTypes property.
      * 
-     * @param value the new service types
+     * @param value
+     *     allowed object is
+     *     {@link LstsummarySession.ServiceTypes }
+     *     
      */
     public void setServiceTypes(LstsummarySession.ServiceTypes value) {
         this.serviceTypes = value;
     }
 
     /**
-     * Gets the session key.
+     * Gets the value of the sessionKey property.
      * 
-     * @return the session key
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the session key.
+     * Sets the value of the sessionKey property.
      * 
-     * @param value the new session key
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setSessionKey(Long value) {
         this.sessionKey = value;
     }
 
     /**
-     * Gets the host web ex id.
+     * Gets the value of the hostWebExID property.
      * 
-     * @return the host web ex id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHostWebExID() {
         return hostWebExID;
     }
 
     /**
-     * Sets the host web ex id.
+     * Sets the value of the hostWebExID property.
      * 
-     * @param value the new host web ex id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHostWebExID(String value) {
         this.hostWebExID = value;
     }
 
     /**
-     * Gets the host email.
+     * Gets the value of the hostEmail property.
      * 
-     * @return the host email
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHostEmail() {
         return hostEmail;
     }
 
     /**
-     * Sets the host email.
+     * Sets the value of the hostEmail property.
      * 
-     * @param value the new host email
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHostEmail(String value) {
         this.hostEmail = value;
     }
 
     /**
-     * Gets the status.
+     * Gets the value of the status property.
      * 
-     * @return the status
+     * @return
+     *     possible object is
+     *     {@link StatusType }
+     *     
      */
     public StatusType getStatus() {
         return status;
     }
 
     /**
-     * Sets the status.
+     * Sets the value of the status property.
      * 
-     * @param value the new status
+     * @param value
+     *     allowed object is
+     *     {@link StatusType }
+     *     
      */
     public void setStatus(StatusType value) {
         this.status = value;
     }
 
     /**
-     * Checks if is recurrence.
+     * Gets the value of the recurrence property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isRecurrence() {
         return recurrence;
     }
 
     /**
-     * Sets the recurrence.
+     * Sets the value of the recurrence property.
      * 
-     * @param value the new recurrence
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setRecurrence(Boolean value) {
         this.recurrence = value;
     }
 
     /**
-     * Checks if is invited.
+     * Gets the value of the invited property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isInvited() {
         return invited;
     }
 
     /**
-     * Sets the invited.
+     * Sets the value of the invited property.
      * 
-     * @param value the new invited
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setInvited(Boolean value) {
         this.invited = value;
     }
 
     /**
-     * Gets the conf id.
+     * Gets the value of the confID property.
      * 
-     * @return the conf id
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getConfID() {
         return confID;
     }
 
     /**
-     * Sets the conf id.
+     * Sets the value of the confID property.
      * 
-     * @param value the new conf id
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setConfID(Long value) {
         this.confID = value;
     }
 
     /**
-     * Gets the conf name.
+     * Gets the value of the confName property.
      * 
-     * @return the conf name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getConfName() {
         return confName;
     }
 
     /**
-     * Sets the conf name.
+     * Sets the value of the confName property.
      * 
-     * @param value the new conf name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setConfName(String value) {
         this.confName = value;
     }
 
     /**
-     * Checks if is incl audio only.
+     * Gets the value of the inclAudioOnly property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isInclAudioOnly() {
         return inclAudioOnly;
     }
 
     /**
-     * Sets the incl audio only.
+     * Sets the value of the inclAudioOnly property.
      * 
-     * @param value the new incl audio only
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setInclAudioOnly(Boolean value) {
         this.inclAudioOnly = value;
     }
 
     /**
-     * Checks if is return pso fields.
+     * Gets the value of the returnPSOFields property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isReturnPSOFields() {
         return returnPSOFields;
     }
 
     /**
-     * Sets the return pso fields.
+     * Sets the value of the returnPSOFields property.
      * 
-     * @param value the new return pso fields
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setReturnPSOFields(Boolean value) {
         this.returnPSOFields = value;
     }
 
     /**
-     * Checks if is return assist fields.
+     * Gets the value of the returnAssistFields property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isReturnAssistFields() {
         return returnAssistFields;
     }
 
     /**
-     * Sets the return assist fields.
+     * Sets the value of the returnAssistFields property.
      * 
-     * @param value the new return assist fields
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setReturnAssistFields(Boolean value) {
         this.returnAssistFields = value;
@@ -401,7 +515,23 @@ public class LstsummarySession
 
 
     /**
-     * The Class ServiceTypes.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="serviceType" type="{http://www.webex.com/schemas/2002/06/common}serviceTypeType" maxOccurs="unbounded" minOccurs="0"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -411,16 +541,30 @@ public class LstsummarySession
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The service type. */
         protected List<ServiceTypeType> serviceType;
 
         /**
-         * Gets the service type.
+         * Gets the value of the serviceType property.
          * 
-         * @return the service type
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the serviceType property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getServiceType().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link ServiceTypeType }
+         * 
+         * 
          */
         public List<ServiceTypeType> getServiceType() {
             if (serviceType == null) {
@@ -433,7 +577,23 @@ public class LstsummarySession
 
 
     /**
-     * The Class SessionTypes.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="sessionType" type="{http://www.w3.org/2001/XMLSchema}integer" maxOccurs="unbounded" minOccurs="0"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -443,19 +603,33 @@ public class LstsummarySession
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The session type. */
         @XmlElement(type = String.class)
         @XmlJavaTypeAdapter(Adapter1 .class)
         @XmlSchemaType(name = "integer")
         protected List<Long> sessionType;
 
         /**
-         * Gets the session type.
+         * Gets the value of the sessionType property.
          * 
-         * @return the session type
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the sessionType property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getSessionType().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link String }
+         * 
+         * 
          */
         public List<Long> getSessionType() {
             if (sessionType == null) {

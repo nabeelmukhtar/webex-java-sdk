@@ -24,7 +24,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class OcTrackingCodeType.
+ * <p>Java class for ocTrackingCodeType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="ocTrackingCodeType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="index" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="value" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ocTrackingCodeType", propOrder = {
@@ -35,46 +52,45 @@ public class OcTrackingCodeType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The index. */
     protected int index;
-    
-    /** The value. */
     protected String value;
 
     /**
-     * Gets the index.
+     * Gets the value of the index property.
      * 
-     * @return the index
      */
     public int getIndex() {
         return index;
     }
 
     /**
-     * Sets the index.
+     * Sets the value of the index property.
      * 
-     * @param value the new index
      */
     public void setIndex(int value) {
         this.index = value;
     }
 
     /**
-     * Gets the value.
+     * Gets the value of the value property.
      * 
-     * @return the value
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value.
+     * Sets the value of the value property.
      * 
-     * @param value the new value
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setValue(String value) {
         this.value = value;

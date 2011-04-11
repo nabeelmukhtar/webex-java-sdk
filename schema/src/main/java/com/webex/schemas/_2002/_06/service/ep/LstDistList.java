@@ -30,7 +30,26 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class LstDistList.
+ * <p>Java class for lstDistList complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="lstDistList">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="distListID" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="addressType" type="{http://www.webex.com/schemas/2002/06/common}addressTypeType" minOccurs="0"/>
+ *         &lt;element name="hostWebExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstDistList", propOrder = {
@@ -44,91 +63,106 @@ public class LstDistList
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The dist list id. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long distListID;
-    
-    /** The name. */
     protected String name;
-    
-    /** The address type. */
     protected AddressTypeType addressType;
-    
-    /** The host web ex id. */
     protected String hostWebExID;
 
     /**
-     * Gets the dist list id.
+     * Gets the value of the distListID property.
      * 
-     * @return the dist list id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getDistListID() {
         return distListID;
     }
 
     /**
-     * Sets the dist list id.
+     * Sets the value of the distListID property.
      * 
-     * @param value the new dist list id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDistListID(Long value) {
         this.distListID = value;
     }
 
     /**
-     * Gets the name.
+     * Gets the value of the name property.
      * 
-     * @return the name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Sets the name.
+     * Sets the value of the name property.
      * 
-     * @param value the new name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setName(String value) {
         this.name = value;
     }
 
     /**
-     * Gets the address type.
+     * Gets the value of the addressType property.
      * 
-     * @return the address type
+     * @return
+     *     possible object is
+     *     {@link AddressTypeType }
+     *     
      */
     public AddressTypeType getAddressType() {
         return addressType;
     }
 
     /**
-     * Sets the address type.
+     * Sets the value of the addressType property.
      * 
-     * @param value the new address type
+     * @param value
+     *     allowed object is
+     *     {@link AddressTypeType }
+     *     
      */
     public void setAddressType(AddressTypeType value) {
         this.addressType = value;
     }
 
     /**
-     * Gets the host web ex id.
+     * Gets the value of the hostWebExID property.
      * 
-     * @return the host web ex id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHostWebExID() {
         return hostWebExID;
     }
 
     /**
-     * Sets the host web ex id.
+     * Sets the value of the hostWebExID property.
      * 
-     * @param value the new host web ex id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHostWebExID(String value) {
         this.hostWebExID = value;

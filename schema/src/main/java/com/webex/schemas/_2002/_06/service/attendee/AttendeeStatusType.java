@@ -24,7 +24,26 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class AttendeeStatusType.
+ * <p>Java class for attendeeStatusType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="attendeeStatusType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="invited" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         &lt;element name="registered" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         &lt;element name="rejected" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         &lt;element name="accepted" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "attendeeStatusType", propOrder = {
@@ -37,88 +56,71 @@ public class AttendeeStatusType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The invited. */
     protected boolean invited;
-    
-    /** The registered. */
     protected boolean registered;
-    
-    /** The rejected. */
     protected boolean rejected;
-    
-    /** The accepted. */
     protected boolean accepted;
 
     /**
-     * Checks if is invited.
+     * Gets the value of the invited property.
      * 
-     * @return true, if is invited
      */
     public boolean isInvited() {
         return invited;
     }
 
     /**
-     * Sets the invited.
+     * Sets the value of the invited property.
      * 
-     * @param value the new invited
      */
     public void setInvited(boolean value) {
         this.invited = value;
     }
 
     /**
-     * Checks if is registered.
+     * Gets the value of the registered property.
      * 
-     * @return true, if is registered
      */
     public boolean isRegistered() {
         return registered;
     }
 
     /**
-     * Sets the registered.
+     * Sets the value of the registered property.
      * 
-     * @param value the new registered
      */
     public void setRegistered(boolean value) {
         this.registered = value;
     }
 
     /**
-     * Checks if is rejected.
+     * Gets the value of the rejected property.
      * 
-     * @return true, if is rejected
      */
     public boolean isRejected() {
         return rejected;
     }
 
     /**
-     * Sets the rejected.
+     * Sets the value of the rejected property.
      * 
-     * @param value the new rejected
      */
     public void setRejected(boolean value) {
         this.rejected = value;
     }
 
     /**
-     * Checks if is accepted.
+     * Gets the value of the accepted property.
      * 
-     * @return true, if is accepted
      */
     public boolean isAccepted() {
         return accepted;
     }
 
     /**
-     * Sets the accepted.
+     * Sets the value of the accepted property.
      * 
-     * @param value the new accepted
      */
     public void setAccepted(boolean value) {
         this.accepted = value;

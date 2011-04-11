@@ -29,7 +29,29 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class MetaDataType.
+ * <p>Java class for metaDataType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="metaDataType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="sessionName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="sessionType" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="defaultHighestMT" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="sessionTemplate" type="{http://www.webex.com/schemas/2002/06/common}sessionTemplateType" minOccurs="0"/>
+ *         &lt;element name="programID" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="postEventSurvey" type="{http://www.webex.com/schemas/2002/06/service/event}postEventSurveyType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "metaDataType", propOrder = {
@@ -45,158 +67,185 @@ public class MetaDataType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The session name. */
     protected String sessionName;
-    
-    /** The session type. */
     @XmlElement(type = String.class, defaultValue = "-1")
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long sessionType;
-    
-    /** The description. */
     protected String description;
-    
-    /** The default highest mt. */
     @XmlElement(defaultValue = "true")
     protected Boolean defaultHighestMT;
-    
-    /** The session template. */
     protected SessionTemplateType sessionTemplate;
-    
-    /** The program id. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long programID;
-    
-    /** The post event survey. */
     protected PostEventSurveyType postEventSurvey;
 
     /**
-     * Gets the session name.
+     * Gets the value of the sessionName property.
      * 
-     * @return the session name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSessionName() {
         return sessionName;
     }
 
     /**
-     * Sets the session name.
+     * Sets the value of the sessionName property.
      * 
-     * @param value the new session name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSessionName(String value) {
         this.sessionName = value;
     }
 
     /**
-     * Gets the session type.
+     * Gets the value of the sessionType property.
      * 
-     * @return the session type
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getSessionType() {
         return sessionType;
     }
 
     /**
-     * Sets the session type.
+     * Sets the value of the sessionType property.
      * 
-     * @param value the new session type
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSessionType(Long value) {
         this.sessionType = value;
     }
 
     /**
-     * Gets the description.
+     * Gets the value of the description property.
      * 
-     * @return the description
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDescription() {
         return description;
     }
 
     /**
-     * Sets the description.
+     * Sets the value of the description property.
      * 
-     * @param value the new description
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDescription(String value) {
         this.description = value;
     }
 
     /**
-     * Checks if is default highest mt.
+     * Gets the value of the defaultHighestMT property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isDefaultHighestMT() {
         return defaultHighestMT;
     }
 
     /**
-     * Sets the default highest mt.
+     * Sets the value of the defaultHighestMT property.
      * 
-     * @param value the new default highest mt
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setDefaultHighestMT(Boolean value) {
         this.defaultHighestMT = value;
     }
 
     /**
-     * Gets the session template.
+     * Gets the value of the sessionTemplate property.
      * 
-     * @return the session template
+     * @return
+     *     possible object is
+     *     {@link SessionTemplateType }
+     *     
      */
     public SessionTemplateType getSessionTemplate() {
         return sessionTemplate;
     }
 
     /**
-     * Sets the session template.
+     * Sets the value of the sessionTemplate property.
      * 
-     * @param value the new session template
+     * @param value
+     *     allowed object is
+     *     {@link SessionTemplateType }
+     *     
      */
     public void setSessionTemplate(SessionTemplateType value) {
         this.sessionTemplate = value;
     }
 
     /**
-     * Gets the program id.
+     * Gets the value of the programID property.
      * 
-     * @return the program id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getProgramID() {
         return programID;
     }
 
     /**
-     * Sets the program id.
+     * Sets the value of the programID property.
      * 
-     * @param value the new program id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setProgramID(Long value) {
         this.programID = value;
     }
 
     /**
-     * Gets the post event survey.
+     * Gets the value of the postEventSurvey property.
      * 
-     * @return the post event survey
+     * @return
+     *     possible object is
+     *     {@link PostEventSurveyType }
+     *     
      */
     public PostEventSurveyType getPostEventSurvey() {
         return postEventSurvey;
     }
 
     /**
-     * Sets the post event survey.
+     * Sets the value of the postEventSurvey property.
      * 
-     * @param value the new post event survey
+     * @param value
+     *     allowed object is
+     *     {@link PostEventSurveyType }
+     *     
      */
     public void setPostEventSurvey(PostEventSurveyType value) {
         this.postEventSurvey = value;

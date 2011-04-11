@@ -23,105 +23,76 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum OrderByType.
+ * <p>Java class for orderByType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="orderByType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="CONFID"/>
+ *     &lt;enumeration value="ATTENDEEID"/>
+ *     &lt;enumeration value="ATTENDEETYPE"/>
+ *     &lt;enumeration value="ATTENDEENAME"/>
+ *     &lt;enumeration value="ATTENDEEWEBEXID"/>
+ *     &lt;enumeration value="JOINSTATUS"/>
+ *     &lt;enumeration value="EMAIL"/>
+ *     &lt;enumeration value="PHONE"/>
+ *     &lt;enumeration value="MOBILE"/>
+ *     &lt;enumeration value="FAX"/>
+ *     &lt;enumeration value="COMPANY"/>
+ *     &lt;enumeration value="TITLE"/>
+ *     &lt;enumeration value="URL"/>
+ *     &lt;enumeration value="ADDRESS1"/>
+ *     &lt;enumeration value="ADDRESS2"/>
+ *     &lt;enumeration value="CITY"/>
+ *     &lt;enumeration value="STATE"/>
+ *     &lt;enumeration value="ZIPCODE"/>
+ *     &lt;enumeration value="COUNTRY"/>
+ *     &lt;enumeration value="NOTES"/>
+ *     &lt;enumeration value="ADDRESSTYPE"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "orderByType")
 @XmlEnum
 public enum OrderByType {
 
-    /** The CONFID. */
     CONFID("CONFID"),
-    
-    /** The ATTENDEEID. */
     ATTENDEEID("ATTENDEEID"),
-    
-    /** The ATTENDEETYPE. */
     ATTENDEETYPE("ATTENDEETYPE"),
-    
-    /** The ATTENDEENAME. */
     ATTENDEENAME("ATTENDEENAME"),
-    
-    /** The ATTENDEEWEBEXID. */
     ATTENDEEWEBEXID("ATTENDEEWEBEXID"),
-    
-    /** The JOINSTATUS. */
     JOINSTATUS("JOINSTATUS"),
-    
-    /** The EMAIL. */
     EMAIL("EMAIL"),
-    
-    /** The PHONE. */
     PHONE("PHONE"),
-    
-    /** The MOBILE. */
     MOBILE("MOBILE"),
-    
-    /** The FAX. */
     FAX("FAX"),
-    
-    /** The COMPANY. */
     COMPANY("COMPANY"),
-    
-    /** The TITLE. */
     TITLE("TITLE"),
-    
-    /** The URL. */
     URL("URL"),
-    
-    /** The ADDRES s_1. */
     @XmlEnumValue("ADDRESS1")
     ADDRESS_1("ADDRESS1"),
-    
-    /** The ADDRES s_2. */
     @XmlEnumValue("ADDRESS2")
     ADDRESS_2("ADDRESS2"),
-    
-    /** The CITY. */
     CITY("CITY"),
-    
-    /** The STATE. */
     STATE("STATE"),
-    
-    /** The ZIPCODE. */
     ZIPCODE("ZIPCODE"),
-    
-    /** The COUNTRY. */
     COUNTRY("COUNTRY"),
-    
-    /** The NOTES. */
     NOTES("NOTES"),
-    
-    /** The ADDRESSTYPE. */
     ADDRESSTYPE("ADDRESSTYPE");
-    
-    /** The value. */
     private final String value;
 
-    /**
-     * Instantiates a new order by type.
-     * 
-     * @param v the v
-     */
     OrderByType(String v) {
         value = v;
     }
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return value;
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the order by type
-     */
     public static OrderByType fromValue(String v) {
         for (OrderByType c: OrderByType.values()) {
             if (c.value.equals(v)) {

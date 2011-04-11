@@ -24,7 +24,35 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class MywebexType.
+ * <p>Java class for mywebexType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="mywebexType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="isMyWebExPro" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="myContact" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="myProfile" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="myMeetings" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="myFolders" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="trainingRecordings" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="recordedEvents" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="totalStorageSize" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="myReports" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="myComputer" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="personalMeetingRoom" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="myPartnerLinks" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="myWorkspaces" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "mywebexType", propOrder = {
@@ -46,277 +74,328 @@ public class MywebexType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The is my web ex pro. */
     protected Boolean isMyWebExPro;
-    
-    /** The my contact. */
     protected Boolean myContact;
-    
-    /** The my profile. */
     protected Boolean myProfile;
-    
-    /** The my meetings. */
     protected Boolean myMeetings;
-    
-    /** The my folders. */
     protected Boolean myFolders;
-    
-    /** The training recordings. */
     protected Boolean trainingRecordings;
-    
-    /** The recorded events. */
     protected Boolean recordedEvents;
-    
-    /** The total storage size. */
     protected Long totalStorageSize;
-    
-    /** The my reports. */
     protected Boolean myReports;
-    
-    /** The my computer. */
     protected Long myComputer;
-    
-    /** The personal meeting room. */
     protected Boolean personalMeetingRoom;
-    
-    /** The my partner links. */
     protected Boolean myPartnerLinks;
-    
-    /** The my workspaces. */
     protected Boolean myWorkspaces;
 
     /**
-     * Checks if is is my web ex pro.
+     * Gets the value of the isMyWebExPro property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isIsMyWebExPro() {
         return isMyWebExPro;
     }
 
     /**
-     * Sets the checks if is my web ex pro.
+     * Sets the value of the isMyWebExPro property.
      * 
-     * @param value the new checks if is my web ex pro
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setIsMyWebExPro(Boolean value) {
         this.isMyWebExPro = value;
     }
 
     /**
-     * Checks if is my contact.
+     * Gets the value of the myContact property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isMyContact() {
         return myContact;
     }
 
     /**
-     * Sets the my contact.
+     * Sets the value of the myContact property.
      * 
-     * @param value the new my contact
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setMyContact(Boolean value) {
         this.myContact = value;
     }
 
     /**
-     * Checks if is my profile.
+     * Gets the value of the myProfile property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isMyProfile() {
         return myProfile;
     }
 
     /**
-     * Sets the my profile.
+     * Sets the value of the myProfile property.
      * 
-     * @param value the new my profile
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setMyProfile(Boolean value) {
         this.myProfile = value;
     }
 
     /**
-     * Checks if is my meetings.
+     * Gets the value of the myMeetings property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isMyMeetings() {
         return myMeetings;
     }
 
     /**
-     * Sets the my meetings.
+     * Sets the value of the myMeetings property.
      * 
-     * @param value the new my meetings
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setMyMeetings(Boolean value) {
         this.myMeetings = value;
     }
 
     /**
-     * Checks if is my folders.
+     * Gets the value of the myFolders property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isMyFolders() {
         return myFolders;
     }
 
     /**
-     * Sets the my folders.
+     * Sets the value of the myFolders property.
      * 
-     * @param value the new my folders
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setMyFolders(Boolean value) {
         this.myFolders = value;
     }
 
     /**
-     * Checks if is training recordings.
+     * Gets the value of the trainingRecordings property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isTrainingRecordings() {
         return trainingRecordings;
     }
 
     /**
-     * Sets the training recordings.
+     * Sets the value of the trainingRecordings property.
      * 
-     * @param value the new training recordings
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setTrainingRecordings(Boolean value) {
         this.trainingRecordings = value;
     }
 
     /**
-     * Checks if is recorded events.
+     * Gets the value of the recordedEvents property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isRecordedEvents() {
         return recordedEvents;
     }
 
     /**
-     * Sets the recorded events.
+     * Sets the value of the recordedEvents property.
      * 
-     * @param value the new recorded events
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setRecordedEvents(Boolean value) {
         this.recordedEvents = value;
     }
 
     /**
-     * Gets the total storage size.
+     * Gets the value of the totalStorageSize property.
      * 
-     * @return the total storage size
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getTotalStorageSize() {
         return totalStorageSize;
     }
 
     /**
-     * Sets the total storage size.
+     * Sets the value of the totalStorageSize property.
      * 
-     * @param value the new total storage size
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setTotalStorageSize(Long value) {
         this.totalStorageSize = value;
     }
 
     /**
-     * Checks if is my reports.
+     * Gets the value of the myReports property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isMyReports() {
         return myReports;
     }
 
     /**
-     * Sets the my reports.
+     * Sets the value of the myReports property.
      * 
-     * @param value the new my reports
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setMyReports(Boolean value) {
         this.myReports = value;
     }
 
     /**
-     * Gets the my computer.
+     * Gets the value of the myComputer property.
      * 
-     * @return the my computer
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getMyComputer() {
         return myComputer;
     }
 
     /**
-     * Sets the my computer.
+     * Sets the value of the myComputer property.
      * 
-     * @param value the new my computer
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setMyComputer(Long value) {
         this.myComputer = value;
     }
 
     /**
-     * Checks if is personal meeting room.
+     * Gets the value of the personalMeetingRoom property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isPersonalMeetingRoom() {
         return personalMeetingRoom;
     }
 
     /**
-     * Sets the personal meeting room.
+     * Sets the value of the personalMeetingRoom property.
      * 
-     * @param value the new personal meeting room
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setPersonalMeetingRoom(Boolean value) {
         this.personalMeetingRoom = value;
     }
 
     /**
-     * Checks if is my partner links.
+     * Gets the value of the myPartnerLinks property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isMyPartnerLinks() {
         return myPartnerLinks;
     }
 
     /**
-     * Sets the my partner links.
+     * Sets the value of the myPartnerLinks property.
      * 
-     * @param value the new my partner links
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setMyPartnerLinks(Boolean value) {
         this.myPartnerLinks = value;
     }
 
     /**
-     * Checks if is my workspaces.
+     * Gets the value of the myWorkspaces property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isMyWorkspaces() {
         return myWorkspaces;
     }
 
     /**
-     * Sets the my workspaces.
+     * Sets the value of the myWorkspaces property.
      * 
-     * @param value the new my workspaces
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setMyWorkspaces(Boolean value) {
         this.myWorkspaces = value;

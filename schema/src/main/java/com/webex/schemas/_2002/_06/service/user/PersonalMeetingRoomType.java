@@ -24,7 +24,26 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class PersonalMeetingRoomType.
+ * <p>Java class for personalMeetingRoomType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="personalMeetingRoomType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="welcomeMessage" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="photoURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="headerImageBranding" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="headerImageURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "personalMeetingRoomType", propOrder = {
@@ -37,88 +56,103 @@ public class PersonalMeetingRoomType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The welcome message. */
     protected String welcomeMessage;
-    
-    /** The photo url. */
     protected String photoURL;
-    
-    /** The header image branding. */
     protected Boolean headerImageBranding;
-    
-    /** The header image url. */
     protected String headerImageURL;
 
     /**
-     * Gets the welcome message.
+     * Gets the value of the welcomeMessage property.
      * 
-     * @return the welcome message
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getWelcomeMessage() {
         return welcomeMessage;
     }
 
     /**
-     * Sets the welcome message.
+     * Sets the value of the welcomeMessage property.
      * 
-     * @param value the new welcome message
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setWelcomeMessage(String value) {
         this.welcomeMessage = value;
     }
 
     /**
-     * Gets the photo url.
+     * Gets the value of the photoURL property.
      * 
-     * @return the photo url
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPhotoURL() {
         return photoURL;
     }
 
     /**
-     * Sets the photo url.
+     * Sets the value of the photoURL property.
      * 
-     * @param value the new photo url
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPhotoURL(String value) {
         this.photoURL = value;
     }
 
     /**
-     * Checks if is header image branding.
+     * Gets the value of the headerImageBranding property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isHeaderImageBranding() {
         return headerImageBranding;
     }
 
     /**
-     * Sets the header image branding.
+     * Sets the value of the headerImageBranding property.
      * 
-     * @param value the new header image branding
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setHeaderImageBranding(Boolean value) {
         this.headerImageBranding = value;
     }
 
     /**
-     * Gets the header image url.
+     * Gets the value of the headerImageURL property.
      * 
-     * @return the header image url
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHeaderImageURL() {
         return headerImageURL;
     }
 
     /**
-     * Sets the header image url.
+     * Sets the value of the headerImageURL property.
      * 
-     * @param value the new header image url
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHeaderImageURL(String value) {
         this.headerImageURL = value;

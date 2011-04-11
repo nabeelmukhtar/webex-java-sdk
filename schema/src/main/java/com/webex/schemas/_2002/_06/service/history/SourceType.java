@@ -25,7 +25,25 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class SourceType.
+ * <p>Java class for sourceType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="sourceType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="leadSourceID" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="count" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="avgLeadScore" type="{http://www.w3.org/2001/XMLSchema}float"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "sourceType", propOrder = {
@@ -37,68 +55,63 @@ public class SourceType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The lead source id. */
     @XmlElement(required = true)
     protected String leadSourceID;
-    
-    /** The count. */
     protected long count;
-    
-    /** The avg lead score. */
     protected float avgLeadScore;
 
     /**
-     * Gets the lead source id.
+     * Gets the value of the leadSourceID property.
      * 
-     * @return the lead source id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLeadSourceID() {
         return leadSourceID;
     }
 
     /**
-     * Sets the lead source id.
+     * Sets the value of the leadSourceID property.
      * 
-     * @param value the new lead source id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLeadSourceID(String value) {
         this.leadSourceID = value;
     }
 
     /**
-     * Gets the count.
+     * Gets the value of the count property.
      * 
-     * @return the count
      */
     public long getCount() {
         return count;
     }
 
     /**
-     * Sets the count.
+     * Sets the value of the count property.
      * 
-     * @param value the new count
      */
     public void setCount(long value) {
         this.count = value;
     }
 
     /**
-     * Gets the avg lead score.
+     * Gets the value of the avgLeadScore property.
      * 
-     * @return the avg lead score
      */
     public float getAvgLeadScore() {
         return avgLeadScore;
     }
 
     /**
-     * Sets the avg lead score.
+     * Sets the value of the avgLeadScore property.
      * 
-     * @param value the new avg lead score
      */
     public void setAvgLeadScore(float value) {
         this.avgLeadScore = value;

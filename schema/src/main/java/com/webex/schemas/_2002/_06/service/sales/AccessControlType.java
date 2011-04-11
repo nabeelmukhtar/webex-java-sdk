@@ -25,7 +25,31 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class AccessControlType.
+ * <p>Java class for accessControlType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="accessControlType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="listing" type="{http://www.webex.com/schemas/2002/06/service/sales}listingType" minOccurs="0"/>
+ *         &lt;element name="meetingPassword" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="16"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="enforcePassword" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "accessControlType", propOrder = {
@@ -37,68 +61,79 @@ public class AccessControlType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The listing. */
     protected ListingType listing;
-    
-    /** The meeting password. */
     protected String meetingPassword;
-    
-    /** The enforce password. */
     @XmlElement(defaultValue = "true")
     protected Boolean enforcePassword;
 
     /**
-     * Gets the listing.
+     * Gets the value of the listing property.
      * 
-     * @return the listing
+     * @return
+     *     possible object is
+     *     {@link ListingType }
+     *     
      */
     public ListingType getListing() {
         return listing;
     }
 
     /**
-     * Sets the listing.
+     * Sets the value of the listing property.
      * 
-     * @param value the new listing
+     * @param value
+     *     allowed object is
+     *     {@link ListingType }
+     *     
      */
     public void setListing(ListingType value) {
         this.listing = value;
     }
 
     /**
-     * Gets the meeting password.
+     * Gets the value of the meetingPassword property.
      * 
-     * @return the meeting password
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMeetingPassword() {
         return meetingPassword;
     }
 
     /**
-     * Sets the meeting password.
+     * Sets the value of the meetingPassword property.
      * 
-     * @param value the new meeting password
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMeetingPassword(String value) {
         this.meetingPassword = value;
     }
 
     /**
-     * Checks if is enforce password.
+     * Gets the value of the enforcePassword property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isEnforcePassword() {
         return enforcePassword;
     }
 
     /**
-     * Sets the enforce password.
+     * Sets the value of the enforcePassword property.
      * 
-     * @param value the new enforce password
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setEnforcePassword(Boolean value) {
         this.enforcePassword = value;

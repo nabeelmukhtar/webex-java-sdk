@@ -22,46 +22,39 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum OccurentTypeType.
+ * <p>Java class for occurentTypeType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="occurentTypeType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="WEEKLY"/>
+ *     &lt;enumeration value="DAILY"/>
+ *     &lt;enumeration value="NO_REPEAT"/>
+ *     &lt;enumeration value="CONSTANT"/>
+ *     &lt;enumeration value="MONTHLY"/>
+ *     &lt;enumeration value="IRREGULARLY"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "occurentTypeType")
 @XmlEnum
 public enum OccurentTypeType {
 
-    /** The WEEKLY. */
     WEEKLY,
-    
-    /** The DAILY. */
     DAILY,
-    
-    /** The N o_ repeat. */
     NO_REPEAT,
-    
-    /** The CONSTANT. */
     CONSTANT,
-    
-    /** The MONTHLY. */
     MONTHLY,
-    
-    /** The IRREGULARLY. */
     IRREGULARLY;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the occurent type type
-     */
     public static OccurentTypeType fromValue(String v) {
         return valueOf(v);
     }

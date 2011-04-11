@@ -25,7 +25,25 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class SubErrorType.
+ * <p>Java class for subErrorType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="subErrorType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="exceptionID" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="reason" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="value" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "subErrorType", propOrder = {
@@ -37,69 +55,80 @@ public class SubErrorType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The exception id. */
     @XmlElement(required = true)
     protected String exceptionID;
-    
-    /** The reason. */
     @XmlElement(required = true)
     protected String reason;
-    
-    /** The value. */
     protected String value;
 
     /**
-     * Gets the exception id.
+     * Gets the value of the exceptionID property.
      * 
-     * @return the exception id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getExceptionID() {
         return exceptionID;
     }
 
     /**
-     * Sets the exception id.
+     * Sets the value of the exceptionID property.
      * 
-     * @param value the new exception id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setExceptionID(String value) {
         this.exceptionID = value;
     }
 
     /**
-     * Gets the reason.
+     * Gets the value of the reason property.
      * 
-     * @return the reason
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getReason() {
         return reason;
     }
 
     /**
-     * Sets the reason.
+     * Sets the value of the reason property.
      * 
-     * @param value the new reason
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setReason(String value) {
         this.reason = value;
     }
 
     /**
-     * Gets the value.
+     * Gets the value of the value property.
      * 
-     * @return the value
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value.
+     * Sets the value of the value property.
      * 
-     * @param value the new value
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setValue(String value) {
         this.value = value;

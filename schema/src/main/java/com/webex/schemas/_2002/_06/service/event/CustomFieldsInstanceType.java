@@ -26,7 +26,26 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class CustomFieldsInstanceType.
+ * <p>Java class for customFieldsInstanceType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="customFieldsInstanceType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="textBox" type="{http://www.webex.com/schemas/2002/06/service/event}textboxInstanceType" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="checkBoxGroup" type="{http://www.webex.com/schemas/2002/06/service/event}checkboxGroupInstanceType" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="optionButtonGroup" type="{http://www.webex.com/schemas/2002/06/service/event}choiceGroupInstanceType" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="dropDownGroup" type="{http://www.webex.com/schemas/2002/06/service/event}choiceGroupInstanceType" maxOccurs="unbounded" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "customFieldsInstanceType", propOrder = {
@@ -39,25 +58,33 @@ public class CustomFieldsInstanceType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The text box. */
     protected List<TextboxInstanceType> textBox;
-    
-    /** The check box group. */
     protected List<CheckboxGroupInstanceType> checkBoxGroup;
-    
-    /** The option button group. */
     protected List<ChoiceGroupInstanceType> optionButtonGroup;
-    
-    /** The drop down group. */
     protected List<ChoiceGroupInstanceType> dropDownGroup;
 
     /**
-     * Gets the text box.
+     * Gets the value of the textBox property.
      * 
-     * @return the text box
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the textBox property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getTextBox().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link TextboxInstanceType }
+     * 
+     * 
      */
     public List<TextboxInstanceType> getTextBox() {
         if (textBox == null) {
@@ -67,9 +94,26 @@ public class CustomFieldsInstanceType
     }
 
     /**
-     * Gets the check box group.
+     * Gets the value of the checkBoxGroup property.
      * 
-     * @return the check box group
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the checkBoxGroup property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getCheckBoxGroup().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link CheckboxGroupInstanceType }
+     * 
+     * 
      */
     public List<CheckboxGroupInstanceType> getCheckBoxGroup() {
         if (checkBoxGroup == null) {
@@ -79,9 +123,26 @@ public class CustomFieldsInstanceType
     }
 
     /**
-     * Gets the option button group.
+     * Gets the value of the optionButtonGroup property.
      * 
-     * @return the option button group
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the optionButtonGroup property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getOptionButtonGroup().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link ChoiceGroupInstanceType }
+     * 
+     * 
      */
     public List<ChoiceGroupInstanceType> getOptionButtonGroup() {
         if (optionButtonGroup == null) {
@@ -91,9 +152,26 @@ public class CustomFieldsInstanceType
     }
 
     /**
-     * Gets the drop down group.
+     * Gets the value of the dropDownGroup property.
      * 
-     * @return the drop down group
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the dropDownGroup property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getDropDownGroup().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link ChoiceGroupInstanceType }
+     * 
+     * 
      */
     public List<ChoiceGroupInstanceType> getDropDownGroup() {
         if (dropDownGroup == null) {

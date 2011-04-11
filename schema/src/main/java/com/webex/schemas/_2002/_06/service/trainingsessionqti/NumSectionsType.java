@@ -25,7 +25,20 @@ import javax.xml.bind.annotation.XmlValue;
 
 
 /**
- * The Class NumSectionsType.
+ * <p>Java class for num_sectionsType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="num_sectionsType">
+ *   &lt;simpleContent>
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>int">
+ *     &lt;/extension>
+ *   &lt;/simpleContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "num_sectionsType", propOrder = {
@@ -35,26 +48,21 @@ public class NumSectionsType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The value. */
     @XmlValue
     protected int value;
 
     /**
-     * Gets the value.
+     * Gets the value of the value property.
      * 
-     * @return the value
      */
     public int getValue() {
         return value;
     }
 
     /**
-     * Sets the value.
+     * Sets the value of the value property.
      * 
-     * @param value the new value
      */
     public void setValue(int value) {
         this.value = value;

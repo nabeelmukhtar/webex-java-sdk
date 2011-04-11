@@ -27,7 +27,39 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class LstOpportunitiesResponse.
+ * <p>Java class for lstOpportunitiesResponse complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="lstOpportunitiesResponse">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="opportunity" maxOccurs="unbounded" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;extension base="{http://www.webex.com/schemas/2002/06/service/sales}opptyInstanceType">
+ *                 &lt;sequence>
+ *                   &lt;element name="extAccountID" minOccurs="0">
+ *                     &lt;simpleType>
+ *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *                         &lt;maxLength value="512"/>
+ *                       &lt;/restriction>
+ *                     &lt;/simpleType>
+ *                   &lt;/element>
+ *                 &lt;/sequence>
+ *               &lt;/extension>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstOpportunitiesResponse", propOrder = {
@@ -38,16 +70,30 @@ public class LstOpportunitiesResponse
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The opportunity. */
     protected List<LstOpportunitiesResponse.Opportunity> opportunity;
 
     /**
-     * Gets the opportunity.
+     * Gets the value of the opportunity property.
      * 
-     * @return the opportunity
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the opportunity property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getOpportunity().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link LstOpportunitiesResponse.Opportunity }
+     * 
+     * 
      */
     public List<LstOpportunitiesResponse.Opportunity> getOpportunity() {
         if (opportunity == null) {
@@ -58,7 +104,29 @@ public class LstOpportunitiesResponse
 
 
     /**
-     * The Class Opportunity.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/sales}opptyInstanceType">
+     *       &lt;sequence>
+     *         &lt;element name="extAccountID" minOccurs="0">
+     *           &lt;simpleType>
+     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+     *               &lt;maxLength value="512"/>
+     *             &lt;/restriction>
+     *           &lt;/simpleType>
+     *         &lt;/element>
+     *       &lt;/sequence>
+     *     &lt;/extension>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -69,25 +137,28 @@ public class LstOpportunitiesResponse
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The ext account id. */
         protected String extAccountID;
 
         /**
-         * Gets the ext account id.
+         * Gets the value of the extAccountID property.
          * 
-         * @return the ext account id
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
          */
         public String getExtAccountID() {
             return extAccountID;
         }
 
         /**
-         * Sets the ext account id.
+         * Sets the value of the extAccountID property.
          * 
-         * @param value the new ext account id
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
          */
         public void setExtAccountID(String value) {
             this.extAccountID = value;

@@ -24,7 +24,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class ScheduleOptionsType.
+ * <p>Java class for scheduleOptionsType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="scheduleOptionsType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="scheduleOnBehalf" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="saveSessionTemplate" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "scheduleOptionsType", propOrder = {
@@ -35,46 +52,53 @@ public class ScheduleOptionsType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The schedule on behalf. */
     protected Boolean scheduleOnBehalf;
-    
-    /** The save session template. */
     protected Boolean saveSessionTemplate;
 
     /**
-     * Checks if is schedule on behalf.
+     * Gets the value of the scheduleOnBehalf property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isScheduleOnBehalf() {
         return scheduleOnBehalf;
     }
 
     /**
-     * Sets the schedule on behalf.
+     * Sets the value of the scheduleOnBehalf property.
      * 
-     * @param value the new schedule on behalf
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setScheduleOnBehalf(Boolean value) {
         this.scheduleOnBehalf = value;
     }
 
     /**
-     * Checks if is save session template.
+     * Gets the value of the saveSessionTemplate property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSaveSessionTemplate() {
         return saveSessionTemplate;
     }
 
     /**
-     * Sets the save session template.
+     * Sets the value of the saveSessionTemplate property.
      * 
-     * @param value the new save session template
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSaveSessionTemplate(Boolean value) {
         this.saveSessionTemplate = value;

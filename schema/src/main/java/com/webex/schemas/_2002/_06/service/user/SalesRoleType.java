@@ -25,7 +25,26 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class SalesRoleType.
+ * <p>Java class for salesRoleType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="salesRoleType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="rep" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="mgr" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="asst" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="sme" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "salesRoleType", propOrder = {
@@ -38,92 +57,107 @@ public class SalesRoleType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The rep. */
     @XmlElement(defaultValue = "true")
     protected Boolean rep;
-    
-    /** The mgr. */
     @XmlElement(defaultValue = "false")
     protected Boolean mgr;
-    
-    /** The asst. */
     @XmlElement(defaultValue = "false")
     protected Boolean asst;
-    
-    /** The sme. */
     @XmlElement(defaultValue = "false")
     protected Boolean sme;
 
     /**
-     * Checks if is rep.
+     * Gets the value of the rep property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isRep() {
         return rep;
     }
 
     /**
-     * Sets the rep.
+     * Sets the value of the rep property.
      * 
-     * @param value the new rep
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setRep(Boolean value) {
         this.rep = value;
     }
 
     /**
-     * Checks if is mgr.
+     * Gets the value of the mgr property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isMgr() {
         return mgr;
     }
 
     /**
-     * Sets the mgr.
+     * Sets the value of the mgr property.
      * 
-     * @param value the new mgr
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setMgr(Boolean value) {
         this.mgr = value;
     }
 
     /**
-     * Checks if is asst.
+     * Gets the value of the asst property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAsst() {
         return asst;
     }
 
     /**
-     * Sets the asst.
+     * Sets the value of the asst property.
      * 
-     * @param value the new asst
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAsst(Boolean value) {
         this.asst = value;
     }
 
     /**
-     * Checks if is sme.
+     * Gets the value of the sme property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSme() {
         return sme;
     }
 
     /**
-     * Sets the sme.
+     * Sets the value of the sme property.
      * 
-     * @param value the new sme
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSme(Boolean value) {
         this.sme = value;

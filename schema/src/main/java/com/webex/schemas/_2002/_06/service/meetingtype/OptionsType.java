@@ -25,7 +25,58 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class OptionsType.
+ * <p>Java class for optionsType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="optionsType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="supportAppShare" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportAppShareRemote" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportAttendeeRegistration" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportRemoteWebTour" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportWebTour" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportFileShare" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportChat" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportCobrowseSite" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportCorporateOfficesSite" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportDesktopShare" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportDesktopShareRemote" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportFileTransfer" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportInternationalCallOut" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportJavaClient" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportMacClient" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportMeetingCenterSite" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportMeetingRecord" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportMultipleMeeting" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportOnCallSite" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportOnStageSite" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportPartnerOfficesSite" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportPoll" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportPresentation" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportSolarisClient" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportSSL" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportE2E" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportPKI" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportTeleconfCallIn" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportTeleconfCallOut" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportTollFreeCallIn" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportVideo" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportVoIP" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportWebExComSite" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportWindowsClient" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportQuickStartAttendees" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportQuickStartHost" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "optionsType", propOrder = {
@@ -70,789 +121,932 @@ public class OptionsType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The support app share. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportAppShare;
-    
-    /** The support app share remote. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportAppShareRemote;
-    
-    /** The support attendee registration. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportAttendeeRegistration;
-    
-    /** The support remote web tour. */
     protected Boolean supportRemoteWebTour;
-    
-    /** The support web tour. */
     protected Boolean supportWebTour;
-    
-    /** The support file share. */
     protected Boolean supportFileShare;
-    
-    /** The support chat. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportChat;
-    
-    /** The support cobrowse site. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportCobrowseSite;
-    
-    /** The support corporate offices site. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportCorporateOfficesSite;
-    
-    /** The support desktop share. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportDesktopShare;
-    
-    /** The support desktop share remote. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportDesktopShareRemote;
-    
-    /** The support file transfer. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportFileTransfer;
-    
-    /** The support international call out. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportInternationalCallOut;
-    
-    /** The support java client. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportJavaClient;
-    
-    /** The support mac client. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportMacClient;
-    
-    /** The support meeting center site. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportMeetingCenterSite;
-    
-    /** The support meeting record. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportMeetingRecord;
-    
-    /** The support multiple meeting. */
     @XmlElement(defaultValue = "false")
     protected Boolean supportMultipleMeeting;
-    
-    /** The support on call site. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportOnCallSite;
-    
-    /** The support on stage site. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportOnStageSite;
-    
-    /** The support partner offices site. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportPartnerOfficesSite;
-    
-    /** The support poll. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportPoll;
-    
-    /** The support presentation. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportPresentation;
-    
-    /** The support solaris client. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportSolarisClient;
-    
-    /** The support ssl. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportSSL;
-    
-    /** The support e2 e. */
     protected Boolean supportE2E;
-    
-    /** The support pki. */
     protected Boolean supportPKI;
-    
-    /** The support teleconf call in. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportTeleconfCallIn;
-    
-    /** The support teleconf call out. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportTeleconfCallOut;
-    
-    /** The support toll free call in. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportTollFreeCallIn;
-    
-    /** The support video. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportVideo;
-    
-    /** The support vo ip. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportVoIP;
-    
-    /** The support web ex com site. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportWebExComSite;
-    
-    /** The support windows client. */
     @XmlElement(defaultValue = "true")
     protected Boolean supportWindowsClient;
-    
-    /** The support quick start attendees. */
     protected Boolean supportQuickStartAttendees;
-    
-    /** The support quick start host. */
     protected Boolean supportQuickStartHost;
 
     /**
-     * Checks if is support app share.
+     * Gets the value of the supportAppShare property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportAppShare() {
         return supportAppShare;
     }
 
     /**
-     * Sets the support app share.
+     * Sets the value of the supportAppShare property.
      * 
-     * @param value the new support app share
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportAppShare(Boolean value) {
         this.supportAppShare = value;
     }
 
     /**
-     * Checks if is support app share remote.
+     * Gets the value of the supportAppShareRemote property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportAppShareRemote() {
         return supportAppShareRemote;
     }
 
     /**
-     * Sets the support app share remote.
+     * Sets the value of the supportAppShareRemote property.
      * 
-     * @param value the new support app share remote
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportAppShareRemote(Boolean value) {
         this.supportAppShareRemote = value;
     }
 
     /**
-     * Checks if is support attendee registration.
+     * Gets the value of the supportAttendeeRegistration property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportAttendeeRegistration() {
         return supportAttendeeRegistration;
     }
 
     /**
-     * Sets the support attendee registration.
+     * Sets the value of the supportAttendeeRegistration property.
      * 
-     * @param value the new support attendee registration
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportAttendeeRegistration(Boolean value) {
         this.supportAttendeeRegistration = value;
     }
 
     /**
-     * Checks if is support remote web tour.
+     * Gets the value of the supportRemoteWebTour property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportRemoteWebTour() {
         return supportRemoteWebTour;
     }
 
     /**
-     * Sets the support remote web tour.
+     * Sets the value of the supportRemoteWebTour property.
      * 
-     * @param value the new support remote web tour
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportRemoteWebTour(Boolean value) {
         this.supportRemoteWebTour = value;
     }
 
     /**
-     * Checks if is support web tour.
+     * Gets the value of the supportWebTour property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportWebTour() {
         return supportWebTour;
     }
 
     /**
-     * Sets the support web tour.
+     * Sets the value of the supportWebTour property.
      * 
-     * @param value the new support web tour
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportWebTour(Boolean value) {
         this.supportWebTour = value;
     }
 
     /**
-     * Checks if is support file share.
+     * Gets the value of the supportFileShare property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportFileShare() {
         return supportFileShare;
     }
 
     /**
-     * Sets the support file share.
+     * Sets the value of the supportFileShare property.
      * 
-     * @param value the new support file share
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportFileShare(Boolean value) {
         this.supportFileShare = value;
     }
 
     /**
-     * Checks if is support chat.
+     * Gets the value of the supportChat property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportChat() {
         return supportChat;
     }
 
     /**
-     * Sets the support chat.
+     * Sets the value of the supportChat property.
      * 
-     * @param value the new support chat
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportChat(Boolean value) {
         this.supportChat = value;
     }
 
     /**
-     * Checks if is support cobrowse site.
+     * Gets the value of the supportCobrowseSite property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportCobrowseSite() {
         return supportCobrowseSite;
     }
 
     /**
-     * Sets the support cobrowse site.
+     * Sets the value of the supportCobrowseSite property.
      * 
-     * @param value the new support cobrowse site
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportCobrowseSite(Boolean value) {
         this.supportCobrowseSite = value;
     }
 
     /**
-     * Checks if is support corporate offices site.
+     * Gets the value of the supportCorporateOfficesSite property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportCorporateOfficesSite() {
         return supportCorporateOfficesSite;
     }
 
     /**
-     * Sets the support corporate offices site.
+     * Sets the value of the supportCorporateOfficesSite property.
      * 
-     * @param value the new support corporate offices site
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportCorporateOfficesSite(Boolean value) {
         this.supportCorporateOfficesSite = value;
     }
 
     /**
-     * Checks if is support desktop share.
+     * Gets the value of the supportDesktopShare property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportDesktopShare() {
         return supportDesktopShare;
     }
 
     /**
-     * Sets the support desktop share.
+     * Sets the value of the supportDesktopShare property.
      * 
-     * @param value the new support desktop share
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportDesktopShare(Boolean value) {
         this.supportDesktopShare = value;
     }
 
     /**
-     * Checks if is support desktop share remote.
+     * Gets the value of the supportDesktopShareRemote property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportDesktopShareRemote() {
         return supportDesktopShareRemote;
     }
 
     /**
-     * Sets the support desktop share remote.
+     * Sets the value of the supportDesktopShareRemote property.
      * 
-     * @param value the new support desktop share remote
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportDesktopShareRemote(Boolean value) {
         this.supportDesktopShareRemote = value;
     }
 
     /**
-     * Checks if is support file transfer.
+     * Gets the value of the supportFileTransfer property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportFileTransfer() {
         return supportFileTransfer;
     }
 
     /**
-     * Sets the support file transfer.
+     * Sets the value of the supportFileTransfer property.
      * 
-     * @param value the new support file transfer
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportFileTransfer(Boolean value) {
         this.supportFileTransfer = value;
     }
 
     /**
-     * Checks if is support international call out.
+     * Gets the value of the supportInternationalCallOut property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportInternationalCallOut() {
         return supportInternationalCallOut;
     }
 
     /**
-     * Sets the support international call out.
+     * Sets the value of the supportInternationalCallOut property.
      * 
-     * @param value the new support international call out
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportInternationalCallOut(Boolean value) {
         this.supportInternationalCallOut = value;
     }
 
     /**
-     * Checks if is support java client.
+     * Gets the value of the supportJavaClient property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportJavaClient() {
         return supportJavaClient;
     }
 
     /**
-     * Sets the support java client.
+     * Sets the value of the supportJavaClient property.
      * 
-     * @param value the new support java client
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportJavaClient(Boolean value) {
         this.supportJavaClient = value;
     }
 
     /**
-     * Checks if is support mac client.
+     * Gets the value of the supportMacClient property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportMacClient() {
         return supportMacClient;
     }
 
     /**
-     * Sets the support mac client.
+     * Sets the value of the supportMacClient property.
      * 
-     * @param value the new support mac client
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportMacClient(Boolean value) {
         this.supportMacClient = value;
     }
 
     /**
-     * Checks if is support meeting center site.
+     * Gets the value of the supportMeetingCenterSite property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportMeetingCenterSite() {
         return supportMeetingCenterSite;
     }
 
     /**
-     * Sets the support meeting center site.
+     * Sets the value of the supportMeetingCenterSite property.
      * 
-     * @param value the new support meeting center site
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportMeetingCenterSite(Boolean value) {
         this.supportMeetingCenterSite = value;
     }
 
     /**
-     * Checks if is support meeting record.
+     * Gets the value of the supportMeetingRecord property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportMeetingRecord() {
         return supportMeetingRecord;
     }
 
     /**
-     * Sets the support meeting record.
+     * Sets the value of the supportMeetingRecord property.
      * 
-     * @param value the new support meeting record
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportMeetingRecord(Boolean value) {
         this.supportMeetingRecord = value;
     }
 
     /**
-     * Checks if is support multiple meeting.
+     * Gets the value of the supportMultipleMeeting property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportMultipleMeeting() {
         return supportMultipleMeeting;
     }
 
     /**
-     * Sets the support multiple meeting.
+     * Sets the value of the supportMultipleMeeting property.
      * 
-     * @param value the new support multiple meeting
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportMultipleMeeting(Boolean value) {
         this.supportMultipleMeeting = value;
     }
 
     /**
-     * Checks if is support on call site.
+     * Gets the value of the supportOnCallSite property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportOnCallSite() {
         return supportOnCallSite;
     }
 
     /**
-     * Sets the support on call site.
+     * Sets the value of the supportOnCallSite property.
      * 
-     * @param value the new support on call site
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportOnCallSite(Boolean value) {
         this.supportOnCallSite = value;
     }
 
     /**
-     * Checks if is support on stage site.
+     * Gets the value of the supportOnStageSite property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportOnStageSite() {
         return supportOnStageSite;
     }
 
     /**
-     * Sets the support on stage site.
+     * Sets the value of the supportOnStageSite property.
      * 
-     * @param value the new support on stage site
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportOnStageSite(Boolean value) {
         this.supportOnStageSite = value;
     }
 
     /**
-     * Checks if is support partner offices site.
+     * Gets the value of the supportPartnerOfficesSite property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportPartnerOfficesSite() {
         return supportPartnerOfficesSite;
     }
 
     /**
-     * Sets the support partner offices site.
+     * Sets the value of the supportPartnerOfficesSite property.
      * 
-     * @param value the new support partner offices site
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportPartnerOfficesSite(Boolean value) {
         this.supportPartnerOfficesSite = value;
     }
 
     /**
-     * Checks if is support poll.
+     * Gets the value of the supportPoll property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportPoll() {
         return supportPoll;
     }
 
     /**
-     * Sets the support poll.
+     * Sets the value of the supportPoll property.
      * 
-     * @param value the new support poll
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportPoll(Boolean value) {
         this.supportPoll = value;
     }
 
     /**
-     * Checks if is support presentation.
+     * Gets the value of the supportPresentation property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportPresentation() {
         return supportPresentation;
     }
 
     /**
-     * Sets the support presentation.
+     * Sets the value of the supportPresentation property.
      * 
-     * @param value the new support presentation
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportPresentation(Boolean value) {
         this.supportPresentation = value;
     }
 
     /**
-     * Checks if is support solaris client.
+     * Gets the value of the supportSolarisClient property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportSolarisClient() {
         return supportSolarisClient;
     }
 
     /**
-     * Sets the support solaris client.
+     * Sets the value of the supportSolarisClient property.
      * 
-     * @param value the new support solaris client
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportSolarisClient(Boolean value) {
         this.supportSolarisClient = value;
     }
 
     /**
-     * Checks if is support ssl.
+     * Gets the value of the supportSSL property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportSSL() {
         return supportSSL;
     }
 
     /**
-     * Sets the support ssl.
+     * Sets the value of the supportSSL property.
      * 
-     * @param value the new support ssl
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportSSL(Boolean value) {
         this.supportSSL = value;
     }
 
     /**
-     * Checks if is support e2 e.
+     * Gets the value of the supportE2E property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportE2E() {
         return supportE2E;
     }
 
     /**
-     * Sets the support e2 e.
+     * Sets the value of the supportE2E property.
      * 
-     * @param value the new support e2 e
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportE2E(Boolean value) {
         this.supportE2E = value;
     }
 
     /**
-     * Checks if is support pki.
+     * Gets the value of the supportPKI property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportPKI() {
         return supportPKI;
     }
 
     /**
-     * Sets the support pki.
+     * Sets the value of the supportPKI property.
      * 
-     * @param value the new support pki
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportPKI(Boolean value) {
         this.supportPKI = value;
     }
 
     /**
-     * Checks if is support teleconf call in.
+     * Gets the value of the supportTeleconfCallIn property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportTeleconfCallIn() {
         return supportTeleconfCallIn;
     }
 
     /**
-     * Sets the support teleconf call in.
+     * Sets the value of the supportTeleconfCallIn property.
      * 
-     * @param value the new support teleconf call in
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportTeleconfCallIn(Boolean value) {
         this.supportTeleconfCallIn = value;
     }
 
     /**
-     * Checks if is support teleconf call out.
+     * Gets the value of the supportTeleconfCallOut property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportTeleconfCallOut() {
         return supportTeleconfCallOut;
     }
 
     /**
-     * Sets the support teleconf call out.
+     * Sets the value of the supportTeleconfCallOut property.
      * 
-     * @param value the new support teleconf call out
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportTeleconfCallOut(Boolean value) {
         this.supportTeleconfCallOut = value;
     }
 
     /**
-     * Checks if is support toll free call in.
+     * Gets the value of the supportTollFreeCallIn property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportTollFreeCallIn() {
         return supportTollFreeCallIn;
     }
 
     /**
-     * Sets the support toll free call in.
+     * Sets the value of the supportTollFreeCallIn property.
      * 
-     * @param value the new support toll free call in
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportTollFreeCallIn(Boolean value) {
         this.supportTollFreeCallIn = value;
     }
 
     /**
-     * Checks if is support video.
+     * Gets the value of the supportVideo property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportVideo() {
         return supportVideo;
     }
 
     /**
-     * Sets the support video.
+     * Sets the value of the supportVideo property.
      * 
-     * @param value the new support video
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportVideo(Boolean value) {
         this.supportVideo = value;
     }
 
     /**
-     * Checks if is support vo ip.
+     * Gets the value of the supportVoIP property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportVoIP() {
         return supportVoIP;
     }
 
     /**
-     * Sets the support vo ip.
+     * Sets the value of the supportVoIP property.
      * 
-     * @param value the new support vo ip
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportVoIP(Boolean value) {
         this.supportVoIP = value;
     }
 
     /**
-     * Checks if is support web ex com site.
+     * Gets the value of the supportWebExComSite property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportWebExComSite() {
         return supportWebExComSite;
     }
 
     /**
-     * Sets the support web ex com site.
+     * Sets the value of the supportWebExComSite property.
      * 
-     * @param value the new support web ex com site
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportWebExComSite(Boolean value) {
         this.supportWebExComSite = value;
     }
 
     /**
-     * Checks if is support windows client.
+     * Gets the value of the supportWindowsClient property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportWindowsClient() {
         return supportWindowsClient;
     }
 
     /**
-     * Sets the support windows client.
+     * Sets the value of the supportWindowsClient property.
      * 
-     * @param value the new support windows client
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportWindowsClient(Boolean value) {
         this.supportWindowsClient = value;
     }
 
     /**
-     * Checks if is support quick start attendees.
+     * Gets the value of the supportQuickStartAttendees property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportQuickStartAttendees() {
         return supportQuickStartAttendees;
     }
 
     /**
-     * Sets the support quick start attendees.
+     * Sets the value of the supportQuickStartAttendees property.
      * 
-     * @param value the new support quick start attendees
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportQuickStartAttendees(Boolean value) {
         this.supportQuickStartAttendees = value;
     }
 
     /**
-     * Checks if is support quick start host.
+     * Gets the value of the supportQuickStartHost property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportQuickStartHost() {
         return supportQuickStartHost;
     }
 
     /**
-     * Sets the support quick start host.
+     * Sets the value of the supportQuickStartHost property.
      * 
-     * @param value the new support quick start host
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportQuickStartHost(Boolean value) {
         this.supportQuickStartHost = value;

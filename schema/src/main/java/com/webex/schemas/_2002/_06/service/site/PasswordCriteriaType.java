@@ -30,7 +30,31 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class PasswordCriteriaType.
+ * <p>Java class for passwordCriteriaType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="passwordCriteriaType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="mixedCase" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         &lt;element name="minLength" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *         &lt;element name="minAlpha" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *         &lt;element name="minNumeric" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *         &lt;element name="minSpecial" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *         &lt;element name="disallowWebTextSessions" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         &lt;element name="disallowWebTextAccounts" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         &lt;element name="disallowList" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         &lt;element name="disallowValue" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "passwordCriteriaType", propOrder = {
@@ -48,196 +72,210 @@ public class PasswordCriteriaType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The mixed case. */
     protected boolean mixedCase;
-    
-    /** The min length. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long minLength;
-    
-    /** The min alpha. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long minAlpha;
-    
-    /** The min numeric. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long minNumeric;
-    
-    /** The min special. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long minSpecial;
-    
-    /** The disallow web text sessions. */
     protected boolean disallowWebTextSessions;
-    
-    /** The disallow web text accounts. */
     protected boolean disallowWebTextAccounts;
-    
-    /** The disallow list. */
     protected boolean disallowList;
-    
-    /** The disallow value. */
     protected List<String> disallowValue;
 
     /**
-     * Checks if is mixed case.
+     * Gets the value of the mixedCase property.
      * 
-     * @return true, if is mixed case
      */
     public boolean isMixedCase() {
         return mixedCase;
     }
 
     /**
-     * Sets the mixed case.
+     * Sets the value of the mixedCase property.
      * 
-     * @param value the new mixed case
      */
     public void setMixedCase(boolean value) {
         this.mixedCase = value;
     }
 
     /**
-     * Gets the min length.
+     * Gets the value of the minLength property.
      * 
-     * @return the min length
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getMinLength() {
         return minLength;
     }
 
     /**
-     * Sets the min length.
+     * Sets the value of the minLength property.
      * 
-     * @param value the new min length
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMinLength(Long value) {
         this.minLength = value;
     }
 
     /**
-     * Gets the min alpha.
+     * Gets the value of the minAlpha property.
      * 
-     * @return the min alpha
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getMinAlpha() {
         return minAlpha;
     }
 
     /**
-     * Sets the min alpha.
+     * Sets the value of the minAlpha property.
      * 
-     * @param value the new min alpha
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMinAlpha(Long value) {
         this.minAlpha = value;
     }
 
     /**
-     * Gets the min numeric.
+     * Gets the value of the minNumeric property.
      * 
-     * @return the min numeric
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getMinNumeric() {
         return minNumeric;
     }
 
     /**
-     * Sets the min numeric.
+     * Sets the value of the minNumeric property.
      * 
-     * @param value the new min numeric
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMinNumeric(Long value) {
         this.minNumeric = value;
     }
 
     /**
-     * Gets the min special.
+     * Gets the value of the minSpecial property.
      * 
-     * @return the min special
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getMinSpecial() {
         return minSpecial;
     }
 
     /**
-     * Sets the min special.
+     * Sets the value of the minSpecial property.
      * 
-     * @param value the new min special
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMinSpecial(Long value) {
         this.minSpecial = value;
     }
 
     /**
-     * Checks if is disallow web text sessions.
+     * Gets the value of the disallowWebTextSessions property.
      * 
-     * @return true, if is disallow web text sessions
      */
     public boolean isDisallowWebTextSessions() {
         return disallowWebTextSessions;
     }
 
     /**
-     * Sets the disallow web text sessions.
+     * Sets the value of the disallowWebTextSessions property.
      * 
-     * @param value the new disallow web text sessions
      */
     public void setDisallowWebTextSessions(boolean value) {
         this.disallowWebTextSessions = value;
     }
 
     /**
-     * Checks if is disallow web text accounts.
+     * Gets the value of the disallowWebTextAccounts property.
      * 
-     * @return true, if is disallow web text accounts
      */
     public boolean isDisallowWebTextAccounts() {
         return disallowWebTextAccounts;
     }
 
     /**
-     * Sets the disallow web text accounts.
+     * Sets the value of the disallowWebTextAccounts property.
      * 
-     * @param value the new disallow web text accounts
      */
     public void setDisallowWebTextAccounts(boolean value) {
         this.disallowWebTextAccounts = value;
     }
 
     /**
-     * Checks if is disallow list.
+     * Gets the value of the disallowList property.
      * 
-     * @return true, if is disallow list
      */
     public boolean isDisallowList() {
         return disallowList;
     }
 
     /**
-     * Sets the disallow list.
+     * Sets the value of the disallowList property.
      * 
-     * @param value the new disallow list
      */
     public void setDisallowList(boolean value) {
         this.disallowList = value;
     }
 
     /**
-     * Gets the disallow value.
+     * Gets the value of the disallowValue property.
      * 
-     * @return the disallow value
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the disallowValue property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getDisallowValue().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link String }
+     * 
+     * 
      */
     public List<String> getDisallowValue() {
         if (disallowValue == null) {

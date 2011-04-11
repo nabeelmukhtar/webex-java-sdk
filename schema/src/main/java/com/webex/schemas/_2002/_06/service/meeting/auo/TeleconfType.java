@@ -28,7 +28,27 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class TeleconfType.
+ * <p>Java class for teleconfType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="teleconfType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="requestConferenceNumber" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="accountIndex" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="extTelephonyDescription" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="intlLocalCallIn" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="teleconfLocation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "teleconfType", propOrder = {
@@ -42,112 +62,131 @@ public class TeleconfType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The request conference number. */
     protected Boolean requestConferenceNumber;
-    
-    /** The account index. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long accountIndex;
-    
-    /** The ext telephony description. */
     protected String extTelephonyDescription;
-    
-    /** The intl local call in. */
     protected Boolean intlLocalCallIn;
-    
-    /** The teleconf location. */
     protected String teleconfLocation;
 
     /**
-     * Checks if is request conference number.
+     * Gets the value of the requestConferenceNumber property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isRequestConferenceNumber() {
         return requestConferenceNumber;
     }
 
     /**
-     * Sets the request conference number.
+     * Sets the value of the requestConferenceNumber property.
      * 
-     * @param value the new request conference number
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setRequestConferenceNumber(Boolean value) {
         this.requestConferenceNumber = value;
     }
 
     /**
-     * Gets the account index.
+     * Gets the value of the accountIndex property.
      * 
-     * @return the account index
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getAccountIndex() {
         return accountIndex;
     }
 
     /**
-     * Sets the account index.
+     * Sets the value of the accountIndex property.
      * 
-     * @param value the new account index
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAccountIndex(Long value) {
         this.accountIndex = value;
     }
 
     /**
-     * Gets the ext telephony description.
+     * Gets the value of the extTelephonyDescription property.
      * 
-     * @return the ext telephony description
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getExtTelephonyDescription() {
         return extTelephonyDescription;
     }
 
     /**
-     * Sets the ext telephony description.
+     * Sets the value of the extTelephonyDescription property.
      * 
-     * @param value the new ext telephony description
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setExtTelephonyDescription(String value) {
         this.extTelephonyDescription = value;
     }
 
     /**
-     * Checks if is intl local call in.
+     * Gets the value of the intlLocalCallIn property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isIntlLocalCallIn() {
         return intlLocalCallIn;
     }
 
     /**
-     * Sets the intl local call in.
+     * Sets the value of the intlLocalCallIn property.
      * 
-     * @param value the new intl local call in
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setIntlLocalCallIn(Boolean value) {
         this.intlLocalCallIn = value;
     }
 
     /**
-     * Gets the teleconf location.
+     * Gets the value of the teleconfLocation property.
      * 
-     * @return the teleconf location
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTeleconfLocation() {
         return teleconfLocation;
     }
 
     /**
-     * Sets the teleconf location.
+     * Sets the value of the teleconfLocation property.
      * 
-     * @param value the new teleconf location
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTeleconfLocation(String value) {
         this.teleconfLocation = value;

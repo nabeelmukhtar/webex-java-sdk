@@ -25,7 +25,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class StartTimeRangeType.
+ * <p>Java class for startTimeRangeType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="startTimeRangeType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="startTimeStart" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="startTimeEnd" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "startTimeRangeType", propOrder = {
@@ -36,48 +53,55 @@ public class StartTimeRangeType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The start time start. */
     @XmlElement(required = true)
     protected String startTimeStart;
-    
-    /** The start time end. */
     @XmlElement(required = true)
     protected String startTimeEnd;
 
     /**
-     * Gets the start time start.
+     * Gets the value of the startTimeStart property.
      * 
-     * @return the start time start
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getStartTimeStart() {
         return startTimeStart;
     }
 
     /**
-     * Sets the start time start.
+     * Sets the value of the startTimeStart property.
      * 
-     * @param value the new start time start
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setStartTimeStart(String value) {
         this.startTimeStart = value;
     }
 
     /**
-     * Gets the start time end.
+     * Gets the value of the startTimeEnd property.
      * 
-     * @return the start time end
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getStartTimeEnd() {
         return startTimeEnd;
     }
 
     /**
-     * Sets the start time end.
+     * Sets the value of the startTimeEnd property.
      * 
-     * @param value the new start time end
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setStartTimeEnd(String value) {
         this.startTimeEnd = value;

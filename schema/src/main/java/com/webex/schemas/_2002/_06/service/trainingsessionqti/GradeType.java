@@ -26,7 +26,44 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class GradeType.
+ * <p>Java class for gradeType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="gradeType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="grade_value">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;minLength value="1"/>
+ *               &lt;maxLength value="64"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *       &lt;attribute name="varname" default="GRADE">
+ *         &lt;simpleType>
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *             &lt;maxLength value="256"/>
+ *           &lt;/restriction>
+ *         &lt;/simpleType>
+ *       &lt;/attribute>
+ *       &lt;attribute name="members">
+ *         &lt;simpleType>
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *             &lt;maxLength value="2048"/>
+ *           &lt;/restriction>
+ *         &lt;/simpleType>
+ *       &lt;/attribute>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "gradeType", propOrder = {
@@ -36,43 +73,45 @@ public class GradeType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The grade value. */
     @XmlElement(name = "grade_value", required = true)
     protected String gradeValue;
-    
-    /** The varname. */
     @XmlAttribute
     protected String varname;
-    
-    /** The members. */
     @XmlAttribute
     protected String members;
 
     /**
-     * Gets the grade value.
+     * Gets the value of the gradeValue property.
      * 
-     * @return the grade value
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getGradeValue() {
         return gradeValue;
     }
 
     /**
-     * Sets the grade value.
+     * Sets the value of the gradeValue property.
      * 
-     * @param value the new grade value
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setGradeValue(String value) {
         this.gradeValue = value;
     }
 
     /**
-     * Gets the varname.
+     * Gets the value of the varname property.
      * 
-     * @return the varname
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getVarname() {
         if (varname == null) {
@@ -83,27 +122,36 @@ public class GradeType
     }
 
     /**
-     * Sets the varname.
+     * Sets the value of the varname property.
      * 
-     * @param value the new varname
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setVarname(String value) {
         this.varname = value;
     }
 
     /**
-     * Gets the members.
+     * Gets the value of the members property.
      * 
-     * @return the members
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMembers() {
         return members;
     }
 
     /**
-     * Sets the members.
+     * Sets the value of the members property.
      * 
-     * @param value the new members
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMembers(String value) {
         this.members = value;

@@ -27,7 +27,50 @@ import com.webex.schemas._2002._06.service.ep.OneClickAccountLabelType;
 
 
 /**
- * The Class TspAccountLabelType.
+ * <p>Java class for tspAccountLabelType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="tspAccountLabelType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="tollFreeCallInNumberLabel">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="512"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="tollCallInNumberLabel">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="512"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="subscriberAccessCodeLabel" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="512"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="participantAccessCodeLabel" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="512"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "tspAccountLabelType", propOrder = {
@@ -43,90 +86,105 @@ public class TspAccountLabelType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The toll free call in number label. */
     @XmlElement(required = true)
     protected String tollFreeCallInNumberLabel;
-    
-    /** The toll call in number label. */
     @XmlElement(required = true)
     protected String tollCallInNumberLabel;
-    
-    /** The subscriber access code label. */
     protected String subscriberAccessCodeLabel;
-    
-    /** The participant access code label. */
     protected String participantAccessCodeLabel;
 
     /**
-     * Gets the toll free call in number label.
+     * Gets the value of the tollFreeCallInNumberLabel property.
      * 
-     * @return the toll free call in number label
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTollFreeCallInNumberLabel() {
         return tollFreeCallInNumberLabel;
     }
 
     /**
-     * Sets the toll free call in number label.
+     * Sets the value of the tollFreeCallInNumberLabel property.
      * 
-     * @param value the new toll free call in number label
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTollFreeCallInNumberLabel(String value) {
         this.tollFreeCallInNumberLabel = value;
     }
 
     /**
-     * Gets the toll call in number label.
+     * Gets the value of the tollCallInNumberLabel property.
      * 
-     * @return the toll call in number label
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTollCallInNumberLabel() {
         return tollCallInNumberLabel;
     }
 
     /**
-     * Sets the toll call in number label.
+     * Sets the value of the tollCallInNumberLabel property.
      * 
-     * @param value the new toll call in number label
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTollCallInNumberLabel(String value) {
         this.tollCallInNumberLabel = value;
     }
 
     /**
-     * Gets the subscriber access code label.
+     * Gets the value of the subscriberAccessCodeLabel property.
      * 
-     * @return the subscriber access code label
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSubscriberAccessCodeLabel() {
         return subscriberAccessCodeLabel;
     }
 
     /**
-     * Sets the subscriber access code label.
+     * Sets the value of the subscriberAccessCodeLabel property.
      * 
-     * @param value the new subscriber access code label
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSubscriberAccessCodeLabel(String value) {
         this.subscriberAccessCodeLabel = value;
     }
 
     /**
-     * Gets the participant access code label.
+     * Gets the value of the participantAccessCodeLabel property.
      * 
-     * @return the participant access code label
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getParticipantAccessCodeLabel() {
         return participantAccessCodeLabel;
     }
 
     /**
-     * Sets the participant access code label.
+     * Sets the value of the participantAccessCodeLabel property.
      * 
-     * @param value the new participant access code label
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setParticipantAccessCodeLabel(String value) {
         this.participantAccessCodeLabel = value;

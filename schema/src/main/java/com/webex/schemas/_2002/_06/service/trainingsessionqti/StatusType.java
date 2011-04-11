@@ -25,7 +25,32 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class StatusType.
+ * <p>Java class for statusType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="statusType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="type_label" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;simpleContent>
+ *               &lt;extension base="&lt;http://www.webex.com/schemas/2002/06/service/trainingsessionqti>type_labelType">
+ *               &lt;/extension>
+ *             &lt;/simpleContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}datetime" minOccurs="0"/>
+ *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}status_value"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "statusType", propOrder = {
@@ -37,69 +62,80 @@ public class StatusType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The type label. */
     @XmlElement(name = "type_label")
     protected StatusType.TypeLabel typeLabel;
-    
-    /** The datetime. */
     protected String datetime;
-    
-    /** The status value. */
     @XmlElement(name = "status_value", required = true)
     protected String statusValue;
 
     /**
-     * Gets the type label.
+     * Gets the value of the typeLabel property.
      * 
-     * @return the type label
+     * @return
+     *     possible object is
+     *     {@link StatusType.TypeLabel }
+     *     
      */
     public StatusType.TypeLabel getTypeLabel() {
         return typeLabel;
     }
 
     /**
-     * Sets the type label.
+     * Sets the value of the typeLabel property.
      * 
-     * @param value the new type label
+     * @param value
+     *     allowed object is
+     *     {@link StatusType.TypeLabel }
+     *     
      */
     public void setTypeLabel(StatusType.TypeLabel value) {
         this.typeLabel = value;
     }
 
     /**
-     * Gets the datetime.
+     * Gets the value of the datetime property.
      * 
-     * @return the datetime
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDatetime() {
         return datetime;
     }
 
     /**
-     * Sets the datetime.
+     * Sets the value of the datetime property.
      * 
-     * @param value the new datetime
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDatetime(String value) {
         this.datetime = value;
     }
 
     /**
-     * Gets the status value.
+     * Gets the value of the statusValue property.
      * 
-     * @return the status value
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getStatusValue() {
         return statusValue;
     }
 
     /**
-     * Sets the status value.
+     * Sets the value of the statusValue property.
      * 
-     * @param value the new status value
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setStatusValue(String value) {
         this.statusValue = value;
@@ -107,7 +143,20 @@ public class StatusType
 
 
     /**
-     * The Class TypeLabel.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;simpleContent>
+     *     &lt;extension base="&lt;http://www.webex.com/schemas/2002/06/service/trainingsessionqti>type_labelType">
+     *     &lt;/extension>
+     *   &lt;/simpleContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "")
@@ -116,7 +165,6 @@ public class StatusType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
 
     }

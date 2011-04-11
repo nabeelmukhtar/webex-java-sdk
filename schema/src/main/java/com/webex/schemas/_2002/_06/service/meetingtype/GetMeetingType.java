@@ -29,7 +29,23 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class GetMeetingType.
+ * <p>Java class for getMeetingType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="getMeetingType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="meetingTypeID" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getMeetingType", propOrder = {
@@ -40,28 +56,31 @@ public class GetMeetingType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The meeting type id. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long meetingTypeID;
 
     /**
-     * Gets the meeting type id.
+     * Gets the value of the meetingTypeID property.
      * 
-     * @return the meeting type id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getMeetingTypeID() {
         return meetingTypeID;
     }
 
     /**
-     * Sets the meeting type id.
+     * Sets the value of the meetingTypeID property.
      * 
-     * @param value the new meeting type id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMeetingTypeID(Long value) {
         this.meetingTypeID = value;

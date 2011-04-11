@@ -24,7 +24,23 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class SetMeeting.
+ * <p>Java class for setMeeting complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="setMeeting">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/meeting}meetingInstanceType">
+ *       &lt;sequence>
+ *         &lt;element name="validateFormat" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "setMeeting", propOrder = {
@@ -35,25 +51,28 @@ public class SetMeeting
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The validate format. */
     protected Boolean validateFormat;
 
     /**
-     * Checks if is validate format.
+     * Gets the value of the validateFormat property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isValidateFormat() {
         return validateFormat;
     }
 
     /**
-     * Sets the validate format.
+     * Sets the value of the validateFormat property.
      * 
-     * @param value the new validate format
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setValidateFormat(Boolean value) {
         this.validateFormat = value;

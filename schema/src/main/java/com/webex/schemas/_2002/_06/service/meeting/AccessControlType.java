@@ -25,7 +25,32 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class AccessControlType.
+ * <p>Java class for accessControlType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="accessControlType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="listToPublic" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="isPublic" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="meetingPassword" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="16"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="enforcePassword" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "accessControlType", propOrder = {
@@ -38,89 +63,104 @@ public class AccessControlType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The list to public. */
     protected Boolean listToPublic;
-    
-    /** The is public. */
     protected Boolean isPublic;
-    
-    /** The meeting password. */
     protected String meetingPassword;
-    
-    /** The enforce password. */
     @XmlElement(defaultValue = "true")
     protected Boolean enforcePassword;
 
     /**
-     * Checks if is list to public.
+     * Gets the value of the listToPublic property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isListToPublic() {
         return listToPublic;
     }
 
     /**
-     * Sets the list to public.
+     * Sets the value of the listToPublic property.
      * 
-     * @param value the new list to public
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setListToPublic(Boolean value) {
         this.listToPublic = value;
     }
 
     /**
-     * Checks if is is public.
+     * Gets the value of the isPublic property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isIsPublic() {
         return isPublic;
     }
 
     /**
-     * Sets the checks if is public.
+     * Sets the value of the isPublic property.
      * 
-     * @param value the new checks if is public
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setIsPublic(Boolean value) {
         this.isPublic = value;
     }
 
     /**
-     * Gets the meeting password.
+     * Gets the value of the meetingPassword property.
      * 
-     * @return the meeting password
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMeetingPassword() {
         return meetingPassword;
     }
 
     /**
-     * Sets the meeting password.
+     * Sets the value of the meetingPassword property.
      * 
-     * @param value the new meeting password
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMeetingPassword(String value) {
         this.meetingPassword = value;
     }
 
     /**
-     * Checks if is enforce password.
+     * Gets the value of the enforcePassword property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isEnforcePassword() {
         return enforcePassword;
     }
 
     /**
-     * Sets the enforce password.
+     * Sets the value of the enforcePassword property.
      * 
-     * @param value the new enforce password
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setEnforcePassword(Boolean value) {
         this.enforcePassword = value;

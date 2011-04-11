@@ -28,7 +28,25 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class LstControlType.
+ * <p>Java class for lstControlType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="lstControlType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="startFrom" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="maximumNum" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="listMethod" type="{http://www.webex.com/schemas/2002/06/service}lstMethodType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstControlType", propOrder = {
@@ -40,73 +58,84 @@ public class LstControlType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The start from. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long startFrom;
-    
-    /** The maximum num. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long maximumNum;
-    
-    /** The list method. */
     protected LstMethodType listMethod;
 
     /**
-     * Gets the start from.
+     * Gets the value of the startFrom property.
      * 
-     * @return the start from
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getStartFrom() {
         return startFrom;
     }
 
     /**
-     * Sets the start from.
+     * Sets the value of the startFrom property.
      * 
-     * @param value the new start from
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setStartFrom(Long value) {
         this.startFrom = value;
     }
 
     /**
-     * Gets the maximum num.
+     * Gets the value of the maximumNum property.
      * 
-     * @return the maximum num
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getMaximumNum() {
         return maximumNum;
     }
 
     /**
-     * Sets the maximum num.
+     * Sets the value of the maximumNum property.
      * 
-     * @param value the new maximum num
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMaximumNum(Long value) {
         this.maximumNum = value;
     }
 
     /**
-     * Gets the list method.
+     * Gets the value of the listMethod property.
      * 
-     * @return the list method
+     * @return
+     *     possible object is
+     *     {@link LstMethodType }
+     *     
      */
     public LstMethodType getListMethod() {
         return listMethod;
     }
 
     /**
-     * Sets the list method.
+     * Sets the value of the listMethod property.
      * 
-     * @param value the new list method
+     * @param value
+     *     allowed object is
+     *     {@link LstMethodType }
+     *     
      */
     public void setListMethod(LstMethodType value) {
         this.listMethod = value;

@@ -25,7 +25,25 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class DataScopeType.
+ * <p>Java class for dataScopeType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="dataScopeType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="regDateStart" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="regDateEnd" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "dataScopeType", propOrder = {
@@ -37,68 +55,79 @@ public class DataScopeType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The reg date start. */
     protected String regDateStart;
-    
-    /** The time zone id. */
     @XmlElement(defaultValue = "-1")
     protected Long timeZoneID;
-    
-    /** The reg date end. */
     protected String regDateEnd;
 
     /**
-     * Gets the reg date start.
+     * Gets the value of the regDateStart property.
      * 
-     * @return the reg date start
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getRegDateStart() {
         return regDateStart;
     }
 
     /**
-     * Sets the reg date start.
+     * Sets the value of the regDateStart property.
      * 
-     * @param value the new reg date start
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setRegDateStart(String value) {
         this.regDateStart = value;
     }
 
     /**
-     * Gets the time zone id.
+     * Gets the value of the timeZoneID property.
      * 
-     * @return the time zone id
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the time zone id.
+     * Sets the value of the timeZoneID property.
      * 
-     * @param value the new time zone id
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setTimeZoneID(Long value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the reg date end.
+     * Gets the value of the regDateEnd property.
      * 
-     * @return the reg date end
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getRegDateEnd() {
         return regDateEnd;
     }
 
     /**
-     * Sets the reg date end.
+     * Sets the value of the regDateEnd property.
      * 
-     * @param value the new reg date end
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setRegDateEnd(String value) {
         this.regDateEnd = value;

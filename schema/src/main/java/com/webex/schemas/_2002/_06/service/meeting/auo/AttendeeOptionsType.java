@@ -25,7 +25,26 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class AttendeeOptionsType.
+ * <p>Java class for attendeeOptionsType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="attendeeOptionsType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="requireUcfDiagnosis" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="excludePassword" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="requireAccount" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="emailInvitations" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "attendeeOptionsType", propOrder = {
@@ -38,89 +57,104 @@ public class AttendeeOptionsType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The require ucf diagnosis. */
     protected Boolean requireUcfDiagnosis;
-    
-    /** The exclude password. */
     protected Boolean excludePassword;
-    
-    /** The require account. */
     protected Boolean requireAccount;
-    
-    /** The email invitations. */
     @XmlElement(defaultValue = "false")
     protected Boolean emailInvitations;
 
     /**
-     * Checks if is require ucf diagnosis.
+     * Gets the value of the requireUcfDiagnosis property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isRequireUcfDiagnosis() {
         return requireUcfDiagnosis;
     }
 
     /**
-     * Sets the require ucf diagnosis.
+     * Sets the value of the requireUcfDiagnosis property.
      * 
-     * @param value the new require ucf diagnosis
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setRequireUcfDiagnosis(Boolean value) {
         this.requireUcfDiagnosis = value;
     }
 
     /**
-     * Checks if is exclude password.
+     * Gets the value of the excludePassword property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isExcludePassword() {
         return excludePassword;
     }
 
     /**
-     * Sets the exclude password.
+     * Sets the value of the excludePassword property.
      * 
-     * @param value the new exclude password
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setExcludePassword(Boolean value) {
         this.excludePassword = value;
     }
 
     /**
-     * Checks if is require account.
+     * Gets the value of the requireAccount property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isRequireAccount() {
         return requireAccount;
     }
 
     /**
-     * Sets the require account.
+     * Sets the value of the requireAccount property.
      * 
-     * @param value the new require account
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setRequireAccount(Boolean value) {
         this.requireAccount = value;
     }
 
     /**
-     * Checks if is email invitations.
+     * Gets the value of the emailInvitations property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isEmailInvitations() {
         return emailInvitations;
     }
 
     /**
-     * Sets the email invitations.
+     * Sets the value of the emailInvitations property.
      * 
-     * @param value the new email invitations
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setEmailInvitations(Boolean value) {
         this.emailInvitations = value;

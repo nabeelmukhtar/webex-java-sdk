@@ -22,37 +22,33 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum ServiceType.
+ * <p>Java class for serviceType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="serviceType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="FREE_OFFICE"/>
+ *     &lt;enumeration value="STANDARD_OFFICE"/>
+ *     &lt;enumeration value="PRO_OFFICE"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "serviceType")
 @XmlEnum
 public enum ServiceType {
 
-    /** The FRE e_ office. */
     FREE_OFFICE,
-    
-    /** The STANDAR d_ office. */
     STANDARD_OFFICE,
-    
-    /** The PR o_ office. */
     PRO_OFFICE;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the service type
-     */
     public static ServiceType fromValue(String v) {
         return valueOf(v);
     }

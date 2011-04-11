@@ -28,7 +28,30 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * The Class DisplayfeedbackType.
+ * <p>Java class for displayfeedbackType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="displayfeedbackType">
+ *   &lt;simpleContent>
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
+ *       &lt;attribute name="feedbacktype" default="Response">
+ *         &lt;simpleType>
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
+ *             &lt;enumeration value="Response"/>
+ *             &lt;enumeration value="Solution"/>
+ *             &lt;enumeration value="Hint"/>
+ *           &lt;/restriction>
+ *         &lt;/simpleType>
+ *       &lt;/attribute>
+ *       &lt;attribute name="linkrefid" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *     &lt;/extension>
+ *   &lt;/simpleContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "displayfeedbackType", propOrder = {
@@ -38,44 +61,46 @@ public class DisplayfeedbackType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The value. */
     @XmlValue
     protected String value;
-    
-    /** The feedbacktype. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String feedbacktype;
-    
-    /** The linkrefid. */
     @XmlAttribute(required = true)
     protected String linkrefid;
 
     /**
-     * Gets the value.
+     * Gets the value of the value property.
      * 
-     * @return the value
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value.
+     * Sets the value of the value property.
      * 
-     * @param value the new value
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setValue(String value) {
         this.value = value;
     }
 
     /**
-     * Gets the feedbacktype.
+     * Gets the value of the feedbacktype property.
      * 
-     * @return the feedbacktype
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFeedbacktype() {
         if (feedbacktype == null) {
@@ -86,27 +111,36 @@ public class DisplayfeedbackType
     }
 
     /**
-     * Sets the feedbacktype.
+     * Sets the value of the feedbacktype property.
      * 
-     * @param value the new feedbacktype
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFeedbacktype(String value) {
         this.feedbacktype = value;
     }
 
     /**
-     * Gets the linkrefid.
+     * Gets the value of the linkrefid property.
      * 
-     * @return the linkrefid
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLinkrefid() {
         return linkrefid;
     }
 
     /**
-     * Sets the linkrefid.
+     * Sets the value of the linkrefid property.
      * 
-     * @param value the new linkrefid
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLinkrefid(String value) {
         this.linkrefid = value;

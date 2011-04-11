@@ -26,7 +26,25 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class AttendeeCountType.
+ * <p>Java class for attendeeCountType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="attendeeCountType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="estEnrollment" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="estAttendance" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="source" type="{http://www.webex.com/schemas/2002/06/service/event}sourceType" maxOccurs="unbounded" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "attendeeCountType", propOrder = {
@@ -38,58 +56,64 @@ public class AttendeeCountType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The est enrollment. */
     protected long estEnrollment;
-    
-    /** The est attendance. */
     protected long estAttendance;
-    
-    /** The source. */
     protected List<SourceType> source;
 
     /**
-     * Gets the est enrollment.
+     * Gets the value of the estEnrollment property.
      * 
-     * @return the est enrollment
      */
     public long getEstEnrollment() {
         return estEnrollment;
     }
 
     /**
-     * Sets the est enrollment.
+     * Sets the value of the estEnrollment property.
      * 
-     * @param value the new est enrollment
      */
     public void setEstEnrollment(long value) {
         this.estEnrollment = value;
     }
 
     /**
-     * Gets the est attendance.
+     * Gets the value of the estAttendance property.
      * 
-     * @return the est attendance
      */
     public long getEstAttendance() {
         return estAttendance;
     }
 
     /**
-     * Sets the est attendance.
+     * Sets the value of the estAttendance property.
      * 
-     * @param value the new est attendance
      */
     public void setEstAttendance(long value) {
         this.estAttendance = value;
     }
 
     /**
-     * Gets the source.
+     * Gets the value of the source property.
      * 
-     * @return the source
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the source property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getSource().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link SourceType }
+     * 
+     * 
      */
     public List<SourceType> getSource() {
         if (source == null) {

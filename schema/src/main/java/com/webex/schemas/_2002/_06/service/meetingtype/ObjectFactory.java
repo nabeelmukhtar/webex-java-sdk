@@ -21,115 +21,116 @@ import javax.xml.bind.annotation.XmlRegistry;
 
 
 /**
- * A factory for creating Object objects.
+ * This object contains factory methods for each 
+ * Java content interface and Java element interface 
+ * generated in the com.webex.schemas._2002._06.service.meetingtype package. 
+ * <p>An ObjectFactory allows you to programatically 
+ * construct new instances of the Java representation 
+ * for XML content. The Java representation of XML 
+ * content can consist of schema derived interfaces 
+ * and classes representing the binding of schema 
+ * type definitions, element declarations and model 
+ * groups.  Factory methods for each of these are 
+ * provided in this class.
+ * 
  */
 @XmlRegistry
 public class ObjectFactory {
 
 
     /**
-     * Instantiates a new object factory.
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.webex.schemas._2002._06.service.meetingtype
+     * 
      */
     public ObjectFactory() {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link OptionsType }
      * 
-     * @return the service types
-     */
-    public MeetingTypeInstanceType.ServiceTypes createMeetingTypeInstanceTypeServiceTypes() {
-        return new MeetingTypeInstanceType.ServiceTypes();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the lst meeting type
-     */
-    public LstMeetingType createLstMeetingType() {
-        return new LstMeetingType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the gets the meeting type response
-     */
-    public GetMeetingTypeResponse createGetMeetingTypeResponse() {
-        return new GetMeetingTypeResponse();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the options type
      */
     public OptionsType createOptionsType() {
         return new OptionsType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link GetMeetingType }
      * 
-     * @return the gets the meeting type
      */
     public GetMeetingType createGetMeetingType() {
         return new GetMeetingType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link LstMeetingTypeResponse }
      * 
-     * @return the limits type
      */
-    public LimitsType createLimitsType() {
-        return new LimitsType();
+    public LstMeetingTypeResponse createLstMeetingTypeResponse() {
+        return new LstMeetingTypeResponse();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link OrderType }
      * 
-     * @return the order type
      */
     public OrderType createOrderType() {
         return new OrderType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link LimitsType }
      * 
-     * @return the meeting type instance type
+     */
+    public LimitsType createLimitsType() {
+        return new LimitsType();
+    }
+
+    /**
+     * Create an instance of {@link MeetingTypeInstanceType }
+     * 
      */
     public MeetingTypeInstanceType createMeetingTypeInstanceType() {
         return new MeetingTypeInstanceType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link GetMeetingTypeResponse }
      * 
-     * @return the meeting type type ext
      */
-    public MeetingTypeTypeExt createMeetingTypeTypeExt() {
-        return new MeetingTypeTypeExt();
+    public GetMeetingTypeResponse createGetMeetingTypeResponse() {
+        return new GetMeetingTypeResponse();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link MeetingTypeInstanceType.ServiceTypes }
      * 
-     * @return the phone numbers type
+     */
+    public MeetingTypeInstanceType.ServiceTypes createMeetingTypeInstanceTypeServiceTypes() {
+        return new MeetingTypeInstanceType.ServiceTypes();
+    }
+
+    /**
+     * Create an instance of {@link PhoneNumbersType }
+     * 
      */
     public PhoneNumbersType createPhoneNumbersType() {
         return new PhoneNumbersType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link LstMeetingType }
      * 
-     * @return the lst meeting type response
      */
-    public LstMeetingTypeResponse createLstMeetingTypeResponse() {
-        return new LstMeetingTypeResponse();
+    public LstMeetingType createLstMeetingType() {
+        return new LstMeetingType();
+    }
+
+    /**
+     * Create an instance of {@link MeetingTypeTypeExt }
+     * 
+     */
+    public MeetingTypeTypeExt createMeetingTypeTypeExt() {
+        return new MeetingTypeTypeExt();
     }
 
 }

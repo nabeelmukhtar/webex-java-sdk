@@ -25,7 +25,54 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class OptionsType.
+ * <p>Java class for optionsType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="optionsType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="firstNameVisible" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="lastNameVisible" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="addressVisible" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="workPhoneVisible" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="cellPhoneVisible" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="pagerVisible" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="faxVisible" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="officeUrlVisible" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="pictureVisible" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="notifyOnNewMessage" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="notifyOnMeeting" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="followMeEnable" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="emailVisible" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="listInCategory" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="titleVisible" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="folderRead" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="folderWrite" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="messageVisible" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="iconSelect1" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="iconSelect2" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="acceptLinkRequest" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="holdOnLinkRequest" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="notifyOnLinkRequest" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportVideo" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportApp" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportFileShare" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportDesktopShare" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportMeetingRecord" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportAppshareRemote" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportWebTourRemote" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportDesktopShareRemote" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="subscriptionOffice" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "optionsType", propOrder = {
@@ -66,708 +113,835 @@ public class OptionsType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The first name visible. */
     @XmlElement(defaultValue = "false")
     protected Boolean firstNameVisible;
-    
-    /** The last name visible. */
     @XmlElement(defaultValue = "false")
     protected Boolean lastNameVisible;
-    
-    /** The address visible. */
     @XmlElement(defaultValue = "false")
     protected Boolean addressVisible;
-    
-    /** The work phone visible. */
     @XmlElement(defaultValue = "false")
     protected Boolean workPhoneVisible;
-    
-    /** The cell phone visible. */
     @XmlElement(defaultValue = "false")
     protected Boolean cellPhoneVisible;
-    
-    /** The pager visible. */
     @XmlElement(defaultValue = "false")
     protected Boolean pagerVisible;
-    
-    /** The fax visible. */
     @XmlElement(defaultValue = "false")
     protected Boolean faxVisible;
-    
-    /** The office url visible. */
     @XmlElement(defaultValue = "false")
     protected Boolean officeUrlVisible;
-    
-    /** The picture visible. */
     @XmlElement(defaultValue = "false")
     protected Boolean pictureVisible;
-    
-    /** The notify on new message. */
     @XmlElement(defaultValue = "false")
     protected Boolean notifyOnNewMessage;
-    
-    /** The notify on meeting. */
     @XmlElement(defaultValue = "false")
     protected Boolean notifyOnMeeting;
-    
-    /** The follow me enable. */
     @XmlElement(defaultValue = "false")
     protected Boolean followMeEnable;
-    
-    /** The email visible. */
     @XmlElement(defaultValue = "false")
     protected Boolean emailVisible;
-    
-    /** The list in category. */
     @XmlElement(defaultValue = "false")
     protected Boolean listInCategory;
-    
-    /** The title visible. */
     @XmlElement(defaultValue = "false")
     protected Boolean titleVisible;
-    
-    /** The folder read. */
     @XmlElement(defaultValue = "false")
     protected Boolean folderRead;
-    
-    /** The folder write. */
     @XmlElement(defaultValue = "false")
     protected Boolean folderWrite;
-    
-    /** The message visible. */
     @XmlElement(defaultValue = "false")
     protected Boolean messageVisible;
-    
-    /** The icon select1. */
     @XmlElement(defaultValue = "false")
     protected Boolean iconSelect1;
-    
-    /** The icon select2. */
     @XmlElement(defaultValue = "false")
     protected Boolean iconSelect2;
-    
-    /** The accept link request. */
     @XmlElement(defaultValue = "false")
     protected Boolean acceptLinkRequest;
-    
-    /** The hold on link request. */
     @XmlElement(defaultValue = "false")
     protected Boolean holdOnLinkRequest;
-    
-    /** The notify on link request. */
     @XmlElement(defaultValue = "false")
     protected Boolean notifyOnLinkRequest;
-    
-    /** The support video. */
     @XmlElement(defaultValue = "false")
     protected Boolean supportVideo;
-    
-    /** The support app. */
     @XmlElement(defaultValue = "false")
     protected Boolean supportApp;
-    
-    /** The support file share. */
     @XmlElement(defaultValue = "false")
     protected Boolean supportFileShare;
-    
-    /** The support desktop share. */
     @XmlElement(defaultValue = "false")
     protected Boolean supportDesktopShare;
-    
-    /** The support meeting record. */
     @XmlElement(defaultValue = "false")
     protected Boolean supportMeetingRecord;
-    
-    /** The support appshare remote. */
     @XmlElement(defaultValue = "false")
     protected Boolean supportAppshareRemote;
-    
-    /** The support web tour remote. */
     @XmlElement(defaultValue = "false")
     protected Boolean supportWebTourRemote;
-    
-    /** The support desktop share remote. */
     @XmlElement(defaultValue = "false")
     protected Boolean supportDesktopShareRemote;
-    
-    /** The subscription office. */
     @XmlElement(defaultValue = "false")
     protected Boolean subscriptionOffice;
 
     /**
-     * Checks if is first name visible.
+     * Gets the value of the firstNameVisible property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isFirstNameVisible() {
         return firstNameVisible;
     }
 
     /**
-     * Sets the first name visible.
+     * Sets the value of the firstNameVisible property.
      * 
-     * @param value the new first name visible
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setFirstNameVisible(Boolean value) {
         this.firstNameVisible = value;
     }
 
     /**
-     * Checks if is last name visible.
+     * Gets the value of the lastNameVisible property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isLastNameVisible() {
         return lastNameVisible;
     }
 
     /**
-     * Sets the last name visible.
+     * Sets the value of the lastNameVisible property.
      * 
-     * @param value the new last name visible
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setLastNameVisible(Boolean value) {
         this.lastNameVisible = value;
     }
 
     /**
-     * Checks if is address visible.
+     * Gets the value of the addressVisible property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAddressVisible() {
         return addressVisible;
     }
 
     /**
-     * Sets the address visible.
+     * Sets the value of the addressVisible property.
      * 
-     * @param value the new address visible
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAddressVisible(Boolean value) {
         this.addressVisible = value;
     }
 
     /**
-     * Checks if is work phone visible.
+     * Gets the value of the workPhoneVisible property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isWorkPhoneVisible() {
         return workPhoneVisible;
     }
 
     /**
-     * Sets the work phone visible.
+     * Sets the value of the workPhoneVisible property.
      * 
-     * @param value the new work phone visible
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setWorkPhoneVisible(Boolean value) {
         this.workPhoneVisible = value;
     }
 
     /**
-     * Checks if is cell phone visible.
+     * Gets the value of the cellPhoneVisible property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isCellPhoneVisible() {
         return cellPhoneVisible;
     }
 
     /**
-     * Sets the cell phone visible.
+     * Sets the value of the cellPhoneVisible property.
      * 
-     * @param value the new cell phone visible
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setCellPhoneVisible(Boolean value) {
         this.cellPhoneVisible = value;
     }
 
     /**
-     * Checks if is pager visible.
+     * Gets the value of the pagerVisible property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isPagerVisible() {
         return pagerVisible;
     }
 
     /**
-     * Sets the pager visible.
+     * Sets the value of the pagerVisible property.
      * 
-     * @param value the new pager visible
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setPagerVisible(Boolean value) {
         this.pagerVisible = value;
     }
 
     /**
-     * Checks if is fax visible.
+     * Gets the value of the faxVisible property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isFaxVisible() {
         return faxVisible;
     }
 
     /**
-     * Sets the fax visible.
+     * Sets the value of the faxVisible property.
      * 
-     * @param value the new fax visible
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setFaxVisible(Boolean value) {
         this.faxVisible = value;
     }
 
     /**
-     * Checks if is office url visible.
+     * Gets the value of the officeUrlVisible property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isOfficeUrlVisible() {
         return officeUrlVisible;
     }
 
     /**
-     * Sets the office url visible.
+     * Sets the value of the officeUrlVisible property.
      * 
-     * @param value the new office url visible
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setOfficeUrlVisible(Boolean value) {
         this.officeUrlVisible = value;
     }
 
     /**
-     * Checks if is picture visible.
+     * Gets the value of the pictureVisible property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isPictureVisible() {
         return pictureVisible;
     }
 
     /**
-     * Sets the picture visible.
+     * Sets the value of the pictureVisible property.
      * 
-     * @param value the new picture visible
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setPictureVisible(Boolean value) {
         this.pictureVisible = value;
     }
 
     /**
-     * Checks if is notify on new message.
+     * Gets the value of the notifyOnNewMessage property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isNotifyOnNewMessage() {
         return notifyOnNewMessage;
     }
 
     /**
-     * Sets the notify on new message.
+     * Sets the value of the notifyOnNewMessage property.
      * 
-     * @param value the new notify on new message
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setNotifyOnNewMessage(Boolean value) {
         this.notifyOnNewMessage = value;
     }
 
     /**
-     * Checks if is notify on meeting.
+     * Gets the value of the notifyOnMeeting property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isNotifyOnMeeting() {
         return notifyOnMeeting;
     }
 
     /**
-     * Sets the notify on meeting.
+     * Sets the value of the notifyOnMeeting property.
      * 
-     * @param value the new notify on meeting
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setNotifyOnMeeting(Boolean value) {
         this.notifyOnMeeting = value;
     }
 
     /**
-     * Checks if is follow me enable.
+     * Gets the value of the followMeEnable property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isFollowMeEnable() {
         return followMeEnable;
     }
 
     /**
-     * Sets the follow me enable.
+     * Sets the value of the followMeEnable property.
      * 
-     * @param value the new follow me enable
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setFollowMeEnable(Boolean value) {
         this.followMeEnable = value;
     }
 
     /**
-     * Checks if is email visible.
+     * Gets the value of the emailVisible property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isEmailVisible() {
         return emailVisible;
     }
 
     /**
-     * Sets the email visible.
+     * Sets the value of the emailVisible property.
      * 
-     * @param value the new email visible
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setEmailVisible(Boolean value) {
         this.emailVisible = value;
     }
 
     /**
-     * Checks if is list in category.
+     * Gets the value of the listInCategory property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isListInCategory() {
         return listInCategory;
     }
 
     /**
-     * Sets the list in category.
+     * Sets the value of the listInCategory property.
      * 
-     * @param value the new list in category
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setListInCategory(Boolean value) {
         this.listInCategory = value;
     }
 
     /**
-     * Checks if is title visible.
+     * Gets the value of the titleVisible property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isTitleVisible() {
         return titleVisible;
     }
 
     /**
-     * Sets the title visible.
+     * Sets the value of the titleVisible property.
      * 
-     * @param value the new title visible
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setTitleVisible(Boolean value) {
         this.titleVisible = value;
     }
 
     /**
-     * Checks if is folder read.
+     * Gets the value of the folderRead property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isFolderRead() {
         return folderRead;
     }
 
     /**
-     * Sets the folder read.
+     * Sets the value of the folderRead property.
      * 
-     * @param value the new folder read
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setFolderRead(Boolean value) {
         this.folderRead = value;
     }
 
     /**
-     * Checks if is folder write.
+     * Gets the value of the folderWrite property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isFolderWrite() {
         return folderWrite;
     }
 
     /**
-     * Sets the folder write.
+     * Sets the value of the folderWrite property.
      * 
-     * @param value the new folder write
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setFolderWrite(Boolean value) {
         this.folderWrite = value;
     }
 
     /**
-     * Checks if is message visible.
+     * Gets the value of the messageVisible property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isMessageVisible() {
         return messageVisible;
     }
 
     /**
-     * Sets the message visible.
+     * Sets the value of the messageVisible property.
      * 
-     * @param value the new message visible
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setMessageVisible(Boolean value) {
         this.messageVisible = value;
     }
 
     /**
-     * Checks if is icon select1.
+     * Gets the value of the iconSelect1 property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isIconSelect1() {
         return iconSelect1;
     }
 
     /**
-     * Sets the icon select1.
+     * Sets the value of the iconSelect1 property.
      * 
-     * @param value the new icon select1
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setIconSelect1(Boolean value) {
         this.iconSelect1 = value;
     }
 
     /**
-     * Checks if is icon select2.
+     * Gets the value of the iconSelect2 property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isIconSelect2() {
         return iconSelect2;
     }
 
     /**
-     * Sets the icon select2.
+     * Sets the value of the iconSelect2 property.
      * 
-     * @param value the new icon select2
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setIconSelect2(Boolean value) {
         this.iconSelect2 = value;
     }
 
     /**
-     * Checks if is accept link request.
+     * Gets the value of the acceptLinkRequest property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAcceptLinkRequest() {
         return acceptLinkRequest;
     }
 
     /**
-     * Sets the accept link request.
+     * Sets the value of the acceptLinkRequest property.
      * 
-     * @param value the new accept link request
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAcceptLinkRequest(Boolean value) {
         this.acceptLinkRequest = value;
     }
 
     /**
-     * Checks if is hold on link request.
+     * Gets the value of the holdOnLinkRequest property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isHoldOnLinkRequest() {
         return holdOnLinkRequest;
     }
 
     /**
-     * Sets the hold on link request.
+     * Sets the value of the holdOnLinkRequest property.
      * 
-     * @param value the new hold on link request
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setHoldOnLinkRequest(Boolean value) {
         this.holdOnLinkRequest = value;
     }
 
     /**
-     * Checks if is notify on link request.
+     * Gets the value of the notifyOnLinkRequest property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isNotifyOnLinkRequest() {
         return notifyOnLinkRequest;
     }
 
     /**
-     * Sets the notify on link request.
+     * Sets the value of the notifyOnLinkRequest property.
      * 
-     * @param value the new notify on link request
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setNotifyOnLinkRequest(Boolean value) {
         this.notifyOnLinkRequest = value;
     }
 
     /**
-     * Checks if is support video.
+     * Gets the value of the supportVideo property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportVideo() {
         return supportVideo;
     }
 
     /**
-     * Sets the support video.
+     * Sets the value of the supportVideo property.
      * 
-     * @param value the new support video
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportVideo(Boolean value) {
         this.supportVideo = value;
     }
 
     /**
-     * Checks if is support app.
+     * Gets the value of the supportApp property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportApp() {
         return supportApp;
     }
 
     /**
-     * Sets the support app.
+     * Sets the value of the supportApp property.
      * 
-     * @param value the new support app
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportApp(Boolean value) {
         this.supportApp = value;
     }
 
     /**
-     * Checks if is support file share.
+     * Gets the value of the supportFileShare property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportFileShare() {
         return supportFileShare;
     }
 
     /**
-     * Sets the support file share.
+     * Sets the value of the supportFileShare property.
      * 
-     * @param value the new support file share
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportFileShare(Boolean value) {
         this.supportFileShare = value;
     }
 
     /**
-     * Checks if is support desktop share.
+     * Gets the value of the supportDesktopShare property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportDesktopShare() {
         return supportDesktopShare;
     }
 
     /**
-     * Sets the support desktop share.
+     * Sets the value of the supportDesktopShare property.
      * 
-     * @param value the new support desktop share
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportDesktopShare(Boolean value) {
         this.supportDesktopShare = value;
     }
 
     /**
-     * Checks if is support meeting record.
+     * Gets the value of the supportMeetingRecord property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportMeetingRecord() {
         return supportMeetingRecord;
     }
 
     /**
-     * Sets the support meeting record.
+     * Sets the value of the supportMeetingRecord property.
      * 
-     * @param value the new support meeting record
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportMeetingRecord(Boolean value) {
         this.supportMeetingRecord = value;
     }
 
     /**
-     * Checks if is support appshare remote.
+     * Gets the value of the supportAppshareRemote property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportAppshareRemote() {
         return supportAppshareRemote;
     }
 
     /**
-     * Sets the support appshare remote.
+     * Sets the value of the supportAppshareRemote property.
      * 
-     * @param value the new support appshare remote
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportAppshareRemote(Boolean value) {
         this.supportAppshareRemote = value;
     }
 
     /**
-     * Checks if is support web tour remote.
+     * Gets the value of the supportWebTourRemote property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportWebTourRemote() {
         return supportWebTourRemote;
     }
 
     /**
-     * Sets the support web tour remote.
+     * Sets the value of the supportWebTourRemote property.
      * 
-     * @param value the new support web tour remote
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportWebTourRemote(Boolean value) {
         this.supportWebTourRemote = value;
     }
 
     /**
-     * Checks if is support desktop share remote.
+     * Gets the value of the supportDesktopShareRemote property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportDesktopShareRemote() {
         return supportDesktopShareRemote;
     }
 
     /**
-     * Sets the support desktop share remote.
+     * Sets the value of the supportDesktopShareRemote property.
      * 
-     * @param value the new support desktop share remote
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportDesktopShareRemote(Boolean value) {
         this.supportDesktopShareRemote = value;
     }
 
     /**
-     * Checks if is subscription office.
+     * Gets the value of the subscriptionOffice property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSubscriptionOffice() {
         return subscriptionOffice;
     }
 
     /**
-     * Sets the subscription office.
+     * Sets the value of the subscriptionOffice property.
      * 
-     * @param value the new subscription office
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSubscriptionOffice(Boolean value) {
         this.subscriptionOffice = value;

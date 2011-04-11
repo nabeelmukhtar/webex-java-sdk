@@ -23,47 +23,37 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum AttendeeListViewType.
+ * <p>Java class for attendeeListViewType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="attendeeListViewType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="ALL"/>
+ *     &lt;enumeration value="HOST,PRESENTER,PANELISTS"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "attendeeListViewType")
 @XmlEnum
 public enum AttendeeListViewType {
 
-    /** The ALL. */
     ALL("ALL"),
-    
-    /** The HOS t_ presente r_ panelists. */
     @XmlEnumValue("HOST,PRESENTER,PANELISTS")
     HOST_PRESENTER_PANELISTS("HOST,PRESENTER,PANELISTS");
-    
-    /** The value. */
     private final String value;
 
-    /**
-     * Instantiates a new attendee list view type.
-     * 
-     * @param v the v
-     */
     AttendeeListViewType(String v) {
         value = v;
     }
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return value;
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the attendee list view type
-     */
     public static AttendeeListViewType fromValue(String v) {
         for (AttendeeListViewType c: AttendeeListViewType.values()) {
             if (c.value.equals(v)) {

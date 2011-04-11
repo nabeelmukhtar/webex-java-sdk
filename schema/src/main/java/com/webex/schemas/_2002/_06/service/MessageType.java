@@ -27,7 +27,45 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class MessageType.
+ * <p>Java class for messageType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="messageType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="header">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="securityContext" type="{http://www.webex.com/schemas/2002/06/service}securityContextType" minOccurs="0"/>
+ *                   &lt;element name="response" type="{http://www.webex.com/schemas/2002/06/service}responseType" maxOccurs="unbounded" minOccurs="0"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="body">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="bodyContent" type="{http://www.webex.com/schemas/2002/06/service}bodyContentType" maxOccurs="unbounded"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "messageType", propOrder = {
@@ -38,48 +76,55 @@ public class MessageType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The header. */
     @XmlElement(required = true)
     protected MessageType.Header header;
-    
-    /** The body. */
     @XmlElement(required = true)
     protected MessageType.Body body;
 
     /**
-     * Gets the header.
+     * Gets the value of the header property.
      * 
-     * @return the header
+     * @return
+     *     possible object is
+     *     {@link MessageType.Header }
+     *     
      */
     public MessageType.Header getHeader() {
         return header;
     }
 
     /**
-     * Sets the header.
+     * Sets the value of the header property.
      * 
-     * @param value the new header
+     * @param value
+     *     allowed object is
+     *     {@link MessageType.Header }
+     *     
      */
     public void setHeader(MessageType.Header value) {
         this.header = value;
     }
 
     /**
-     * Gets the body.
+     * Gets the value of the body property.
      * 
-     * @return the body
+     * @return
+     *     possible object is
+     *     {@link MessageType.Body }
+     *     
      */
     public MessageType.Body getBody() {
         return body;
     }
 
     /**
-     * Sets the body.
+     * Sets the value of the body property.
      * 
-     * @param value the new body
+     * @param value
+     *     allowed object is
+     *     {@link MessageType.Body }
+     *     
      */
     public void setBody(MessageType.Body value) {
         this.body = value;
@@ -87,7 +132,23 @@ public class MessageType
 
 
     /**
-     * The Class Body.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="bodyContent" type="{http://www.webex.com/schemas/2002/06/service}bodyContentType" maxOccurs="unbounded"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -97,17 +158,31 @@ public class MessageType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The body content. */
         @XmlElement(required = true)
         protected List<BodyContentType> bodyContent;
 
         /**
-         * Gets the body content.
+         * Gets the value of the bodyContent property.
          * 
-         * @return the body content
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the bodyContent property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getBodyContent().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link BodyContentType }
+         * 
+         * 
          */
         public List<BodyContentType> getBodyContent() {
             if (bodyContent == null) {
@@ -120,7 +195,24 @@ public class MessageType
 
 
     /**
-     * The Class Header.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="securityContext" type="{http://www.webex.com/schemas/2002/06/service}securityContextType" minOccurs="0"/>
+     *         &lt;element name="response" type="{http://www.webex.com/schemas/2002/06/service}responseType" maxOccurs="unbounded" minOccurs="0"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -131,37 +223,55 @@ public class MessageType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The security context. */
         protected SecurityContextType securityContext;
-        
-        /** The response. */
         protected List<ResponseType> response;
 
         /**
-         * Gets the security context.
+         * Gets the value of the securityContext property.
          * 
-         * @return the security context
+         * @return
+         *     possible object is
+         *     {@link SecurityContextType }
+         *     
          */
         public SecurityContextType getSecurityContext() {
             return securityContext;
         }
 
         /**
-         * Sets the security context.
+         * Sets the value of the securityContext property.
          * 
-         * @param value the new security context
+         * @param value
+         *     allowed object is
+         *     {@link SecurityContextType }
+         *     
          */
         public void setSecurityContext(SecurityContextType value) {
             this.securityContext = value;
         }
 
         /**
-         * Gets the response.
+         * Gets the value of the response property.
          * 
-         * @return the response
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the response property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getResponse().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link ResponseType }
+         * 
+         * 
          */
         public List<ResponseType> getResponse() {
             if (response == null) {

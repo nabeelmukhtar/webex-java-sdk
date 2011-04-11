@@ -22,37 +22,33 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum AttendeeEnrollStatusType.
+ * <p>Java class for attendeeEnrollStatusType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="attendeeEnrollStatusType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="PENDING"/>
+ *     &lt;enumeration value="APPROVED"/>
+ *     &lt;enumeration value="REJECTED"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "attendeeEnrollStatusType")
 @XmlEnum
 public enum AttendeeEnrollStatusType {
 
-    /** The PENDING. */
     PENDING,
-    
-    /** The APPROVED. */
     APPROVED,
-    
-    /** The REJECTED. */
     REJECTED;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the attendee enroll status type
-     */
     public static AttendeeEnrollStatusType fromValue(String v) {
         return valueOf(v);
     }

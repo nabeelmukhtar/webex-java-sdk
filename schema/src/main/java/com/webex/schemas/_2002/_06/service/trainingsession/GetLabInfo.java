@@ -25,7 +25,23 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class GetLabInfo.
+ * <p>Java class for getLabInfo complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="getLabInfo">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="labName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getLabInfo", propOrder = {
@@ -36,25 +52,28 @@ public class GetLabInfo
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The lab name. */
     protected String labName;
 
     /**
-     * Gets the lab name.
+     * Gets the value of the labName property.
      * 
-     * @return the lab name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLabName() {
         return labName;
     }
 
     /**
-     * Sets the lab name.
+     * Sets the value of the labName property.
      * 
-     * @param value the new lab name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLabName(String value) {
         this.labName = value;

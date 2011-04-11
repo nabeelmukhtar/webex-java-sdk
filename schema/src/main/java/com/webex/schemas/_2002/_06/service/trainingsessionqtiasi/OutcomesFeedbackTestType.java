@@ -28,7 +28,25 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class OutcomesFeedbackTestType.
+ * <p>Java class for outcomes_feedback_testType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="outcomes_feedback_testType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="test_variable" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}test_variableType"/>
+ *         &lt;element name="displayfeedback" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}displayfeedbackType" maxOccurs="unbounded"/>
+ *       &lt;/sequence>
+ *       &lt;attribute name="title" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "outcomes_feedback_testType", propOrder = {
@@ -39,43 +57,59 @@ public class OutcomesFeedbackTestType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The test variable. */
     @XmlElement(name = "test_variable", required = true)
     protected TestVariableType testVariable;
-    
-    /** The displayfeedback. */
     @XmlElement(required = true)
     protected List<DisplayfeedbackType> displayfeedback;
-    
-    /** The title. */
     @XmlAttribute
     protected String title;
 
     /**
-     * Gets the test variable.
+     * Gets the value of the testVariable property.
      * 
-     * @return the test variable
+     * @return
+     *     possible object is
+     *     {@link TestVariableType }
+     *     
      */
     public TestVariableType getTestVariable() {
         return testVariable;
     }
 
     /**
-     * Sets the test variable.
+     * Sets the value of the testVariable property.
      * 
-     * @param value the new test variable
+     * @param value
+     *     allowed object is
+     *     {@link TestVariableType }
+     *     
      */
     public void setTestVariable(TestVariableType value) {
         this.testVariable = value;
     }
 
     /**
-     * Gets the displayfeedback.
+     * Gets the value of the displayfeedback property.
      * 
-     * @return the displayfeedback
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the displayfeedback property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getDisplayfeedback().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link DisplayfeedbackType }
+     * 
+     * 
      */
     public List<DisplayfeedbackType> getDisplayfeedback() {
         if (displayfeedback == null) {
@@ -85,18 +119,24 @@ public class OutcomesFeedbackTestType
     }
 
     /**
-     * Gets the title.
+     * Gets the value of the title property.
      * 
-     * @return the title
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTitle() {
         return title;
     }
 
     /**
-     * Sets the title.
+     * Sets the value of the title property.
      * 
-     * @param value the new title
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTitle(String value) {
         this.title = value;

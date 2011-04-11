@@ -22,34 +22,31 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum TestDeliveryType.
+ * <p>Java class for testDeliveryType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="testDeliveryType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="WEBSITE"/>
+ *     &lt;enumeration value="IN_SESSION"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "testDeliveryType")
 @XmlEnum
 public enum TestDeliveryType {
 
-    /** The WEBSITE. */
     WEBSITE,
-    
-    /** The I n_ session. */
     IN_SESSION;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the test delivery type
-     */
     public static TestDeliveryType fromValue(String v) {
         return valueOf(v);
     }

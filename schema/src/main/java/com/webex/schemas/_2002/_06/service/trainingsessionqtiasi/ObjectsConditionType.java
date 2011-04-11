@@ -27,7 +27,32 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class ObjectsConditionType.
+ * <p>Java class for objects_conditionType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="objects_conditionType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="qticomment" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qticommentType" minOccurs="0"/>
+ *         &lt;choice minOccurs="0">
+ *           &lt;element name="outcomes_metadata" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}outcomes_metadataType"/>
+ *           &lt;element name="and_objects" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}and_objectsType"/>
+ *           &lt;element name="or_objects" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}or_objectsType"/>
+ *           &lt;element name="not_objects" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}not_objectsType"/>
+ *         &lt;/choice>
+ *         &lt;element name="objects_parameter" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}objects_parameterType" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="map_input" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}map_inputType" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}objectscond_extension" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "objects_conditionType", propOrder = {
@@ -44,134 +69,164 @@ public class ObjectsConditionType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The qticomment. */
     protected QticommentType qticomment;
-    
-    /** The outcomes metadata. */
     @XmlElement(name = "outcomes_metadata")
     protected OutcomesMetadataType outcomesMetadata;
-    
-    /** The and objects. */
     @XmlElement(name = "and_objects")
     protected AndObjectsType andObjects;
-    
-    /** The or objects. */
     @XmlElement(name = "or_objects")
     protected OrObjectsType orObjects;
-    
-    /** The not objects. */
     @XmlElement(name = "not_objects")
     protected NotObjectsType notObjects;
-    
-    /** The objects parameter. */
     @XmlElement(name = "objects_parameter")
     protected List<ObjectsParameterType> objectsParameter;
-    
-    /** The map input. */
     @XmlElement(name = "map_input")
     protected List<MapInputType> mapInput;
-    
-    /** The objectscond extension. */
     @XmlElement(name = "objectscond_extension")
     protected String objectscondExtension;
 
     /**
-     * Gets the qticomment.
+     * Gets the value of the qticomment property.
      * 
-     * @return the qticomment
+     * @return
+     *     possible object is
+     *     {@link QticommentType }
+     *     
      */
     public QticommentType getQticomment() {
         return qticomment;
     }
 
     /**
-     * Sets the qticomment.
+     * Sets the value of the qticomment property.
      * 
-     * @param value the new qticomment
+     * @param value
+     *     allowed object is
+     *     {@link QticommentType }
+     *     
      */
     public void setQticomment(QticommentType value) {
         this.qticomment = value;
     }
 
     /**
-     * Gets the outcomes metadata.
+     * Gets the value of the outcomesMetadata property.
      * 
-     * @return the outcomes metadata
+     * @return
+     *     possible object is
+     *     {@link OutcomesMetadataType }
+     *     
      */
     public OutcomesMetadataType getOutcomesMetadata() {
         return outcomesMetadata;
     }
 
     /**
-     * Sets the outcomes metadata.
+     * Sets the value of the outcomesMetadata property.
      * 
-     * @param value the new outcomes metadata
+     * @param value
+     *     allowed object is
+     *     {@link OutcomesMetadataType }
+     *     
      */
     public void setOutcomesMetadata(OutcomesMetadataType value) {
         this.outcomesMetadata = value;
     }
 
     /**
-     * Gets the and objects.
+     * Gets the value of the andObjects property.
      * 
-     * @return the and objects
+     * @return
+     *     possible object is
+     *     {@link AndObjectsType }
+     *     
      */
     public AndObjectsType getAndObjects() {
         return andObjects;
     }
 
     /**
-     * Sets the and objects.
+     * Sets the value of the andObjects property.
      * 
-     * @param value the new and objects
+     * @param value
+     *     allowed object is
+     *     {@link AndObjectsType }
+     *     
      */
     public void setAndObjects(AndObjectsType value) {
         this.andObjects = value;
     }
 
     /**
-     * Gets the or objects.
+     * Gets the value of the orObjects property.
      * 
-     * @return the or objects
+     * @return
+     *     possible object is
+     *     {@link OrObjectsType }
+     *     
      */
     public OrObjectsType getOrObjects() {
         return orObjects;
     }
 
     /**
-     * Sets the or objects.
+     * Sets the value of the orObjects property.
      * 
-     * @param value the new or objects
+     * @param value
+     *     allowed object is
+     *     {@link OrObjectsType }
+     *     
      */
     public void setOrObjects(OrObjectsType value) {
         this.orObjects = value;
     }
 
     /**
-     * Gets the not objects.
+     * Gets the value of the notObjects property.
      * 
-     * @return the not objects
+     * @return
+     *     possible object is
+     *     {@link NotObjectsType }
+     *     
      */
     public NotObjectsType getNotObjects() {
         return notObjects;
     }
 
     /**
-     * Sets the not objects.
+     * Sets the value of the notObjects property.
      * 
-     * @param value the new not objects
+     * @param value
+     *     allowed object is
+     *     {@link NotObjectsType }
+     *     
      */
     public void setNotObjects(NotObjectsType value) {
         this.notObjects = value;
     }
 
     /**
-     * Gets the objects parameter.
+     * Gets the value of the objectsParameter property.
      * 
-     * @return the objects parameter
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the objectsParameter property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getObjectsParameter().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link ObjectsParameterType }
+     * 
+     * 
      */
     public List<ObjectsParameterType> getObjectsParameter() {
         if (objectsParameter == null) {
@@ -181,9 +236,26 @@ public class ObjectsConditionType
     }
 
     /**
-     * Gets the map input.
+     * Gets the value of the mapInput property.
      * 
-     * @return the map input
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the mapInput property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getMapInput().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link MapInputType }
+     * 
+     * 
      */
     public List<MapInputType> getMapInput() {
         if (mapInput == null) {
@@ -193,18 +265,24 @@ public class ObjectsConditionType
     }
 
     /**
-     * Gets the objectscond extension.
+     * Gets the value of the objectscondExtension property.
      * 
-     * @return the objectscond extension
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getObjectscondExtension() {
         return objectscondExtension;
     }
 
     /**
-     * Sets the objectscond extension.
+     * Sets the value of the objectscondExtension property.
      * 
-     * @param value the new objectscond extension
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setObjectscondExtension(String value) {
         this.objectscondExtension = value;

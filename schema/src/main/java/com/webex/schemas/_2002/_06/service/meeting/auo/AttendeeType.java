@@ -26,7 +26,27 @@ import com.webex.schemas._2002._06.common.PhonesType;
 
 
 /**
- * The Class AttendeeType.
+ * <p>Java class for attendeeType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="attendeeType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="firstName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="lastName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="email" type="{http://www.webex.com/schemas/2002/06/common}emailType"/>
+ *         &lt;element name="phones" type="{http://www.webex.com/schemas/2002/06/common}phonesType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "attendeeType", propOrder = {
@@ -40,110 +60,129 @@ public class AttendeeType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The name. */
     protected String name;
-    
-    /** The first name. */
     protected String firstName;
-    
-    /** The last name. */
     protected String lastName;
-    
-    /** The email. */
     @XmlElement(required = true)
     protected String email;
-    
-    /** The phones. */
     protected PhonesType phones;
 
     /**
-     * Gets the name.
+     * Gets the value of the name property.
      * 
-     * @return the name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Sets the name.
+     * Sets the value of the name property.
      * 
-     * @param value the new name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setName(String value) {
         this.name = value;
     }
 
     /**
-     * Gets the first name.
+     * Gets the value of the firstName property.
      * 
-     * @return the first name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFirstName() {
         return firstName;
     }
 
     /**
-     * Sets the first name.
+     * Sets the value of the firstName property.
      * 
-     * @param value the new first name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFirstName(String value) {
         this.firstName = value;
     }
 
     /**
-     * Gets the last name.
+     * Gets the value of the lastName property.
      * 
-     * @return the last name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLastName() {
         return lastName;
     }
 
     /**
-     * Sets the last name.
+     * Sets the value of the lastName property.
      * 
-     * @param value the new last name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLastName(String value) {
         this.lastName = value;
     }
 
     /**
-     * Gets the email.
+     * Gets the value of the email property.
      * 
-     * @return the email
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getEmail() {
         return email;
     }
 
     /**
-     * Sets the email.
+     * Sets the value of the email property.
      * 
-     * @param value the new email
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setEmail(String value) {
         this.email = value;
     }
 
     /**
-     * Gets the phones.
+     * Gets the value of the phones property.
      * 
-     * @return the phones
+     * @return
+     *     possible object is
+     *     {@link PhonesType }
+     *     
      */
     public PhonesType getPhones() {
         return phones;
     }
 
     /**
-     * Sets the phones.
+     * Sets the value of the phones property.
      * 
-     * @param value the new phones
+     * @param value
+     *     allowed object is
+     *     {@link PhonesType }
+     *     
      */
     public void setPhones(PhonesType value) {
         this.phones = value;

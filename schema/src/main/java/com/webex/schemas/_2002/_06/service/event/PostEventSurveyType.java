@@ -24,7 +24,23 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class PostEventSurveyType.
+ * <p>Java class for postEventSurveyType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="postEventSurveyType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="display" type="{http://www.webex.com/schemas/2002/06/service/event}surveyDisplayType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "postEventSurveyType", propOrder = {
@@ -34,25 +50,28 @@ public class PostEventSurveyType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The display. */
     protected SurveyDisplayType display;
 
     /**
-     * Gets the display.
+     * Gets the value of the display property.
      * 
-     * @return the display
+     * @return
+     *     possible object is
+     *     {@link SurveyDisplayType }
+     *     
      */
     public SurveyDisplayType getDisplay() {
         return display;
     }
 
     /**
-     * Sets the display.
+     * Sets the value of the display property.
      * 
-     * @param value the new display
+     * @param value
+     *     allowed object is
+     *     {@link SurveyDisplayType }
+     *     
      */
     public void setDisplay(SurveyDisplayType value) {
         this.display = value;

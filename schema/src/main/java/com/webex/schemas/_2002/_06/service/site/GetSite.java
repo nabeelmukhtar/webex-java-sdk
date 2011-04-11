@@ -25,7 +25,33 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class GetSite.
+ * <p>Java class for getSite complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="getSite">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="returnSettings" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="eventCenter" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getSite", propOrder = {
@@ -36,25 +62,28 @@ public class GetSite
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The return settings. */
     protected GetSite.ReturnSettings returnSettings;
 
     /**
-     * Gets the return settings.
+     * Gets the value of the returnSettings property.
      * 
-     * @return the return settings
+     * @return
+     *     possible object is
+     *     {@link GetSite.ReturnSettings }
+     *     
      */
     public GetSite.ReturnSettings getReturnSettings() {
         return returnSettings;
     }
 
     /**
-     * Sets the return settings.
+     * Sets the value of the returnSettings property.
      * 
-     * @param value the new return settings
+     * @param value
+     *     allowed object is
+     *     {@link GetSite.ReturnSettings }
+     *     
      */
     public void setReturnSettings(GetSite.ReturnSettings value) {
         this.returnSettings = value;
@@ -62,7 +91,23 @@ public class GetSite
 
 
     /**
-     * The Class ReturnSettings.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="eventCenter" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -72,25 +117,28 @@ public class GetSite
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The event center. */
         protected Boolean eventCenter;
 
         /**
-         * Checks if is event center.
+         * Gets the value of the eventCenter property.
          * 
-         * @return the boolean
+         * @return
+         *     possible object is
+         *     {@link Boolean }
+         *     
          */
         public Boolean isEventCenter() {
             return eventCenter;
         }
 
         /**
-         * Sets the event center.
+         * Sets the value of the eventCenter property.
          * 
-         * @param value the new event center
+         * @param value
+         *     allowed object is
+         *     {@link Boolean }
+         *     
          */
         public void setEventCenter(Boolean value) {
             this.eventCenter = value;

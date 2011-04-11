@@ -28,7 +28,26 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class OrSelectionType.
+ * <p>Java class for or_selectionType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="or_selectionType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;choice maxOccurs="unbounded">
+ *         &lt;element name="selection_metadata" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}selection_metadataType"/>
+ *         &lt;element name="and_selection" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}and_selectionType"/>
+ *         &lt;element name="or_selection" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}or_selectionType"/>
+ *         &lt;element name="not_selection" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}not_selectionType"/>
+ *       &lt;/choice>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "or_selectionType", propOrder = {
@@ -37,22 +56,39 @@ import javax.xml.bind.annotation.XmlType;
 public class OrSelectionType implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The selection metadata or and selection or or selection. */
     @XmlElements({
-        @XmlElement(name = "selection_metadata", type = SelectionMetadataType.class),
         @XmlElement(name = "and_selection", type = AndSelectionType.class),
-        @XmlElement(name = "not_selection", type = NotSelectionType.class),
-        @XmlElement(name = "or_selection", type = OrSelectionType.class)
+        @XmlElement(name = "or_selection", type = OrSelectionType.class),
+        @XmlElement(name = "selection_metadata", type = SelectionMetadataType.class),
+        @XmlElement(name = "not_selection", type = NotSelectionType.class)
     })
     protected List<Object> selectionMetadataOrAndSelectionOrOrSelection;
 
     /**
-     * Gets the selection metadata or and selection or or selection.
+     * Gets the value of the selectionMetadataOrAndSelectionOrOrSelection property.
      * 
-     * @return the selection metadata or and selection or or selection
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the selectionMetadataOrAndSelectionOrOrSelection property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getSelectionMetadataOrAndSelectionOrOrSelection().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link AndSelectionType }
+     * {@link OrSelectionType }
+     * {@link SelectionMetadataType }
+     * {@link NotSelectionType }
+     * 
+     * 
      */
     public List<Object> getSelectionMetadataOrAndSelectionOrOrSelection() {
         if (selectionMetadataOrAndSelectionOrOrSelection == null) {

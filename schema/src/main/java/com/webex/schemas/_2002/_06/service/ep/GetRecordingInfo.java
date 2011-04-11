@@ -25,7 +25,24 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class GetRecordingInfo.
+ * <p>Java class for getRecordingInfo complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="getRecordingInfo">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="recordingID" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="isServiceRecording" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getRecordingInfo", propOrder = {
@@ -37,46 +54,45 @@ public class GetRecordingInfo
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The recording id. */
     protected long recordingID;
-    
-    /** The is service recording. */
     protected Boolean isServiceRecording;
 
     /**
-     * Gets the recording id.
+     * Gets the value of the recordingID property.
      * 
-     * @return the recording id
      */
     public long getRecordingID() {
         return recordingID;
     }
 
     /**
-     * Sets the recording id.
+     * Sets the value of the recordingID property.
      * 
-     * @param value the new recording id
      */
     public void setRecordingID(long value) {
         this.recordingID = value;
     }
 
     /**
-     * Checks if is is service recording.
+     * Gets the value of the isServiceRecording property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isIsServiceRecording() {
         return isServiceRecording;
     }
 
     /**
-     * Sets the checks if is service recording.
+     * Sets the value of the isServiceRecording property.
      * 
-     * @param value the new checks if is service recording
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setIsServiceRecording(Boolean value) {
         this.isServiceRecording = value;

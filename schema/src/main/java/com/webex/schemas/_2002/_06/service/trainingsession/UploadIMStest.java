@@ -27,7 +27,48 @@ import com.webex.schemas._2002._06.service.trainingsessionqtiasi.Questestinterop
 
 
 /**
- * The Class UploadIMStest.
+ * <p>Java class for uploadIMStest complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="uploadIMStest">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="display">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;choice>
+ *                   &lt;element name="allOnePage">
+ *                     &lt;simpleType>
+ *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *                         &lt;pattern value="true|TRUE"/>
+ *                       &lt;/restriction>
+ *                     &lt;/simpleType>
+ *                   &lt;/element>
+ *                   &lt;element name="onePerPage">
+ *                     &lt;simpleType>
+ *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *                         &lt;pattern value="true|TRUE"/>
+ *                       &lt;/restriction>
+ *                     &lt;/simpleType>
+ *                   &lt;/element>
+ *                 &lt;/choice>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="assignGrades" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="questestinterop" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}questestinteropType"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "uploadIMStest", propOrder = {
@@ -40,69 +81,80 @@ public class UploadIMStest
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The display. */
     @XmlElement(required = true)
     protected UploadIMStest.Display display;
-    
-    /** The assign grades. */
     protected Boolean assignGrades;
-    
-    /** The questestinterop. */
     @XmlElement(required = true)
     protected QuestestinteropType questestinterop;
 
     /**
-     * Gets the display.
+     * Gets the value of the display property.
      * 
-     * @return the display
+     * @return
+     *     possible object is
+     *     {@link UploadIMStest.Display }
+     *     
      */
     public UploadIMStest.Display getDisplay() {
         return display;
     }
 
     /**
-     * Sets the display.
+     * Sets the value of the display property.
      * 
-     * @param value the new display
+     * @param value
+     *     allowed object is
+     *     {@link UploadIMStest.Display }
+     *     
      */
     public void setDisplay(UploadIMStest.Display value) {
         this.display = value;
     }
 
     /**
-     * Checks if is assign grades.
+     * Gets the value of the assignGrades property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAssignGrades() {
         return assignGrades;
     }
 
     /**
-     * Sets the assign grades.
+     * Sets the value of the assignGrades property.
      * 
-     * @param value the new assign grades
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAssignGrades(Boolean value) {
         this.assignGrades = value;
     }
 
     /**
-     * Gets the questestinterop.
+     * Gets the value of the questestinterop property.
      * 
-     * @return the questestinterop
+     * @return
+     *     possible object is
+     *     {@link QuestestinteropType }
+     *     
      */
     public QuestestinteropType getQuestestinterop() {
         return questestinterop;
     }
 
     /**
-     * Sets the questestinterop.
+     * Sets the value of the questestinterop property.
      * 
-     * @param value the new questestinterop
+     * @param value
+     *     allowed object is
+     *     {@link QuestestinteropType }
+     *     
      */
     public void setQuestestinterop(QuestestinteropType value) {
         this.questestinterop = value;
@@ -110,7 +162,36 @@ public class UploadIMStest
 
 
     /**
-     * The Class Display.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;choice>
+     *         &lt;element name="allOnePage">
+     *           &lt;simpleType>
+     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+     *               &lt;pattern value="true|TRUE"/>
+     *             &lt;/restriction>
+     *           &lt;/simpleType>
+     *         &lt;/element>
+     *         &lt;element name="onePerPage">
+     *           &lt;simpleType>
+     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+     *               &lt;pattern value="true|TRUE"/>
+     *             &lt;/restriction>
+     *           &lt;/simpleType>
+     *         &lt;/element>
+     *       &lt;/choice>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -121,46 +202,53 @@ public class UploadIMStest
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The all one page. */
         protected String allOnePage;
-        
-        /** The one per page. */
         protected String onePerPage;
 
         /**
-         * Gets the all one page.
+         * Gets the value of the allOnePage property.
          * 
-         * @return the all one page
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
          */
         public String getAllOnePage() {
             return allOnePage;
         }
 
         /**
-         * Sets the all one page.
+         * Sets the value of the allOnePage property.
          * 
-         * @param value the new all one page
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
          */
         public void setAllOnePage(String value) {
             this.allOnePage = value;
         }
 
         /**
-         * Gets the one per page.
+         * Gets the value of the onePerPage property.
          * 
-         * @return the one per page
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
          */
         public String getOnePerPage() {
             return onePerPage;
         }
 
         /**
-         * Sets the one per page.
+         * Sets the value of the onePerPage property.
          * 
-         * @param value the new one per page
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
          */
         public void setOnePerPage(String value) {
             this.onePerPage = value;

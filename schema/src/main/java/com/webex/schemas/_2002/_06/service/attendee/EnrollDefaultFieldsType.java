@@ -24,7 +24,38 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class EnrollDefaultFieldsType.
+ * <p>Java class for enrollDefaultFieldsType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="enrollDefaultFieldsType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="firstName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="lastName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="email" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="company" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="phoneNum" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="title" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="numEmployees" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="receiveInfo" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="address1" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="address2" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="city" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="state" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="zipcode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="country" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="leadSourceID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="leadScore" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "enrollDefaultFieldsType", propOrder = {
@@ -49,340 +80,403 @@ public class EnrollDefaultFieldsType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The first name. */
     protected String firstName;
-    
-    /** The last name. */
     protected String lastName;
-    
-    /** The email. */
     protected String email;
-    
-    /** The company. */
     protected String company;
-    
-    /** The phone num. */
     protected String phoneNum;
-    
-    /** The title. */
     protected String title;
-    
-    /** The num employees. */
     protected String numEmployees;
-    
-    /** The receive info. */
     protected Boolean receiveInfo;
-    
-    /** The address1. */
     protected String address1;
-    
-    /** The address2. */
     protected String address2;
-    
-    /** The city. */
     protected String city;
-    
-    /** The state. */
     protected String state;
-    
-    /** The zipcode. */
     protected String zipcode;
-    
-    /** The country. */
     protected String country;
-    
-    /** The lead source id. */
     protected String leadSourceID;
-    
-    /** The lead score. */
     protected String leadScore;
 
     /**
-     * Gets the first name.
+     * Gets the value of the firstName property.
      * 
-     * @return the first name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFirstName() {
         return firstName;
     }
 
     /**
-     * Sets the first name.
+     * Sets the value of the firstName property.
      * 
-     * @param value the new first name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFirstName(String value) {
         this.firstName = value;
     }
 
     /**
-     * Gets the last name.
+     * Gets the value of the lastName property.
      * 
-     * @return the last name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLastName() {
         return lastName;
     }
 
     /**
-     * Sets the last name.
+     * Sets the value of the lastName property.
      * 
-     * @param value the new last name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLastName(String value) {
         this.lastName = value;
     }
 
     /**
-     * Gets the email.
+     * Gets the value of the email property.
      * 
-     * @return the email
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getEmail() {
         return email;
     }
 
     /**
-     * Sets the email.
+     * Sets the value of the email property.
      * 
-     * @param value the new email
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setEmail(String value) {
         this.email = value;
     }
 
     /**
-     * Gets the company.
+     * Gets the value of the company property.
      * 
-     * @return the company
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCompany() {
         return company;
     }
 
     /**
-     * Sets the company.
+     * Sets the value of the company property.
      * 
-     * @param value the new company
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCompany(String value) {
         this.company = value;
     }
 
     /**
-     * Gets the phone num.
+     * Gets the value of the phoneNum property.
      * 
-     * @return the phone num
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPhoneNum() {
         return phoneNum;
     }
 
     /**
-     * Sets the phone num.
+     * Sets the value of the phoneNum property.
      * 
-     * @param value the new phone num
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPhoneNum(String value) {
         this.phoneNum = value;
     }
 
     /**
-     * Gets the title.
+     * Gets the value of the title property.
      * 
-     * @return the title
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTitle() {
         return title;
     }
 
     /**
-     * Sets the title.
+     * Sets the value of the title property.
      * 
-     * @param value the new title
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTitle(String value) {
         this.title = value;
     }
 
     /**
-     * Gets the num employees.
+     * Gets the value of the numEmployees property.
      * 
-     * @return the num employees
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getNumEmployees() {
         return numEmployees;
     }
 
     /**
-     * Sets the num employees.
+     * Sets the value of the numEmployees property.
      * 
-     * @param value the new num employees
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setNumEmployees(String value) {
         this.numEmployees = value;
     }
 
     /**
-     * Checks if is receive info.
+     * Gets the value of the receiveInfo property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isReceiveInfo() {
         return receiveInfo;
     }
 
     /**
-     * Sets the receive info.
+     * Sets the value of the receiveInfo property.
      * 
-     * @param value the new receive info
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setReceiveInfo(Boolean value) {
         this.receiveInfo = value;
     }
 
     /**
-     * Gets the address1.
+     * Gets the value of the address1 property.
      * 
-     * @return the address1
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getAddress1() {
         return address1;
     }
 
     /**
-     * Sets the address1.
+     * Sets the value of the address1 property.
      * 
-     * @param value the new address1
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAddress1(String value) {
         this.address1 = value;
     }
 
     /**
-     * Gets the address2.
+     * Gets the value of the address2 property.
      * 
-     * @return the address2
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getAddress2() {
         return address2;
     }
 
     /**
-     * Sets the address2.
+     * Sets the value of the address2 property.
      * 
-     * @param value the new address2
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAddress2(String value) {
         this.address2 = value;
     }
 
     /**
-     * Gets the city.
+     * Gets the value of the city property.
      * 
-     * @return the city
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCity() {
         return city;
     }
 
     /**
-     * Sets the city.
+     * Sets the value of the city property.
      * 
-     * @param value the new city
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCity(String value) {
         this.city = value;
     }
 
     /**
-     * Gets the state.
+     * Gets the value of the state property.
      * 
-     * @return the state
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getState() {
         return state;
     }
 
     /**
-     * Sets the state.
+     * Sets the value of the state property.
      * 
-     * @param value the new state
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setState(String value) {
         this.state = value;
     }
 
     /**
-     * Gets the zipcode.
+     * Gets the value of the zipcode property.
      * 
-     * @return the zipcode
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getZipcode() {
         return zipcode;
     }
 
     /**
-     * Sets the zipcode.
+     * Sets the value of the zipcode property.
      * 
-     * @param value the new zipcode
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setZipcode(String value) {
         this.zipcode = value;
     }
 
     /**
-     * Gets the country.
+     * Gets the value of the country property.
      * 
-     * @return the country
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCountry() {
         return country;
     }
 
     /**
-     * Sets the country.
+     * Sets the value of the country property.
      * 
-     * @param value the new country
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCountry(String value) {
         this.country = value;
     }
 
     /**
-     * Gets the lead source id.
+     * Gets the value of the leadSourceID property.
      * 
-     * @return the lead source id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLeadSourceID() {
         return leadSourceID;
     }
 
     /**
-     * Sets the lead source id.
+     * Sets the value of the leadSourceID property.
      * 
-     * @param value the new lead source id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLeadSourceID(String value) {
         this.leadSourceID = value;
     }
 
     /**
-     * Gets the lead score.
+     * Gets the value of the leadScore property.
      * 
-     * @return the lead score
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLeadScore() {
         return leadScore;
     }
 
     /**
-     * Sets the lead score.
+     * Sets the value of the leadScore property.
      * 
-     * @param value the new lead score
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLeadScore(String value) {
         this.leadScore = value;

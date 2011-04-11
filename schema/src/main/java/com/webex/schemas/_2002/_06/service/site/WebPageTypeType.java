@@ -23,47 +23,37 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum WebPageTypeType.
+ * <p>Java class for webPageTypeType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="webPageTypeType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="J2EE"/>
+ *     &lt;enumeration value="PHP"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "webPageTypeType")
 @XmlEnum
 public enum WebPageTypeType {
 
-    /** The J_2_ ee. */
     @XmlEnumValue("J2EE")
     J_2_EE("J2EE"),
-    
-    /** The PHP. */
     PHP("PHP");
-    
-    /** The value. */
     private final String value;
 
-    /**
-     * Instantiates a new web page type type.
-     * 
-     * @param v the v
-     */
     WebPageTypeType(String v) {
         value = v;
     }
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return value;
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the web page type type
-     */
     public static WebPageTypeType fromValue(String v) {
         for (WebPageTypeType c: WebPageTypeType.values()) {
             if (c.value.equals(v)) {

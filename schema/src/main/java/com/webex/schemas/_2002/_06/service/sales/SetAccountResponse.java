@@ -29,7 +29,23 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class SetAccountResponse.
+ * <p>Java class for setAccountResponse complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="setAccountResponse">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="intAccountID" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "setAccountResponse", propOrder = {
@@ -40,28 +56,31 @@ public class SetAccountResponse
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The int account id. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long intAccountID;
 
     /**
-     * Gets the int account id.
+     * Gets the value of the intAccountID property.
      * 
-     * @return the int account id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getIntAccountID() {
         return intAccountID;
     }
 
     /**
-     * Sets the int account id.
+     * Sets the value of the intAccountID property.
      * 
-     * @param value the new int account id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setIntAccountID(Long value) {
         this.intAccountID = value;

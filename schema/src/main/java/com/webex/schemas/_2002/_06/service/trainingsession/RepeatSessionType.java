@@ -24,7 +24,25 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class RepeatSessionType.
+ * <p>Java class for repeatSessionType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="repeatSessionType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="action" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}actionType" minOccurs="0"/>
+ *         &lt;element name="index" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="startDate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "repeatSessionType", propOrder = {
@@ -36,67 +54,70 @@ public class RepeatSessionType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The action. */
     protected ActionType action;
-    
-    /** The index. */
     protected int index;
-    
-    /** The start date. */
     protected String startDate;
 
     /**
-     * Gets the action.
+     * Gets the value of the action property.
      * 
-     * @return the action
+     * @return
+     *     possible object is
+     *     {@link ActionType }
+     *     
      */
     public ActionType getAction() {
         return action;
     }
 
     /**
-     * Sets the action.
+     * Sets the value of the action property.
      * 
-     * @param value the new action
+     * @param value
+     *     allowed object is
+     *     {@link ActionType }
+     *     
      */
     public void setAction(ActionType value) {
         this.action = value;
     }
 
     /**
-     * Gets the index.
+     * Gets the value of the index property.
      * 
-     * @return the index
      */
     public int getIndex() {
         return index;
     }
 
     /**
-     * Sets the index.
+     * Sets the value of the index property.
      * 
-     * @param value the new index
      */
     public void setIndex(int value) {
         this.index = value;
     }
 
     /**
-     * Gets the start date.
+     * Gets the value of the startDate property.
      * 
-     * @return the start date
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getStartDate() {
         return startDate;
     }
 
     /**
-     * Sets the start date.
+     * Sets the value of the startDate property.
      * 
-     * @param value the new start date
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setStartDate(String value) {
         this.startDate = value;

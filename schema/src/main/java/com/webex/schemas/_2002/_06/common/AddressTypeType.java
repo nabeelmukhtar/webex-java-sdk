@@ -22,34 +22,31 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum AddressTypeType.
+ * <p>Java class for addressTypeType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="addressTypeType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="PERSONAL"/>
+ *     &lt;enumeration value="GLOBAL"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "addressTypeType")
 @XmlEnum
 public enum AddressTypeType {
 
-    /** The PERSONAL. */
     PERSONAL,
-    
-    /** The GLOBAL. */
     GLOBAL;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the address type type
-     */
     public static AddressTypeType fromValue(String v) {
         return valueOf(v);
     }

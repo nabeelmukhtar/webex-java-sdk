@@ -30,7 +30,33 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class DecvarType.
+ * <p>Java class for decvarType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="decvarType">
+ *   &lt;simpleContent>
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
+ *       &lt;attribute name="vartype" default="Integer">
+ *         &lt;simpleType>
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
+ *             &lt;enumeration value="Integer"/>
+ *             &lt;enumeration value="String"/>
+ *             &lt;enumeration value="Decimal"/>
+ *             &lt;enumeration value="Boolean"/>
+ *             &lt;enumeration value="Enumerated"/>
+ *           &lt;/restriction>
+ *         &lt;/simpleType>
+ *       &lt;/attribute>
+ *       &lt;attribute name="minvalue" type="{http://www.w3.org/2001/XMLSchema}integer" />
+ *       &lt;attribute name="maxvalue" type="{http://www.w3.org/2001/XMLSchema}integer" />
+ *     &lt;/extension>
+ *   &lt;/simpleContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "decvarType", propOrder = {
@@ -40,52 +66,52 @@ public class DecvarType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The value. */
     @XmlValue
     protected String value;
-    
-    /** The vartype. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String vartype;
-    
-    /** The minvalue. */
     @XmlAttribute
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long minvalue;
-    
-    /** The maxvalue. */
     @XmlAttribute
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long maxvalue;
 
     /**
-     * Gets the value.
+     * Gets the value of the value property.
      * 
-     * @return the value
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value.
+     * Sets the value of the value property.
      * 
-     * @param value the new value
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setValue(String value) {
         this.value = value;
     }
 
     /**
-     * Gets the vartype.
+     * Gets the value of the vartype property.
      * 
-     * @return the vartype
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getVartype() {
         if (vartype == null) {
@@ -96,45 +122,60 @@ public class DecvarType
     }
 
     /**
-     * Sets the vartype.
+     * Sets the value of the vartype property.
      * 
-     * @param value the new vartype
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setVartype(String value) {
         this.vartype = value;
     }
 
     /**
-     * Gets the minvalue.
+     * Gets the value of the minvalue property.
      * 
-     * @return the minvalue
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getMinvalue() {
         return minvalue;
     }
 
     /**
-     * Sets the minvalue.
+     * Sets the value of the minvalue property.
      * 
-     * @param value the new minvalue
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMinvalue(Long value) {
         this.minvalue = value;
     }
 
     /**
-     * Gets the maxvalue.
+     * Gets the value of the maxvalue property.
      * 
-     * @return the maxvalue
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getMaxvalue() {
         return maxvalue;
     }
 
     /**
-     * Sets the maxvalue.
+     * Sets the value of the maxvalue property.
      * 
-     * @param value the new maxvalue
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMaxvalue(Long value) {
         this.maxvalue = value;

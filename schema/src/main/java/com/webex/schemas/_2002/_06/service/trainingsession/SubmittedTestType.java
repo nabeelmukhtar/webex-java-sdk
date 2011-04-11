@@ -28,7 +28,28 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class SubmittedTestType.
+ * <p>Java class for submittedTestType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="submittedTestType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="email" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="submitDate" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="score" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *         &lt;element name="grade" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="registerID" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "submittedTestType", propOrder = {
@@ -43,140 +64,163 @@ public class SubmittedTestType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The name. */
     @XmlElement(required = true)
     protected String name;
-    
-    /** The email. */
     @XmlElement(required = true)
     protected String email;
-    
-    /** The submit date. */
     @XmlElement(required = true)
     protected String submitDate;
-    
-    /** The score. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long score;
-    
-    /** The grade. */
     @XmlElement(required = true)
     protected String grade;
-    
-    /** The register id. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long registerID;
 
     /**
-     * Gets the name.
+     * Gets the value of the name property.
      * 
-     * @return the name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Sets the name.
+     * Sets the value of the name property.
      * 
-     * @param value the new name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setName(String value) {
         this.name = value;
     }
 
     /**
-     * Gets the email.
+     * Gets the value of the email property.
      * 
-     * @return the email
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getEmail() {
         return email;
     }
 
     /**
-     * Sets the email.
+     * Sets the value of the email property.
      * 
-     * @param value the new email
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setEmail(String value) {
         this.email = value;
     }
 
     /**
-     * Gets the submit date.
+     * Gets the value of the submitDate property.
      * 
-     * @return the submit date
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSubmitDate() {
         return submitDate;
     }
 
     /**
-     * Sets the submit date.
+     * Sets the value of the submitDate property.
      * 
-     * @param value the new submit date
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSubmitDate(String value) {
         this.submitDate = value;
     }
 
     /**
-     * Gets the score.
+     * Gets the value of the score property.
      * 
-     * @return the score
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getScore() {
         return score;
     }
 
     /**
-     * Sets the score.
+     * Sets the value of the score property.
      * 
-     * @param value the new score
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setScore(Long value) {
         this.score = value;
     }
 
     /**
-     * Gets the grade.
+     * Gets the value of the grade property.
      * 
-     * @return the grade
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getGrade() {
         return grade;
     }
 
     /**
-     * Sets the grade.
+     * Sets the value of the grade property.
      * 
-     * @param value the new grade
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setGrade(String value) {
         this.grade = value;
     }
 
     /**
-     * Gets the register id.
+     * Gets the value of the registerID property.
      * 
-     * @return the register id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getRegisterID() {
         return registerID;
     }
 
     /**
-     * Sets the register id.
+     * Sets the value of the registerID property.
      * 
-     * @param value the new register id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setRegisterID(Long value) {
         this.registerID = value;

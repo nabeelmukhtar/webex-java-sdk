@@ -28,7 +28,34 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * The Class ResponseLidType.
+ * <p>Java class for response_lidType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="response_lidType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="render_choice" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}render_choiceType"/>
+ *       &lt;/sequence>
+ *       &lt;attribute name="ident" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       &lt;attribute name="rcardinality" default="Single">
+ *         &lt;simpleType>
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
+ *             &lt;enumeration value="Single"/>
+ *             &lt;enumeration value="Multiple"/>
+ *             &lt;enumeration value="Ordered"/>
+ *             &lt;enumeration value="Extension"/>
+ *           &lt;/restriction>
+ *         &lt;/simpleType>
+ *       &lt;/attribute>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "response_lidType", propOrder = {
@@ -38,62 +65,70 @@ public class ResponseLidType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The render choice. */
     @XmlElement(name = "render_choice", required = true)
     protected RenderChoiceType renderChoice;
-    
-    /** The ident. */
     @XmlAttribute(required = true)
     protected String ident;
-    
-    /** The rcardinality. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String rcardinality;
 
     /**
-     * Gets the render choice.
+     * Gets the value of the renderChoice property.
      * 
-     * @return the render choice
+     * @return
+     *     possible object is
+     *     {@link RenderChoiceType }
+     *     
      */
     public RenderChoiceType getRenderChoice() {
         return renderChoice;
     }
 
     /**
-     * Sets the render choice.
+     * Sets the value of the renderChoice property.
      * 
-     * @param value the new render choice
+     * @param value
+     *     allowed object is
+     *     {@link RenderChoiceType }
+     *     
      */
     public void setRenderChoice(RenderChoiceType value) {
         this.renderChoice = value;
     }
 
     /**
-     * Gets the ident.
+     * Gets the value of the ident property.
      * 
-     * @return the ident
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getIdent() {
         return ident;
     }
 
     /**
-     * Sets the ident.
+     * Sets the value of the ident property.
      * 
-     * @param value the new ident
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setIdent(String value) {
         this.ident = value;
     }
 
     /**
-     * Gets the rcardinality.
+     * Gets the value of the rcardinality property.
      * 
-     * @return the rcardinality
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getRcardinality() {
         if (rcardinality == null) {
@@ -104,9 +139,12 @@ public class ResponseLidType
     }
 
     /**
-     * Sets the rcardinality.
+     * Sets the value of the rcardinality property.
      * 
-     * @param value the new rcardinality
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setRcardinality(String value) {
         this.rcardinality = value;

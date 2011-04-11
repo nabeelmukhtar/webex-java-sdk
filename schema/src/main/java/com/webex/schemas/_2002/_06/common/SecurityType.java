@@ -26,7 +26,29 @@ import com.webex.schemas._2002._06.service.SecurityContextType;
 
 
 /**
- * The Class SecurityType.
+ * <p>Java class for securityType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="securityType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="webExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="password" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="siteID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="siteName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="partnerID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="email" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="sessionTicket" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "securityType", propOrder = {
@@ -45,151 +67,178 @@ public class SecurityType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The web ex id. */
     protected String webExID;
-    
-    /** The password. */
     protected String password;
-    
-    /** The site id. */
     protected Long siteID;
-    
-    /** The site name. */
     protected String siteName;
-    
-    /** The partner id. */
     protected String partnerID;
-    
-    /** The email. */
     protected String email;
-    
-    /** The session ticket. */
     protected String sessionTicket;
 
     /**
-     * Gets the web ex id.
+     * Gets the value of the webExID property.
      * 
-     * @return the web ex id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getWebExID() {
         return webExID;
     }
 
     /**
-     * Sets the web ex id.
+     * Sets the value of the webExID property.
      * 
-     * @param value the new web ex id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setWebExID(String value) {
         this.webExID = value;
     }
 
     /**
-     * Gets the password.
+     * Gets the value of the password property.
      * 
-     * @return the password
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPassword() {
         return password;
     }
 
     /**
-     * Sets the password.
+     * Sets the value of the password property.
      * 
-     * @param value the new password
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPassword(String value) {
         this.password = value;
     }
 
     /**
-     * Gets the site id.
+     * Gets the value of the siteID property.
      * 
-     * @return the site id
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getSiteID() {
         return siteID;
     }
 
     /**
-     * Sets the site id.
+     * Sets the value of the siteID property.
      * 
-     * @param value the new site id
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setSiteID(Long value) {
         this.siteID = value;
     }
 
     /**
-     * Gets the site name.
+     * Gets the value of the siteName property.
      * 
-     * @return the site name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSiteName() {
         return siteName;
     }
 
     /**
-     * Sets the site name.
+     * Sets the value of the siteName property.
      * 
-     * @param value the new site name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSiteName(String value) {
         this.siteName = value;
     }
 
     /**
-     * Gets the partner id.
+     * Gets the value of the partnerID property.
      * 
-     * @return the partner id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPartnerID() {
         return partnerID;
     }
 
     /**
-     * Sets the partner id.
+     * Sets the value of the partnerID property.
      * 
-     * @param value the new partner id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPartnerID(String value) {
         this.partnerID = value;
     }
 
     /**
-     * Gets the email.
+     * Gets the value of the email property.
      * 
-     * @return the email
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getEmail() {
         return email;
     }
 
     /**
-     * Sets the email.
+     * Sets the value of the email property.
      * 
-     * @param value the new email
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setEmail(String value) {
         this.email = value;
     }
 
     /**
-     * Gets the session ticket.
+     * Gets the value of the sessionTicket property.
      * 
-     * @return the session ticket
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSessionTicket() {
         return sessionTicket;
     }
 
     /**
-     * Sets the session ticket.
+     * Sets the value of the sessionTicket property.
      * 
-     * @param value the new session ticket
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSessionTicket(String value) {
         this.sessionTicket = value;

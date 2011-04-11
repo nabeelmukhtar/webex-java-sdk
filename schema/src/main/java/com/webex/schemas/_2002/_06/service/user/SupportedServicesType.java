@@ -24,7 +24,27 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class SupportedServicesType.
+ * <p>Java class for supportedServicesType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="supportedServicesType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="meetingCenter" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="trainingCenter" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="supportCenter" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="eventCenter" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="salesCenter" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "supportedServicesType", propOrder = {
@@ -38,109 +58,128 @@ public class SupportedServicesType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The meeting center. */
     protected Boolean meetingCenter;
-    
-    /** The training center. */
     protected Boolean trainingCenter;
-    
-    /** The support center. */
     protected Boolean supportCenter;
-    
-    /** The event center. */
     protected Boolean eventCenter;
-    
-    /** The sales center. */
     protected Boolean salesCenter;
 
     /**
-     * Checks if is meeting center.
+     * Gets the value of the meetingCenter property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isMeetingCenter() {
         return meetingCenter;
     }
 
     /**
-     * Sets the meeting center.
+     * Sets the value of the meetingCenter property.
      * 
-     * @param value the new meeting center
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setMeetingCenter(Boolean value) {
         this.meetingCenter = value;
     }
 
     /**
-     * Checks if is training center.
+     * Gets the value of the trainingCenter property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isTrainingCenter() {
         return trainingCenter;
     }
 
     /**
-     * Sets the training center.
+     * Sets the value of the trainingCenter property.
      * 
-     * @param value the new training center
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setTrainingCenter(Boolean value) {
         this.trainingCenter = value;
     }
 
     /**
-     * Checks if is support center.
+     * Gets the value of the supportCenter property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSupportCenter() {
         return supportCenter;
     }
 
     /**
-     * Sets the support center.
+     * Sets the value of the supportCenter property.
      * 
-     * @param value the new support center
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSupportCenter(Boolean value) {
         this.supportCenter = value;
     }
 
     /**
-     * Checks if is event center.
+     * Gets the value of the eventCenter property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isEventCenter() {
         return eventCenter;
     }
 
     /**
-     * Sets the event center.
+     * Sets the value of the eventCenter property.
      * 
-     * @param value the new event center
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setEventCenter(Boolean value) {
         this.eventCenter = value;
     }
 
     /**
-     * Checks if is sales center.
+     * Gets the value of the salesCenter property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isSalesCenter() {
         return salesCenter;
     }
 
     /**
-     * Sets the sales center.
+     * Sets the value of the salesCenter property.
      * 
-     * @param value the new sales center
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setSalesCenter(Boolean value) {
         this.salesCenter = value;

@@ -32,7 +32,34 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class MeetingTypeInstanceType.
+ * <p>Java class for meetingTypeInstanceType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="meetingTypeInstanceType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/meetingtype}meetingTypeTypeExt">
+ *       &lt;sequence>
+ *         &lt;element name="meetingTypeID" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *         &lt;element name="serviceTypes">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="serviceType" type="{http://www.webex.com/schemas/2002/06/common}serviceTypeType" maxOccurs="unbounded" minOccurs="0"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "meetingTypeInstanceType", propOrder = {
@@ -47,50 +74,57 @@ public class MeetingTypeInstanceType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The meeting type id. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long meetingTypeID;
-    
-    /** The service types. */
     @XmlElement(required = true)
     protected MeetingTypeInstanceType.ServiceTypes serviceTypes;
 
     /**
-     * Gets the meeting type id.
+     * Gets the value of the meetingTypeID property.
      * 
-     * @return the meeting type id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getMeetingTypeID() {
         return meetingTypeID;
     }
 
     /**
-     * Sets the meeting type id.
+     * Sets the value of the meetingTypeID property.
      * 
-     * @param value the new meeting type id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMeetingTypeID(Long value) {
         this.meetingTypeID = value;
     }
 
     /**
-     * Gets the service types.
+     * Gets the value of the serviceTypes property.
      * 
-     * @return the service types
+     * @return
+     *     possible object is
+     *     {@link MeetingTypeInstanceType.ServiceTypes }
+     *     
      */
     public MeetingTypeInstanceType.ServiceTypes getServiceTypes() {
         return serviceTypes;
     }
 
     /**
-     * Sets the service types.
+     * Sets the value of the serviceTypes property.
      * 
-     * @param value the new service types
+     * @param value
+     *     allowed object is
+     *     {@link MeetingTypeInstanceType.ServiceTypes }
+     *     
      */
     public void setServiceTypes(MeetingTypeInstanceType.ServiceTypes value) {
         this.serviceTypes = value;
@@ -98,7 +132,23 @@ public class MeetingTypeInstanceType
 
 
     /**
-     * The Class ServiceTypes.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="serviceType" type="{http://www.webex.com/schemas/2002/06/common}serviceTypeType" maxOccurs="unbounded" minOccurs="0"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -108,16 +158,30 @@ public class MeetingTypeInstanceType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The service type. */
         protected List<ServiceTypeType> serviceType;
 
         /**
-         * Gets the service type.
+         * Gets the value of the serviceType property.
          * 
-         * @return the service type
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the serviceType property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getServiceType().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link ServiceTypeType }
+         * 
+         * 
          */
         public List<ServiceTypeType> getServiceType() {
             if (serviceType == null) {

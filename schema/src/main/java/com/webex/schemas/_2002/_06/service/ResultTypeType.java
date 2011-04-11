@@ -22,34 +22,31 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum ResultTypeType.
+ * <p>Java class for resultTypeType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="resultTypeType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="SUCCESS"/>
+ *     &lt;enumeration value="FAILURE"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "resultTypeType")
 @XmlEnum
 public enum ResultTypeType {
 
-    /** The SUCCESS. */
     SUCCESS,
-    
-    /** The FAILURE. */
     FAILURE;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the result type type
-     */
     public static ResultTypeType fromValue(String v) {
         return valueOf(v);
     }

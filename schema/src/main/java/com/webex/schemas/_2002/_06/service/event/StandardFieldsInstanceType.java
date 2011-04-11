@@ -25,7 +25,36 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class StandardFieldsInstanceType.
+ * <p>Java class for standardFieldsInstanceType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="standardFieldsInstanceType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="firstName" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldInstanceType"/>
+ *         &lt;element name="lastName" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldInstanceType"/>
+ *         &lt;element name="emailAddress" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldInstanceType"/>
+ *         &lt;element name="phone" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldInstanceType" minOccurs="0"/>
+ *         &lt;element name="company" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldInstanceType" minOccurs="0"/>
+ *         &lt;element name="title" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldInstanceType" minOccurs="0"/>
+ *         &lt;element name="numEmployees" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldInstanceType" minOccurs="0"/>
+ *         &lt;element name="futureInfo" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldInstanceType" minOccurs="0"/>
+ *         &lt;element name="address1" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldInstanceType" minOccurs="0"/>
+ *         &lt;element name="address2" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldInstanceType" minOccurs="0"/>
+ *         &lt;element name="city" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldInstanceType" minOccurs="0"/>
+ *         &lt;element name="state" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldInstanceType" minOccurs="0"/>
+ *         &lt;element name="postalCode" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldInstanceType" minOccurs="0"/>
+ *         &lt;element name="country" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldInstanceType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "standardFieldsInstanceType", propOrder = {
@@ -48,301 +77,356 @@ public class StandardFieldsInstanceType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The first name. */
     @XmlElement(required = true)
     protected EnrollmentFieldInstanceType firstName;
-    
-    /** The last name. */
     @XmlElement(required = true)
     protected EnrollmentFieldInstanceType lastName;
-    
-    /** The email address. */
     @XmlElement(required = true)
     protected EnrollmentFieldInstanceType emailAddress;
-    
-    /** The phone. */
     protected EnrollmentFieldInstanceType phone;
-    
-    /** The company. */
     protected EnrollmentFieldInstanceType company;
-    
-    /** The title. */
     protected EnrollmentFieldInstanceType title;
-    
-    /** The num employees. */
     protected EnrollmentFieldInstanceType numEmployees;
-    
-    /** The future info. */
     protected EnrollmentFieldInstanceType futureInfo;
-    
-    /** The address1. */
     protected EnrollmentFieldInstanceType address1;
-    
-    /** The address2. */
     protected EnrollmentFieldInstanceType address2;
-    
-    /** The city. */
     protected EnrollmentFieldInstanceType city;
-    
-    /** The state. */
     protected EnrollmentFieldInstanceType state;
-    
-    /** The postal code. */
     protected EnrollmentFieldInstanceType postalCode;
-    
-    /** The country. */
     protected EnrollmentFieldInstanceType country;
 
     /**
-     * Gets the first name.
+     * Gets the value of the firstName property.
      * 
-     * @return the first name
+     * @return
+     *     possible object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public EnrollmentFieldInstanceType getFirstName() {
         return firstName;
     }
 
     /**
-     * Sets the first name.
+     * Sets the value of the firstName property.
      * 
-     * @param value the new first name
+     * @param value
+     *     allowed object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public void setFirstName(EnrollmentFieldInstanceType value) {
         this.firstName = value;
     }
 
     /**
-     * Gets the last name.
+     * Gets the value of the lastName property.
      * 
-     * @return the last name
+     * @return
+     *     possible object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public EnrollmentFieldInstanceType getLastName() {
         return lastName;
     }
 
     /**
-     * Sets the last name.
+     * Sets the value of the lastName property.
      * 
-     * @param value the new last name
+     * @param value
+     *     allowed object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public void setLastName(EnrollmentFieldInstanceType value) {
         this.lastName = value;
     }
 
     /**
-     * Gets the email address.
+     * Gets the value of the emailAddress property.
      * 
-     * @return the email address
+     * @return
+     *     possible object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public EnrollmentFieldInstanceType getEmailAddress() {
         return emailAddress;
     }
 
     /**
-     * Sets the email address.
+     * Sets the value of the emailAddress property.
      * 
-     * @param value the new email address
+     * @param value
+     *     allowed object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public void setEmailAddress(EnrollmentFieldInstanceType value) {
         this.emailAddress = value;
     }
 
     /**
-     * Gets the phone.
+     * Gets the value of the phone property.
      * 
-     * @return the phone
+     * @return
+     *     possible object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public EnrollmentFieldInstanceType getPhone() {
         return phone;
     }
 
     /**
-     * Sets the phone.
+     * Sets the value of the phone property.
      * 
-     * @param value the new phone
+     * @param value
+     *     allowed object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public void setPhone(EnrollmentFieldInstanceType value) {
         this.phone = value;
     }
 
     /**
-     * Gets the company.
+     * Gets the value of the company property.
      * 
-     * @return the company
+     * @return
+     *     possible object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public EnrollmentFieldInstanceType getCompany() {
         return company;
     }
 
     /**
-     * Sets the company.
+     * Sets the value of the company property.
      * 
-     * @param value the new company
+     * @param value
+     *     allowed object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public void setCompany(EnrollmentFieldInstanceType value) {
         this.company = value;
     }
 
     /**
-     * Gets the title.
+     * Gets the value of the title property.
      * 
-     * @return the title
+     * @return
+     *     possible object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public EnrollmentFieldInstanceType getTitle() {
         return title;
     }
 
     /**
-     * Sets the title.
+     * Sets the value of the title property.
      * 
-     * @param value the new title
+     * @param value
+     *     allowed object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public void setTitle(EnrollmentFieldInstanceType value) {
         this.title = value;
     }
 
     /**
-     * Gets the num employees.
+     * Gets the value of the numEmployees property.
      * 
-     * @return the num employees
+     * @return
+     *     possible object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public EnrollmentFieldInstanceType getNumEmployees() {
         return numEmployees;
     }
 
     /**
-     * Sets the num employees.
+     * Sets the value of the numEmployees property.
      * 
-     * @param value the new num employees
+     * @param value
+     *     allowed object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public void setNumEmployees(EnrollmentFieldInstanceType value) {
         this.numEmployees = value;
     }
 
     /**
-     * Gets the future info.
+     * Gets the value of the futureInfo property.
      * 
-     * @return the future info
+     * @return
+     *     possible object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public EnrollmentFieldInstanceType getFutureInfo() {
         return futureInfo;
     }
 
     /**
-     * Sets the future info.
+     * Sets the value of the futureInfo property.
      * 
-     * @param value the new future info
+     * @param value
+     *     allowed object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public void setFutureInfo(EnrollmentFieldInstanceType value) {
         this.futureInfo = value;
     }
 
     /**
-     * Gets the address1.
+     * Gets the value of the address1 property.
      * 
-     * @return the address1
+     * @return
+     *     possible object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public EnrollmentFieldInstanceType getAddress1() {
         return address1;
     }
 
     /**
-     * Sets the address1.
+     * Sets the value of the address1 property.
      * 
-     * @param value the new address1
+     * @param value
+     *     allowed object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public void setAddress1(EnrollmentFieldInstanceType value) {
         this.address1 = value;
     }
 
     /**
-     * Gets the address2.
+     * Gets the value of the address2 property.
      * 
-     * @return the address2
+     * @return
+     *     possible object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public EnrollmentFieldInstanceType getAddress2() {
         return address2;
     }
 
     /**
-     * Sets the address2.
+     * Sets the value of the address2 property.
      * 
-     * @param value the new address2
+     * @param value
+     *     allowed object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public void setAddress2(EnrollmentFieldInstanceType value) {
         this.address2 = value;
     }
 
     /**
-     * Gets the city.
+     * Gets the value of the city property.
      * 
-     * @return the city
+     * @return
+     *     possible object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public EnrollmentFieldInstanceType getCity() {
         return city;
     }
 
     /**
-     * Sets the city.
+     * Sets the value of the city property.
      * 
-     * @param value the new city
+     * @param value
+     *     allowed object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public void setCity(EnrollmentFieldInstanceType value) {
         this.city = value;
     }
 
     /**
-     * Gets the state.
+     * Gets the value of the state property.
      * 
-     * @return the state
+     * @return
+     *     possible object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public EnrollmentFieldInstanceType getState() {
         return state;
     }
 
     /**
-     * Sets the state.
+     * Sets the value of the state property.
      * 
-     * @param value the new state
+     * @param value
+     *     allowed object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public void setState(EnrollmentFieldInstanceType value) {
         this.state = value;
     }
 
     /**
-     * Gets the postal code.
+     * Gets the value of the postalCode property.
      * 
-     * @return the postal code
+     * @return
+     *     possible object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public EnrollmentFieldInstanceType getPostalCode() {
         return postalCode;
     }
 
     /**
-     * Sets the postal code.
+     * Sets the value of the postalCode property.
      * 
-     * @param value the new postal code
+     * @param value
+     *     allowed object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public void setPostalCode(EnrollmentFieldInstanceType value) {
         this.postalCode = value;
     }
 
     /**
-     * Gets the country.
+     * Gets the value of the country property.
      * 
-     * @return the country
+     * @return
+     *     possible object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public EnrollmentFieldInstanceType getCountry() {
         return country;
     }
 
     /**
-     * Sets the country.
+     * Sets the value of the country property.
      * 
-     * @param value the new country
+     * @param value
+     *     allowed object is
+     *     {@link EnrollmentFieldInstanceType }
+     *     
      */
     public void setCountry(EnrollmentFieldInstanceType value) {
         this.country = value;

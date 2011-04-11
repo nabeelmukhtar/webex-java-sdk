@@ -25,7 +25,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class ViewTimeScopeType.
+ * <p>Java class for viewTimeScopeType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="viewTimeScopeType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="viewTimeStart" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="viewTimeEnd" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "viewTimeScopeType", propOrder = {
@@ -36,48 +53,55 @@ public class ViewTimeScopeType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The view time start. */
     @XmlElement(required = true)
     protected String viewTimeStart;
-    
-    /** The view time end. */
     @XmlElement(required = true)
     protected String viewTimeEnd;
 
     /**
-     * Gets the view time start.
+     * Gets the value of the viewTimeStart property.
      * 
-     * @return the view time start
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getViewTimeStart() {
         return viewTimeStart;
     }
 
     /**
-     * Sets the view time start.
+     * Sets the value of the viewTimeStart property.
      * 
-     * @param value the new view time start
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setViewTimeStart(String value) {
         this.viewTimeStart = value;
     }
 
     /**
-     * Gets the view time end.
+     * Gets the value of the viewTimeEnd property.
      * 
-     * @return the view time end
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getViewTimeEnd() {
         return viewTimeEnd;
     }
 
     /**
-     * Sets the view time end.
+     * Sets the value of the viewTimeEnd property.
      * 
-     * @param value the new view time end
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setViewTimeEnd(String value) {
         this.viewTimeEnd = value;

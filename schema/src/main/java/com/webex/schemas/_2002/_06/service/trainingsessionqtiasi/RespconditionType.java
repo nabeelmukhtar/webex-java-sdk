@@ -25,7 +25,25 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class RespconditionType.
+ * <p>Java class for respconditionType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="respconditionType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="conditionvar" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}conditionvarType"/>
+ *         &lt;element name="setvar" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}setvarType"/>
+ *         &lt;element name="displayfeedback" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}displayfeedbackType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "respconditionType", propOrder = {
@@ -37,69 +55,80 @@ public class RespconditionType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The conditionvar. */
     @XmlElement(required = true)
     protected ConditionvarType conditionvar;
-    
-    /** The setvar. */
     @XmlElement(required = true)
     protected SetvarType setvar;
-    
-    /** The displayfeedback. */
     protected DisplayfeedbackType displayfeedback;
 
     /**
-     * Gets the conditionvar.
+     * Gets the value of the conditionvar property.
      * 
-     * @return the conditionvar
+     * @return
+     *     possible object is
+     *     {@link ConditionvarType }
+     *     
      */
     public ConditionvarType getConditionvar() {
         return conditionvar;
     }
 
     /**
-     * Sets the conditionvar.
+     * Sets the value of the conditionvar property.
      * 
-     * @param value the new conditionvar
+     * @param value
+     *     allowed object is
+     *     {@link ConditionvarType }
+     *     
      */
     public void setConditionvar(ConditionvarType value) {
         this.conditionvar = value;
     }
 
     /**
-     * Gets the setvar.
+     * Gets the value of the setvar property.
      * 
-     * @return the setvar
+     * @return
+     *     possible object is
+     *     {@link SetvarType }
+     *     
      */
     public SetvarType getSetvar() {
         return setvar;
     }
 
     /**
-     * Sets the setvar.
+     * Sets the value of the setvar property.
      * 
-     * @param value the new setvar
+     * @param value
+     *     allowed object is
+     *     {@link SetvarType }
+     *     
      */
     public void setSetvar(SetvarType value) {
         this.setvar = value;
     }
 
     /**
-     * Gets the displayfeedback.
+     * Gets the value of the displayfeedback property.
      * 
-     * @return the displayfeedback
+     * @return
+     *     possible object is
+     *     {@link DisplayfeedbackType }
+     *     
      */
     public DisplayfeedbackType getDisplayfeedback() {
         return displayfeedback;
     }
 
     /**
-     * Sets the displayfeedback.
+     * Sets the value of the displayfeedback property.
      * 
-     * @param value the new displayfeedback
+     * @param value
+     *     allowed object is
+     *     {@link DisplayfeedbackType }
+     *     
      */
     public void setDisplayfeedback(DisplayfeedbackType value) {
         this.displayfeedback = value;

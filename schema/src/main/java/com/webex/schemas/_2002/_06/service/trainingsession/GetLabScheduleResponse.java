@@ -27,7 +27,23 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * The Class GetLabScheduleResponse.
+ * <p>Java class for getLabScheduleResponse complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="getLabScheduleResponse">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
+ *       &lt;sequence>
+ *         &lt;element name="scheduledLabs" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}scheduleLabType" maxOccurs="unbounded" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getLabScheduleResponse", propOrder = {
@@ -38,16 +54,30 @@ public class GetLabScheduleResponse
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The scheduled labs. */
     protected List<ScheduleLabType> scheduledLabs;
 
     /**
-     * Gets the scheduled labs.
+     * Gets the value of the scheduledLabs property.
      * 
-     * @return the scheduled labs
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the scheduledLabs property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getScheduledLabs().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link ScheduleLabType }
+     * 
+     * 
      */
     public List<ScheduleLabType> getScheduledLabs() {
         if (scheduledLabs == null) {

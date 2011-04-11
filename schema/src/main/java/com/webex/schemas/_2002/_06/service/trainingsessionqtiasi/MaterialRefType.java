@@ -25,33 +25,50 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class MaterialRefType.
+ * <p>Java class for material_refType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="material_refType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;attribute name="linkrefid" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "material_refType")
 public class MaterialRefType implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The linkrefid. */
     @XmlAttribute(required = true)
     protected String linkrefid;
 
     /**
-     * Gets the linkrefid.
+     * Gets the value of the linkrefid property.
      * 
-     * @return the linkrefid
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLinkrefid() {
         return linkrefid;
     }
 
     /**
-     * Sets the linkrefid.
+     * Sets the value of the linkrefid property.
      * 
-     * @param value the new linkrefid
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLinkrefid(String value) {
         this.linkrefid = value;

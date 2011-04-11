@@ -25,7 +25,23 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class MaterialType.
+ * <p>Java class for materialType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="materialType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="mattext" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}mattextType"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "materialType", propOrder = {
@@ -34,26 +50,29 @@ import javax.xml.bind.annotation.XmlType;
 public class MaterialType implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The mattext. */
     @XmlElement(required = true)
     protected MattextType mattext;
 
     /**
-     * Gets the mattext.
+     * Gets the value of the mattext property.
      * 
-     * @return the mattext
+     * @return
+     *     possible object is
+     *     {@link MattextType }
+     *     
      */
     public MattextType getMattext() {
         return mattext;
     }
 
     /**
-     * Sets the mattext.
+     * Sets the value of the mattext property.
      * 
-     * @param value the new mattext
+     * @param value
+     *     allowed object is
+     *     {@link MattextType }
+     *     
      */
     public void setMattext(MattextType value) {
         this.mattext = value;

@@ -27,7 +27,63 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * The Class ItemcontrolType.
+ * <p>Java class for itemcontrolType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="itemcontrolType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="qticomment" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qticommentType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *       &lt;attribute name="feedbackswitch" default="Yes">
+ *         &lt;simpleType>
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
+ *             &lt;enumeration value="Yes"/>
+ *             &lt;enumeration value="No"/>
+ *           &lt;/restriction>
+ *         &lt;/simpleType>
+ *       &lt;/attribute>
+ *       &lt;attribute name="hintswitch" default="Yes">
+ *         &lt;simpleType>
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
+ *             &lt;enumeration value="Yes"/>
+ *             &lt;enumeration value="No"/>
+ *           &lt;/restriction>
+ *         &lt;/simpleType>
+ *       &lt;/attribute>
+ *       &lt;attribute name="solutionswitch" default="Yes">
+ *         &lt;simpleType>
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
+ *             &lt;enumeration value="Yes"/>
+ *             &lt;enumeration value="No"/>
+ *           &lt;/restriction>
+ *         &lt;/simpleType>
+ *       &lt;/attribute>
+ *       &lt;attribute name="view" default="All">
+ *         &lt;simpleType>
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
+ *             &lt;enumeration value="All"/>
+ *             &lt;enumeration value="Administrator"/>
+ *             &lt;enumeration value="AdminAuthority"/>
+ *             &lt;enumeration value="Assessor"/>
+ *             &lt;enumeration value="Author"/>
+ *             &lt;enumeration value="Candidate"/>
+ *             &lt;enumeration value="InvigilatorProctor"/>
+ *             &lt;enumeration value="Psychometrician"/>
+ *             &lt;enumeration value="Scorer"/>
+ *             &lt;enumeration value="Tutor"/>
+ *           &lt;/restriction>
+ *         &lt;/simpleType>
+ *       &lt;/attribute>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "itemcontrolType", propOrder = {
@@ -37,54 +93,52 @@ public class ItemcontrolType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The qticomment. */
     protected QticommentType qticomment;
-    
-    /** The feedbackswitch. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String feedbackswitch;
-    
-    /** The hintswitch. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String hintswitch;
-    
-    /** The solutionswitch. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String solutionswitch;
-    
-    /** The view. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String view;
 
     /**
-     * Gets the qticomment.
+     * Gets the value of the qticomment property.
      * 
-     * @return the qticomment
+     * @return
+     *     possible object is
+     *     {@link QticommentType }
+     *     
      */
     public QticommentType getQticomment() {
         return qticomment;
     }
 
     /**
-     * Sets the qticomment.
+     * Sets the value of the qticomment property.
      * 
-     * @param value the new qticomment
+     * @param value
+     *     allowed object is
+     *     {@link QticommentType }
+     *     
      */
     public void setQticomment(QticommentType value) {
         this.qticomment = value;
     }
 
     /**
-     * Gets the feedbackswitch.
+     * Gets the value of the feedbackswitch property.
      * 
-     * @return the feedbackswitch
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFeedbackswitch() {
         if (feedbackswitch == null) {
@@ -95,18 +149,24 @@ public class ItemcontrolType
     }
 
     /**
-     * Sets the feedbackswitch.
+     * Sets the value of the feedbackswitch property.
      * 
-     * @param value the new feedbackswitch
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFeedbackswitch(String value) {
         this.feedbackswitch = value;
     }
 
     /**
-     * Gets the hintswitch.
+     * Gets the value of the hintswitch property.
      * 
-     * @return the hintswitch
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHintswitch() {
         if (hintswitch == null) {
@@ -117,18 +177,24 @@ public class ItemcontrolType
     }
 
     /**
-     * Sets the hintswitch.
+     * Sets the value of the hintswitch property.
      * 
-     * @param value the new hintswitch
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHintswitch(String value) {
         this.hintswitch = value;
     }
 
     /**
-     * Gets the solutionswitch.
+     * Gets the value of the solutionswitch property.
      * 
-     * @return the solutionswitch
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSolutionswitch() {
         if (solutionswitch == null) {
@@ -139,18 +205,24 @@ public class ItemcontrolType
     }
 
     /**
-     * Sets the solutionswitch.
+     * Sets the value of the solutionswitch property.
      * 
-     * @param value the new solutionswitch
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSolutionswitch(String value) {
         this.solutionswitch = value;
     }
 
     /**
-     * Gets the view.
+     * Gets the value of the view property.
      * 
-     * @return the view
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getView() {
         if (view == null) {
@@ -161,9 +233,12 @@ public class ItemcontrolType
     }
 
     /**
-     * Sets the view.
+     * Sets the value of the view property.
      * 
-     * @param value the new view
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setView(String value) {
         this.view = value;

@@ -22,40 +22,35 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum ApprovalConditionType.
+ * <p>Java class for approvalConditionType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="approvalConditionType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="CONTAINS"/>
+ *     &lt;enumeration value="DOESNOT_CONTAIN"/>
+ *     &lt;enumeration value="BEGINS_WITH"/>
+ *     &lt;enumeration value="ENDS_WITH"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "approvalConditionType")
 @XmlEnum
 public enum ApprovalConditionType {
 
-    /** The CONTAINS. */
     CONTAINS,
-    
-    /** The DOESNO t_ contain. */
     DOESNOT_CONTAIN,
-    
-    /** The BEGIN s_ with. */
     BEGINS_WITH,
-    
-    /** The END s_ with. */
     ENDS_WITH;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the approval condition type
-     */
     public static ApprovalConditionType fromValue(String v) {
         return valueOf(v);
     }

@@ -26,7 +26,21 @@ import javax.xml.bind.annotation.XmlValue;
 
 
 /**
- * The Class MapOutputType.
+ * <p>Java class for map_outputType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="map_outputType">
+ *   &lt;simpleContent>
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
+ *       &lt;attribute name="varname" type="{http://www.w3.org/2001/XMLSchema}string" default="SCORE" />
+ *     &lt;/extension>
+ *   &lt;/simpleContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "map_outputType", propOrder = {
@@ -36,39 +50,43 @@ public class MapOutputType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The value. */
     @XmlValue
     protected String value;
-    
-    /** The varname. */
     @XmlAttribute
     protected String varname;
 
     /**
-     * Gets the value.
+     * Gets the value of the value property.
      * 
-     * @return the value
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value.
+     * Sets the value of the value property.
      * 
-     * @param value the new value
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setValue(String value) {
         this.value = value;
     }
 
     /**
-     * Gets the varname.
+     * Gets the value of the varname property.
      * 
-     * @return the varname
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getVarname() {
         if (varname == null) {
@@ -79,9 +97,12 @@ public class MapOutputType
     }
 
     /**
-     * Sets the varname.
+     * Sets the value of the varname property.
      * 
-     * @param value the new varname
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setVarname(String value) {
         this.varname = value;

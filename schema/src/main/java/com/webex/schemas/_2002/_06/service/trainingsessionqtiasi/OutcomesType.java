@@ -25,7 +25,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class OutcomesType.
+ * <p>Java class for outcomesType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="outcomesType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="decvar" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}decvarType"/>
+ *         &lt;element name="interpretvar" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}interpretvarType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "outcomesType", propOrder = {
@@ -36,47 +53,54 @@ public class OutcomesType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The decvar. */
     @XmlElement(required = true)
     protected DecvarType decvar;
-    
-    /** The interpretvar. */
     protected InterpretvarType interpretvar;
 
     /**
-     * Gets the decvar.
+     * Gets the value of the decvar property.
      * 
-     * @return the decvar
+     * @return
+     *     possible object is
+     *     {@link DecvarType }
+     *     
      */
     public DecvarType getDecvar() {
         return decvar;
     }
 
     /**
-     * Sets the decvar.
+     * Sets the value of the decvar property.
      * 
-     * @param value the new decvar
+     * @param value
+     *     allowed object is
+     *     {@link DecvarType }
+     *     
      */
     public void setDecvar(DecvarType value) {
         this.decvar = value;
     }
 
     /**
-     * Gets the interpretvar.
+     * Gets the value of the interpretvar property.
      * 
-     * @return the interpretvar
+     * @return
+     *     possible object is
+     *     {@link InterpretvarType }
+     *     
      */
     public InterpretvarType getInterpretvar() {
         return interpretvar;
     }
 
     /**
-     * Sets the interpretvar.
+     * Sets the value of the interpretvar property.
      * 
-     * @param value the new interpretvar
+     * @param value
+     *     allowed object is
+     *     {@link InterpretvarType }
+     *     
      */
     public void setInterpretvar(InterpretvarType value) {
         this.interpretvar = value;

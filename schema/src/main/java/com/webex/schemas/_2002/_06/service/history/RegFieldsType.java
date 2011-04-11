@@ -26,7 +26,35 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class RegFieldsType.
+ * <p>Java class for regFieldsType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="regFieldsType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="firstName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="lastName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="title" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="company" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="address1" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="address2" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="city" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="state" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="postalCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="country" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="phone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="fax" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="customFields" type="{http://www.webex.com/schemas/2002/06/service/history}customFieldsType" maxOccurs="unbounded" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "regFieldsType", propOrder = {
@@ -48,268 +76,330 @@ public class RegFieldsType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The first name. */
     protected String firstName;
-    
-    /** The last name. */
     protected String lastName;
-    
-    /** The title. */
     protected String title;
-    
-    /** The company. */
     protected String company;
-    
-    /** The address1. */
     protected String address1;
-    
-    /** The address2. */
     protected String address2;
-    
-    /** The city. */
     protected String city;
-    
-    /** The state. */
     protected String state;
-    
-    /** The postal code. */
     protected String postalCode;
-    
-    /** The country. */
     protected String country;
-    
-    /** The phone. */
     protected String phone;
-    
-    /** The fax. */
     protected String fax;
-    
-    /** The custom fields. */
     protected List<CustomFieldsType> customFields;
 
     /**
-     * Gets the first name.
+     * Gets the value of the firstName property.
      * 
-     * @return the first name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFirstName() {
         return firstName;
     }
 
     /**
-     * Sets the first name.
+     * Sets the value of the firstName property.
      * 
-     * @param value the new first name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFirstName(String value) {
         this.firstName = value;
     }
 
     /**
-     * Gets the last name.
+     * Gets the value of the lastName property.
      * 
-     * @return the last name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLastName() {
         return lastName;
     }
 
     /**
-     * Sets the last name.
+     * Sets the value of the lastName property.
      * 
-     * @param value the new last name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLastName(String value) {
         this.lastName = value;
     }
 
     /**
-     * Gets the title.
+     * Gets the value of the title property.
      * 
-     * @return the title
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTitle() {
         return title;
     }
 
     /**
-     * Sets the title.
+     * Sets the value of the title property.
      * 
-     * @param value the new title
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTitle(String value) {
         this.title = value;
     }
 
     /**
-     * Gets the company.
+     * Gets the value of the company property.
      * 
-     * @return the company
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCompany() {
         return company;
     }
 
     /**
-     * Sets the company.
+     * Sets the value of the company property.
      * 
-     * @param value the new company
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCompany(String value) {
         this.company = value;
     }
 
     /**
-     * Gets the address1.
+     * Gets the value of the address1 property.
      * 
-     * @return the address1
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getAddress1() {
         return address1;
     }
 
     /**
-     * Sets the address1.
+     * Sets the value of the address1 property.
      * 
-     * @param value the new address1
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAddress1(String value) {
         this.address1 = value;
     }
 
     /**
-     * Gets the address2.
+     * Gets the value of the address2 property.
      * 
-     * @return the address2
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getAddress2() {
         return address2;
     }
 
     /**
-     * Sets the address2.
+     * Sets the value of the address2 property.
      * 
-     * @param value the new address2
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAddress2(String value) {
         this.address2 = value;
     }
 
     /**
-     * Gets the city.
+     * Gets the value of the city property.
      * 
-     * @return the city
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCity() {
         return city;
     }
 
     /**
-     * Sets the city.
+     * Sets the value of the city property.
      * 
-     * @param value the new city
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCity(String value) {
         this.city = value;
     }
 
     /**
-     * Gets the state.
+     * Gets the value of the state property.
      * 
-     * @return the state
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getState() {
         return state;
     }
 
     /**
-     * Sets the state.
+     * Sets the value of the state property.
      * 
-     * @param value the new state
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setState(String value) {
         this.state = value;
     }
 
     /**
-     * Gets the postal code.
+     * Gets the value of the postalCode property.
      * 
-     * @return the postal code
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPostalCode() {
         return postalCode;
     }
 
     /**
-     * Sets the postal code.
+     * Sets the value of the postalCode property.
      * 
-     * @param value the new postal code
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPostalCode(String value) {
         this.postalCode = value;
     }
 
     /**
-     * Gets the country.
+     * Gets the value of the country property.
      * 
-     * @return the country
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCountry() {
         return country;
     }
 
     /**
-     * Sets the country.
+     * Sets the value of the country property.
      * 
-     * @param value the new country
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCountry(String value) {
         this.country = value;
     }
 
     /**
-     * Gets the phone.
+     * Gets the value of the phone property.
      * 
-     * @return the phone
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPhone() {
         return phone;
     }
 
     /**
-     * Sets the phone.
+     * Sets the value of the phone property.
      * 
-     * @param value the new phone
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPhone(String value) {
         this.phone = value;
     }
 
     /**
-     * Gets the fax.
+     * Gets the value of the fax property.
      * 
-     * @return the fax
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFax() {
         return fax;
     }
 
     /**
-     * Sets the fax.
+     * Sets the value of the fax property.
      * 
-     * @param value the new fax
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFax(String value) {
         this.fax = value;
     }
 
     /**
-     * Gets the custom fields.
+     * Gets the value of the customFields property.
      * 
-     * @return the custom fields
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the customFields property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getCustomFields().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link CustomFieldsType }
+     * 
+     * 
      */
     public List<CustomFieldsType> getCustomFields() {
         if (customFields == null) {

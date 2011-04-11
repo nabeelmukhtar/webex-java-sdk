@@ -32,7 +32,58 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class ScheduleType.
+ * <p>Java class for scheduleType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="scheduleType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="startDate" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="timeZone" type="{http://www.webex.com/schemas/2002/06/common}timeZoneType" minOccurs="0"/>
+ *         &lt;element name="duration" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="hostWebExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="openTime" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="extURL" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="512"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="extNotifyTime" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}integer">
+ *               &lt;minInclusive value="0"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="joinNotifyURL" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="512"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="joinTeleconfBeforeHost" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="entryExitTone" type="{http://www.webex.com/schemas/2002/06/common}entryExitToneType" minOccurs="0"/>
+ *         &lt;element name="destinationURL" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="128"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "scheduleType", propOrder = {
@@ -53,55 +104,47 @@ public class ScheduleType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The start date. */
     protected List<String> startDate;
-    
-    /** The time zone. */
     protected TimeZoneType timeZone;
-    
-    /** The duration. */
     protected Long duration;
-    
-    /** The time zone id. */
     @XmlElement(defaultValue = "-1")
     protected Long timeZoneID;
-    
-    /** The host web ex id. */
     protected String hostWebExID;
-    
-    /** The open time. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long openTime;
-    
-    /** The ext url. */
     protected String extURL;
-    
-    /** The ext notify time. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     protected Long extNotifyTime;
-    
-    /** The join notify url. */
     protected String joinNotifyURL;
-    
-    /** The join teleconf before host. */
     protected Boolean joinTeleconfBeforeHost;
-    
-    /** The entry exit tone. */
     protected EntryExitToneType entryExitTone;
-    
-    /** The destination url. */
     protected String destinationURL;
 
     /**
-     * Gets the start date.
+     * Gets the value of the startDate property.
      * 
-     * @return the start date
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the startDate property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getStartDate().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link String }
+     * 
+     * 
      */
     public List<String> getStartDate() {
         if (startDate == null) {
@@ -111,198 +154,264 @@ public class ScheduleType
     }
 
     /**
-     * Gets the time zone.
+     * Gets the value of the timeZone property.
      * 
-     * @return the time zone
+     * @return
+     *     possible object is
+     *     {@link TimeZoneType }
+     *     
      */
     public TimeZoneType getTimeZone() {
         return timeZone;
     }
 
     /**
-     * Sets the time zone.
+     * Sets the value of the timeZone property.
      * 
-     * @param value the new time zone
+     * @param value
+     *     allowed object is
+     *     {@link TimeZoneType }
+     *     
      */
     public void setTimeZone(TimeZoneType value) {
         this.timeZone = value;
     }
 
     /**
-     * Gets the duration.
+     * Gets the value of the duration property.
      * 
-     * @return the duration
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getDuration() {
         return duration;
     }
 
     /**
-     * Sets the duration.
+     * Sets the value of the duration property.
      * 
-     * @param value the new duration
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setDuration(Long value) {
         this.duration = value;
     }
 
     /**
-     * Gets the time zone id.
+     * Gets the value of the timeZoneID property.
      * 
-     * @return the time zone id
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the time zone id.
+     * Sets the value of the timeZoneID property.
      * 
-     * @param value the new time zone id
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setTimeZoneID(Long value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the host web ex id.
+     * Gets the value of the hostWebExID property.
      * 
-     * @return the host web ex id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHostWebExID() {
         return hostWebExID;
     }
 
     /**
-     * Sets the host web ex id.
+     * Sets the value of the hostWebExID property.
      * 
-     * @param value the new host web ex id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHostWebExID(String value) {
         this.hostWebExID = value;
     }
 
     /**
-     * Gets the open time.
+     * Gets the value of the openTime property.
      * 
-     * @return the open time
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getOpenTime() {
         return openTime;
     }
 
     /**
-     * Sets the open time.
+     * Sets the value of the openTime property.
      * 
-     * @param value the new open time
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setOpenTime(Long value) {
         this.openTime = value;
     }
 
     /**
-     * Gets the ext url.
+     * Gets the value of the extURL property.
      * 
-     * @return the ext url
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getExtURL() {
         return extURL;
     }
 
     /**
-     * Sets the ext url.
+     * Sets the value of the extURL property.
      * 
-     * @param value the new ext url
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setExtURL(String value) {
         this.extURL = value;
     }
 
     /**
-     * Gets the ext notify time.
+     * Gets the value of the extNotifyTime property.
      * 
-     * @return the ext notify time
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getExtNotifyTime() {
         return extNotifyTime;
     }
 
     /**
-     * Sets the ext notify time.
+     * Sets the value of the extNotifyTime property.
      * 
-     * @param value the new ext notify time
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setExtNotifyTime(Long value) {
         this.extNotifyTime = value;
     }
 
     /**
-     * Gets the join notify url.
+     * Gets the value of the joinNotifyURL property.
      * 
-     * @return the join notify url
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getJoinNotifyURL() {
         return joinNotifyURL;
     }
 
     /**
-     * Sets the join notify url.
+     * Sets the value of the joinNotifyURL property.
      * 
-     * @param value the new join notify url
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setJoinNotifyURL(String value) {
         this.joinNotifyURL = value;
     }
 
     /**
-     * Checks if is join teleconf before host.
+     * Gets the value of the joinTeleconfBeforeHost property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isJoinTeleconfBeforeHost() {
         return joinTeleconfBeforeHost;
     }
 
     /**
-     * Sets the join teleconf before host.
+     * Sets the value of the joinTeleconfBeforeHost property.
      * 
-     * @param value the new join teleconf before host
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setJoinTeleconfBeforeHost(Boolean value) {
         this.joinTeleconfBeforeHost = value;
     }
 
     /**
-     * Gets the entry exit tone.
+     * Gets the value of the entryExitTone property.
      * 
-     * @return the entry exit tone
+     * @return
+     *     possible object is
+     *     {@link EntryExitToneType }
+     *     
      */
     public EntryExitToneType getEntryExitTone() {
         return entryExitTone;
     }
 
     /**
-     * Sets the entry exit tone.
+     * Sets the value of the entryExitTone property.
      * 
-     * @param value the new entry exit tone
+     * @param value
+     *     allowed object is
+     *     {@link EntryExitToneType }
+     *     
      */
     public void setEntryExitTone(EntryExitToneType value) {
         this.entryExitTone = value;
     }
 
     /**
-     * Gets the destination url.
+     * Gets the value of the destinationURL property.
      * 
-     * @return the destination url
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDestinationURL() {
         return destinationURL;
     }
 
     /**
-     * Sets the destination url.
+     * Sets the value of the destinationURL property.
      * 
-     * @param value the new destination url
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDestinationURL(String value) {
         this.destinationURL = value;

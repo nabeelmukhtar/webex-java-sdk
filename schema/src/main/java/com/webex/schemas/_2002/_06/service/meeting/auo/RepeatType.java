@@ -31,7 +31,52 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class RepeatType.
+ * <p>Java class for repeatType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="repeatType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="repeatType" type="{http://www.webex.com/schemas/2002/06/service/meeting/auo}recurrenceType" minOccurs="0"/>
+ *         &lt;element name="expirationDate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="dayInWeek" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="day" type="{http://www.webex.com/schemas/2002/06/common}dayOfWeekType" maxOccurs="7" minOccurs="0"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="dayInMonth" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}integer">
+ *               &lt;maxInclusive value="31"/>
+ *               &lt;minInclusive value="1"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="interval" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
+ *         &lt;element name="weekInMonth" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}integer">
+ *               &lt;minInclusive value="1"/>
+ *               &lt;maxInclusive value="6"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "repeatType", propOrder = {
@@ -46,137 +91,160 @@ public class RepeatType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The repeat type. */
     protected RecurrenceType repeatType;
-    
-    /** The expiration date. */
     protected String expirationDate;
-    
-    /** The day in week. */
     protected RepeatType.DayInWeek dayInWeek;
-    
-    /** The day in month. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     protected Long dayInMonth;
-    
-    /** The interval. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long interval;
-    
-    /** The week in month. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     protected Long weekInMonth;
 
     /**
-     * Gets the repeat type.
+     * Gets the value of the repeatType property.
      * 
-     * @return the repeat type
+     * @return
+     *     possible object is
+     *     {@link RecurrenceType }
+     *     
      */
     public RecurrenceType getRepeatType() {
         return repeatType;
     }
 
     /**
-     * Sets the repeat type.
+     * Sets the value of the repeatType property.
      * 
-     * @param value the new repeat type
+     * @param value
+     *     allowed object is
+     *     {@link RecurrenceType }
+     *     
      */
     public void setRepeatType(RecurrenceType value) {
         this.repeatType = value;
     }
 
     /**
-     * Gets the expiration date.
+     * Gets the value of the expirationDate property.
      * 
-     * @return the expiration date
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getExpirationDate() {
         return expirationDate;
     }
 
     /**
-     * Sets the expiration date.
+     * Sets the value of the expirationDate property.
      * 
-     * @param value the new expiration date
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setExpirationDate(String value) {
         this.expirationDate = value;
     }
 
     /**
-     * Gets the day in week.
+     * Gets the value of the dayInWeek property.
      * 
-     * @return the day in week
+     * @return
+     *     possible object is
+     *     {@link RepeatType.DayInWeek }
+     *     
      */
     public RepeatType.DayInWeek getDayInWeek() {
         return dayInWeek;
     }
 
     /**
-     * Sets the day in week.
+     * Sets the value of the dayInWeek property.
      * 
-     * @param value the new day in week
+     * @param value
+     *     allowed object is
+     *     {@link RepeatType.DayInWeek }
+     *     
      */
     public void setDayInWeek(RepeatType.DayInWeek value) {
         this.dayInWeek = value;
     }
 
     /**
-     * Gets the day in month.
+     * Gets the value of the dayInMonth property.
      * 
-     * @return the day in month
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getDayInMonth() {
         return dayInMonth;
     }
 
     /**
-     * Sets the day in month.
+     * Sets the value of the dayInMonth property.
      * 
-     * @param value the new day in month
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDayInMonth(Long value) {
         this.dayInMonth = value;
     }
 
     /**
-     * Gets the interval.
+     * Gets the value of the interval property.
      * 
-     * @return the interval
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getInterval() {
         return interval;
     }
 
     /**
-     * Sets the interval.
+     * Sets the value of the interval property.
      * 
-     * @param value the new interval
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setInterval(Long value) {
         this.interval = value;
     }
 
     /**
-     * Gets the week in month.
+     * Gets the value of the weekInMonth property.
      * 
-     * @return the week in month
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getWeekInMonth() {
         return weekInMonth;
     }
 
     /**
-     * Sets the week in month.
+     * Sets the value of the weekInMonth property.
      * 
-     * @param value the new week in month
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setWeekInMonth(Long value) {
         this.weekInMonth = value;
@@ -184,7 +252,23 @@ public class RepeatType
 
 
     /**
-     * The Class DayInWeek.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="day" type="{http://www.webex.com/schemas/2002/06/common}dayOfWeekType" maxOccurs="7" minOccurs="0"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -194,16 +278,30 @@ public class RepeatType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The day. */
         protected List<DayOfWeekType> day;
 
         /**
-         * Gets the day.
+         * Gets the value of the day property.
          * 
-         * @return the day
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the day property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getDay().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link DayOfWeekType }
+         * 
+         * 
          */
         public List<DayOfWeekType> getDay() {
             if (day == null) {

@@ -22,37 +22,33 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum SurveyDisplayType.
+ * <p>Java class for surveyDisplayType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="surveyDisplayType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="NO_DISPLAY"/>
+ *     &lt;enumeration value="POPUP_WINDOW"/>
+ *     &lt;enumeration value="MAIN_WINDOW"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "surveyDisplayType")
 @XmlEnum
 public enum SurveyDisplayType {
 
-    /** The N o_ display. */
     NO_DISPLAY,
-    
-    /** The POPU p_ window. */
     POPUP_WINDOW,
-    
-    /** The MAI n_ window. */
     MAIN_WINDOW;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the survey display type
-     */
     public static SurveyDisplayType fromValue(String v) {
         return valueOf(v);
     }

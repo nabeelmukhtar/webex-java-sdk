@@ -26,7 +26,33 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class ApprovalRuleType.
+ * <p>Java class for approvalRuleType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="approvalRuleType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="enrollFieldID" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="condition" type="{http://www.webex.com/schemas/2002/06/service/event}approvalConditionType"/>
+ *         &lt;element name="queryField">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="50"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="action" type="{http://www.webex.com/schemas/2002/06/service/event}approvalActionType"/>
+ *         &lt;element name="matchCase" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "approvalRuleType", propOrder = {
@@ -43,113 +69,124 @@ public class ApprovalRuleType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The enroll field id. */
     @XmlElement(defaultValue = "-13")
     protected long enrollFieldID;
-    
-    /** The condition. */
     @XmlElement(required = true, defaultValue = "CONTAINS")
     protected ApprovalConditionType condition;
-    
-    /** The query field. */
     @XmlElement(required = true)
     protected String queryField;
-    
-    /** The action. */
     @XmlElement(required = true, defaultValue = "REJECT")
     protected ApprovalActionType action;
-    
-    /** The match case. */
     protected Boolean matchCase;
 
     /**
-     * Gets the enroll field id.
+     * Gets the value of the enrollFieldID property.
      * 
-     * @return the enroll field id
      */
     public long getEnrollFieldID() {
         return enrollFieldID;
     }
 
     /**
-     * Sets the enroll field id.
+     * Sets the value of the enrollFieldID property.
      * 
-     * @param value the new enroll field id
      */
     public void setEnrollFieldID(long value) {
         this.enrollFieldID = value;
     }
 
     /**
-     * Gets the condition.
+     * Gets the value of the condition property.
      * 
-     * @return the condition
+     * @return
+     *     possible object is
+     *     {@link ApprovalConditionType }
+     *     
      */
     public ApprovalConditionType getCondition() {
         return condition;
     }
 
     /**
-     * Sets the condition.
+     * Sets the value of the condition property.
      * 
-     * @param value the new condition
+     * @param value
+     *     allowed object is
+     *     {@link ApprovalConditionType }
+     *     
      */
     public void setCondition(ApprovalConditionType value) {
         this.condition = value;
     }
 
     /**
-     * Gets the query field.
+     * Gets the value of the queryField property.
      * 
-     * @return the query field
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getQueryField() {
         return queryField;
     }
 
     /**
-     * Sets the query field.
+     * Sets the value of the queryField property.
      * 
-     * @param value the new query field
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setQueryField(String value) {
         this.queryField = value;
     }
 
     /**
-     * Gets the action.
+     * Gets the value of the action property.
      * 
-     * @return the action
+     * @return
+     *     possible object is
+     *     {@link ApprovalActionType }
+     *     
      */
     public ApprovalActionType getAction() {
         return action;
     }
 
     /**
-     * Sets the action.
+     * Sets the value of the action property.
      * 
-     * @param value the new action
+     * @param value
+     *     allowed object is
+     *     {@link ApprovalActionType }
+     *     
      */
     public void setAction(ApprovalActionType value) {
         this.action = value;
     }
 
     /**
-     * Checks if is match case.
+     * Gets the value of the matchCase property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isMatchCase() {
         return matchCase;
     }
 
     /**
-     * Sets the match case.
+     * Sets the value of the matchCase property.
      * 
-     * @param value the new match case
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setMatchCase(Boolean value) {
         this.matchCase = value;

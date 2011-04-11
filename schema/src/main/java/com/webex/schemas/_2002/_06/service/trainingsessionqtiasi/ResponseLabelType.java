@@ -30,7 +30,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class ResponseLabelType.
+ * <p>Java class for response_labelType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="response_labelType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="flow_mat" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}flow_matType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *       &lt;attribute name="ident" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "response_labelType", propOrder = {
@@ -39,22 +56,35 @@ import javax.xml.bind.annotation.XmlType;
 public class ResponseLabelType implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The content. */
     @XmlElementRef(name = "flow_mat", namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", type = JAXBElement.class)
     @XmlMixed
     protected List<Serializable> content;
-    
-    /** The ident. */
     @XmlAttribute(required = true)
     protected String ident;
 
     /**
-     * Gets the content.
+     * Gets the value of the content property.
      * 
-     * @return the content
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the content property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getContent().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link JAXBElement }{@code <}{@link FlowMatType }{@code >}
+     * {@link String }
+     * 
+     * 
      */
     public List<Serializable> getContent() {
         if (content == null) {
@@ -64,18 +94,24 @@ public class ResponseLabelType implements Serializable
     }
 
     /**
-     * Gets the ident.
+     * Gets the value of the ident property.
      * 
-     * @return the ident
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getIdent() {
         return ident;
     }
 
     /**
-     * Sets the ident.
+     * Sets the value of the ident property.
      * 
-     * @param value the new ident
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setIdent(String value) {
         this.ident = value;

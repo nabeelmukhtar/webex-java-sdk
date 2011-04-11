@@ -27,7 +27,38 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class ResponseType.
+ * <p>Java class for responseType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="responseType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="result" type="{http://www.webex.com/schemas/2002/06/service}resultTypeType"/>
+ *         &lt;element name="reason" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="gsbStatus" type="{http://www.webex.com/schemas/2002/06/service}gsbStatusType" minOccurs="0"/>
+ *         &lt;element name="exceptionID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="subErrors" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="subError" type="{http://www.webex.com/schemas/2002/06/service}subErrorType" maxOccurs="unbounded"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="value" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "responseType", propOrder = {
@@ -42,131 +73,154 @@ public class ResponseType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The result. */
     @XmlElement(required = true)
     protected ResultTypeType result;
-    
-    /** The reason. */
     protected String reason;
-    
-    /** The gsb status. */
     protected GsbStatusType gsbStatus;
-    
-    /** The exception id. */
     protected String exceptionID;
-    
-    /** The sub errors. */
     protected ResponseType.SubErrors subErrors;
-    
-    /** The value. */
     protected String value;
 
     /**
-     * Gets the result.
+     * Gets the value of the result property.
      * 
-     * @return the result
+     * @return
+     *     possible object is
+     *     {@link ResultTypeType }
+     *     
      */
     public ResultTypeType getResult() {
         return result;
     }
 
     /**
-     * Sets the result.
+     * Sets the value of the result property.
      * 
-     * @param value the new result
+     * @param value
+     *     allowed object is
+     *     {@link ResultTypeType }
+     *     
      */
     public void setResult(ResultTypeType value) {
         this.result = value;
     }
 
     /**
-     * Gets the reason.
+     * Gets the value of the reason property.
      * 
-     * @return the reason
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getReason() {
         return reason;
     }
 
     /**
-     * Sets the reason.
+     * Sets the value of the reason property.
      * 
-     * @param value the new reason
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setReason(String value) {
         this.reason = value;
     }
 
     /**
-     * Gets the gsb status.
+     * Gets the value of the gsbStatus property.
      * 
-     * @return the gsb status
+     * @return
+     *     possible object is
+     *     {@link GsbStatusType }
+     *     
      */
     public GsbStatusType getGsbStatus() {
         return gsbStatus;
     }
 
     /**
-     * Sets the gsb status.
+     * Sets the value of the gsbStatus property.
      * 
-     * @param value the new gsb status
+     * @param value
+     *     allowed object is
+     *     {@link GsbStatusType }
+     *     
      */
     public void setGsbStatus(GsbStatusType value) {
         this.gsbStatus = value;
     }
 
     /**
-     * Gets the exception id.
+     * Gets the value of the exceptionID property.
      * 
-     * @return the exception id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getExceptionID() {
         return exceptionID;
     }
 
     /**
-     * Sets the exception id.
+     * Sets the value of the exceptionID property.
      * 
-     * @param value the new exception id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setExceptionID(String value) {
         this.exceptionID = value;
     }
 
     /**
-     * Gets the sub errors.
+     * Gets the value of the subErrors property.
      * 
-     * @return the sub errors
+     * @return
+     *     possible object is
+     *     {@link ResponseType.SubErrors }
+     *     
      */
     public ResponseType.SubErrors getSubErrors() {
         return subErrors;
     }
 
     /**
-     * Sets the sub errors.
+     * Sets the value of the subErrors property.
      * 
-     * @param value the new sub errors
+     * @param value
+     *     allowed object is
+     *     {@link ResponseType.SubErrors }
+     *     
      */
     public void setSubErrors(ResponseType.SubErrors value) {
         this.subErrors = value;
     }
 
     /**
-     * Gets the value.
+     * Gets the value of the value property.
      * 
-     * @return the value
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value.
+     * Sets the value of the value property.
      * 
-     * @param value the new value
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setValue(String value) {
         this.value = value;
@@ -174,7 +228,23 @@ public class ResponseType
 
 
     /**
-     * The Class SubErrors.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="subError" type="{http://www.webex.com/schemas/2002/06/service}subErrorType" maxOccurs="unbounded"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -184,17 +254,31 @@ public class ResponseType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The sub error. */
         @XmlElement(required = true)
         protected List<SubErrorType> subError;
 
         /**
-         * Gets the sub error.
+         * Gets the value of the subError property.
          * 
-         * @return the sub error
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the subError property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getSubError().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link SubErrorType }
+         * 
+         * 
          */
         public List<SubErrorType> getSubError() {
             if (subError == null) {

@@ -24,7 +24,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class OneClickType.
+ * <p>Java class for oneClickType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="oneClickType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="allowJoinUnlistMeeting" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="requireApproveJoin" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "oneClickType", propOrder = {
@@ -35,46 +52,53 @@ public class OneClickType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The allow join unlist meeting. */
     protected Boolean allowJoinUnlistMeeting;
-    
-    /** The require approve join. */
     protected Boolean requireApproveJoin;
 
     /**
-     * Checks if is allow join unlist meeting.
+     * Gets the value of the allowJoinUnlistMeeting property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAllowJoinUnlistMeeting() {
         return allowJoinUnlistMeeting;
     }
 
     /**
-     * Sets the allow join unlist meeting.
+     * Sets the value of the allowJoinUnlistMeeting property.
      * 
-     * @param value the new allow join unlist meeting
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAllowJoinUnlistMeeting(Boolean value) {
         this.allowJoinUnlistMeeting = value;
     }
 
     /**
-     * Checks if is require approve join.
+     * Gets the value of the requireApproveJoin property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isRequireApproveJoin() {
         return requireApproveJoin;
     }
 
     /**
-     * Sets the require approve join.
+     * Sets the value of the requireApproveJoin property.
      * 
-     * @param value the new require approve join
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setRequireApproveJoin(Boolean value) {
         this.requireApproveJoin = value;

@@ -25,7 +25,26 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class NotSelectionType.
+ * <p>Java class for not_selectionType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="not_selectionType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;choice>
+ *         &lt;element name="selection_metadata" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}selection_metadataType"/>
+ *         &lt;element name="and_selection" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}and_selectionType"/>
+ *         &lt;element name="or_selection" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}or_selectionType"/>
+ *         &lt;element name="not_selection" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}not_selectionType"/>
+ *       &lt;/choice>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "not_selectionType", propOrder = {
@@ -37,92 +56,107 @@ import javax.xml.bind.annotation.XmlType;
 public class NotSelectionType implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The selection metadata. */
     @XmlElement(name = "selection_metadata")
     protected SelectionMetadataType selectionMetadata;
-    
-    /** The and selection. */
     @XmlElement(name = "and_selection")
     protected AndSelectionType andSelection;
-    
-    /** The or selection. */
     @XmlElement(name = "or_selection")
     protected OrSelectionType orSelection;
-    
-    /** The not selection. */
     @XmlElement(name = "not_selection")
     protected NotSelectionType notSelection;
 
     /**
-     * Gets the selection metadata.
+     * Gets the value of the selectionMetadata property.
      * 
-     * @return the selection metadata
+     * @return
+     *     possible object is
+     *     {@link SelectionMetadataType }
+     *     
      */
     public SelectionMetadataType getSelectionMetadata() {
         return selectionMetadata;
     }
 
     /**
-     * Sets the selection metadata.
+     * Sets the value of the selectionMetadata property.
      * 
-     * @param value the new selection metadata
+     * @param value
+     *     allowed object is
+     *     {@link SelectionMetadataType }
+     *     
      */
     public void setSelectionMetadata(SelectionMetadataType value) {
         this.selectionMetadata = value;
     }
 
     /**
-     * Gets the and selection.
+     * Gets the value of the andSelection property.
      * 
-     * @return the and selection
+     * @return
+     *     possible object is
+     *     {@link AndSelectionType }
+     *     
      */
     public AndSelectionType getAndSelection() {
         return andSelection;
     }
 
     /**
-     * Sets the and selection.
+     * Sets the value of the andSelection property.
      * 
-     * @param value the new and selection
+     * @param value
+     *     allowed object is
+     *     {@link AndSelectionType }
+     *     
      */
     public void setAndSelection(AndSelectionType value) {
         this.andSelection = value;
     }
 
     /**
-     * Gets the or selection.
+     * Gets the value of the orSelection property.
      * 
-     * @return the or selection
+     * @return
+     *     possible object is
+     *     {@link OrSelectionType }
+     *     
      */
     public OrSelectionType getOrSelection() {
         return orSelection;
     }
 
     /**
-     * Sets the or selection.
+     * Sets the value of the orSelection property.
      * 
-     * @param value the new or selection
+     * @param value
+     *     allowed object is
+     *     {@link OrSelectionType }
+     *     
      */
     public void setOrSelection(OrSelectionType value) {
         this.orSelection = value;
     }
 
     /**
-     * Gets the not selection.
+     * Gets the value of the notSelection property.
      * 
-     * @return the not selection
+     * @return
+     *     possible object is
+     *     {@link NotSelectionType }
+     *     
      */
     public NotSelectionType getNotSelection() {
         return notSelection;
     }
 
     /**
-     * Sets the not selection.
+     * Sets the value of the notSelection property.
      * 
-     * @param value the new not selection
+     * @param value
+     *     allowed object is
+     *     {@link NotSelectionType }
+     *     
      */
     public void setNotSelection(NotSelectionType value) {
         this.notSelection = value;

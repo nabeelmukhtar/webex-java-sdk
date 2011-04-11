@@ -19,24 +19,15 @@ package org.w3._2001.xmlschema;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
-/**
- * The Class Adapter1.
- */
 public class Adapter1
     extends XmlAdapter<String, Long>
 {
 
 
-    /* (non-Javadoc)
-     * @see javax.xml.bind.annotation.adapters.XmlAdapter#unmarshal(java.lang.Object)
-     */
     public Long unmarshal(String value) {
         return new Long(value);
     }
 
-    /* (non-Javadoc)
-     * @see javax.xml.bind.annotation.adapters.XmlAdapter#marshal(java.lang.Object)
-     */
     public String marshal(Long value) {
         if (value == null) {
             return null;

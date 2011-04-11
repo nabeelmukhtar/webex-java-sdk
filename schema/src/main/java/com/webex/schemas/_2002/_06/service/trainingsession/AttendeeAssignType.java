@@ -22,34 +22,31 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum AttendeeAssignType.
+ * <p>Java class for attendeeAssignType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="attendeeAssignType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="AUTO"/>
+ *     &lt;enumeration value="MANUAL"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "attendeeAssignType")
 @XmlEnum
 public enum AttendeeAssignType {
 
-    /** The AUTO. */
     AUTO,
-    
-    /** The MANUAL. */
     MANUAL;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the attendee assign type
-     */
     public static AttendeeAssignType fromValue(String v) {
         return valueOf(v);
     }

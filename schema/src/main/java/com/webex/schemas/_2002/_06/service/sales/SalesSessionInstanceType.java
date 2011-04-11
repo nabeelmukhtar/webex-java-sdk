@@ -25,7 +25,23 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class SalesSessionInstanceType.
+ * <p>Java class for salesSessionInstanceType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="salesSessionInstanceType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/sales}salesSessionType">
+ *       &lt;sequence>
+ *         &lt;element name="meetingKey" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "salesSessionInstanceType", propOrder = {
@@ -40,25 +56,20 @@ public class SalesSessionInstanceType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The meeting key. */
     protected long meetingKey;
 
     /**
-     * Gets the meeting key.
+     * Gets the value of the meetingKey property.
      * 
-     * @return the meeting key
      */
     public long getMeetingKey() {
         return meetingKey;
     }
 
     /**
-     * Sets the meeting key.
+     * Sets the value of the meetingKey property.
      * 
-     * @param value the new meeting key
      */
     public void setMeetingKey(long value) {
         this.meetingKey = value;

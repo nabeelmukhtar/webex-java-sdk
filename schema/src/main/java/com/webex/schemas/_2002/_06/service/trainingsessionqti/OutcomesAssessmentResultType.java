@@ -25,7 +25,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class OutcomesAssessmentResultType.
+ * <p>Java class for outcomes_assessment_resultType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="outcomes_assessment_resultType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="score" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}score_assessment_result_outcomesType"/>
+ *         &lt;element name="grade" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}gradeType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "outcomes_assessment_resultType", propOrder = {
@@ -36,47 +53,54 @@ public class OutcomesAssessmentResultType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The score. */
     @XmlElement(required = true)
     protected ScoreAssessmentResultOutcomesType score;
-    
-    /** The grade. */
     protected GradeType grade;
 
     /**
-     * Gets the score.
+     * Gets the value of the score property.
      * 
-     * @return the score
+     * @return
+     *     possible object is
+     *     {@link ScoreAssessmentResultOutcomesType }
+     *     
      */
     public ScoreAssessmentResultOutcomesType getScore() {
         return score;
     }
 
     /**
-     * Sets the score.
+     * Sets the value of the score property.
      * 
-     * @param value the new score
+     * @param value
+     *     allowed object is
+     *     {@link ScoreAssessmentResultOutcomesType }
+     *     
      */
     public void setScore(ScoreAssessmentResultOutcomesType value) {
         this.score = value;
     }
 
     /**
-     * Gets the grade.
+     * Gets the value of the grade property.
      * 
-     * @return the grade
+     * @return
+     *     possible object is
+     *     {@link GradeType }
+     *     
      */
     public GradeType getGrade() {
         return grade;
     }
 
     /**
-     * Sets the grade.
+     * Sets the value of the grade property.
      * 
-     * @param value the new grade
+     * @param value
+     *     allowed object is
+     *     {@link GradeType }
+     *     
      */
     public void setGrade(GradeType value) {
         this.grade = value;

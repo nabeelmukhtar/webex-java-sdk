@@ -25,7 +25,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class StartTimeValueType.
+ * <p>Java class for startTimeValueType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="startTimeValueType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="sessionStartTimeStart" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="sessionStartTimeEnd" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "startTimeValueType", propOrder = {
@@ -36,48 +53,55 @@ public class StartTimeValueType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The session start time start. */
     @XmlElement(required = true)
     protected String sessionStartTimeStart;
-    
-    /** The session start time end. */
     @XmlElement(required = true)
     protected String sessionStartTimeEnd;
 
     /**
-     * Gets the session start time start.
+     * Gets the value of the sessionStartTimeStart property.
      * 
-     * @return the session start time start
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSessionStartTimeStart() {
         return sessionStartTimeStart;
     }
 
     /**
-     * Sets the session start time start.
+     * Sets the value of the sessionStartTimeStart property.
      * 
-     * @param value the new session start time start
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSessionStartTimeStart(String value) {
         this.sessionStartTimeStart = value;
     }
 
     /**
-     * Gets the session start time end.
+     * Gets the value of the sessionStartTimeEnd property.
      * 
-     * @return the session start time end
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSessionStartTimeEnd() {
         return sessionStartTimeEnd;
     }
 
     /**
-     * Sets the session start time end.
+     * Sets the value of the sessionStartTimeEnd property.
      * 
-     * @param value the new session start time end
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSessionStartTimeEnd(String value) {
         this.sessionStartTimeEnd = value;

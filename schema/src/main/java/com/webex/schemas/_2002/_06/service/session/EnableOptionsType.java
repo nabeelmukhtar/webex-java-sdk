@@ -27,7 +27,25 @@ import com.webex.schemas._2002._06.service.trainingsession.TrainingEnableOptions
 
 
 /**
- * The Class EnableOptionsType.
+ * <p>Java class for enableOptionsType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="enableOptionsType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="attendeeList" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="javaClient" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="nativeClient" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "enableOptionsType", propOrder = {
@@ -42,70 +60,81 @@ public class EnableOptionsType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The attendee list. */
     @XmlElement(defaultValue = "false")
     protected Boolean attendeeList;
-    
-    /** The java client. */
     @XmlElement(defaultValue = "false")
     protected Boolean javaClient;
-    
-    /** The native client. */
     @XmlElement(defaultValue = "true")
     protected Boolean nativeClient;
 
     /**
-     * Checks if is attendee list.
+     * Gets the value of the attendeeList property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isAttendeeList() {
         return attendeeList;
     }
 
     /**
-     * Sets the attendee list.
+     * Sets the value of the attendeeList property.
      * 
-     * @param value the new attendee list
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setAttendeeList(Boolean value) {
         this.attendeeList = value;
     }
 
     /**
-     * Checks if is java client.
+     * Gets the value of the javaClient property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isJavaClient() {
         return javaClient;
     }
 
     /**
-     * Sets the java client.
+     * Sets the value of the javaClient property.
      * 
-     * @param value the new java client
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setJavaClient(Boolean value) {
         this.javaClient = value;
     }
 
     /**
-     * Checks if is native client.
+     * Gets the value of the nativeClient property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isNativeClient() {
         return nativeClient;
     }
 
     /**
-     * Sets the native client.
+     * Sets the value of the nativeClient property.
      * 
-     * @param value the new native client
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setNativeClient(Boolean value) {
         this.nativeClient = value;

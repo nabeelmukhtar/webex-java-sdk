@@ -24,1550 +24,1079 @@ import javax.xml.namespace.QName;
 
 
 /**
- * A factory for creating Object objects.
+ * This object contains factory methods for each 
+ * Java content interface and Java element interface 
+ * generated in the com.webex.schemas._2002._06.service.trainingsessionqtiasi package. 
+ * <p>An ObjectFactory allows you to programatically 
+ * construct new instances of the Java representation 
+ * for XML content. The Java representation of XML 
+ * content can consist of schema derived interfaces 
+ * and classes representing the binding of schema 
+ * type definitions, element declarations and model 
+ * groups.  Factory methods for each of these are 
+ * provided in this class.
+ * 
  */
 @XmlRegistry
 public class ObjectFactory {
 
-    /** The Constant _ResponseNumTypeRenderFib_QNAME. */
-    private final static QName _ResponseNumTypeRenderFib_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "render_fib");
-    
-    /** The Constant _ResponseNumTypeRenderChoice_QNAME. */
-    private final static QName _ResponseNumTypeRenderChoice_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "render_choice");
-    
-    /** The Constant _ResponseNumTypeRenderSlider_QNAME. */
-    private final static QName _ResponseNumTypeRenderSlider_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "render_slider");
-    
-    /** The Constant _ResponseNumTypeMaterialRef_QNAME. */
-    private final static QName _ResponseNumTypeMaterialRef_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "material_ref");
-    
-    /** The Constant _ResponseNumTypeRenderHotspot_QNAME. */
-    private final static QName _ResponseNumTypeRenderHotspot_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "render_hotspot");
-    
-    /** The Constant _ResponseNumTypeMaterial_QNAME. */
-    private final static QName _ResponseNumTypeMaterial_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "material");
-    
-    /** The Constant _ResponseNumTypeRenderExtension_QNAME. */
-    private final static QName _ResponseNumTypeRenderExtension_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "render_extension");
-    
-    /** The Constant _Matapplication_QNAME. */
     private final static QName _Matapplication_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "matapplication");
-    
-    /** The Constant _And_QNAME. */
     private final static QName _And_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "and");
-    
-    /** The Constant _ResponseNa_QNAME. */
     private final static QName _ResponseNa_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "response_na");
-    
-    /** The Constant _QmdComputerscored_QNAME. */
     private final static QName _QmdComputerscored_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qmd_computerscored");
-    
-    /** The Constant _Fieldentry_QNAME. */
     private final static QName _Fieldentry_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "fieldentry");
-    
-    /** The Constant _AndSelection_QNAME. */
     private final static QName _AndSelection_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "and_selection");
-    
-    /** The Constant _ObjectscondExtension_QNAME. */
     private final static QName _ObjectscondExtension_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "objectscond_extension");
-    
-    /** The Constant _QmdItemtype_QNAME. */
     private final static QName _QmdItemtype_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qmd_itemtype");
-    
-    /** The Constant _QmdMaterial_QNAME. */
     private final static QName _QmdMaterial_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qmd_material");
-    
-    /** The Constant _AndTest_QNAME. */
     private final static QName _AndTest_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "and_test");
-    
-    /** The Constant _Solutionmaterial_QNAME. */
     private final static QName _Solutionmaterial_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "solutionmaterial");
-    
-    /** The Constant _QmdFeedbackpermitted_QNAME. */
     private final static QName _QmdFeedbackpermitted_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qmd_feedbackpermitted");
-    
-    /** The Constant _FlowLabel_QNAME. */
     private final static QName _FlowLabel_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "flow_label");
-    
-    /** The Constant _VarExtension_QNAME. */
     private final static QName _VarExtension_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "var_extension");
-    
-    /** The Constant _QmdResponsetype_QNAME. */
     private final static QName _QmdResponsetype_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qmd_responsetype");
-    
-    /** The Constant _Mataudio_QNAME. */
     private final static QName _Mataudio_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "mataudio");
-    
-    /** The Constant _Matapplet_QNAME. */
     private final static QName _Matapplet_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "matapplet");
-    
-    /** The Constant _Matref_QNAME. */
     private final static QName _Matref_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "matref");
-    
-    /** The Constant _Itemcontrol_QNAME. */
     private final static QName _Itemcontrol_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "itemcontrol");
-    
-    /** The Constant _FlowMat_QNAME. */
     private final static QName _FlowMat_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "flow_mat");
-    
-    /** The Constant _Reference_QNAME. */
     private final static QName _Reference_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "reference");
-    
-    /** The Constant _Itemref_QNAME. */
     private final static QName _Itemref_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "itemref");
-    
-    /** The Constant _Itemmetadata_QNAME. */
     private final static QName _Itemmetadata_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "itemmetadata");
-    
-    /** The Constant _Outcomes_QNAME. */
     private final static QName _Outcomes_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "outcomes");
-    
-    /** The Constant _Assessment_QNAME. */
+    private final static QName _RenderHotspot_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "render_hotspot");
     private final static QName _Assessment_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "assessment");
-    
-    /** The Constant _TestVariable_QNAME. */
     private final static QName _TestVariable_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "test_variable");
-    
-    /** The Constant _Durlte_QNAME. */
     private final static QName _Durlte_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "durlte");
-    
-    /** The Constant _Unanswered_QNAME. */
     private final static QName _Unanswered_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "unanswered");
-    
-    /** The Constant _Durlt_QNAME. */
     private final static QName _Durlt_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "durlt");
-    
-    /** The Constant _QmdLevelofdifficulty_QNAME. */
     private final static QName _QmdLevelofdifficulty_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qmd_levelofdifficulty");
-    
-    /** The Constant _ResponseLabelType_QNAME. */
     private final static QName _ResponseLabelType_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "response_labelType");
-    
-    /** The Constant _Sectionref_QNAME. */
     private final static QName _Sectionref_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "sectionref");
-    
-    /** The Constant _SelectionNumber_QNAME. */
     private final static QName _SelectionNumber_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "selection_number");
-    
-    /** The Constant _Fieldlabel_QNAME. */
     private final static QName _Fieldlabel_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "fieldlabel");
-    
-    /** The Constant _Varinside_QNAME. */
+    private final static QName _RenderExtension_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "render_extension");
     private final static QName _Varinside_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "varinside");
-    
-    /** The Constant _VariableTest_QNAME. */
     private final static QName _VariableTest_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "variable_test");
-    
-    /** The Constant _Respcondition_QNAME. */
     private final static QName _Respcondition_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "respcondition");
-    
-    /** The Constant _Varsubset_QNAME. */
     private final static QName _Varsubset_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "varsubset");
-    
-    /** The Constant _Qticomment_QNAME. */
     private final static QName _Qticomment_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qticomment");
-    
-    /** The Constant _Matvideo_QNAME. */
     private final static QName _Matvideo_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "matvideo");
-    
-    /** The Constant _QmdTimelimit_QNAME. */
     private final static QName _QmdTimelimit_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qmd_timelimit");
-    
-    /** The Constant _Flow_QNAME. */
     private final static QName _Flow_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "flow");
-    
-    /** The Constant _SelectionMetadata_QNAME. */
     private final static QName _SelectionMetadata_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "selection_metadata");
-    
-    /** The Constant _ResponseGrp_QNAME. */
     private final static QName _ResponseGrp_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "response_grp");
-    
-    /** The Constant _QmdHintspermitted_QNAME. */
     private final static QName _QmdHintspermitted_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qmd_hintspermitted");
-    
-    /** The Constant _Assessfeedback_QNAME. */
     private final static QName _Assessfeedback_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "assessfeedback");
-    
-    /** The Constant _Itemfeedback_QNAME. */
     private final static QName _Itemfeedback_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "itemfeedback");
-    
-    /** The Constant _Selection_QNAME. */
+    private final static QName _Material_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "material");
     private final static QName _Selection_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "selection");
-    
-    /** The Constant _Altmaterial_QNAME. */
     private final static QName _Altmaterial_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "altmaterial");
-    
-    /** The Constant _QmdWeighting_QNAME. */
     private final static QName _QmdWeighting_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qmd_weighting");
-    
-    /** The Constant _ResponseExtension_QNAME. */
     private final static QName _ResponseExtension_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "response_extension");
-    
-    /** The Constant _QmdToolvendor_QNAME. */
     private final static QName _QmdToolvendor_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qmd_toolvendor");
-    
-    /** The Constant _Questestinterop_QNAME. */
     private final static QName _Questestinterop_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "questestinterop");
-    
-    /** The Constant _Sectioncontrol_QNAME. */
     private final static QName _Sectioncontrol_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "sectioncontrol");
-    
-    /** The Constant _SelectionOrdering_QNAME. */
     private final static QName _SelectionOrdering_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "selection_ordering");
-    
-    /** The Constant _Mattext_QNAME. */
     private final static QName _Mattext_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "mattext");
-    
-    /** The Constant _MapOutput_QNAME. */
     private final static QName _MapOutput_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "map_output");
-    
-    /** The Constant _Conditionvar_QNAME. */
     private final static QName _Conditionvar_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "conditionvar");
-    
-    /** The Constant _Sectionprecondition_QNAME. */
+    private final static QName _MaterialRef_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "material_ref");
     private final static QName _Sectionprecondition_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "sectionprecondition");
-    
-    /** The Constant _Sectionfeedback_QNAME. */
     private final static QName _Sectionfeedback_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "sectionfeedback");
-    
-    /** The Constant _SelectionExtension_QNAME. */
     private final static QName _SelectionExtension_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "selection_extension");
-    
-    /** The Constant _OutcomesMetadata_QNAME. */
     private final static QName _OutcomesMetadata_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "outcomes_metadata");
-    
-    /** The Constant _Interpretvar_QNAME. */
     private final static QName _Interpretvar_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "interpretvar");
-    
-    /** The Constant _Vargt_QNAME. */
+    private final static QName _RenderSlider_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "render_slider");
     private final static QName _Vargt_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "vargt");
-    
-    /** The Constant _Displayfeedback_QNAME. */
     private final static QName _Displayfeedback_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "displayfeedback");
-    
-    /** The Constant _Presentation_QNAME. */
     private final static QName _Presentation_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "presentation");
-    
-    /** The Constant _Itempostcondition_QNAME. */
+    private final static QName _RenderFib_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "render_fib");
     private final static QName _Itempostcondition_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "itempostcondition");
-    
-    /** The Constant _Matemtext_QNAME. */
     private final static QName _Matemtext_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "matemtext");
-    
-    /** The Constant _ResponseNum_QNAME. */
     private final static QName _ResponseNum_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "response_num");
-    
-    /** The Constant _Durgte_QNAME. */
     private final static QName _Durgte_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "durgte");
-    
-    /** The Constant _MatExtension_QNAME. */
     private final static QName _MatExtension_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "mat_extension");
-    
-    /** The Constant _Resprocessing_QNAME. */
     private final static QName _Resprocessing_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "resprocessing");
-    
-    /** The Constant _Hintmaterial_QNAME. */
     private final static QName _Hintmaterial_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "hintmaterial");
-    
-    /** The Constant _Vocabulary_QNAME. */
     private final static QName _Vocabulary_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "vocabulary");
-    
-    /** The Constant _ProcessingParameter_QNAME. */
     private final static QName _ProcessingParameter_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "processing_parameter");
-    
-    /** The Constant _Assessmentcontrol_QNAME. */
     private final static QName _Assessmentcontrol_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "assessmentcontrol");
-    
-    /** The Constant _Section_QNAME. */
     private final static QName _Section_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "section");
-    
-    /** The Constant _Decvar_QNAME. */
     private final static QName _Decvar_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "decvar");
-    
-    /** The Constant _Hint_QNAME. */
     private final static QName _Hint_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "hint");
-    
-    /** The Constant _NotTest_QNAME. */
     private final static QName _NotTest_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "not_test");
-    
-    /** The Constant _QmdTopic_QNAME. */
     private final static QName _QmdTopic_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qmd_topic");
-    
-    /** The Constant _OutcomesFeedbackTest_QNAME. */
     private final static QName _OutcomesFeedbackTest_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "outcomes_feedback_test");
-    
-    /** The Constant _QmdStatus_QNAME. */
     private final static QName _QmdStatus_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qmd_status");
-    
-    /** The Constant _Duration_QNAME. */
     private final static QName _Duration_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "duration");
-    
-    /** The Constant _Objectives_QNAME. */
     private final static QName _Objectives_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "objectives");
-    
-    /** The Constant _ResponseStr_QNAME. */
     private final static QName _ResponseStr_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "response_str");
-    
-    /** The Constant _MapInput_QNAME. */
     private final static QName _MapInput_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "map_input");
-    
-    /** The Constant _SequenceParameter_QNAME. */
     private final static QName _SequenceParameter_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "sequence_parameter");
-    
-    /** The Constant _Varlte_QNAME. */
     private final static QName _Varlte_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "varlte");
-    
-    /** The Constant _Other_QNAME. */
     private final static QName _Other_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "other");
-    
-    /** The Constant _Solution_QNAME. */
     private final static QName _Solution_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "solution");
-    
-    /** The Constant _Order_QNAME. */
     private final static QName _Order_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "order");
-    
-    /** The Constant _SourcebankRef_QNAME. */
     private final static QName _SourcebankRef_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "sourcebank_ref");
-    
-    /** The Constant _QmdSolutionspermitted_QNAME. */
     private final static QName _QmdSolutionspermitted_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qmd_solutionspermitted");
-    
-    /** The Constant _Qtimetadata_QNAME. */
     private final static QName _Qtimetadata_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qtimetadata");
-    
-    /** The Constant _OutcomesProcessing_QNAME. */
     private final static QName _OutcomesProcessing_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "outcomes_processing");
-    
-    /** The Constant _Setvar_QNAME. */
     private final static QName _Setvar_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "setvar");
-    
-    /** The Constant _Itemprecondition_QNAME. */
     private final static QName _Itemprecondition_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "itemprecondition");
-    
-    /** The Constant _Or_QNAME. */
     private final static QName _Or_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "or");
-    
-    /** The Constant _OrderExtension_QNAME. */
     private final static QName _OrderExtension_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "order_extension");
-    
-    /** The Constant _Varequal_QNAME. */
     private final static QName _Varequal_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "varequal");
-    
-    /** The Constant _Itemrubric_QNAME. */
     private final static QName _Itemrubric_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "itemrubric");
-    
-    /** The Constant _QmdScoringpermitted_QNAME. */
     private final static QName _QmdScoringpermitted_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qmd_scoringpermitted");
-    
-    /** The Constant _QmdTimedependence_QNAME. */
     private final static QName _QmdTimedependence_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qmd_timedependence");
-    
-    /** The Constant _Sectionpostcondition_QNAME. */
     private final static QName _Sectionpostcondition_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "sectionpostcondition");
-    
-    /** The Constant _Not_QNAME. */
     private final static QName _Not_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "not");
-    
-    /** The Constant _AssessprocExtension_QNAME. */
     private final static QName _AssessprocExtension_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "assessproc_extension");
-    
-    /** The Constant _Durgt_QNAME. */
     private final static QName _Durgt_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "durgt");
-    
-    /** The Constant _ObjectsCondition_QNAME. */
     private final static QName _ObjectsCondition_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "objects_condition");
-    
-    /** The Constant _Qtimetadatafield_QNAME. */
+    private final static QName _RenderChoice_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "render_choice");
     private final static QName _Qtimetadatafield_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qtimetadatafield");
-    
-    /** The Constant _PresentationMaterial_QNAME. */
     private final static QName _PresentationMaterial_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "presentation_material");
-    
-    /** The Constant _Varlt_QNAME. */
     private final static QName _Varlt_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "varlt");
-    
-    /** The Constant _SectionprocExtension_QNAME. */
     private final static QName _SectionprocExtension_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "sectionproc_extension");
-    
-    /** The Constant _QmdTypeofsolution_QNAME. */
     private final static QName _QmdTypeofsolution_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qmd_typeofsolution");
-    
-    /** The Constant _Vargte_QNAME. */
     private final static QName _Vargte_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "vargte");
-    
-    /** The Constant _NotSelection_QNAME. */
     private final static QName _NotSelection_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "not_selection");
-    
-    /** The Constant _OrSelection_QNAME. */
     private final static QName _OrSelection_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "or_selection");
-    
-    /** The Constant _QmdMaximumscore_QNAME. */
     private final static QName _QmdMaximumscore_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qmd_maximumscore");
-    
-    /** The Constant _Objectbank_QNAME. */
     private final static QName _Objectbank_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "objectbank");
-    
-    /** The Constant _Item_QNAME. */
     private final static QName _Item_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "item");
-    
-    /** The Constant _AndObjects_QNAME. */
     private final static QName _AndObjects_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "and_objects");
-    
-    /** The Constant _Matbreak_QNAME. */
     private final static QName _Matbreak_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "matbreak");
-    
-    /** The Constant _OrObjects_QNAME. */
     private final static QName _OrObjects_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "or_objects");
-    
-    /** The Constant _RespcondExtension_QNAME. */
     private final static QName _RespcondExtension_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "respcond_extension");
-    
-    /** The Constant _ResponseXy_QNAME. */
     private final static QName _ResponseXy_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "response_xy");
-    
-    /** The Constant _ResponseLid_QNAME. */
     private final static QName _ResponseLid_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "response_lid");
-    
-    /** The Constant _Rubric_QNAME. */
     private final static QName _Rubric_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "rubric");
-    
-    /** The Constant _Varsubstring_QNAME. */
     private final static QName _Varsubstring_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "varsubstring");
-    
-    /** The Constant _QmdRenderingtype_QNAME. */
     private final static QName _QmdRenderingtype_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "qmd_renderingtype");
-    
-    /** The Constant _OrTest_QNAME. */
     private final static QName _OrTest_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "or_test");
-    
-    /** The Constant _ItemprocExtension_QNAME. */
     private final static QName _ItemprocExtension_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "itemproc_extension");
-    
-    /** The Constant _Matimage_QNAME. */
     private final static QName _Matimage_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "matimage");
-    
-    /** The Constant _Durequal_QNAME. */
     private final static QName _Durequal_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "durequal");
-    
-    /** The Constant _NotObjects_QNAME. */
     private final static QName _NotObjects_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "not_objects");
-    
-    /** The Constant _ObjectsParameter_QNAME. */
     private final static QName _ObjectsParameter_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", "objects_parameter");
 
     /**
-     * Instantiates a new object factory.
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.webex.schemas._2002._06.service.trainingsessionqtiasi
+     * 
      */
     public ObjectFactory() {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link VarequalType }
      * 
-     * @return the matemtext type
-     */
-    public MatemtextType createMatemtextType() {
-        return new MatemtextType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the selection metadata type
-     */
-    public SelectionMetadataType createSelectionMetadataType() {
-        return new SelectionMetadataType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the order type
-     */
-    public OrderType createOrderType() {
-        return new OrderType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the assessment type
-     */
-    public AssessmentType createAssessmentType() {
-        return new AssessmentType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the response na type
-     */
-    public ResponseNaType createResponseNaType() {
-        return new ResponseNaType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the and selection type
-     */
-    public AndSelectionType createAndSelectionType() {
-        return new AndSelectionType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the objectives type
-     */
-    public ObjectivesType createObjectivesType() {
-        return new ObjectivesType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the sectioncontrol type
-     */
-    public SectioncontrolType createSectioncontrolType() {
-        return new SectioncontrolType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the item type
-     */
-    public ItemType createItemType() {
-        return new ItemType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the solution type
-     */
-    public SolutionType createSolutionType() {
-        return new SolutionType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the flow type
-     */
-    public FlowType createFlowType() {
-        return new FlowType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the material ref type
-     */
-    public MaterialRefType createMaterialRefType() {
-        return new MaterialRefType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the qticomment type
-     */
-    public QticommentType createQticommentType() {
-        return new QticommentType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the assessproc extension type
-     */
-    public AssessprocExtensionType createAssessprocExtensionType() {
-        return new AssessprocExtensionType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the mataudio type
-     */
-    public MataudioType createMataudioType() {
-        return new MataudioType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the outcomes processing type
-     */
-    public OutcomesProcessingType createOutcomesProcessingType() {
-        return new OutcomesProcessingType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the sectionfeedback type
-     */
-    public SectionfeedbackType createSectionfeedbackType() {
-        return new SectionfeedbackType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the matbreak type
-     */
-    public MatbreakType createMatbreakType() {
-        return new MatbreakType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the presentation material type
-     */
-    public PresentationMaterialType createPresentationMaterialType() {
-        return new PresentationMaterialType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the varlte type
-     */
-    public VarlteType createVarlteType() {
-        return new VarlteType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the itemfeedback type
-     */
-    public ItemfeedbackType createItemfeedbackType() {
-        return new ItemfeedbackType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the assessmentcontrol type
-     */
-    public AssessmentcontrolType createAssessmentcontrolType() {
-        return new AssessmentcontrolType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the sectionref type
-     */
-    public SectionrefType createSectionrefType() {
-        return new SectionrefType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the durgt type
-     */
-    public DurgtType createDurgtType() {
-        return new DurgtType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the durgte type
-     */
-    public DurgteType createDurgteType() {
-        return new DurgteType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the varinside type
-     */
-    public VarinsideType createVarinsideType() {
-        return new VarinsideType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the varsubset type
-     */
-    public VarsubsetType createVarsubsetType() {
-        return new VarsubsetType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the outcomes feedback test type
-     */
-    public OutcomesFeedbackTestType createOutcomesFeedbackTestType() {
-        return new OutcomesFeedbackTestType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the response str type
-     */
-    public ResponseStrType createResponseStrType() {
-        return new ResponseStrType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the selection extension type
-     */
-    public SelectionExtensionType createSelectionExtensionType() {
-        return new SelectionExtensionType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the flow label type
-     */
-    public FlowLabelType createFlowLabelType() {
-        return new FlowLabelType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the vargte type
-     */
-    public VargteType createVargteType() {
-        return new VargteType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the response grp type
-     */
-    public ResponseGrpType createResponseGrpType() {
-        return new ResponseGrpType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the outcomes metadata type
-     */
-    public OutcomesMetadataType createOutcomesMetadataType() {
-        return new OutcomesMetadataType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the not type
-     */
-    public NotType createNotType() {
-        return new NotType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the matapplet type
-     */
-    public MatappletType createMatappletType() {
-        return new MatappletType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the render choice type
-     */
-    public RenderChoiceType createRenderChoiceType() {
-        return new RenderChoiceType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the map output type
-     */
-    public MapOutputType createMapOutputType() {
-        return new MapOutputType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the or test type
-     */
-    public OrTestType createOrTestType() {
-        return new OrTestType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the selection type
-     */
-    public SelectionType createSelectionType() {
-        return new SelectionType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the varsubstring type
-     */
-    public VarsubstringType createVarsubstringType() {
-        return new VarsubstringType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the assessfeedback type
-     */
-    public AssessfeedbackType createAssessfeedbackType() {
-        return new AssessfeedbackType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the response extension type
-     */
-    public ResponseExtensionType createResponseExtensionType() {
-        return new ResponseExtensionType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the order extension type
-     */
-    public OrderExtensionType createOrderExtensionType() {
-        return new OrderExtensionType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the interpretvar type
-     */
-    public InterpretvarType createInterpretvarType() {
-        return new InterpretvarType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the objectbank type
-     */
-    public ObjectbankType createObjectbankType() {
-        return new ObjectbankType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the objects parameter type
-     */
-    public ObjectsParameterType createObjectsParameterType() {
-        return new ObjectsParameterType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the hint type
-     */
-    public HintType createHintType() {
-        return new HintType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the vargt type
-     */
-    public VargtType createVargtType() {
-        return new VargtType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the objects condition type
-     */
-    public ObjectsConditionType createObjectsConditionType() {
-        return new ObjectsConditionType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the map input type
-     */
-    public MapInputType createMapInputType() {
-        return new MapInputType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the itemmetadata type
-     */
-    public ItemmetadataType createItemmetadataType() {
-        return new ItemmetadataType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the matimage type
-     */
-    public MatimageType createMatimageType() {
-        return new MatimageType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the test variable type
-     */
-    public TestVariableType createTestVariableType() {
-        return new TestVariableType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the response num type
-     */
-    public ResponseNumType createResponseNumType() {
-        return new ResponseNumType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the and objects type
-     */
-    public AndObjectsType createAndObjectsType() {
-        return new AndObjectsType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the selection ordering type
-     */
-    public SelectionOrderingType createSelectionOrderingType() {
-        return new SelectionOrderingType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the or objects type
-     */
-    public OrObjectsType createOrObjectsType() {
-        return new OrObjectsType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the material type
-     */
-    public MaterialType createMaterialType() {
-        return new MaterialType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the sectionproc extension type
-     */
-    public SectionprocExtensionType createSectionprocExtensionType() {
-        return new SectionprocExtensionType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the hintmaterial type
-     */
-    public HintmaterialType createHintmaterialType() {
-        return new HintmaterialType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the varequal type
      */
     public VarequalType createVarequalType() {
         return new VarequalType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link OrSelectionType }
      * 
-     * @return the response label type
-     */
-    public ResponseLabelType createResponseLabelType() {
-        return new ResponseLabelType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the matvideo type
-     */
-    public MatvideoType createMatvideoType() {
-        return new MatvideoType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the questestinterop type
-     */
-    public QuestestinteropType createQuestestinteropType() {
-        return new QuestestinteropType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the displayfeedback type
-     */
-    public DisplayfeedbackType createDisplayfeedbackType() {
-        return new DisplayfeedbackType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the or selection type
      */
     public OrSelectionType createOrSelectionType() {
         return new OrSelectionType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link DecvarType }
      * 
-     * @return the qtimetadatafield type
-     */
-    public QtimetadatafieldType createQtimetadatafieldType() {
-        return new QtimetadatafieldType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the mattext type
-     */
-    public MattextType createMattextType() {
-        return new MattextType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the itemref type
-     */
-    public ItemrefType createItemrefType() {
-        return new ItemrefType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the altmaterial type
-     */
-    public AltmaterialType createAltmaterialType() {
-        return new AltmaterialType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the section type
-     */
-    public SectionType createSectionType() {
-        return new SectionType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the response xy type
-     */
-    public ResponseXyType createResponseXyType() {
-        return new ResponseXyType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the render extension type
-     */
-    public RenderExtensionType createRenderExtensionType() {
-        return new RenderExtensionType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the vocabulary type
-     */
-    public VocabularyType createVocabularyType() {
-        return new VocabularyType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the decvar type
      */
     public DecvarType createDecvarType() {
         return new DecvarType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link AndSelectionType }
      * 
-     * @return the setvar type
      */
-    public SetvarType createSetvarType() {
-        return new SetvarType();
+    public AndSelectionType createAndSelectionType() {
+        return new AndSelectionType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link OrderType }
      * 
-     * @return the reference type
      */
-    public ReferenceType createReferenceType() {
-        return new ReferenceType();
+    public OrderType createOrderType() {
+        return new OrderType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link SectionfeedbackType }
      * 
-     * @return the render hotspot type
      */
-    public RenderHotspotType createRenderHotspotType() {
-        return new RenderHotspotType();
+    public SectionfeedbackType createSectionfeedbackType() {
+        return new SectionfeedbackType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link FlowMatType }
      * 
-     * @return the render fib type
-     */
-    public RenderFibType createRenderFibType() {
-        return new RenderFibType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the outcomes type
-     */
-    public OutcomesType createOutcomesType() {
-        return new OutcomesType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the processing parameter type
-     */
-    public ProcessingParameterType createProcessingParameterType() {
-        return new ProcessingParameterType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the varlt type
-     */
-    public VarltType createVarltType() {
-        return new VarltType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the unanswered type
-     */
-    public UnansweredType createUnansweredType() {
-        return new UnansweredType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the render slider type
-     */
-    public RenderSliderType createRenderSliderType() {
-        return new RenderSliderType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the or type
-     */
-    public OrType createOrType() {
-        return new OrType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the not objects type
-     */
-    public NotObjectsType createNotObjectsType() {
-        return new NotObjectsType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the respcondition type
-     */
-    public RespconditionType createRespconditionType() {
-        return new RespconditionType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the not test type
-     */
-    public NotTestType createNotTestType() {
-        return new NotTestType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the solutionmaterial type
-     */
-    public SolutionmaterialType createSolutionmaterialType() {
-        return new SolutionmaterialType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the itemrubric type
-     */
-    public ItemrubricType createItemrubricType() {
-        return new ItemrubricType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the rubric type
-     */
-    public RubricType createRubricType() {
-        return new RubricType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the and test type
-     */
-    public AndTestType createAndTestType() {
-        return new AndTestType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the and type
-     */
-    public AndType createAndType() {
-        return new AndType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the response lid type
-     */
-    public ResponseLidType createResponseLidType() {
-        return new ResponseLidType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the not selection type
-     */
-    public NotSelectionType createNotSelectionType() {
-        return new NotSelectionType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the resprocessing type
-     */
-    public ResprocessingType createResprocessingType() {
-        return new ResprocessingType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the itemproc extension type
-     */
-    public ItemprocExtensionType createItemprocExtensionType() {
-        return new ItemprocExtensionType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the durlte type
-     */
-    public DurlteType createDurlteType() {
-        return new DurlteType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the durequal type
-     */
-    public DurequalType createDurequalType() {
-        return new DurequalType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the variable test type
-     */
-    public VariableTestType createVariableTestType() {
-        return new VariableTestType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the presentation type
-     */
-    public PresentationType createPresentationType() {
-        return new PresentationType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the flow mat type
      */
     public FlowMatType createFlowMatType() {
         return new FlowMatType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link MatemtextType }
      * 
-     * @return the matapplication type
      */
-    public MatapplicationType createMatapplicationType() {
-        return new MatapplicationType();
+    public MatemtextType createMatemtextType() {
+        return new MatemtextType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link RenderChoiceType }
      * 
-     * @return the mat extension type
      */
-    public MatExtensionType createMatExtensionType() {
-        return new MatExtensionType();
+    public RenderChoiceType createRenderChoiceType() {
+        return new RenderChoiceType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link FlowLabelType }
      * 
-     * @return the conditionvar type
+     */
+    public FlowLabelType createFlowLabelType() {
+        return new FlowLabelType();
+    }
+
+    /**
+     * Create an instance of {@link RenderFibType }
+     * 
+     */
+    public RenderFibType createRenderFibType() {
+        return new RenderFibType();
+    }
+
+    /**
+     * Create an instance of {@link ConditionvarType }
+     * 
      */
     public ConditionvarType createConditionvarType() {
         return new ConditionvarType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link MaterialRefType }
      * 
-     * @return the matref type
      */
-    public MatrefType createMatrefType() {
-        return new MatrefType();
+    public MaterialRefType createMaterialRefType() {
+        return new MaterialRefType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link VarinsideType }
      * 
-     * @return the respcond extension type
      */
-    public RespcondExtensionType createRespcondExtensionType() {
-        return new RespcondExtensionType();
+    public VarinsideType createVarinsideType() {
+        return new VarinsideType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link ItemcontrolType }
      * 
-     * @return the qtimetadata type
-     */
-    public QtimetadataType createQtimetadataType() {
-        return new QtimetadataType();
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @return the itemcontrol type
      */
     public ItemcontrolType createItemcontrolType() {
         return new ItemcontrolType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link AssessmentcontrolType }
      * 
-     * @return the var extension type
+     */
+    public AssessmentcontrolType createAssessmentcontrolType() {
+        return new AssessmentcontrolType();
+    }
+
+    /**
+     * Create an instance of {@link QuestestinteropType }
+     * 
+     */
+    public QuestestinteropType createQuestestinteropType() {
+        return new QuestestinteropType();
+    }
+
+    /**
+     * Create an instance of {@link NotType }
+     * 
+     */
+    public NotType createNotType() {
+        return new NotType();
+    }
+
+    /**
+     * Create an instance of {@link MapInputType }
+     * 
+     */
+    public MapInputType createMapInputType() {
+        return new MapInputType();
+    }
+
+    /**
+     * Create an instance of {@link DurgtType }
+     * 
+     */
+    public DurgtType createDurgtType() {
+        return new DurgtType();
+    }
+
+    /**
+     * Create an instance of {@link NotSelectionType }
+     * 
+     */
+    public NotSelectionType createNotSelectionType() {
+        return new NotSelectionType();
+    }
+
+    /**
+     * Create an instance of {@link FlowType }
+     * 
+     */
+    public FlowType createFlowType() {
+        return new FlowType();
+    }
+
+    /**
+     * Create an instance of {@link DisplayfeedbackType }
+     * 
+     */
+    public DisplayfeedbackType createDisplayfeedbackType() {
+        return new DisplayfeedbackType();
+    }
+
+    /**
+     * Create an instance of {@link AssessmentType }
+     * 
+     */
+    public AssessmentType createAssessmentType() {
+        return new AssessmentType();
+    }
+
+    /**
+     * Create an instance of {@link VarsubsetType }
+     * 
+     */
+    public VarsubsetType createVarsubsetType() {
+        return new VarsubsetType();
+    }
+
+    /**
+     * Create an instance of {@link ResponseNaType }
+     * 
+     */
+    public ResponseNaType createResponseNaType() {
+        return new ResponseNaType();
+    }
+
+    /**
+     * Create an instance of {@link ObjectbankType }
+     * 
+     */
+    public ObjectbankType createObjectbankType() {
+        return new ObjectbankType();
+    }
+
+    /**
+     * Create an instance of {@link AssessfeedbackType }
+     * 
+     */
+    public AssessfeedbackType createAssessfeedbackType() {
+        return new AssessfeedbackType();
+    }
+
+    /**
+     * Create an instance of {@link SolutionmaterialType }
+     * 
+     */
+    public SolutionmaterialType createSolutionmaterialType() {
+        return new SolutionmaterialType();
+    }
+
+    /**
+     * Create an instance of {@link QtimetadatafieldType }
+     * 
+     */
+    public QtimetadatafieldType createQtimetadatafieldType() {
+        return new QtimetadatafieldType();
+    }
+
+    /**
+     * Create an instance of {@link VarExtensionType }
+     * 
      */
     public VarExtensionType createVarExtensionType() {
         return new VarExtensionType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link DurlteType }
      * 
-     * @return the sequence parameter type
+     */
+    public DurlteType createDurlteType() {
+        return new DurlteType();
+    }
+
+    /**
+     * Create an instance of {@link VarsubstringType }
+     * 
+     */
+    public VarsubstringType createVarsubstringType() {
+        return new VarsubstringType();
+    }
+
+    /**
+     * Create an instance of {@link MatbreakType }
+     * 
+     */
+    public MatbreakType createMatbreakType() {
+        return new MatbreakType();
+    }
+
+    /**
+     * Create an instance of {@link SolutionType }
+     * 
+     */
+    public SolutionType createSolutionType() {
+        return new SolutionType();
+    }
+
+    /**
+     * Create an instance of {@link ResponseStrType }
+     * 
+     */
+    public ResponseStrType createResponseStrType() {
+        return new ResponseStrType();
+    }
+
+    /**
+     * Create an instance of {@link DurgteType }
+     * 
+     */
+    public DurgteType createDurgteType() {
+        return new DurgteType();
+    }
+
+    /**
+     * Create an instance of {@link VarlteType }
+     * 
+     */
+    public VarlteType createVarlteType() {
+        return new VarlteType();
+    }
+
+    /**
+     * Create an instance of {@link SectionrefType }
+     * 
+     */
+    public SectionrefType createSectionrefType() {
+        return new SectionrefType();
+    }
+
+    /**
+     * Create an instance of {@link SelectionMetadataType }
+     * 
+     */
+    public SelectionMetadataType createSelectionMetadataType() {
+        return new SelectionMetadataType();
+    }
+
+    /**
+     * Create an instance of {@link RespconditionType }
+     * 
+     */
+    public RespconditionType createRespconditionType() {
+        return new RespconditionType();
+    }
+
+    /**
+     * Create an instance of {@link OrObjectsType }
+     * 
+     */
+    public OrObjectsType createOrObjectsType() {
+        return new OrObjectsType();
+    }
+
+    /**
+     * Create an instance of {@link SelectionOrderingType }
+     * 
+     */
+    public SelectionOrderingType createSelectionOrderingType() {
+        return new SelectionOrderingType();
+    }
+
+    /**
+     * Create an instance of {@link MatimageType }
+     * 
+     */
+    public MatimageType createMatimageType() {
+        return new MatimageType();
+    }
+
+    /**
+     * Create an instance of {@link ProcessingParameterType }
+     * 
+     */
+    public ProcessingParameterType createProcessingParameterType() {
+        return new ProcessingParameterType();
+    }
+
+    /**
+     * Create an instance of {@link ItemrubricType }
+     * 
+     */
+    public ItemrubricType createItemrubricType() {
+        return new ItemrubricType();
+    }
+
+    /**
+     * Create an instance of {@link TestVariableType }
+     * 
+     */
+    public TestVariableType createTestVariableType() {
+        return new TestVariableType();
+    }
+
+    /**
+     * Create an instance of {@link OrderExtensionType }
+     * 
+     */
+    public OrderExtensionType createOrderExtensionType() {
+        return new OrderExtensionType();
+    }
+
+    /**
+     * Create an instance of {@link InterpretvarType }
+     * 
+     */
+    public InterpretvarType createInterpretvarType() {
+        return new InterpretvarType();
+    }
+
+    /**
+     * Create an instance of {@link MatappletType }
+     * 
+     */
+    public MatappletType createMatappletType() {
+        return new MatappletType();
+    }
+
+    /**
+     * Create an instance of {@link OutcomesFeedbackTestType }
+     * 
+     */
+    public OutcomesFeedbackTestType createOutcomesFeedbackTestType() {
+        return new OutcomesFeedbackTestType();
+    }
+
+    /**
+     * Create an instance of {@link MattextType }
+     * 
+     */
+    public MattextType createMattextType() {
+        return new MattextType();
+    }
+
+    /**
+     * Create an instance of {@link MatExtensionType }
+     * 
+     */
+    public MatExtensionType createMatExtensionType() {
+        return new MatExtensionType();
+    }
+
+    /**
+     * Create an instance of {@link SequenceParameterType }
+     * 
      */
     public SequenceParameterType createSequenceParameterType() {
         return new SequenceParameterType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link SetvarType }
      * 
-     * @return the durlt type
+     */
+    public SetvarType createSetvarType() {
+        return new SetvarType();
+    }
+
+    /**
+     * Create an instance of {@link ItemmetadataType }
+     * 
+     */
+    public ItemmetadataType createItemmetadataType() {
+        return new ItemmetadataType();
+    }
+
+    /**
+     * Create an instance of {@link RenderSliderType }
+     * 
+     */
+    public RenderSliderType createRenderSliderType() {
+        return new RenderSliderType();
+    }
+
+    /**
+     * Create an instance of {@link AssessprocExtensionType }
+     * 
+     */
+    public AssessprocExtensionType createAssessprocExtensionType() {
+        return new AssessprocExtensionType();
+    }
+
+    /**
+     * Create an instance of {@link SectioncontrolType }
+     * 
+     */
+    public SectioncontrolType createSectioncontrolType() {
+        return new SectioncontrolType();
+    }
+
+    /**
+     * Create an instance of {@link NotObjectsType }
+     * 
+     */
+    public NotObjectsType createNotObjectsType() {
+        return new NotObjectsType();
+    }
+
+    /**
+     * Create an instance of {@link AltmaterialType }
+     * 
+     */
+    public AltmaterialType createAltmaterialType() {
+        return new AltmaterialType();
+    }
+
+    /**
+     * Create an instance of {@link VocabularyType }
+     * 
+     */
+    public VocabularyType createVocabularyType() {
+        return new VocabularyType();
+    }
+
+    /**
+     * Create an instance of {@link UnansweredType }
+     * 
+     */
+    public UnansweredType createUnansweredType() {
+        return new UnansweredType();
+    }
+
+    /**
+     * Create an instance of {@link MatapplicationType }
+     * 
+     */
+    public MatapplicationType createMatapplicationType() {
+        return new MatapplicationType();
+    }
+
+    /**
+     * Create an instance of {@link OutcomesType }
+     * 
+     */
+    public OutcomesType createOutcomesType() {
+        return new OutcomesType();
+    }
+
+    /**
+     * Create an instance of {@link ItemrefType }
+     * 
+     */
+    public ItemrefType createItemrefType() {
+        return new ItemrefType();
+    }
+
+    /**
+     * Create an instance of {@link MatvideoType }
+     * 
+     */
+    public MatvideoType createMatvideoType() {
+        return new MatvideoType();
+    }
+
+    /**
+     * Create an instance of {@link SectionprocExtensionType }
+     * 
+     */
+    public SectionprocExtensionType createSectionprocExtensionType() {
+        return new SectionprocExtensionType();
+    }
+
+    /**
+     * Create an instance of {@link OrTestType }
+     * 
+     */
+    public OrTestType createOrTestType() {
+        return new OrTestType();
+    }
+
+    /**
+     * Create an instance of {@link VargteType }
+     * 
+     */
+    public VargteType createVargteType() {
+        return new VargteType();
+    }
+
+    /**
+     * Create an instance of {@link HintType }
+     * 
+     */
+    public HintType createHintType() {
+        return new HintType();
+    }
+
+    /**
+     * Create an instance of {@link DurltType }
+     * 
      */
     public DurltType createDurltType() {
         return new DurltType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link ReferenceType }
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< render fib type>
      */
-    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_fib", scope = ResponseNumType.class)
-    public JAXBElement<RenderFibType> createResponseNumTypeRenderFib(RenderFibType value) {
-        return new JAXBElement<RenderFibType>(_ResponseNumTypeRenderFib_QNAME, RenderFibType.class, ResponseNumType.class, value);
+    public ReferenceType createReferenceType() {
+        return new ReferenceType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link ResponseExtensionType }
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< render choice type>
      */
-    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_choice", scope = ResponseNumType.class)
-    public JAXBElement<RenderChoiceType> createResponseNumTypeRenderChoice(RenderChoiceType value) {
-        return new JAXBElement<RenderChoiceType>(_ResponseNumTypeRenderChoice_QNAME, RenderChoiceType.class, ResponseNumType.class, value);
+    public ResponseExtensionType createResponseExtensionType() {
+        return new ResponseExtensionType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link VarltType }
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< render slider type>
      */
-    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_slider", scope = ResponseNumType.class)
-    public JAXBElement<RenderSliderType> createResponseNumTypeRenderSlider(RenderSliderType value) {
-        return new JAXBElement<RenderSliderType>(_ResponseNumTypeRenderSlider_QNAME, RenderSliderType.class, ResponseNumType.class, value);
+    public VarltType createVarltType() {
+        return new VarltType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link MaterialType }
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< material ref type>
      */
-    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "material_ref", scope = ResponseNumType.class)
-    public JAXBElement<MaterialRefType> createResponseNumTypeMaterialRef(MaterialRefType value) {
-        return new JAXBElement<MaterialRefType>(_ResponseNumTypeMaterialRef_QNAME, MaterialRefType.class, ResponseNumType.class, value);
+    public MaterialType createMaterialType() {
+        return new MaterialType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link NotTestType }
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< render hotspot type>
      */
-    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_hotspot", scope = ResponseNumType.class)
-    public JAXBElement<RenderHotspotType> createResponseNumTypeRenderHotspot(RenderHotspotType value) {
-        return new JAXBElement<RenderHotspotType>(_ResponseNumTypeRenderHotspot_QNAME, RenderHotspotType.class, ResponseNumType.class, value);
+    public NotTestType createNotTestType() {
+        return new NotTestType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link SelectionType }
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< material type>
      */
-    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "material", scope = ResponseNumType.class)
-    public JAXBElement<MaterialType> createResponseNumTypeMaterial(MaterialType value) {
-        return new JAXBElement<MaterialType>(_ResponseNumTypeMaterial_QNAME, MaterialType.class, ResponseNumType.class, value);
+    public SelectionType createSelectionType() {
+        return new SelectionType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link SectionType }
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< render extension type>
      */
-    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_extension", scope = ResponseNumType.class)
-    public JAXBElement<RenderExtensionType> createResponseNumTypeRenderExtension(RenderExtensionType value) {
-        return new JAXBElement<RenderExtensionType>(_ResponseNumTypeRenderExtension_QNAME, RenderExtensionType.class, ResponseNumType.class, value);
+    public SectionType createSectionType() {
+        return new SectionType();
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link AndType }
      * 
-     * @param value the value
+     */
+    public AndType createAndType() {
+        return new AndType();
+    }
+
+    /**
+     * Create an instance of {@link ResponseGrpType }
      * 
-     * @return the JAXB element< matapplication type>
+     */
+    public ResponseGrpType createResponseGrpType() {
+        return new ResponseGrpType();
+    }
+
+    /**
+     * Create an instance of {@link PresentationMaterialType }
+     * 
+     */
+    public PresentationMaterialType createPresentationMaterialType() {
+        return new PresentationMaterialType();
+    }
+
+    /**
+     * Create an instance of {@link SelectionExtensionType }
+     * 
+     */
+    public SelectionExtensionType createSelectionExtensionType() {
+        return new SelectionExtensionType();
+    }
+
+    /**
+     * Create an instance of {@link OutcomesMetadataType }
+     * 
+     */
+    public OutcomesMetadataType createOutcomesMetadataType() {
+        return new OutcomesMetadataType();
+    }
+
+    /**
+     * Create an instance of {@link ResponseLidType }
+     * 
+     */
+    public ResponseLidType createResponseLidType() {
+        return new ResponseLidType();
+    }
+
+    /**
+     * Create an instance of {@link PresentationType }
+     * 
+     */
+    public PresentationType createPresentationType() {
+        return new PresentationType();
+    }
+
+    /**
+     * Create an instance of {@link RespcondExtensionType }
+     * 
+     */
+    public RespcondExtensionType createRespcondExtensionType() {
+        return new RespcondExtensionType();
+    }
+
+    /**
+     * Create an instance of {@link ObjectsParameterType }
+     * 
+     */
+    public ObjectsParameterType createObjectsParameterType() {
+        return new ObjectsParameterType();
+    }
+
+    /**
+     * Create an instance of {@link QtimetadataType }
+     * 
+     */
+    public QtimetadataType createQtimetadataType() {
+        return new QtimetadataType();
+    }
+
+    /**
+     * Create an instance of {@link ObjectivesType }
+     * 
+     */
+    public ObjectivesType createObjectivesType() {
+        return new ObjectivesType();
+    }
+
+    /**
+     * Create an instance of {@link ItemfeedbackType }
+     * 
+     */
+    public ItemfeedbackType createItemfeedbackType() {
+        return new ItemfeedbackType();
+    }
+
+    /**
+     * Create an instance of {@link QticommentType }
+     * 
+     */
+    public QticommentType createQticommentType() {
+        return new QticommentType();
+    }
+
+    /**
+     * Create an instance of {@link VariableTestType }
+     * 
+     */
+    public VariableTestType createVariableTestType() {
+        return new VariableTestType();
+    }
+
+    /**
+     * Create an instance of {@link OutcomesProcessingType }
+     * 
+     */
+    public OutcomesProcessingType createOutcomesProcessingType() {
+        return new OutcomesProcessingType();
+    }
+
+    /**
+     * Create an instance of {@link ObjectsConditionType }
+     * 
+     */
+    public ObjectsConditionType createObjectsConditionType() {
+        return new ObjectsConditionType();
+    }
+
+    /**
+     * Create an instance of {@link VargtType }
+     * 
+     */
+    public VargtType createVargtType() {
+        return new VargtType();
+    }
+
+    /**
+     * Create an instance of {@link MatrefType }
+     * 
+     */
+    public MatrefType createMatrefType() {
+        return new MatrefType();
+    }
+
+    /**
+     * Create an instance of {@link RenderHotspotType }
+     * 
+     */
+    public RenderHotspotType createRenderHotspotType() {
+        return new RenderHotspotType();
+    }
+
+    /**
+     * Create an instance of {@link MataudioType }
+     * 
+     */
+    public MataudioType createMataudioType() {
+        return new MataudioType();
+    }
+
+    /**
+     * Create an instance of {@link ItemprocExtensionType }
+     * 
+     */
+    public ItemprocExtensionType createItemprocExtensionType() {
+        return new ItemprocExtensionType();
+    }
+
+    /**
+     * Create an instance of {@link HintmaterialType }
+     * 
+     */
+    public HintmaterialType createHintmaterialType() {
+        return new HintmaterialType();
+    }
+
+    /**
+     * Create an instance of {@link ResponseNumType }
+     * 
+     */
+    public ResponseNumType createResponseNumType() {
+        return new ResponseNumType();
+    }
+
+    /**
+     * Create an instance of {@link OrType }
+     * 
+     */
+    public OrType createOrType() {
+        return new OrType();
+    }
+
+    /**
+     * Create an instance of {@link RenderExtensionType }
+     * 
+     */
+    public RenderExtensionType createRenderExtensionType() {
+        return new RenderExtensionType();
+    }
+
+    /**
+     * Create an instance of {@link ResprocessingType }
+     * 
+     */
+    public ResprocessingType createResprocessingType() {
+        return new ResprocessingType();
+    }
+
+    /**
+     * Create an instance of {@link ResponseLabelType }
+     * 
+     */
+    public ResponseLabelType createResponseLabelType() {
+        return new ResponseLabelType();
+    }
+
+    /**
+     * Create an instance of {@link RubricType }
+     * 
+     */
+    public RubricType createRubricType() {
+        return new RubricType();
+    }
+
+    /**
+     * Create an instance of {@link AndTestType }
+     * 
+     */
+    public AndTestType createAndTestType() {
+        return new AndTestType();
+    }
+
+    /**
+     * Create an instance of {@link DurequalType }
+     * 
+     */
+    public DurequalType createDurequalType() {
+        return new DurequalType();
+    }
+
+    /**
+     * Create an instance of {@link ItemType }
+     * 
+     */
+    public ItemType createItemType() {
+        return new ItemType();
+    }
+
+    /**
+     * Create an instance of {@link MapOutputType }
+     * 
+     */
+    public MapOutputType createMapOutputType() {
+        return new MapOutputType();
+    }
+
+    /**
+     * Create an instance of {@link AndObjectsType }
+     * 
+     */
+    public AndObjectsType createAndObjectsType() {
+        return new AndObjectsType();
+    }
+
+    /**
+     * Create an instance of {@link ResponseXyType }
+     * 
+     */
+    public ResponseXyType createResponseXyType() {
+        return new ResponseXyType();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link MatapplicationType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "matapplication")
     public JAXBElement<MatapplicationType> createMatapplication(MatapplicationType value) {
@@ -1575,11 +1104,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link AndType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< and type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "and")
     public JAXBElement<AndType> createAnd(AndType value) {
@@ -1587,11 +1113,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ResponseNaType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< response na type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "response_na")
     public JAXBElement<ResponseNaType> createResponseNa(ResponseNaType value) {
@@ -1599,11 +1122,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qmd_computerscored")
     public JAXBElement<String> createQmdComputerscored(String value) {
@@ -1611,11 +1131,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "fieldentry")
     public JAXBElement<String> createFieldentry(String value) {
@@ -1623,11 +1140,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link AndSelectionType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< and selection type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "and_selection")
     public JAXBElement<AndSelectionType> createAndSelection(AndSelectionType value) {
@@ -1635,11 +1149,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "objectscond_extension")
     public JAXBElement<String> createObjectscondExtension(String value) {
@@ -1647,11 +1158,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qmd_itemtype")
     public JAXBElement<String> createQmdItemtype(String value) {
@@ -1659,11 +1167,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qmd_material")
     public JAXBElement<String> createQmdMaterial(String value) {
@@ -1671,11 +1176,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link AndTestType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< and test type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "and_test")
     public JAXBElement<AndTestType> createAndTest(AndTestType value) {
@@ -1683,11 +1185,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link SolutionmaterialType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< solutionmaterial type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "solutionmaterial")
     public JAXBElement<SolutionmaterialType> createSolutionmaterial(SolutionmaterialType value) {
@@ -1695,11 +1194,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qmd_feedbackpermitted")
     public JAXBElement<String> createQmdFeedbackpermitted(String value) {
@@ -1707,11 +1203,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link FlowLabelType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< flow label type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "flow_label")
     public JAXBElement<FlowLabelType> createFlowLabel(FlowLabelType value) {
@@ -1719,11 +1212,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link VarExtensionType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< var extension type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "var_extension")
     public JAXBElement<VarExtensionType> createVarExtension(VarExtensionType value) {
@@ -1731,11 +1221,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qmd_responsetype")
     public JAXBElement<String> createQmdResponsetype(String value) {
@@ -1743,11 +1230,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link MataudioType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< mataudio type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "mataudio")
     public JAXBElement<MataudioType> createMataudio(MataudioType value) {
@@ -1755,11 +1239,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link MatappletType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< matapplet type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "matapplet")
     public JAXBElement<MatappletType> createMatapplet(MatappletType value) {
@@ -1767,11 +1248,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link MatrefType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< matref type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "matref")
     public JAXBElement<MatrefType> createMatref(MatrefType value) {
@@ -1779,11 +1257,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ItemcontrolType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< itemcontrol type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "itemcontrol")
     public JAXBElement<ItemcontrolType> createItemcontrol(ItemcontrolType value) {
@@ -1791,11 +1266,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link FlowMatType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< flow mat type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "flow_mat")
     public JAXBElement<FlowMatType> createFlowMat(FlowMatType value) {
@@ -1803,11 +1275,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReferenceType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< reference type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "reference")
     public JAXBElement<ReferenceType> createReference(ReferenceType value) {
@@ -1815,11 +1284,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ItemrefType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< itemref type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "itemref")
     public JAXBElement<ItemrefType> createItemref(ItemrefType value) {
@@ -1827,11 +1293,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ItemmetadataType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< itemmetadata type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "itemmetadata")
     public JAXBElement<ItemmetadataType> createItemmetadata(ItemmetadataType value) {
@@ -1839,11 +1302,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link OutcomesType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< outcomes type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "outcomes")
     public JAXBElement<OutcomesType> createOutcomes(OutcomesType value) {
@@ -1851,23 +1311,17 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link RenderHotspotType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< render hotspot type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_hotspot")
     public JAXBElement<RenderHotspotType> createRenderHotspot(RenderHotspotType value) {
-        return new JAXBElement<RenderHotspotType>(_ResponseNumTypeRenderHotspot_QNAME, RenderHotspotType.class, null, value);
+        return new JAXBElement<RenderHotspotType>(_RenderHotspot_QNAME, RenderHotspotType.class, null, value);
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link AssessmentType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< assessment type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "assessment")
     public JAXBElement<AssessmentType> createAssessment(AssessmentType value) {
@@ -1875,11 +1329,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link TestVariableType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< test variable type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "test_variable")
     public JAXBElement<TestVariableType> createTestVariable(TestVariableType value) {
@@ -1887,11 +1338,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link DurlteType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< durlte type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "durlte")
     public JAXBElement<DurlteType> createDurlte(DurlteType value) {
@@ -1899,11 +1347,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link UnansweredType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< unanswered type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "unanswered")
     public JAXBElement<UnansweredType> createUnanswered(UnansweredType value) {
@@ -1911,11 +1356,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link DurltType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< durlt type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "durlt")
     public JAXBElement<DurltType> createDurlt(DurltType value) {
@@ -1923,11 +1365,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qmd_levelofdifficulty")
     public JAXBElement<String> createQmdLevelofdifficulty(String value) {
@@ -1935,11 +1374,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ResponseLabelType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< response label type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "response_labelType")
     public JAXBElement<ResponseLabelType> createResponseLabelType(ResponseLabelType value) {
@@ -1947,11 +1383,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link SectionrefType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< sectionref type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "sectionref")
     public JAXBElement<SectionrefType> createSectionref(SectionrefType value) {
@@ -1959,11 +1392,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "selection_number")
     public JAXBElement<String> createSelectionNumber(String value) {
@@ -1971,11 +1401,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "fieldlabel")
     public JAXBElement<String> createFieldlabel(String value) {
@@ -1983,23 +1410,17 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link RenderExtensionType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< render extension type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_extension")
     public JAXBElement<RenderExtensionType> createRenderExtension(RenderExtensionType value) {
-        return new JAXBElement<RenderExtensionType>(_ResponseNumTypeRenderExtension_QNAME, RenderExtensionType.class, null, value);
+        return new JAXBElement<RenderExtensionType>(_RenderExtension_QNAME, RenderExtensionType.class, null, value);
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link VarinsideType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< varinside type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "varinside")
     public JAXBElement<VarinsideType> createVarinside(VarinsideType value) {
@@ -2007,11 +1428,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link VariableTestType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< variable test type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "variable_test")
     public JAXBElement<VariableTestType> createVariableTest(VariableTestType value) {
@@ -2019,11 +1437,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link RespconditionType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< respcondition type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "respcondition")
     public JAXBElement<RespconditionType> createRespcondition(RespconditionType value) {
@@ -2031,11 +1446,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link VarsubsetType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< varsubset type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "varsubset")
     public JAXBElement<VarsubsetType> createVarsubset(VarsubsetType value) {
@@ -2043,11 +1455,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link QticommentType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< qticomment type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qticomment")
     public JAXBElement<QticommentType> createQticomment(QticommentType value) {
@@ -2055,11 +1464,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link MatvideoType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< matvideo type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "matvideo")
     public JAXBElement<MatvideoType> createMatvideo(MatvideoType value) {
@@ -2067,11 +1473,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qmd_timelimit")
     public JAXBElement<String> createQmdTimelimit(String value) {
@@ -2079,11 +1482,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link FlowType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< flow type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "flow")
     public JAXBElement<FlowType> createFlow(FlowType value) {
@@ -2091,11 +1491,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link SelectionMetadataType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< selection metadata type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "selection_metadata")
     public JAXBElement<SelectionMetadataType> createSelectionMetadata(SelectionMetadataType value) {
@@ -2103,11 +1500,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ResponseGrpType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< response grp type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "response_grp")
     public JAXBElement<ResponseGrpType> createResponseGrp(ResponseGrpType value) {
@@ -2115,11 +1509,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qmd_hintspermitted")
     public JAXBElement<String> createQmdHintspermitted(String value) {
@@ -2127,11 +1518,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link AssessfeedbackType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< assessfeedback type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "assessfeedback")
     public JAXBElement<AssessfeedbackType> createAssessfeedback(AssessfeedbackType value) {
@@ -2139,11 +1527,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ItemfeedbackType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< itemfeedback type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "itemfeedback")
     public JAXBElement<ItemfeedbackType> createItemfeedback(ItemfeedbackType value) {
@@ -2151,23 +1536,17 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link MaterialType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< material type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "material")
     public JAXBElement<MaterialType> createMaterial(MaterialType value) {
-        return new JAXBElement<MaterialType>(_ResponseNumTypeMaterial_QNAME, MaterialType.class, null, value);
+        return new JAXBElement<MaterialType>(_Material_QNAME, MaterialType.class, null, value);
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link SelectionType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< selection type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "selection")
     public JAXBElement<SelectionType> createSelection(SelectionType value) {
@@ -2175,11 +1554,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link AltmaterialType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< altmaterial type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "altmaterial")
     public JAXBElement<AltmaterialType> createAltmaterial(AltmaterialType value) {
@@ -2187,11 +1563,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qmd_weighting")
     public JAXBElement<String> createQmdWeighting(String value) {
@@ -2199,11 +1572,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ResponseExtensionType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< response extension type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "response_extension")
     public JAXBElement<ResponseExtensionType> createResponseExtension(ResponseExtensionType value) {
@@ -2211,11 +1581,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qmd_toolvendor")
     public JAXBElement<String> createQmdToolvendor(String value) {
@@ -2223,11 +1590,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link QuestestinteropType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< questestinterop type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "questestinterop")
     public JAXBElement<QuestestinteropType> createQuestestinterop(QuestestinteropType value) {
@@ -2235,11 +1599,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link SectioncontrolType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< sectioncontrol type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "sectioncontrol")
     public JAXBElement<SectioncontrolType> createSectioncontrol(SectioncontrolType value) {
@@ -2247,11 +1608,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link SelectionOrderingType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< selection ordering type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "selection_ordering")
     public JAXBElement<SelectionOrderingType> createSelectionOrdering(SelectionOrderingType value) {
@@ -2259,11 +1617,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link MattextType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< mattext type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "mattext")
     public JAXBElement<MattextType> createMattext(MattextType value) {
@@ -2271,11 +1626,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link MapOutputType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< map output type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "map_output")
     public JAXBElement<MapOutputType> createMapOutput(MapOutputType value) {
@@ -2283,11 +1635,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ConditionvarType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< conditionvar type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "conditionvar")
     public JAXBElement<ConditionvarType> createConditionvar(ConditionvarType value) {
@@ -2295,23 +1644,17 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link MaterialRefType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< material ref type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "material_ref")
     public JAXBElement<MaterialRefType> createMaterialRef(MaterialRefType value) {
-        return new JAXBElement<MaterialRefType>(_ResponseNumTypeMaterialRef_QNAME, MaterialRefType.class, null, value);
+        return new JAXBElement<MaterialRefType>(_MaterialRef_QNAME, MaterialRefType.class, null, value);
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "sectionprecondition")
     public JAXBElement<String> createSectionprecondition(String value) {
@@ -2319,11 +1662,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link SectionfeedbackType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< sectionfeedback type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "sectionfeedback")
     public JAXBElement<SectionfeedbackType> createSectionfeedback(SectionfeedbackType value) {
@@ -2331,11 +1671,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link SelectionExtensionType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< selection extension type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "selection_extension")
     public JAXBElement<SelectionExtensionType> createSelectionExtension(SelectionExtensionType value) {
@@ -2343,11 +1680,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link OutcomesMetadataType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< outcomes metadata type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "outcomes_metadata")
     public JAXBElement<OutcomesMetadataType> createOutcomesMetadata(OutcomesMetadataType value) {
@@ -2355,11 +1689,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link InterpretvarType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< interpretvar type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "interpretvar")
     public JAXBElement<InterpretvarType> createInterpretvar(InterpretvarType value) {
@@ -2367,23 +1698,17 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link RenderSliderType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< render slider type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_slider")
     public JAXBElement<RenderSliderType> createRenderSlider(RenderSliderType value) {
-        return new JAXBElement<RenderSliderType>(_ResponseNumTypeRenderSlider_QNAME, RenderSliderType.class, null, value);
+        return new JAXBElement<RenderSliderType>(_RenderSlider_QNAME, RenderSliderType.class, null, value);
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link VargtType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< vargt type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "vargt")
     public JAXBElement<VargtType> createVargt(VargtType value) {
@@ -2391,11 +1716,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link DisplayfeedbackType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< displayfeedback type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "displayfeedback")
     public JAXBElement<DisplayfeedbackType> createDisplayfeedback(DisplayfeedbackType value) {
@@ -2403,11 +1725,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link PresentationType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< presentation type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "presentation")
     public JAXBElement<PresentationType> createPresentation(PresentationType value) {
@@ -2415,23 +1734,17 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link RenderFibType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< render fib type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_fib")
     public JAXBElement<RenderFibType> createRenderFib(RenderFibType value) {
-        return new JAXBElement<RenderFibType>(_ResponseNumTypeRenderFib_QNAME, RenderFibType.class, null, value);
+        return new JAXBElement<RenderFibType>(_RenderFib_QNAME, RenderFibType.class, null, value);
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "itempostcondition")
     public JAXBElement<String> createItempostcondition(String value) {
@@ -2439,11 +1752,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link MatemtextType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< matemtext type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "matemtext")
     public JAXBElement<MatemtextType> createMatemtext(MatemtextType value) {
@@ -2451,11 +1761,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ResponseNumType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< response num type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "response_num")
     public JAXBElement<ResponseNumType> createResponseNum(ResponseNumType value) {
@@ -2463,11 +1770,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link DurgteType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< durgte type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "durgte")
     public JAXBElement<DurgteType> createDurgte(DurgteType value) {
@@ -2475,11 +1779,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link MatExtensionType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< mat extension type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "mat_extension")
     public JAXBElement<MatExtensionType> createMatExtension(MatExtensionType value) {
@@ -2487,11 +1788,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ResprocessingType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< resprocessing type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "resprocessing")
     public JAXBElement<ResprocessingType> createResprocessing(ResprocessingType value) {
@@ -2499,11 +1797,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link HintmaterialType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< hintmaterial type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "hintmaterial")
     public JAXBElement<HintmaterialType> createHintmaterial(HintmaterialType value) {
@@ -2511,11 +1806,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link VocabularyType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< vocabulary type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "vocabulary")
     public JAXBElement<VocabularyType> createVocabulary(VocabularyType value) {
@@ -2523,11 +1815,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ProcessingParameterType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< processing parameter type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "processing_parameter")
     public JAXBElement<ProcessingParameterType> createProcessingParameter(ProcessingParameterType value) {
@@ -2535,11 +1824,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link AssessmentcontrolType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< assessmentcontrol type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "assessmentcontrol")
     public JAXBElement<AssessmentcontrolType> createAssessmentcontrol(AssessmentcontrolType value) {
@@ -2547,11 +1833,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link SectionType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< section type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "section")
     public JAXBElement<SectionType> createSection(SectionType value) {
@@ -2559,11 +1842,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link DecvarType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< decvar type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "decvar")
     public JAXBElement<DecvarType> createDecvar(DecvarType value) {
@@ -2571,11 +1851,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link HintType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< hint type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "hint")
     public JAXBElement<HintType> createHint(HintType value) {
@@ -2583,11 +1860,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link NotTestType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< not test type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "not_test")
     public JAXBElement<NotTestType> createNotTest(NotTestType value) {
@@ -2595,11 +1869,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qmd_topic")
     public JAXBElement<String> createQmdTopic(String value) {
@@ -2607,11 +1878,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link OutcomesFeedbackTestType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< outcomes feedback test type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "outcomes_feedback_test")
     public JAXBElement<OutcomesFeedbackTestType> createOutcomesFeedbackTest(OutcomesFeedbackTestType value) {
@@ -2619,11 +1887,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qmd_status")
     public JAXBElement<String> createQmdStatus(String value) {
@@ -2631,11 +1896,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "duration")
     public JAXBElement<String> createDuration(String value) {
@@ -2643,11 +1905,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObjectivesType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< objectives type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "objectives")
     public JAXBElement<ObjectivesType> createObjectives(ObjectivesType value) {
@@ -2655,11 +1914,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ResponseStrType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< response str type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "response_str")
     public JAXBElement<ResponseStrType> createResponseStr(ResponseStrType value) {
@@ -2667,11 +1923,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link MapInputType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< map input type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "map_input")
     public JAXBElement<MapInputType> createMapInput(MapInputType value) {
@@ -2679,11 +1932,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link SequenceParameterType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< sequence parameter type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "sequence_parameter")
     public JAXBElement<SequenceParameterType> createSequenceParameter(SequenceParameterType value) {
@@ -2691,11 +1941,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link VarlteType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< varlte type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "varlte")
     public JAXBElement<VarlteType> createVarlte(VarlteType value) {
@@ -2703,11 +1950,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "other")
     public JAXBElement<String> createOther(String value) {
@@ -2715,11 +1959,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link SolutionType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< solution type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "solution")
     public JAXBElement<SolutionType> createSolution(SolutionType value) {
@@ -2727,11 +1968,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link OrderType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< order type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "order")
     public JAXBElement<OrderType> createOrder(OrderType value) {
@@ -2739,11 +1977,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "sourcebank_ref")
     public JAXBElement<String> createSourcebankRef(String value) {
@@ -2751,11 +1986,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qmd_solutionspermitted")
     public JAXBElement<String> createQmdSolutionspermitted(String value) {
@@ -2763,11 +1995,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link QtimetadataType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< qtimetadata type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qtimetadata")
     public JAXBElement<QtimetadataType> createQtimetadata(QtimetadataType value) {
@@ -2775,11 +2004,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link OutcomesProcessingType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< outcomes processing type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "outcomes_processing")
     public JAXBElement<OutcomesProcessingType> createOutcomesProcessing(OutcomesProcessingType value) {
@@ -2787,11 +2013,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link SetvarType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< setvar type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "setvar")
     public JAXBElement<SetvarType> createSetvar(SetvarType value) {
@@ -2799,11 +2022,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "itemprecondition")
     public JAXBElement<String> createItemprecondition(String value) {
@@ -2811,11 +2031,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link OrType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< or type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "or")
     public JAXBElement<OrType> createOr(OrType value) {
@@ -2823,11 +2040,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link OrderExtensionType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< order extension type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "order_extension")
     public JAXBElement<OrderExtensionType> createOrderExtension(OrderExtensionType value) {
@@ -2835,11 +2049,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link VarequalType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< varequal type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "varequal")
     public JAXBElement<VarequalType> createVarequal(VarequalType value) {
@@ -2847,11 +2058,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ItemrubricType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< itemrubric type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "itemrubric")
     public JAXBElement<ItemrubricType> createItemrubric(ItemrubricType value) {
@@ -2859,11 +2067,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qmd_scoringpermitted")
     public JAXBElement<String> createQmdScoringpermitted(String value) {
@@ -2871,11 +2076,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qmd_timedependence")
     public JAXBElement<String> createQmdTimedependence(String value) {
@@ -2883,11 +2085,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "sectionpostcondition")
     public JAXBElement<String> createSectionpostcondition(String value) {
@@ -2895,11 +2094,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link NotType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< not type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "not")
     public JAXBElement<NotType> createNot(NotType value) {
@@ -2907,11 +2103,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link AssessprocExtensionType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< assessproc extension type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "assessproc_extension")
     public JAXBElement<AssessprocExtensionType> createAssessprocExtension(AssessprocExtensionType value) {
@@ -2919,11 +2112,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link DurgtType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< durgt type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "durgt")
     public JAXBElement<DurgtType> createDurgt(DurgtType value) {
@@ -2931,11 +2121,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObjectsConditionType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< objects condition type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "objects_condition")
     public JAXBElement<ObjectsConditionType> createObjectsCondition(ObjectsConditionType value) {
@@ -2943,23 +2130,17 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link RenderChoiceType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< render choice type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_choice")
     public JAXBElement<RenderChoiceType> createRenderChoice(RenderChoiceType value) {
-        return new JAXBElement<RenderChoiceType>(_ResponseNumTypeRenderChoice_QNAME, RenderChoiceType.class, null, value);
+        return new JAXBElement<RenderChoiceType>(_RenderChoice_QNAME, RenderChoiceType.class, null, value);
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link QtimetadatafieldType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< qtimetadatafield type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qtimetadatafield")
     public JAXBElement<QtimetadatafieldType> createQtimetadatafield(QtimetadatafieldType value) {
@@ -2967,11 +2148,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link PresentationMaterialType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< presentation material type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "presentation_material")
     public JAXBElement<PresentationMaterialType> createPresentationMaterial(PresentationMaterialType value) {
@@ -2979,11 +2157,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link VarltType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< varlt type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "varlt")
     public JAXBElement<VarltType> createVarlt(VarltType value) {
@@ -2991,11 +2166,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link SectionprocExtensionType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< sectionproc extension type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "sectionproc_extension")
     public JAXBElement<SectionprocExtensionType> createSectionprocExtension(SectionprocExtensionType value) {
@@ -3003,11 +2175,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qmd_typeofsolution")
     public JAXBElement<String> createQmdTypeofsolution(String value) {
@@ -3015,11 +2184,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link VargteType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< vargte type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "vargte")
     public JAXBElement<VargteType> createVargte(VargteType value) {
@@ -3027,11 +2193,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link NotSelectionType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< not selection type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "not_selection")
     public JAXBElement<NotSelectionType> createNotSelection(NotSelectionType value) {
@@ -3039,11 +2202,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link OrSelectionType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< or selection type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "or_selection")
     public JAXBElement<OrSelectionType> createOrSelection(OrSelectionType value) {
@@ -3051,11 +2211,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qmd_maximumscore")
     public JAXBElement<String> createQmdMaximumscore(String value) {
@@ -3063,11 +2220,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObjectbankType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< objectbank type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "objectbank")
     public JAXBElement<ObjectbankType> createObjectbank(ObjectbankType value) {
@@ -3075,11 +2229,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ItemType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< item type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "item")
     public JAXBElement<ItemType> createItem(ItemType value) {
@@ -3087,11 +2238,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link AndObjectsType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< and objects type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "and_objects")
     public JAXBElement<AndObjectsType> createAndObjects(AndObjectsType value) {
@@ -3099,11 +2247,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link MatbreakType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< matbreak type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "matbreak")
     public JAXBElement<MatbreakType> createMatbreak(MatbreakType value) {
@@ -3111,11 +2256,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link OrObjectsType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< or objects type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "or_objects")
     public JAXBElement<OrObjectsType> createOrObjects(OrObjectsType value) {
@@ -3123,11 +2265,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link RespcondExtensionType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< respcond extension type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "respcond_extension")
     public JAXBElement<RespcondExtensionType> createRespcondExtension(RespcondExtensionType value) {
@@ -3135,11 +2274,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ResponseXyType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< response xy type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "response_xy")
     public JAXBElement<ResponseXyType> createResponseXy(ResponseXyType value) {
@@ -3147,11 +2283,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ResponseLidType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< response lid type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "response_lid")
     public JAXBElement<ResponseLidType> createResponseLid(ResponseLidType value) {
@@ -3159,11 +2292,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link RubricType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< rubric type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "rubric")
     public JAXBElement<RubricType> createRubric(RubricType value) {
@@ -3171,11 +2301,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link VarsubstringType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< varsubstring type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "varsubstring")
     public JAXBElement<VarsubstringType> createVarsubstring(VarsubstringType value) {
@@ -3183,11 +2310,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< string>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "qmd_renderingtype")
     public JAXBElement<String> createQmdRenderingtype(String value) {
@@ -3195,11 +2319,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link OrTestType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< or test type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "or_test")
     public JAXBElement<OrTestType> createOrTest(OrTestType value) {
@@ -3207,11 +2328,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ItemprocExtensionType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< itemproc extension type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "itemproc_extension")
     public JAXBElement<ItemprocExtensionType> createItemprocExtension(ItemprocExtensionType value) {
@@ -3219,11 +2337,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link MatimageType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< matimage type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "matimage")
     public JAXBElement<MatimageType> createMatimage(MatimageType value) {
@@ -3231,11 +2346,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link DurequalType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< durequal type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "durequal")
     public JAXBElement<DurequalType> createDurequal(DurequalType value) {
@@ -3243,11 +2355,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link NotObjectsType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< not objects type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "not_objects")
     public JAXBElement<NotObjectsType> createNotObjects(NotObjectsType value) {
@@ -3255,11 +2364,8 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObjectsParameterType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< objects parameter type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "objects_parameter")
     public JAXBElement<ObjectsParameterType> createObjectsParameter(ObjectsParameterType value) {
@@ -3267,171 +2373,192 @@ public class ObjectFactory {
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link RenderFibType }{@code >}}
      * 
-     * @param value the value
+     */
+    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_fib", scope = ResponseGrpType.class)
+    public JAXBElement<RenderFibType> createResponseGrpTypeRenderFib(RenderFibType value) {
+        return new JAXBElement<RenderFibType>(_RenderFib_QNAME, RenderFibType.class, ResponseGrpType.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link RenderChoiceType }{@code >}}
      * 
-     * @return the JAXB element< render fib type>
+     */
+    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_choice", scope = ResponseGrpType.class)
+    public JAXBElement<RenderChoiceType> createResponseGrpTypeRenderChoice(RenderChoiceType value) {
+        return new JAXBElement<RenderChoiceType>(_RenderChoice_QNAME, RenderChoiceType.class, ResponseGrpType.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link RenderSliderType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_slider", scope = ResponseGrpType.class)
+    public JAXBElement<RenderSliderType> createResponseGrpTypeRenderSlider(RenderSliderType value) {
+        return new JAXBElement<RenderSliderType>(_RenderSlider_QNAME, RenderSliderType.class, ResponseGrpType.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link MaterialRefType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "material_ref", scope = ResponseGrpType.class)
+    public JAXBElement<MaterialRefType> createResponseGrpTypeMaterialRef(MaterialRefType value) {
+        return new JAXBElement<MaterialRefType>(_MaterialRef_QNAME, MaterialRefType.class, ResponseGrpType.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link RenderHotspotType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_hotspot", scope = ResponseGrpType.class)
+    public JAXBElement<RenderHotspotType> createResponseGrpTypeRenderHotspot(RenderHotspotType value) {
+        return new JAXBElement<RenderHotspotType>(_RenderHotspot_QNAME, RenderHotspotType.class, ResponseGrpType.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link MaterialType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "material", scope = ResponseGrpType.class)
+    public JAXBElement<MaterialType> createResponseGrpTypeMaterial(MaterialType value) {
+        return new JAXBElement<MaterialType>(_Material_QNAME, MaterialType.class, ResponseGrpType.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link RenderExtensionType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_extension", scope = ResponseGrpType.class)
+    public JAXBElement<RenderExtensionType> createResponseGrpTypeRenderExtension(RenderExtensionType value) {
+        return new JAXBElement<RenderExtensionType>(_RenderExtension_QNAME, RenderExtensionType.class, ResponseGrpType.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link RenderChoiceType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_choice", scope = ResponseNumType.class)
+    public JAXBElement<RenderChoiceType> createResponseNumTypeRenderChoice(RenderChoiceType value) {
+        return new JAXBElement<RenderChoiceType>(_RenderChoice_QNAME, RenderChoiceType.class, ResponseNumType.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link RenderFibType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_fib", scope = ResponseNumType.class)
+    public JAXBElement<RenderFibType> createResponseNumTypeRenderFib(RenderFibType value) {
+        return new JAXBElement<RenderFibType>(_RenderFib_QNAME, RenderFibType.class, ResponseNumType.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link MaterialRefType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "material_ref", scope = ResponseNumType.class)
+    public JAXBElement<MaterialRefType> createResponseNumTypeMaterialRef(MaterialRefType value) {
+        return new JAXBElement<MaterialRefType>(_MaterialRef_QNAME, MaterialRefType.class, ResponseNumType.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link RenderSliderType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_slider", scope = ResponseNumType.class)
+    public JAXBElement<RenderSliderType> createResponseNumTypeRenderSlider(RenderSliderType value) {
+        return new JAXBElement<RenderSliderType>(_RenderSlider_QNAME, RenderSliderType.class, ResponseNumType.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link RenderHotspotType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_hotspot", scope = ResponseNumType.class)
+    public JAXBElement<RenderHotspotType> createResponseNumTypeRenderHotspot(RenderHotspotType value) {
+        return new JAXBElement<RenderHotspotType>(_RenderHotspot_QNAME, RenderHotspotType.class, ResponseNumType.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link MaterialType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "material", scope = ResponseNumType.class)
+    public JAXBElement<MaterialType> createResponseNumTypeMaterial(MaterialType value) {
+        return new JAXBElement<MaterialType>(_Material_QNAME, MaterialType.class, ResponseNumType.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link RenderExtensionType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_extension", scope = ResponseNumType.class)
+    public JAXBElement<RenderExtensionType> createResponseNumTypeRenderExtension(RenderExtensionType value) {
+        return new JAXBElement<RenderExtensionType>(_RenderExtension_QNAME, RenderExtensionType.class, ResponseNumType.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link RenderFibType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_fib", scope = ResponseXyType.class)
     public JAXBElement<RenderFibType> createResponseXyTypeRenderFib(RenderFibType value) {
-        return new JAXBElement<RenderFibType>(_ResponseNumTypeRenderFib_QNAME, RenderFibType.class, ResponseXyType.class, value);
+        return new JAXBElement<RenderFibType>(_RenderFib_QNAME, RenderFibType.class, ResponseXyType.class, value);
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link RenderChoiceType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< render choice type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_choice", scope = ResponseXyType.class)
     public JAXBElement<RenderChoiceType> createResponseXyTypeRenderChoice(RenderChoiceType value) {
-        return new JAXBElement<RenderChoiceType>(_ResponseNumTypeRenderChoice_QNAME, RenderChoiceType.class, ResponseXyType.class, value);
+        return new JAXBElement<RenderChoiceType>(_RenderChoice_QNAME, RenderChoiceType.class, ResponseXyType.class, value);
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link RenderSliderType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< render slider type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_slider", scope = ResponseXyType.class)
     public JAXBElement<RenderSliderType> createResponseXyTypeRenderSlider(RenderSliderType value) {
-        return new JAXBElement<RenderSliderType>(_ResponseNumTypeRenderSlider_QNAME, RenderSliderType.class, ResponseXyType.class, value);
+        return new JAXBElement<RenderSliderType>(_RenderSlider_QNAME, RenderSliderType.class, ResponseXyType.class, value);
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link MaterialRefType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< material ref type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "material_ref", scope = ResponseXyType.class)
     public JAXBElement<MaterialRefType> createResponseXyTypeMaterialRef(MaterialRefType value) {
-        return new JAXBElement<MaterialRefType>(_ResponseNumTypeMaterialRef_QNAME, MaterialRefType.class, ResponseXyType.class, value);
+        return new JAXBElement<MaterialRefType>(_MaterialRef_QNAME, MaterialRefType.class, ResponseXyType.class, value);
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link RenderHotspotType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< render hotspot type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_hotspot", scope = ResponseXyType.class)
     public JAXBElement<RenderHotspotType> createResponseXyTypeRenderHotspot(RenderHotspotType value) {
-        return new JAXBElement<RenderHotspotType>(_ResponseNumTypeRenderHotspot_QNAME, RenderHotspotType.class, ResponseXyType.class, value);
+        return new JAXBElement<RenderHotspotType>(_RenderHotspot_QNAME, RenderHotspotType.class, ResponseXyType.class, value);
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link MaterialType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< material type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "material", scope = ResponseXyType.class)
     public JAXBElement<MaterialType> createResponseXyTypeMaterial(MaterialType value) {
-        return new JAXBElement<MaterialType>(_ResponseNumTypeMaterial_QNAME, MaterialType.class, ResponseXyType.class, value);
+        return new JAXBElement<MaterialType>(_Material_QNAME, MaterialType.class, ResponseXyType.class, value);
     }
 
     /**
-     * Creates a new Object object.
+     * Create an instance of {@link JAXBElement }{@code <}{@link FlowMatType }{@code >}}
      * 
-     * @param value the value
-     * 
-     * @return the JAXB element< flow mat type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "flow_mat", scope = ResponseLabelType.class)
     public JAXBElement<FlowMatType> createResponseLabelTypeFlowMat(FlowMatType value) {
         return new JAXBElement<FlowMatType>(_FlowMat_QNAME, FlowMatType.class, ResponseLabelType.class, value);
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @param value the value
-     * 
-     * @return the JAXB element< render fib type>
-     */
-    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_fib", scope = ResponseGrpType.class)
-    public JAXBElement<RenderFibType> createResponseGrpTypeRenderFib(RenderFibType value) {
-        return new JAXBElement<RenderFibType>(_ResponseNumTypeRenderFib_QNAME, RenderFibType.class, ResponseGrpType.class, value);
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @param value the value
-     * 
-     * @return the JAXB element< render choice type>
-     */
-    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_choice", scope = ResponseGrpType.class)
-    public JAXBElement<RenderChoiceType> createResponseGrpTypeRenderChoice(RenderChoiceType value) {
-        return new JAXBElement<RenderChoiceType>(_ResponseNumTypeRenderChoice_QNAME, RenderChoiceType.class, ResponseGrpType.class, value);
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @param value the value
-     * 
-     * @return the JAXB element< render slider type>
-     */
-    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_slider", scope = ResponseGrpType.class)
-    public JAXBElement<RenderSliderType> createResponseGrpTypeRenderSlider(RenderSliderType value) {
-        return new JAXBElement<RenderSliderType>(_ResponseNumTypeRenderSlider_QNAME, RenderSliderType.class, ResponseGrpType.class, value);
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @param value the value
-     * 
-     * @return the JAXB element< material ref type>
-     */
-    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "material_ref", scope = ResponseGrpType.class)
-    public JAXBElement<MaterialRefType> createResponseGrpTypeMaterialRef(MaterialRefType value) {
-        return new JAXBElement<MaterialRefType>(_ResponseNumTypeMaterialRef_QNAME, MaterialRefType.class, ResponseGrpType.class, value);
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @param value the value
-     * 
-     * @return the JAXB element< render hotspot type>
-     */
-    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_hotspot", scope = ResponseGrpType.class)
-    public JAXBElement<RenderHotspotType> createResponseGrpTypeRenderHotspot(RenderHotspotType value) {
-        return new JAXBElement<RenderHotspotType>(_ResponseNumTypeRenderHotspot_QNAME, RenderHotspotType.class, ResponseGrpType.class, value);
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @param value the value
-     * 
-     * @return the JAXB element< material type>
-     */
-    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "material", scope = ResponseGrpType.class)
-    public JAXBElement<MaterialType> createResponseGrpTypeMaterial(MaterialType value) {
-        return new JAXBElement<MaterialType>(_ResponseNumTypeMaterial_QNAME, MaterialType.class, ResponseGrpType.class, value);
-    }
-
-    /**
-     * Creates a new Object object.
-     * 
-     * @param value the value
-     * 
-     * @return the JAXB element< render extension type>
-     */
-    @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", name = "render_extension", scope = ResponseGrpType.class)
-    public JAXBElement<RenderExtensionType> createResponseGrpTypeRenderExtension(RenderExtensionType value) {
-        return new JAXBElement<RenderExtensionType>(_ResponseNumTypeRenderExtension_QNAME, RenderExtensionType.class, ResponseGrpType.class, value);
     }
 
 }

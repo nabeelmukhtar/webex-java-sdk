@@ -28,7 +28,37 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * The Class OpptySummaryType.
+ * <p>Java class for opptySummaryType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="opptySummaryType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="name">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="128"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="intOpptyID" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *         &lt;element name="extOpptyID" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="512"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "opptySummaryType", propOrder = {
@@ -40,71 +70,82 @@ public class OpptySummaryType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The name. */
     @XmlElement(required = true)
     protected String name;
-    
-    /** The int oppty id. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long intOpptyID;
-    
-    /** The ext oppty id. */
     protected String extOpptyID;
 
     /**
-     * Gets the name.
+     * Gets the value of the name property.
      * 
-     * @return the name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Sets the name.
+     * Sets the value of the name property.
      * 
-     * @param value the new name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setName(String value) {
         this.name = value;
     }
 
     /**
-     * Gets the int oppty id.
+     * Gets the value of the intOpptyID property.
      * 
-     * @return the int oppty id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public Long getIntOpptyID() {
         return intOpptyID;
     }
 
     /**
-     * Sets the int oppty id.
+     * Sets the value of the intOpptyID property.
      * 
-     * @param value the new int oppty id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setIntOpptyID(Long value) {
         this.intOpptyID = value;
     }
 
     /**
-     * Gets the ext oppty id.
+     * Gets the value of the extOpptyID property.
      * 
-     * @return the ext oppty id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getExtOpptyID() {
         return extOpptyID;
     }
 
     /**
-     * Sets the ext oppty id.
+     * Sets the value of the extOpptyID property.
      * 
-     * @param value the new ext oppty id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setExtOpptyID(String value) {
         this.extOpptyID = value;

@@ -22,34 +22,31 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum CheckboxStateType.
+ * <p>Java class for checkboxStateType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="checkboxStateType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="CLEARED"/>
+ *     &lt;enumeration value="SELECTED"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "checkboxStateType")
 @XmlEnum
 public enum CheckboxStateType {
 
-    /** The CLEARED. */
     CLEARED,
-    
-    /** The SELECTED. */
     SELECTED;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the checkbox state type
-     */
     public static CheckboxStateType fromValue(String v) {
         return valueOf(v);
     }

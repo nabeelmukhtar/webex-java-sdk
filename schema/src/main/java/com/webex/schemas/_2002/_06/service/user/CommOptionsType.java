@@ -25,7 +25,31 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class CommOptionsType.
+ * <p>Java class for commOptionsType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="commOptionsType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="prodAnnounce" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="trainingInfo" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="electronicInfo" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="promos" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="press" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="email" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="fax" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="phone" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="mail" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "commOptionsType", propOrder = {
@@ -43,202 +67,237 @@ public class CommOptionsType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The prod announce. */
     @XmlElement(defaultValue = "false")
     protected Boolean prodAnnounce;
-    
-    /** The training info. */
     @XmlElement(defaultValue = "false")
     protected Boolean trainingInfo;
-    
-    /** The electronic info. */
     @XmlElement(defaultValue = "false")
     protected Boolean electronicInfo;
-    
-    /** The promos. */
     @XmlElement(defaultValue = "false")
     protected Boolean promos;
-    
-    /** The press. */
     @XmlElement(defaultValue = "false")
     protected Boolean press;
-    
-    /** The email. */
     @XmlElement(defaultValue = "false")
     protected Boolean email;
-    
-    /** The fax. */
     @XmlElement(defaultValue = "false")
     protected Boolean fax;
-    
-    /** The phone. */
     @XmlElement(defaultValue = "false")
     protected Boolean phone;
-    
-    /** The mail. */
     @XmlElement(defaultValue = "false")
     protected Boolean mail;
 
     /**
-     * Checks if is prod announce.
+     * Gets the value of the prodAnnounce property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isProdAnnounce() {
         return prodAnnounce;
     }
 
     /**
-     * Sets the prod announce.
+     * Sets the value of the prodAnnounce property.
      * 
-     * @param value the new prod announce
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setProdAnnounce(Boolean value) {
         this.prodAnnounce = value;
     }
 
     /**
-     * Checks if is training info.
+     * Gets the value of the trainingInfo property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isTrainingInfo() {
         return trainingInfo;
     }
 
     /**
-     * Sets the training info.
+     * Sets the value of the trainingInfo property.
      * 
-     * @param value the new training info
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setTrainingInfo(Boolean value) {
         this.trainingInfo = value;
     }
 
     /**
-     * Checks if is electronic info.
+     * Gets the value of the electronicInfo property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isElectronicInfo() {
         return electronicInfo;
     }
 
     /**
-     * Sets the electronic info.
+     * Sets the value of the electronicInfo property.
      * 
-     * @param value the new electronic info
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setElectronicInfo(Boolean value) {
         this.electronicInfo = value;
     }
 
     /**
-     * Checks if is promos.
+     * Gets the value of the promos property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isPromos() {
         return promos;
     }
 
     /**
-     * Sets the promos.
+     * Sets the value of the promos property.
      * 
-     * @param value the new promos
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setPromos(Boolean value) {
         this.promos = value;
     }
 
     /**
-     * Checks if is press.
+     * Gets the value of the press property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isPress() {
         return press;
     }
 
     /**
-     * Sets the press.
+     * Sets the value of the press property.
      * 
-     * @param value the new press
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setPress(Boolean value) {
         this.press = value;
     }
 
     /**
-     * Checks if is email.
+     * Gets the value of the email property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isEmail() {
         return email;
     }
 
     /**
-     * Sets the email.
+     * Sets the value of the email property.
      * 
-     * @param value the new email
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setEmail(Boolean value) {
         this.email = value;
     }
 
     /**
-     * Checks if is fax.
+     * Gets the value of the fax property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isFax() {
         return fax;
     }
 
     /**
-     * Sets the fax.
+     * Sets the value of the fax property.
      * 
-     * @param value the new fax
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setFax(Boolean value) {
         this.fax = value;
     }
 
     /**
-     * Checks if is phone.
+     * Gets the value of the phone property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isPhone() {
         return phone;
     }
 
     /**
-     * Sets the phone.
+     * Sets the value of the phone property.
      * 
-     * @param value the new phone
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setPhone(Boolean value) {
         this.phone = value;
     }
 
     /**
-     * Checks if is mail.
+     * Gets the value of the mail property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isMail() {
         return mail;
     }
 
     /**
-     * Sets the mail.
+     * Sets the value of the mail property.
      * 
-     * @param value the new mail
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setMail(Boolean value) {
         this.mail = value;

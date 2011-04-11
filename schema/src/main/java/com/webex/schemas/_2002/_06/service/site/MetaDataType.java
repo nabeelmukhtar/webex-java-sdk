@@ -28,7 +28,60 @@ import com.webex.schemas._2002._06.common.TimeZoneType;
 
 
 /**
- * The Class MetaDataType.
+ * <p>Java class for metaDataType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="metaDataType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="isEnterprise" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         &lt;element name="serviceType" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
+ *         &lt;element name="meetingTypes" maxOccurs="unbounded" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="meetingTypeID" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *                   &lt;element name="meetingTypeName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *         &lt;element name="siteName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="brandName" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="region" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="currency" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="timeZone" type="{http://www.webex.com/schemas/2002/06/common}timeZoneType" minOccurs="0"/>
+ *         &lt;element name="parterID" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="webDomain" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="meetingDomain" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="telephonyDomain" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="pageVersion" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="clientVersion" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="pageLanguage" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="activateStatus" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         &lt;element name="webPageType" type="{http://www.webex.com/schemas/2002/06/service/site}webPageTypeType" minOccurs="0"/>
+ *         &lt;element name="iCalendar" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="myWebExDefaultPage" type="{http://www.webex.com/schemas/2002/06/service/site}myWebExPageType" minOccurs="0"/>
+ *         &lt;element name="componentVersion" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="accountNumLimit" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="activeUserCount" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="auoAccountNumLimit" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="auoActiveUserCount" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="displayMeetingActualTime" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *         &lt;element name="displayOffset" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "metaDataType", propOrder = {
@@ -64,124 +117,84 @@ public class MetaDataType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The is enterprise. */
     protected boolean isEnterprise;
-    
-    /** The service type. */
     @XmlElement(required = true)
     protected List<String> serviceType;
-    
-    /** The meeting types. */
     protected List<MetaDataType.MeetingTypes> meetingTypes;
-    
-    /** The site name. */
     @XmlElement(required = true)
     protected String siteName;
-    
-    /** The brand name. */
     protected List<String> brandName;
-    
-    /** The region. */
     @XmlElement(required = true)
     protected String region;
-    
-    /** The currency. */
     @XmlElement(required = true)
     protected String currency;
-    
-    /** The time zone id. */
     protected long timeZoneID;
-    
-    /** The time zone. */
     protected TimeZoneType timeZone;
-    
-    /** The parter id. */
     @XmlElement(required = true)
     protected String parterID;
-    
-    /** The web domain. */
     @XmlElement(required = true)
     protected String webDomain;
-    
-    /** The meeting domain. */
     @XmlElement(required = true)
     protected String meetingDomain;
-    
-    /** The telephony domain. */
     @XmlElement(required = true)
     protected String telephonyDomain;
-    
-    /** The page version. */
     @XmlElement(required = true)
     protected String pageVersion;
-    
-    /** The client version. */
     @XmlElement(required = true)
     protected String clientVersion;
-    
-    /** The page language. */
     @XmlElement(required = true)
     protected String pageLanguage;
-    
-    /** The activate status. */
     protected boolean activateStatus;
-    
-    /** The web page type. */
     @XmlElement(defaultValue = "PHP")
     protected WebPageTypeType webPageType;
-    
-    /** The i calendar. */
     protected Boolean iCalendar;
-    
-    /** The my web ex default page. */
     protected MyWebExPageType myWebExDefaultPage;
-    
-    /** The component version. */
     protected String componentVersion;
-    
-    /** The account num limit. */
     protected Long accountNumLimit;
-    
-    /** The active user count. */
     protected Long activeUserCount;
-    
-    /** The auo account num limit. */
     protected Long auoAccountNumLimit;
-    
-    /** The auo active user count. */
     protected Long auoActiveUserCount;
-    
-    /** The display meeting actual time. */
     protected Boolean displayMeetingActualTime;
-    
-    /** The display offset. */
     protected Boolean displayOffset;
 
     /**
-     * Checks if is checks if is enterprise.
+     * Gets the value of the isEnterprise property.
      * 
-     * @return true, if is checks if is enterprise
      */
     public boolean isIsEnterprise() {
         return isEnterprise;
     }
 
     /**
-     * Sets the checks if is enterprise.
+     * Sets the value of the isEnterprise property.
      * 
-     * @param value the new checks if is enterprise
      */
     public void setIsEnterprise(boolean value) {
         this.isEnterprise = value;
     }
 
     /**
-     * Gets the service type.
+     * Gets the value of the serviceType property.
      * 
-     * @return the service type
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the serviceType property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getServiceType().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link String }
+     * 
+     * 
      */
     public List<String> getServiceType() {
         if (serviceType == null) {
@@ -191,9 +204,26 @@ public class MetaDataType
     }
 
     /**
-     * Gets the meeting types.
+     * Gets the value of the meetingTypes property.
      * 
-     * @return the meeting types
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the meetingTypes property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getMeetingTypes().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link MetaDataType.MeetingTypes }
+     * 
+     * 
      */
     public List<MetaDataType.MeetingTypes> getMeetingTypes() {
         if (meetingTypes == null) {
@@ -203,27 +233,50 @@ public class MetaDataType
     }
 
     /**
-     * Gets the site name.
+     * Gets the value of the siteName property.
      * 
-     * @return the site name
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSiteName() {
         return siteName;
     }
 
     /**
-     * Sets the site name.
+     * Sets the value of the siteName property.
      * 
-     * @param value the new site name
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSiteName(String value) {
         this.siteName = value;
     }
 
     /**
-     * Gets the brand name.
+     * Gets the value of the brandName property.
      * 
-     * @return the brand name
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the brandName property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getBrandName().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link String }
+     * 
+     * 
      */
     public List<String> getBrandName() {
         if (brandName == null) {
@@ -233,396 +286,512 @@ public class MetaDataType
     }
 
     /**
-     * Gets the region.
+     * Gets the value of the region property.
      * 
-     * @return the region
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getRegion() {
         return region;
     }
 
     /**
-     * Sets the region.
+     * Sets the value of the region property.
      * 
-     * @param value the new region
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setRegion(String value) {
         this.region = value;
     }
 
     /**
-     * Gets the currency.
+     * Gets the value of the currency property.
      * 
-     * @return the currency
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCurrency() {
         return currency;
     }
 
     /**
-     * Sets the currency.
+     * Sets the value of the currency property.
      * 
-     * @param value the new currency
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCurrency(String value) {
         this.currency = value;
     }
 
     /**
-     * Gets the time zone id.
+     * Gets the value of the timeZoneID property.
      * 
-     * @return the time zone id
      */
     public long getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the time zone id.
+     * Sets the value of the timeZoneID property.
      * 
-     * @param value the new time zone id
      */
     public void setTimeZoneID(long value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the time zone.
+     * Gets the value of the timeZone property.
      * 
-     * @return the time zone
+     * @return
+     *     possible object is
+     *     {@link TimeZoneType }
+     *     
      */
     public TimeZoneType getTimeZone() {
         return timeZone;
     }
 
     /**
-     * Sets the time zone.
+     * Sets the value of the timeZone property.
      * 
-     * @param value the new time zone
+     * @param value
+     *     allowed object is
+     *     {@link TimeZoneType }
+     *     
      */
     public void setTimeZone(TimeZoneType value) {
         this.timeZone = value;
     }
 
     /**
-     * Gets the parter id.
+     * Gets the value of the parterID property.
      * 
-     * @return the parter id
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getParterID() {
         return parterID;
     }
 
     /**
-     * Sets the parter id.
+     * Sets the value of the parterID property.
      * 
-     * @param value the new parter id
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setParterID(String value) {
         this.parterID = value;
     }
 
     /**
-     * Gets the web domain.
+     * Gets the value of the webDomain property.
      * 
-     * @return the web domain
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getWebDomain() {
         return webDomain;
     }
 
     /**
-     * Sets the web domain.
+     * Sets the value of the webDomain property.
      * 
-     * @param value the new web domain
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setWebDomain(String value) {
         this.webDomain = value;
     }
 
     /**
-     * Gets the meeting domain.
+     * Gets the value of the meetingDomain property.
      * 
-     * @return the meeting domain
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMeetingDomain() {
         return meetingDomain;
     }
 
     /**
-     * Sets the meeting domain.
+     * Sets the value of the meetingDomain property.
      * 
-     * @param value the new meeting domain
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMeetingDomain(String value) {
         this.meetingDomain = value;
     }
 
     /**
-     * Gets the telephony domain.
+     * Gets the value of the telephonyDomain property.
      * 
-     * @return the telephony domain
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTelephonyDomain() {
         return telephonyDomain;
     }
 
     /**
-     * Sets the telephony domain.
+     * Sets the value of the telephonyDomain property.
      * 
-     * @param value the new telephony domain
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTelephonyDomain(String value) {
         this.telephonyDomain = value;
     }
 
     /**
-     * Gets the page version.
+     * Gets the value of the pageVersion property.
      * 
-     * @return the page version
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPageVersion() {
         return pageVersion;
     }
 
     /**
-     * Sets the page version.
+     * Sets the value of the pageVersion property.
      * 
-     * @param value the new page version
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPageVersion(String value) {
         this.pageVersion = value;
     }
 
     /**
-     * Gets the client version.
+     * Gets the value of the clientVersion property.
      * 
-     * @return the client version
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getClientVersion() {
         return clientVersion;
     }
 
     /**
-     * Sets the client version.
+     * Sets the value of the clientVersion property.
      * 
-     * @param value the new client version
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setClientVersion(String value) {
         this.clientVersion = value;
     }
 
     /**
-     * Gets the page language.
+     * Gets the value of the pageLanguage property.
      * 
-     * @return the page language
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPageLanguage() {
         return pageLanguage;
     }
 
     /**
-     * Sets the page language.
+     * Sets the value of the pageLanguage property.
      * 
-     * @param value the new page language
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPageLanguage(String value) {
         this.pageLanguage = value;
     }
 
     /**
-     * Checks if is activate status.
+     * Gets the value of the activateStatus property.
      * 
-     * @return true, if is activate status
      */
     public boolean isActivateStatus() {
         return activateStatus;
     }
 
     /**
-     * Sets the activate status.
+     * Sets the value of the activateStatus property.
      * 
-     * @param value the new activate status
      */
     public void setActivateStatus(boolean value) {
         this.activateStatus = value;
     }
 
     /**
-     * Gets the web page type.
+     * Gets the value of the webPageType property.
      * 
-     * @return the web page type
+     * @return
+     *     possible object is
+     *     {@link WebPageTypeType }
+     *     
      */
     public WebPageTypeType getWebPageType() {
         return webPageType;
     }
 
     /**
-     * Sets the web page type.
+     * Sets the value of the webPageType property.
      * 
-     * @param value the new web page type
+     * @param value
+     *     allowed object is
+     *     {@link WebPageTypeType }
+     *     
      */
     public void setWebPageType(WebPageTypeType value) {
         this.webPageType = value;
     }
 
     /**
-     * Checks if is i calendar.
+     * Gets the value of the iCalendar property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isICalendar() {
         return iCalendar;
     }
 
     /**
-     * Sets the i calendar.
+     * Sets the value of the iCalendar property.
      * 
-     * @param value the new i calendar
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setICalendar(Boolean value) {
         this.iCalendar = value;
     }
 
     /**
-     * Gets the my web ex default page.
+     * Gets the value of the myWebExDefaultPage property.
      * 
-     * @return the my web ex default page
+     * @return
+     *     possible object is
+     *     {@link MyWebExPageType }
+     *     
      */
     public MyWebExPageType getMyWebExDefaultPage() {
         return myWebExDefaultPage;
     }
 
     /**
-     * Sets the my web ex default page.
+     * Sets the value of the myWebExDefaultPage property.
      * 
-     * @param value the new my web ex default page
+     * @param value
+     *     allowed object is
+     *     {@link MyWebExPageType }
+     *     
      */
     public void setMyWebExDefaultPage(MyWebExPageType value) {
         this.myWebExDefaultPage = value;
     }
 
     /**
-     * Gets the component version.
+     * Gets the value of the componentVersion property.
      * 
-     * @return the component version
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getComponentVersion() {
         return componentVersion;
     }
 
     /**
-     * Sets the component version.
+     * Sets the value of the componentVersion property.
      * 
-     * @param value the new component version
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setComponentVersion(String value) {
         this.componentVersion = value;
     }
 
     /**
-     * Gets the account num limit.
+     * Gets the value of the accountNumLimit property.
      * 
-     * @return the account num limit
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getAccountNumLimit() {
         return accountNumLimit;
     }
 
     /**
-     * Sets the account num limit.
+     * Sets the value of the accountNumLimit property.
      * 
-     * @param value the new account num limit
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setAccountNumLimit(Long value) {
         this.accountNumLimit = value;
     }
 
     /**
-     * Gets the active user count.
+     * Gets the value of the activeUserCount property.
      * 
-     * @return the active user count
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getActiveUserCount() {
         return activeUserCount;
     }
 
     /**
-     * Sets the active user count.
+     * Sets the value of the activeUserCount property.
      * 
-     * @param value the new active user count
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setActiveUserCount(Long value) {
         this.activeUserCount = value;
     }
 
     /**
-     * Gets the auo account num limit.
+     * Gets the value of the auoAccountNumLimit property.
      * 
-     * @return the auo account num limit
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getAuoAccountNumLimit() {
         return auoAccountNumLimit;
     }
 
     /**
-     * Sets the auo account num limit.
+     * Sets the value of the auoAccountNumLimit property.
      * 
-     * @param value the new auo account num limit
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setAuoAccountNumLimit(Long value) {
         this.auoAccountNumLimit = value;
     }
 
     /**
-     * Gets the auo active user count.
+     * Gets the value of the auoActiveUserCount property.
      * 
-     * @return the auo active user count
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
     public Long getAuoActiveUserCount() {
         return auoActiveUserCount;
     }
 
     /**
-     * Sets the auo active user count.
+     * Sets the value of the auoActiveUserCount property.
      * 
-     * @param value the new auo active user count
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
     public void setAuoActiveUserCount(Long value) {
         this.auoActiveUserCount = value;
     }
 
     /**
-     * Checks if is display meeting actual time.
+     * Gets the value of the displayMeetingActualTime property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isDisplayMeetingActualTime() {
         return displayMeetingActualTime;
     }
 
     /**
-     * Sets the display meeting actual time.
+     * Sets the value of the displayMeetingActualTime property.
      * 
-     * @param value the new display meeting actual time
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setDisplayMeetingActualTime(Boolean value) {
         this.displayMeetingActualTime = value;
     }
 
     /**
-     * Checks if is display offset.
+     * Gets the value of the displayOffset property.
      * 
-     * @return the boolean
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isDisplayOffset() {
         return displayOffset;
     }
 
     /**
-     * Sets the display offset.
+     * Sets the value of the displayOffset property.
      * 
-     * @param value the new display offset
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setDisplayOffset(Boolean value) {
         this.displayOffset = value;
@@ -630,7 +799,24 @@ public class MetaDataType
 
 
     /**
-     * The Class MeetingTypes.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="meetingTypeID" type="{http://www.w3.org/2001/XMLSchema}long"/>
+     *         &lt;element name="meetingTypeName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -641,47 +827,46 @@ public class MetaDataType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The meeting type id. */
         protected long meetingTypeID;
-        
-        /** The meeting type name. */
         @XmlElement(required = true)
         protected String meetingTypeName;
 
         /**
-         * Gets the meeting type id.
+         * Gets the value of the meetingTypeID property.
          * 
-         * @return the meeting type id
          */
         public long getMeetingTypeID() {
             return meetingTypeID;
         }
 
         /**
-         * Sets the meeting type id.
+         * Sets the value of the meetingTypeID property.
          * 
-         * @param value the new meeting type id
          */
         public void setMeetingTypeID(long value) {
             this.meetingTypeID = value;
         }
 
         /**
-         * Gets the meeting type name.
+         * Gets the value of the meetingTypeName property.
          * 
-         * @return the meeting type name
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
          */
         public String getMeetingTypeName() {
             return meetingTypeName;
         }
 
         /**
-         * Sets the meeting type name.
+         * Sets the value of the meetingTypeName property.
          * 
-         * @param value the new meeting type name
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
          */
         public void setMeetingTypeName(String value) {
             this.meetingTypeName = value;

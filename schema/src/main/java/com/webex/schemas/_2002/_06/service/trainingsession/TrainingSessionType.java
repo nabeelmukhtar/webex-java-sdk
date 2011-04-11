@@ -32,7 +32,48 @@ import com.webex.schemas._2002._06.service.session.TelephonyType;
 
 
 /**
- * The Class TrainingSessionType.
+ * <p>Java class for trainingSessionType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="trainingSessionType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/session}sessionType">
+ *       &lt;sequence>
+ *         &lt;element name="metaData" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}trainingMetaDataType" minOccurs="0"/>
+ *         &lt;element name="enableOptions" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}trainingEnableOptionsType" minOccurs="0"/>
+ *         &lt;element name="telephony" type="{http://www.webex.com/schemas/2002/06/service/session}telephonyType" minOccurs="0"/>
+ *         &lt;element name="tracking" type="{http://www.webex.com/schemas/2002/06/common}trackingType" minOccurs="0"/>
+ *         &lt;element name="repeat" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}trainRepeatType" minOccurs="0"/>
+ *         &lt;element name="remind" type="{http://www.webex.com/schemas/2002/06/service/session}remindType" minOccurs="0"/>
+ *         &lt;element name="presenters" type="{http://www.webex.com/schemas/2002/06/service/session}participantsType" minOccurs="0"/>
+ *         &lt;element name="attendees" type="{http://www.webex.com/schemas/2002/06/service/session}participantsType" minOccurs="0"/>
+ *         &lt;element name="attendeeOptions" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}attendeeOptionsType" minOccurs="0"/>
+ *         &lt;element name="handsOnLab" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}handsOnLabType" minOccurs="0"/>
+ *         &lt;element name="psoFields" type="{http://www.webex.com/schemas/2002/06/common}psoFieldsType" minOccurs="0"/>
+ *         &lt;element name="assistService" type="{http://www.webex.com/schemas/2002/06/service}meetingAssistType" minOccurs="0"/>
+ *         &lt;element name="preAssignBreakout" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="enable" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+ *                   &lt;element name="attendeeAssign" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}attendeeAssignType" minOccurs="0"/>
+ *                   &lt;element name="numSessions" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
+ *                   &lt;element name="attendeesPerSess" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "trainingSessionType", propOrder = {
@@ -59,277 +100,328 @@ public class TrainingSessionType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The meta data. */
     protected TrainingMetaDataType metaData;
-    
-    /** The enable options. */
     protected TrainingEnableOptionsType enableOptions;
-    
-    /** The telephony. */
     protected TelephonyType telephony;
-    
-    /** The tracking. */
     protected TrackingType tracking;
-    
-    /** The repeat. */
     protected TrainRepeatType repeat;
-    
-    /** The remind. */
     protected RemindType remind;
-    
-    /** The presenters. */
     protected ParticipantsType presenters;
-    
-    /** The attendees. */
     protected ParticipantsType attendees;
-    
-    /** The attendee options. */
     protected AttendeeOptionsType attendeeOptions;
-    
-    /** The hands on lab. */
     protected HandsOnLabType handsOnLab;
-    
-    /** The pso fields. */
     protected PsoFieldsType psoFields;
-    
-    /** The assist service. */
     protected MeetingAssistType assistService;
-    
-    /** The pre assign breakout. */
     protected TrainingSessionType.PreAssignBreakout preAssignBreakout;
 
     /**
-     * Gets the meta data.
+     * Gets the value of the metaData property.
      * 
-     * @return the meta data
+     * @return
+     *     possible object is
+     *     {@link TrainingMetaDataType }
+     *     
      */
     public TrainingMetaDataType getMetaData() {
         return metaData;
     }
 
     /**
-     * Sets the meta data.
+     * Sets the value of the metaData property.
      * 
-     * @param value the new meta data
+     * @param value
+     *     allowed object is
+     *     {@link TrainingMetaDataType }
+     *     
      */
     public void setMetaData(TrainingMetaDataType value) {
         this.metaData = value;
     }
 
     /**
-     * Gets the enable options.
+     * Gets the value of the enableOptions property.
      * 
-     * @return the enable options
+     * @return
+     *     possible object is
+     *     {@link TrainingEnableOptionsType }
+     *     
      */
     public TrainingEnableOptionsType getEnableOptions() {
         return enableOptions;
     }
 
     /**
-     * Sets the enable options.
+     * Sets the value of the enableOptions property.
      * 
-     * @param value the new enable options
+     * @param value
+     *     allowed object is
+     *     {@link TrainingEnableOptionsType }
+     *     
      */
     public void setEnableOptions(TrainingEnableOptionsType value) {
         this.enableOptions = value;
     }
 
     /**
-     * Gets the telephony.
+     * Gets the value of the telephony property.
      * 
-     * @return the telephony
+     * @return
+     *     possible object is
+     *     {@link TelephonyType }
+     *     
      */
     public TelephonyType getTelephony() {
         return telephony;
     }
 
     /**
-     * Sets the telephony.
+     * Sets the value of the telephony property.
      * 
-     * @param value the new telephony
+     * @param value
+     *     allowed object is
+     *     {@link TelephonyType }
+     *     
      */
     public void setTelephony(TelephonyType value) {
         this.telephony = value;
     }
 
     /**
-     * Gets the tracking.
+     * Gets the value of the tracking property.
      * 
-     * @return the tracking
+     * @return
+     *     possible object is
+     *     {@link TrackingType }
+     *     
      */
     public TrackingType getTracking() {
         return tracking;
     }
 
     /**
-     * Sets the tracking.
+     * Sets the value of the tracking property.
      * 
-     * @param value the new tracking
+     * @param value
+     *     allowed object is
+     *     {@link TrackingType }
+     *     
      */
     public void setTracking(TrackingType value) {
         this.tracking = value;
     }
 
     /**
-     * Gets the repeat.
+     * Gets the value of the repeat property.
      * 
-     * @return the repeat
+     * @return
+     *     possible object is
+     *     {@link TrainRepeatType }
+     *     
      */
     public TrainRepeatType getRepeat() {
         return repeat;
     }
 
     /**
-     * Sets the repeat.
+     * Sets the value of the repeat property.
      * 
-     * @param value the new repeat
+     * @param value
+     *     allowed object is
+     *     {@link TrainRepeatType }
+     *     
      */
     public void setRepeat(TrainRepeatType value) {
         this.repeat = value;
     }
 
     /**
-     * Gets the remind.
+     * Gets the value of the remind property.
      * 
-     * @return the remind
+     * @return
+     *     possible object is
+     *     {@link RemindType }
+     *     
      */
     public RemindType getRemind() {
         return remind;
     }
 
     /**
-     * Sets the remind.
+     * Sets the value of the remind property.
      * 
-     * @param value the new remind
+     * @param value
+     *     allowed object is
+     *     {@link RemindType }
+     *     
      */
     public void setRemind(RemindType value) {
         this.remind = value;
     }
 
     /**
-     * Gets the presenters.
+     * Gets the value of the presenters property.
      * 
-     * @return the presenters
+     * @return
+     *     possible object is
+     *     {@link ParticipantsType }
+     *     
      */
     public ParticipantsType getPresenters() {
         return presenters;
     }
 
     /**
-     * Sets the presenters.
+     * Sets the value of the presenters property.
      * 
-     * @param value the new presenters
+     * @param value
+     *     allowed object is
+     *     {@link ParticipantsType }
+     *     
      */
     public void setPresenters(ParticipantsType value) {
         this.presenters = value;
     }
 
     /**
-     * Gets the attendees.
+     * Gets the value of the attendees property.
      * 
-     * @return the attendees
+     * @return
+     *     possible object is
+     *     {@link ParticipantsType }
+     *     
      */
     public ParticipantsType getAttendees() {
         return attendees;
     }
 
     /**
-     * Sets the attendees.
+     * Sets the value of the attendees property.
      * 
-     * @param value the new attendees
+     * @param value
+     *     allowed object is
+     *     {@link ParticipantsType }
+     *     
      */
     public void setAttendees(ParticipantsType value) {
         this.attendees = value;
     }
 
     /**
-     * Gets the attendee options.
+     * Gets the value of the attendeeOptions property.
      * 
-     * @return the attendee options
+     * @return
+     *     possible object is
+     *     {@link AttendeeOptionsType }
+     *     
      */
     public AttendeeOptionsType getAttendeeOptions() {
         return attendeeOptions;
     }
 
     /**
-     * Sets the attendee options.
+     * Sets the value of the attendeeOptions property.
      * 
-     * @param value the new attendee options
+     * @param value
+     *     allowed object is
+     *     {@link AttendeeOptionsType }
+     *     
      */
     public void setAttendeeOptions(AttendeeOptionsType value) {
         this.attendeeOptions = value;
     }
 
     /**
-     * Gets the hands on lab.
+     * Gets the value of the handsOnLab property.
      * 
-     * @return the hands on lab
+     * @return
+     *     possible object is
+     *     {@link HandsOnLabType }
+     *     
      */
     public HandsOnLabType getHandsOnLab() {
         return handsOnLab;
     }
 
     /**
-     * Sets the hands on lab.
+     * Sets the value of the handsOnLab property.
      * 
-     * @param value the new hands on lab
+     * @param value
+     *     allowed object is
+     *     {@link HandsOnLabType }
+     *     
      */
     public void setHandsOnLab(HandsOnLabType value) {
         this.handsOnLab = value;
     }
 
     /**
-     * Gets the pso fields.
+     * Gets the value of the psoFields property.
      * 
-     * @return the pso fields
+     * @return
+     *     possible object is
+     *     {@link PsoFieldsType }
+     *     
      */
     public PsoFieldsType getPsoFields() {
         return psoFields;
     }
 
     /**
-     * Sets the pso fields.
+     * Sets the value of the psoFields property.
      * 
-     * @param value the new pso fields
+     * @param value
+     *     allowed object is
+     *     {@link PsoFieldsType }
+     *     
      */
     public void setPsoFields(PsoFieldsType value) {
         this.psoFields = value;
     }
 
     /**
-     * Gets the assist service.
+     * Gets the value of the assistService property.
      * 
-     * @return the assist service
+     * @return
+     *     possible object is
+     *     {@link MeetingAssistType }
+     *     
      */
     public MeetingAssistType getAssistService() {
         return assistService;
     }
 
     /**
-     * Sets the assist service.
+     * Sets the value of the assistService property.
      * 
-     * @param value the new assist service
+     * @param value
+     *     allowed object is
+     *     {@link MeetingAssistType }
+     *     
      */
     public void setAssistService(MeetingAssistType value) {
         this.assistService = value;
     }
 
     /**
-     * Gets the pre assign breakout.
+     * Gets the value of the preAssignBreakout property.
      * 
-     * @return the pre assign breakout
+     * @return
+     *     possible object is
+     *     {@link TrainingSessionType.PreAssignBreakout }
+     *     
      */
     public TrainingSessionType.PreAssignBreakout getPreAssignBreakout() {
         return preAssignBreakout;
     }
 
     /**
-     * Sets the pre assign breakout.
+     * Sets the value of the preAssignBreakout property.
      * 
-     * @param value the new pre assign breakout
+     * @param value
+     *     allowed object is
+     *     {@link TrainingSessionType.PreAssignBreakout }
+     *     
      */
     public void setPreAssignBreakout(TrainingSessionType.PreAssignBreakout value) {
         this.preAssignBreakout = value;
@@ -337,7 +429,26 @@ public class TrainingSessionType
 
 
     /**
-     * The Class PreAssignBreakout.
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="enable" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
+     *         &lt;element name="attendeeAssign" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}attendeeAssignType" minOccurs="0"/>
+     *         &lt;element name="numSessions" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
+     *         &lt;element name="attendeesPerSess" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -350,88 +461,103 @@ public class TrainingSessionType
         implements Serializable
     {
 
-        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
-        
-        /** The enable. */
         protected Boolean enable;
-        
-        /** The attendee assign. */
         protected AttendeeAssignType attendeeAssign;
-        
-        /** The num sessions. */
         protected Integer numSessions;
-        
-        /** The attendees per sess. */
         protected Integer attendeesPerSess;
 
         /**
-         * Checks if is enable.
+         * Gets the value of the enable property.
          * 
-         * @return the boolean
+         * @return
+         *     possible object is
+         *     {@link Boolean }
+         *     
          */
         public Boolean isEnable() {
             return enable;
         }
 
         /**
-         * Sets the enable.
+         * Sets the value of the enable property.
          * 
-         * @param value the new enable
+         * @param value
+         *     allowed object is
+         *     {@link Boolean }
+         *     
          */
         public void setEnable(Boolean value) {
             this.enable = value;
         }
 
         /**
-         * Gets the attendee assign.
+         * Gets the value of the attendeeAssign property.
          * 
-         * @return the attendee assign
+         * @return
+         *     possible object is
+         *     {@link AttendeeAssignType }
+         *     
          */
         public AttendeeAssignType getAttendeeAssign() {
             return attendeeAssign;
         }
 
         /**
-         * Sets the attendee assign.
+         * Sets the value of the attendeeAssign property.
          * 
-         * @param value the new attendee assign
+         * @param value
+         *     allowed object is
+         *     {@link AttendeeAssignType }
+         *     
          */
         public void setAttendeeAssign(AttendeeAssignType value) {
             this.attendeeAssign = value;
         }
 
         /**
-         * Gets the num sessions.
+         * Gets the value of the numSessions property.
          * 
-         * @return the num sessions
+         * @return
+         *     possible object is
+         *     {@link Integer }
+         *     
          */
         public Integer getNumSessions() {
             return numSessions;
         }
 
         /**
-         * Sets the num sessions.
+         * Sets the value of the numSessions property.
          * 
-         * @param value the new num sessions
+         * @param value
+         *     allowed object is
+         *     {@link Integer }
+         *     
          */
         public void setNumSessions(Integer value) {
             this.numSessions = value;
         }
 
         /**
-         * Gets the attendees per sess.
+         * Gets the value of the attendeesPerSess property.
          * 
-         * @return the attendees per sess
+         * @return
+         *     possible object is
+         *     {@link Integer }
+         *     
          */
         public Integer getAttendeesPerSess() {
             return attendeesPerSess;
         }
 
         /**
-         * Sets the attendees per sess.
+         * Sets the value of the attendeesPerSess property.
          * 
-         * @param value the new attendees per sess
+         * @param value
+         *     allowed object is
+         *     {@link Integer }
+         *     
          */
         public void setAttendeesPerSess(Integer value) {
             this.attendeesPerSess = value;

@@ -22,49 +22,41 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Enum OrderTCHisByType.
+ * <p>Java class for orderTCHisByType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="orderTCHisByType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="CONFNAME"/>
+ *     &lt;enumeration value="STARTTIME"/>
+ *     &lt;enumeration value="TOTALINVITED"/>
+ *     &lt;enumeration value="TOTALREGISTERED"/>
+ *     &lt;enumeration value="TOTALATTENDEE"/>
+ *     &lt;enumeration value="ASSISTREQUEST"/>
+ *     &lt;enumeration value="ASSISTCONFIRM"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
  */
 @XmlType(name = "orderTCHisByType")
 @XmlEnum
 public enum OrderTCHisByType {
 
-    /** The CONFNAME. */
     CONFNAME,
-    
-    /** The STARTTIME. */
     STARTTIME,
-    
-    /** The TOTALINVITED. */
     TOTALINVITED,
-    
-    /** The TOTALREGISTERED. */
     TOTALREGISTERED,
-    
-    /** The TOTALATTENDEE. */
     TOTALATTENDEE,
-    
-    /** The ASSISTREQUEST. */
     ASSISTREQUEST,
-    
-    /** The ASSISTCONFIRM. */
     ASSISTCONFIRM;
 
-    /**
-     * Value.
-     * 
-     * @return the string
-     */
     public String value() {
         return name();
     }
 
-    /**
-     * From value.
-     * 
-     * @param v the v
-     * 
-     * @return the order tc his by type
-     */
     public static OrderTCHisByType fromValue(String v) {
         return valueOf(v);
     }

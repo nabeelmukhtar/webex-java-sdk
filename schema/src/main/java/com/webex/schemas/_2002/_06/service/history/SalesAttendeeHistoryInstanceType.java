@@ -24,7 +24,25 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * The Class SalesAttendeeHistoryInstanceType.
+ * <p>Java class for salesAttendeeHistoryInstanceType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="salesAttendeeHistoryInstanceType">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/history}meetingAttendeeHistoryInstanceType">
+ *       &lt;sequence>
+ *         &lt;element name="account" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="opportunity" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="attendeeType" type="{http://www.webex.com/schemas/2002/06/service/history}attendeeTypeType" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "salesAttendeeHistoryInstanceType", propOrder = {
@@ -37,67 +55,78 @@ public class SalesAttendeeHistoryInstanceType
     implements Serializable
 {
 
-    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
-    
-    /** The account. */
     protected String account;
-    
-    /** The opportunity. */
     protected String opportunity;
-    
-    /** The attendee type. */
     protected AttendeeTypeType attendeeType;
 
     /**
-     * Gets the account.
+     * Gets the value of the account property.
      * 
-     * @return the account
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getAccount() {
         return account;
     }
 
     /**
-     * Sets the account.
+     * Sets the value of the account property.
      * 
-     * @param value the new account
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAccount(String value) {
         this.account = value;
     }
 
     /**
-     * Gets the opportunity.
+     * Gets the value of the opportunity property.
      * 
-     * @return the opportunity
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getOpportunity() {
         return opportunity;
     }
 
     /**
-     * Sets the opportunity.
+     * Sets the value of the opportunity property.
      * 
-     * @param value the new opportunity
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setOpportunity(String value) {
         this.opportunity = value;
     }
 
     /**
-     * Gets the attendee type.
+     * Gets the value of the attendeeType property.
      * 
-     * @return the attendee type
+     * @return
+     *     possible object is
+     *     {@link AttendeeTypeType }
+     *     
      */
     public AttendeeTypeType getAttendeeType() {
         return attendeeType;
     }
 
     /**
-     * Sets the attendee type.
+     * Sets the value of the attendeeType property.
      * 
-     * @param value the new attendee type
+     * @param value
+     *     allowed object is
+     *     {@link AttendeeTypeType }
+     *     
      */
     public void setAttendeeType(AttendeeTypeType value) {
         this.attendeeType = value;
