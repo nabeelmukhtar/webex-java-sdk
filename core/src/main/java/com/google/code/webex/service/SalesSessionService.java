@@ -16,10 +16,41 @@
  */
 package com.google.code.webex.service;
 
+import java.util.List;
+
+import com.webex.schemas._2002._06.service.sales.AccountInstanceType;
+import com.webex.schemas._2002._06.service.sales.AccountType;
+import com.webex.schemas._2002._06.service.sales.CreateSalesSession;
+import com.webex.schemas._2002._06.service.sales.CreateSalesSessionResponse;
+import com.webex.schemas._2002._06.service.sales.DateScopeType;
+import com.webex.schemas._2002._06.service.sales.GetSalesSessionResponse;
+import com.webex.schemas._2002._06.service.sales.ICalendarURL;
+import com.webex.schemas._2002._06.service.sales.LstOpportunitiesResponse;
+import com.webex.schemas._2002._06.service.sales.OpptyInstanceType;
+import com.webex.schemas._2002._06.service.sales.OpptyType;
+import com.webex.schemas._2002._06.service.sales.ProductInstanceType;
+import com.webex.schemas._2002._06.service.sales.ProductType;
+import com.webex.schemas._2002._06.service.sales.SalesSessionSummaryInstanceType;
+import com.webex.schemas._2002._06.service.sales.SetAccount;
+import com.webex.schemas._2002._06.service.sales.SetSalesSession;
+
 /**
  * @author nmukhtar
  *
  */
 public interface SalesSessionService extends WebExService {
-
+	public List<Long> addProducts(List<ProductType> products);
+	public Long createAccount(String webExID, AccountType account);
+	public Long createOpportunity(String webExID, OpptyType opportunity);
+	public CreateSalesSessionResponse createSalesSession(CreateSalesSession salesSession);
+	public ICalendarURL deleteSalesSession(long meetingKey);
+	public GetSalesSessionResponse getSalesSession(long meetingKey);
+	public List<AccountInstanceType> getAccounts(String webExID, Long intAccountID, String extAccountID, Long extSystemID, Boolean returnOppty);
+	public List<LstOpportunitiesResponse.Opportunity> getOpportunities(String webExID, Long intAccountID, String extAccountID, Long intOpptyID, String extOpptyID, Long extSystemID);
+	public List<ProductInstanceType> getProducts(String name, List<Long> prodIDs);
+	public List<SalesSessionSummaryInstanceType> getSalesSessionSummaries(DateScopeType dateScope, Long meetingKey, String hostWebExID, String account, String opportunity);
+	public Long setAccount(String webExID, SetAccount.Account account);
+	public Long setOpportunity(String webExID, OpptyInstanceType opportunity);
+	public List<Long> setProducts(List<ProductInstanceType> products);
+	public ICalendarURL setSalesSession(SetSalesSession salesSession);
 }
