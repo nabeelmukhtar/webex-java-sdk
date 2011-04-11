@@ -26,24 +26,7 @@ import com.webex.schemas._2002._06.service.ResultTypeType;
 
 
 /**
- * <p>Java class for delUserStatusType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="delUserStatusType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="webExId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="status" type="{http://www.webex.com/schemas/2002/06/service}resultTypeType"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class DelUserStatusType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "delUserStatusType", propOrder = {
@@ -54,55 +37,48 @@ public class DelUserStatusType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The web ex id. */
     @XmlElement(required = true)
     protected String webExId;
+    
+    /** The status. */
     @XmlElement(required = true)
     protected ResultTypeType status;
 
     /**
-     * Gets the value of the webExId property.
+     * Gets the web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the web ex id
      */
     public String getWebExId() {
         return webExId;
     }
 
     /**
-     * Sets the value of the webExId property.
+     * Sets the web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new web ex id
      */
     public void setWebExId(String value) {
         this.webExId = value;
     }
 
     /**
-     * Gets the value of the status property.
+     * Gets the status.
      * 
-     * @return
-     *     possible object is
-     *     {@link ResultTypeType }
-     *     
+     * @return the status
      */
     public ResultTypeType getStatus() {
         return status;
     }
 
     /**
-     * Sets the value of the status property.
+     * Sets the status.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ResultTypeType }
-     *     
+     * @param value the new status
      */
     public void setStatus(ResultTypeType value) {
         this.status = value;

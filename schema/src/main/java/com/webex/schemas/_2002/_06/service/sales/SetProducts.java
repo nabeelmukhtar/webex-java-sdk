@@ -28,23 +28,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for setProducts complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="setProducts">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="product" type="{http://www.webex.com/schemas/2002/06/service/sales}productInstanceType" maxOccurs="unbounded"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SetProducts.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "setProducts", propOrder = {
@@ -55,31 +39,17 @@ public class SetProducts
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The product. */
     @XmlElement(required = true)
     protected List<ProductInstanceType> product;
 
     /**
-     * Gets the value of the product property.
+     * Gets the product.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the product property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getProduct().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ProductInstanceType }
-     * 
-     * 
+     * @return the product
      */
     public List<ProductInstanceType> getProduct() {
         if (product == null) {

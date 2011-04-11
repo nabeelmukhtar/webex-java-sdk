@@ -24,23 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for templateType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="templateType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="useTemplate" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class TemplateType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "templateType", propOrder = {
@@ -50,28 +34,25 @@ public class TemplateType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The use template. */
     protected Boolean useTemplate;
 
     /**
-     * Gets the value of the useTemplate property.
+     * Checks if is use template.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isUseTemplate() {
         return useTemplate;
     }
 
     /**
-     * Sets the value of the useTemplate property.
+     * Sets the use template.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new use template
      */
     public void setUseTemplate(Boolean value) {
         this.useTemplate = value;

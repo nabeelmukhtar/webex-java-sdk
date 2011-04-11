@@ -24,26 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for displayMethodType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="displayMethodType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="email" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="fax" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="phone" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="mail" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class DisplayMethodType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "displayMethodType", propOrder = {
@@ -56,103 +37,88 @@ public class DisplayMethodType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The email. */
     protected Boolean email;
+    
+    /** The fax. */
     protected Boolean fax;
+    
+    /** The phone. */
     protected Boolean phone;
+    
+    /** The mail. */
     protected Boolean mail;
 
     /**
-     * Gets the value of the email property.
+     * Checks if is email.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isEmail() {
         return email;
     }
 
     /**
-     * Sets the value of the email property.
+     * Sets the email.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new email
      */
     public void setEmail(Boolean value) {
         this.email = value;
     }
 
     /**
-     * Gets the value of the fax property.
+     * Checks if is fax.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isFax() {
         return fax;
     }
 
     /**
-     * Sets the value of the fax property.
+     * Sets the fax.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new fax
      */
     public void setFax(Boolean value) {
         this.fax = value;
     }
 
     /**
-     * Gets the value of the phone property.
+     * Checks if is phone.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isPhone() {
         return phone;
     }
 
     /**
-     * Sets the value of the phone property.
+     * Sets the phone.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new phone
      */
     public void setPhone(Boolean value) {
         this.phone = value;
     }
 
     /**
-     * Gets the value of the mail property.
+     * Checks if is mail.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isMail() {
         return mail;
     }
 
     /**
-     * Sets the value of the mail property.
+     * Sets the mail.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new mail
      */
     public void setMail(Boolean value) {
         this.mail = value;

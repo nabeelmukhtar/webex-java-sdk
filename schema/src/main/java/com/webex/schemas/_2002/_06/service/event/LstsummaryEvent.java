@@ -26,29 +26,7 @@ import com.webex.schemas._2002._06.service.LstControlType;
 
 
 /**
- * <p>Java class for lstsummaryEvent complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="lstsummaryEvent">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="listControl" type="{http://www.webex.com/schemas/2002/06/service}lstControlType" minOccurs="0"/>
- *         &lt;element name="order" type="{http://www.webex.com/schemas/2002/06/service/event}orderType" minOccurs="0"/>
- *         &lt;element name="dateScope" type="{http://www.webex.com/schemas/2002/06/service/event}dateScopeType" minOccurs="0"/>
- *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="hostWebExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="programID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="attendeeStats" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class LstsummaryEvent.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstsummaryEvent", propOrder = {
@@ -65,178 +43,151 @@ public class LstsummaryEvent
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The list control. */
     protected LstControlType listControl;
+    
+    /** The order. */
     protected OrderType order;
+    
+    /** The date scope. */
     protected DateScopeType dateScope;
+    
+    /** The session key. */
     protected Long sessionKey;
+    
+    /** The host web ex id. */
     protected String hostWebExID;
+    
+    /** The program id. */
     protected Long programID;
+    
+    /** The attendee stats. */
     protected Boolean attendeeStats;
 
     /**
-     * Gets the value of the listControl property.
+     * Gets the list control.
      * 
-     * @return
-     *     possible object is
-     *     {@link LstControlType }
-     *     
+     * @return the list control
      */
     public LstControlType getListControl() {
         return listControl;
     }
 
     /**
-     * Sets the value of the listControl property.
+     * Sets the list control.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link LstControlType }
-     *     
+     * @param value the new list control
      */
     public void setListControl(LstControlType value) {
         this.listControl = value;
     }
 
     /**
-     * Gets the value of the order property.
+     * Gets the order.
      * 
-     * @return
-     *     possible object is
-     *     {@link OrderType }
-     *     
+     * @return the order
      */
     public OrderType getOrder() {
         return order;
     }
 
     /**
-     * Sets the value of the order property.
+     * Sets the order.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link OrderType }
-     *     
+     * @param value the new order
      */
     public void setOrder(OrderType value) {
         this.order = value;
     }
 
     /**
-     * Gets the value of the dateScope property.
+     * Gets the date scope.
      * 
-     * @return
-     *     possible object is
-     *     {@link DateScopeType }
-     *     
+     * @return the date scope
      */
     public DateScopeType getDateScope() {
         return dateScope;
     }
 
     /**
-     * Sets the value of the dateScope property.
+     * Sets the date scope.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link DateScopeType }
-     *     
+     * @param value the new date scope
      */
     public void setDateScope(DateScopeType value) {
         this.dateScope = value;
     }
 
     /**
-     * Gets the value of the sessionKey property.
+     * Gets the session key.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the session key
      */
     public Long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the value of the sessionKey property.
+     * Sets the session key.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new session key
      */
     public void setSessionKey(Long value) {
         this.sessionKey = value;
     }
 
     /**
-     * Gets the value of the hostWebExID property.
+     * Gets the host web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the host web ex id
      */
     public String getHostWebExID() {
         return hostWebExID;
     }
 
     /**
-     * Sets the value of the hostWebExID property.
+     * Sets the host web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new host web ex id
      */
     public void setHostWebExID(String value) {
         this.hostWebExID = value;
     }
 
     /**
-     * Gets the value of the programID property.
+     * Gets the program id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the program id
      */
     public Long getProgramID() {
         return programID;
     }
 
     /**
-     * Sets the value of the programID property.
+     * Sets the program id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new program id
      */
     public void setProgramID(Long value) {
         this.programID = value;
     }
 
     /**
-     * Gets the value of the attendeeStats property.
+     * Checks if is attendee stats.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isAttendeeStats() {
         return attendeeStats;
     }
 
     /**
-     * Sets the value of the attendeeStats property.
+     * Sets the attendee stats.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new attendee stats
      */
     public void setAttendeeStats(Boolean value) {
         this.attendeeStats = value;

@@ -28,29 +28,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for outcomes_processingType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="outcomes_processingType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="qticomment" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qticommentType" minOccurs="0"/>
- *         &lt;element name="outcomes" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}outcomesType"/>
- *         &lt;element name="objects_condition" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}objects_conditionType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="processing_parameter" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}processing_parameterType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="map_output" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}map_outputType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="outcomes_feedback_test" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}outcomes_feedback_testType" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute name="scoremodel" type="{http://www.w3.org/2001/XMLSchema}string" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class OutcomesProcessingType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "outcomes_processingType", propOrder = {
@@ -65,90 +43,76 @@ public class OutcomesProcessingType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The qticomment. */
     protected QticommentType qticomment;
+    
+    /** The outcomes. */
     @XmlElement(required = true)
     protected OutcomesType outcomes;
+    
+    /** The objects condition. */
     @XmlElement(name = "objects_condition")
     protected List<ObjectsConditionType> objectsCondition;
+    
+    /** The processing parameter. */
     @XmlElement(name = "processing_parameter")
     protected List<ProcessingParameterType> processingParameter;
+    
+    /** The map output. */
     @XmlElement(name = "map_output")
     protected List<MapOutputType> mapOutput;
+    
+    /** The outcomes feedback test. */
     @XmlElement(name = "outcomes_feedback_test")
     protected List<OutcomesFeedbackTestType> outcomesFeedbackTest;
+    
+    /** The scoremodel. */
     @XmlAttribute
     protected String scoremodel;
 
     /**
-     * Gets the value of the qticomment property.
+     * Gets the qticomment.
      * 
-     * @return
-     *     possible object is
-     *     {@link QticommentType }
-     *     
+     * @return the qticomment
      */
     public QticommentType getQticomment() {
         return qticomment;
     }
 
     /**
-     * Sets the value of the qticomment property.
+     * Sets the qticomment.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link QticommentType }
-     *     
+     * @param value the new qticomment
      */
     public void setQticomment(QticommentType value) {
         this.qticomment = value;
     }
 
     /**
-     * Gets the value of the outcomes property.
+     * Gets the outcomes.
      * 
-     * @return
-     *     possible object is
-     *     {@link OutcomesType }
-     *     
+     * @return the outcomes
      */
     public OutcomesType getOutcomes() {
         return outcomes;
     }
 
     /**
-     * Sets the value of the outcomes property.
+     * Sets the outcomes.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link OutcomesType }
-     *     
+     * @param value the new outcomes
      */
     public void setOutcomes(OutcomesType value) {
         this.outcomes = value;
     }
 
     /**
-     * Gets the value of the objectsCondition property.
+     * Gets the objects condition.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the objectsCondition property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getObjectsCondition().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ObjectsConditionType }
-     * 
-     * 
+     * @return the objects condition
      */
     public List<ObjectsConditionType> getObjectsCondition() {
         if (objectsCondition == null) {
@@ -158,26 +122,9 @@ public class OutcomesProcessingType
     }
 
     /**
-     * Gets the value of the processingParameter property.
+     * Gets the processing parameter.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the processingParameter property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getProcessingParameter().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ProcessingParameterType }
-     * 
-     * 
+     * @return the processing parameter
      */
     public List<ProcessingParameterType> getProcessingParameter() {
         if (processingParameter == null) {
@@ -187,26 +134,9 @@ public class OutcomesProcessingType
     }
 
     /**
-     * Gets the value of the mapOutput property.
+     * Gets the map output.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the mapOutput property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getMapOutput().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link MapOutputType }
-     * 
-     * 
+     * @return the map output
      */
     public List<MapOutputType> getMapOutput() {
         if (mapOutput == null) {
@@ -216,26 +146,9 @@ public class OutcomesProcessingType
     }
 
     /**
-     * Gets the value of the outcomesFeedbackTest property.
+     * Gets the outcomes feedback test.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the outcomesFeedbackTest property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getOutcomesFeedbackTest().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link OutcomesFeedbackTestType }
-     * 
-     * 
+     * @return the outcomes feedback test
      */
     public List<OutcomesFeedbackTestType> getOutcomesFeedbackTest() {
         if (outcomesFeedbackTest == null) {
@@ -245,24 +158,18 @@ public class OutcomesProcessingType
     }
 
     /**
-     * Gets the value of the scoremodel property.
+     * Gets the scoremodel.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the scoremodel
      */
     public String getScoremodel() {
         return scoremodel;
     }
 
     /**
-     * Sets the value of the scoremodel property.
+     * Sets the scoremodel.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new scoremodel
      */
     public void setScoremodel(String value) {
         this.scoremodel = value;

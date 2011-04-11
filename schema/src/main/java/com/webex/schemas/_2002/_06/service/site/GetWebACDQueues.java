@@ -27,25 +27,7 @@ import com.webex.schemas._2002._06.service.ep.ListControlType;
 
 
 /**
- * <p>Java class for GetWebACDQueues complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="GetWebACDQueues">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="webExId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="type" type="{http://www.webex.com/schemas/2002/06/service}webACDRoleType" minOccurs="0"/>
- *         &lt;element name="listControl" type="{http://www.webex.com/schemas/2002/06/service/ep}listControlType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GetWebACDQueues.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "GetWebACDQueues", propOrder = {
@@ -58,78 +40,67 @@ public class GetWebACDQueues
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The web ex id. */
     protected String webExId;
+    
+    /** The type. */
     protected WebACDRoleType type;
+    
+    /** The list control. */
     protected ListControlType listControl;
 
     /**
-     * Gets the value of the webExId property.
+     * Gets the web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the web ex id
      */
     public String getWebExId() {
         return webExId;
     }
 
     /**
-     * Sets the value of the webExId property.
+     * Sets the web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new web ex id
      */
     public void setWebExId(String value) {
         this.webExId = value;
     }
 
     /**
-     * Gets the value of the type property.
+     * Gets the type.
      * 
-     * @return
-     *     possible object is
-     *     {@link WebACDRoleType }
-     *     
+     * @return the type
      */
     public WebACDRoleType getType() {
         return type;
     }
 
     /**
-     * Sets the value of the type property.
+     * Sets the type.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link WebACDRoleType }
-     *     
+     * @param value the new type
      */
     public void setType(WebACDRoleType value) {
         this.type = value;
     }
 
     /**
-     * Gets the value of the listControl property.
+     * Gets the list control.
      * 
-     * @return
-     *     possible object is
-     *     {@link ListControlType }
-     *     
+     * @return the list control
      */
     public ListControlType getListControl() {
         return listControl;
     }
 
     /**
-     * Sets the value of the listControl property.
+     * Sets the list control.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ListControlType }
-     *     
+     * @param value the new list control
      */
     public void setListControl(ListControlType value) {
         this.listControl = value;

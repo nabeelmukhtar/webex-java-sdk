@@ -28,24 +28,7 @@ import com.webex.schemas._2002._06.service.MatchingRecordsType;
 
 
 /**
- * <p>Java class for lstsummaryProgramResponse complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="lstsummaryProgramResponse">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="matchingRecords" type="{http://www.webex.com/schemas/2002/06/service}matchingRecordsType" minOccurs="0"/>
- *         &lt;element name="program" type="{http://www.webex.com/schemas/2002/06/service/event}programSummaryType" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class LstsummaryProgramResponse.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstsummaryProgramResponse", propOrder = {
@@ -57,55 +40,37 @@ public class LstsummaryProgramResponse
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The matching records. */
     protected MatchingRecordsType matchingRecords;
+    
+    /** The program. */
     protected List<ProgramSummaryType> program;
 
     /**
-     * Gets the value of the matchingRecords property.
+     * Gets the matching records.
      * 
-     * @return
-     *     possible object is
-     *     {@link MatchingRecordsType }
-     *     
+     * @return the matching records
      */
     public MatchingRecordsType getMatchingRecords() {
         return matchingRecords;
     }
 
     /**
-     * Sets the value of the matchingRecords property.
+     * Sets the matching records.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link MatchingRecordsType }
-     *     
+     * @param value the new matching records
      */
     public void setMatchingRecords(MatchingRecordsType value) {
         this.matchingRecords = value;
     }
 
     /**
-     * Gets the value of the program property.
+     * Gets the program.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the program property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getProgram().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ProgramSummaryType }
-     * 
-     * 
+     * @return the program
      */
     public List<ProgramSummaryType> getProgram() {
         if (program == null) {

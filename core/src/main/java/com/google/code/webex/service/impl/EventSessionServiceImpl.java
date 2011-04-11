@@ -48,14 +48,29 @@ import com.webex.schemas._2002._06.service.event.SendInvitationEmailResponse;
 import com.webex.schemas._2002._06.service.event.SetEvent;
 import com.webex.schemas._2002._06.service.event.UploadEventImage;
 
+/**
+ * The Class EventSessionServiceImpl.
+ */
 public class EventSessionServiceImpl extends WebExJaxbService implements
 		EventSessionService {
 
+	/**
+	 * Instantiates a new event session service impl.
+	 * 
+	 * @param webExId the web ex id
+	 * @param password the password
+	 * @param siteId the site id
+	 * @param siteName the site name
+	 * @param partnerId the partner id
+	 */
 	public EventSessionServiceImpl(String webExId, String password,
 			Long siteId, String siteName, String partnerId) {
 		super(webExId, password, siteId, siteName, partnerId);
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.EventSessionService#createEvent(com.webex.schemas._2002._06.service.event.CreateEvent)
+	 */
 	@Override
 	public CreateEventResponse createEvent(CreateEvent event) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -70,6 +85,9 @@ public class EventSessionServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.EventSessionService#deleteEvent(long)
+	 */
 	@Override
 	public void deleteEvent(long sessionKey) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -84,6 +102,9 @@ public class EventSessionServiceImpl extends WebExJaxbService implements
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.EventSessionService#getEvent(long)
+	 */
 	@Override
 	public GetEventResponse getEvent(long sessionKey) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -101,6 +122,9 @@ public class EventSessionServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.EventSessionService#getRecordedEvents(com.webex.schemas._2002._06.service.event.DateScopeType, java.lang.String, java.lang.Long)
+	 */
 	@Override
 	public List<RecordedEventsType> getRecordedEvents(DateScopeType dateScope,
 			String hostWebExID, Long programID) {
@@ -120,6 +144,9 @@ public class EventSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<RecordedEventsType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.EventSessionService#getEventSummaries(com.webex.schemas._2002._06.service.event.DateScopeType, java.lang.Long, java.lang.String, java.lang.Long, java.lang.Boolean)
+	 */
 	@Override
 	public List<EventSummaryInstanceType> getEventSummaries(
 			DateScopeType dateScope, Long sessionKey, String hostWebExID,
@@ -142,6 +169,9 @@ public class EventSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<EventSummaryInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.EventSessionService#getProgramSummaries(java.lang.Long)
+	 */
 	@Override
 	public List<ProgramSummaryType> getProgramSummaries(Long programID) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -158,6 +188,9 @@ public class EventSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<ProgramSummaryType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.EventSessionService#sendInvitationEmails(long, java.lang.Boolean, java.lang.Boolean)
+	 */
 	@Override
 	public List<String> sendInvitationEmails(long sessionKey,
 			Boolean attendees, Boolean panelists) {
@@ -177,6 +210,9 @@ public class EventSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<String>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.EventSessionService#setEvent(com.webex.schemas._2002._06.service.event.SetEvent)
+	 */
 	@Override
 	public void setEvent(SetEvent event) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -188,6 +224,9 @@ public class EventSessionServiceImpl extends WebExJaxbService implements
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.EventSessionService#uploadEventImage(long, com.webex.schemas._2002._06.service.event.ImageTypeType, byte[])
+	 */
 	@Override
 	public void uploadEventImage(long sessionKey, ImageTypeType imageType,
 			byte[] imageData) {

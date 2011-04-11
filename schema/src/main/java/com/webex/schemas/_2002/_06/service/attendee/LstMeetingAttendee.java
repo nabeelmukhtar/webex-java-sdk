@@ -26,29 +26,7 @@ import com.webex.schemas._2002._06.service.LstControlType;
 
 
 /**
- * <p>Java class for lstMeetingAttendee complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="lstMeetingAttendee">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="listControl" type="{http://www.webex.com/schemas/2002/06/service}lstControlType" minOccurs="0"/>
- *         &lt;element name="order" type="{http://www.webex.com/schemas/2002/06/service/attendee}orderType" minOccurs="0"/>
- *         &lt;element name="meetingKey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="joinStatus" type="{http://www.webex.com/schemas/2002/06/service/attendee}joinStatusType" minOccurs="0"/>
- *         &lt;element name="confID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="inclHistory" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class LstMeetingAttendee.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstMeetingAttendee", propOrder = {
@@ -65,178 +43,151 @@ public class LstMeetingAttendee
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The list control. */
     protected LstControlType listControl;
+    
+    /** The order. */
     protected OrderType order;
+    
+    /** The meeting key. */
     protected Long meetingKey;
+    
+    /** The session key. */
     protected Long sessionKey;
+    
+    /** The join status. */
     protected JoinStatusType joinStatus;
+    
+    /** The conf id. */
     protected Long confID;
+    
+    /** The incl history. */
     protected Boolean inclHistory;
 
     /**
-     * Gets the value of the listControl property.
+     * Gets the list control.
      * 
-     * @return
-     *     possible object is
-     *     {@link LstControlType }
-     *     
+     * @return the list control
      */
     public LstControlType getListControl() {
         return listControl;
     }
 
     /**
-     * Sets the value of the listControl property.
+     * Sets the list control.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link LstControlType }
-     *     
+     * @param value the new list control
      */
     public void setListControl(LstControlType value) {
         this.listControl = value;
     }
 
     /**
-     * Gets the value of the order property.
+     * Gets the order.
      * 
-     * @return
-     *     possible object is
-     *     {@link OrderType }
-     *     
+     * @return the order
      */
     public OrderType getOrder() {
         return order;
     }
 
     /**
-     * Sets the value of the order property.
+     * Sets the order.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link OrderType }
-     *     
+     * @param value the new order
      */
     public void setOrder(OrderType value) {
         this.order = value;
     }
 
     /**
-     * Gets the value of the meetingKey property.
+     * Gets the meeting key.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the meeting key
      */
     public Long getMeetingKey() {
         return meetingKey;
     }
 
     /**
-     * Sets the value of the meetingKey property.
+     * Sets the meeting key.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new meeting key
      */
     public void setMeetingKey(Long value) {
         this.meetingKey = value;
     }
 
     /**
-     * Gets the value of the sessionKey property.
+     * Gets the session key.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the session key
      */
     public Long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the value of the sessionKey property.
+     * Sets the session key.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new session key
      */
     public void setSessionKey(Long value) {
         this.sessionKey = value;
     }
 
     /**
-     * Gets the value of the joinStatus property.
+     * Gets the join status.
      * 
-     * @return
-     *     possible object is
-     *     {@link JoinStatusType }
-     *     
+     * @return the join status
      */
     public JoinStatusType getJoinStatus() {
         return joinStatus;
     }
 
     /**
-     * Sets the value of the joinStatus property.
+     * Sets the join status.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link JoinStatusType }
-     *     
+     * @param value the new join status
      */
     public void setJoinStatus(JoinStatusType value) {
         this.joinStatus = value;
     }
 
     /**
-     * Gets the value of the confID property.
+     * Gets the conf id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the conf id
      */
     public Long getConfID() {
         return confID;
     }
 
     /**
-     * Sets the value of the confID property.
+     * Sets the conf id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new conf id
      */
     public void setConfID(Long value) {
         this.confID = value;
     }
 
     /**
-     * Gets the value of the inclHistory property.
+     * Checks if is incl history.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isInclHistory() {
         return inclHistory;
     }
 
     /**
-     * Sets the value of the inclHistory property.
+     * Sets the incl history.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new incl history
      */
     public void setInclHistory(Boolean value) {
         this.inclHistory = value;

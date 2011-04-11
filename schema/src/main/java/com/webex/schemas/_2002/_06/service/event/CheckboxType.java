@@ -28,31 +28,7 @@ import org.w3._2001.xmlschema.Adapter2;
 
 
 /**
- * <p>Java class for checkboxType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="checkboxType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="label">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="256"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="score" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/>
- *         &lt;element name="state" type="{http://www.webex.com/schemas/2002/06/service/event}checkboxStateType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class CheckboxType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "checkboxType", propOrder = {
@@ -64,83 +40,72 @@ public class CheckboxType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The label. */
     @XmlElement(required = true)
     protected String label;
+    
+    /** The score. */
     @XmlElement(type = String.class, defaultValue = "0")
     @XmlJavaTypeAdapter(Adapter2 .class)
     @XmlSchemaType(name = "double")
     protected Double score;
+    
+    /** The state. */
     @XmlElement(defaultValue = "CLEARED")
     protected CheckboxStateType state;
 
     /**
-     * Gets the value of the label property.
+     * Gets the label.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the label
      */
     public String getLabel() {
         return label;
     }
 
     /**
-     * Sets the value of the label property.
+     * Sets the label.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new label
      */
     public void setLabel(String value) {
         this.label = value;
     }
 
     /**
-     * Gets the value of the score property.
+     * Gets the score.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the score
      */
     public Double getScore() {
         return score;
     }
 
     /**
-     * Sets the value of the score property.
+     * Sets the score.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new score
      */
     public void setScore(Double value) {
         this.score = value;
     }
 
     /**
-     * Gets the value of the state property.
+     * Gets the state.
      * 
-     * @return
-     *     possible object is
-     *     {@link CheckboxStateType }
-     *     
+     * @return the state
      */
     public CheckboxStateType getState() {
         return state;
     }
 
     /**
-     * Sets the value of the state property.
+     * Sets the state.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link CheckboxStateType }
-     *     
+     * @param value the new state
      */
     public void setState(CheckboxStateType value) {
         this.state = value;

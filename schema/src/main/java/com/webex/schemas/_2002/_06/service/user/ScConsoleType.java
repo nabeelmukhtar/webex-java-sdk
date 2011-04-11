@@ -22,31 +22,34 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for scConsoleType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="scConsoleType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="NEW_CONSL"/>
- *     &lt;enumeration value="OLD_CONSL"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum ScConsoleType.
  */
 @XmlType(name = "scConsoleType")
 @XmlEnum
 public enum ScConsoleType {
 
+    /** The NE w_ consl. */
     NEW_CONSL,
+    
+    /** The OL d_ consl. */
     OLD_CONSL;
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the sc console type
+     */
     public static ScConsoleType fromValue(String v) {
         return valueOf(v);
     }

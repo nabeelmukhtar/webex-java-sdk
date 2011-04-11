@@ -22,31 +22,34 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for playbackRangeType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="playbackRangeType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="FULL"/>
- *     &lt;enumeration value="PARTIAL"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum PlaybackRangeType.
  */
 @XmlType(name = "playbackRangeType")
 @XmlEnum
 public enum PlaybackRangeType {
 
+    /** The FULL. */
     FULL,
+    
+    /** The PARTIAL. */
     PARTIAL;
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the playback range type
+     */
     public static PlaybackRangeType fromValue(String v) {
         return valueOf(v);
     }

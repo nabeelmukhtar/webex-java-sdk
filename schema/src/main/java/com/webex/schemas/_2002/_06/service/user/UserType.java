@@ -35,196 +35,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for userType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="userType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="firstName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="lastName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="title" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="categoryId" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="officeGreeting" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="company" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="webExId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="address" type="{http://www.webex.com/schemas/2002/06/common}addressType" minOccurs="0"/>
- *         &lt;element name="phones" type="{http://www.webex.com/schemas/2002/06/service/user}userPhonesType" minOccurs="0"/>
- *         &lt;element name="email" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="email2" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="officeurl" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="password" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="60"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="passwordHint" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="passwordHintAnswer" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="personalUrl" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="expirationDate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="commOptions" type="{http://www.webex.com/schemas/2002/06/service/user}commOptionsType" minOccurs="0"/>
- *         &lt;element name="meetingTypes" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="meetingType" type="{http://www.w3.org/2001/XMLSchema}long" maxOccurs="unbounded" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="options" type="{http://www.webex.com/schemas/2002/06/service/user}optionsType" minOccurs="0"/>
- *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="timeZone" type="{http://www.webex.com/schemas/2002/06/common}timeZoneType" minOccurs="0"/>
- *         &lt;element name="timeZoneWithDST" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="tracking" type="{http://www.webex.com/schemas/2002/06/common}trackingType" minOccurs="0"/>
- *         &lt;element name="service" type="{http://www.webex.com/schemas/2002/06/service/user}serviceType" minOccurs="0"/>
- *         &lt;element name="privilege" type="{http://www.webex.com/schemas/2002/06/service/user}privilegeType" minOccurs="0"/>
- *         &lt;element name="language" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="locale" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="schedulingPermission" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="active" type="{http://www.webex.com/schemas/2002/06/service/user}activeType" minOccurs="0"/>
- *         &lt;element name="tspAccount" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="tspAccount" type="{http://www.webex.com/schemas/2002/06/service/user}tspAccountType" maxOccurs="3" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="supportedServices" type="{http://www.webex.com/schemas/2002/06/service/user}supportedServicesType" minOccurs="0"/>
- *         &lt;element name="myWebEx" type="{http://www.webex.com/schemas/2002/06/service/user}mywebexType" minOccurs="0"/>
- *         &lt;element name="personalTeleconf" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="account" type="{http://www.webex.com/schemas/2002/06/service/user}personalAccountType" maxOccurs="3" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="thirdPartyTeleconf" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="account" type="{http://www.webex.com/schemas/2002/06/service/user}thirdPartyAccountType" maxOccurs="3" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="personalMeetingRoom" type="{http://www.webex.com/schemas/2002/06/service/user}personalMeetingRoomType" minOccurs="0"/>
- *         &lt;element name="sessionOptions" type="{http://www.webex.com/schemas/2002/06/service/user}sessionOptionsType" minOccurs="0"/>
- *         &lt;element name="supportCenter" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="orderTabs" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="tab" type="{http://www.webex.com/schemas/2002/06/service/user}scTabType" maxOccurs="4" minOccurs="4"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                   &lt;element name="serviceDesk" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="enable" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="mpProfileNumber" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="64"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="security" type="{http://www.webex.com/schemas/2002/06/service/user}securityType" minOccurs="0"/>
- *         &lt;element name="languageID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="webACDPrefs" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;extension base="{http://www.webex.com/schemas/2002/06/service/user}webACDUserRoleType">
- *                 &lt;sequence>
- *                   &lt;element name="numAgentSessions" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *                   &lt;element name="agentMonitorAllRSQueues" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *                   &lt;element name="managerMonitorAllRSQueues" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *                   &lt;element name="monitorAllRSAgents" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/extension>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="remoteSupport" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;extension base="{http://www.webex.com/schemas/2002/06/service/user}sharingAndRecordingType">
- *                 &lt;sequence>
- *                   &lt;element name="autoRequest" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="enable" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *                             &lt;element name="request" type="{http://www.webex.com/schemas/2002/06/service/user}scRequestType" minOccurs="0"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                   &lt;element name="defaultClient" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="type" type="{http://www.webex.com/schemas/2002/06/service/user}scClientType"/>
- *                             &lt;element name="singleSessClient" type="{http://www.webex.com/schemas/2002/06/service/user}scConsoleType" minOccurs="0"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                 &lt;/sequence>
- *               &lt;/extension>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="remoteAccess" type="{http://www.webex.com/schemas/2002/06/service/user}sharingAndRecordingType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class UserType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "userType", propOrder = {
@@ -283,1133 +94,954 @@ public class UserType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The first name. */
     protected String firstName;
+    
+    /** The last name. */
     protected String lastName;
+    
+    /** The title. */
     protected String title;
+    
+    /** The category id. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long categoryId;
+    
+    /** The description. */
     protected String description;
+    
+    /** The office greeting. */
     protected String officeGreeting;
+    
+    /** The company. */
     protected String company;
+    
+    /** The web ex id. */
     @XmlElement(required = true)
     protected String webExId;
+    
+    /** The address. */
     protected AddressType address;
+    
+    /** The phones. */
     protected UserPhonesType phones;
+    
+    /** The email. */
     protected String email;
+    
+    /** The email2. */
     protected String email2;
+    
+    /** The officeurl. */
     protected String officeurl;
+    
+    /** The password. */
     protected String password;
+    
+    /** The password hint. */
     protected String passwordHint;
+    
+    /** The password hint answer. */
     protected String passwordHintAnswer;
+    
+    /** The personal url. */
     protected String personalUrl;
+    
+    /** The expiration date. */
     protected String expirationDate;
+    
+    /** The comm options. */
     protected CommOptionsType commOptions;
+    
+    /** The meeting types. */
     protected UserType.MeetingTypes meetingTypes;
+    
+    /** The options. */
     protected OptionsType options;
+    
+    /** The time zone id. */
     @XmlElement(defaultValue = "-1")
     protected Long timeZoneID;
+    
+    /** The time zone. */
     protected TimeZoneType timeZone;
+    
+    /** The time zone with dst. */
     protected String timeZoneWithDST;
+    
+    /** The tracking. */
     protected TrackingType tracking;
+    
+    /** The service. */
     protected ServiceType service;
+    
+    /** The privilege. */
     protected PrivilegeType privilege;
+    
+    /** The language. */
     protected String language;
+    
+    /** The locale. */
     protected String locale;
+    
+    /** The scheduling permission. */
     protected String schedulingPermission;
+    
+    /** The active. */
     protected ActiveType active;
+    
+    /** The tsp account. */
     protected UserType.TspAccount tspAccount;
+    
+    /** The supported services. */
     protected SupportedServicesType supportedServices;
+    
+    /** The my web ex. */
     protected MywebexType myWebEx;
+    
+    /** The personal teleconf. */
     protected UserType.PersonalTeleconf personalTeleconf;
+    
+    /** The third party teleconf. */
     protected UserType.ThirdPartyTeleconf thirdPartyTeleconf;
+    
+    /** The personal meeting room. */
     protected PersonalMeetingRoomType personalMeetingRoom;
+    
+    /** The session options. */
     protected SessionOptionsType sessionOptions;
+    
+    /** The support center. */
     protected UserType.SupportCenter supportCenter;
+    
+    /** The mp profile number. */
     protected String mpProfileNumber;
+    
+    /** The security. */
     protected SecurityType security;
+    
+    /** The language id. */
     protected Long languageID;
+    
+    /** The web acd prefs. */
     protected UserType.WebACDPrefs webACDPrefs;
+    
+    /** The remote support. */
     protected UserType.RemoteSupport remoteSupport;
+    
+    /** The remote access. */
     protected SharingAndRecordingType remoteAccess;
 
     /**
-     * Gets the value of the firstName property.
+     * Gets the first name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the first name
      */
     public String getFirstName() {
         return firstName;
     }
 
     /**
-     * Sets the value of the firstName property.
+     * Sets the first name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new first name
      */
     public void setFirstName(String value) {
         this.firstName = value;
     }
 
     /**
-     * Gets the value of the lastName property.
+     * Gets the last name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the last name
      */
     public String getLastName() {
         return lastName;
     }
 
     /**
-     * Sets the value of the lastName property.
+     * Sets the last name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new last name
      */
     public void setLastName(String value) {
         this.lastName = value;
     }
 
     /**
-     * Gets the value of the title property.
+     * Gets the title.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the title
      */
     public String getTitle() {
         return title;
     }
 
     /**
-     * Sets the value of the title property.
+     * Sets the title.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new title
      */
     public void setTitle(String value) {
         this.title = value;
     }
 
     /**
-     * Gets the value of the categoryId property.
+     * Gets the category id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the category id
      */
     public Long getCategoryId() {
         return categoryId;
     }
 
     /**
-     * Sets the value of the categoryId property.
+     * Sets the category id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new category id
      */
     public void setCategoryId(Long value) {
         this.categoryId = value;
     }
 
     /**
-     * Gets the value of the description property.
+     * Gets the description.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the description
      */
     public String getDescription() {
         return description;
     }
 
     /**
-     * Sets the value of the description property.
+     * Sets the description.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new description
      */
     public void setDescription(String value) {
         this.description = value;
     }
 
     /**
-     * Gets the value of the officeGreeting property.
+     * Gets the office greeting.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the office greeting
      */
     public String getOfficeGreeting() {
         return officeGreeting;
     }
 
     /**
-     * Sets the value of the officeGreeting property.
+     * Sets the office greeting.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new office greeting
      */
     public void setOfficeGreeting(String value) {
         this.officeGreeting = value;
     }
 
     /**
-     * Gets the value of the company property.
+     * Gets the company.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the company
      */
     public String getCompany() {
         return company;
     }
 
     /**
-     * Sets the value of the company property.
+     * Sets the company.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new company
      */
     public void setCompany(String value) {
         this.company = value;
     }
 
     /**
-     * Gets the value of the webExId property.
+     * Gets the web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the web ex id
      */
     public String getWebExId() {
         return webExId;
     }
 
     /**
-     * Sets the value of the webExId property.
+     * Sets the web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new web ex id
      */
     public void setWebExId(String value) {
         this.webExId = value;
     }
 
     /**
-     * Gets the value of the address property.
+     * Gets the address.
      * 
-     * @return
-     *     possible object is
-     *     {@link AddressType }
-     *     
+     * @return the address
      */
     public AddressType getAddress() {
         return address;
     }
 
     /**
-     * Sets the value of the address property.
+     * Sets the address.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link AddressType }
-     *     
+     * @param value the new address
      */
     public void setAddress(AddressType value) {
         this.address = value;
     }
 
     /**
-     * Gets the value of the phones property.
+     * Gets the phones.
      * 
-     * @return
-     *     possible object is
-     *     {@link UserPhonesType }
-     *     
+     * @return the phones
      */
     public UserPhonesType getPhones() {
         return phones;
     }
 
     /**
-     * Sets the value of the phones property.
+     * Sets the phones.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link UserPhonesType }
-     *     
+     * @param value the new phones
      */
     public void setPhones(UserPhonesType value) {
         this.phones = value;
     }
 
     /**
-     * Gets the value of the email property.
+     * Gets the email.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the email
      */
     public String getEmail() {
         return email;
     }
 
     /**
-     * Sets the value of the email property.
+     * Sets the email.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new email
      */
     public void setEmail(String value) {
         this.email = value;
     }
 
     /**
-     * Gets the value of the email2 property.
+     * Gets the email2.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the email2
      */
     public String getEmail2() {
         return email2;
     }
 
     /**
-     * Sets the value of the email2 property.
+     * Sets the email2.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new email2
      */
     public void setEmail2(String value) {
         this.email2 = value;
     }
 
     /**
-     * Gets the value of the officeurl property.
+     * Gets the officeurl.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the officeurl
      */
     public String getOfficeurl() {
         return officeurl;
     }
 
     /**
-     * Sets the value of the officeurl property.
+     * Sets the officeurl.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new officeurl
      */
     public void setOfficeurl(String value) {
         this.officeurl = value;
     }
 
     /**
-     * Gets the value of the password property.
+     * Gets the password.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the password
      */
     public String getPassword() {
         return password;
     }
 
     /**
-     * Sets the value of the password property.
+     * Sets the password.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new password
      */
     public void setPassword(String value) {
         this.password = value;
     }
 
     /**
-     * Gets the value of the passwordHint property.
+     * Gets the password hint.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the password hint
      */
     public String getPasswordHint() {
         return passwordHint;
     }
 
     /**
-     * Sets the value of the passwordHint property.
+     * Sets the password hint.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new password hint
      */
     public void setPasswordHint(String value) {
         this.passwordHint = value;
     }
 
     /**
-     * Gets the value of the passwordHintAnswer property.
+     * Gets the password hint answer.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the password hint answer
      */
     public String getPasswordHintAnswer() {
         return passwordHintAnswer;
     }
 
     /**
-     * Sets the value of the passwordHintAnswer property.
+     * Sets the password hint answer.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new password hint answer
      */
     public void setPasswordHintAnswer(String value) {
         this.passwordHintAnswer = value;
     }
 
     /**
-     * Gets the value of the personalUrl property.
+     * Gets the personal url.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the personal url
      */
     public String getPersonalUrl() {
         return personalUrl;
     }
 
     /**
-     * Sets the value of the personalUrl property.
+     * Sets the personal url.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new personal url
      */
     public void setPersonalUrl(String value) {
         this.personalUrl = value;
     }
 
     /**
-     * Gets the value of the expirationDate property.
+     * Gets the expiration date.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the expiration date
      */
     public String getExpirationDate() {
         return expirationDate;
     }
 
     /**
-     * Sets the value of the expirationDate property.
+     * Sets the expiration date.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new expiration date
      */
     public void setExpirationDate(String value) {
         this.expirationDate = value;
     }
 
     /**
-     * Gets the value of the commOptions property.
+     * Gets the comm options.
      * 
-     * @return
-     *     possible object is
-     *     {@link CommOptionsType }
-     *     
+     * @return the comm options
      */
     public CommOptionsType getCommOptions() {
         return commOptions;
     }
 
     /**
-     * Sets the value of the commOptions property.
+     * Sets the comm options.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link CommOptionsType }
-     *     
+     * @param value the new comm options
      */
     public void setCommOptions(CommOptionsType value) {
         this.commOptions = value;
     }
 
     /**
-     * Gets the value of the meetingTypes property.
+     * Gets the meeting types.
      * 
-     * @return
-     *     possible object is
-     *     {@link UserType.MeetingTypes }
-     *     
+     * @return the meeting types
      */
     public UserType.MeetingTypes getMeetingTypes() {
         return meetingTypes;
     }
 
     /**
-     * Sets the value of the meetingTypes property.
+     * Sets the meeting types.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link UserType.MeetingTypes }
-     *     
+     * @param value the new meeting types
      */
     public void setMeetingTypes(UserType.MeetingTypes value) {
         this.meetingTypes = value;
     }
 
     /**
-     * Gets the value of the options property.
+     * Gets the options.
      * 
-     * @return
-     *     possible object is
-     *     {@link OptionsType }
-     *     
+     * @return the options
      */
     public OptionsType getOptions() {
         return options;
     }
 
     /**
-     * Sets the value of the options property.
+     * Sets the options.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link OptionsType }
-     *     
+     * @param value the new options
      */
     public void setOptions(OptionsType value) {
         this.options = value;
     }
 
     /**
-     * Gets the value of the timeZoneID property.
+     * Gets the time zone id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the time zone id
      */
     public Long getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the value of the timeZoneID property.
+     * Sets the time zone id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new time zone id
      */
     public void setTimeZoneID(Long value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the value of the timeZone property.
+     * Gets the time zone.
      * 
-     * @return
-     *     possible object is
-     *     {@link TimeZoneType }
-     *     
+     * @return the time zone
      */
     public TimeZoneType getTimeZone() {
         return timeZone;
     }
 
     /**
-     * Sets the value of the timeZone property.
+     * Sets the time zone.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TimeZoneType }
-     *     
+     * @param value the new time zone
      */
     public void setTimeZone(TimeZoneType value) {
         this.timeZone = value;
     }
 
     /**
-     * Gets the value of the timeZoneWithDST property.
+     * Gets the time zone with dst.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the time zone with dst
      */
     public String getTimeZoneWithDST() {
         return timeZoneWithDST;
     }
 
     /**
-     * Sets the value of the timeZoneWithDST property.
+     * Sets the time zone with dst.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new time zone with dst
      */
     public void setTimeZoneWithDST(String value) {
         this.timeZoneWithDST = value;
     }
 
     /**
-     * Gets the value of the tracking property.
+     * Gets the tracking.
      * 
-     * @return
-     *     possible object is
-     *     {@link TrackingType }
-     *     
+     * @return the tracking
      */
     public TrackingType getTracking() {
         return tracking;
     }
 
     /**
-     * Sets the value of the tracking property.
+     * Sets the tracking.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TrackingType }
-     *     
+     * @param value the new tracking
      */
     public void setTracking(TrackingType value) {
         this.tracking = value;
     }
 
     /**
-     * Gets the value of the service property.
+     * Gets the service.
      * 
-     * @return
-     *     possible object is
-     *     {@link ServiceType }
-     *     
+     * @return the service
      */
     public ServiceType getService() {
         return service;
     }
 
     /**
-     * Sets the value of the service property.
+     * Sets the service.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ServiceType }
-     *     
+     * @param value the new service
      */
     public void setService(ServiceType value) {
         this.service = value;
     }
 
     /**
-     * Gets the value of the privilege property.
+     * Gets the privilege.
      * 
-     * @return
-     *     possible object is
-     *     {@link PrivilegeType }
-     *     
+     * @return the privilege
      */
     public PrivilegeType getPrivilege() {
         return privilege;
     }
 
     /**
-     * Sets the value of the privilege property.
+     * Sets the privilege.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link PrivilegeType }
-     *     
+     * @param value the new privilege
      */
     public void setPrivilege(PrivilegeType value) {
         this.privilege = value;
     }
 
     /**
-     * Gets the value of the language property.
+     * Gets the language.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the language
      */
     public String getLanguage() {
         return language;
     }
 
     /**
-     * Sets the value of the language property.
+     * Sets the language.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new language
      */
     public void setLanguage(String value) {
         this.language = value;
     }
 
     /**
-     * Gets the value of the locale property.
+     * Gets the locale.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the locale
      */
     public String getLocale() {
         return locale;
     }
 
     /**
-     * Sets the value of the locale property.
+     * Sets the locale.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new locale
      */
     public void setLocale(String value) {
         this.locale = value;
     }
 
     /**
-     * Gets the value of the schedulingPermission property.
+     * Gets the scheduling permission.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the scheduling permission
      */
     public String getSchedulingPermission() {
         return schedulingPermission;
     }
 
     /**
-     * Sets the value of the schedulingPermission property.
+     * Sets the scheduling permission.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new scheduling permission
      */
     public void setSchedulingPermission(String value) {
         this.schedulingPermission = value;
     }
 
     /**
-     * Gets the value of the active property.
+     * Gets the active.
      * 
-     * @return
-     *     possible object is
-     *     {@link ActiveType }
-     *     
+     * @return the active
      */
     public ActiveType getActive() {
         return active;
     }
 
     /**
-     * Sets the value of the active property.
+     * Sets the active.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ActiveType }
-     *     
+     * @param value the new active
      */
     public void setActive(ActiveType value) {
         this.active = value;
     }
 
     /**
-     * Gets the value of the tspAccount property.
+     * Gets the tsp account.
      * 
-     * @return
-     *     possible object is
-     *     {@link UserType.TspAccount }
-     *     
+     * @return the tsp account
      */
     public UserType.TspAccount getTspAccount() {
         return tspAccount;
     }
 
     /**
-     * Sets the value of the tspAccount property.
+     * Sets the tsp account.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link UserType.TspAccount }
-     *     
+     * @param value the new tsp account
      */
     public void setTspAccount(UserType.TspAccount value) {
         this.tspAccount = value;
     }
 
     /**
-     * Gets the value of the supportedServices property.
+     * Gets the supported services.
      * 
-     * @return
-     *     possible object is
-     *     {@link SupportedServicesType }
-     *     
+     * @return the supported services
      */
     public SupportedServicesType getSupportedServices() {
         return supportedServices;
     }
 
     /**
-     * Sets the value of the supportedServices property.
+     * Sets the supported services.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link SupportedServicesType }
-     *     
+     * @param value the new supported services
      */
     public void setSupportedServices(SupportedServicesType value) {
         this.supportedServices = value;
     }
 
     /**
-     * Gets the value of the myWebEx property.
+     * Gets the my web ex.
      * 
-     * @return
-     *     possible object is
-     *     {@link MywebexType }
-     *     
+     * @return the my web ex
      */
     public MywebexType getMyWebEx() {
         return myWebEx;
     }
 
     /**
-     * Sets the value of the myWebEx property.
+     * Sets the my web ex.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link MywebexType }
-     *     
+     * @param value the new my web ex
      */
     public void setMyWebEx(MywebexType value) {
         this.myWebEx = value;
     }
 
     /**
-     * Gets the value of the personalTeleconf property.
+     * Gets the personal teleconf.
      * 
-     * @return
-     *     possible object is
-     *     {@link UserType.PersonalTeleconf }
-     *     
+     * @return the personal teleconf
      */
     public UserType.PersonalTeleconf getPersonalTeleconf() {
         return personalTeleconf;
     }
 
     /**
-     * Sets the value of the personalTeleconf property.
+     * Sets the personal teleconf.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link UserType.PersonalTeleconf }
-     *     
+     * @param value the new personal teleconf
      */
     public void setPersonalTeleconf(UserType.PersonalTeleconf value) {
         this.personalTeleconf = value;
     }
 
     /**
-     * Gets the value of the thirdPartyTeleconf property.
+     * Gets the third party teleconf.
      * 
-     * @return
-     *     possible object is
-     *     {@link UserType.ThirdPartyTeleconf }
-     *     
+     * @return the third party teleconf
      */
     public UserType.ThirdPartyTeleconf getThirdPartyTeleconf() {
         return thirdPartyTeleconf;
     }
 
     /**
-     * Sets the value of the thirdPartyTeleconf property.
+     * Sets the third party teleconf.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link UserType.ThirdPartyTeleconf }
-     *     
+     * @param value the new third party teleconf
      */
     public void setThirdPartyTeleconf(UserType.ThirdPartyTeleconf value) {
         this.thirdPartyTeleconf = value;
     }
 
     /**
-     * Gets the value of the personalMeetingRoom property.
+     * Gets the personal meeting room.
      * 
-     * @return
-     *     possible object is
-     *     {@link PersonalMeetingRoomType }
-     *     
+     * @return the personal meeting room
      */
     public PersonalMeetingRoomType getPersonalMeetingRoom() {
         return personalMeetingRoom;
     }
 
     /**
-     * Sets the value of the personalMeetingRoom property.
+     * Sets the personal meeting room.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link PersonalMeetingRoomType }
-     *     
+     * @param value the new personal meeting room
      */
     public void setPersonalMeetingRoom(PersonalMeetingRoomType value) {
         this.personalMeetingRoom = value;
     }
 
     /**
-     * Gets the value of the sessionOptions property.
+     * Gets the session options.
      * 
-     * @return
-     *     possible object is
-     *     {@link SessionOptionsType }
-     *     
+     * @return the session options
      */
     public SessionOptionsType getSessionOptions() {
         return sessionOptions;
     }
 
     /**
-     * Sets the value of the sessionOptions property.
+     * Sets the session options.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link SessionOptionsType }
-     *     
+     * @param value the new session options
      */
     public void setSessionOptions(SessionOptionsType value) {
         this.sessionOptions = value;
     }
 
     /**
-     * Gets the value of the supportCenter property.
+     * Gets the support center.
      * 
-     * @return
-     *     possible object is
-     *     {@link UserType.SupportCenter }
-     *     
+     * @return the support center
      */
     public UserType.SupportCenter getSupportCenter() {
         return supportCenter;
     }
 
     /**
-     * Sets the value of the supportCenter property.
+     * Sets the support center.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link UserType.SupportCenter }
-     *     
+     * @param value the new support center
      */
     public void setSupportCenter(UserType.SupportCenter value) {
         this.supportCenter = value;
     }
 
     /**
-     * Gets the value of the mpProfileNumber property.
+     * Gets the mp profile number.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the mp profile number
      */
     public String getMpProfileNumber() {
         return mpProfileNumber;
     }
 
     /**
-     * Sets the value of the mpProfileNumber property.
+     * Sets the mp profile number.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new mp profile number
      */
     public void setMpProfileNumber(String value) {
         this.mpProfileNumber = value;
     }
 
     /**
-     * Gets the value of the security property.
+     * Gets the security.
      * 
-     * @return
-     *     possible object is
-     *     {@link SecurityType }
-     *     
+     * @return the security
      */
     public SecurityType getSecurity() {
         return security;
     }
 
     /**
-     * Sets the value of the security property.
+     * Sets the security.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link SecurityType }
-     *     
+     * @param value the new security
      */
     public void setSecurity(SecurityType value) {
         this.security = value;
     }
 
     /**
-     * Gets the value of the languageID property.
+     * Gets the language id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the language id
      */
     public Long getLanguageID() {
         return languageID;
     }
 
     /**
-     * Sets the value of the languageID property.
+     * Sets the language id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new language id
      */
     public void setLanguageID(Long value) {
         this.languageID = value;
     }
 
     /**
-     * Gets the value of the webACDPrefs property.
+     * Gets the web acd prefs.
      * 
-     * @return
-     *     possible object is
-     *     {@link UserType.WebACDPrefs }
-     *     
+     * @return the web acd prefs
      */
     public UserType.WebACDPrefs getWebACDPrefs() {
         return webACDPrefs;
     }
 
     /**
-     * Sets the value of the webACDPrefs property.
+     * Sets the web acd prefs.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link UserType.WebACDPrefs }
-     *     
+     * @param value the new web acd prefs
      */
     public void setWebACDPrefs(UserType.WebACDPrefs value) {
         this.webACDPrefs = value;
     }
 
     /**
-     * Gets the value of the remoteSupport property.
+     * Gets the remote support.
      * 
-     * @return
-     *     possible object is
-     *     {@link UserType.RemoteSupport }
-     *     
+     * @return the remote support
      */
     public UserType.RemoteSupport getRemoteSupport() {
         return remoteSupport;
     }
 
     /**
-     * Sets the value of the remoteSupport property.
+     * Sets the remote support.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link UserType.RemoteSupport }
-     *     
+     * @param value the new remote support
      */
     public void setRemoteSupport(UserType.RemoteSupport value) {
         this.remoteSupport = value;
     }
 
     /**
-     * Gets the value of the remoteAccess property.
+     * Gets the remote access.
      * 
-     * @return
-     *     possible object is
-     *     {@link SharingAndRecordingType }
-     *     
+     * @return the remote access
      */
     public SharingAndRecordingType getRemoteAccess() {
         return remoteAccess;
     }
 
     /**
-     * Sets the value of the remoteAccess property.
+     * Sets the remote access.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link SharingAndRecordingType }
-     *     
+     * @param value the new remote access
      */
     public void setRemoteAccess(SharingAndRecordingType value) {
         this.remoteAccess = value;
@@ -1417,23 +1049,7 @@ public class UserType
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="meetingType" type="{http://www.w3.org/2001/XMLSchema}long" maxOccurs="unbounded" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class MeetingTypes.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -1443,31 +1059,17 @@ public class UserType
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The meeting type. */
         @XmlElement(type = Long.class)
         protected List<Long> meetingType;
 
         /**
-         * Gets the value of the meetingType property.
+         * Gets the meeting type.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the meetingType property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getMeetingType().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link Long }
-         * 
-         * 
+         * @return the meeting type
          */
         public List<Long> getMeetingType() {
             if (meetingType == null) {
@@ -1480,23 +1082,7 @@ public class UserType
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="account" type="{http://www.webex.com/schemas/2002/06/service/user}personalAccountType" maxOccurs="3" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class PersonalTeleconf.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -1506,30 +1092,16 @@ public class UserType
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The account. */
         protected List<PersonalAccountType> account;
 
         /**
-         * Gets the value of the account property.
+         * Gets the account.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the account property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getAccount().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link PersonalAccountType }
-         * 
-         * 
+         * @return the account
          */
         public List<PersonalAccountType> getAccount() {
             if (account == null) {
@@ -1542,46 +1114,7 @@ public class UserType
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/user}sharingAndRecordingType">
-     *       &lt;sequence>
-     *         &lt;element name="autoRequest" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="enable" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
-     *                   &lt;element name="request" type="{http://www.webex.com/schemas/2002/06/service/user}scRequestType" minOccurs="0"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *         &lt;element name="defaultClient" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="type" type="{http://www.webex.com/schemas/2002/06/service/user}scClientType"/>
-     *                   &lt;element name="singleSessClient" type="{http://www.webex.com/schemas/2002/06/service/user}scConsoleType" minOccurs="0"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *       &lt;/sequence>
-     *     &lt;/extension>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class RemoteSupport.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -1593,53 +1126,46 @@ public class UserType
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The auto request. */
         protected UserType.RemoteSupport.AutoRequest autoRequest;
+        
+        /** The default client. */
         protected UserType.RemoteSupport.DefaultClient defaultClient;
 
         /**
-         * Gets the value of the autoRequest property.
+         * Gets the auto request.
          * 
-         * @return
-         *     possible object is
-         *     {@link UserType.RemoteSupport.AutoRequest }
-         *     
+         * @return the auto request
          */
         public UserType.RemoteSupport.AutoRequest getAutoRequest() {
             return autoRequest;
         }
 
         /**
-         * Sets the value of the autoRequest property.
+         * Sets the auto request.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link UserType.RemoteSupport.AutoRequest }
-         *     
+         * @param value the new auto request
          */
         public void setAutoRequest(UserType.RemoteSupport.AutoRequest value) {
             this.autoRequest = value;
         }
 
         /**
-         * Gets the value of the defaultClient property.
+         * Gets the default client.
          * 
-         * @return
-         *     possible object is
-         *     {@link UserType.RemoteSupport.DefaultClient }
-         *     
+         * @return the default client
          */
         public UserType.RemoteSupport.DefaultClient getDefaultClient() {
             return defaultClient;
         }
 
         /**
-         * Sets the value of the defaultClient property.
+         * Sets the default client.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link UserType.RemoteSupport.DefaultClient }
-         *     
+         * @param value the new default client
          */
         public void setDefaultClient(UserType.RemoteSupport.DefaultClient value) {
             this.defaultClient = value;
@@ -1647,24 +1173,7 @@ public class UserType
 
 
         /**
-         * <p>Java class for anonymous complex type.
-         * 
-         * <p>The following schema fragment specifies the expected content contained within this class.
-         * 
-         * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="enable" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
-         *         &lt;element name="request" type="{http://www.webex.com/schemas/2002/06/service/user}scRequestType" minOccurs="0"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
-         * </pre>
-         * 
-         * 
+         * The Class AutoRequest.
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -1675,45 +1184,46 @@ public class UserType
             implements Serializable
         {
 
+            /** The Constant serialVersionUID. */
             private final static long serialVersionUID = 2461660169443089969L;
+            
+            /** The enable. */
             protected boolean enable;
+            
+            /** The request. */
             protected ScRequestType request;
 
             /**
-             * Gets the value of the enable property.
+             * Checks if is enable.
              * 
+             * @return true, if is enable
              */
             public boolean isEnable() {
                 return enable;
             }
 
             /**
-             * Sets the value of the enable property.
+             * Sets the enable.
              * 
+             * @param value the new enable
              */
             public void setEnable(boolean value) {
                 this.enable = value;
             }
 
             /**
-             * Gets the value of the request property.
+             * Gets the request.
              * 
-             * @return
-             *     possible object is
-             *     {@link ScRequestType }
-             *     
+             * @return the request
              */
             public ScRequestType getRequest() {
                 return request;
             }
 
             /**
-             * Sets the value of the request property.
+             * Sets the request.
              * 
-             * @param value
-             *     allowed object is
-             *     {@link ScRequestType }
-             *     
+             * @param value the new request
              */
             public void setRequest(ScRequestType value) {
                 this.request = value;
@@ -1723,24 +1233,7 @@ public class UserType
 
 
         /**
-         * <p>Java class for anonymous complex type.
-         * 
-         * <p>The following schema fragment specifies the expected content contained within this class.
-         * 
-         * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="type" type="{http://www.webex.com/schemas/2002/06/service/user}scClientType"/>
-         *         &lt;element name="singleSessClient" type="{http://www.webex.com/schemas/2002/06/service/user}scConsoleType" minOccurs="0"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
-         * </pre>
-         * 
-         * 
+         * The Class DefaultClient.
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -1751,54 +1244,47 @@ public class UserType
             implements Serializable
         {
 
+            /** The Constant serialVersionUID. */
             private final static long serialVersionUID = 2461660169443089969L;
+            
+            /** The type. */
             @XmlElement(required = true)
             protected ScClientType type;
+            
+            /** The single sess client. */
             protected ScConsoleType singleSessClient;
 
             /**
-             * Gets the value of the type property.
+             * Gets the type.
              * 
-             * @return
-             *     possible object is
-             *     {@link ScClientType }
-             *     
+             * @return the type
              */
             public ScClientType getType() {
                 return type;
             }
 
             /**
-             * Sets the value of the type property.
+             * Sets the type.
              * 
-             * @param value
-             *     allowed object is
-             *     {@link ScClientType }
-             *     
+             * @param value the new type
              */
             public void setType(ScClientType value) {
                 this.type = value;
             }
 
             /**
-             * Gets the value of the singleSessClient property.
+             * Gets the single sess client.
              * 
-             * @return
-             *     possible object is
-             *     {@link ScConsoleType }
-             *     
+             * @return the single sess client
              */
             public ScConsoleType getSingleSessClient() {
                 return singleSessClient;
             }
 
             /**
-             * Sets the value of the singleSessClient property.
+             * Sets the single sess client.
              * 
-             * @param value
-             *     allowed object is
-             *     {@link ScConsoleType }
-             *     
+             * @param value the new single sess client
              */
             public void setSingleSessClient(ScConsoleType value) {
                 this.singleSessClient = value;
@@ -1810,44 +1296,7 @@ public class UserType
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="orderTabs" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="tab" type="{http://www.webex.com/schemas/2002/06/service/user}scTabType" maxOccurs="4" minOccurs="4"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *         &lt;element name="serviceDesk" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="enable" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class SupportCenter.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -1858,53 +1307,46 @@ public class UserType
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The order tabs. */
         protected UserType.SupportCenter.OrderTabs orderTabs;
+        
+        /** The service desk. */
         protected UserType.SupportCenter.ServiceDesk serviceDesk;
 
         /**
-         * Gets the value of the orderTabs property.
+         * Gets the order tabs.
          * 
-         * @return
-         *     possible object is
-         *     {@link UserType.SupportCenter.OrderTabs }
-         *     
+         * @return the order tabs
          */
         public UserType.SupportCenter.OrderTabs getOrderTabs() {
             return orderTabs;
         }
 
         /**
-         * Sets the value of the orderTabs property.
+         * Sets the order tabs.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link UserType.SupportCenter.OrderTabs }
-         *     
+         * @param value the new order tabs
          */
         public void setOrderTabs(UserType.SupportCenter.OrderTabs value) {
             this.orderTabs = value;
         }
 
         /**
-         * Gets the value of the serviceDesk property.
+         * Gets the service desk.
          * 
-         * @return
-         *     possible object is
-         *     {@link UserType.SupportCenter.ServiceDesk }
-         *     
+         * @return the service desk
          */
         public UserType.SupportCenter.ServiceDesk getServiceDesk() {
             return serviceDesk;
         }
 
         /**
-         * Sets the value of the serviceDesk property.
+         * Sets the service desk.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link UserType.SupportCenter.ServiceDesk }
-         *     
+         * @param value the new service desk
          */
         public void setServiceDesk(UserType.SupportCenter.ServiceDesk value) {
             this.serviceDesk = value;
@@ -1912,23 +1354,7 @@ public class UserType
 
 
         /**
-         * <p>Java class for anonymous complex type.
-         * 
-         * <p>The following schema fragment specifies the expected content contained within this class.
-         * 
-         * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="tab" type="{http://www.webex.com/schemas/2002/06/service/user}scTabType" maxOccurs="4" minOccurs="4"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
-         * </pre>
-         * 
-         * 
+         * The Class OrderTabs.
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -1938,31 +1364,17 @@ public class UserType
             implements Serializable
         {
 
+            /** The Constant serialVersionUID. */
             private final static long serialVersionUID = 2461660169443089969L;
+            
+            /** The tab. */
             @XmlElement(required = true)
             protected List<ScTabType> tab;
 
             /**
-             * Gets the value of the tab property.
+             * Gets the tab.
              * 
-             * <p>
-             * This accessor method returns a reference to the live list,
-             * not a snapshot. Therefore any modification you make to the
-             * returned list will be present inside the JAXB object.
-             * This is why there is not a <CODE>set</CODE> method for the tab property.
-             * 
-             * <p>
-             * For example, to add a new item, do as follows:
-             * <pre>
-             *    getTab().add(newItem);
-             * </pre>
-             * 
-             * 
-             * <p>
-             * Objects of the following type(s) are allowed in the list
-             * {@link ScTabType }
-             * 
-             * 
+             * @return the tab
              */
             public List<ScTabType> getTab() {
                 if (tab == null) {
@@ -1975,23 +1387,7 @@ public class UserType
 
 
         /**
-         * <p>Java class for anonymous complex type.
-         * 
-         * <p>The following schema fragment specifies the expected content contained within this class.
-         * 
-         * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="enable" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
-         * </pre>
-         * 
-         * 
+         * The Class ServiceDesk.
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -2001,28 +1397,25 @@ public class UserType
             implements Serializable
         {
 
+            /** The Constant serialVersionUID. */
             private final static long serialVersionUID = 2461660169443089969L;
+            
+            /** The enable. */
             protected Boolean enable;
 
             /**
-             * Gets the value of the enable property.
+             * Checks if is enable.
              * 
-             * @return
-             *     possible object is
-             *     {@link Boolean }
-             *     
+             * @return the boolean
              */
             public Boolean isEnable() {
                 return enable;
             }
 
             /**
-             * Sets the value of the enable property.
+             * Sets the enable.
              * 
-             * @param value
-             *     allowed object is
-             *     {@link Boolean }
-             *     
+             * @param value the new enable
              */
             public void setEnable(Boolean value) {
                 this.enable = value;
@@ -2034,23 +1427,7 @@ public class UserType
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="account" type="{http://www.webex.com/schemas/2002/06/service/user}thirdPartyAccountType" maxOccurs="3" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class ThirdPartyTeleconf.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -2060,30 +1437,16 @@ public class UserType
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The account. */
         protected List<ThirdPartyAccountType> account;
 
         /**
-         * Gets the value of the account property.
+         * Gets the account.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the account property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getAccount().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link ThirdPartyAccountType }
-         * 
-         * 
+         * @return the account
          */
         public List<ThirdPartyAccountType> getAccount() {
             if (account == null) {
@@ -2096,23 +1459,7 @@ public class UserType
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="tspAccount" type="{http://www.webex.com/schemas/2002/06/service/user}tspAccountType" maxOccurs="3" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class TspAccount.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -2122,30 +1469,16 @@ public class UserType
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The tsp account. */
         protected List<TspAccountType> tspAccount;
 
         /**
-         * Gets the value of the tspAccount property.
+         * Gets the tsp account.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the tspAccount property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getTspAccount().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link TspAccountType }
-         * 
-         * 
+         * @return the tsp account
          */
         public List<TspAccountType> getTspAccount() {
             if (tspAccount == null) {
@@ -2158,26 +1491,7 @@ public class UserType
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/user}webACDUserRoleType">
-     *       &lt;sequence>
-     *         &lt;element name="numAgentSessions" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-     *         &lt;element name="agentMonitorAllRSQueues" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
-     *         &lt;element name="managerMonitorAllRSQueues" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
-     *         &lt;element name="monitorAllRSAgents" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/extension>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class WebACDPrefs.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -2191,103 +1505,88 @@ public class UserType
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The num agent sessions. */
         protected Integer numAgentSessions;
+        
+        /** The agent monitor all rs queues. */
         protected Boolean agentMonitorAllRSQueues;
+        
+        /** The manager monitor all rs queues. */
         protected Boolean managerMonitorAllRSQueues;
+        
+        /** The monitor all rs agents. */
         protected Boolean monitorAllRSAgents;
 
         /**
-         * Gets the value of the numAgentSessions property.
+         * Gets the num agent sessions.
          * 
-         * @return
-         *     possible object is
-         *     {@link Integer }
-         *     
+         * @return the num agent sessions
          */
         public Integer getNumAgentSessions() {
             return numAgentSessions;
         }
 
         /**
-         * Sets the value of the numAgentSessions property.
+         * Sets the num agent sessions.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link Integer }
-         *     
+         * @param value the new num agent sessions
          */
         public void setNumAgentSessions(Integer value) {
             this.numAgentSessions = value;
         }
 
         /**
-         * Gets the value of the agentMonitorAllRSQueues property.
+         * Checks if is agent monitor all rs queues.
          * 
-         * @return
-         *     possible object is
-         *     {@link Boolean }
-         *     
+         * @return the boolean
          */
         public Boolean isAgentMonitorAllRSQueues() {
             return agentMonitorAllRSQueues;
         }
 
         /**
-         * Sets the value of the agentMonitorAllRSQueues property.
+         * Sets the agent monitor all rs queues.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link Boolean }
-         *     
+         * @param value the new agent monitor all rs queues
          */
         public void setAgentMonitorAllRSQueues(Boolean value) {
             this.agentMonitorAllRSQueues = value;
         }
 
         /**
-         * Gets the value of the managerMonitorAllRSQueues property.
+         * Checks if is manager monitor all rs queues.
          * 
-         * @return
-         *     possible object is
-         *     {@link Boolean }
-         *     
+         * @return the boolean
          */
         public Boolean isManagerMonitorAllRSQueues() {
             return managerMonitorAllRSQueues;
         }
 
         /**
-         * Sets the value of the managerMonitorAllRSQueues property.
+         * Sets the manager monitor all rs queues.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link Boolean }
-         *     
+         * @param value the new manager monitor all rs queues
          */
         public void setManagerMonitorAllRSQueues(Boolean value) {
             this.managerMonitorAllRSQueues = value;
         }
 
         /**
-         * Gets the value of the monitorAllRSAgents property.
+         * Checks if is monitor all rs agents.
          * 
-         * @return
-         *     possible object is
-         *     {@link Boolean }
-         *     
+         * @return the boolean
          */
         public Boolean isMonitorAllRSAgents() {
             return monitorAllRSAgents;
         }
 
         /**
-         * Sets the value of the monitorAllRSAgents property.
+         * Sets the monitor all rs agents.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link Boolean }
-         *     
+         * @param value the new monitor all rs agents
          */
         public void setMonitorAllRSAgents(Boolean value) {
             this.monitorAllRSAgents = value;

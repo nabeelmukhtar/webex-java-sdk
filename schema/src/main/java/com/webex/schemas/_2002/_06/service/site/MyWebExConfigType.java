@@ -25,55 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for myWebExConfigType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="myWebExConfigType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="myContacts" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="myProfile" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="myMeetings" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="trainingRecordings" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="folders" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="eventDocument" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="myReport" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="myComputer" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="personalMeetingPage" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="myFilesStorage" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="myComputerNumbers" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="enableMyWebExPro" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="myWebExProHostLimit" type="{http://www.webex.com/schemas/2002/06/service/site}limitsType" minOccurs="0"/>
- *         &lt;element name="myWebExProMaxHosts" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="restrictAccessAnyApps" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="restrictAccessAnyAppsNum" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="addlAccessAnyComputersLimit" type="{http://www.webex.com/schemas/2002/06/service/site}limitsType" minOccurs="0"/>
- *         &lt;element name="addlAccessAnyComputers" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="addlStorageLimit" type="{http://www.webex.com/schemas/2002/06/service/site}limitsType" minOccurs="0"/>
- *         &lt;element name="addlStorage" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="myContactsPro" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="myProfilePro" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="myMeetingsPro" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="trainingRecordingsPro" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="foldersPro" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="eventDocumentPro" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="myReportPro" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="myComputerPro" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="personalMeetingPagePro" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="myFilesStoragePro" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="myComputerNumbersPro" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="PMRheaderBranding" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PMRheaderBrandingLocation" type="{http://www.webex.com/schemas/2002/06/service/site}headerImageLocationType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class MyWebExConfigType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "myWebExConfigType", propOrder = {
@@ -115,834 +67,703 @@ public class MyWebExConfigType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The my contacts. */
     protected Boolean myContacts;
+    
+    /** The my profile. */
     protected Boolean myProfile;
+    
+    /** The my meetings. */
     protected Boolean myMeetings;
+    
+    /** The training recordings. */
     protected Boolean trainingRecordings;
+    
+    /** The folders. */
     @XmlElement(defaultValue = "false")
     protected Boolean folders;
+    
+    /** The event document. */
     protected Boolean eventDocument;
+    
+    /** The my report. */
     protected Boolean myReport;
+    
+    /** The my computer. */
     @XmlElement(defaultValue = "false")
     protected Boolean myComputer;
+    
+    /** The personal meeting page. */
     protected Boolean personalMeetingPage;
+    
+    /** The my files storage. */
     protected Long myFilesStorage;
+    
+    /** The my computer numbers. */
     protected Long myComputerNumbers;
+    
+    /** The enable my web ex pro. */
     protected Boolean enableMyWebExPro;
+    
+    /** The my web ex pro host limit. */
     protected LimitsType myWebExProHostLimit;
+    
+    /** The my web ex pro max hosts. */
     protected Long myWebExProMaxHosts;
+    
+    /** The restrict access any apps. */
     protected Boolean restrictAccessAnyApps;
+    
+    /** The restrict access any apps num. */
     protected Long restrictAccessAnyAppsNum;
+    
+    /** The addl access any computers limit. */
     protected LimitsType addlAccessAnyComputersLimit;
+    
+    /** The addl access any computers. */
     protected Long addlAccessAnyComputers;
+    
+    /** The addl storage limit. */
     protected LimitsType addlStorageLimit;
+    
+    /** The addl storage. */
     protected Long addlStorage;
+    
+    /** The my contacts pro. */
     protected Boolean myContactsPro;
+    
+    /** The my profile pro. */
     protected Boolean myProfilePro;
+    
+    /** The my meetings pro. */
     protected Boolean myMeetingsPro;
+    
+    /** The training recordings pro. */
     protected Boolean trainingRecordingsPro;
+    
+    /** The folders pro. */
     @XmlElement(defaultValue = "false")
     protected Boolean foldersPro;
+    
+    /** The event document pro. */
     protected Boolean eventDocumentPro;
+    
+    /** The my report pro. */
     protected Boolean myReportPro;
+    
+    /** The my computer pro. */
     @XmlElement(defaultValue = "false")
     protected Boolean myComputerPro;
+    
+    /** The personal meeting page pro. */
     protected Boolean personalMeetingPagePro;
+    
+    /** The my files storage pro. */
     protected Long myFilesStoragePro;
+    
+    /** The my computer numbers pro. */
     protected Long myComputerNumbersPro;
+    
+    /** The pm rheader branding. */
     @XmlElement(name = "PMRheaderBranding")
     protected Boolean pmRheaderBranding;
+    
+    /** The pm rheader branding location. */
     @XmlElement(name = "PMRheaderBrandingLocation")
     protected HeaderImageLocationType pmRheaderBrandingLocation;
 
     /**
-     * Gets the value of the myContacts property.
+     * Checks if is my contacts.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isMyContacts() {
         return myContacts;
     }
 
     /**
-     * Sets the value of the myContacts property.
+     * Sets the my contacts.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new my contacts
      */
     public void setMyContacts(Boolean value) {
         this.myContacts = value;
     }
 
     /**
-     * Gets the value of the myProfile property.
+     * Checks if is my profile.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isMyProfile() {
         return myProfile;
     }
 
     /**
-     * Sets the value of the myProfile property.
+     * Sets the my profile.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new my profile
      */
     public void setMyProfile(Boolean value) {
         this.myProfile = value;
     }
 
     /**
-     * Gets the value of the myMeetings property.
+     * Checks if is my meetings.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isMyMeetings() {
         return myMeetings;
     }
 
     /**
-     * Sets the value of the myMeetings property.
+     * Sets the my meetings.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new my meetings
      */
     public void setMyMeetings(Boolean value) {
         this.myMeetings = value;
     }
 
     /**
-     * Gets the value of the trainingRecordings property.
+     * Checks if is training recordings.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isTrainingRecordings() {
         return trainingRecordings;
     }
 
     /**
-     * Sets the value of the trainingRecordings property.
+     * Sets the training recordings.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new training recordings
      */
     public void setTrainingRecordings(Boolean value) {
         this.trainingRecordings = value;
     }
 
     /**
-     * Gets the value of the folders property.
+     * Checks if is folders.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isFolders() {
         return folders;
     }
 
     /**
-     * Sets the value of the folders property.
+     * Sets the folders.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new folders
      */
     public void setFolders(Boolean value) {
         this.folders = value;
     }
 
     /**
-     * Gets the value of the eventDocument property.
+     * Checks if is event document.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isEventDocument() {
         return eventDocument;
     }
 
     /**
-     * Sets the value of the eventDocument property.
+     * Sets the event document.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new event document
      */
     public void setEventDocument(Boolean value) {
         this.eventDocument = value;
     }
 
     /**
-     * Gets the value of the myReport property.
+     * Checks if is my report.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isMyReport() {
         return myReport;
     }
 
     /**
-     * Sets the value of the myReport property.
+     * Sets the my report.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new my report
      */
     public void setMyReport(Boolean value) {
         this.myReport = value;
     }
 
     /**
-     * Gets the value of the myComputer property.
+     * Checks if is my computer.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isMyComputer() {
         return myComputer;
     }
 
     /**
-     * Sets the value of the myComputer property.
+     * Sets the my computer.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new my computer
      */
     public void setMyComputer(Boolean value) {
         this.myComputer = value;
     }
 
     /**
-     * Gets the value of the personalMeetingPage property.
+     * Checks if is personal meeting page.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isPersonalMeetingPage() {
         return personalMeetingPage;
     }
 
     /**
-     * Sets the value of the personalMeetingPage property.
+     * Sets the personal meeting page.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new personal meeting page
      */
     public void setPersonalMeetingPage(Boolean value) {
         this.personalMeetingPage = value;
     }
 
     /**
-     * Gets the value of the myFilesStorage property.
+     * Gets the my files storage.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the my files storage
      */
     public Long getMyFilesStorage() {
         return myFilesStorage;
     }
 
     /**
-     * Sets the value of the myFilesStorage property.
+     * Sets the my files storage.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new my files storage
      */
     public void setMyFilesStorage(Long value) {
         this.myFilesStorage = value;
     }
 
     /**
-     * Gets the value of the myComputerNumbers property.
+     * Gets the my computer numbers.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the my computer numbers
      */
     public Long getMyComputerNumbers() {
         return myComputerNumbers;
     }
 
     /**
-     * Sets the value of the myComputerNumbers property.
+     * Sets the my computer numbers.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new my computer numbers
      */
     public void setMyComputerNumbers(Long value) {
         this.myComputerNumbers = value;
     }
 
     /**
-     * Gets the value of the enableMyWebExPro property.
+     * Checks if is enable my web ex pro.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isEnableMyWebExPro() {
         return enableMyWebExPro;
     }
 
     /**
-     * Sets the value of the enableMyWebExPro property.
+     * Sets the enable my web ex pro.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new enable my web ex pro
      */
     public void setEnableMyWebExPro(Boolean value) {
         this.enableMyWebExPro = value;
     }
 
     /**
-     * Gets the value of the myWebExProHostLimit property.
+     * Gets the my web ex pro host limit.
      * 
-     * @return
-     *     possible object is
-     *     {@link LimitsType }
-     *     
+     * @return the my web ex pro host limit
      */
     public LimitsType getMyWebExProHostLimit() {
         return myWebExProHostLimit;
     }
 
     /**
-     * Sets the value of the myWebExProHostLimit property.
+     * Sets the my web ex pro host limit.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link LimitsType }
-     *     
+     * @param value the new my web ex pro host limit
      */
     public void setMyWebExProHostLimit(LimitsType value) {
         this.myWebExProHostLimit = value;
     }
 
     /**
-     * Gets the value of the myWebExProMaxHosts property.
+     * Gets the my web ex pro max hosts.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the my web ex pro max hosts
      */
     public Long getMyWebExProMaxHosts() {
         return myWebExProMaxHosts;
     }
 
     /**
-     * Sets the value of the myWebExProMaxHosts property.
+     * Sets the my web ex pro max hosts.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new my web ex pro max hosts
      */
     public void setMyWebExProMaxHosts(Long value) {
         this.myWebExProMaxHosts = value;
     }
 
     /**
-     * Gets the value of the restrictAccessAnyApps property.
+     * Checks if is restrict access any apps.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isRestrictAccessAnyApps() {
         return restrictAccessAnyApps;
     }
 
     /**
-     * Sets the value of the restrictAccessAnyApps property.
+     * Sets the restrict access any apps.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new restrict access any apps
      */
     public void setRestrictAccessAnyApps(Boolean value) {
         this.restrictAccessAnyApps = value;
     }
 
     /**
-     * Gets the value of the restrictAccessAnyAppsNum property.
+     * Gets the restrict access any apps num.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the restrict access any apps num
      */
     public Long getRestrictAccessAnyAppsNum() {
         return restrictAccessAnyAppsNum;
     }
 
     /**
-     * Sets the value of the restrictAccessAnyAppsNum property.
+     * Sets the restrict access any apps num.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new restrict access any apps num
      */
     public void setRestrictAccessAnyAppsNum(Long value) {
         this.restrictAccessAnyAppsNum = value;
     }
 
     /**
-     * Gets the value of the addlAccessAnyComputersLimit property.
+     * Gets the addl access any computers limit.
      * 
-     * @return
-     *     possible object is
-     *     {@link LimitsType }
-     *     
+     * @return the addl access any computers limit
      */
     public LimitsType getAddlAccessAnyComputersLimit() {
         return addlAccessAnyComputersLimit;
     }
 
     /**
-     * Sets the value of the addlAccessAnyComputersLimit property.
+     * Sets the addl access any computers limit.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link LimitsType }
-     *     
+     * @param value the new addl access any computers limit
      */
     public void setAddlAccessAnyComputersLimit(LimitsType value) {
         this.addlAccessAnyComputersLimit = value;
     }
 
     /**
-     * Gets the value of the addlAccessAnyComputers property.
+     * Gets the addl access any computers.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the addl access any computers
      */
     public Long getAddlAccessAnyComputers() {
         return addlAccessAnyComputers;
     }
 
     /**
-     * Sets the value of the addlAccessAnyComputers property.
+     * Sets the addl access any computers.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new addl access any computers
      */
     public void setAddlAccessAnyComputers(Long value) {
         this.addlAccessAnyComputers = value;
     }
 
     /**
-     * Gets the value of the addlStorageLimit property.
+     * Gets the addl storage limit.
      * 
-     * @return
-     *     possible object is
-     *     {@link LimitsType }
-     *     
+     * @return the addl storage limit
      */
     public LimitsType getAddlStorageLimit() {
         return addlStorageLimit;
     }
 
     /**
-     * Sets the value of the addlStorageLimit property.
+     * Sets the addl storage limit.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link LimitsType }
-     *     
+     * @param value the new addl storage limit
      */
     public void setAddlStorageLimit(LimitsType value) {
         this.addlStorageLimit = value;
     }
 
     /**
-     * Gets the value of the addlStorage property.
+     * Gets the addl storage.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the addl storage
      */
     public Long getAddlStorage() {
         return addlStorage;
     }
 
     /**
-     * Sets the value of the addlStorage property.
+     * Sets the addl storage.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new addl storage
      */
     public void setAddlStorage(Long value) {
         this.addlStorage = value;
     }
 
     /**
-     * Gets the value of the myContactsPro property.
+     * Checks if is my contacts pro.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isMyContactsPro() {
         return myContactsPro;
     }
 
     /**
-     * Sets the value of the myContactsPro property.
+     * Sets the my contacts pro.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new my contacts pro
      */
     public void setMyContactsPro(Boolean value) {
         this.myContactsPro = value;
     }
 
     /**
-     * Gets the value of the myProfilePro property.
+     * Checks if is my profile pro.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isMyProfilePro() {
         return myProfilePro;
     }
 
     /**
-     * Sets the value of the myProfilePro property.
+     * Sets the my profile pro.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new my profile pro
      */
     public void setMyProfilePro(Boolean value) {
         this.myProfilePro = value;
     }
 
     /**
-     * Gets the value of the myMeetingsPro property.
+     * Checks if is my meetings pro.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isMyMeetingsPro() {
         return myMeetingsPro;
     }
 
     /**
-     * Sets the value of the myMeetingsPro property.
+     * Sets the my meetings pro.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new my meetings pro
      */
     public void setMyMeetingsPro(Boolean value) {
         this.myMeetingsPro = value;
     }
 
     /**
-     * Gets the value of the trainingRecordingsPro property.
+     * Checks if is training recordings pro.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isTrainingRecordingsPro() {
         return trainingRecordingsPro;
     }
 
     /**
-     * Sets the value of the trainingRecordingsPro property.
+     * Sets the training recordings pro.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new training recordings pro
      */
     public void setTrainingRecordingsPro(Boolean value) {
         this.trainingRecordingsPro = value;
     }
 
     /**
-     * Gets the value of the foldersPro property.
+     * Checks if is folders pro.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isFoldersPro() {
         return foldersPro;
     }
 
     /**
-     * Sets the value of the foldersPro property.
+     * Sets the folders pro.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new folders pro
      */
     public void setFoldersPro(Boolean value) {
         this.foldersPro = value;
     }
 
     /**
-     * Gets the value of the eventDocumentPro property.
+     * Checks if is event document pro.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isEventDocumentPro() {
         return eventDocumentPro;
     }
 
     /**
-     * Sets the value of the eventDocumentPro property.
+     * Sets the event document pro.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new event document pro
      */
     public void setEventDocumentPro(Boolean value) {
         this.eventDocumentPro = value;
     }
 
     /**
-     * Gets the value of the myReportPro property.
+     * Checks if is my report pro.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isMyReportPro() {
         return myReportPro;
     }
 
     /**
-     * Sets the value of the myReportPro property.
+     * Sets the my report pro.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new my report pro
      */
     public void setMyReportPro(Boolean value) {
         this.myReportPro = value;
     }
 
     /**
-     * Gets the value of the myComputerPro property.
+     * Checks if is my computer pro.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isMyComputerPro() {
         return myComputerPro;
     }
 
     /**
-     * Sets the value of the myComputerPro property.
+     * Sets the my computer pro.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new my computer pro
      */
     public void setMyComputerPro(Boolean value) {
         this.myComputerPro = value;
     }
 
     /**
-     * Gets the value of the personalMeetingPagePro property.
+     * Checks if is personal meeting page pro.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isPersonalMeetingPagePro() {
         return personalMeetingPagePro;
     }
 
     /**
-     * Sets the value of the personalMeetingPagePro property.
+     * Sets the personal meeting page pro.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new personal meeting page pro
      */
     public void setPersonalMeetingPagePro(Boolean value) {
         this.personalMeetingPagePro = value;
     }
 
     /**
-     * Gets the value of the myFilesStoragePro property.
+     * Gets the my files storage pro.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the my files storage pro
      */
     public Long getMyFilesStoragePro() {
         return myFilesStoragePro;
     }
 
     /**
-     * Sets the value of the myFilesStoragePro property.
+     * Sets the my files storage pro.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new my files storage pro
      */
     public void setMyFilesStoragePro(Long value) {
         this.myFilesStoragePro = value;
     }
 
     /**
-     * Gets the value of the myComputerNumbersPro property.
+     * Gets the my computer numbers pro.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the my computer numbers pro
      */
     public Long getMyComputerNumbersPro() {
         return myComputerNumbersPro;
     }
 
     /**
-     * Sets the value of the myComputerNumbersPro property.
+     * Sets the my computer numbers pro.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new my computer numbers pro
      */
     public void setMyComputerNumbersPro(Long value) {
         this.myComputerNumbersPro = value;
     }
 
     /**
-     * Gets the value of the pmRheaderBranding property.
+     * Checks if is pm rheader branding.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isPMRheaderBranding() {
         return pmRheaderBranding;
     }
 
     /**
-     * Sets the value of the pmRheaderBranding property.
+     * Sets the pM rheader branding.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new pM rheader branding
      */
     public void setPMRheaderBranding(Boolean value) {
         this.pmRheaderBranding = value;
     }
 
     /**
-     * Gets the value of the pmRheaderBrandingLocation property.
+     * Gets the pM rheader branding location.
      * 
-     * @return
-     *     possible object is
-     *     {@link HeaderImageLocationType }
-     *     
+     * @return the pM rheader branding location
      */
     public HeaderImageLocationType getPMRheaderBrandingLocation() {
         return pmRheaderBrandingLocation;
     }
 
     /**
-     * Sets the value of the pmRheaderBrandingLocation property.
+     * Sets the pM rheader branding location.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link HeaderImageLocationType }
-     *     
+     * @param value the new pM rheader branding location
      */
     public void setPMRheaderBrandingLocation(HeaderImageLocationType value) {
         this.pmRheaderBrandingLocation = value;

@@ -27,24 +27,7 @@ import com.webex.schemas._2002._06.service.LstOrderADType;
 
 
 /**
- * <p>Java class for orderTCHisType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="orderTCHisType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="orderBy" type="{http://www.webex.com/schemas/2002/06/service/history}orderTCHisByType" maxOccurs="3" minOccurs="0"/>
- *         &lt;element name="orderAD" type="{http://www.webex.com/schemas/2002/06/service}lstOrderADType" maxOccurs="3" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class OrderTCHisType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "orderTCHisType", propOrder = {
@@ -55,31 +38,19 @@ public class OrderTCHisType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The order by. */
     protected List<OrderTCHisByType> orderBy;
+    
+    /** The order ad. */
     protected List<LstOrderADType> orderAD;
 
     /**
-     * Gets the value of the orderBy property.
+     * Gets the order by.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the orderBy property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getOrderBy().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link OrderTCHisByType }
-     * 
-     * 
+     * @return the order by
      */
     public List<OrderTCHisByType> getOrderBy() {
         if (orderBy == null) {
@@ -89,26 +60,9 @@ public class OrderTCHisType
     }
 
     /**
-     * Gets the value of the orderAD property.
+     * Gets the order ad.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the orderAD property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getOrderAD().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link LstOrderADType }
-     * 
-     * 
+     * @return the order ad
      */
     public List<LstOrderADType> getOrderAD() {
         if (orderAD == null) {

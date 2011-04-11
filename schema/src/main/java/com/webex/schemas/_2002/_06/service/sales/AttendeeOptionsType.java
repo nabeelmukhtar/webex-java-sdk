@@ -27,32 +27,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for attendeeOptionsType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="attendeeOptionsType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="requireUcfDiagnosis" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="excludePassword" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="emailInvitations" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="participantLimit" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}integer">
- *               &lt;minInclusive value="0"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class AttendeeOptionsType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "attendeeOptionsType", propOrder = {
@@ -65,106 +40,91 @@ public class AttendeeOptionsType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The require ucf diagnosis. */
     protected Boolean requireUcfDiagnosis;
+    
+    /** The exclude password. */
     protected Boolean excludePassword;
+    
+    /** The email invitations. */
     @XmlElement(defaultValue = "false")
     protected Boolean emailInvitations;
+    
+    /** The participant limit. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     protected Long participantLimit;
 
     /**
-     * Gets the value of the requireUcfDiagnosis property.
+     * Checks if is require ucf diagnosis.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isRequireUcfDiagnosis() {
         return requireUcfDiagnosis;
     }
 
     /**
-     * Sets the value of the requireUcfDiagnosis property.
+     * Sets the require ucf diagnosis.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new require ucf diagnosis
      */
     public void setRequireUcfDiagnosis(Boolean value) {
         this.requireUcfDiagnosis = value;
     }
 
     /**
-     * Gets the value of the excludePassword property.
+     * Checks if is exclude password.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isExcludePassword() {
         return excludePassword;
     }
 
     /**
-     * Sets the value of the excludePassword property.
+     * Sets the exclude password.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new exclude password
      */
     public void setExcludePassword(Boolean value) {
         this.excludePassword = value;
     }
 
     /**
-     * Gets the value of the emailInvitations property.
+     * Checks if is email invitations.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isEmailInvitations() {
         return emailInvitations;
     }
 
     /**
-     * Sets the value of the emailInvitations property.
+     * Sets the email invitations.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new email invitations
      */
     public void setEmailInvitations(Boolean value) {
         this.emailInvitations = value;
     }
 
     /**
-     * Gets the value of the participantLimit property.
+     * Gets the participant limit.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the participant limit
      */
     public Long getParticipantLimit() {
         return participantLimit;
     }
 
     /**
-     * Sets the value of the participantLimit property.
+     * Sets the participant limit.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new participant limit
      */
     public void setParticipantLimit(Long value) {
         this.participantLimit = value;

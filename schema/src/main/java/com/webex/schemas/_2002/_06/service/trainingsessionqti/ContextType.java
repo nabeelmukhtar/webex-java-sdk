@@ -25,31 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for contextType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="contextType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="name">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;minLength value="1"/>
- *               &lt;maxLength value="256"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="generic_identifier" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}generic_identifierType"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ContextType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "contextType", propOrder = {
@@ -60,55 +36,48 @@ public class ContextType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The name. */
     @XmlElement(required = true)
     protected String name;
+    
+    /** The generic identifier. */
     @XmlElement(name = "generic_identifier", required = true)
     protected GenericIdentifierType genericIdentifier;
 
     /**
-     * Gets the value of the name property.
+     * Gets the name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the name
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Sets the value of the name property.
+     * Sets the name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new name
      */
     public void setName(String value) {
         this.name = value;
     }
 
     /**
-     * Gets the value of the genericIdentifier property.
+     * Gets the generic identifier.
      * 
-     * @return
-     *     possible object is
-     *     {@link GenericIdentifierType }
-     *     
+     * @return the generic identifier
      */
     public GenericIdentifierType getGenericIdentifier() {
         return genericIdentifier;
     }
 
     /**
-     * Sets the value of the genericIdentifier property.
+     * Sets the generic identifier.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link GenericIdentifierType }
-     *     
+     * @param value the new generic identifier
      */
     public void setGenericIdentifier(GenericIdentifierType value) {
         this.genericIdentifier = value;

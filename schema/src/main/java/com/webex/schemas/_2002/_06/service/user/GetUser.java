@@ -26,23 +26,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for getUser complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="getUser">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="webExId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GetUser.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getUser", propOrder = {
@@ -53,29 +37,26 @@ public class GetUser
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The web ex id. */
     @XmlElement(required = true)
     protected String webExId;
 
     /**
-     * Gets the value of the webExId property.
+     * Gets the web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the web ex id
      */
     public String getWebExId() {
         return webExId;
     }
 
     /**
-     * Sets the value of the webExId property.
+     * Sets the web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new web ex id
      */
     public void setWebExId(String value) {
         this.webExId = value;

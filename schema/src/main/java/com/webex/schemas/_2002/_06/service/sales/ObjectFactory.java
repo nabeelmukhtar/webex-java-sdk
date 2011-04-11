@@ -21,481 +21,526 @@ import javax.xml.bind.annotation.XmlRegistry;
 
 
 /**
- * This object contains factory methods for each 
- * Java content interface and Java element interface 
- * generated in the com.webex.schemas._2002._06.service.sales package. 
- * <p>An ObjectFactory allows you to programatically 
- * construct new instances of the Java representation 
- * for XML content. The Java representation of XML 
- * content can consist of schema derived interfaces 
- * and classes representing the binding of schema 
- * type definitions, element declarations and model 
- * groups.  Factory methods for each of these are 
- * provided in this class.
- * 
+ * A factory for creating Object objects.
  */
 @XmlRegistry
 public class ObjectFactory {
 
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.webex.schemas._2002._06.service.sales
-     * 
+     * Instantiates a new object factory.
      */
     public ObjectFactory() {
     }
 
     /**
-     * Create an instance of {@link LstsummarySalesSession }
+     * Creates a new Object object.
      * 
+     * @return the lstsummary sales session
      */
     public LstsummarySalesSession createLstsummarySalesSession() {
         return new LstsummarySalesSession();
     }
 
     /**
-     * Create an instance of {@link CreateSalesSession }
+     * Creates a new Object object.
      * 
+     * @return the creates the sales session
      */
     public CreateSalesSession createCreateSalesSession() {
         return new CreateSalesSession();
     }
 
     /**
-     * Create an instance of {@link RepeatType.DayInWeek }
+     * Creates a new Object object.
      * 
+     * @return the day in week
      */
     public RepeatType.DayInWeek createRepeatTypeDayInWeek() {
         return new RepeatType.DayInWeek();
     }
 
     /**
-     * Create an instance of {@link ICalendarURL }
+     * Creates a new Object object.
      * 
+     * @return the i calendar url
      */
     public ICalendarURL createICalendarURL() {
         return new ICalendarURL();
     }
 
     /**
-     * Create an instance of {@link GetSalesSession }
+     * Creates a new Object object.
      * 
+     * @return the gets the sales session
      */
     public GetSalesSession createGetSalesSession() {
         return new GetSalesSession();
     }
 
     /**
-     * Create an instance of {@link LstOpportunities }
+     * Creates a new Object object.
      * 
+     * @return the lst opportunities
      */
     public LstOpportunities createLstOpportunities() {
         return new LstOpportunities();
     }
 
     /**
-     * Create an instance of {@link OpptyType }
+     * Creates a new Object object.
      * 
+     * @return the oppty type
      */
     public OpptyType createOpptyType() {
         return new OpptyType();
     }
 
     /**
-     * Create an instance of {@link EnableOptionsType }
+     * Creates a new Object object.
      * 
+     * @return the enable options type
      */
     public EnableOptionsType createEnableOptionsType() {
         return new EnableOptionsType();
     }
 
     /**
-     * Create an instance of {@link SetProducts }
+     * Creates a new Object object.
      * 
+     * @return the sets the products
      */
     public SetProducts createSetProducts() {
         return new SetProducts();
     }
 
     /**
-     * Create an instance of {@link LstAccounts }
+     * Creates a new Object object.
      * 
+     * @return the lst accounts
      */
     public LstAccounts createLstAccounts() {
         return new LstAccounts();
     }
 
     /**
-     * Create an instance of {@link AddProducts }
+     * Creates a new Object object.
      * 
+     * @return the adds the products
      */
     public AddProducts createAddProducts() {
         return new AddProducts();
     }
 
     /**
-     * Create an instance of {@link CreateSalesSessionResponse }
+     * Creates a new Object object.
      * 
+     * @return the creates the sales session response
      */
     public CreateSalesSessionResponse createCreateSalesSessionResponse() {
         return new CreateSalesSessionResponse();
     }
 
     /**
-     * Create an instance of {@link SetOpportunityResponse }
+     * Creates a new Object object.
      * 
+     * @return the sets the opportunity response
      */
     public SetOpportunityResponse createSetOpportunityResponse() {
         return new SetOpportunityResponse();
     }
 
     /**
-     * Create an instance of {@link AlternateHostType }
+     * Creates a new Object object.
      * 
+     * @return the alternate host type
      */
     public AlternateHostType createAlternateHostType() {
         return new AlternateHostType();
     }
 
     /**
-     * Create an instance of {@link MetaDataType }
+     * Creates a new Object object.
      * 
+     * @return the meta data type
      */
     public MetaDataType createMetaDataType() {
         return new MetaDataType();
     }
 
     /**
-     * Create an instance of {@link ProspectType }
+     * Creates a new Object object.
      * 
+     * @return the prospect type
      */
     public ProspectType createProspectType() {
         return new ProspectType();
     }
 
     /**
-     * Create an instance of {@link SetSalesSessionResponse }
+     * Creates a new Object object.
      * 
+     * @return the sets the sales session response
      */
     public SetSalesSessionResponse createSetSalesSessionResponse() {
         return new SetSalesSessionResponse();
     }
 
     /**
-     * Create an instance of {@link CreateOpportunityResponse }
+     * Creates a new Object object.
      * 
+     * @return the creates the opportunity response
      */
     public CreateOpportunityResponse createCreateOpportunityResponse() {
         return new CreateOpportunityResponse();
     }
 
     /**
-     * Create an instance of {@link LstOpportunitiesResponse.Opportunity }
+     * Creates a new Object object.
      * 
+     * @return the opportunity
      */
     public LstOpportunitiesResponse.Opportunity createLstOpportunitiesResponseOpportunity() {
         return new LstOpportunitiesResponse.Opportunity();
     }
 
     /**
-     * Create an instance of {@link SetSalesSession }
+     * Creates a new Object object.
      * 
+     * @return the sets the sales session
      */
     public SetSalesSession createSetSalesSession() {
         return new SetSalesSession();
     }
 
     /**
-     * Create an instance of {@link ProductType }
+     * Creates a new Object object.
      * 
+     * @return the product type
      */
     public ProductType createProductType() {
         return new ProductType();
     }
 
     /**
-     * Create an instance of {@link AccountInstanceType }
+     * Creates a new Object object.
      * 
+     * @return the account instance type
      */
     public AccountInstanceType createAccountInstanceType() {
         return new AccountInstanceType();
     }
 
     /**
-     * Create an instance of {@link SalesSessionType }
+     * Creates a new Object object.
      * 
+     * @return the sales session type
      */
     public SalesSessionType createSalesSessionType() {
         return new SalesSessionType();
     }
 
     /**
-     * Create an instance of {@link SalesSessionType.SalesTeam }
+     * Creates a new Object object.
      * 
+     * @return the sales team
      */
     public SalesSessionType.SalesTeam createSalesSessionTypeSalesTeam() {
         return new SalesSessionType.SalesTeam();
     }
 
     /**
-     * Create an instance of {@link LstProducts }
+     * Creates a new Object object.
      * 
+     * @return the lst products
      */
     public LstProducts createLstProducts() {
         return new LstProducts();
     }
 
     /**
-     * Create an instance of {@link SetAccount.Account }
+     * Creates a new Object object.
      * 
+     * @return the account
      */
     public SetAccount.Account createSetAccountAccount() {
         return new SetAccount.Account();
     }
 
     /**
-     * Create an instance of {@link TelephonyType }
+     * Creates a new Object object.
      * 
+     * @return the telephony type
      */
     public TelephonyType createTelephonyType() {
         return new TelephonyType();
     }
 
     /**
-     * Create an instance of {@link ProductOrderType }
+     * Creates a new Object object.
      * 
+     * @return the product order type
      */
     public ProductOrderType createProductOrderType() {
         return new ProductOrderType();
     }
 
     /**
-     * Create an instance of {@link SetAccountResponse }
+     * Creates a new Object object.
      * 
+     * @return the sets the account response
      */
     public SetAccountResponse createSetAccountResponse() {
         return new SetAccountResponse();
     }
 
     /**
-     * Create an instance of {@link AddProductsResponse }
+     * Creates a new Object object.
      * 
+     * @return the adds the products response
      */
     public AddProductsResponse createAddProductsResponse() {
         return new AddProductsResponse();
     }
 
     /**
-     * Create an instance of {@link LstProductsResponse }
+     * Creates a new Object object.
      * 
+     * @return the lst products response
      */
     public LstProductsResponse createLstProductsResponse() {
         return new LstProductsResponse();
     }
 
     /**
-     * Create an instance of {@link RemindType }
+     * Creates a new Object object.
      * 
+     * @return the remind type
      */
     public RemindType createRemindType() {
         return new RemindType();
     }
 
     /**
-     * Create an instance of {@link DelSalesSession }
+     * Creates a new Object object.
      * 
+     * @return the del sales session
      */
     public DelSalesSession createDelSalesSession() {
         return new DelSalesSession();
     }
 
     /**
-     * Create an instance of {@link DelSalesSessionResponse }
+     * Creates a new Object object.
      * 
+     * @return the del sales session response
      */
     public DelSalesSessionResponse createDelSalesSessionResponse() {
         return new DelSalesSessionResponse();
     }
 
     /**
-     * Create an instance of {@link CreateOpportunity }
+     * Creates a new Object object.
      * 
+     * @return the creates the opportunity
      */
     public CreateOpportunity createCreateOpportunity() {
         return new CreateOpportunity();
     }
 
     /**
-     * Create an instance of {@link SetOpportunity }
+     * Creates a new Object object.
      * 
+     * @return the sets the opportunity
      */
     public SetOpportunity createSetOpportunity() {
         return new SetOpportunity();
     }
 
     /**
-     * Create an instance of {@link LstOpportunitiesResponse }
+     * Creates a new Object object.
      * 
+     * @return the lst opportunities response
      */
     public LstOpportunitiesResponse createLstOpportunitiesResponse() {
         return new LstOpportunitiesResponse();
     }
 
     /**
-     * Create an instance of {@link RepeatType }
+     * Creates a new Object object.
      * 
+     * @return the repeat type
      */
     public RepeatType createRepeatType() {
         return new RepeatType();
     }
 
     /**
-     * Create an instance of {@link SalesSessionInstanceType }
+     * Creates a new Object object.
      * 
+     * @return the sales session instance type
      */
     public SalesSessionInstanceType createSalesSessionInstanceType() {
         return new SalesSessionInstanceType();
     }
 
     /**
-     * Create an instance of {@link CreateAccount }
+     * Creates a new Object object.
      * 
+     * @return the creates the account
      */
     public CreateAccount createCreateAccount() {
         return new CreateAccount();
     }
 
     /**
-     * Create an instance of {@link SetProductsResponse }
+     * Creates a new Object object.
      * 
+     * @return the sets the products response
      */
     public SetProductsResponse createSetProductsResponse() {
         return new SetProductsResponse();
     }
 
     /**
-     * Create an instance of {@link SalesSessionType.Prospects }
+     * Creates a new Object object.
      * 
+     * @return the prospects
      */
     public SalesSessionType.Prospects createSalesSessionTypeProspects() {
         return new SalesSessionType.Prospects();
     }
 
     /**
-     * Create an instance of {@link AccessControlType }
+     * Creates a new Object object.
      * 
+     * @return the access control type
      */
     public AccessControlType createAccessControlType() {
         return new AccessControlType();
     }
 
     /**
-     * Create an instance of {@link OpptySummaryType }
+     * Creates a new Object object.
      * 
+     * @return the oppty summary type
      */
     public OpptySummaryType createOpptySummaryType() {
         return new OpptySummaryType();
     }
 
     /**
-     * Create an instance of {@link LstAccountsResponse }
+     * Creates a new Object object.
      * 
+     * @return the lst accounts response
      */
     public LstAccountsResponse createLstAccountsResponse() {
         return new LstAccountsResponse();
     }
 
     /**
-     * Create an instance of {@link AccountType }
+     * Creates a new Object object.
      * 
+     * @return the account type
      */
     public AccountType createAccountType() {
         return new AccountType();
     }
 
     /**
-     * Create an instance of {@link ProductInstanceType }
+     * Creates a new Object object.
      * 
+     * @return the product instance type
      */
     public ProductInstanceType createProductInstanceType() {
         return new ProductInstanceType();
     }
 
     /**
-     * Create an instance of {@link OrderType }
+     * Creates a new Object object.
      * 
+     * @return the order type
      */
     public OrderType createOrderType() {
         return new OrderType();
     }
 
     /**
-     * Create an instance of {@link ScheduleType }
+     * Creates a new Object object.
      * 
+     * @return the schedule type
      */
     public ScheduleType createScheduleType() {
         return new ScheduleType();
     }
 
     /**
-     * Create an instance of {@link DateScopeType }
+     * Creates a new Object object.
      * 
+     * @return the date scope type
      */
     public DateScopeType createDateScopeType() {
         return new DateScopeType();
     }
 
     /**
-     * Create an instance of {@link LstsummarySalesSessionResponse }
+     * Creates a new Object object.
      * 
+     * @return the lstsummary sales session response
      */
     public LstsummarySalesSessionResponse createLstsummarySalesSessionResponse() {
         return new LstsummarySalesSessionResponse();
     }
 
     /**
-     * Create an instance of {@link SetAccount }
+     * Creates a new Object object.
      * 
+     * @return the sets the account
      */
     public SetAccount createSetAccount() {
         return new SetAccount();
     }
 
     /**
-     * Create an instance of {@link CreateAccountResponse }
+     * Creates a new Object object.
      * 
+     * @return the creates the account response
      */
     public CreateAccountResponse createCreateAccountResponse() {
         return new CreateAccountResponse();
     }
 
     /**
-     * Create an instance of {@link OpptyInstanceType }
+     * Creates a new Object object.
      * 
+     * @return the oppty instance type
      */
     public OpptyInstanceType createOpptyInstanceType() {
         return new OpptyInstanceType();
     }
 
     /**
-     * Create an instance of {@link GetSalesSessionResponse }
+     * Creates a new Object object.
      * 
+     * @return the gets the sales session response
      */
     public GetSalesSessionResponse createGetSalesSessionResponse() {
         return new GetSalesSessionResponse();
     }
 
     /**
-     * Create an instance of {@link AttendeeOptionsType }
+     * Creates a new Object object.
      * 
+     * @return the attendee options type
      */
     public AttendeeOptionsType createAttendeeOptionsType() {
         return new AttendeeOptionsType();
     }
 
     /**
-     * Create an instance of {@link SalesSessionSummaryInstanceType }
+     * Creates a new Object object.
      * 
+     * @return the sales session summary instance type
      */
     public SalesSessionSummaryInstanceType createSalesSessionSummaryInstanceType() {
         return new SalesSessionSummaryInstanceType();

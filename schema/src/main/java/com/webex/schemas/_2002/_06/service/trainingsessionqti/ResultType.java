@@ -25,24 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for resultType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="resultType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="context" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}contextType"/>
- *         &lt;element name="assessment_result" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}assessment_resultType"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ResultType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "resultType", propOrder = {
@@ -53,55 +36,48 @@ public class ResultType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The context. */
     @XmlElement(required = true)
     protected ContextType context;
+    
+    /** The assessment result. */
     @XmlElement(name = "assessment_result", required = true)
     protected AssessmentResultType assessmentResult;
 
     /**
-     * Gets the value of the context property.
+     * Gets the context.
      * 
-     * @return
-     *     possible object is
-     *     {@link ContextType }
-     *     
+     * @return the context
      */
     public ContextType getContext() {
         return context;
     }
 
     /**
-     * Sets the value of the context property.
+     * Sets the context.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ContextType }
-     *     
+     * @param value the new context
      */
     public void setContext(ContextType value) {
         this.context = value;
     }
 
     /**
-     * Gets the value of the assessmentResult property.
+     * Gets the assessment result.
      * 
-     * @return
-     *     possible object is
-     *     {@link AssessmentResultType }
-     *     
+     * @return the assessment result
      */
     public AssessmentResultType getAssessmentResult() {
         return assessmentResult;
     }
 
     /**
-     * Sets the value of the assessmentResult property.
+     * Sets the assessment result.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link AssessmentResultType }
-     *     
+     * @param value the new assessment result
      */
     public void setAssessmentResult(AssessmentResultType value) {
         this.assessmentResult = value;

@@ -25,20 +25,7 @@ import javax.xml.bind.annotation.XmlValue;
 
 
 /**
- * <p>Java class for qti_commentType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="qti_commentType">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class QtiCommentType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "qti_commentType", propOrder = {
@@ -48,29 +35,26 @@ public class QtiCommentType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The value. */
     @XmlValue
     protected String value;
 
     /**
-     * Gets the value of the value property.
+     * Gets the value.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the value
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value of the value property.
+     * Sets the value.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new value
      */
     public void setValue(String value) {
         this.value = value;

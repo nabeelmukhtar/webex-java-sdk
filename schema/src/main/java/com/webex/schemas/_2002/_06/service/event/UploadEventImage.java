@@ -26,25 +26,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for uploadEventImage complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="uploadEventImage">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="imageType" type="{http://www.webex.com/schemas/2002/06/service/event}imageTypeType"/>
- *         &lt;element name="imageData" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class UploadEventImage.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "uploadEventImage", propOrder = {
@@ -57,70 +39,69 @@ public class UploadEventImage
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The session key. */
     protected long sessionKey;
+    
+    /** The image type. */
     @XmlElement(required = true)
     protected ImageTypeType imageType;
+    
+    /** The image data. */
     @XmlElement(required = true)
     protected byte[] imageData;
 
     /**
-     * Gets the value of the sessionKey property.
+     * Gets the session key.
      * 
+     * @return the session key
      */
     public long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the value of the sessionKey property.
+     * Sets the session key.
      * 
+     * @param value the new session key
      */
     public void setSessionKey(long value) {
         this.sessionKey = value;
     }
 
     /**
-     * Gets the value of the imageType property.
+     * Gets the image type.
      * 
-     * @return
-     *     possible object is
-     *     {@link ImageTypeType }
-     *     
+     * @return the image type
      */
     public ImageTypeType getImageType() {
         return imageType;
     }
 
     /**
-     * Sets the value of the imageType property.
+     * Sets the image type.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ImageTypeType }
-     *     
+     * @param value the new image type
      */
     public void setImageType(ImageTypeType value) {
         this.imageType = value;
     }
 
     /**
-     * Gets the value of the imageData property.
+     * Gets the image data.
      * 
-     * @return
-     *     possible object is
-     *     byte[]
+     * @return the image data
      */
     public byte[] getImageData() {
         return imageData;
     }
 
     /**
-     * Sets the value of the imageData property.
+     * Sets the image data.
      * 
-     * @param value
-     *     allowed object is
-     *     byte[]
+     * @param value the new image data
      */
     public void setImageData(byte[] value) {
         this.imageData = ((byte[]) value);

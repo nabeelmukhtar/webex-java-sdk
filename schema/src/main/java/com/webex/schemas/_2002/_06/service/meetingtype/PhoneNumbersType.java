@@ -24,24 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for phoneNumbersType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="phoneNumbersType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="primaryTollCallInNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="primaryTollFreeCallInNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class PhoneNumbersType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "phoneNumbersType", propOrder = {
@@ -52,53 +35,46 @@ public class PhoneNumbersType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The primary toll call in number. */
     protected String primaryTollCallInNumber;
+    
+    /** The primary toll free call in number. */
     protected String primaryTollFreeCallInNumber;
 
     /**
-     * Gets the value of the primaryTollCallInNumber property.
+     * Gets the primary toll call in number.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the primary toll call in number
      */
     public String getPrimaryTollCallInNumber() {
         return primaryTollCallInNumber;
     }
 
     /**
-     * Sets the value of the primaryTollCallInNumber property.
+     * Sets the primary toll call in number.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new primary toll call in number
      */
     public void setPrimaryTollCallInNumber(String value) {
         this.primaryTollCallInNumber = value;
     }
 
     /**
-     * Gets the value of the primaryTollFreeCallInNumber property.
+     * Gets the primary toll free call in number.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the primary toll free call in number
      */
     public String getPrimaryTollFreeCallInNumber() {
         return primaryTollFreeCallInNumber;
     }
 
     /**
-     * Sets the value of the primaryTollFreeCallInNumber property.
+     * Sets the primary toll free call in number.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new primary toll free call in number
      */
     public void setPrimaryTollFreeCallInNumber(String value) {
         this.primaryTollFreeCallInNumber = value;

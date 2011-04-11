@@ -29,17 +29,92 @@ import com.webex.schemas._2002._06.service.event.RecordedEventsType;
 import com.webex.schemas._2002._06.service.event.SetEvent;
 
 /**
- * @author nmukhtar
- *
+ * The Interface EventSessionService.
  */
 public interface EventSessionService extends WebExService {
+	
+	/**
+	 * Creates the event.
+	 * 
+	 * @param event the event
+	 * 
+	 * @return the creates the event response
+	 */
 	public CreateEventResponse createEvent(CreateEvent event);
+	
+	/**
+	 * Delete event.
+	 * 
+	 * @param sessionKey the session key
+	 */
 	public void deleteEvent(long sessionKey);
+	
+	/**
+	 * Gets the event.
+	 * 
+	 * @param sessionKey the session key
+	 * 
+	 * @return the event
+	 */
 	public GetEventResponse getEvent(long sessionKey);
+	
+	/**
+	 * Gets the recorded events.
+	 * 
+	 * @param dateScope the date scope
+	 * @param hostWebExID the host web ex id
+	 * @param programID the program id
+	 * 
+	 * @return the recorded events
+	 */
 	public List<RecordedEventsType> getRecordedEvents(DateScopeType dateScope, String hostWebExID, Long programID);
+	
+	/**
+	 * Gets the event summaries.
+	 * 
+	 * @param dateScope the date scope
+	 * @param sessionKey the session key
+	 * @param hostWebExID the host web ex id
+	 * @param programID the program id
+	 * @param attendeeStats the attendee stats
+	 * 
+	 * @return the event summaries
+	 */
 	public List<EventSummaryInstanceType> getEventSummaries(DateScopeType dateScope, Long sessionKey, String hostWebExID, Long programID, Boolean attendeeStats);
+	
+	/**
+	 * Gets the program summaries.
+	 * 
+	 * @param programID the program id
+	 * 
+	 * @return the program summaries
+	 */
 	public List<ProgramSummaryType> getProgramSummaries(Long programID);
+	
+	/**
+	 * Send invitation emails.
+	 * 
+	 * @param sessionKey the session key
+	 * @param attendees the attendees
+	 * @param panelists the panelists
+	 * 
+	 * @return the list< string>
+	 */
 	public List<String> sendInvitationEmails(long sessionKey, Boolean attendees, Boolean panelists);
+	
+	/**
+	 * Sets the event.
+	 * 
+	 * @param event the new event
+	 */
 	public void setEvent(SetEvent event);
+	
+	/**
+	 * Upload event image.
+	 * 
+	 * @param sessionKey the session key
+	 * @param imageType the image type
+	 * @param imageData the image data
+	 */
 	public void uploadEventImage(long sessionKey, ImageTypeType imageType, byte[] imageData);
 }

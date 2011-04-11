@@ -28,34 +28,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Java class for response_strType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="response_strType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="render_fib" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}render_fibType"/>
- *       &lt;/sequence>
- *       &lt;attribute name="ident" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="rcardinality" default="Single">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="Single"/>
- *             &lt;enumeration value="Multiple"/>
- *             &lt;enumeration value="Ordered"/>
- *             &lt;enumeration value="Extension"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ResponseStrType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "response_strType", propOrder = {
@@ -65,70 +38,62 @@ public class ResponseStrType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The render fib. */
     @XmlElement(name = "render_fib", required = true)
     protected RenderFibType renderFib;
+    
+    /** The ident. */
     @XmlAttribute(required = true)
     protected String ident;
+    
+    /** The rcardinality. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String rcardinality;
 
     /**
-     * Gets the value of the renderFib property.
+     * Gets the render fib.
      * 
-     * @return
-     *     possible object is
-     *     {@link RenderFibType }
-     *     
+     * @return the render fib
      */
     public RenderFibType getRenderFib() {
         return renderFib;
     }
 
     /**
-     * Sets the value of the renderFib property.
+     * Sets the render fib.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RenderFibType }
-     *     
+     * @param value the new render fib
      */
     public void setRenderFib(RenderFibType value) {
         this.renderFib = value;
     }
 
     /**
-     * Gets the value of the ident property.
+     * Gets the ident.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the ident
      */
     public String getIdent() {
         return ident;
     }
 
     /**
-     * Sets the value of the ident property.
+     * Sets the ident.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new ident
      */
     public void setIdent(String value) {
         this.ident = value;
     }
 
     /**
-     * Gets the value of the rcardinality property.
+     * Gets the rcardinality.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the rcardinality
      */
     public String getRcardinality() {
         if (rcardinality == null) {
@@ -139,12 +104,9 @@ public class ResponseStrType
     }
 
     /**
-     * Sets the value of the rcardinality property.
+     * Sets the rcardinality.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new rcardinality
      */
     public void setRcardinality(String value) {
         this.rcardinality = value;

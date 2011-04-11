@@ -29,35 +29,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for createTrainingSessionResponse complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="createTrainingSessionResponse">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="sessionkey" type="{http://www.w3.org/2001/XMLSchema}long" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="additionalInfo" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence maxOccurs="unbounded" minOccurs="0">
- *                   &lt;element name="sessionkey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                   &lt;element name="guestToken" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class CreateTrainingSessionResponse.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "createTrainingSessionResponse", propOrder = {
@@ -69,32 +41,20 @@ public class CreateTrainingSessionResponse
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The sessionkey. */
     @XmlElement(type = Long.class)
     protected List<Long> sessionkey;
+    
+    /** The additional info. */
     protected CreateTrainingSessionResponse.AdditionalInfo additionalInfo;
 
     /**
-     * Gets the value of the sessionkey property.
+     * Gets the sessionkey.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the sessionkey property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getSessionkey().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Long }
-     * 
-     * 
+     * @return the sessionkey
      */
     public List<Long> getSessionkey() {
         if (sessionkey == null) {
@@ -104,24 +64,18 @@ public class CreateTrainingSessionResponse
     }
 
     /**
-     * Gets the value of the additionalInfo property.
+     * Gets the additional info.
      * 
-     * @return
-     *     possible object is
-     *     {@link CreateTrainingSessionResponse.AdditionalInfo }
-     *     
+     * @return the additional info
      */
     public CreateTrainingSessionResponse.AdditionalInfo getAdditionalInfo() {
         return additionalInfo;
     }
 
     /**
-     * Sets the value of the additionalInfo property.
+     * Sets the additional info.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link CreateTrainingSessionResponse.AdditionalInfo }
-     *     
+     * @param value the new additional info
      */
     public void setAdditionalInfo(CreateTrainingSessionResponse.AdditionalInfo value) {
         this.additionalInfo = value;
@@ -129,24 +83,7 @@ public class CreateTrainingSessionResponse
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence maxOccurs="unbounded" minOccurs="0">
-     *         &lt;element name="sessionkey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *         &lt;element name="guestToken" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class AdditionalInfo.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -156,7 +93,10 @@ public class CreateTrainingSessionResponse
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The sessionkey and guest token. */
         @XmlElements({
             @XmlElement(name = "guestToken", type = String.class),
             @XmlElement(name = "sessionkey", type = Long.class)
@@ -164,27 +104,9 @@ public class CreateTrainingSessionResponse
         protected List<Serializable> sessionkeyAndGuestToken;
 
         /**
-         * Gets the value of the sessionkeyAndGuestToken property.
+         * Gets the sessionkey and guest token.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the sessionkeyAndGuestToken property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getSessionkeyAndGuestToken().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link String }
-         * {@link Long }
-         * 
-         * 
+         * @return the sessionkey and guest token
          */
         public List<Serializable> getSessionkeyAndGuestToken() {
             if (sessionkeyAndGuestToken == null) {

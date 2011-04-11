@@ -25,24 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for regQandAType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="regQandAType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="regQ" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="regA" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class RegQandAType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "regQandAType", propOrder = {
@@ -53,55 +36,48 @@ public class RegQandAType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The reg q. */
     @XmlElement(required = true)
     protected String regQ;
+    
+    /** The reg a. */
     @XmlElement(required = true)
     protected String regA;
 
     /**
-     * Gets the value of the regQ property.
+     * Gets the reg q.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the reg q
      */
     public String getRegQ() {
         return regQ;
     }
 
     /**
-     * Sets the value of the regQ property.
+     * Sets the reg q.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new reg q
      */
     public void setRegQ(String value) {
         this.regQ = value;
     }
 
     /**
-     * Gets the value of the regA property.
+     * Gets the reg a.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the reg a
      */
     public String getRegA() {
         return regA;
     }
 
     /**
-     * Sets the value of the regA property.
+     * Sets the reg a.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new reg a
      */
     public void setRegA(String value) {
         this.regA = value;

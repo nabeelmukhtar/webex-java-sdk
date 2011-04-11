@@ -24,27 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for meetingPlaceType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="meetingPlaceType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="mpProfileURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="mpLogoutURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="mpInternalMeetingLink" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="nbrProfileNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="nbrProfilePassword" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class MeetingPlaceType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "meetingPlaceType", propOrder = {
@@ -58,128 +38,109 @@ public class MeetingPlaceType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The mp profile url. */
     protected String mpProfileURL;
+    
+    /** The mp logout url. */
     protected String mpLogoutURL;
+    
+    /** The mp internal meeting link. */
     protected String mpInternalMeetingLink;
+    
+    /** The nbr profile number. */
     protected String nbrProfileNumber;
+    
+    /** The nbr profile password. */
     protected String nbrProfilePassword;
 
     /**
-     * Gets the value of the mpProfileURL property.
+     * Gets the mp profile url.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the mp profile url
      */
     public String getMpProfileURL() {
         return mpProfileURL;
     }
 
     /**
-     * Sets the value of the mpProfileURL property.
+     * Sets the mp profile url.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new mp profile url
      */
     public void setMpProfileURL(String value) {
         this.mpProfileURL = value;
     }
 
     /**
-     * Gets the value of the mpLogoutURL property.
+     * Gets the mp logout url.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the mp logout url
      */
     public String getMpLogoutURL() {
         return mpLogoutURL;
     }
 
     /**
-     * Sets the value of the mpLogoutURL property.
+     * Sets the mp logout url.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new mp logout url
      */
     public void setMpLogoutURL(String value) {
         this.mpLogoutURL = value;
     }
 
     /**
-     * Gets the value of the mpInternalMeetingLink property.
+     * Gets the mp internal meeting link.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the mp internal meeting link
      */
     public String getMpInternalMeetingLink() {
         return mpInternalMeetingLink;
     }
 
     /**
-     * Sets the value of the mpInternalMeetingLink property.
+     * Sets the mp internal meeting link.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new mp internal meeting link
      */
     public void setMpInternalMeetingLink(String value) {
         this.mpInternalMeetingLink = value;
     }
 
     /**
-     * Gets the value of the nbrProfileNumber property.
+     * Gets the nbr profile number.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the nbr profile number
      */
     public String getNbrProfileNumber() {
         return nbrProfileNumber;
     }
 
     /**
-     * Sets the value of the nbrProfileNumber property.
+     * Sets the nbr profile number.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new nbr profile number
      */
     public void setNbrProfileNumber(String value) {
         this.nbrProfileNumber = value;
     }
 
     /**
-     * Gets the value of the nbrProfilePassword property.
+     * Gets the nbr profile password.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the nbr profile password
      */
     public String getNbrProfilePassword() {
         return nbrProfilePassword;
     }
 
     /**
-     * Sets the value of the nbrProfilePassword property.
+     * Sets the nbr profile password.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new nbr profile password
      */
     public void setNbrProfilePassword(String value) {
         this.nbrProfilePassword = value;

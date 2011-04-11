@@ -22,35 +22,40 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for sharingViewType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="sharingViewType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="FS_SCALE"/>
- *     &lt;enumeration value="FS"/>
- *     &lt;enumeration value="WIN_SCALE"/>
- *     &lt;enumeration value="WIN"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum SharingViewType.
  */
 @XmlType(name = "sharingViewType")
 @XmlEnum
 public enum SharingViewType {
 
+    /** The F s_ scale. */
     FS_SCALE,
+    
+    /** The FS. */
     FS,
+    
+    /** The WI n_ scale. */
     WIN_SCALE,
+    
+    /** The WIN. */
     WIN;
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the sharing view type
+     */
     public static SharingViewType fromValue(String v) {
         return valueOf(v);
     }

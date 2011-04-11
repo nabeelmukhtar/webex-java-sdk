@@ -26,26 +26,7 @@ import com.webex.schemas._2002._06.service.WebACDRoleType;
 
 
 /**
- * <p>Java class for queueType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="queueType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="numUsers" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="modDate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="type" type="{http://www.webex.com/schemas/2002/06/service}webACDRoleType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class QueueType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "queueType", propOrder = {
@@ -58,104 +39,89 @@ public class QueueType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The name. */
     @XmlElement(required = true)
     protected String name;
+    
+    /** The num users. */
     protected Integer numUsers;
+    
+    /** The mod date. */
     protected String modDate;
+    
+    /** The type. */
     protected WebACDRoleType type;
 
     /**
-     * Gets the value of the name property.
+     * Gets the name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the name
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Sets the value of the name property.
+     * Sets the name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new name
      */
     public void setName(String value) {
         this.name = value;
     }
 
     /**
-     * Gets the value of the numUsers property.
+     * Gets the num users.
      * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     * @return the num users
      */
     public Integer getNumUsers() {
         return numUsers;
     }
 
     /**
-     * Sets the value of the numUsers property.
+     * Sets the num users.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     * @param value the new num users
      */
     public void setNumUsers(Integer value) {
         this.numUsers = value;
     }
 
     /**
-     * Gets the value of the modDate property.
+     * Gets the mod date.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the mod date
      */
     public String getModDate() {
         return modDate;
     }
 
     /**
-     * Sets the value of the modDate property.
+     * Sets the mod date.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new mod date
      */
     public void setModDate(String value) {
         this.modDate = value;
     }
 
     /**
-     * Gets the value of the type property.
+     * Gets the type.
      * 
-     * @return
-     *     possible object is
-     *     {@link WebACDRoleType }
-     *     
+     * @return the type
      */
     public WebACDRoleType getType() {
         return type;
     }
 
     /**
-     * Sets the value of the type property.
+     * Sets the type.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link WebACDRoleType }
-     *     
+     * @param value the new type
      */
     public void setType(WebACDRoleType value) {
         this.type = value;

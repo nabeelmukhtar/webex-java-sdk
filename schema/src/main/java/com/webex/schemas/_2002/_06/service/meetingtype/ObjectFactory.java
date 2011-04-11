@@ -21,113 +21,112 @@ import javax.xml.bind.annotation.XmlRegistry;
 
 
 /**
- * This object contains factory methods for each 
- * Java content interface and Java element interface 
- * generated in the com.webex.schemas._2002._06.service.meetingtype package. 
- * <p>An ObjectFactory allows you to programatically 
- * construct new instances of the Java representation 
- * for XML content. The Java representation of XML 
- * content can consist of schema derived interfaces 
- * and classes representing the binding of schema 
- * type definitions, element declarations and model 
- * groups.  Factory methods for each of these are 
- * provided in this class.
- * 
+ * A factory for creating Object objects.
  */
 @XmlRegistry
 public class ObjectFactory {
 
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.webex.schemas._2002._06.service.meetingtype
-     * 
+     * Instantiates a new object factory.
      */
     public ObjectFactory() {
     }
 
     /**
-     * Create an instance of {@link MeetingTypeInstanceType.ServiceTypes }
+     * Creates a new Object object.
      * 
+     * @return the service types
      */
     public MeetingTypeInstanceType.ServiceTypes createMeetingTypeInstanceTypeServiceTypes() {
         return new MeetingTypeInstanceType.ServiceTypes();
     }
 
     /**
-     * Create an instance of {@link LstMeetingType }
+     * Creates a new Object object.
      * 
+     * @return the lst meeting type
      */
     public LstMeetingType createLstMeetingType() {
         return new LstMeetingType();
     }
 
     /**
-     * Create an instance of {@link GetMeetingTypeResponse }
+     * Creates a new Object object.
      * 
+     * @return the gets the meeting type response
      */
     public GetMeetingTypeResponse createGetMeetingTypeResponse() {
         return new GetMeetingTypeResponse();
     }
 
     /**
-     * Create an instance of {@link OptionsType }
+     * Creates a new Object object.
      * 
+     * @return the options type
      */
     public OptionsType createOptionsType() {
         return new OptionsType();
     }
 
     /**
-     * Create an instance of {@link GetMeetingType }
+     * Creates a new Object object.
      * 
+     * @return the gets the meeting type
      */
     public GetMeetingType createGetMeetingType() {
         return new GetMeetingType();
     }
 
     /**
-     * Create an instance of {@link LimitsType }
+     * Creates a new Object object.
      * 
+     * @return the limits type
      */
     public LimitsType createLimitsType() {
         return new LimitsType();
     }
 
     /**
-     * Create an instance of {@link OrderType }
+     * Creates a new Object object.
      * 
+     * @return the order type
      */
     public OrderType createOrderType() {
         return new OrderType();
     }
 
     /**
-     * Create an instance of {@link MeetingTypeInstanceType }
+     * Creates a new Object object.
      * 
+     * @return the meeting type instance type
      */
     public MeetingTypeInstanceType createMeetingTypeInstanceType() {
         return new MeetingTypeInstanceType();
     }
 
     /**
-     * Create an instance of {@link MeetingTypeTypeExt }
+     * Creates a new Object object.
      * 
+     * @return the meeting type type ext
      */
     public MeetingTypeTypeExt createMeetingTypeTypeExt() {
         return new MeetingTypeTypeExt();
     }
 
     /**
-     * Create an instance of {@link PhoneNumbersType }
+     * Creates a new Object object.
      * 
+     * @return the phone numbers type
      */
     public PhoneNumbersType createPhoneNumbersType() {
         return new PhoneNumbersType();
     }
 
     /**
-     * Create an instance of {@link LstMeetingTypeResponse }
+     * Creates a new Object object.
      * 
+     * @return the lst meeting type response
      */
     public LstMeetingTypeResponse createLstMeetingTypeResponse() {
         return new LstMeetingTypeResponse();

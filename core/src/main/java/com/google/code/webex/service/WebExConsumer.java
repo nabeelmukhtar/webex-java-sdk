@@ -19,40 +19,49 @@ package com.google.code.webex.service;
 import java.io.Serializable;
 
 /**
- * The Class UClassifyConsumer.
+ * The Class WebExConsumer.
  */
 public class WebExConsumer implements Serializable {
 	
 	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = -3469932939653397548L;
 	
-	/** The read api key. */
+	/** The web ex id. */
 	private String webExId;
 	
-	/** The write api key. */
+	/** The password. */
 	private String password;
 	
+	/** The site id. */
 	private Long siteId;
 	
+	/** The site name. */
 	private String siteName;
 	
+	/** The partner id. */
 	private String partnerId;
 	
 	/**
-	 * @return the webExId
+	 * Gets the web ex id.
+	 * 
+	 * @return the web ex id
 	 */
 	public String getWebExId() {
 		return webExId;
 	}
 
 	/**
-	 * @param webExId the webExId to set
+	 * Sets the web ex id.
+	 * 
+	 * @param webExId the new web ex id
 	 */
 	public void setWebExId(String webExId) {
 		this.webExId = webExId;
 	}
 
 	/**
+	 * Gets the password.
+	 * 
 	 * @return the password
 	 */
 	public String getPassword() {
@@ -60,45 +69,58 @@ public class WebExConsumer implements Serializable {
 	}
 
 	/**
-	 * @param password the password to set
+	 * Sets the password.
+	 * 
+	 * @param password the new password
 	 */
 	public void setPassword(String password) {
 		this.password = password;
 	}
 
 	/**
-	 * @return the siteId
+	 * Gets the site id.
+	 * 
+	 * @return the site id
 	 */
 	public Long getSiteId() {
 		return siteId;
 	}
 
 	/**
-	 * @param siteId the siteId to set
+	 * Sets the site id.
+	 * 
+	 * @param siteId the new site id
 	 */
 	public void setSiteId(Long siteId) {
 		this.siteId = siteId;
 	}
 
 	/**
-	 * @return the partnerId
+	 * Gets the partner id.
+	 * 
+	 * @return the partner id
 	 */
 	public String getPartnerId() {
 		return partnerId;
 	}
 
 	/**
-	 * @param partnerId the partnerId to set
+	 * Sets the partner id.
+	 * 
+	 * @param partnerId the new partner id
 	 */
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
 
 	/**
-	 * Instantiates a new u classify consumer.
+	 * Instantiates a new web ex consumer.
 	 * 
-	 * @param readApiKey the read api key
-	 * @param writeApiKey the write api key
+	 * @param webExId the web ex id
+	 * @param password the password
+	 * @param siteId the site id
+	 * @param siteName the site name
+	 * @param partnerId the partner id
 	 */
 	public WebExConsumer(String webExId, String password, Long siteId, String siteName, String partnerId) {
 		this.webExId = webExId;
@@ -109,14 +131,18 @@ public class WebExConsumer implements Serializable {
 	}
 
 	/**
-	 * @return the siteName
+	 * Gets the site name.
+	 * 
+	 * @return the site name
 	 */
 	public String getSiteName() {
 		return siteName;
 	}
 
 	/**
-	 * @param siteName the siteName to set
+	 * Sets the site name.
+	 * 
+	 * @param siteName the new site name
 	 */
 	public void setSiteName(String siteName) {
 		this.siteName = siteName;

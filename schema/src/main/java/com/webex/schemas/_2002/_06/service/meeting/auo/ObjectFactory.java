@@ -21,209 +21,220 @@ import javax.xml.bind.annotation.XmlRegistry;
 
 
 /**
- * This object contains factory methods for each 
- * Java content interface and Java element interface 
- * generated in the com.webex.schemas._2002._06.service.meeting.auo package. 
- * <p>An ObjectFactory allows you to programatically 
- * construct new instances of the Java representation 
- * for XML content. The Java representation of XML 
- * content can consist of schema derived interfaces 
- * and classes representing the binding of schema 
- * type definitions, element declarations and model 
- * groups.  Factory methods for each of these are 
- * provided in this class.
- * 
+ * A factory for creating Object objects.
  */
 @XmlRegistry
 public class ObjectFactory {
 
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.webex.schemas._2002._06.service.meeting.auo
-     * 
+     * Instantiates a new object factory.
      */
     public ObjectFactory() {
     }
 
     /**
-     * Create an instance of {@link AudioOnlyInstanceType.LimitedAccessAttendees }
+     * Creates a new Object object.
      * 
+     * @return the limited access attendees
      */
     public AudioOnlyInstanceType.LimitedAccessAttendees createAudioOnlyInstanceTypeLimitedAccessAttendees() {
         return new AudioOnlyInstanceType.LimitedAccessAttendees();
     }
 
     /**
-     * Create an instance of {@link AttendeeOptionsType }
+     * Creates a new Object object.
      * 
+     * @return the attendee options type
      */
     public AttendeeOptionsType createAttendeeOptionsType() {
         return new AttendeeOptionsType();
     }
 
     /**
-     * Create an instance of {@link AttendeeType }
+     * Creates a new Object object.
      * 
+     * @return the attendee type
      */
     public AttendeeType createAttendeeType() {
         return new AttendeeType();
     }
 
     /**
-     * Create an instance of {@link TeleconfType }
+     * Creates a new Object object.
      * 
+     * @return the teleconf type
      */
     public TeleconfType createTeleconfType() {
         return new TeleconfType();
     }
 
     /**
-     * Create an instance of {@link AudioOnlyInstanceType.FullAccessAttendees }
+     * Creates a new Object object.
      * 
+     * @return the full access attendees
      */
     public AudioOnlyInstanceType.FullAccessAttendees createAudioOnlyInstanceTypeFullAccessAttendees() {
         return new AudioOnlyInstanceType.FullAccessAttendees();
     }
 
     /**
-     * Create an instance of {@link GetTeleconferenceSessionResponse }
+     * Creates a new Object object.
      * 
+     * @return the gets the teleconference session response
      */
     public GetTeleconferenceSessionResponse createGetTeleconferenceSessionResponse() {
         return new GetTeleconferenceSessionResponse();
     }
 
     /**
-     * Create an instance of {@link MetaDataType }
+     * Creates a new Object object.
      * 
+     * @return the meta data type
      */
     public MetaDataType createMetaDataType() {
         return new MetaDataType();
     }
 
     /**
-     * Create an instance of {@link ScheduleType }
+     * Creates a new Object object.
      * 
+     * @return the schedule type
      */
     public ScheduleType createScheduleType() {
         return new ScheduleType();
     }
 
     /**
-     * Create an instance of {@link SetTeleconferenceSessionResponse }
+     * Creates a new Object object.
      * 
+     * @return the sets the teleconference session response
      */
     public SetTeleconferenceSessionResponse createSetTeleconferenceSessionResponse() {
         return new SetTeleconferenceSessionResponse();
     }
 
     /**
-     * Create an instance of {@link AudioOnlyType.LimitedAccessAttendees }
+     * Creates a new Object object.
      * 
+     * @return the limited access attendees
      */
     public AudioOnlyType.LimitedAccessAttendees createAudioOnlyTypeLimitedAccessAttendees() {
         return new AudioOnlyType.LimitedAccessAttendees();
     }
 
     /**
-     * Create an instance of {@link GetTeleconferenceSession }
+     * Creates a new Object object.
      * 
+     * @return the gets the teleconference session
      */
     public GetTeleconferenceSession createGetTeleconferenceSession() {
         return new GetTeleconferenceSession();
     }
 
     /**
-     * Create an instance of {@link RepeatType.DayInWeek }
+     * Creates a new Object object.
      * 
+     * @return the day in week
      */
     public RepeatType.DayInWeek createRepeatTypeDayInWeek() {
         return new RepeatType.DayInWeek();
     }
 
     /**
-     * Create an instance of {@link AccessControlType }
+     * Creates a new Object object.
      * 
+     * @return the access control type
      */
     public AccessControlType createAccessControlType() {
         return new AccessControlType();
     }
 
     /**
-     * Create an instance of {@link TelephonyType }
+     * Creates a new Object object.
      * 
+     * @return the telephony type
      */
     public TelephonyType createTelephonyType() {
         return new TelephonyType();
     }
 
     /**
-     * Create an instance of {@link AudioOnlyType.FullAccessAttendees }
+     * Creates a new Object object.
      * 
+     * @return the full access attendees
      */
     public AudioOnlyType.FullAccessAttendees createAudioOnlyTypeFullAccessAttendees() {
         return new AudioOnlyType.FullAccessAttendees();
     }
 
     /**
-     * Create an instance of {@link AudioOnlyInstanceType }
+     * Creates a new Object object.
      * 
+     * @return the audio only instance type
      */
     public AudioOnlyInstanceType createAudioOnlyInstanceType() {
         return new AudioOnlyInstanceType();
     }
 
     /**
-     * Create an instance of {@link RemindType }
+     * Creates a new Object object.
      * 
+     * @return the remind type
      */
     public RemindType createRemindType() {
         return new RemindType();
     }
 
     /**
-     * Create an instance of {@link RepeatType }
+     * Creates a new Object object.
      * 
+     * @return the repeat type
      */
     public RepeatType createRepeatType() {
         return new RepeatType();
     }
 
     /**
-     * Create an instance of {@link CreateTeleconferenceSession }
+     * Creates a new Object object.
      * 
+     * @return the creates the teleconference session
      */
     public CreateTeleconferenceSession createCreateTeleconferenceSession() {
         return new CreateTeleconferenceSession();
     }
 
     /**
-     * Create an instance of {@link AudioOnlyType }
+     * Creates a new Object object.
      * 
+     * @return the audio only type
      */
     public AudioOnlyType createAudioOnlyType() {
         return new AudioOnlyType();
     }
 
     /**
-     * Create an instance of {@link SetTeleconferenceSession }
+     * Creates a new Object object.
      * 
+     * @return the sets the teleconference session
      */
     public SetTeleconferenceSession createSetTeleconferenceSession() {
         return new SetTeleconferenceSession();
     }
 
     /**
-     * Create an instance of {@link CreateTeleconferenceSessionResponse }
+     * Creates a new Object object.
      * 
+     * @return the creates the teleconference session response
      */
     public CreateTeleconferenceSessionResponse createCreateTeleconferenceSessionResponse() {
         return new CreateTeleconferenceSessionResponse();
     }
 
     /**
-     * Create an instance of {@link TeleconfInstanceType }
+     * Creates a new Object object.
      * 
+     * @return the teleconf instance type
      */
     public TeleconfInstanceType createTeleconfInstanceType() {
         return new TeleconfInstanceType();

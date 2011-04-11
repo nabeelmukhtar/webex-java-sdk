@@ -25,30 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for programSummaryType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="programSummaryType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="programID" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="programName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="hostWebExID" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="expectedEnrollment" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="budget" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="status" type="{http://www.webex.com/schemas/2002/06/service/event}listingType" minOccurs="0"/>
- *         &lt;element name="programURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="afterEnrollmentURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ProgramSummaryType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "programSummaryType", propOrder = {
@@ -65,197 +42,174 @@ public class ProgramSummaryType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The program id. */
     protected long programID;
+    
+    /** The program name. */
     @XmlElement(required = true)
     protected String programName;
+    
+    /** The host web ex id. */
     @XmlElement(required = true)
     protected String hostWebExID;
+    
+    /** The expected enrollment. */
     protected String expectedEnrollment;
+    
+    /** The budget. */
     protected String budget;
+    
+    /** The status. */
     protected ListingType status;
+    
+    /** The program url. */
     protected String programURL;
+    
+    /** The after enrollment url. */
     protected String afterEnrollmentURL;
 
     /**
-     * Gets the value of the programID property.
+     * Gets the program id.
      * 
+     * @return the program id
      */
     public long getProgramID() {
         return programID;
     }
 
     /**
-     * Sets the value of the programID property.
+     * Sets the program id.
      * 
+     * @param value the new program id
      */
     public void setProgramID(long value) {
         this.programID = value;
     }
 
     /**
-     * Gets the value of the programName property.
+     * Gets the program name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the program name
      */
     public String getProgramName() {
         return programName;
     }
 
     /**
-     * Sets the value of the programName property.
+     * Sets the program name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new program name
      */
     public void setProgramName(String value) {
         this.programName = value;
     }
 
     /**
-     * Gets the value of the hostWebExID property.
+     * Gets the host web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the host web ex id
      */
     public String getHostWebExID() {
         return hostWebExID;
     }
 
     /**
-     * Sets the value of the hostWebExID property.
+     * Sets the host web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new host web ex id
      */
     public void setHostWebExID(String value) {
         this.hostWebExID = value;
     }
 
     /**
-     * Gets the value of the expectedEnrollment property.
+     * Gets the expected enrollment.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the expected enrollment
      */
     public String getExpectedEnrollment() {
         return expectedEnrollment;
     }
 
     /**
-     * Sets the value of the expectedEnrollment property.
+     * Sets the expected enrollment.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new expected enrollment
      */
     public void setExpectedEnrollment(String value) {
         this.expectedEnrollment = value;
     }
 
     /**
-     * Gets the value of the budget property.
+     * Gets the budget.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the budget
      */
     public String getBudget() {
         return budget;
     }
 
     /**
-     * Sets the value of the budget property.
+     * Sets the budget.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new budget
      */
     public void setBudget(String value) {
         this.budget = value;
     }
 
     /**
-     * Gets the value of the status property.
+     * Gets the status.
      * 
-     * @return
-     *     possible object is
-     *     {@link ListingType }
-     *     
+     * @return the status
      */
     public ListingType getStatus() {
         return status;
     }
 
     /**
-     * Sets the value of the status property.
+     * Sets the status.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ListingType }
-     *     
+     * @param value the new status
      */
     public void setStatus(ListingType value) {
         this.status = value;
     }
 
     /**
-     * Gets the value of the programURL property.
+     * Gets the program url.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the program url
      */
     public String getProgramURL() {
         return programURL;
     }
 
     /**
-     * Sets the value of the programURL property.
+     * Sets the program url.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new program url
      */
     public void setProgramURL(String value) {
         this.programURL = value;
     }
 
     /**
-     * Gets the value of the afterEnrollmentURL property.
+     * Gets the after enrollment url.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the after enrollment url
      */
     public String getAfterEnrollmentURL() {
         return afterEnrollmentURL;
     }
 
     /**
-     * Sets the value of the afterEnrollmentURL property.
+     * Sets the after enrollment url.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new after enrollment url
      */
     public void setAfterEnrollmentURL(String value) {
         this.afterEnrollmentURL = value;

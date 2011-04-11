@@ -22,31 +22,34 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for statusType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="statusType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="NOT_INPROGRESS"/>
- *     &lt;enumeration value="INPROGRESS"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum StatusType.
  */
 @XmlType(name = "statusType")
 @XmlEnum
 public enum StatusType {
 
+    /** The NO t_ inprogress. */
     NOT_INPROGRESS,
+    
+    /** The INPROGRESS. */
     INPROGRESS;
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the status type
+     */
     public static StatusType fromValue(String v) {
         return valueOf(v);
     }

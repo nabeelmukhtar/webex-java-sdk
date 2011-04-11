@@ -25,29 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for TSRouting complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="TSRouting">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="TSPrimaryName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="TSPrimaryCountryCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="TSPrimaryNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="TSDelay" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="TSSecondName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="TSSecondCountryCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="TSSecondNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class TSRouting.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "TSRouting", propOrder = {
@@ -63,185 +41,158 @@ public class TSRouting
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The ts primary name. */
     @XmlElement(name = "TSPrimaryName")
     protected String tsPrimaryName;
+    
+    /** The ts primary country code. */
     @XmlElement(name = "TSPrimaryCountryCode")
     protected String tsPrimaryCountryCode;
+    
+    /** The ts primary number. */
     @XmlElement(name = "TSPrimaryNumber")
     protected String tsPrimaryNumber;
+    
+    /** The ts delay. */
     @XmlElement(name = "TSDelay")
     protected Integer tsDelay;
+    
+    /** The ts second name. */
     @XmlElement(name = "TSSecondName")
     protected String tsSecondName;
+    
+    /** The ts second country code. */
     @XmlElement(name = "TSSecondCountryCode")
     protected String tsSecondCountryCode;
+    
+    /** The ts second number. */
     @XmlElement(name = "TSSecondNumber")
     protected String tsSecondNumber;
 
     /**
-     * Gets the value of the tsPrimaryName property.
+     * Gets the tS primary name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the tS primary name
      */
     public String getTSPrimaryName() {
         return tsPrimaryName;
     }
 
     /**
-     * Sets the value of the tsPrimaryName property.
+     * Sets the tS primary name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new tS primary name
      */
     public void setTSPrimaryName(String value) {
         this.tsPrimaryName = value;
     }
 
     /**
-     * Gets the value of the tsPrimaryCountryCode property.
+     * Gets the tS primary country code.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the tS primary country code
      */
     public String getTSPrimaryCountryCode() {
         return tsPrimaryCountryCode;
     }
 
     /**
-     * Sets the value of the tsPrimaryCountryCode property.
+     * Sets the tS primary country code.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new tS primary country code
      */
     public void setTSPrimaryCountryCode(String value) {
         this.tsPrimaryCountryCode = value;
     }
 
     /**
-     * Gets the value of the tsPrimaryNumber property.
+     * Gets the tS primary number.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the tS primary number
      */
     public String getTSPrimaryNumber() {
         return tsPrimaryNumber;
     }
 
     /**
-     * Sets the value of the tsPrimaryNumber property.
+     * Sets the tS primary number.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new tS primary number
      */
     public void setTSPrimaryNumber(String value) {
         this.tsPrimaryNumber = value;
     }
 
     /**
-     * Gets the value of the tsDelay property.
+     * Gets the tS delay.
      * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     * @return the tS delay
      */
     public Integer getTSDelay() {
         return tsDelay;
     }
 
     /**
-     * Sets the value of the tsDelay property.
+     * Sets the tS delay.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     * @param value the new tS delay
      */
     public void setTSDelay(Integer value) {
         this.tsDelay = value;
     }
 
     /**
-     * Gets the value of the tsSecondName property.
+     * Gets the tS second name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the tS second name
      */
     public String getTSSecondName() {
         return tsSecondName;
     }
 
     /**
-     * Sets the value of the tsSecondName property.
+     * Sets the tS second name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new tS second name
      */
     public void setTSSecondName(String value) {
         this.tsSecondName = value;
     }
 
     /**
-     * Gets the value of the tsSecondCountryCode property.
+     * Gets the tS second country code.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the tS second country code
      */
     public String getTSSecondCountryCode() {
         return tsSecondCountryCode;
     }
 
     /**
-     * Sets the value of the tsSecondCountryCode property.
+     * Sets the tS second country code.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new tS second country code
      */
     public void setTSSecondCountryCode(String value) {
         this.tsSecondCountryCode = value;
     }
 
     /**
-     * Gets the value of the tsSecondNumber property.
+     * Gets the tS second number.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the tS second number
      */
     public String getTSSecondNumber() {
         return tsSecondNumber;
     }
 
     /**
-     * Sets the value of the tsSecondNumber property.
+     * Sets the tS second number.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new tS second number
      */
     public void setTSSecondNumber(String value) {
         this.tsSecondNumber = value;

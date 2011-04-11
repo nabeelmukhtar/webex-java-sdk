@@ -24,32 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for standardFieldsType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="standardFieldsType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="phone" type="{http://www.webex.com/schemas/2002/06/service/meeting}registrationFieldType" minOccurs="0"/>
- *         &lt;element name="title" type="{http://www.webex.com/schemas/2002/06/service/meeting}registrationFieldType" minOccurs="0"/>
- *         &lt;element name="company" type="{http://www.webex.com/schemas/2002/06/service/meeting}registrationFieldType" minOccurs="0"/>
- *         &lt;element name="address1" type="{http://www.webex.com/schemas/2002/06/service/meeting}registrationFieldType" minOccurs="0"/>
- *         &lt;element name="address2" type="{http://www.webex.com/schemas/2002/06/service/meeting}registrationFieldType" minOccurs="0"/>
- *         &lt;element name="city" type="{http://www.webex.com/schemas/2002/06/service/meeting}registrationFieldType" minOccurs="0"/>
- *         &lt;element name="state" type="{http://www.webex.com/schemas/2002/06/service/meeting}registrationFieldType" minOccurs="0"/>
- *         &lt;element name="postalCode" type="{http://www.webex.com/schemas/2002/06/service/meeting}registrationFieldType" minOccurs="0"/>
- *         &lt;element name="country" type="{http://www.webex.com/schemas/2002/06/service/meeting}registrationFieldType" minOccurs="0"/>
- *         &lt;element name="fax" type="{http://www.webex.com/schemas/2002/06/service/meeting}registrationFieldType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class StandardFieldsType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "standardFieldsType", propOrder = {
@@ -68,253 +43,214 @@ public class StandardFieldsType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The phone. */
     protected RegistrationFieldType phone;
+    
+    /** The title. */
     protected RegistrationFieldType title;
+    
+    /** The company. */
     protected RegistrationFieldType company;
+    
+    /** The address1. */
     protected RegistrationFieldType address1;
+    
+    /** The address2. */
     protected RegistrationFieldType address2;
+    
+    /** The city. */
     protected RegistrationFieldType city;
+    
+    /** The state. */
     protected RegistrationFieldType state;
+    
+    /** The postal code. */
     protected RegistrationFieldType postalCode;
+    
+    /** The country. */
     protected RegistrationFieldType country;
+    
+    /** The fax. */
     protected RegistrationFieldType fax;
 
     /**
-     * Gets the value of the phone property.
+     * Gets the phone.
      * 
-     * @return
-     *     possible object is
-     *     {@link RegistrationFieldType }
-     *     
+     * @return the phone
      */
     public RegistrationFieldType getPhone() {
         return phone;
     }
 
     /**
-     * Sets the value of the phone property.
+     * Sets the phone.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RegistrationFieldType }
-     *     
+     * @param value the new phone
      */
     public void setPhone(RegistrationFieldType value) {
         this.phone = value;
     }
 
     /**
-     * Gets the value of the title property.
+     * Gets the title.
      * 
-     * @return
-     *     possible object is
-     *     {@link RegistrationFieldType }
-     *     
+     * @return the title
      */
     public RegistrationFieldType getTitle() {
         return title;
     }
 
     /**
-     * Sets the value of the title property.
+     * Sets the title.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RegistrationFieldType }
-     *     
+     * @param value the new title
      */
     public void setTitle(RegistrationFieldType value) {
         this.title = value;
     }
 
     /**
-     * Gets the value of the company property.
+     * Gets the company.
      * 
-     * @return
-     *     possible object is
-     *     {@link RegistrationFieldType }
-     *     
+     * @return the company
      */
     public RegistrationFieldType getCompany() {
         return company;
     }
 
     /**
-     * Sets the value of the company property.
+     * Sets the company.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RegistrationFieldType }
-     *     
+     * @param value the new company
      */
     public void setCompany(RegistrationFieldType value) {
         this.company = value;
     }
 
     /**
-     * Gets the value of the address1 property.
+     * Gets the address1.
      * 
-     * @return
-     *     possible object is
-     *     {@link RegistrationFieldType }
-     *     
+     * @return the address1
      */
     public RegistrationFieldType getAddress1() {
         return address1;
     }
 
     /**
-     * Sets the value of the address1 property.
+     * Sets the address1.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RegistrationFieldType }
-     *     
+     * @param value the new address1
      */
     public void setAddress1(RegistrationFieldType value) {
         this.address1 = value;
     }
 
     /**
-     * Gets the value of the address2 property.
+     * Gets the address2.
      * 
-     * @return
-     *     possible object is
-     *     {@link RegistrationFieldType }
-     *     
+     * @return the address2
      */
     public RegistrationFieldType getAddress2() {
         return address2;
     }
 
     /**
-     * Sets the value of the address2 property.
+     * Sets the address2.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RegistrationFieldType }
-     *     
+     * @param value the new address2
      */
     public void setAddress2(RegistrationFieldType value) {
         this.address2 = value;
     }
 
     /**
-     * Gets the value of the city property.
+     * Gets the city.
      * 
-     * @return
-     *     possible object is
-     *     {@link RegistrationFieldType }
-     *     
+     * @return the city
      */
     public RegistrationFieldType getCity() {
         return city;
     }
 
     /**
-     * Sets the value of the city property.
+     * Sets the city.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RegistrationFieldType }
-     *     
+     * @param value the new city
      */
     public void setCity(RegistrationFieldType value) {
         this.city = value;
     }
 
     /**
-     * Gets the value of the state property.
+     * Gets the state.
      * 
-     * @return
-     *     possible object is
-     *     {@link RegistrationFieldType }
-     *     
+     * @return the state
      */
     public RegistrationFieldType getState() {
         return state;
     }
 
     /**
-     * Sets the value of the state property.
+     * Sets the state.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RegistrationFieldType }
-     *     
+     * @param value the new state
      */
     public void setState(RegistrationFieldType value) {
         this.state = value;
     }
 
     /**
-     * Gets the value of the postalCode property.
+     * Gets the postal code.
      * 
-     * @return
-     *     possible object is
-     *     {@link RegistrationFieldType }
-     *     
+     * @return the postal code
      */
     public RegistrationFieldType getPostalCode() {
         return postalCode;
     }
 
     /**
-     * Sets the value of the postalCode property.
+     * Sets the postal code.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RegistrationFieldType }
-     *     
+     * @param value the new postal code
      */
     public void setPostalCode(RegistrationFieldType value) {
         this.postalCode = value;
     }
 
     /**
-     * Gets the value of the country property.
+     * Gets the country.
      * 
-     * @return
-     *     possible object is
-     *     {@link RegistrationFieldType }
-     *     
+     * @return the country
      */
     public RegistrationFieldType getCountry() {
         return country;
     }
 
     /**
-     * Sets the value of the country property.
+     * Sets the country.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RegistrationFieldType }
-     *     
+     * @param value the new country
      */
     public void setCountry(RegistrationFieldType value) {
         this.country = value;
     }
 
     /**
-     * Gets the value of the fax property.
+     * Gets the fax.
      * 
-     * @return
-     *     possible object is
-     *     {@link RegistrationFieldType }
-     *     
+     * @return the fax
      */
     public RegistrationFieldType getFax() {
         return fax;
     }
 
     /**
-     * Sets the value of the fax property.
+     * Sets the fax.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RegistrationFieldType }
-     *     
+     * @param value the new fax
      */
     public void setFax(RegistrationFieldType value) {
         this.fax = value;

@@ -25,30 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for webSiteType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="webSiteType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="startDate">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="dueDate" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="emailAttendee" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}emailAttendeeType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class WebSiteType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "webSiteType", propOrder = {
@@ -60,80 +37,69 @@ public class WebSiteType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The start date. */
     @XmlElement(required = true)
     protected String startDate;
+    
+    /** The due date. */
     @XmlElement(required = true)
     protected String dueDate;
+    
+    /** The email attendee. */
     protected EmailAttendeeType emailAttendee;
 
     /**
-     * Gets the value of the startDate property.
+     * Gets the start date.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the start date
      */
     public String getStartDate() {
         return startDate;
     }
 
     /**
-     * Sets the value of the startDate property.
+     * Sets the start date.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new start date
      */
     public void setStartDate(String value) {
         this.startDate = value;
     }
 
     /**
-     * Gets the value of the dueDate property.
+     * Gets the due date.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the due date
      */
     public String getDueDate() {
         return dueDate;
     }
 
     /**
-     * Sets the value of the dueDate property.
+     * Sets the due date.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new due date
      */
     public void setDueDate(String value) {
         this.dueDate = value;
     }
 
     /**
-     * Gets the value of the emailAttendee property.
+     * Gets the email attendee.
      * 
-     * @return
-     *     possible object is
-     *     {@link EmailAttendeeType }
-     *     
+     * @return the email attendee
      */
     public EmailAttendeeType getEmailAttendee() {
         return emailAttendee;
     }
 
     /**
-     * Sets the value of the emailAttendee property.
+     * Sets the email attendee.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link EmailAttendeeType }
-     *     
+     * @param value the new email attendee
      */
     public void setEmailAttendee(EmailAttendeeType value) {
         this.emailAttendee = value;

@@ -28,26 +28,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for or_testType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="or_testType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice maxOccurs="unbounded">
- *         &lt;element name="variable_test" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}variable_testType"/>
- *         &lt;element name="and_test" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}and_testType"/>
- *         &lt;element name="or_test" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}or_testType"/>
- *         &lt;element name="not_test" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}not_testType"/>
- *       &lt;/choice>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class OrTestType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "or_testType", propOrder = {
@@ -56,7 +37,10 @@ import javax.xml.bind.annotation.XmlType;
 public class OrTestType implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The variable test or and test or or test. */
     @XmlElements({
         @XmlElement(name = "not_test", type = NotTestType.class),
         @XmlElement(name = "variable_test", type = VariableTestType.class),
@@ -66,29 +50,9 @@ public class OrTestType implements Serializable
     protected List<Object> variableTestOrAndTestOrOrTest;
 
     /**
-     * Gets the value of the variableTestOrAndTestOrOrTest property.
+     * Gets the variable test or and test or or test.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the variableTestOrAndTestOrOrTest property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getVariableTestOrAndTestOrOrTest().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link NotTestType }
-     * {@link VariableTestType }
-     * {@link OrTestType }
-     * {@link AndTestType }
-     * 
-     * 
+     * @return the variable test or and test or or test
      */
     public List<Object> getVariableTestOrAndTestOrOrTest() {
         if (variableTestOrAndTestOrOrTest == null) {

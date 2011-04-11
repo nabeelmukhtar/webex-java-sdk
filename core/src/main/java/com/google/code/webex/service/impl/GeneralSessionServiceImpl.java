@@ -64,14 +64,29 @@ import com.webex.schemas._2002._06.service.ep.SetRecordingInfoResponse;
 import com.webex.schemas._2002._06.service.ep.SetupOneClickSettings;
 import com.webex.schemas._2002._06.service.ep.LstOpenSessionResponse.Services;
 
+/**
+ * The Class GeneralSessionServiceImpl.
+ */
 public class GeneralSessionServiceImpl extends WebExJaxbService implements
 		GeneralSessionService {
 
+	/**
+	 * Instantiates a new general session service impl.
+	 * 
+	 * @param webExId the web ex id
+	 * @param password the password
+	 * @param siteId the site id
+	 * @param siteName the site name
+	 * @param partnerId the partner id
+	 */
 	public GeneralSessionServiceImpl(String webExId, String password,
 			Long siteId, String siteName, String partnerId) {
 		super(webExId, password, siteId, siteName, partnerId);
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.GeneralSessionService#createContacts(java.util.List)
+	 */
 	@Override
 	public List<Long> createContacts(List<ContactType> contacts) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -88,6 +103,9 @@ public class GeneralSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<Long>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.GeneralSessionService#createDistributionList(java.lang.String, java.lang.String, java.util.List)
+	 */
 	@Override
 	public Long createDistributionList(String name, String description,
 			List<Long> contactIds) {
@@ -109,6 +127,9 @@ public class GeneralSessionServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.GeneralSessionService#deleteRecording(java.lang.Integer)
+	 */
 	@Override
 	public Integer deleteRecording(Integer recordingId) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -125,6 +146,9 @@ public class GeneralSessionServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.GeneralSessionService#deleteSession(java.lang.Long, boolean)
+	 */
 	@Override
 	public void deleteSession(Long sessionKey, boolean sendEmail) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -140,6 +164,9 @@ public class GeneralSessionServiceImpl extends WebExJaxbService implements
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.GeneralSessionService#getApiVersion()
+	 */
 	@Override
 	public String getApiVersion() {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -156,6 +183,9 @@ public class GeneralSessionServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.GeneralSessionService#getDistributionLists(java.lang.Long, java.lang.String, com.webex.schemas._2002._06.common.AddressTypeType, java.lang.String)
+	 */
 	@Override
 	public List<DistListInstanceType> getDistributionLists(Long distListID,
 			String name, AddressTypeType addressType, String hostWebExID) {
@@ -177,6 +207,9 @@ public class GeneralSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<DistListInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.GeneralSessionService#getOpenSessions(com.webex.schemas._2002._06.common.ServiceTypeType[])
+	 */
 	@Override
 	public List<Services> getOpenSessions(ServiceTypeType... serviceTypes) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -196,6 +229,9 @@ public class GeneralSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<Services>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.GeneralSessionService#getRecordings(java.lang.String, java.lang.Long, boolean)
+	 */
 	@Override
 	public List<RecordingType> getRecordings(String hostWebExID,
 			Long sessionKey, boolean returnSessionDetails) {
@@ -220,6 +256,9 @@ public class GeneralSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<RecordingType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.GeneralSessionService#getSessionSummaries(com.webex.schemas._2002._06.service.ep.LstsummarySession)
+	 */
 	@Override
 	public List<SessionSummaryInstanceType> getSessionSummaries(LstsummarySession sessionRequest) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -233,6 +272,9 @@ public class GeneralSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<SessionSummaryInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.GeneralSessionService#setDistributionList(java.lang.Long, java.lang.String, java.lang.String, java.util.List, com.webex.schemas._2002._06.service.ep.ContactOperationType)
+	 */
 	@Override
 	public void setDistributionList(Long distListID, String name, String description, List<Long> contactIds, ContactOperationType operationType) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -252,6 +294,9 @@ public class GeneralSessionServiceImpl extends WebExJaxbService implements
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.GeneralSessionService#getOneClickSettings(java.lang.String)
+	 */
 	@Override
 	public GetOneClickSettingsResponse getOneClickSettings(String hostWebExID) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -268,6 +313,9 @@ public class GeneralSessionServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.GeneralSessionService#setupOneClickSettings(com.webex.schemas._2002._06.service.ep.SetupOneClickSettings)
+	 */
 	@Override
 	public void setupOneClickSettings(SetupOneClickSettings oneClickSettings) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -279,6 +327,9 @@ public class GeneralSessionServiceImpl extends WebExJaxbService implements
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.GeneralSessionService#getSessionInfo(long, java.lang.String)
+	 */
 	@Override
 	public GetSessionInfoResponse getSessionInfo(long sessionKey,
 			String sessionPassword) {
@@ -297,6 +348,9 @@ public class GeneralSessionServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.GeneralSessionService#getContacts(java.lang.Long, java.lang.String, com.webex.schemas._2002._06.common.AddressTypeType, java.lang.String)
+	 */
 	@Override
 	public List<ContactType> getContacts(Long distListID, String distListName,
 			AddressTypeType addressType, String hostWebExID) {
@@ -318,6 +372,9 @@ public class GeneralSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<ContactType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.GeneralSessionService#setRecordingInfo(com.webex.schemas._2002._06.service.ep.SetRecordingInfo)
+	 */
 	@Override
 	public Integer setRecordingInfo(SetRecordingInfo recordingInfo) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);

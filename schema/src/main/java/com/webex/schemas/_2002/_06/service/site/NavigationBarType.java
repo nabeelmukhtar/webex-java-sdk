@@ -28,26 +28,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for navigationBarType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="navigationBarType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="order" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="serviceName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="customizedName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class NavigationBarType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "navigationBarType", propOrder = {
@@ -60,107 +41,92 @@ public class NavigationBarType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The order. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long order;
+    
+    /** The enabled. */
     protected Boolean enabled;
+    
+    /** The service name. */
     @XmlElement(required = true)
     protected String serviceName;
+    
+    /** The customized name. */
     protected String customizedName;
 
     /**
-     * Gets the value of the order property.
+     * Gets the order.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the order
      */
     public Long getOrder() {
         return order;
     }
 
     /**
-     * Sets the value of the order property.
+     * Sets the order.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new order
      */
     public void setOrder(Long value) {
         this.order = value;
     }
 
     /**
-     * Gets the value of the enabled property.
+     * Checks if is enabled.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isEnabled() {
         return enabled;
     }
 
     /**
-     * Sets the value of the enabled property.
+     * Sets the enabled.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new enabled
      */
     public void setEnabled(Boolean value) {
         this.enabled = value;
     }
 
     /**
-     * Gets the value of the serviceName property.
+     * Gets the service name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the service name
      */
     public String getServiceName() {
         return serviceName;
     }
 
     /**
-     * Sets the value of the serviceName property.
+     * Sets the service name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new service name
      */
     public void setServiceName(String value) {
         this.serviceName = value;
     }
 
     /**
-     * Gets the value of the customizedName property.
+     * Gets the customized name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the customized name
      */
     public String getCustomizedName() {
         return customizedName;
     }
 
     /**
-     * Sets the value of the customizedName property.
+     * Sets the customized name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new customized name
      */
     public void setCustomizedName(String value) {
         this.customizedName = value;

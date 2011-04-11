@@ -19,9 +19,7 @@ package com.google.code.webex.service;
 
 
 /**
- * The Interface UClassifyClient. It acts as a facade for the whole UClassify API.
- * 
- * @author Nabeel Mukhtar
+ * The Interface WebExService.
  */
 public interface WebExService extends WebExAuthenticationClient {
 }

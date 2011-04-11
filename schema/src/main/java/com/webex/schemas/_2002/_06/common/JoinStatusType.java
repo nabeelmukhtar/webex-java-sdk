@@ -22,35 +22,40 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for joinStatusType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="joinStatusType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="REGISTER"/>
- *     &lt;enumeration value="INVITE"/>
- *     &lt;enumeration value="REJECT"/>
- *     &lt;enumeration value="ACCEPT"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum JoinStatusType.
  */
 @XmlType(name = "joinStatusType")
 @XmlEnum
 public enum JoinStatusType {
 
+    /** The REGISTER. */
     REGISTER,
+    
+    /** The INVITE. */
     INVITE,
+    
+    /** The REJECT. */
     REJECT,
+    
+    /** The ACCEPT. */
     ACCEPT;
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the join status type
+     */
     public static JoinStatusType fromValue(String v) {
         return valueOf(v);
     }

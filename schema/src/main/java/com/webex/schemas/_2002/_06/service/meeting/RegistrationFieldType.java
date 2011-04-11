@@ -24,23 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for registrationFieldType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="registrationFieldType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="req" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class RegistrationFieldType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "registrationFieldType", propOrder = {
@@ -50,28 +34,25 @@ public class RegistrationFieldType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The req. */
     protected Boolean req;
 
     /**
-     * Gets the value of the req property.
+     * Checks if is req.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isReq() {
         return req;
     }
 
     /**
-     * Sets the value of the req property.
+     * Sets the req.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new req
      */
     public void setReq(Boolean value) {
         this.req = value;

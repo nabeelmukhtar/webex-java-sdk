@@ -27,63 +27,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Java class for assessmentcontrolType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="assessmentcontrolType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="qticomment" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qticommentType" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute name="hintswitch" default="Yes">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="Yes"/>
- *             &lt;enumeration value="No"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="solutionswitch" default="Yes">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="Yes"/>
- *             &lt;enumeration value="No"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="view" default="All">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="All"/>
- *             &lt;enumeration value="Administrator"/>
- *             &lt;enumeration value="AdminAuthority"/>
- *             &lt;enumeration value="Assessor"/>
- *             &lt;enumeration value="Author"/>
- *             &lt;enumeration value="Candidate"/>
- *             &lt;enumeration value="InvigilatorProctor"/>
- *             &lt;enumeration value="Psychometrician"/>
- *             &lt;enumeration value="Scorer"/>
- *             &lt;enumeration value="Tutor"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="feedbackswitch" default="Yes">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="Yes"/>
- *             &lt;enumeration value="No"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class AssessmentcontrolType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "assessmentcontrolType", propOrder = {
@@ -93,52 +37,54 @@ public class AssessmentcontrolType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The qticomment. */
     protected QticommentType qticomment;
+    
+    /** The hintswitch. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String hintswitch;
+    
+    /** The solutionswitch. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String solutionswitch;
+    
+    /** The view. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String view;
+    
+    /** The feedbackswitch. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String feedbackswitch;
 
     /**
-     * Gets the value of the qticomment property.
+     * Gets the qticomment.
      * 
-     * @return
-     *     possible object is
-     *     {@link QticommentType }
-     *     
+     * @return the qticomment
      */
     public QticommentType getQticomment() {
         return qticomment;
     }
 
     /**
-     * Sets the value of the qticomment property.
+     * Sets the qticomment.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link QticommentType }
-     *     
+     * @param value the new qticomment
      */
     public void setQticomment(QticommentType value) {
         this.qticomment = value;
     }
 
     /**
-     * Gets the value of the hintswitch property.
+     * Gets the hintswitch.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the hintswitch
      */
     public String getHintswitch() {
         if (hintswitch == null) {
@@ -149,24 +95,18 @@ public class AssessmentcontrolType
     }
 
     /**
-     * Sets the value of the hintswitch property.
+     * Sets the hintswitch.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new hintswitch
      */
     public void setHintswitch(String value) {
         this.hintswitch = value;
     }
 
     /**
-     * Gets the value of the solutionswitch property.
+     * Gets the solutionswitch.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the solutionswitch
      */
     public String getSolutionswitch() {
         if (solutionswitch == null) {
@@ -177,24 +117,18 @@ public class AssessmentcontrolType
     }
 
     /**
-     * Sets the value of the solutionswitch property.
+     * Sets the solutionswitch.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new solutionswitch
      */
     public void setSolutionswitch(String value) {
         this.solutionswitch = value;
     }
 
     /**
-     * Gets the value of the view property.
+     * Gets the view.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the view
      */
     public String getView() {
         if (view == null) {
@@ -205,24 +139,18 @@ public class AssessmentcontrolType
     }
 
     /**
-     * Sets the value of the view property.
+     * Sets the view.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new view
      */
     public void setView(String value) {
         this.view = value;
     }
 
     /**
-     * Gets the value of the feedbackswitch property.
+     * Gets the feedbackswitch.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the feedbackswitch
      */
     public String getFeedbackswitch() {
         if (feedbackswitch == null) {
@@ -233,12 +161,9 @@ public class AssessmentcontrolType
     }
 
     /**
-     * Sets the value of the feedbackswitch property.
+     * Sets the feedbackswitch.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new feedbackswitch
      */
     public void setFeedbackswitch(String value) {
         this.feedbackswitch = value;

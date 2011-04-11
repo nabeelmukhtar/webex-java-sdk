@@ -25,23 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for interpretvarType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="interpretvarType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="material" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}materialType"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class InterpretvarType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "interpretvarType", propOrder = {
@@ -51,29 +35,26 @@ public class InterpretvarType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The material. */
     @XmlElement(required = true)
     protected MaterialType material;
 
     /**
-     * Gets the value of the material property.
+     * Gets the material.
      * 
-     * @return
-     *     possible object is
-     *     {@link MaterialType }
-     *     
+     * @return the material
      */
     public MaterialType getMaterial() {
         return material;
     }
 
     /**
-     * Sets the value of the material property.
+     * Sets the material.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link MaterialType }
-     *     
+     * @param value the new material
      */
     public void setMaterial(MaterialType value) {
         this.material = value;

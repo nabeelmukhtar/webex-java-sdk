@@ -24,9 +24,7 @@ import java.util.concurrent.Executors;
 import com.google.code.webex.service.impl.MeetingServiceImpl;
 
 /**
- * A factory for creating LinkedInApiClient objects.
- * 
- * @author Nabeel Mukhtar
+ * A factory for creating WebExService objects.
  */
 public class WebExServiceFactory {
 
@@ -41,7 +39,7 @@ public class WebExServiceFactory {
     private WebExConsumer apiConsumer;
 
     /**
-     * Instantiates a new linked in api client factory.
+     * Instantiates a new web ex service factory.
      * 
      * @param apiConsumer the api consumer
      */
@@ -50,9 +48,9 @@ public class WebExServiceFactory {
     }
 	
     /**
-     * Sets the task executor to be used for asynchronous API calls.
+     * Sets the task executor.
      * 
-     * @param taskExecutor the task executor
+     * @param taskExecutor the new task executor
      */
 	public void setTaskExecutor(ExecutorService taskExecutor) {
         this.taskExecutor = taskExecutor;
@@ -61,10 +59,13 @@ public class WebExServiceFactory {
     /**
      * New instance.
      * 
-     * @param consumerKey the consumer key
-     * @param consumerSecret the consumer secret
+     * @param webExId the web ex id
+     * @param password the password
+     * @param siteId the site id
+     * @param siteName the site name
+     * @param partnerId the partner id
      * 
-     * @return the linked in api client factory
+     * @return the web ex service factory
      */
     public static WebExServiceFactory newInstance(String webExId, String password, Long siteId, String siteName, String partnerId) {
         return newInstance(new WebExConsumer(webExId, password, siteId, siteName, partnerId));
@@ -75,7 +76,7 @@ public class WebExServiceFactory {
      * 
      * @param apiConsumer the api consumer
      * 
-     * @return the linked in api client factory
+     * @return the web ex service factory
      */
     public static synchronized WebExServiceFactory newInstance(WebExConsumer apiConsumer) {
         WebExServiceFactory factory = factoriesMap.get(apiConsumer);
@@ -89,9 +90,9 @@ public class WebExServiceFactory {
     }
 
     /**
-     * Creates a new LinkedInApiClient object.
+     * Creates a new WebExService object.
      * 
-     * @return the linked in api client
+     * @return the meeting service
      */
 	public MeetingService createMeetingService() {
 		return new MeetingServiceImpl(apiConsumer.getWebExId(), apiConsumer.getPassword(), apiConsumer.getSiteId(), apiConsumer.getSiteName(), apiConsumer.getPartnerId());

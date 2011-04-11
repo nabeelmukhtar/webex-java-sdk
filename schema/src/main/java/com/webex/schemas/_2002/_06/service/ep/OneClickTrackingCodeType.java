@@ -25,26 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for oneClickTrackingCodeType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="oneClickTrackingCodeType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="index" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="inputMode" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="value" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class OneClickTrackingCodeType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "oneClickTrackingCodeType", propOrder = {
@@ -57,97 +38,90 @@ public class OneClickTrackingCodeType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The index. */
     protected int index;
+    
+    /** The name. */
     @XmlElement(required = true)
     protected String name;
+    
+    /** The input mode. */
     @XmlElement(required = true)
     protected String inputMode;
+    
+    /** The value. */
     protected String value;
 
     /**
-     * Gets the value of the index property.
+     * Gets the index.
      * 
+     * @return the index
      */
     public int getIndex() {
         return index;
     }
 
     /**
-     * Sets the value of the index property.
+     * Sets the index.
      * 
+     * @param value the new index
      */
     public void setIndex(int value) {
         this.index = value;
     }
 
     /**
-     * Gets the value of the name property.
+     * Gets the name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the name
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Sets the value of the name property.
+     * Sets the name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new name
      */
     public void setName(String value) {
         this.name = value;
     }
 
     /**
-     * Gets the value of the inputMode property.
+     * Gets the input mode.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the input mode
      */
     public String getInputMode() {
         return inputMode;
     }
 
     /**
-     * Sets the value of the inputMode property.
+     * Sets the input mode.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new input mode
      */
     public void setInputMode(String value) {
         this.inputMode = value;
     }
 
     /**
-     * Gets the value of the value property.
+     * Gets the value.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the value
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value of the value property.
+     * Sets the value.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new value
      */
     public void setValue(String value) {
         this.value = value;

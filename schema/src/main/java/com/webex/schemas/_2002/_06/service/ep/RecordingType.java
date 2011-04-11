@@ -28,44 +28,7 @@ import com.webex.schemas._2002._06.common.TrackingType;
 
 
 /**
- * <p>Java class for recordingType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="recordingType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="recordingID" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="hostWebExID" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="createTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="size" type="{http://www.w3.org/2001/XMLSchema}float"/>
- *         &lt;element name="streamURL" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="fileURL" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="trackingCode" type="{http://www.webex.com/schemas/2002/06/common}trackingType" minOccurs="0"/>
- *         &lt;element name="recordingType" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="duration" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="author" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="listing" type="{http://www.webex.com/schemas/2002/06/common}listingType" minOccurs="0"/>
- *         &lt;element name="format" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="serviceType" type="{http://www.webex.com/schemas/2002/06/common}serviceTypeType" minOccurs="0"/>
- *         &lt;element name="passwordReq" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="registerReq" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="panelist" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="postRecordingSurvey" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="confID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class RecordingType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "recordingType", propOrder = {
@@ -96,520 +59,473 @@ public class RecordingType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The recording id. */
     protected int recordingID;
+    
+    /** The host web ex id. */
     @XmlElement(required = true)
     protected String hostWebExID;
+    
+    /** The name. */
     @XmlElement(required = true)
     protected String name;
+    
+    /** The description. */
     @XmlElement(required = true)
     protected String description;
+    
+    /** The create time. */
     @XmlElement(required = true)
     protected String createTime;
+    
+    /** The time zone id. */
     protected int timeZoneID;
+    
+    /** The size. */
     protected float size;
+    
+    /** The stream url. */
     @XmlElement(required = true)
     protected String streamURL;
+    
+    /** The file url. */
     @XmlElement(required = true)
     protected String fileURL;
+    
+    /** The session key. */
     protected Long sessionKey;
+    
+    /** The tracking code. */
     protected TrackingType trackingCode;
+    
+    /** The recording type. */
     protected int recordingType;
+    
+    /** The duration. */
     protected long duration;
+    
+    /** The author. */
     protected String author;
+    
+    /** The listing. */
     protected ListingType listing;
+    
+    /** The format. */
     @XmlElement(required = true)
     protected String format;
+    
+    /** The service type. */
     protected ServiceTypeType serviceType;
+    
+    /** The password req. */
     protected Boolean passwordReq;
+    
+    /** The register req. */
     protected Boolean registerReq;
+    
+    /** The panelist. */
     protected String panelist;
+    
+    /** The post recording survey. */
     protected Boolean postRecordingSurvey;
+    
+    /** The conf id. */
     protected Long confID;
 
     /**
-     * Gets the value of the recordingID property.
+     * Gets the recording id.
      * 
+     * @return the recording id
      */
     public int getRecordingID() {
         return recordingID;
     }
 
     /**
-     * Sets the value of the recordingID property.
+     * Sets the recording id.
      * 
+     * @param value the new recording id
      */
     public void setRecordingID(int value) {
         this.recordingID = value;
     }
 
     /**
-     * Gets the value of the hostWebExID property.
+     * Gets the host web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the host web ex id
      */
     public String getHostWebExID() {
         return hostWebExID;
     }
 
     /**
-     * Sets the value of the hostWebExID property.
+     * Sets the host web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new host web ex id
      */
     public void setHostWebExID(String value) {
         this.hostWebExID = value;
     }
 
     /**
-     * Gets the value of the name property.
+     * Gets the name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the name
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Sets the value of the name property.
+     * Sets the name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new name
      */
     public void setName(String value) {
         this.name = value;
     }
 
     /**
-     * Gets the value of the description property.
+     * Gets the description.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the description
      */
     public String getDescription() {
         return description;
     }
 
     /**
-     * Sets the value of the description property.
+     * Sets the description.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new description
      */
     public void setDescription(String value) {
         this.description = value;
     }
 
     /**
-     * Gets the value of the createTime property.
+     * Gets the creates the time.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the creates the time
      */
     public String getCreateTime() {
         return createTime;
     }
 
     /**
-     * Sets the value of the createTime property.
+     * Sets the creates the time.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new creates the time
      */
     public void setCreateTime(String value) {
         this.createTime = value;
     }
 
     /**
-     * Gets the value of the timeZoneID property.
+     * Gets the time zone id.
      * 
+     * @return the time zone id
      */
     public int getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the value of the timeZoneID property.
+     * Sets the time zone id.
      * 
+     * @param value the new time zone id
      */
     public void setTimeZoneID(int value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the value of the size property.
+     * Gets the size.
      * 
+     * @return the size
      */
     public float getSize() {
         return size;
     }
 
     /**
-     * Sets the value of the size property.
+     * Sets the size.
      * 
+     * @param value the new size
      */
     public void setSize(float value) {
         this.size = value;
     }
 
     /**
-     * Gets the value of the streamURL property.
+     * Gets the stream url.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the stream url
      */
     public String getStreamURL() {
         return streamURL;
     }
 
     /**
-     * Sets the value of the streamURL property.
+     * Sets the stream url.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new stream url
      */
     public void setStreamURL(String value) {
         this.streamURL = value;
     }
 
     /**
-     * Gets the value of the fileURL property.
+     * Gets the file url.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the file url
      */
     public String getFileURL() {
         return fileURL;
     }
 
     /**
-     * Sets the value of the fileURL property.
+     * Sets the file url.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new file url
      */
     public void setFileURL(String value) {
         this.fileURL = value;
     }
 
     /**
-     * Gets the value of the sessionKey property.
+     * Gets the session key.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the session key
      */
     public Long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the value of the sessionKey property.
+     * Sets the session key.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new session key
      */
     public void setSessionKey(Long value) {
         this.sessionKey = value;
     }
 
     /**
-     * Gets the value of the trackingCode property.
+     * Gets the tracking code.
      * 
-     * @return
-     *     possible object is
-     *     {@link TrackingType }
-     *     
+     * @return the tracking code
      */
     public TrackingType getTrackingCode() {
         return trackingCode;
     }
 
     /**
-     * Sets the value of the trackingCode property.
+     * Sets the tracking code.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TrackingType }
-     *     
+     * @param value the new tracking code
      */
     public void setTrackingCode(TrackingType value) {
         this.trackingCode = value;
     }
 
     /**
-     * Gets the value of the recordingType property.
+     * Gets the recording type.
      * 
+     * @return the recording type
      */
     public int getRecordingType() {
         return recordingType;
     }
 
     /**
-     * Sets the value of the recordingType property.
+     * Sets the recording type.
      * 
+     * @param value the new recording type
      */
     public void setRecordingType(int value) {
         this.recordingType = value;
     }
 
     /**
-     * Gets the value of the duration property.
+     * Gets the duration.
      * 
+     * @return the duration
      */
     public long getDuration() {
         return duration;
     }
 
     /**
-     * Sets the value of the duration property.
+     * Sets the duration.
      * 
+     * @param value the new duration
      */
     public void setDuration(long value) {
         this.duration = value;
     }
 
     /**
-     * Gets the value of the author property.
+     * Gets the author.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the author
      */
     public String getAuthor() {
         return author;
     }
 
     /**
-     * Sets the value of the author property.
+     * Sets the author.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new author
      */
     public void setAuthor(String value) {
         this.author = value;
     }
 
     /**
-     * Gets the value of the listing property.
+     * Gets the listing.
      * 
-     * @return
-     *     possible object is
-     *     {@link ListingType }
-     *     
+     * @return the listing
      */
     public ListingType getListing() {
         return listing;
     }
 
     /**
-     * Sets the value of the listing property.
+     * Sets the listing.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ListingType }
-     *     
+     * @param value the new listing
      */
     public void setListing(ListingType value) {
         this.listing = value;
     }
 
     /**
-     * Gets the value of the format property.
+     * Gets the format.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the format
      */
     public String getFormat() {
         return format;
     }
 
     /**
-     * Sets the value of the format property.
+     * Sets the format.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new format
      */
     public void setFormat(String value) {
         this.format = value;
     }
 
     /**
-     * Gets the value of the serviceType property.
+     * Gets the service type.
      * 
-     * @return
-     *     possible object is
-     *     {@link ServiceTypeType }
-     *     
+     * @return the service type
      */
     public ServiceTypeType getServiceType() {
         return serviceType;
     }
 
     /**
-     * Sets the value of the serviceType property.
+     * Sets the service type.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ServiceTypeType }
-     *     
+     * @param value the new service type
      */
     public void setServiceType(ServiceTypeType value) {
         this.serviceType = value;
     }
 
     /**
-     * Gets the value of the passwordReq property.
+     * Checks if is password req.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isPasswordReq() {
         return passwordReq;
     }
 
     /**
-     * Sets the value of the passwordReq property.
+     * Sets the password req.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new password req
      */
     public void setPasswordReq(Boolean value) {
         this.passwordReq = value;
     }
 
     /**
-     * Gets the value of the registerReq property.
+     * Checks if is register req.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isRegisterReq() {
         return registerReq;
     }
 
     /**
-     * Sets the value of the registerReq property.
+     * Sets the register req.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new register req
      */
     public void setRegisterReq(Boolean value) {
         this.registerReq = value;
     }
 
     /**
-     * Gets the value of the panelist property.
+     * Gets the panelist.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the panelist
      */
     public String getPanelist() {
         return panelist;
     }
 
     /**
-     * Sets the value of the panelist property.
+     * Sets the panelist.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new panelist
      */
     public void setPanelist(String value) {
         this.panelist = value;
     }
 
     /**
-     * Gets the value of the postRecordingSurvey property.
+     * Checks if is post recording survey.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isPostRecordingSurvey() {
         return postRecordingSurvey;
     }
 
     /**
-     * Sets the value of the postRecordingSurvey property.
+     * Sets the post recording survey.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new post recording survey
      */
     public void setPostRecordingSurvey(Boolean value) {
         this.postRecordingSurvey = value;
     }
 
     /**
-     * Gets the value of the confID property.
+     * Gets the conf id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the conf id
      */
     public Long getConfID() {
         return confID;
     }
 
     /**
-     * Sets the value of the confID property.
+     * Sets the conf id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new conf id
      */
     public void setConfID(Long value) {
         this.confID = value;

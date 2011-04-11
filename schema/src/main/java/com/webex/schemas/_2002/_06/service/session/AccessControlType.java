@@ -25,31 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for accessControlType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="accessControlType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="listing" type="{http://www.webex.com/schemas/2002/06/service/session}listingType" minOccurs="0"/>
- *         &lt;element name="sessionPassword" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="16"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="enforcePassword" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class AccessControlType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "accessControlType", propOrder = {
@@ -61,79 +37,68 @@ public class AccessControlType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The listing. */
     protected ListingType listing;
+    
+    /** The session password. */
     protected String sessionPassword;
+    
+    /** The enforce password. */
     @XmlElement(defaultValue = "true")
     protected Boolean enforcePassword;
 
     /**
-     * Gets the value of the listing property.
+     * Gets the listing.
      * 
-     * @return
-     *     possible object is
-     *     {@link ListingType }
-     *     
+     * @return the listing
      */
     public ListingType getListing() {
         return listing;
     }
 
     /**
-     * Sets the value of the listing property.
+     * Sets the listing.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ListingType }
-     *     
+     * @param value the new listing
      */
     public void setListing(ListingType value) {
         this.listing = value;
     }
 
     /**
-     * Gets the value of the sessionPassword property.
+     * Gets the session password.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the session password
      */
     public String getSessionPassword() {
         return sessionPassword;
     }
 
     /**
-     * Sets the value of the sessionPassword property.
+     * Sets the session password.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new session password
      */
     public void setSessionPassword(String value) {
         this.sessionPassword = value;
     }
 
     /**
-     * Gets the value of the enforcePassword property.
+     * Checks if is enforce password.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isEnforcePassword() {
         return enforcePassword;
     }
 
     /**
-     * Sets the value of the enforcePassword property.
+     * Sets the enforce password.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new enforce password
      */
     public void setEnforcePassword(Boolean value) {
         this.enforcePassword = value;

@@ -24,130 +24,134 @@ import javax.xml.namespace.QName;
 
 
 /**
- * This object contains factory methods for each 
- * Java content interface and Java element interface 
- * generated in the com.webex.schemas._2002._06.service.session package. 
- * <p>An ObjectFactory allows you to programatically 
- * construct new instances of the Java representation 
- * for XML content. The Java representation of XML 
- * content can consist of schema derived interfaces 
- * and classes representing the binding of schema 
- * type definitions, element declarations and model 
- * groups.  Factory methods for each of these are 
- * provided in this class.
- * 
+ * A factory for creating Object objects.
  */
 @XmlRegistry
 public class ObjectFactory {
 
+    /** The Constant _ParticipantsTypeParticipants_QNAME. */
     private final static QName _ParticipantsTypeParticipants_QNAME = new QName("http://www.webex.com/schemas/2002/06/service/session", "participants");
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.webex.schemas._2002._06.service.session
-     * 
+     * Instantiates a new object factory.
      */
     public ObjectFactory() {
     }
 
     /**
-     * Create an instance of {@link RemindType }
+     * Creates a new Object object.
      * 
+     * @return the remind type
      */
     public RemindType createRemindType() {
         return new RemindType();
     }
 
     /**
-     * Create an instance of {@link MetaDataType }
+     * Creates a new Object object.
      * 
+     * @return the meta data type
      */
     public MetaDataType createMetaDataType() {
         return new MetaDataType();
     }
 
     /**
-     * Create an instance of {@link AccessControlType }
+     * Creates a new Object object.
      * 
+     * @return the access control type
      */
     public AccessControlType createAccessControlType() {
         return new AccessControlType();
     }
 
     /**
-     * Create an instance of {@link ParticipantType }
+     * Creates a new Object object.
      * 
+     * @return the participant type
      */
     public ParticipantType createParticipantType() {
         return new ParticipantType();
     }
 
     /**
-     * Create an instance of {@link EnableOptionsType }
+     * Creates a new Object object.
      * 
+     * @return the enable options type
      */
     public EnableOptionsType createEnableOptionsType() {
         return new EnableOptionsType();
     }
 
     /**
-     * Create an instance of {@link ParticipantsType.Participants }
+     * Creates a new Object object.
      * 
+     * @return the participants
      */
     public ParticipantsType.Participants createParticipantsTypeParticipants() {
         return new ParticipantsType.Participants();
     }
 
     /**
-     * Create an instance of {@link ScheduleType }
+     * Creates a new Object object.
      * 
+     * @return the schedule type
      */
     public ScheduleType createScheduleType() {
         return new ScheduleType();
     }
 
     /**
-     * Create an instance of {@link SessionType }
+     * Creates a new Object object.
      * 
+     * @return the session type
      */
     public SessionType createSessionType() {
         return new SessionType();
     }
 
     /**
-     * Create an instance of {@link RemindType.Emails }
+     * Creates a new Object object.
      * 
+     * @return the emails
      */
     public RemindType.Emails createRemindTypeEmails() {
         return new RemindType.Emails();
     }
 
     /**
-     * Create an instance of {@link ParticipantsType }
+     * Creates a new Object object.
      * 
+     * @return the participants type
      */
     public ParticipantsType createParticipantsType() {
         return new ParticipantsType();
     }
 
     /**
-     * Create an instance of {@link TelephonyType }
+     * Creates a new Object object.
      * 
+     * @return the telephony type
      */
     public TelephonyType createTelephonyType() {
         return new TelephonyType();
     }
 
     /**
-     * Create an instance of {@link DateScopeType }
+     * Creates a new Object object.
      * 
+     * @return the date scope type
      */
     public DateScopeType createDateScopeType() {
         return new DateScopeType();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ParticipantsType.Participants }{@code >}}
+     * Creates a new Object object.
      * 
+     * @param value the value
+     * 
+     * @return the JAXB element< participants type. participants>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service/session", name = "participants", scope = ParticipantsType.class)
     public JAXBElement<ParticipantsType.Participants> createParticipantsTypeParticipants(ParticipantsType.Participants value) {

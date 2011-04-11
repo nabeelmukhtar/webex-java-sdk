@@ -42,14 +42,29 @@ import com.webex.schemas._2002._06.service.attendee.RegisterMeetingAttendee;
 import com.webex.schemas._2002._06.service.attendee.RegisterMeetingAttendeeResponse;
 import com.webex.schemas._2002._06.service.attendee.RegisterMeetingAttendeeResponse.Register;
 
+/**
+ * The Class MeetingAttendeeServiceImpl.
+ */
 public class MeetingAttendeeServiceImpl extends WebExJaxbService implements
 	MeetingAttendeeService {
 
+	/**
+	 * Instantiates a new meeting attendee service impl.
+	 * 
+	 * @param webExId the web ex id
+	 * @param password the password
+	 * @param siteId the site id
+	 * @param siteName the site name
+	 * @param partnerId the partner id
+	 */
 	public MeetingAttendeeServiceImpl(String webExId, String password,
 			Long siteId, String siteName, String partnerId) {
 		super(webExId, password, siteId, siteName, partnerId);
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.MeetingAttendeeService#createMeetingAttendee(com.webex.schemas._2002._06.service.attendee.CreateMeetingAttendee)
+	 */
 	@Override
 	public CreateMeetingAttendeeResponse createMeetingAttendee(
 			CreateMeetingAttendee attendee) {
@@ -66,6 +81,9 @@ public class MeetingAttendeeServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.MeetingAttendeeService#deleteMeetingAttendees(java.util.List, java.util.List, java.lang.Boolean)
+	 */
 	@Override
 	public void deleteMeetingAttendees(List<Long> attendeeIDs,
 			List<AttendeeEmailType> attendeeEmail, Boolean sendEmail) {
@@ -84,6 +102,9 @@ public class MeetingAttendeeServiceImpl extends WebExJaxbService implements
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.MeetingAttendeeService#getEnrollmentInformation(java.lang.Long, java.lang.Long)
+	 */
 	@Override
 	public List<EnrollSessionType> getEnrollmentInformation(Long confID,
 			Long sessionKey) {
@@ -104,6 +125,9 @@ public class MeetingAttendeeServiceImpl extends WebExJaxbService implements
 		return new ArrayList<EnrollSessionType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.MeetingAttendeeService#getMeetingAttendees(java.lang.Long, java.lang.Long, com.webex.schemas._2002._06.service.attendee.JoinStatusType, java.lang.Long, java.lang.Boolean)
+	 */
 	@Override
 	public List<AttendeeInstanceType> getMeetingAttendees(Long meetingKey,
 			Long sessionKey, JoinStatusType joinStatus, Long confID,
@@ -128,6 +152,9 @@ public class MeetingAttendeeServiceImpl extends WebExJaxbService implements
 		return new ArrayList<AttendeeInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.MeetingAttendeeService#registerMeetingAttendees(java.util.List)
+	 */
 	@Override
 	public List<Register> registerMeetingAttendees(
 			List<RegisterAttendeeType> attendees) {

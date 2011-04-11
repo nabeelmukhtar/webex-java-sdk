@@ -29,31 +29,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for assessment_resultType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="assessment_resultType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="asi_metadata" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}asi_metadata_assessment_resultType" minOccurs="0"/>
- *         &lt;element name="asi_description" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}asi_descriptionType" minOccurs="0"/>
- *         &lt;element name="date" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}dateType"/>
- *         &lt;element name="duration" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="outcomes" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}outcomes_assessment_resultType"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}num_sections"/>
- *         &lt;element name="section_result" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}section_resultType"/>
- *       &lt;/sequence>
- *       &lt;attribute name="asi_title" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="ident_ref" type="{http://www.w3.org/2001/XMLSchema}integer" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class AssessmentResultType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "assessment_resultType", propOrder = {
@@ -69,239 +45,204 @@ public class AssessmentResultType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The asi metadata. */
     @XmlElement(name = "asi_metadata")
     protected AsiMetadataAssessmentResultType asiMetadata;
+    
+    /** The asi description. */
     @XmlElement(name = "asi_description")
     protected AsiDescriptionType asiDescription;
+    
+    /** The date. */
     @XmlElement(required = true)
     protected DateType date;
+    
+    /** The duration. */
     @XmlElement(required = true)
     protected String duration;
+    
+    /** The outcomes. */
     @XmlElement(required = true)
     protected OutcomesAssessmentResultType outcomes;
+    
+    /** The num sections. */
     @XmlElement(name = "num_sections", required = true)
     protected String numSections;
+    
+    /** The section result. */
     @XmlElement(name = "section_result", required = true)
     protected SectionResultType sectionResult;
+    
+    /** The asi title. */
     @XmlAttribute(name = "asi_title")
     protected String asiTitle;
+    
+    /** The ident ref. */
     @XmlAttribute(name = "ident_ref")
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long identRef;
 
     /**
-     * Gets the value of the asiMetadata property.
+     * Gets the asi metadata.
      * 
-     * @return
-     *     possible object is
-     *     {@link AsiMetadataAssessmentResultType }
-     *     
+     * @return the asi metadata
      */
     public AsiMetadataAssessmentResultType getAsiMetadata() {
         return asiMetadata;
     }
 
     /**
-     * Sets the value of the asiMetadata property.
+     * Sets the asi metadata.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link AsiMetadataAssessmentResultType }
-     *     
+     * @param value the new asi metadata
      */
     public void setAsiMetadata(AsiMetadataAssessmentResultType value) {
         this.asiMetadata = value;
     }
 
     /**
-     * Gets the value of the asiDescription property.
+     * Gets the asi description.
      * 
-     * @return
-     *     possible object is
-     *     {@link AsiDescriptionType }
-     *     
+     * @return the asi description
      */
     public AsiDescriptionType getAsiDescription() {
         return asiDescription;
     }
 
     /**
-     * Sets the value of the asiDescription property.
+     * Sets the asi description.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link AsiDescriptionType }
-     *     
+     * @param value the new asi description
      */
     public void setAsiDescription(AsiDescriptionType value) {
         this.asiDescription = value;
     }
 
     /**
-     * Gets the value of the date property.
+     * Gets the date.
      * 
-     * @return
-     *     possible object is
-     *     {@link DateType }
-     *     
+     * @return the date
      */
     public DateType getDate() {
         return date;
     }
 
     /**
-     * Sets the value of the date property.
+     * Sets the date.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link DateType }
-     *     
+     * @param value the new date
      */
     public void setDate(DateType value) {
         this.date = value;
     }
 
     /**
-     * Gets the value of the duration property.
+     * Gets the duration.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the duration
      */
     public String getDuration() {
         return duration;
     }
 
     /**
-     * Sets the value of the duration property.
+     * Sets the duration.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new duration
      */
     public void setDuration(String value) {
         this.duration = value;
     }
 
     /**
-     * Gets the value of the outcomes property.
+     * Gets the outcomes.
      * 
-     * @return
-     *     possible object is
-     *     {@link OutcomesAssessmentResultType }
-     *     
+     * @return the outcomes
      */
     public OutcomesAssessmentResultType getOutcomes() {
         return outcomes;
     }
 
     /**
-     * Sets the value of the outcomes property.
+     * Sets the outcomes.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link OutcomesAssessmentResultType }
-     *     
+     * @param value the new outcomes
      */
     public void setOutcomes(OutcomesAssessmentResultType value) {
         this.outcomes = value;
     }
 
     /**
-     * Gets the value of the numSections property.
+     * Gets the num sections.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the num sections
      */
     public String getNumSections() {
         return numSections;
     }
 
     /**
-     * Sets the value of the numSections property.
+     * Sets the num sections.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new num sections
      */
     public void setNumSections(String value) {
         this.numSections = value;
     }
 
     /**
-     * Gets the value of the sectionResult property.
+     * Gets the section result.
      * 
-     * @return
-     *     possible object is
-     *     {@link SectionResultType }
-     *     
+     * @return the section result
      */
     public SectionResultType getSectionResult() {
         return sectionResult;
     }
 
     /**
-     * Sets the value of the sectionResult property.
+     * Sets the section result.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link SectionResultType }
-     *     
+     * @param value the new section result
      */
     public void setSectionResult(SectionResultType value) {
         this.sectionResult = value;
     }
 
     /**
-     * Gets the value of the asiTitle property.
+     * Gets the asi title.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the asi title
      */
     public String getAsiTitle() {
         return asiTitle;
     }
 
     /**
-     * Sets the value of the asiTitle property.
+     * Sets the asi title.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new asi title
      */
     public void setAsiTitle(String value) {
         this.asiTitle = value;
     }
 
     /**
-     * Gets the value of the identRef property.
+     * Gets the ident ref.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the ident ref
      */
     public Long getIdentRef() {
         return identRef;
     }
 
     /**
-     * Sets the value of the identRef property.
+     * Sets the ident ref.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new ident ref
      */
     public void setIdentRef(Long value) {
         this.identRef = value;

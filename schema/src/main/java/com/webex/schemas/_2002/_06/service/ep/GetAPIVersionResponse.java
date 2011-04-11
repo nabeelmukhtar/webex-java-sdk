@@ -26,25 +26,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for getAPIVersionResponse complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="getAPIVersionResponse">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="apiVersion" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="release" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="trainReleaseVersion" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GetAPIVersionResponse.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getAPIVersionResponse", propOrder = {
@@ -57,79 +39,68 @@ public class GetAPIVersionResponse
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The api version. */
     @XmlElement(required = true)
     protected String apiVersion;
+    
+    /** The release. */
     protected String release;
+    
+    /** The train release version. */
     protected String trainReleaseVersion;
 
     /**
-     * Gets the value of the apiVersion property.
+     * Gets the api version.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the api version
      */
     public String getApiVersion() {
         return apiVersion;
     }
 
     /**
-     * Sets the value of the apiVersion property.
+     * Sets the api version.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new api version
      */
     public void setApiVersion(String value) {
         this.apiVersion = value;
     }
 
     /**
-     * Gets the value of the release property.
+     * Gets the release.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the release
      */
     public String getRelease() {
         return release;
     }
 
     /**
-     * Sets the value of the release property.
+     * Sets the release.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new release
      */
     public void setRelease(String value) {
         this.release = value;
     }
 
     /**
-     * Gets the value of the trainReleaseVersion property.
+     * Gets the train release version.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the train release version
      */
     public String getTrainReleaseVersion() {
         return trainReleaseVersion;
     }
 
     /**
-     * Sets the value of the trainReleaseVersion property.
+     * Sets the train release version.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new train release version
      */
     public void setTrainReleaseVersion(String value) {
         this.trainReleaseVersion = value;

@@ -30,61 +30,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for getUserResponse complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="getUserResponse">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/user}userInstanceType">
- *       &lt;sequence>
- *         &lt;element name="salesCenter" type="{http://www.webex.com/schemas/2002/06/service/user}salesCenterInstanceType" minOccurs="0"/>
- *         &lt;element name="peExpired" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="peActive" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="passwordExpires" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="passwordDaysLeft" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="schedulingTemplates" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="sessionTemplate" type="{http://www.webex.com/schemas/2002/06/service/user}sessionTemplateSummaryType" maxOccurs="unbounded" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="serviceSessionTypes" maxOccurs="unbounded" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="label" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="value" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="scheduleFor" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="webExID" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GetUserResponse.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getUserResponse", propOrder = {
@@ -102,184 +48,148 @@ public class GetUserResponse
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The sales center. */
     protected SalesCenterInstanceType salesCenter;
+    
+    /** The pe expired. */
     protected Boolean peExpired;
+    
+    /** The pe active. */
     protected Boolean peActive;
+    
+    /** The password expires. */
     protected Boolean passwordExpires;
+    
+    /** The password days left. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long passwordDaysLeft;
+    
+    /** The scheduling templates. */
     protected GetUserResponse.SchedulingTemplates schedulingTemplates;
+    
+    /** The service session types. */
     protected List<GetUserResponse.ServiceSessionTypes> serviceSessionTypes;
+    
+    /** The schedule for. */
     protected GetUserResponse.ScheduleFor scheduleFor;
 
     /**
-     * Gets the value of the salesCenter property.
+     * Gets the sales center.
      * 
-     * @return
-     *     possible object is
-     *     {@link SalesCenterInstanceType }
-     *     
+     * @return the sales center
      */
     public SalesCenterInstanceType getSalesCenter() {
         return salesCenter;
     }
 
     /**
-     * Sets the value of the salesCenter property.
+     * Sets the sales center.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link SalesCenterInstanceType }
-     *     
+     * @param value the new sales center
      */
     public void setSalesCenter(SalesCenterInstanceType value) {
         this.salesCenter = value;
     }
 
     /**
-     * Gets the value of the peExpired property.
+     * Checks if is pe expired.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isPeExpired() {
         return peExpired;
     }
 
     /**
-     * Sets the value of the peExpired property.
+     * Sets the pe expired.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new pe expired
      */
     public void setPeExpired(Boolean value) {
         this.peExpired = value;
     }
 
     /**
-     * Gets the value of the peActive property.
+     * Checks if is pe active.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isPeActive() {
         return peActive;
     }
 
     /**
-     * Sets the value of the peActive property.
+     * Sets the pe active.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new pe active
      */
     public void setPeActive(Boolean value) {
         this.peActive = value;
     }
 
     /**
-     * Gets the value of the passwordExpires property.
+     * Checks if is password expires.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isPasswordExpires() {
         return passwordExpires;
     }
 
     /**
-     * Sets the value of the passwordExpires property.
+     * Sets the password expires.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new password expires
      */
     public void setPasswordExpires(Boolean value) {
         this.passwordExpires = value;
     }
 
     /**
-     * Gets the value of the passwordDaysLeft property.
+     * Gets the password days left.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the password days left
      */
     public Long getPasswordDaysLeft() {
         return passwordDaysLeft;
     }
 
     /**
-     * Sets the value of the passwordDaysLeft property.
+     * Sets the password days left.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new password days left
      */
     public void setPasswordDaysLeft(Long value) {
         this.passwordDaysLeft = value;
     }
 
     /**
-     * Gets the value of the schedulingTemplates property.
+     * Gets the scheduling templates.
      * 
-     * @return
-     *     possible object is
-     *     {@link GetUserResponse.SchedulingTemplates }
-     *     
+     * @return the scheduling templates
      */
     public GetUserResponse.SchedulingTemplates getSchedulingTemplates() {
         return schedulingTemplates;
     }
 
     /**
-     * Sets the value of the schedulingTemplates property.
+     * Sets the scheduling templates.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link GetUserResponse.SchedulingTemplates }
-     *     
+     * @param value the new scheduling templates
      */
     public void setSchedulingTemplates(GetUserResponse.SchedulingTemplates value) {
         this.schedulingTemplates = value;
     }
 
     /**
-     * Gets the value of the serviceSessionTypes property.
+     * Gets the service session types.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the serviceSessionTypes property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getServiceSessionTypes().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link GetUserResponse.ServiceSessionTypes }
-     * 
-     * 
+     * @return the service session types
      */
     public List<GetUserResponse.ServiceSessionTypes> getServiceSessionTypes() {
         if (serviceSessionTypes == null) {
@@ -289,24 +199,18 @@ public class GetUserResponse
     }
 
     /**
-     * Gets the value of the scheduleFor property.
+     * Gets the schedule for.
      * 
-     * @return
-     *     possible object is
-     *     {@link GetUserResponse.ScheduleFor }
-     *     
+     * @return the schedule for
      */
     public GetUserResponse.ScheduleFor getScheduleFor() {
         return scheduleFor;
     }
 
     /**
-     * Sets the value of the scheduleFor property.
+     * Sets the schedule for.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link GetUserResponse.ScheduleFor }
-     *     
+     * @param value the new schedule for
      */
     public void setScheduleFor(GetUserResponse.ScheduleFor value) {
         this.scheduleFor = value;
@@ -314,23 +218,7 @@ public class GetUserResponse
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="webExID" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class ScheduleFor.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -340,30 +228,16 @@ public class GetUserResponse
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The web ex id. */
         protected List<String> webExID;
 
         /**
-         * Gets the value of the webExID property.
+         * Gets the web ex id.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the webExID property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getWebExID().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link String }
-         * 
-         * 
+         * @return the web ex id
          */
         public List<String> getWebExID() {
             if (webExID == null) {
@@ -376,23 +250,7 @@ public class GetUserResponse
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="sessionTemplate" type="{http://www.webex.com/schemas/2002/06/service/user}sessionTemplateSummaryType" maxOccurs="unbounded" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class SchedulingTemplates.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -402,30 +260,16 @@ public class GetUserResponse
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The session template. */
         protected List<SessionTemplateSummaryType> sessionTemplate;
 
         /**
-         * Gets the value of the sessionTemplate property.
+         * Gets the session template.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the sessionTemplate property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getSessionTemplate().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link SessionTemplateSummaryType }
-         * 
-         * 
+         * @return the session template
          */
         public List<SessionTemplateSummaryType> getSessionTemplate() {
             if (sessionTemplate == null) {
@@ -438,24 +282,7 @@ public class GetUserResponse
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="label" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="value" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class ServiceSessionTypes.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -466,55 +293,48 @@ public class GetUserResponse
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The label. */
         @XmlElement(required = true)
         protected String label;
+        
+        /** The value. */
         @XmlElement(required = true)
         protected String value;
 
         /**
-         * Gets the value of the label property.
+         * Gets the label.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the label
          */
         public String getLabel() {
             return label;
         }
 
         /**
-         * Sets the value of the label property.
+         * Sets the label.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new label
          */
         public void setLabel(String value) {
             this.label = value;
         }
 
         /**
-         * Gets the value of the value property.
+         * Gets the value.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the value
          */
         public String getValue() {
             return value;
         }
 
         /**
-         * Sets the value of the value property.
+         * Sets the value.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new value
          */
         public void setValue(String value) {
             this.value = value;

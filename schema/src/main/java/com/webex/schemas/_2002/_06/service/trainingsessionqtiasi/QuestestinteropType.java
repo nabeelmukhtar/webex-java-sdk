@@ -25,23 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for questestinteropType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="questestinteropType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="assessment" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}assessmentType"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class QuestestinteropType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "questestinteropType", propOrder = {
@@ -51,29 +35,26 @@ public class QuestestinteropType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The assessment. */
     @XmlElement(required = true)
     protected AssessmentType assessment;
 
     /**
-     * Gets the value of the assessment property.
+     * Gets the assessment.
      * 
-     * @return
-     *     possible object is
-     *     {@link AssessmentType }
-     *     
+     * @return the assessment
      */
     public AssessmentType getAssessment() {
         return assessment;
     }
 
     /**
-     * Sets the value of the assessment property.
+     * Sets the assessment.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link AssessmentType }
-     *     
+     * @param value the new assessment
      */
     public void setAssessment(AssessmentType value) {
         this.assessment = value;

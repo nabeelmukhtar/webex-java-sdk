@@ -26,24 +26,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for enrollmentFieldType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="enrollmentFieldType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="incl" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="req" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class EnrollmentFieldType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "enrollmentFieldType", propOrder = {
@@ -59,54 +42,47 @@ public class EnrollmentFieldType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The incl. */
     @XmlElement(defaultValue = "true")
     protected Boolean incl;
+    
+    /** The req. */
     protected Boolean req;
 
     /**
-     * Gets the value of the incl property.
+     * Checks if is incl.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isIncl() {
         return incl;
     }
 
     /**
-     * Sets the value of the incl property.
+     * Sets the incl.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new incl
      */
     public void setIncl(Boolean value) {
         this.incl = value;
     }
 
     /**
-     * Gets the value of the req property.
+     * Checks if is req.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isReq() {
         return req;
     }
 
     /**
-     * Sets the value of the req property.
+     * Sets the req.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new req
      */
     public void setReq(Boolean value) {
         this.req = value;

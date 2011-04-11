@@ -24,24 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for custCommunicationsType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="custCommunicationsType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="displayType" type="{http://www.webex.com/schemas/2002/06/service/site}displayTypeType" minOccurs="0"/>
- *         &lt;element name="displayMethod" type="{http://www.webex.com/schemas/2002/06/service/site}displayMethodType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class CustCommunicationsType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "custCommunicationsType", propOrder = {
@@ -52,53 +35,46 @@ public class CustCommunicationsType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The display type. */
     protected DisplayTypeType displayType;
+    
+    /** The display method. */
     protected DisplayMethodType displayMethod;
 
     /**
-     * Gets the value of the displayType property.
+     * Gets the display type.
      * 
-     * @return
-     *     possible object is
-     *     {@link DisplayTypeType }
-     *     
+     * @return the display type
      */
     public DisplayTypeType getDisplayType() {
         return displayType;
     }
 
     /**
-     * Sets the value of the displayType property.
+     * Sets the display type.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link DisplayTypeType }
-     *     
+     * @param value the new display type
      */
     public void setDisplayType(DisplayTypeType value) {
         this.displayType = value;
     }
 
     /**
-     * Gets the value of the displayMethod property.
+     * Gets the display method.
      * 
-     * @return
-     *     possible object is
-     *     {@link DisplayMethodType }
-     *     
+     * @return the display method
      */
     public DisplayMethodType getDisplayMethod() {
         return displayMethod;
     }
 
     /**
-     * Sets the value of the displayMethod property.
+     * Sets the display method.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link DisplayMethodType }
-     *     
+     * @param value the new display method
      */
     public void setDisplayMethod(DisplayMethodType value) {
         this.displayMethod = value;

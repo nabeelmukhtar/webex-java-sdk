@@ -28,74 +28,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for thirdPartyAccountType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="thirdPartyAccountType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="name" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="32"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="confBridgeNum" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="32"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="pause" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="accessCode" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="32"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="accountIndex" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="defaultFlag" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="tollFreeNum" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="32"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="moderatorCode" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="32"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="phoneName1" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="32"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="phoneName2" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="32"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ThirdPartyAccountType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "thirdPartyAccountType", propOrder = {
@@ -114,259 +47,220 @@ public class ThirdPartyAccountType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The name. */
     protected String name;
+    
+    /** The conf bridge num. */
     protected String confBridgeNum;
+    
+    /** The pause. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long pause;
+    
+    /** The access code. */
     protected String accessCode;
+    
+    /** The account index. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long accountIndex;
+    
+    /** The default flag. */
     protected Boolean defaultFlag;
+    
+    /** The toll free num. */
     protected String tollFreeNum;
+    
+    /** The moderator code. */
     protected String moderatorCode;
+    
+    /** The phone name1. */
     protected String phoneName1;
+    
+    /** The phone name2. */
     protected String phoneName2;
 
     /**
-     * Gets the value of the name property.
+     * Gets the name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the name
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Sets the value of the name property.
+     * Sets the name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new name
      */
     public void setName(String value) {
         this.name = value;
     }
 
     /**
-     * Gets the value of the confBridgeNum property.
+     * Gets the conf bridge num.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the conf bridge num
      */
     public String getConfBridgeNum() {
         return confBridgeNum;
     }
 
     /**
-     * Sets the value of the confBridgeNum property.
+     * Sets the conf bridge num.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new conf bridge num
      */
     public void setConfBridgeNum(String value) {
         this.confBridgeNum = value;
     }
 
     /**
-     * Gets the value of the pause property.
+     * Gets the pause.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the pause
      */
     public Long getPause() {
         return pause;
     }
 
     /**
-     * Sets the value of the pause property.
+     * Sets the pause.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new pause
      */
     public void setPause(Long value) {
         this.pause = value;
     }
 
     /**
-     * Gets the value of the accessCode property.
+     * Gets the access code.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the access code
      */
     public String getAccessCode() {
         return accessCode;
     }
 
     /**
-     * Sets the value of the accessCode property.
+     * Sets the access code.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new access code
      */
     public void setAccessCode(String value) {
         this.accessCode = value;
     }
 
     /**
-     * Gets the value of the accountIndex property.
+     * Gets the account index.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the account index
      */
     public Long getAccountIndex() {
         return accountIndex;
     }
 
     /**
-     * Sets the value of the accountIndex property.
+     * Sets the account index.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new account index
      */
     public void setAccountIndex(Long value) {
         this.accountIndex = value;
     }
 
     /**
-     * Gets the value of the defaultFlag property.
+     * Checks if is default flag.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isDefaultFlag() {
         return defaultFlag;
     }
 
     /**
-     * Sets the value of the defaultFlag property.
+     * Sets the default flag.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new default flag
      */
     public void setDefaultFlag(Boolean value) {
         this.defaultFlag = value;
     }
 
     /**
-     * Gets the value of the tollFreeNum property.
+     * Gets the toll free num.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the toll free num
      */
     public String getTollFreeNum() {
         return tollFreeNum;
     }
 
     /**
-     * Sets the value of the tollFreeNum property.
+     * Sets the toll free num.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new toll free num
      */
     public void setTollFreeNum(String value) {
         this.tollFreeNum = value;
     }
 
     /**
-     * Gets the value of the moderatorCode property.
+     * Gets the moderator code.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the moderator code
      */
     public String getModeratorCode() {
         return moderatorCode;
     }
 
     /**
-     * Sets the value of the moderatorCode property.
+     * Sets the moderator code.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new moderator code
      */
     public void setModeratorCode(String value) {
         this.moderatorCode = value;
     }
 
     /**
-     * Gets the value of the phoneName1 property.
+     * Gets the phone name1.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the phone name1
      */
     public String getPhoneName1() {
         return phoneName1;
     }
 
     /**
-     * Sets the value of the phoneName1 property.
+     * Sets the phone name1.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new phone name1
      */
     public void setPhoneName1(String value) {
         this.phoneName1 = value;
     }
 
     /**
-     * Gets the value of the phoneName2 property.
+     * Gets the phone name2.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the phone name2
      */
     public String getPhoneName2() {
         return phoneName2;
     }
 
     /**
-     * Sets the value of the phoneName2 property.
+     * Sets the phone name2.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new phone name2
      */
     public void setPhoneName2(String value) {
         this.phoneName2 = value;

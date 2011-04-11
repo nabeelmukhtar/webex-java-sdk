@@ -27,25 +27,7 @@ import com.webex.schemas._2002._06.common.PersonType;
 
 
 /**
- * <p>Java class for panelistsType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="panelistsType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="panelistPassword" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="panelist" type="{http://www.webex.com/schemas/2002/06/common}personType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="panelistsInfo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class PanelistsType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "panelistsType", propOrder = {
@@ -57,56 +39,40 @@ public class PanelistsType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The panelist password. */
     protected String panelistPassword;
+    
+    /** The panelist. */
     protected List<PersonType> panelist;
+    
+    /** The panelists info. */
     protected String panelistsInfo;
 
     /**
-     * Gets the value of the panelistPassword property.
+     * Gets the panelist password.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the panelist password
      */
     public String getPanelistPassword() {
         return panelistPassword;
     }
 
     /**
-     * Sets the value of the panelistPassword property.
+     * Sets the panelist password.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new panelist password
      */
     public void setPanelistPassword(String value) {
         this.panelistPassword = value;
     }
 
     /**
-     * Gets the value of the panelist property.
+     * Gets the panelist.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the panelist property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getPanelist().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link PersonType }
-     * 
-     * 
+     * @return the panelist
      */
     public List<PersonType> getPanelist() {
         if (panelist == null) {
@@ -116,24 +82,18 @@ public class PanelistsType
     }
 
     /**
-     * Gets the value of the panelistsInfo property.
+     * Gets the panelists info.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the panelists info
      */
     public String getPanelistsInfo() {
         return panelistsInfo;
     }
 
     /**
-     * Sets the value of the panelistsInfo property.
+     * Sets the panelists info.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new panelists info
      */
     public void setPanelistsInfo(String value) {
         this.panelistsInfo = value;

@@ -22,33 +22,37 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for orderRecAccHisByType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="orderRecAccHisByType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="RECORDID"/>
- *     &lt;enumeration value="UPLOADTIME"/>
- *     &lt;enumeration value="RECORDNAME"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum OrderRecAccHisByType.
  */
 @XmlType(name = "orderRecAccHisByType")
 @XmlEnum
 public enum OrderRecAccHisByType {
 
+    /** The RECORDID. */
     RECORDID,
+    
+    /** The UPLOADTIME. */
     UPLOADTIME,
+    
+    /** The RECORDNAME. */
     RECORDNAME;
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the order rec acc his by type
+     */
     public static OrderRecAccHisByType fromValue(String v) {
         return valueOf(v);
     }

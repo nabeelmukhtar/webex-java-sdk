@@ -27,34 +27,7 @@ import com.webex.schemas._2002._06.service.meeting.TelephonySupportType;
 
 
 /**
- * <p>Java class for oneClickTelephonyType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="oneClickTelephonyType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="telephonySupport" type="{http://www.webex.com/schemas/2002/06/service/meeting}telephonySupportType"/>
- *         &lt;element name="extTelephonyDescription" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="tspAccountIndex" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="personalAccountIndex" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="account" type="{http://www.webex.com/schemas/2002/06/service/ep}oneClickAccountType" minOccurs="0"/>
- *         &lt;element name="accountLabel" type="{http://www.webex.com/schemas/2002/06/service/ep}oneClickAccountLabelType" minOccurs="0"/>
- *         &lt;element name="teleconfServiceName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="teleconfLocation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="intlLocalCallIn" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="tollfree" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="entryExitTone" type="{http://www.webex.com/schemas/2002/06/common}entryExitToneType" minOccurs="0"/>
- *         &lt;element name="isMPAudio" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class OneClickTelephonyType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "oneClickTelephonyType", propOrder = {
@@ -75,304 +48,257 @@ public class OneClickTelephonyType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The telephony support. */
     @XmlElement(required = true)
     protected TelephonySupportType telephonySupport;
+    
+    /** The ext telephony description. */
     protected String extTelephonyDescription;
+    
+    /** The tsp account index. */
     protected Integer tspAccountIndex;
+    
+    /** The personal account index. */
     protected Integer personalAccountIndex;
+    
+    /** The account. */
     protected OneClickAccountType account;
+    
+    /** The account label. */
     protected OneClickAccountLabelType accountLabel;
+    
+    /** The teleconf service name. */
     protected String teleconfServiceName;
+    
+    /** The teleconf location. */
     protected String teleconfLocation;
+    
+    /** The intl local call in. */
     protected Boolean intlLocalCallIn;
+    
+    /** The tollfree. */
     protected Boolean tollfree;
+    
+    /** The entry exit tone. */
     protected EntryExitToneType entryExitTone;
+    
+    /** The is mp audio. */
     protected Boolean isMPAudio;
 
     /**
-     * Gets the value of the telephonySupport property.
+     * Gets the telephony support.
      * 
-     * @return
-     *     possible object is
-     *     {@link TelephonySupportType }
-     *     
+     * @return the telephony support
      */
     public TelephonySupportType getTelephonySupport() {
         return telephonySupport;
     }
 
     /**
-     * Sets the value of the telephonySupport property.
+     * Sets the telephony support.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TelephonySupportType }
-     *     
+     * @param value the new telephony support
      */
     public void setTelephonySupport(TelephonySupportType value) {
         this.telephonySupport = value;
     }
 
     /**
-     * Gets the value of the extTelephonyDescription property.
+     * Gets the ext telephony description.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the ext telephony description
      */
     public String getExtTelephonyDescription() {
         return extTelephonyDescription;
     }
 
     /**
-     * Sets the value of the extTelephonyDescription property.
+     * Sets the ext telephony description.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new ext telephony description
      */
     public void setExtTelephonyDescription(String value) {
         this.extTelephonyDescription = value;
     }
 
     /**
-     * Gets the value of the tspAccountIndex property.
+     * Gets the tsp account index.
      * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     * @return the tsp account index
      */
     public Integer getTspAccountIndex() {
         return tspAccountIndex;
     }
 
     /**
-     * Sets the value of the tspAccountIndex property.
+     * Sets the tsp account index.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     * @param value the new tsp account index
      */
     public void setTspAccountIndex(Integer value) {
         this.tspAccountIndex = value;
     }
 
     /**
-     * Gets the value of the personalAccountIndex property.
+     * Gets the personal account index.
      * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     * @return the personal account index
      */
     public Integer getPersonalAccountIndex() {
         return personalAccountIndex;
     }
 
     /**
-     * Sets the value of the personalAccountIndex property.
+     * Sets the personal account index.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     * @param value the new personal account index
      */
     public void setPersonalAccountIndex(Integer value) {
         this.personalAccountIndex = value;
     }
 
     /**
-     * Gets the value of the account property.
+     * Gets the account.
      * 
-     * @return
-     *     possible object is
-     *     {@link OneClickAccountType }
-     *     
+     * @return the account
      */
     public OneClickAccountType getAccount() {
         return account;
     }
 
     /**
-     * Sets the value of the account property.
+     * Sets the account.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link OneClickAccountType }
-     *     
+     * @param value the new account
      */
     public void setAccount(OneClickAccountType value) {
         this.account = value;
     }
 
     /**
-     * Gets the value of the accountLabel property.
+     * Gets the account label.
      * 
-     * @return
-     *     possible object is
-     *     {@link OneClickAccountLabelType }
-     *     
+     * @return the account label
      */
     public OneClickAccountLabelType getAccountLabel() {
         return accountLabel;
     }
 
     /**
-     * Sets the value of the accountLabel property.
+     * Sets the account label.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link OneClickAccountLabelType }
-     *     
+     * @param value the new account label
      */
     public void setAccountLabel(OneClickAccountLabelType value) {
         this.accountLabel = value;
     }
 
     /**
-     * Gets the value of the teleconfServiceName property.
+     * Gets the teleconf service name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the teleconf service name
      */
     public String getTeleconfServiceName() {
         return teleconfServiceName;
     }
 
     /**
-     * Sets the value of the teleconfServiceName property.
+     * Sets the teleconf service name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new teleconf service name
      */
     public void setTeleconfServiceName(String value) {
         this.teleconfServiceName = value;
     }
 
     /**
-     * Gets the value of the teleconfLocation property.
+     * Gets the teleconf location.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the teleconf location
      */
     public String getTeleconfLocation() {
         return teleconfLocation;
     }
 
     /**
-     * Sets the value of the teleconfLocation property.
+     * Sets the teleconf location.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new teleconf location
      */
     public void setTeleconfLocation(String value) {
         this.teleconfLocation = value;
     }
 
     /**
-     * Gets the value of the intlLocalCallIn property.
+     * Checks if is intl local call in.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isIntlLocalCallIn() {
         return intlLocalCallIn;
     }
 
     /**
-     * Sets the value of the intlLocalCallIn property.
+     * Sets the intl local call in.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new intl local call in
      */
     public void setIntlLocalCallIn(Boolean value) {
         this.intlLocalCallIn = value;
     }
 
     /**
-     * Gets the value of the tollfree property.
+     * Checks if is tollfree.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isTollfree() {
         return tollfree;
     }
 
     /**
-     * Sets the value of the tollfree property.
+     * Sets the tollfree.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new tollfree
      */
     public void setTollfree(Boolean value) {
         this.tollfree = value;
     }
 
     /**
-     * Gets the value of the entryExitTone property.
+     * Gets the entry exit tone.
      * 
-     * @return
-     *     possible object is
-     *     {@link EntryExitToneType }
-     *     
+     * @return the entry exit tone
      */
     public EntryExitToneType getEntryExitTone() {
         return entryExitTone;
     }
 
     /**
-     * Sets the value of the entryExitTone property.
+     * Sets the entry exit tone.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link EntryExitToneType }
-     *     
+     * @param value the new entry exit tone
      */
     public void setEntryExitTone(EntryExitToneType value) {
         this.entryExitTone = value;
     }
 
     /**
-     * Gets the value of the isMPAudio property.
+     * Checks if is is mp audio.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isIsMPAudio() {
         return isMPAudio;
     }
 
     /**
-     * Sets the value of the isMPAudio property.
+     * Sets the checks if is mp audio.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new checks if is mp audio
      */
     public void setIsMPAudio(Boolean value) {
         this.isMPAudio = value;

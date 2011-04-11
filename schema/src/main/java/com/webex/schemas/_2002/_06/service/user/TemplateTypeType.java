@@ -23,38 +23,48 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for templateTypeType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="templateTypeType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="User"/>
- *     &lt;enumeration value="Site"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum TemplateTypeType.
  */
 @XmlType(name = "templateTypeType")
 @XmlEnum
 public enum TemplateTypeType {
 
+    /** The USER. */
     @XmlEnumValue("User")
     USER("User"),
+    
+    /** The SITE. */
     @XmlEnumValue("Site")
     SITE("Site");
+    
+    /** The value. */
     private final String value;
 
+    /**
+     * Instantiates a new template type type.
+     * 
+     * @param v the v
+     */
     TemplateTypeType(String v) {
         value = v;
     }
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the template type type
+     */
     public static TemplateTypeType fromValue(String v) {
         for (TemplateTypeType c: TemplateTypeType.values()) {
             if (c.value.equals(v)) {

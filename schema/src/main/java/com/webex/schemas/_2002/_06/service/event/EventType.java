@@ -28,33 +28,7 @@ import com.webex.schemas._2002._06.service.MeetingAssistType;
 
 
 /**
- * <p>Java class for eventType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="eventType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="accessControl" type="{http://www.webex.com/schemas/2002/06/service/event}accessControlType" minOccurs="0"/>
- *         &lt;element name="metaData" type="{http://www.webex.com/schemas/2002/06/service/event}metaDataType" minOccurs="0"/>
- *         &lt;element name="schedule" type="{http://www.webex.com/schemas/2002/06/service/event}scheduleType" minOccurs="0"/>
- *         &lt;element name="telephony" type="{http://www.webex.com/schemas/2002/06/service/event}telephonyType" minOccurs="0"/>
- *         &lt;element name="tracking" type="{http://www.webex.com/schemas/2002/06/common}trackingType" minOccurs="0"/>
- *         &lt;element name="remind" type="{http://www.webex.com/schemas/2002/06/service/event}remindType" minOccurs="0"/>
- *         &lt;element name="panelists" type="{http://www.webex.com/schemas/2002/06/service/event}panelistsType" minOccurs="0"/>
- *         &lt;element name="attendees" type="{http://www.webex.com/schemas/2002/06/service/event}attendeesType" minOccurs="0"/>
- *         &lt;element name="extOptions" type="{http://www.webex.com/schemas/2002/06/service/event}extOptionsType" minOccurs="0"/>
- *         &lt;element name="emailTemplates" type="{http://www.webex.com/schemas/2002/06/service/event}emailTemplatesType" minOccurs="0"/>
- *         &lt;element name="assistService" type="{http://www.webex.com/schemas/2002/06/service}meetingAssistType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class EventType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "eventType", propOrder = {
@@ -79,278 +53,235 @@ public class EventType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The access control. */
     protected AccessControlType accessControl;
+    
+    /** The meta data. */
     protected MetaDataType metaData;
+    
+    /** The schedule. */
     protected ScheduleType schedule;
+    
+    /** The telephony. */
     protected TelephonyType telephony;
+    
+    /** The tracking. */
     protected TrackingType tracking;
+    
+    /** The remind. */
     protected RemindType remind;
+    
+    /** The panelists. */
     protected PanelistsType panelists;
+    
+    /** The attendees. */
     protected AttendeesType attendees;
+    
+    /** The ext options. */
     protected ExtOptionsType extOptions;
+    
+    /** The email templates. */
     protected EmailTemplatesType emailTemplates;
+    
+    /** The assist service. */
     protected MeetingAssistType assistService;
 
     /**
-     * Gets the value of the accessControl property.
+     * Gets the access control.
      * 
-     * @return
-     *     possible object is
-     *     {@link AccessControlType }
-     *     
+     * @return the access control
      */
     public AccessControlType getAccessControl() {
         return accessControl;
     }
 
     /**
-     * Sets the value of the accessControl property.
+     * Sets the access control.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link AccessControlType }
-     *     
+     * @param value the new access control
      */
     public void setAccessControl(AccessControlType value) {
         this.accessControl = value;
     }
 
     /**
-     * Gets the value of the metaData property.
+     * Gets the meta data.
      * 
-     * @return
-     *     possible object is
-     *     {@link MetaDataType }
-     *     
+     * @return the meta data
      */
     public MetaDataType getMetaData() {
         return metaData;
     }
 
     /**
-     * Sets the value of the metaData property.
+     * Sets the meta data.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link MetaDataType }
-     *     
+     * @param value the new meta data
      */
     public void setMetaData(MetaDataType value) {
         this.metaData = value;
     }
 
     /**
-     * Gets the value of the schedule property.
+     * Gets the schedule.
      * 
-     * @return
-     *     possible object is
-     *     {@link ScheduleType }
-     *     
+     * @return the schedule
      */
     public ScheduleType getSchedule() {
         return schedule;
     }
 
     /**
-     * Sets the value of the schedule property.
+     * Sets the schedule.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ScheduleType }
-     *     
+     * @param value the new schedule
      */
     public void setSchedule(ScheduleType value) {
         this.schedule = value;
     }
 
     /**
-     * Gets the value of the telephony property.
+     * Gets the telephony.
      * 
-     * @return
-     *     possible object is
-     *     {@link TelephonyType }
-     *     
+     * @return the telephony
      */
     public TelephonyType getTelephony() {
         return telephony;
     }
 
     /**
-     * Sets the value of the telephony property.
+     * Sets the telephony.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TelephonyType }
-     *     
+     * @param value the new telephony
      */
     public void setTelephony(TelephonyType value) {
         this.telephony = value;
     }
 
     /**
-     * Gets the value of the tracking property.
+     * Gets the tracking.
      * 
-     * @return
-     *     possible object is
-     *     {@link TrackingType }
-     *     
+     * @return the tracking
      */
     public TrackingType getTracking() {
         return tracking;
     }
 
     /**
-     * Sets the value of the tracking property.
+     * Sets the tracking.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TrackingType }
-     *     
+     * @param value the new tracking
      */
     public void setTracking(TrackingType value) {
         this.tracking = value;
     }
 
     /**
-     * Gets the value of the remind property.
+     * Gets the remind.
      * 
-     * @return
-     *     possible object is
-     *     {@link RemindType }
-     *     
+     * @return the remind
      */
     public RemindType getRemind() {
         return remind;
     }
 
     /**
-     * Sets the value of the remind property.
+     * Sets the remind.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RemindType }
-     *     
+     * @param value the new remind
      */
     public void setRemind(RemindType value) {
         this.remind = value;
     }
 
     /**
-     * Gets the value of the panelists property.
+     * Gets the panelists.
      * 
-     * @return
-     *     possible object is
-     *     {@link PanelistsType }
-     *     
+     * @return the panelists
      */
     public PanelistsType getPanelists() {
         return panelists;
     }
 
     /**
-     * Sets the value of the panelists property.
+     * Sets the panelists.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link PanelistsType }
-     *     
+     * @param value the new panelists
      */
     public void setPanelists(PanelistsType value) {
         this.panelists = value;
     }
 
     /**
-     * Gets the value of the attendees property.
+     * Gets the attendees.
      * 
-     * @return
-     *     possible object is
-     *     {@link AttendeesType }
-     *     
+     * @return the attendees
      */
     public AttendeesType getAttendees() {
         return attendees;
     }
 
     /**
-     * Sets the value of the attendees property.
+     * Sets the attendees.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link AttendeesType }
-     *     
+     * @param value the new attendees
      */
     public void setAttendees(AttendeesType value) {
         this.attendees = value;
     }
 
     /**
-     * Gets the value of the extOptions property.
+     * Gets the ext options.
      * 
-     * @return
-     *     possible object is
-     *     {@link ExtOptionsType }
-     *     
+     * @return the ext options
      */
     public ExtOptionsType getExtOptions() {
         return extOptions;
     }
 
     /**
-     * Sets the value of the extOptions property.
+     * Sets the ext options.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ExtOptionsType }
-     *     
+     * @param value the new ext options
      */
     public void setExtOptions(ExtOptionsType value) {
         this.extOptions = value;
     }
 
     /**
-     * Gets the value of the emailTemplates property.
+     * Gets the email templates.
      * 
-     * @return
-     *     possible object is
-     *     {@link EmailTemplatesType }
-     *     
+     * @return the email templates
      */
     public EmailTemplatesType getEmailTemplates() {
         return emailTemplates;
     }
 
     /**
-     * Sets the value of the emailTemplates property.
+     * Sets the email templates.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link EmailTemplatesType }
-     *     
+     * @param value the new email templates
      */
     public void setEmailTemplates(EmailTemplatesType value) {
         this.emailTemplates = value;
     }
 
     /**
-     * Gets the value of the assistService property.
+     * Gets the assist service.
      * 
-     * @return
-     *     possible object is
-     *     {@link MeetingAssistType }
-     *     
+     * @return the assist service
      */
     public MeetingAssistType getAssistService() {
         return assistService;
     }
 
     /**
-     * Sets the value of the assistService property.
+     * Sets the assist service.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link MeetingAssistType }
-     *     
+     * @param value the new assist service
      */
     public void setAssistService(MeetingAssistType value) {
         this.assistService = value;

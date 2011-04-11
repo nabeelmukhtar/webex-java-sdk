@@ -25,27 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for dateScopeType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="dateScopeType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="startDateStart" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="startDateEnd" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="endDateStart" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="endDateEnd" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class DateScopeType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "dateScopeType", propOrder = {
@@ -59,129 +39,110 @@ public class DateScopeType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The start date start. */
     protected String startDateStart;
+    
+    /** The start date end. */
     protected String startDateEnd;
+    
+    /** The time zone id. */
     @XmlElement(defaultValue = "-1")
     protected Long timeZoneID;
+    
+    /** The end date start. */
     protected String endDateStart;
+    
+    /** The end date end. */
     protected String endDateEnd;
 
     /**
-     * Gets the value of the startDateStart property.
+     * Gets the start date start.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the start date start
      */
     public String getStartDateStart() {
         return startDateStart;
     }
 
     /**
-     * Sets the value of the startDateStart property.
+     * Sets the start date start.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new start date start
      */
     public void setStartDateStart(String value) {
         this.startDateStart = value;
     }
 
     /**
-     * Gets the value of the startDateEnd property.
+     * Gets the start date end.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the start date end
      */
     public String getStartDateEnd() {
         return startDateEnd;
     }
 
     /**
-     * Sets the value of the startDateEnd property.
+     * Sets the start date end.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new start date end
      */
     public void setStartDateEnd(String value) {
         this.startDateEnd = value;
     }
 
     /**
-     * Gets the value of the timeZoneID property.
+     * Gets the time zone id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the time zone id
      */
     public Long getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the value of the timeZoneID property.
+     * Sets the time zone id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new time zone id
      */
     public void setTimeZoneID(Long value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the value of the endDateStart property.
+     * Gets the end date start.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the end date start
      */
     public String getEndDateStart() {
         return endDateStart;
     }
 
     /**
-     * Sets the value of the endDateStart property.
+     * Sets the end date start.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new end date start
      */
     public void setEndDateStart(String value) {
         this.endDateStart = value;
     }
 
     /**
-     * Gets the value of the endDateEnd property.
+     * Gets the end date end.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the end date end
      */
     public String getEndDateEnd() {
         return endDateEnd;
     }
 
     /**
-     * Sets the value of the endDateEnd property.
+     * Sets the end date end.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new end date end
      */
     public void setEndDateEnd(String value) {
         this.endDateEnd = value;

@@ -27,41 +27,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for itemmetadataType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="itemmetadataType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="qtimetadata" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qtimetadataType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qmd_computerscored" minOccurs="0"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qmd_feedbackpermitted" minOccurs="0"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qmd_hintspermitted" minOccurs="0"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qmd_itemtype" minOccurs="0"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qmd_levelofdifficulty" minOccurs="0"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qmd_maximumscore" minOccurs="0"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qmd_renderingtype" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qmd_responsetype" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qmd_scoringpermitted" minOccurs="0"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qmd_solutionspermitted" minOccurs="0"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qmd_status" minOccurs="0"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qmd_timedependence" minOccurs="0"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qmd_timelimit" minOccurs="0"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qmd_toolvendor" minOccurs="0"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qmd_topic" minOccurs="0"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qmd_weighting" minOccurs="0"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qmd_material" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qmd_typeofsolution" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ItemmetadataType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "itemmetadataType", propOrder = {
@@ -89,66 +55,88 @@ public class ItemmetadataType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The qtimetadata. */
     protected List<QtimetadataType> qtimetadata;
+    
+    /** The qmd computerscored. */
     @XmlElement(name = "qmd_computerscored")
     protected String qmdComputerscored;
+    
+    /** The qmd feedbackpermitted. */
     @XmlElement(name = "qmd_feedbackpermitted")
     protected String qmdFeedbackpermitted;
+    
+    /** The qmd hintspermitted. */
     @XmlElement(name = "qmd_hintspermitted")
     protected String qmdHintspermitted;
+    
+    /** The qmd itemtype. */
     @XmlElement(name = "qmd_itemtype")
     protected String qmdItemtype;
+    
+    /** The qmd levelofdifficulty. */
     @XmlElement(name = "qmd_levelofdifficulty")
     protected String qmdLevelofdifficulty;
+    
+    /** The qmd maximumscore. */
     @XmlElement(name = "qmd_maximumscore")
     protected String qmdMaximumscore;
+    
+    /** The qmd renderingtype. */
     @XmlElement(name = "qmd_renderingtype")
     protected List<String> qmdRenderingtype;
+    
+    /** The qmd responsetype. */
     @XmlElement(name = "qmd_responsetype")
     protected List<String> qmdResponsetype;
+    
+    /** The qmd scoringpermitted. */
     @XmlElement(name = "qmd_scoringpermitted")
     protected String qmdScoringpermitted;
+    
+    /** The qmd solutionspermitted. */
     @XmlElement(name = "qmd_solutionspermitted")
     protected String qmdSolutionspermitted;
+    
+    /** The qmd status. */
     @XmlElement(name = "qmd_status")
     protected String qmdStatus;
+    
+    /** The qmd timedependence. */
     @XmlElement(name = "qmd_timedependence")
     protected String qmdTimedependence;
+    
+    /** The qmd timelimit. */
     @XmlElement(name = "qmd_timelimit")
     protected String qmdTimelimit;
+    
+    /** The qmd toolvendor. */
     @XmlElement(name = "qmd_toolvendor")
     protected String qmdToolvendor;
+    
+    /** The qmd topic. */
     @XmlElement(name = "qmd_topic")
     protected String qmdTopic;
+    
+    /** The qmd weighting. */
     @XmlElement(name = "qmd_weighting")
     protected String qmdWeighting;
+    
+    /** The qmd material. */
     @XmlElement(name = "qmd_material")
     protected List<String> qmdMaterial;
+    
+    /** The qmd typeofsolution. */
     @XmlElement(name = "qmd_typeofsolution")
     protected String qmdTypeofsolution;
 
     /**
-     * Gets the value of the qtimetadata property.
+     * Gets the qtimetadata.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the qtimetadata property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getQtimetadata().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link QtimetadataType }
-     * 
-     * 
+     * @return the qtimetadata
      */
     public List<QtimetadataType> getQtimetadata() {
         if (qtimetadata == null) {
@@ -158,170 +146,117 @@ public class ItemmetadataType
     }
 
     /**
-     * Gets the value of the qmdComputerscored property.
+     * Gets the qmd computerscored.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the qmd computerscored
      */
     public String getQmdComputerscored() {
         return qmdComputerscored;
     }
 
     /**
-     * Sets the value of the qmdComputerscored property.
+     * Sets the qmd computerscored.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new qmd computerscored
      */
     public void setQmdComputerscored(String value) {
         this.qmdComputerscored = value;
     }
 
     /**
-     * Gets the value of the qmdFeedbackpermitted property.
+     * Gets the qmd feedbackpermitted.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the qmd feedbackpermitted
      */
     public String getQmdFeedbackpermitted() {
         return qmdFeedbackpermitted;
     }
 
     /**
-     * Sets the value of the qmdFeedbackpermitted property.
+     * Sets the qmd feedbackpermitted.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new qmd feedbackpermitted
      */
     public void setQmdFeedbackpermitted(String value) {
         this.qmdFeedbackpermitted = value;
     }
 
     /**
-     * Gets the value of the qmdHintspermitted property.
+     * Gets the qmd hintspermitted.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the qmd hintspermitted
      */
     public String getQmdHintspermitted() {
         return qmdHintspermitted;
     }
 
     /**
-     * Sets the value of the qmdHintspermitted property.
+     * Sets the qmd hintspermitted.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new qmd hintspermitted
      */
     public void setQmdHintspermitted(String value) {
         this.qmdHintspermitted = value;
     }
 
     /**
-     * Gets the value of the qmdItemtype property.
+     * Gets the qmd itemtype.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the qmd itemtype
      */
     public String getQmdItemtype() {
         return qmdItemtype;
     }
 
     /**
-     * Sets the value of the qmdItemtype property.
+     * Sets the qmd itemtype.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new qmd itemtype
      */
     public void setQmdItemtype(String value) {
         this.qmdItemtype = value;
     }
 
     /**
-     * Gets the value of the qmdLevelofdifficulty property.
+     * Gets the qmd levelofdifficulty.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the qmd levelofdifficulty
      */
     public String getQmdLevelofdifficulty() {
         return qmdLevelofdifficulty;
     }
 
     /**
-     * Sets the value of the qmdLevelofdifficulty property.
+     * Sets the qmd levelofdifficulty.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new qmd levelofdifficulty
      */
     public void setQmdLevelofdifficulty(String value) {
         this.qmdLevelofdifficulty = value;
     }
 
     /**
-     * Gets the value of the qmdMaximumscore property.
+     * Gets the qmd maximumscore.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the qmd maximumscore
      */
     public String getQmdMaximumscore() {
         return qmdMaximumscore;
     }
 
     /**
-     * Sets the value of the qmdMaximumscore property.
+     * Sets the qmd maximumscore.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new qmd maximumscore
      */
     public void setQmdMaximumscore(String value) {
         this.qmdMaximumscore = value;
     }
 
     /**
-     * Gets the value of the qmdRenderingtype property.
+     * Gets the qmd renderingtype.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the qmdRenderingtype property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getQmdRenderingtype().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
+     * @return the qmd renderingtype
      */
     public List<String> getQmdRenderingtype() {
         if (qmdRenderingtype == null) {
@@ -331,26 +266,9 @@ public class ItemmetadataType
     }
 
     /**
-     * Gets the value of the qmdResponsetype property.
+     * Gets the qmd responsetype.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the qmdResponsetype property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getQmdResponsetype().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
+     * @return the qmd responsetype
      */
     public List<String> getQmdResponsetype() {
         if (qmdResponsetype == null) {
@@ -360,218 +278,153 @@ public class ItemmetadataType
     }
 
     /**
-     * Gets the value of the qmdScoringpermitted property.
+     * Gets the qmd scoringpermitted.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the qmd scoringpermitted
      */
     public String getQmdScoringpermitted() {
         return qmdScoringpermitted;
     }
 
     /**
-     * Sets the value of the qmdScoringpermitted property.
+     * Sets the qmd scoringpermitted.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new qmd scoringpermitted
      */
     public void setQmdScoringpermitted(String value) {
         this.qmdScoringpermitted = value;
     }
 
     /**
-     * Gets the value of the qmdSolutionspermitted property.
+     * Gets the qmd solutionspermitted.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the qmd solutionspermitted
      */
     public String getQmdSolutionspermitted() {
         return qmdSolutionspermitted;
     }
 
     /**
-     * Sets the value of the qmdSolutionspermitted property.
+     * Sets the qmd solutionspermitted.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new qmd solutionspermitted
      */
     public void setQmdSolutionspermitted(String value) {
         this.qmdSolutionspermitted = value;
     }
 
     /**
-     * Gets the value of the qmdStatus property.
+     * Gets the qmd status.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the qmd status
      */
     public String getQmdStatus() {
         return qmdStatus;
     }
 
     /**
-     * Sets the value of the qmdStatus property.
+     * Sets the qmd status.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new qmd status
      */
     public void setQmdStatus(String value) {
         this.qmdStatus = value;
     }
 
     /**
-     * Gets the value of the qmdTimedependence property.
+     * Gets the qmd timedependence.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the qmd timedependence
      */
     public String getQmdTimedependence() {
         return qmdTimedependence;
     }
 
     /**
-     * Sets the value of the qmdTimedependence property.
+     * Sets the qmd timedependence.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new qmd timedependence
      */
     public void setQmdTimedependence(String value) {
         this.qmdTimedependence = value;
     }
 
     /**
-     * Gets the value of the qmdTimelimit property.
+     * Gets the qmd timelimit.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the qmd timelimit
      */
     public String getQmdTimelimit() {
         return qmdTimelimit;
     }
 
     /**
-     * Sets the value of the qmdTimelimit property.
+     * Sets the qmd timelimit.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new qmd timelimit
      */
     public void setQmdTimelimit(String value) {
         this.qmdTimelimit = value;
     }
 
     /**
-     * Gets the value of the qmdToolvendor property.
+     * Gets the qmd toolvendor.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the qmd toolvendor
      */
     public String getQmdToolvendor() {
         return qmdToolvendor;
     }
 
     /**
-     * Sets the value of the qmdToolvendor property.
+     * Sets the qmd toolvendor.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new qmd toolvendor
      */
     public void setQmdToolvendor(String value) {
         this.qmdToolvendor = value;
     }
 
     /**
-     * Gets the value of the qmdTopic property.
+     * Gets the qmd topic.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the qmd topic
      */
     public String getQmdTopic() {
         return qmdTopic;
     }
 
     /**
-     * Sets the value of the qmdTopic property.
+     * Sets the qmd topic.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new qmd topic
      */
     public void setQmdTopic(String value) {
         this.qmdTopic = value;
     }
 
     /**
-     * Gets the value of the qmdWeighting property.
+     * Gets the qmd weighting.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the qmd weighting
      */
     public String getQmdWeighting() {
         return qmdWeighting;
     }
 
     /**
-     * Sets the value of the qmdWeighting property.
+     * Sets the qmd weighting.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new qmd weighting
      */
     public void setQmdWeighting(String value) {
         this.qmdWeighting = value;
     }
 
     /**
-     * Gets the value of the qmdMaterial property.
+     * Gets the qmd material.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the qmdMaterial property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getQmdMaterial().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
+     * @return the qmd material
      */
     public List<String> getQmdMaterial() {
         if (qmdMaterial == null) {
@@ -581,24 +434,18 @@ public class ItemmetadataType
     }
 
     /**
-     * Gets the value of the qmdTypeofsolution property.
+     * Gets the qmd typeofsolution.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the qmd typeofsolution
      */
     public String getQmdTypeofsolution() {
         return qmdTypeofsolution;
     }
 
     /**
-     * Sets the value of the qmdTypeofsolution property.
+     * Sets the qmd typeofsolution.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new qmd typeofsolution
      */
     public void setQmdTypeofsolution(String value) {
         this.qmdTypeofsolution = value;

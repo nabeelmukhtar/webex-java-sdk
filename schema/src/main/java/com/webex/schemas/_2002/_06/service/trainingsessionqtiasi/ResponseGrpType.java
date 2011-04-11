@@ -32,55 +32,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Java class for response_grpType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="response_grpType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;choice minOccurs="0">
- *           &lt;element name="material" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}materialType"/>
- *           &lt;element name="material_ref" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}material_refType"/>
- *         &lt;/choice>
- *         &lt;choice>
- *           &lt;element name="render_choice" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}render_choiceType"/>
- *           &lt;element name="render_hotspot" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}render_hotspotType"/>
- *           &lt;element name="render_slider" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}render_sliderType"/>
- *           &lt;element name="render_fib" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}render_fibType"/>
- *           &lt;element name="render_extension" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}render_extensionType"/>
- *         &lt;/choice>
- *         &lt;choice minOccurs="0">
- *           &lt;element name="material" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}materialType"/>
- *           &lt;element name="material_ref" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}material_refType"/>
- *         &lt;/choice>
- *       &lt;/sequence>
- *       &lt;attribute name="rcardinality" default="Single">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="Single"/>
- *             &lt;enumeration value="Multiple"/>
- *             &lt;enumeration value="Ordered"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="ident" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="rtiming" default="No">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="Yes"/>
- *             &lt;enumeration value="No"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ResponseGrpType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "response_grpType", propOrder = {
@@ -90,7 +42,10 @@ public class ResponseGrpType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The content. */
     @XmlElementRefs({
         @XmlElementRef(name = "render_hotspot", namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", type = JAXBElement.class),
         @XmlElementRef(name = "material", namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", type = JAXBElement.class),
@@ -101,52 +56,25 @@ public class ResponseGrpType
         @XmlElementRef(name = "render_slider", namespace = "http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi", type = JAXBElement.class)
     })
     protected List<JAXBElement<?>> content;
+    
+    /** The rcardinality. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String rcardinality;
+    
+    /** The ident. */
     @XmlAttribute(required = true)
     protected String ident;
+    
+    /** The rtiming. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String rtiming;
 
     /**
-     * Gets the rest of the content model. 
+     * Gets the content.
      * 
-     * <p>
-     * You are getting this "catch-all" property because of the following reason: 
-     * The field name "Material" is used by two different parts of a schema. See: 
-     * line 1275 of file:/E:/workspace/opensource/webex-java-sdk/schema/src/main/resources/com/webex/schemas/2002/06/service/training/training_ims_qtiasiv1p2.xsd
-     * line 1264 of file:/E:/workspace/opensource/webex-java-sdk/schema/src/main/resources/com/webex/schemas/2002/06/service/training/training_ims_qtiasiv1p2.xsd
-     * <p>
-     * To get rid of this property, apply a property customization to one 
-     * of both of the following declarations to change their names: 
-     * Gets the value of the content property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the content property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getContent().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link JAXBElement }{@code <}{@link RenderHotspotType }{@code >}
-     * {@link JAXBElement }{@code <}{@link MaterialType }{@code >}
-     * {@link JAXBElement }{@code <}{@link MaterialRefType }{@code >}
-     * {@link JAXBElement }{@code <}{@link RenderChoiceType }{@code >}
-     * {@link JAXBElement }{@code <}{@link RenderExtensionType }{@code >}
-     * {@link JAXBElement }{@code <}{@link RenderFibType }{@code >}
-     * {@link JAXBElement }{@code <}{@link RenderSliderType }{@code >}
-     * 
-     * 
+     * @return the content
      */
     public List<JAXBElement<?>> getContent() {
         if (content == null) {
@@ -156,12 +84,9 @@ public class ResponseGrpType
     }
 
     /**
-     * Gets the value of the rcardinality property.
+     * Gets the rcardinality.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the rcardinality
      */
     public String getRcardinality() {
         if (rcardinality == null) {
@@ -172,48 +97,36 @@ public class ResponseGrpType
     }
 
     /**
-     * Sets the value of the rcardinality property.
+     * Sets the rcardinality.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new rcardinality
      */
     public void setRcardinality(String value) {
         this.rcardinality = value;
     }
 
     /**
-     * Gets the value of the ident property.
+     * Gets the ident.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the ident
      */
     public String getIdent() {
         return ident;
     }
 
     /**
-     * Sets the value of the ident property.
+     * Sets the ident.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new ident
      */
     public void setIdent(String value) {
         this.ident = value;
     }
 
     /**
-     * Gets the value of the rtiming property.
+     * Gets the rtiming.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the rtiming
      */
     public String getRtiming() {
         if (rtiming == null) {
@@ -224,12 +137,9 @@ public class ResponseGrpType
     }
 
     /**
-     * Sets the value of the rtiming property.
+     * Sets the rtiming.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new rtiming
      */
     public void setRtiming(String value) {
         this.rtiming = value;

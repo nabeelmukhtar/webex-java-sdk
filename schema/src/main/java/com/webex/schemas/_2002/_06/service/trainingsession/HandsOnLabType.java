@@ -24,25 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for handsOnLabType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="handsOnLabType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="reserveHOL" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="labName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="numComputers" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class HandsOnLabType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "handsOnLabType", propOrder = {
@@ -54,78 +36,67 @@ public class HandsOnLabType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The reserve hol. */
     protected Boolean reserveHOL;
+    
+    /** The lab name. */
     protected String labName;
+    
+    /** The num computers. */
     protected Integer numComputers;
 
     /**
-     * Gets the value of the reserveHOL property.
+     * Checks if is reserve hol.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isReserveHOL() {
         return reserveHOL;
     }
 
     /**
-     * Sets the value of the reserveHOL property.
+     * Sets the reserve hol.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new reserve hol
      */
     public void setReserveHOL(Boolean value) {
         this.reserveHOL = value;
     }
 
     /**
-     * Gets the value of the labName property.
+     * Gets the lab name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the lab name
      */
     public String getLabName() {
         return labName;
     }
 
     /**
-     * Sets the value of the labName property.
+     * Sets the lab name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new lab name
      */
     public void setLabName(String value) {
         this.labName = value;
     }
 
     /**
-     * Gets the value of the numComputers property.
+     * Gets the num computers.
      * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     * @return the num computers
      */
     public Integer getNumComputers() {
         return numComputers;
     }
 
     /**
-     * Sets the value of the numComputers property.
+     * Sets the num computers.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     * @param value the new num computers
      */
     public void setNumComputers(Integer value) {
         this.numComputers = value;

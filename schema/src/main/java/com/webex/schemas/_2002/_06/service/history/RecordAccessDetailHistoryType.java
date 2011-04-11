@@ -25,32 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for recordAccessDetailHistoryType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="recordAccessDetailHistoryType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="viewID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="participantName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="participantEmail" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="accessTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="registered" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="registerDate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="downloaded" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="viewed" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="regFields" type="{http://www.webex.com/schemas/2002/06/service/history}regFieldsType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class RecordAccessDetailHistoryType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "recordAccessDetailHistoryType", propOrder = {
@@ -69,254 +44,215 @@ public class RecordAccessDetailHistoryType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The view id. */
     protected Long viewID;
+    
+    /** The participant name. */
     protected String participantName;
+    
+    /** The participant email. */
     protected String participantEmail;
+    
+    /** The access time. */
     protected String accessTime;
+    
+    /** The registered. */
     protected Boolean registered;
+    
+    /** The register date. */
     protected String registerDate;
+    
+    /** The downloaded. */
     protected Boolean downloaded;
+    
+    /** The viewed. */
     protected Boolean viewed;
+    
+    /** The time zone id. */
     @XmlElement(defaultValue = "-1")
     protected Integer timeZoneID;
+    
+    /** The reg fields. */
     protected RegFieldsType regFields;
 
     /**
-     * Gets the value of the viewID property.
+     * Gets the view id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the view id
      */
     public Long getViewID() {
         return viewID;
     }
 
     /**
-     * Sets the value of the viewID property.
+     * Sets the view id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new view id
      */
     public void setViewID(Long value) {
         this.viewID = value;
     }
 
     /**
-     * Gets the value of the participantName property.
+     * Gets the participant name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the participant name
      */
     public String getParticipantName() {
         return participantName;
     }
 
     /**
-     * Sets the value of the participantName property.
+     * Sets the participant name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new participant name
      */
     public void setParticipantName(String value) {
         this.participantName = value;
     }
 
     /**
-     * Gets the value of the participantEmail property.
+     * Gets the participant email.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the participant email
      */
     public String getParticipantEmail() {
         return participantEmail;
     }
 
     /**
-     * Sets the value of the participantEmail property.
+     * Sets the participant email.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new participant email
      */
     public void setParticipantEmail(String value) {
         this.participantEmail = value;
     }
 
     /**
-     * Gets the value of the accessTime property.
+     * Gets the access time.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the access time
      */
     public String getAccessTime() {
         return accessTime;
     }
 
     /**
-     * Sets the value of the accessTime property.
+     * Sets the access time.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new access time
      */
     public void setAccessTime(String value) {
         this.accessTime = value;
     }
 
     /**
-     * Gets the value of the registered property.
+     * Checks if is registered.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isRegistered() {
         return registered;
     }
 
     /**
-     * Sets the value of the registered property.
+     * Sets the registered.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new registered
      */
     public void setRegistered(Boolean value) {
         this.registered = value;
     }
 
     /**
-     * Gets the value of the registerDate property.
+     * Gets the register date.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the register date
      */
     public String getRegisterDate() {
         return registerDate;
     }
 
     /**
-     * Sets the value of the registerDate property.
+     * Sets the register date.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new register date
      */
     public void setRegisterDate(String value) {
         this.registerDate = value;
     }
 
     /**
-     * Gets the value of the downloaded property.
+     * Checks if is downloaded.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isDownloaded() {
         return downloaded;
     }
 
     /**
-     * Sets the value of the downloaded property.
+     * Sets the downloaded.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new downloaded
      */
     public void setDownloaded(Boolean value) {
         this.downloaded = value;
     }
 
     /**
-     * Gets the value of the viewed property.
+     * Checks if is viewed.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isViewed() {
         return viewed;
     }
 
     /**
-     * Sets the value of the viewed property.
+     * Sets the viewed.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new viewed
      */
     public void setViewed(Boolean value) {
         this.viewed = value;
     }
 
     /**
-     * Gets the value of the timeZoneID property.
+     * Gets the time zone id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     * @return the time zone id
      */
     public Integer getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the value of the timeZoneID property.
+     * Sets the time zone id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     * @param value the new time zone id
      */
     public void setTimeZoneID(Integer value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the value of the regFields property.
+     * Gets the reg fields.
      * 
-     * @return
-     *     possible object is
-     *     {@link RegFieldsType }
-     *     
+     * @return the reg fields
      */
     public RegFieldsType getRegFields() {
         return regFields;
     }
 
     /**
-     * Sets the value of the regFields property.
+     * Sets the reg fields.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RegFieldsType }
-     *     
+     * @param value the new reg fields
      */
     public void setRegFields(RegFieldsType value) {
         this.regFields = value;

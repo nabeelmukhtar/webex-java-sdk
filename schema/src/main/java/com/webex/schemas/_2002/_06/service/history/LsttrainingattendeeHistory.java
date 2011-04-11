@@ -26,30 +26,7 @@ import com.webex.schemas._2002._06.service.LstControlType;
 
 
 /**
- * <p>Java class for lsttrainingattendeeHistory complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="lsttrainingattendeeHistory">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="order" type="{http://www.webex.com/schemas/2002/06/service/history}orderTCAttenHisType" minOccurs="0"/>
- *         &lt;element name="startTimeScope" type="{http://www.webex.com/schemas/2002/06/service/history}startTimeScopeType" minOccurs="0"/>
- *         &lt;element name="confName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="listControl" type="{http://www.webex.com/schemas/2002/06/service}lstControlType" minOccurs="0"/>
- *         &lt;element name="confID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="endTimeScope" type="{http://www.webex.com/schemas/2002/06/service/history}endTimeScopeType" minOccurs="0"/>
- *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class LsttrainingattendeeHistory.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lsttrainingattendeeHistory", propOrder = {
@@ -67,203 +44,172 @@ public class LsttrainingattendeeHistory
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The session key. */
     protected Long sessionKey;
+    
+    /** The order. */
     protected OrderTCAttenHisType order;
+    
+    /** The start time scope. */
     protected StartTimeScopeType startTimeScope;
+    
+    /** The conf name. */
     protected String confName;
+    
+    /** The list control. */
     protected LstControlType listControl;
+    
+    /** The conf id. */
     protected Long confID;
+    
+    /** The end time scope. */
     protected EndTimeScopeType endTimeScope;
+    
+    /** The time zone id. */
     protected Integer timeZoneID;
 
     /**
-     * Gets the value of the sessionKey property.
+     * Gets the session key.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the session key
      */
     public Long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the value of the sessionKey property.
+     * Sets the session key.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new session key
      */
     public void setSessionKey(Long value) {
         this.sessionKey = value;
     }
 
     /**
-     * Gets the value of the order property.
+     * Gets the order.
      * 
-     * @return
-     *     possible object is
-     *     {@link OrderTCAttenHisType }
-     *     
+     * @return the order
      */
     public OrderTCAttenHisType getOrder() {
         return order;
     }
 
     /**
-     * Sets the value of the order property.
+     * Sets the order.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link OrderTCAttenHisType }
-     *     
+     * @param value the new order
      */
     public void setOrder(OrderTCAttenHisType value) {
         this.order = value;
     }
 
     /**
-     * Gets the value of the startTimeScope property.
+     * Gets the start time scope.
      * 
-     * @return
-     *     possible object is
-     *     {@link StartTimeScopeType }
-     *     
+     * @return the start time scope
      */
     public StartTimeScopeType getStartTimeScope() {
         return startTimeScope;
     }
 
     /**
-     * Sets the value of the startTimeScope property.
+     * Sets the start time scope.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link StartTimeScopeType }
-     *     
+     * @param value the new start time scope
      */
     public void setStartTimeScope(StartTimeScopeType value) {
         this.startTimeScope = value;
     }
 
     /**
-     * Gets the value of the confName property.
+     * Gets the conf name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the conf name
      */
     public String getConfName() {
         return confName;
     }
 
     /**
-     * Sets the value of the confName property.
+     * Sets the conf name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new conf name
      */
     public void setConfName(String value) {
         this.confName = value;
     }
 
     /**
-     * Gets the value of the listControl property.
+     * Gets the list control.
      * 
-     * @return
-     *     possible object is
-     *     {@link LstControlType }
-     *     
+     * @return the list control
      */
     public LstControlType getListControl() {
         return listControl;
     }
 
     /**
-     * Sets the value of the listControl property.
+     * Sets the list control.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link LstControlType }
-     *     
+     * @param value the new list control
      */
     public void setListControl(LstControlType value) {
         this.listControl = value;
     }
 
     /**
-     * Gets the value of the confID property.
+     * Gets the conf id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the conf id
      */
     public Long getConfID() {
         return confID;
     }
 
     /**
-     * Sets the value of the confID property.
+     * Sets the conf id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new conf id
      */
     public void setConfID(Long value) {
         this.confID = value;
     }
 
     /**
-     * Gets the value of the endTimeScope property.
+     * Gets the end time scope.
      * 
-     * @return
-     *     possible object is
-     *     {@link EndTimeScopeType }
-     *     
+     * @return the end time scope
      */
     public EndTimeScopeType getEndTimeScope() {
         return endTimeScope;
     }
 
     /**
-     * Sets the value of the endTimeScope property.
+     * Sets the end time scope.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link EndTimeScopeType }
-     *     
+     * @param value the new end time scope
      */
     public void setEndTimeScope(EndTimeScopeType value) {
         this.endTimeScope = value;
     }
 
     /**
-     * Gets the value of the timeZoneID property.
+     * Gets the time zone id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     * @return the time zone id
      */
     public Integer getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the value of the timeZoneID property.
+     * Sets the time zone id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     * @param value the new time zone id
      */
     public void setTimeZoneID(Integer value) {
         this.timeZoneID = value;

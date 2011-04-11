@@ -27,25 +27,23 @@ import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 
 /**
- * The Class ClassifierExample.
- * 
- * @author Nabeel Mukhtar
+ * The Class UserServiceExample.
  */
 public class UserServiceExample {
 
-    /** Consumer Key. */
+    /** The Constant WRITE_KEY. */
     private static final String WRITE_KEY = "writeKey";
 	
-    /** ID. */
+    /** The Constant CLASSIFIER. */
     private static final String CLASSIFIER = "classifier";
     
-    /** Name of the help command line option. */
+    /** The Constant HELP_OPTION. */
     private static final String HELP_OPTION = "help";
     
     /**
      * The main method.
      * 
-     * @param args the args
+     * @param args the arguments
      */
 	public static void main(String[] args) {
 		Options options = buildOptions();
@@ -59,7 +57,7 @@ public class UserServiceExample {
 	}
 	
     /**
-     * Process command line options and call the service.
+     * Process command line.
      * 
      * @param line the line
      * @param options the options
@@ -99,7 +97,7 @@ public class UserServiceExample {
     }
 	
 	/**
-	 * Build command line options object.
+	 * Builds the options.
 	 * 
 	 * @return the options
 	 */
@@ -129,7 +127,7 @@ public class UserServiceExample {
     }
     
     /**
-     * Print help and usage.
+     * Prints the help.
      * 
      * @param options the options
      */

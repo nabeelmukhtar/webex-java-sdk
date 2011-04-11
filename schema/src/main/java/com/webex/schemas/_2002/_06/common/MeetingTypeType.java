@@ -23,77 +23,107 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for meetingTypeType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="meetingTypeType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="INITIAL"/>
- *     &lt;enumeration value="FRE"/>
- *     &lt;enumeration value="STD"/>
- *     &lt;enumeration value="PRO"/>
- *     &lt;enumeration value="STANDARD_SUB"/>
- *     &lt;enumeration value="PRO_SUB"/>
- *     &lt;enumeration value="PPU"/>
- *     &lt;enumeration value="ONCALL"/>
- *     &lt;enumeration value="ONTOUR"/>
- *     &lt;enumeration value="ONSTAGE"/>
- *     &lt;enumeration value="ACCESS_ANYWHERE"/>
- *     &lt;enumeration value="COB"/>
- *     &lt;enumeration value="OCS"/>
- *     &lt;enumeration value="ONS"/>
- *     &lt;enumeration value="RAS"/>
- *     &lt;enumeration value="SC3"/>
- *     &lt;enumeration value="SOP"/>
- *     &lt;enumeration value="SOS"/>
- *     &lt;enumeration value="TRS"/>
- *     &lt;enumeration value="CUSTOM"/>
- *     &lt;enumeration value="SMT"/>
- *     &lt;enumeration value="SAC"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum MeetingTypeType.
  */
 @XmlType(name = "meetingTypeType")
 @XmlEnum
 public enum MeetingTypeType {
 
+    /** The INITIAL. */
     INITIAL("INITIAL"),
+    
+    /** The FRE. */
     FRE("FRE"),
+    
+    /** The STD. */
     STD("STD"),
+    
+    /** The PRO. */
     PRO("PRO"),
+    
+    /** The STANDAR d_ sub. */
     STANDARD_SUB("STANDARD_SUB"),
+    
+    /** The PR o_ sub. */
     PRO_SUB("PRO_SUB"),
+    
+    /** The PPU. */
     PPU("PPU"),
+    
+    /** The ONCALL. */
     ONCALL("ONCALL"),
+    
+    /** The ONTOUR. */
     ONTOUR("ONTOUR"),
+    
+    /** The ONSTAGE. */
     ONSTAGE("ONSTAGE"),
+    
+    /** The ACCES s_ anywhere. */
     ACCESS_ANYWHERE("ACCESS_ANYWHERE"),
+    
+    /** The COB. */
     COB("COB"),
+    
+    /** The OCS. */
     OCS("OCS"),
+    
+    /** The ONS. */
     ONS("ONS"),
+    
+    /** The RAS. */
     RAS("RAS"),
+    
+    /** The S c_3. */
     @XmlEnumValue("SC3")
     SC_3("SC3"),
+    
+    /** The SOP. */
     SOP("SOP"),
+    
+    /** The SOS. */
     SOS("SOS"),
+    
+    /** The TRS. */
     TRS("TRS"),
+    
+    /** The CUSTOM. */
     CUSTOM("CUSTOM"),
+    
+    /** The SMT. */
     SMT("SMT"),
+    
+    /** The SAC. */
     SAC("SAC");
+    
+    /** The value. */
     private final String value;
 
+    /**
+     * Instantiates a new meeting type type.
+     * 
+     * @param v the v
+     */
     MeetingTypeType(String v) {
         value = v;
     }
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the meeting type type
+     */
     public static MeetingTypeType fromValue(String v) {
         for (MeetingTypeType c: MeetingTypeType.values()) {
             if (c.value.equals(v)) {

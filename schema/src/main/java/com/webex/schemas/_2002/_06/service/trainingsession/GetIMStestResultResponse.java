@@ -27,23 +27,7 @@ import com.webex.schemas._2002._06.service.trainingsessionqti.QtiResultReportTyp
 
 
 /**
- * <p>Java class for getIMStestResultResponse complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="getIMStestResultResponse">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="qti_result_report" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}qti_result_reportType"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GetIMStestResultResponse.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getIMStestResultResponse", propOrder = {
@@ -54,29 +38,26 @@ public class GetIMStestResultResponse
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The qti result report. */
     @XmlElement(name = "qti_result_report", required = true)
     protected QtiResultReportType qtiResultReport;
 
     /**
-     * Gets the value of the qtiResultReport property.
+     * Gets the qti result report.
      * 
-     * @return
-     *     possible object is
-     *     {@link QtiResultReportType }
-     *     
+     * @return the qti result report
      */
     public QtiResultReportType getQtiResultReport() {
         return qtiResultReport;
     }
 
     /**
-     * Sets the value of the qtiResultReport property.
+     * Sets the qti result report.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link QtiResultReportType }
-     *     
+     * @param value the new qti result report
      */
     public void setQtiResultReport(QtiResultReportType value) {
         this.qtiResultReport = value;

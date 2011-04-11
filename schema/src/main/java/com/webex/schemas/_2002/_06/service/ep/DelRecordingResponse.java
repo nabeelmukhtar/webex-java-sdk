@@ -25,23 +25,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for delRecordingResponse complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="delRecordingResponse">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="recordingID" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class DelRecordingResponse.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "delRecordingResponse", propOrder = {
@@ -52,20 +36,25 @@ public class DelRecordingResponse
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The recording id. */
     protected int recordingID;
 
     /**
-     * Gets the value of the recordingID property.
+     * Gets the recording id.
      * 
+     * @return the recording id
      */
     public int getRecordingID() {
         return recordingID;
     }
 
     /**
-     * Sets the value of the recordingID property.
+     * Sets the recording id.
      * 
+     * @param value the new recording id
      */
     public void setRecordingID(int value) {
         this.recordingID = value;

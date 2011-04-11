@@ -29,37 +29,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for extOptionsType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="extOptionsType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="enrollmentNumber" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="destinationURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="allowInviteFriend" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="viewAttendeeList" type="{http://www.webex.com/schemas/2002/06/common}attendeeListViewType" minOccurs="0"/>
- *         &lt;element name="participantLimit" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}integer">
- *               &lt;minInclusive value="0"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="displayQuickStartHost" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="voip" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="emailInvitations" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="registration" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ExtOptionsType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "extOptionsType", propOrder = {
@@ -77,233 +47,198 @@ public class ExtOptionsType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The enrollment number. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long enrollmentNumber;
+    
+    /** The destination url. */
     protected String destinationURL;
+    
+    /** The allow invite friend. */
     protected Boolean allowInviteFriend;
+    
+    /** The view attendee list. */
     protected AttendeeListViewType viewAttendeeList;
+    
+    /** The participant limit. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     protected Long participantLimit;
+    
+    /** The display quick start host. */
     protected Boolean displayQuickStartHost;
+    
+    /** The voip. */
     protected Boolean voip;
+    
+    /** The email invitations. */
     protected Boolean emailInvitations;
+    
+    /** The registration. */
     protected Boolean registration;
 
     /**
-     * Gets the value of the enrollmentNumber property.
+     * Gets the enrollment number.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the enrollment number
      */
     public Long getEnrollmentNumber() {
         return enrollmentNumber;
     }
 
     /**
-     * Sets the value of the enrollmentNumber property.
+     * Sets the enrollment number.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new enrollment number
      */
     public void setEnrollmentNumber(Long value) {
         this.enrollmentNumber = value;
     }
 
     /**
-     * Gets the value of the destinationURL property.
+     * Gets the destination url.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the destination url
      */
     public String getDestinationURL() {
         return destinationURL;
     }
 
     /**
-     * Sets the value of the destinationURL property.
+     * Sets the destination url.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new destination url
      */
     public void setDestinationURL(String value) {
         this.destinationURL = value;
     }
 
     /**
-     * Gets the value of the allowInviteFriend property.
+     * Checks if is allow invite friend.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isAllowInviteFriend() {
         return allowInviteFriend;
     }
 
     /**
-     * Sets the value of the allowInviteFriend property.
+     * Sets the allow invite friend.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new allow invite friend
      */
     public void setAllowInviteFriend(Boolean value) {
         this.allowInviteFriend = value;
     }
 
     /**
-     * Gets the value of the viewAttendeeList property.
+     * Gets the view attendee list.
      * 
-     * @return
-     *     possible object is
-     *     {@link AttendeeListViewType }
-     *     
+     * @return the view attendee list
      */
     public AttendeeListViewType getViewAttendeeList() {
         return viewAttendeeList;
     }
 
     /**
-     * Sets the value of the viewAttendeeList property.
+     * Sets the view attendee list.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link AttendeeListViewType }
-     *     
+     * @param value the new view attendee list
      */
     public void setViewAttendeeList(AttendeeListViewType value) {
         this.viewAttendeeList = value;
     }
 
     /**
-     * Gets the value of the participantLimit property.
+     * Gets the participant limit.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the participant limit
      */
     public Long getParticipantLimit() {
         return participantLimit;
     }
 
     /**
-     * Sets the value of the participantLimit property.
+     * Sets the participant limit.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new participant limit
      */
     public void setParticipantLimit(Long value) {
         this.participantLimit = value;
     }
 
     /**
-     * Gets the value of the displayQuickStartHost property.
+     * Checks if is display quick start host.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isDisplayQuickStartHost() {
         return displayQuickStartHost;
     }
 
     /**
-     * Sets the value of the displayQuickStartHost property.
+     * Sets the display quick start host.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new display quick start host
      */
     public void setDisplayQuickStartHost(Boolean value) {
         this.displayQuickStartHost = value;
     }
 
     /**
-     * Gets the value of the voip property.
+     * Checks if is voip.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isVoip() {
         return voip;
     }
 
     /**
-     * Sets the value of the voip property.
+     * Sets the voip.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new voip
      */
     public void setVoip(Boolean value) {
         this.voip = value;
     }
 
     /**
-     * Gets the value of the emailInvitations property.
+     * Checks if is email invitations.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isEmailInvitations() {
         return emailInvitations;
     }
 
     /**
-     * Sets the value of the emailInvitations property.
+     * Sets the email invitations.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new email invitations
      */
     public void setEmailInvitations(Boolean value) {
         this.emailInvitations = value;
     }
 
     /**
-     * Gets the value of the registration property.
+     * Checks if is registration.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isRegistration() {
         return registration;
     }
 
     /**
-     * Sets the value of the registration property.
+     * Sets the registration.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new registration
      */
     public void setRegistration(Boolean value) {
         this.registration = value;

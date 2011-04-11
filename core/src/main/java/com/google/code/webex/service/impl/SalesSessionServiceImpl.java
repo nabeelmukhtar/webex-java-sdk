@@ -66,14 +66,29 @@ import com.webex.schemas._2002._06.service.sales.SetSalesSessionResponse;
 import com.webex.schemas._2002._06.service.sales.LstOpportunitiesResponse.Opportunity;
 import com.webex.schemas._2002._06.service.sales.SetAccount.Account;
 
+/**
+ * The Class SalesSessionServiceImpl.
+ */
 public class SalesSessionServiceImpl extends WebExJaxbService implements
 	SalesSessionService {
 
+	/**
+	 * Instantiates a new sales session service impl.
+	 * 
+	 * @param webExId the web ex id
+	 * @param password the password
+	 * @param siteId the site id
+	 * @param siteName the site name
+	 * @param partnerId the partner id
+	 */
 	public SalesSessionServiceImpl(String webExId, String password,
 			Long siteId, String siteName, String partnerId) {
 		super(webExId, password, siteId, siteName, partnerId);
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.SalesSessionService#addProducts(java.util.List)
+	 */
 	@Override
 	public List<Long> addProducts(List<ProductType> products) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -91,6 +106,9 @@ public class SalesSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<Long>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.SalesSessionService#createAccount(java.lang.String, com.webex.schemas._2002._06.service.sales.AccountType)
+	 */
 	@Override
 	public Long createAccount(String webExID, AccountType account) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -109,6 +127,9 @@ public class SalesSessionServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.SalesSessionService#createOpportunity(java.lang.String, com.webex.schemas._2002._06.service.sales.OpptyType)
+	 */
 	@Override
 	public Long createOpportunity(String webExID, OpptyType opportunity) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -127,6 +148,9 @@ public class SalesSessionServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.SalesSessionService#createSalesSession(com.webex.schemas._2002._06.service.sales.CreateSalesSession)
+	 */
 	@Override
 	public CreateSalesSessionResponse createSalesSession(
 			CreateSalesSession salesSession) {
@@ -141,6 +165,9 @@ public class SalesSessionServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.SalesSessionService#deleteSalesSession(long)
+	 */
 	@Override
 	public ICalendarURL deleteSalesSession(long meetingKey) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -158,6 +185,9 @@ public class SalesSessionServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.SalesSessionService#getSalesSession(long)
+	 */
 	@Override
 	public GetSalesSessionResponse getSalesSession(long meetingKey) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -175,6 +205,9 @@ public class SalesSessionServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.SalesSessionService#getAccounts(java.lang.String, java.lang.Long, java.lang.String, java.lang.Long, java.lang.Boolean)
+	 */
 	@Override
 	public List<AccountInstanceType> getAccounts(String webExID,
 			Long intAccountID, String extAccountID, Long extSystemID,
@@ -198,6 +231,9 @@ public class SalesSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<AccountInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.SalesSessionService#getOpportunities(java.lang.String, java.lang.Long, java.lang.String, java.lang.Long, java.lang.String, java.lang.Long)
+	 */
 	@Override
 	public List<Opportunity> getOpportunities(String webExID,
 			Long intAccountID, String extAccountID, Long intOpptyID,
@@ -222,6 +258,9 @@ public class SalesSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<Opportunity>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.SalesSessionService#getProducts(java.lang.String, java.util.List)
+	 */
 	@Override
 	public List<ProductInstanceType> getProducts(String name, List<Long> prodIDs) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -240,6 +279,9 @@ public class SalesSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<ProductInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.SalesSessionService#getSalesSessionSummaries(com.webex.schemas._2002._06.service.sales.DateScopeType, java.lang.Long, java.lang.String, java.lang.String, java.lang.String)
+	 */
 	@Override
 	public List<SalesSessionSummaryInstanceType> getSalesSessionSummaries(
 			DateScopeType dateScope, Long meetingKey, String hostWebExID,
@@ -263,6 +305,9 @@ public class SalesSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<SalesSessionSummaryInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.SalesSessionService#setAccount(java.lang.String, com.webex.schemas._2002._06.service.sales.SetAccount.Account)
+	 */
 	@Override
 	public Long setAccount(String webExID, Account account) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -281,6 +326,9 @@ public class SalesSessionServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.SalesSessionService#setOpportunity(java.lang.String, com.webex.schemas._2002._06.service.sales.OpptyInstanceType)
+	 */
 	@Override
 	public Long setOpportunity(String webExID, OpptyInstanceType opportunity) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -299,6 +347,9 @@ public class SalesSessionServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.SalesSessionService#setProducts(java.util.List)
+	 */
 	@Override
 	public List<Long> setProducts(List<ProductInstanceType> products) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -316,6 +367,9 @@ public class SalesSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<Long>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.SalesSessionService#setSalesSession(com.webex.schemas._2002._06.service.sales.SetSalesSession)
+	 */
 	@Override
 	public ICalendarURL setSalesSession(SetSalesSession salesSession) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);

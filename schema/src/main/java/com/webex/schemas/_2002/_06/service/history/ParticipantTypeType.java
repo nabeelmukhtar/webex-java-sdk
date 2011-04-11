@@ -22,33 +22,37 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for participantTypeType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="participantTypeType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="HOST"/>
- *     &lt;enumeration value="ATTENDEE"/>
- *     &lt;enumeration value="OTHER"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum ParticipantTypeType.
  */
 @XmlType(name = "participantTypeType")
 @XmlEnum
 public enum ParticipantTypeType {
 
+    /** The HOST. */
     HOST,
+    
+    /** The ATTENDEE. */
     ATTENDEE,
+    
+    /** The OTHER. */
     OTHER;
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the participant type type
+     */
     public static ParticipantTypeType fromValue(String v) {
         return valueOf(v);
     }

@@ -22,31 +22,34 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for gsbStatusType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="gsbStatusType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="PRIMARY"/>
- *     &lt;enumeration value="BACKUP"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum GsbStatusType.
  */
 @XmlType(name = "gsbStatusType")
 @XmlEnum
 public enum GsbStatusType {
 
+    /** The PRIMARY. */
     PRIMARY,
+    
+    /** The BACKUP. */
     BACKUP;
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the gsb status type
+     */
     public static GsbStatusType fromValue(String v) {
         return valueOf(v);
     }

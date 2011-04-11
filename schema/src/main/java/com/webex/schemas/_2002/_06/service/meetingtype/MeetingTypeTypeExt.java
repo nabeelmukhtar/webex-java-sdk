@@ -27,29 +27,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for meetingTypeTypeExt complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="meetingTypeTypeExt">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="productCodePrefix" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="active" type="{http://www.webex.com/schemas/2002/06/service/meetingtype}activeType"/>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="displayName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="limits" type="{http://www.webex.com/schemas/2002/06/service/meetingtype}limitsType" minOccurs="0"/>
- *         &lt;element name="options" type="{http://www.webex.com/schemas/2002/06/service/meetingtype}optionsType"/>
- *         &lt;element name="phoneNumbers" type="{http://www.webex.com/schemas/2002/06/service/meetingtype}phoneNumbersType"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class MeetingTypeTypeExt.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "meetingTypeTypeExt", propOrder = {
@@ -69,183 +47,156 @@ public class MeetingTypeTypeExt
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The product code prefix. */
     @XmlElement(required = true)
     protected String productCodePrefix;
+    
+    /** The active. */
     @XmlElement(required = true)
     protected ActiveType active;
+    
+    /** The name. */
     @XmlElement(required = true)
     protected String name;
+    
+    /** The display name. */
     protected String displayName;
+    
+    /** The limits. */
     protected LimitsType limits;
+    
+    /** The options. */
     @XmlElement(required = true)
     protected OptionsType options;
+    
+    /** The phone numbers. */
     @XmlElement(required = true)
     protected PhoneNumbersType phoneNumbers;
 
     /**
-     * Gets the value of the productCodePrefix property.
+     * Gets the product code prefix.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the product code prefix
      */
     public String getProductCodePrefix() {
         return productCodePrefix;
     }
 
     /**
-     * Sets the value of the productCodePrefix property.
+     * Sets the product code prefix.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new product code prefix
      */
     public void setProductCodePrefix(String value) {
         this.productCodePrefix = value;
     }
 
     /**
-     * Gets the value of the active property.
+     * Gets the active.
      * 
-     * @return
-     *     possible object is
-     *     {@link ActiveType }
-     *     
+     * @return the active
      */
     public ActiveType getActive() {
         return active;
     }
 
     /**
-     * Sets the value of the active property.
+     * Sets the active.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ActiveType }
-     *     
+     * @param value the new active
      */
     public void setActive(ActiveType value) {
         this.active = value;
     }
 
     /**
-     * Gets the value of the name property.
+     * Gets the name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the name
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Sets the value of the name property.
+     * Sets the name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new name
      */
     public void setName(String value) {
         this.name = value;
     }
 
     /**
-     * Gets the value of the displayName property.
+     * Gets the display name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the display name
      */
     public String getDisplayName() {
         return displayName;
     }
 
     /**
-     * Sets the value of the displayName property.
+     * Sets the display name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new display name
      */
     public void setDisplayName(String value) {
         this.displayName = value;
     }
 
     /**
-     * Gets the value of the limits property.
+     * Gets the limits.
      * 
-     * @return
-     *     possible object is
-     *     {@link LimitsType }
-     *     
+     * @return the limits
      */
     public LimitsType getLimits() {
         return limits;
     }
 
     /**
-     * Sets the value of the limits property.
+     * Sets the limits.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link LimitsType }
-     *     
+     * @param value the new limits
      */
     public void setLimits(LimitsType value) {
         this.limits = value;
     }
 
     /**
-     * Gets the value of the options property.
+     * Gets the options.
      * 
-     * @return
-     *     possible object is
-     *     {@link OptionsType }
-     *     
+     * @return the options
      */
     public OptionsType getOptions() {
         return options;
     }
 
     /**
-     * Sets the value of the options property.
+     * Sets the options.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link OptionsType }
-     *     
+     * @param value the new options
      */
     public void setOptions(OptionsType value) {
         this.options = value;
     }
 
     /**
-     * Gets the value of the phoneNumbers property.
+     * Gets the phone numbers.
      * 
-     * @return
-     *     possible object is
-     *     {@link PhoneNumbersType }
-     *     
+     * @return the phone numbers
      */
     public PhoneNumbersType getPhoneNumbers() {
         return phoneNumbers;
     }
 
     /**
-     * Sets the value of the phoneNumbers property.
+     * Sets the phone numbers.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link PhoneNumbersType }
-     *     
+     * @param value the new phone numbers
      */
     public void setPhoneNumbers(PhoneNumbersType value) {
         this.phoneNumbers = value;

@@ -22,35 +22,40 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for roleType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="roleType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="ATTENDEE"/>
- *     &lt;enumeration value="PRESENTER"/>
- *     &lt;enumeration value="HOST"/>
- *     &lt;enumeration value="LIMITED"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum RoleType.
  */
 @XmlType(name = "roleType")
 @XmlEnum
 public enum RoleType {
 
+    /** The ATTENDEE. */
     ATTENDEE,
+    
+    /** The PRESENTER. */
     PRESENTER,
+    
+    /** The HOST. */
     HOST,
+    
+    /** The LIMITED. */
     LIMITED;
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the role type
+     */
     public static RoleType fromValue(String v) {
         return valueOf(v);
     }

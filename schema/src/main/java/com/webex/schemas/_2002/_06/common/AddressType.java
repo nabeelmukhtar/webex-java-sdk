@@ -25,29 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for addressType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="addressType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="addressType" type="{http://www.webex.com/schemas/2002/06/common}addressTypeType" minOccurs="0"/>
- *         &lt;element name="address1" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="address2" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="city" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="state" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="zipCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="country" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class AddressType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "addressType", propOrder = {
@@ -63,179 +41,152 @@ public class AddressType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The address type. */
     @XmlElement(defaultValue = "PERSONAL")
     protected AddressTypeType addressType;
+    
+    /** The address1. */
     protected String address1;
+    
+    /** The address2. */
     protected String address2;
+    
+    /** The city. */
     protected String city;
+    
+    /** The state. */
     protected String state;
+    
+    /** The zip code. */
     protected String zipCode;
+    
+    /** The country. */
     protected String country;
 
     /**
-     * Gets the value of the addressType property.
+     * Gets the address type.
      * 
-     * @return
-     *     possible object is
-     *     {@link AddressTypeType }
-     *     
+     * @return the address type
      */
     public AddressTypeType getAddressType() {
         return addressType;
     }
 
     /**
-     * Sets the value of the addressType property.
+     * Sets the address type.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link AddressTypeType }
-     *     
+     * @param value the new address type
      */
     public void setAddressType(AddressTypeType value) {
         this.addressType = value;
     }
 
     /**
-     * Gets the value of the address1 property.
+     * Gets the address1.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the address1
      */
     public String getAddress1() {
         return address1;
     }
 
     /**
-     * Sets the value of the address1 property.
+     * Sets the address1.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new address1
      */
     public void setAddress1(String value) {
         this.address1 = value;
     }
 
     /**
-     * Gets the value of the address2 property.
+     * Gets the address2.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the address2
      */
     public String getAddress2() {
         return address2;
     }
 
     /**
-     * Sets the value of the address2 property.
+     * Sets the address2.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new address2
      */
     public void setAddress2(String value) {
         this.address2 = value;
     }
 
     /**
-     * Gets the value of the city property.
+     * Gets the city.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the city
      */
     public String getCity() {
         return city;
     }
 
     /**
-     * Sets the value of the city property.
+     * Sets the city.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new city
      */
     public void setCity(String value) {
         this.city = value;
     }
 
     /**
-     * Gets the value of the state property.
+     * Gets the state.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the state
      */
     public String getState() {
         return state;
     }
 
     /**
-     * Sets the value of the state property.
+     * Sets the state.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new state
      */
     public void setState(String value) {
         this.state = value;
     }
 
     /**
-     * Gets the value of the zipCode property.
+     * Gets the zip code.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the zip code
      */
     public String getZipCode() {
         return zipCode;
     }
 
     /**
-     * Sets the value of the zipCode property.
+     * Sets the zip code.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new zip code
      */
     public void setZipCode(String value) {
         this.zipCode = value;
     }
 
     /**
-     * Gets the value of the country property.
+     * Gets the country.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the country
      */
     public String getCountry() {
         return country;
     }
 
     /**
-     * Sets the value of the country property.
+     * Sets the country.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new country
      */
     public void setCountry(String value) {
         this.country = value;

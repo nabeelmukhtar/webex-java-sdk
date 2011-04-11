@@ -30,34 +30,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Java class for hintType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="hintType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="qticomment" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qticommentType" minOccurs="0"/>
- *         &lt;element name="hintmaterial" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}hintmaterialType" maxOccurs="unbounded"/>
- *       &lt;/sequence>
- *       &lt;attribute name="feedbackstyle" default="Complete">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="Complete"/>
- *             &lt;enumeration value="Incremental"/>
- *             &lt;enumeration value="Multilevel"/>
- *             &lt;enumeration value="Proprietary"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class HintType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "hintType", propOrder = {
@@ -68,59 +41,43 @@ public class HintType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The qticomment. */
     protected QticommentType qticomment;
+    
+    /** The hintmaterial. */
     @XmlElement(required = true)
     protected List<HintmaterialType> hintmaterial;
+    
+    /** The feedbackstyle. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String feedbackstyle;
 
     /**
-     * Gets the value of the qticomment property.
+     * Gets the qticomment.
      * 
-     * @return
-     *     possible object is
-     *     {@link QticommentType }
-     *     
+     * @return the qticomment
      */
     public QticommentType getQticomment() {
         return qticomment;
     }
 
     /**
-     * Sets the value of the qticomment property.
+     * Sets the qticomment.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link QticommentType }
-     *     
+     * @param value the new qticomment
      */
     public void setQticomment(QticommentType value) {
         this.qticomment = value;
     }
 
     /**
-     * Gets the value of the hintmaterial property.
+     * Gets the hintmaterial.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the hintmaterial property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getHintmaterial().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link HintmaterialType }
-     * 
-     * 
+     * @return the hintmaterial
      */
     public List<HintmaterialType> getHintmaterial() {
         if (hintmaterial == null) {
@@ -130,12 +87,9 @@ public class HintType
     }
 
     /**
-     * Gets the value of the feedbackstyle property.
+     * Gets the feedbackstyle.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the feedbackstyle
      */
     public String getFeedbackstyle() {
         if (feedbackstyle == null) {
@@ -146,12 +100,9 @@ public class HintType
     }
 
     /**
-     * Sets the value of the feedbackstyle property.
+     * Sets the feedbackstyle.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new feedbackstyle
      */
     public void setFeedbackstyle(String value) {
         this.feedbackstyle = value;

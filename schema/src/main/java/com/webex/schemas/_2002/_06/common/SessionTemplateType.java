@@ -25,24 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for sessionTemplateType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="sessionTemplateType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="use" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="default" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SessionTemplateType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "sessionTemplateType", propOrder = {
@@ -53,54 +36,47 @@ public class SessionTemplateType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The use. */
     protected String use;
+    
+    /** The _default. */
     @XmlElement(name = "default")
     protected Boolean _default;
 
     /**
-     * Gets the value of the use property.
+     * Gets the use.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the use
      */
     public String getUse() {
         return use;
     }
 
     /**
-     * Sets the value of the use property.
+     * Sets the use.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new use
      */
     public void setUse(String value) {
         this.use = value;
     }
 
     /**
-     * Gets the value of the default property.
+     * Checks if is default.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isDefault() {
         return _default;
     }
 
     /**
-     * Sets the value of the default property.
+     * Sets the default.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new default
      */
     public void setDefault(Boolean value) {
         this._default = value;

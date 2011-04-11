@@ -29,39 +29,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for lstRecording complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="lstRecording">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="listControl" type="{http://www.webex.com/schemas/2002/06/service/ep}listControlType" minOccurs="0"/>
- *         &lt;element name="createTimeScope" type="{http://www.webex.com/schemas/2002/06/service/ep}createTimeScopeType" minOccurs="0"/>
- *         &lt;element name="hostWebExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="returnSessionDetails" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="recordName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="serviceTypes" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="serviceType" type="{http://www.webex.com/schemas/2002/06/common}serviceTypeType" maxOccurs="unbounded" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class LstRecording.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstRecording", propOrder = {
@@ -78,179 +46,152 @@ public class LstRecording
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The list control. */
     protected ListControlType listControl;
+    
+    /** The create time scope. */
     protected CreateTimeScopeType createTimeScope;
+    
+    /** The host web ex id. */
     protected String hostWebExID;
+    
+    /** The session key. */
     protected Long sessionKey;
+    
+    /** The return session details. */
     @XmlElement(defaultValue = "false")
     protected Boolean returnSessionDetails;
+    
+    /** The record name. */
     protected String recordName;
+    
+    /** The service types. */
     protected LstRecording.ServiceTypes serviceTypes;
 
     /**
-     * Gets the value of the listControl property.
+     * Gets the list control.
      * 
-     * @return
-     *     possible object is
-     *     {@link ListControlType }
-     *     
+     * @return the list control
      */
     public ListControlType getListControl() {
         return listControl;
     }
 
     /**
-     * Sets the value of the listControl property.
+     * Sets the list control.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ListControlType }
-     *     
+     * @param value the new list control
      */
     public void setListControl(ListControlType value) {
         this.listControl = value;
     }
 
     /**
-     * Gets the value of the createTimeScope property.
+     * Gets the creates the time scope.
      * 
-     * @return
-     *     possible object is
-     *     {@link CreateTimeScopeType }
-     *     
+     * @return the creates the time scope
      */
     public CreateTimeScopeType getCreateTimeScope() {
         return createTimeScope;
     }
 
     /**
-     * Sets the value of the createTimeScope property.
+     * Sets the creates the time scope.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link CreateTimeScopeType }
-     *     
+     * @param value the new creates the time scope
      */
     public void setCreateTimeScope(CreateTimeScopeType value) {
         this.createTimeScope = value;
     }
 
     /**
-     * Gets the value of the hostWebExID property.
+     * Gets the host web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the host web ex id
      */
     public String getHostWebExID() {
         return hostWebExID;
     }
 
     /**
-     * Sets the value of the hostWebExID property.
+     * Sets the host web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new host web ex id
      */
     public void setHostWebExID(String value) {
         this.hostWebExID = value;
     }
 
     /**
-     * Gets the value of the sessionKey property.
+     * Gets the session key.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the session key
      */
     public Long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the value of the sessionKey property.
+     * Sets the session key.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new session key
      */
     public void setSessionKey(Long value) {
         this.sessionKey = value;
     }
 
     /**
-     * Gets the value of the returnSessionDetails property.
+     * Checks if is return session details.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isReturnSessionDetails() {
         return returnSessionDetails;
     }
 
     /**
-     * Sets the value of the returnSessionDetails property.
+     * Sets the return session details.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new return session details
      */
     public void setReturnSessionDetails(Boolean value) {
         this.returnSessionDetails = value;
     }
 
     /**
-     * Gets the value of the recordName property.
+     * Gets the record name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the record name
      */
     public String getRecordName() {
         return recordName;
     }
 
     /**
-     * Sets the value of the recordName property.
+     * Sets the record name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new record name
      */
     public void setRecordName(String value) {
         this.recordName = value;
     }
 
     /**
-     * Gets the value of the serviceTypes property.
+     * Gets the service types.
      * 
-     * @return
-     *     possible object is
-     *     {@link LstRecording.ServiceTypes }
-     *     
+     * @return the service types
      */
     public LstRecording.ServiceTypes getServiceTypes() {
         return serviceTypes;
     }
 
     /**
-     * Sets the value of the serviceTypes property.
+     * Sets the service types.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link LstRecording.ServiceTypes }
-     *     
+     * @param value the new service types
      */
     public void setServiceTypes(LstRecording.ServiceTypes value) {
         this.serviceTypes = value;
@@ -258,23 +199,7 @@ public class LstRecording
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="serviceType" type="{http://www.webex.com/schemas/2002/06/common}serviceTypeType" maxOccurs="unbounded" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class ServiceTypes.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -284,30 +209,16 @@ public class LstRecording
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The service type. */
         protected List<ServiceTypeType> serviceType;
 
         /**
-         * Gets the value of the serviceType property.
+         * Gets the service type.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the serviceType property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getServiceType().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link ServiceTypeType }
-         * 
-         * 
+         * @return the service type
          */
         public List<ServiceTypeType> getServiceType() {
             if (serviceType == null) {

@@ -22,41 +22,49 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for dayOfWeekType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="dayOfWeekType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="SUNDAY"/>
- *     &lt;enumeration value="MONDAY"/>
- *     &lt;enumeration value="TUESDAY"/>
- *     &lt;enumeration value="WEDNESDAY"/>
- *     &lt;enumeration value="THURSDAY"/>
- *     &lt;enumeration value="FRIDAY"/>
- *     &lt;enumeration value="SATURDAY"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum DayOfWeekType.
  */
 @XmlType(name = "dayOfWeekType")
 @XmlEnum
 public enum DayOfWeekType {
 
+    /** The SUNDAY. */
     SUNDAY,
+    
+    /** The MONDAY. */
     MONDAY,
+    
+    /** The TUESDAY. */
     TUESDAY,
+    
+    /** The WEDNESDAY. */
     WEDNESDAY,
+    
+    /** The THURSDAY. */
     THURSDAY,
+    
+    /** The FRIDAY. */
     FRIDAY,
+    
+    /** The SATURDAY. */
     SATURDAY;
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the day of week type
+     */
     public static DayOfWeekType fromValue(String v) {
         return valueOf(v);
     }

@@ -22,35 +22,40 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for codeDisplayType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="codeDisplayType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="NOT_USED"/>
- *     &lt;enumeration value="OPTIONAL"/>
- *     &lt;enumeration value="REQUIRED"/>
- *     &lt;enumeration value="ADMIN_SET"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum CodeDisplayType.
  */
 @XmlType(name = "codeDisplayType")
 @XmlEnum
 public enum CodeDisplayType {
 
+    /** The NO t_ used. */
     NOT_USED,
+    
+    /** The OPTIONAL. */
     OPTIONAL,
+    
+    /** The REQUIRED. */
     REQUIRED,
+    
+    /** The ADMI n_ set. */
     ADMIN_SET;
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the code display type
+     */
     public static CodeDisplayType fromValue(String v) {
         return valueOf(v);
     }

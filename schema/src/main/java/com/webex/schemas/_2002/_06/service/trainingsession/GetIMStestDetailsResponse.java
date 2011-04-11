@@ -27,23 +27,7 @@ import com.webex.schemas._2002._06.service.trainingsessionqtiasi.Questestinterop
 
 
 /**
- * <p>Java class for getIMStestDetailsResponse complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="getIMStestDetailsResponse">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="questestinterop" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}questestinteropType"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GetIMStestDetailsResponse.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getIMStestDetailsResponse", propOrder = {
@@ -54,29 +38,26 @@ public class GetIMStestDetailsResponse
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The questestinterop. */
     @XmlElement(required = true)
     protected QuestestinteropType questestinterop;
 
     /**
-     * Gets the value of the questestinterop property.
+     * Gets the questestinterop.
      * 
-     * @return
-     *     possible object is
-     *     {@link QuestestinteropType }
-     *     
+     * @return the questestinterop
      */
     public QuestestinteropType getQuestestinterop() {
         return questestinterop;
     }
 
     /**
-     * Sets the value of the questestinterop property.
+     * Sets the questestinterop.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link QuestestinteropType }
-     *     
+     * @param value the new questestinterop
      */
     public void setQuestestinterop(QuestestinteropType value) {
         this.questestinterop = value;

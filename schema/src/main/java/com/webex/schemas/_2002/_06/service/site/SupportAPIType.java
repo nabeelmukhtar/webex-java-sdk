@@ -25,28 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for supportAPIType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="supportAPIType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="autoLogin" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="aspAndPHPAPI" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="backwardAPI" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="xmlAPI" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="cAPI" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="scorm" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SupportAPIType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "supportAPIType", propOrder = {
@@ -61,154 +40,131 @@ public class SupportAPIType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The auto login. */
     protected Boolean autoLogin;
+    
+    /** The asp and phpapi. */
     protected Boolean aspAndPHPAPI;
+    
+    /** The backward api. */
     protected Boolean backwardAPI;
+    
+    /** The xml api. */
     protected Boolean xmlAPI;
+    
+    /** The capi. */
     @XmlElement(name = "cAPI", defaultValue = "false")
     protected Boolean capi;
+    
+    /** The scorm. */
     protected Boolean scorm;
 
     /**
-     * Gets the value of the autoLogin property.
+     * Checks if is auto login.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isAutoLogin() {
         return autoLogin;
     }
 
     /**
-     * Sets the value of the autoLogin property.
+     * Sets the auto login.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new auto login
      */
     public void setAutoLogin(Boolean value) {
         this.autoLogin = value;
     }
 
     /**
-     * Gets the value of the aspAndPHPAPI property.
+     * Checks if is asp and phpapi.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isAspAndPHPAPI() {
         return aspAndPHPAPI;
     }
 
     /**
-     * Sets the value of the aspAndPHPAPI property.
+     * Sets the asp and phpapi.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new asp and phpapi
      */
     public void setAspAndPHPAPI(Boolean value) {
         this.aspAndPHPAPI = value;
     }
 
     /**
-     * Gets the value of the backwardAPI property.
+     * Checks if is backward api.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isBackwardAPI() {
         return backwardAPI;
     }
 
     /**
-     * Sets the value of the backwardAPI property.
+     * Sets the backward api.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new backward api
      */
     public void setBackwardAPI(Boolean value) {
         this.backwardAPI = value;
     }
 
     /**
-     * Gets the value of the xmlAPI property.
+     * Checks if is xml api.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isXmlAPI() {
         return xmlAPI;
     }
 
     /**
-     * Sets the value of the xmlAPI property.
+     * Sets the xml api.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new xml api
      */
     public void setXmlAPI(Boolean value) {
         this.xmlAPI = value;
     }
 
     /**
-     * Gets the value of the capi property.
+     * Checks if is capi.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isCAPI() {
         return capi;
     }
 
     /**
-     * Sets the value of the capi property.
+     * Sets the cAPI.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new cAPI
      */
     public void setCAPI(Boolean value) {
         this.capi = value;
     }
 
     /**
-     * Gets the value of the scorm property.
+     * Checks if is scorm.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isScorm() {
         return scorm;
     }
 
     /**
-     * Sets the value of the scorm property.
+     * Sets the scorm.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new scorm
      */
     public void setScorm(Boolean value) {
         this.scorm = value;

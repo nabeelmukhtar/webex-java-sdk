@@ -25,23 +25,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for getloginurlUserResponse complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="getloginurlUserResponse">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="userLoginURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GetloginurlUserResponse.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getloginurlUserResponse", propOrder = {
@@ -52,28 +36,25 @@ public class GetloginurlUserResponse
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The user login url. */
     protected String userLoginURL;
 
     /**
-     * Gets the value of the userLoginURL property.
+     * Gets the user login url.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the user login url
      */
     public String getUserLoginURL() {
         return userLoginURL;
     }
 
     /**
-     * Sets the value of the userLoginURL property.
+     * Sets the user login url.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new user login url
      */
     public void setUserLoginURL(String value) {
         this.userLoginURL = value;

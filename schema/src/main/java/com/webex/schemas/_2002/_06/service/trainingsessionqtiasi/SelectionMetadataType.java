@@ -28,33 +28,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Java class for selection_metadataType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="selection_metadataType">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
- *       &lt;attribute name="mdname" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="mdoperator" use="required">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="EQ"/>
- *             &lt;enumeration value="NEQ"/>
- *             &lt;enumeration value="LT"/>
- *             &lt;enumeration value="LTE"/>
- *             &lt;enumeration value="GT"/>
- *             &lt;enumeration value="GTE"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SelectionMetadataType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "selection_metadataType", propOrder = {
@@ -63,82 +37,71 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 public class SelectionMetadataType implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The value. */
     @XmlValue
     protected String value;
+    
+    /** The mdname. */
     @XmlAttribute(required = true)
     protected String mdname;
+    
+    /** The mdoperator. */
     @XmlAttribute(required = true)
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String mdoperator;
 
     /**
-     * Gets the value of the value property.
+     * Gets the value.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the value
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value of the value property.
+     * Sets the value.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new value
      */
     public void setValue(String value) {
         this.value = value;
     }
 
     /**
-     * Gets the value of the mdname property.
+     * Gets the mdname.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the mdname
      */
     public String getMdname() {
         return mdname;
     }
 
     /**
-     * Sets the value of the mdname property.
+     * Sets the mdname.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new mdname
      */
     public void setMdname(String value) {
         this.mdname = value;
     }
 
     /**
-     * Gets the value of the mdoperator property.
+     * Gets the mdoperator.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the mdoperator
      */
     public String getMdoperator() {
         return mdoperator;
     }
 
     /**
-     * Sets the value of the mdoperator property.
+     * Sets the mdoperator.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new mdoperator
      */
     public void setMdoperator(String value) {
         this.mdoperator = value;

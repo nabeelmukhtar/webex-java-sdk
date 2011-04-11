@@ -28,30 +28,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for timeZoneType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="timeZoneType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="gmtOffset" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="shortName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="hideTimeZoneName" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="fallInDST" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="standardLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="daylightLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class TimeZoneType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "timeZoneType", propOrder = {
@@ -68,210 +45,179 @@ public class TimeZoneType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The time zone id. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long timeZoneID;
+    
+    /** The gmt offset. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long gmtOffset;
+    
+    /** The description. */
     @XmlElement(required = true)
     protected String description;
+    
+    /** The short name. */
     protected String shortName;
+    
+    /** The hide time zone name. */
     protected Boolean hideTimeZoneName;
+    
+    /** The fall in dst. */
     protected Boolean fallInDST;
+    
+    /** The standard label. */
     protected String standardLabel;
+    
+    /** The daylight label. */
     protected String daylightLabel;
 
     /**
-     * Gets the value of the timeZoneID property.
+     * Gets the time zone id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the time zone id
      */
     public Long getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the value of the timeZoneID property.
+     * Sets the time zone id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new time zone id
      */
     public void setTimeZoneID(Long value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the value of the gmtOffset property.
+     * Gets the gmt offset.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the gmt offset
      */
     public Long getGmtOffset() {
         return gmtOffset;
     }
 
     /**
-     * Sets the value of the gmtOffset property.
+     * Sets the gmt offset.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new gmt offset
      */
     public void setGmtOffset(Long value) {
         this.gmtOffset = value;
     }
 
     /**
-     * Gets the value of the description property.
+     * Gets the description.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the description
      */
     public String getDescription() {
         return description;
     }
 
     /**
-     * Sets the value of the description property.
+     * Sets the description.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new description
      */
     public void setDescription(String value) {
         this.description = value;
     }
 
     /**
-     * Gets the value of the shortName property.
+     * Gets the short name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the short name
      */
     public String getShortName() {
         return shortName;
     }
 
     /**
-     * Sets the value of the shortName property.
+     * Sets the short name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new short name
      */
     public void setShortName(String value) {
         this.shortName = value;
     }
 
     /**
-     * Gets the value of the hideTimeZoneName property.
+     * Checks if is hide time zone name.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isHideTimeZoneName() {
         return hideTimeZoneName;
     }
 
     /**
-     * Sets the value of the hideTimeZoneName property.
+     * Sets the hide time zone name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new hide time zone name
      */
     public void setHideTimeZoneName(Boolean value) {
         this.hideTimeZoneName = value;
     }
 
     /**
-     * Gets the value of the fallInDST property.
+     * Checks if is fall in dst.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isFallInDST() {
         return fallInDST;
     }
 
     /**
-     * Sets the value of the fallInDST property.
+     * Sets the fall in dst.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new fall in dst
      */
     public void setFallInDST(Boolean value) {
         this.fallInDST = value;
     }
 
     /**
-     * Gets the value of the standardLabel property.
+     * Gets the standard label.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the standard label
      */
     public String getStandardLabel() {
         return standardLabel;
     }
 
     /**
-     * Sets the value of the standardLabel property.
+     * Sets the standard label.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new standard label
      */
     public void setStandardLabel(String value) {
         this.standardLabel = value;
     }
 
     /**
-     * Gets the value of the daylightLabel property.
+     * Gets the daylight label.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the daylight label
      */
     public String getDaylightLabel() {
         return daylightLabel;
     }
 
     /**
-     * Sets the value of the daylightLabel property.
+     * Sets the daylight label.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new daylight label
      */
     public void setDaylightLabel(String value) {
         this.daylightLabel = value;

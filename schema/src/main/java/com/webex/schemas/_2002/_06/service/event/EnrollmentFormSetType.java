@@ -24,24 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for enrollmentFormSetType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="enrollmentFormSetType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="standardFields" type="{http://www.webex.com/schemas/2002/06/service/event}standardFieldsType" minOccurs="0"/>
- *         &lt;element name="customFields" type="{http://www.webex.com/schemas/2002/06/service/event}customFieldsInstanceType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class EnrollmentFormSetType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "enrollmentFormSetType", propOrder = {
@@ -52,53 +35,46 @@ public class EnrollmentFormSetType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The standard fields. */
     protected StandardFieldsType standardFields;
+    
+    /** The custom fields. */
     protected CustomFieldsInstanceType customFields;
 
     /**
-     * Gets the value of the standardFields property.
+     * Gets the standard fields.
      * 
-     * @return
-     *     possible object is
-     *     {@link StandardFieldsType }
-     *     
+     * @return the standard fields
      */
     public StandardFieldsType getStandardFields() {
         return standardFields;
     }
 
     /**
-     * Sets the value of the standardFields property.
+     * Sets the standard fields.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link StandardFieldsType }
-     *     
+     * @param value the new standard fields
      */
     public void setStandardFields(StandardFieldsType value) {
         this.standardFields = value;
     }
 
     /**
-     * Gets the value of the customFields property.
+     * Gets the custom fields.
      * 
-     * @return
-     *     possible object is
-     *     {@link CustomFieldsInstanceType }
-     *     
+     * @return the custom fields
      */
     public CustomFieldsInstanceType getCustomFields() {
         return customFields;
     }
 
     /**
-     * Sets the value of the customFields property.
+     * Sets the custom fields.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link CustomFieldsInstanceType }
-     *     
+     * @param value the new custom fields
      */
     public void setCustomFields(CustomFieldsInstanceType value) {
         this.customFields = value;

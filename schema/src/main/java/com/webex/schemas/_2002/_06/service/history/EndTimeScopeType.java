@@ -25,24 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for endTimeScopeType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="endTimeScopeType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="sessionEndTimeStart" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="sessionEndTimeEnd" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class EndTimeScopeType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "endTimeScopeType", propOrder = {
@@ -53,55 +36,48 @@ public class EndTimeScopeType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The session end time start. */
     @XmlElement(required = true)
     protected String sessionEndTimeStart;
+    
+    /** The session end time end. */
     @XmlElement(required = true)
     protected String sessionEndTimeEnd;
 
     /**
-     * Gets the value of the sessionEndTimeStart property.
+     * Gets the session end time start.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the session end time start
      */
     public String getSessionEndTimeStart() {
         return sessionEndTimeStart;
     }
 
     /**
-     * Sets the value of the sessionEndTimeStart property.
+     * Sets the session end time start.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new session end time start
      */
     public void setSessionEndTimeStart(String value) {
         this.sessionEndTimeStart = value;
     }
 
     /**
-     * Gets the value of the sessionEndTimeEnd property.
+     * Gets the session end time end.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the session end time end
      */
     public String getSessionEndTimeEnd() {
         return sessionEndTimeEnd;
     }
 
     /**
-     * Sets the value of the sessionEndTimeEnd property.
+     * Sets the session end time end.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new session end time end
      */
     public void setSessionEndTimeEnd(String value) {
         this.sessionEndTimeEnd = value;

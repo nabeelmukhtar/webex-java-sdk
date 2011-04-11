@@ -25,25 +25,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for createSalesSessionResponse complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="createSalesSessionResponse">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="meetingKey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="iCalendarURL" type="{http://www.webex.com/schemas/2002/06/service/sales}iCalendarURL" minOccurs="0"/>
- *         &lt;element name="guestToken" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class CreateSalesSessionResponse.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "createSalesSessionResponse", propOrder = {
@@ -56,78 +38,67 @@ public class CreateSalesSessionResponse
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The meeting key. */
     protected Long meetingKey;
+    
+    /** The i calendar url. */
     protected ICalendarURL iCalendarURL;
+    
+    /** The guest token. */
     protected String guestToken;
 
     /**
-     * Gets the value of the meetingKey property.
+     * Gets the meeting key.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the meeting key
      */
     public Long getMeetingKey() {
         return meetingKey;
     }
 
     /**
-     * Sets the value of the meetingKey property.
+     * Sets the meeting key.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new meeting key
      */
     public void setMeetingKey(Long value) {
         this.meetingKey = value;
     }
 
     /**
-     * Gets the value of the iCalendarURL property.
+     * Gets the i calendar url.
      * 
-     * @return
-     *     possible object is
-     *     {@link ICalendarURL }
-     *     
+     * @return the i calendar url
      */
     public ICalendarURL getICalendarURL() {
         return iCalendarURL;
     }
 
     /**
-     * Sets the value of the iCalendarURL property.
+     * Sets the i calendar url.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ICalendarURL }
-     *     
+     * @param value the new i calendar url
      */
     public void setICalendarURL(ICalendarURL value) {
         this.iCalendarURL = value;
     }
 
     /**
-     * Gets the value of the guestToken property.
+     * Gets the guest token.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the guest token
      */
     public String getGuestToken() {
         return guestToken;
     }
 
     /**
-     * Sets the value of the guestToken property.
+     * Sets the guest token.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new guest token
      */
     public void setGuestToken(String value) {
         this.guestToken = value;

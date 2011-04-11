@@ -24,26 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for getMeetingResponse complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="getMeetingResponse">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/meeting}meetingInstanceType">
- *       &lt;sequence>
- *         &lt;element name="hostKey" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="eventID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="guestToken" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="hostType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GetMeetingResponse.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getMeetingResponse", propOrder = {
@@ -57,103 +38,88 @@ public class GetMeetingResponse
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The host key. */
     protected String hostKey;
+    
+    /** The event id. */
     protected Long eventID;
+    
+    /** The guest token. */
     protected String guestToken;
+    
+    /** The host type. */
     protected String hostType;
 
     /**
-     * Gets the value of the hostKey property.
+     * Gets the host key.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the host key
      */
     public String getHostKey() {
         return hostKey;
     }
 
     /**
-     * Sets the value of the hostKey property.
+     * Sets the host key.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new host key
      */
     public void setHostKey(String value) {
         this.hostKey = value;
     }
 
     /**
-     * Gets the value of the eventID property.
+     * Gets the event id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the event id
      */
     public Long getEventID() {
         return eventID;
     }
 
     /**
-     * Sets the value of the eventID property.
+     * Sets the event id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new event id
      */
     public void setEventID(Long value) {
         this.eventID = value;
     }
 
     /**
-     * Gets the value of the guestToken property.
+     * Gets the guest token.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the guest token
      */
     public String getGuestToken() {
         return guestToken;
     }
 
     /**
-     * Sets the value of the guestToken property.
+     * Sets the guest token.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new guest token
      */
     public void setGuestToken(String value) {
         this.guestToken = value;
     }
 
     /**
-     * Gets the value of the hostType property.
+     * Gets the host type.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the host type
      */
     public String getHostType() {
         return hostType;
     }
 
     /**
-     * Sets the value of the hostType property.
+     * Sets the host type.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new host type
      */
     public void setHostType(String value) {
         this.hostType = value;

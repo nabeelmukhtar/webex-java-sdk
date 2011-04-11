@@ -25,24 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for generic_identifierType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="generic_identifierType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="type_label" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}type_labelType"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}identifier_string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GenericIdentifierType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "generic_identifierType", propOrder = {
@@ -53,55 +36,48 @@ public class GenericIdentifierType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The type label. */
     @XmlElement(name = "type_label", required = true)
     protected TypeLabelType typeLabel;
+    
+    /** The identifier string. */
     @XmlElement(name = "identifier_string", required = true)
     protected String identifierString;
 
     /**
-     * Gets the value of the typeLabel property.
+     * Gets the type label.
      * 
-     * @return
-     *     possible object is
-     *     {@link TypeLabelType }
-     *     
+     * @return the type label
      */
     public TypeLabelType getTypeLabel() {
         return typeLabel;
     }
 
     /**
-     * Sets the value of the typeLabel property.
+     * Sets the type label.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TypeLabelType }
-     *     
+     * @param value the new type label
      */
     public void setTypeLabel(TypeLabelType value) {
         this.typeLabel = value;
     }
 
     /**
-     * Gets the value of the identifierString property.
+     * Gets the identifier string.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the identifier string
      */
     public String getIdentifierString() {
         return identifierString;
     }
 
     /**
-     * Sets the value of the identifierString property.
+     * Sets the identifier string.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new identifier string
      */
     public void setIdentifierString(String value) {
         this.identifierString = value;

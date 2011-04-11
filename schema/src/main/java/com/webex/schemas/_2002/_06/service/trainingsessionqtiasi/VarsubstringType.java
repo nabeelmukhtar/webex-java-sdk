@@ -28,30 +28,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Java class for varsubstringType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="varsubstringType">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
- *       &lt;attribute name="index" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="respident" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="case" default="No">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="Yes"/>
- *             &lt;enumeration value="No"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class VarsubstringType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "varsubstringType", propOrder = {
@@ -61,96 +38,84 @@ public class VarsubstringType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The value. */
     @XmlValue
     protected String value;
+    
+    /** The index. */
     @XmlAttribute
     protected String index;
+    
+    /** The respident. */
     @XmlAttribute(required = true)
     protected String respident;
+    
+    /** The _case. */
     @XmlAttribute(name = "case")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String _case;
 
     /**
-     * Gets the value of the value property.
+     * Gets the value.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the value
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value of the value property.
+     * Sets the value.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new value
      */
     public void setValue(String value) {
         this.value = value;
     }
 
     /**
-     * Gets the value of the index property.
+     * Gets the index.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the index
      */
     public String getIndex() {
         return index;
     }
 
     /**
-     * Sets the value of the index property.
+     * Sets the index.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new index
      */
     public void setIndex(String value) {
         this.index = value;
     }
 
     /**
-     * Gets the value of the respident property.
+     * Gets the respident.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the respident
      */
     public String getRespident() {
         return respident;
     }
 
     /**
-     * Sets the value of the respident property.
+     * Sets the respident.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new respident
      */
     public void setRespident(String value) {
         this.respident = value;
     }
 
     /**
-     * Gets the value of the case property.
+     * Gets the case.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the case
      */
     public String getCase() {
         if (_case == null) {
@@ -161,12 +126,9 @@ public class VarsubstringType
     }
 
     /**
-     * Sets the value of the case property.
+     * Sets the case.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new case
      */
     public void setCase(String value) {
         this._case = value;

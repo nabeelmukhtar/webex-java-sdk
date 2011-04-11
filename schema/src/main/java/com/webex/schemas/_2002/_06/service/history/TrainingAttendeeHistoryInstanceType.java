@@ -25,45 +25,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for trainingAttendeeHistoryInstanceType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="trainingAttendeeHistoryInstanceType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="confName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="attendeeName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="attendeeEmail" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="startTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="endTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="duration" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="registered" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="invited" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="company" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="title" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="phone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="address1" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="address2" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="city" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="state" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="country" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="zip" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="ipAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="participantType" type="{http://www.webex.com/schemas/2002/06/service/history}participantTypeType" minOccurs="0"/>
- *         &lt;element name="voipDuration" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="clientAgent" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="confID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class TrainingAttendeeHistoryInstanceType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "trainingAttendeeHistoryInstanceType", propOrder = {
@@ -96,578 +58,487 @@ public class TrainingAttendeeHistoryInstanceType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The session key. */
     protected Long sessionKey;
+    
+    /** The conf name. */
     protected String confName;
+    
+    /** The attendee name. */
     protected String attendeeName;
+    
+    /** The attendee email. */
     protected String attendeeEmail;
+    
+    /** The start time. */
     protected String startTime;
+    
+    /** The end time. */
     protected String endTime;
+    
+    /** The duration. */
     protected Integer duration;
+    
+    /** The registered. */
     protected String registered;
+    
+    /** The invited. */
     protected String invited;
+    
+    /** The company. */
     protected String company;
+    
+    /** The title. */
     protected String title;
+    
+    /** The phone. */
     protected String phone;
+    
+    /** The address1. */
     protected String address1;
+    
+    /** The address2. */
     protected String address2;
+    
+    /** The city. */
     protected String city;
+    
+    /** The state. */
     protected String state;
+    
+    /** The country. */
     protected String country;
+    
+    /** The zip. */
     protected String zip;
+    
+    /** The ip address. */
     protected String ipAddress;
+    
+    /** The participant type. */
     protected ParticipantTypeType participantType;
+    
+    /** The voip duration. */
     protected Integer voipDuration;
+    
+    /** The client agent. */
     protected String clientAgent;
+    
+    /** The conf id. */
     protected Long confID;
 
     /**
-     * Gets the value of the sessionKey property.
+     * Gets the session key.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the session key
      */
     public Long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the value of the sessionKey property.
+     * Sets the session key.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new session key
      */
     public void setSessionKey(Long value) {
         this.sessionKey = value;
     }
 
     /**
-     * Gets the value of the confName property.
+     * Gets the conf name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the conf name
      */
     public String getConfName() {
         return confName;
     }
 
     /**
-     * Sets the value of the confName property.
+     * Sets the conf name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new conf name
      */
     public void setConfName(String value) {
         this.confName = value;
     }
 
     /**
-     * Gets the value of the attendeeName property.
+     * Gets the attendee name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the attendee name
      */
     public String getAttendeeName() {
         return attendeeName;
     }
 
     /**
-     * Sets the value of the attendeeName property.
+     * Sets the attendee name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new attendee name
      */
     public void setAttendeeName(String value) {
         this.attendeeName = value;
     }
 
     /**
-     * Gets the value of the attendeeEmail property.
+     * Gets the attendee email.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the attendee email
      */
     public String getAttendeeEmail() {
         return attendeeEmail;
     }
 
     /**
-     * Sets the value of the attendeeEmail property.
+     * Sets the attendee email.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new attendee email
      */
     public void setAttendeeEmail(String value) {
         this.attendeeEmail = value;
     }
 
     /**
-     * Gets the value of the startTime property.
+     * Gets the start time.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the start time
      */
     public String getStartTime() {
         return startTime;
     }
 
     /**
-     * Sets the value of the startTime property.
+     * Sets the start time.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new start time
      */
     public void setStartTime(String value) {
         this.startTime = value;
     }
 
     /**
-     * Gets the value of the endTime property.
+     * Gets the end time.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the end time
      */
     public String getEndTime() {
         return endTime;
     }
 
     /**
-     * Sets the value of the endTime property.
+     * Sets the end time.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new end time
      */
     public void setEndTime(String value) {
         this.endTime = value;
     }
 
     /**
-     * Gets the value of the duration property.
+     * Gets the duration.
      * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     * @return the duration
      */
     public Integer getDuration() {
         return duration;
     }
 
     /**
-     * Sets the value of the duration property.
+     * Sets the duration.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     * @param value the new duration
      */
     public void setDuration(Integer value) {
         this.duration = value;
     }
 
     /**
-     * Gets the value of the registered property.
+     * Gets the registered.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the registered
      */
     public String getRegistered() {
         return registered;
     }
 
     /**
-     * Sets the value of the registered property.
+     * Sets the registered.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new registered
      */
     public void setRegistered(String value) {
         this.registered = value;
     }
 
     /**
-     * Gets the value of the invited property.
+     * Gets the invited.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the invited
      */
     public String getInvited() {
         return invited;
     }
 
     /**
-     * Sets the value of the invited property.
+     * Sets the invited.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new invited
      */
     public void setInvited(String value) {
         this.invited = value;
     }
 
     /**
-     * Gets the value of the company property.
+     * Gets the company.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the company
      */
     public String getCompany() {
         return company;
     }
 
     /**
-     * Sets the value of the company property.
+     * Sets the company.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new company
      */
     public void setCompany(String value) {
         this.company = value;
     }
 
     /**
-     * Gets the value of the title property.
+     * Gets the title.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the title
      */
     public String getTitle() {
         return title;
     }
 
     /**
-     * Sets the value of the title property.
+     * Sets the title.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new title
      */
     public void setTitle(String value) {
         this.title = value;
     }
 
     /**
-     * Gets the value of the phone property.
+     * Gets the phone.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the phone
      */
     public String getPhone() {
         return phone;
     }
 
     /**
-     * Sets the value of the phone property.
+     * Sets the phone.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new phone
      */
     public void setPhone(String value) {
         this.phone = value;
     }
 
     /**
-     * Gets the value of the address1 property.
+     * Gets the address1.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the address1
      */
     public String getAddress1() {
         return address1;
     }
 
     /**
-     * Sets the value of the address1 property.
+     * Sets the address1.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new address1
      */
     public void setAddress1(String value) {
         this.address1 = value;
     }
 
     /**
-     * Gets the value of the address2 property.
+     * Gets the address2.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the address2
      */
     public String getAddress2() {
         return address2;
     }
 
     /**
-     * Sets the value of the address2 property.
+     * Sets the address2.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new address2
      */
     public void setAddress2(String value) {
         this.address2 = value;
     }
 
     /**
-     * Gets the value of the city property.
+     * Gets the city.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the city
      */
     public String getCity() {
         return city;
     }
 
     /**
-     * Sets the value of the city property.
+     * Sets the city.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new city
      */
     public void setCity(String value) {
         this.city = value;
     }
 
     /**
-     * Gets the value of the state property.
+     * Gets the state.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the state
      */
     public String getState() {
         return state;
     }
 
     /**
-     * Sets the value of the state property.
+     * Sets the state.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new state
      */
     public void setState(String value) {
         this.state = value;
     }
 
     /**
-     * Gets the value of the country property.
+     * Gets the country.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the country
      */
     public String getCountry() {
         return country;
     }
 
     /**
-     * Sets the value of the country property.
+     * Sets the country.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new country
      */
     public void setCountry(String value) {
         this.country = value;
     }
 
     /**
-     * Gets the value of the zip property.
+     * Gets the zip.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the zip
      */
     public String getZip() {
         return zip;
     }
 
     /**
-     * Sets the value of the zip property.
+     * Sets the zip.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new zip
      */
     public void setZip(String value) {
         this.zip = value;
     }
 
     /**
-     * Gets the value of the ipAddress property.
+     * Gets the ip address.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the ip address
      */
     public String getIpAddress() {
         return ipAddress;
     }
 
     /**
-     * Sets the value of the ipAddress property.
+     * Sets the ip address.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new ip address
      */
     public void setIpAddress(String value) {
         this.ipAddress = value;
     }
 
     /**
-     * Gets the value of the participantType property.
+     * Gets the participant type.
      * 
-     * @return
-     *     possible object is
-     *     {@link ParticipantTypeType }
-     *     
+     * @return the participant type
      */
     public ParticipantTypeType getParticipantType() {
         return participantType;
     }
 
     /**
-     * Sets the value of the participantType property.
+     * Sets the participant type.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ParticipantTypeType }
-     *     
+     * @param value the new participant type
      */
     public void setParticipantType(ParticipantTypeType value) {
         this.participantType = value;
     }
 
     /**
-     * Gets the value of the voipDuration property.
+     * Gets the voip duration.
      * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     * @return the voip duration
      */
     public Integer getVoipDuration() {
         return voipDuration;
     }
 
     /**
-     * Sets the value of the voipDuration property.
+     * Sets the voip duration.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     * @param value the new voip duration
      */
     public void setVoipDuration(Integer value) {
         this.voipDuration = value;
     }
 
     /**
-     * Gets the value of the clientAgent property.
+     * Gets the client agent.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the client agent
      */
     public String getClientAgent() {
         return clientAgent;
     }
 
     /**
-     * Sets the value of the clientAgent property.
+     * Sets the client agent.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new client agent
      */
     public void setClientAgent(String value) {
         this.clientAgent = value;
     }
 
     /**
-     * Gets the value of the confID property.
+     * Gets the conf id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the conf id
      */
     public Long getConfID() {
         return confID;
     }
 
     /**
-     * Sets the value of the confID property.
+     * Sets the conf id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new conf id
      */
     public void setConfID(Long value) {
         this.confID = value;

@@ -26,45 +26,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for feedbackAttendeeType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="feedbackAttendeeType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="attendeeID" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="feedbackFields" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="defaultFields" type="{http://www.webex.com/schemas/2002/06/service/attendee}feedbackDefaultFieldsType" minOccurs="0"/>
- *                   &lt;element name="customFields" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="field" type="{http://www.webex.com/schemas/2002/06/service/attendee}fieldType" maxOccurs="unbounded" minOccurs="0"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class FeedbackAttendeeType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "feedbackAttendeeType", propOrder = {
@@ -75,45 +37,46 @@ public class FeedbackAttendeeType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The attendee id. */
     protected long attendeeID;
+    
+    /** The feedback fields. */
     protected FeedbackAttendeeType.FeedbackFields feedbackFields;
 
     /**
-     * Gets the value of the attendeeID property.
+     * Gets the attendee id.
      * 
+     * @return the attendee id
      */
     public long getAttendeeID() {
         return attendeeID;
     }
 
     /**
-     * Sets the value of the attendeeID property.
+     * Sets the attendee id.
      * 
+     * @param value the new attendee id
      */
     public void setAttendeeID(long value) {
         this.attendeeID = value;
     }
 
     /**
-     * Gets the value of the feedbackFields property.
+     * Gets the feedback fields.
      * 
-     * @return
-     *     possible object is
-     *     {@link FeedbackAttendeeType.FeedbackFields }
-     *     
+     * @return the feedback fields
      */
     public FeedbackAttendeeType.FeedbackFields getFeedbackFields() {
         return feedbackFields;
     }
 
     /**
-     * Sets the value of the feedbackFields property.
+     * Sets the feedback fields.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link FeedbackAttendeeType.FeedbackFields }
-     *     
+     * @param value the new feedback fields
      */
     public void setFeedbackFields(FeedbackAttendeeType.FeedbackFields value) {
         this.feedbackFields = value;
@@ -121,34 +84,7 @@ public class FeedbackAttendeeType
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="defaultFields" type="{http://www.webex.com/schemas/2002/06/service/attendee}feedbackDefaultFieldsType" minOccurs="0"/>
-     *         &lt;element name="customFields" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="field" type="{http://www.webex.com/schemas/2002/06/service/attendee}fieldType" maxOccurs="unbounded" minOccurs="0"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class FeedbackFields.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -159,53 +95,46 @@ public class FeedbackAttendeeType
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The default fields. */
         protected FeedbackDefaultFieldsType defaultFields;
+        
+        /** The custom fields. */
         protected FeedbackAttendeeType.FeedbackFields.CustomFields customFields;
 
         /**
-         * Gets the value of the defaultFields property.
+         * Gets the default fields.
          * 
-         * @return
-         *     possible object is
-         *     {@link FeedbackDefaultFieldsType }
-         *     
+         * @return the default fields
          */
         public FeedbackDefaultFieldsType getDefaultFields() {
             return defaultFields;
         }
 
         /**
-         * Sets the value of the defaultFields property.
+         * Sets the default fields.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link FeedbackDefaultFieldsType }
-         *     
+         * @param value the new default fields
          */
         public void setDefaultFields(FeedbackDefaultFieldsType value) {
             this.defaultFields = value;
         }
 
         /**
-         * Gets the value of the customFields property.
+         * Gets the custom fields.
          * 
-         * @return
-         *     possible object is
-         *     {@link FeedbackAttendeeType.FeedbackFields.CustomFields }
-         *     
+         * @return the custom fields
          */
         public FeedbackAttendeeType.FeedbackFields.CustomFields getCustomFields() {
             return customFields;
         }
 
         /**
-         * Sets the value of the customFields property.
+         * Sets the custom fields.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link FeedbackAttendeeType.FeedbackFields.CustomFields }
-         *     
+         * @param value the new custom fields
          */
         public void setCustomFields(FeedbackAttendeeType.FeedbackFields.CustomFields value) {
             this.customFields = value;
@@ -213,23 +142,7 @@ public class FeedbackAttendeeType
 
 
         /**
-         * <p>Java class for anonymous complex type.
-         * 
-         * <p>The following schema fragment specifies the expected content contained within this class.
-         * 
-         * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="field" type="{http://www.webex.com/schemas/2002/06/service/attendee}fieldType" maxOccurs="unbounded" minOccurs="0"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
-         * </pre>
-         * 
-         * 
+         * The Class CustomFields.
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -239,30 +152,16 @@ public class FeedbackAttendeeType
             implements Serializable
         {
 
+            /** The Constant serialVersionUID. */
             private final static long serialVersionUID = 2461660169443089969L;
+            
+            /** The field. */
             protected List<FieldType> field;
 
             /**
-             * Gets the value of the field property.
+             * Gets the field.
              * 
-             * <p>
-             * This accessor method returns a reference to the live list,
-             * not a snapshot. Therefore any modification you make to the
-             * returned list will be present inside the JAXB object.
-             * This is why there is not a <CODE>set</CODE> method for the field property.
-             * 
-             * <p>
-             * For example, to add a new item, do as follows:
-             * <pre>
-             *    getField().add(newItem);
-             * </pre>
-             * 
-             * 
-             * <p>
-             * Objects of the following type(s) are allowed in the list
-             * {@link FieldType }
-             * 
-             * 
+             * @return the field
              */
             public List<FieldType> getField() {
                 if (field == null) {

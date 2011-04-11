@@ -33,14 +33,29 @@ import com.webex.schemas._2002._06.service.site.ObjectFactory;
 import com.webex.schemas._2002._06.service.site.SiteType;
 import com.webex.schemas._2002._06.service.site.TimeZoneType;
 
+/**
+ * The Class SiteServiceImpl.
+ */
 public class SiteServiceImpl extends WebExJaxbService implements
 	SiteService {
 
+	/**
+	 * Instantiates a new site service impl.
+	 * 
+	 * @param webExId the web ex id
+	 * @param password the password
+	 * @param siteId the site id
+	 * @param siteName the site name
+	 * @param partnerId the partner id
+	 */
 	public SiteServiceImpl(String webExId, String password,
 			Long siteId, String siteName, String partnerId) {
 		super(webExId, password, siteId, siteName, partnerId);
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.SiteService#getSite(boolean)
+	 */
 	@Override
 	public SiteType getSite(boolean eventCenter) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -59,6 +74,9 @@ public class SiteServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.SiteService#getTimezones(java.util.List, java.lang.String)
+	 */
 	@Override
 	public List<TimeZoneType> getTimezones(List<Long> timeZoneID, String date) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);

@@ -29,56 +29,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for metaDataType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="metaDataType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="confName" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="512"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="agenda" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="2500"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="account" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="128"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="opportunity" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="128"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="sessionType" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="defaultHighestMT" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="intAccountID" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="intOpptyID" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="extSystemID" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="sessionTemplate" type="{http://www.webex.com/schemas/2002/06/common}sessionTemplateType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class MetaDataType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "metaDataType", propOrder = {
@@ -97,266 +48,227 @@ public class MetaDataType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The conf name. */
     protected String confName;
+    
+    /** The agenda. */
     protected String agenda;
+    
+    /** The account. */
     protected String account;
+    
+    /** The opportunity. */
     protected String opportunity;
+    
+    /** The session type. */
     @XmlElement(type = String.class, defaultValue = "-1")
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long sessionType;
+    
+    /** The default highest mt. */
     @XmlElement(defaultValue = "true")
     protected Boolean defaultHighestMT;
+    
+    /** The int account id. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long intAccountID;
+    
+    /** The int oppty id. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long intOpptyID;
+    
+    /** The ext system id. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long extSystemID;
+    
+    /** The session template. */
     protected SessionTemplateType sessionTemplate;
 
     /**
-     * Gets the value of the confName property.
+     * Gets the conf name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the conf name
      */
     public String getConfName() {
         return confName;
     }
 
     /**
-     * Sets the value of the confName property.
+     * Sets the conf name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new conf name
      */
     public void setConfName(String value) {
         this.confName = value;
     }
 
     /**
-     * Gets the value of the agenda property.
+     * Gets the agenda.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the agenda
      */
     public String getAgenda() {
         return agenda;
     }
 
     /**
-     * Sets the value of the agenda property.
+     * Sets the agenda.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new agenda
      */
     public void setAgenda(String value) {
         this.agenda = value;
     }
 
     /**
-     * Gets the value of the account property.
+     * Gets the account.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the account
      */
     public String getAccount() {
         return account;
     }
 
     /**
-     * Sets the value of the account property.
+     * Sets the account.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new account
      */
     public void setAccount(String value) {
         this.account = value;
     }
 
     /**
-     * Gets the value of the opportunity property.
+     * Gets the opportunity.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the opportunity
      */
     public String getOpportunity() {
         return opportunity;
     }
 
     /**
-     * Sets the value of the opportunity property.
+     * Sets the opportunity.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new opportunity
      */
     public void setOpportunity(String value) {
         this.opportunity = value;
     }
 
     /**
-     * Gets the value of the sessionType property.
+     * Gets the session type.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the session type
      */
     public Long getSessionType() {
         return sessionType;
     }
 
     /**
-     * Sets the value of the sessionType property.
+     * Sets the session type.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new session type
      */
     public void setSessionType(Long value) {
         this.sessionType = value;
     }
 
     /**
-     * Gets the value of the defaultHighestMT property.
+     * Checks if is default highest mt.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isDefaultHighestMT() {
         return defaultHighestMT;
     }
 
     /**
-     * Sets the value of the defaultHighestMT property.
+     * Sets the default highest mt.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new default highest mt
      */
     public void setDefaultHighestMT(Boolean value) {
         this.defaultHighestMT = value;
     }
 
     /**
-     * Gets the value of the intAccountID property.
+     * Gets the int account id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the int account id
      */
     public Long getIntAccountID() {
         return intAccountID;
     }
 
     /**
-     * Sets the value of the intAccountID property.
+     * Sets the int account id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new int account id
      */
     public void setIntAccountID(Long value) {
         this.intAccountID = value;
     }
 
     /**
-     * Gets the value of the intOpptyID property.
+     * Gets the int oppty id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the int oppty id
      */
     public Long getIntOpptyID() {
         return intOpptyID;
     }
 
     /**
-     * Sets the value of the intOpptyID property.
+     * Sets the int oppty id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new int oppty id
      */
     public void setIntOpptyID(Long value) {
         this.intOpptyID = value;
     }
 
     /**
-     * Gets the value of the extSystemID property.
+     * Gets the ext system id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the ext system id
      */
     public Long getExtSystemID() {
         return extSystemID;
     }
 
     /**
-     * Sets the value of the extSystemID property.
+     * Sets the ext system id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new ext system id
      */
     public void setExtSystemID(Long value) {
         this.extSystemID = value;
     }
 
     /**
-     * Gets the value of the sessionTemplate property.
+     * Gets the session template.
      * 
-     * @return
-     *     possible object is
-     *     {@link SessionTemplateType }
-     *     
+     * @return the session template
      */
     public SessionTemplateType getSessionTemplate() {
         return sessionTemplate;
     }
 
     /**
-     * Sets the value of the sessionTemplate property.
+     * Sets the session template.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link SessionTemplateType }
-     *     
+     * @param value the new session template
      */
     public void setSessionTemplate(SessionTemplateType value) {
         this.sessionTemplate = value;

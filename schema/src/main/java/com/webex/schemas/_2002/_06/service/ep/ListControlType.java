@@ -24,24 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for listControlType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="listControlType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="startFrom" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="maximumNum" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ListControlType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "listControlType", propOrder = {
@@ -52,45 +35,46 @@ public class ListControlType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The start from. */
     protected long startFrom;
+    
+    /** The maximum num. */
     protected Long maximumNum;
 
     /**
-     * Gets the value of the startFrom property.
+     * Gets the start from.
      * 
+     * @return the start from
      */
     public long getStartFrom() {
         return startFrom;
     }
 
     /**
-     * Sets the value of the startFrom property.
+     * Sets the start from.
      * 
+     * @param value the new start from
      */
     public void setStartFrom(long value) {
         this.startFrom = value;
     }
 
     /**
-     * Gets the value of the maximumNum property.
+     * Gets the maximum num.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the maximum num
      */
     public Long getMaximumNum() {
         return maximumNum;
     }
 
     /**
-     * Sets the value of the maximumNum property.
+     * Sets the maximum num.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new maximum num
      */
     public void setMaximumNum(Long value) {
         this.maximumNum = value;

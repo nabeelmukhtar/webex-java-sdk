@@ -23,47 +23,60 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for serviceTypeType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="serviceTypeType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="MeetingCenter"/>
- *     &lt;enumeration value="EventCenter"/>
- *     &lt;enumeration value="TrainingCenter"/>
- *     &lt;enumeration value="SupportCenter"/>
- *     &lt;enumeration value="SalesCenter"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum ServiceTypeType.
  */
 @XmlType(name = "serviceTypeType")
 @XmlEnum
 public enum ServiceTypeType {
 
+    /** The MEETIN g_ center. */
     @XmlEnumValue("MeetingCenter")
     MEETING_CENTER("MeetingCenter"),
+    
+    /** The EVEN t_ center. */
     @XmlEnumValue("EventCenter")
     EVENT_CENTER("EventCenter"),
+    
+    /** The TRAININ g_ center. */
     @XmlEnumValue("TrainingCenter")
     TRAINING_CENTER("TrainingCenter"),
+    
+    /** The SUPPOR t_ center. */
     @XmlEnumValue("SupportCenter")
     SUPPORT_CENTER("SupportCenter"),
+    
+    /** The SALE s_ center. */
     @XmlEnumValue("SalesCenter")
     SALES_CENTER("SalesCenter");
+    
+    /** The value. */
     private final String value;
 
+    /**
+     * Instantiates a new service type type.
+     * 
+     * @param v the v
+     */
     ServiceTypeType(String v) {
         value = v;
     }
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the service type type
+     */
     public static ServiceTypeType fromValue(String v) {
         for (ServiceTypeType c: ServiceTypeType.values()) {
             if (c.value.equals(v)) {

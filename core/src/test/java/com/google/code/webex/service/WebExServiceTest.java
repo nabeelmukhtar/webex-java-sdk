@@ -29,23 +29,21 @@ import org.junit.BeforeClass;
 import com.google.code.webex.service.constant.TestConstants;
 
 /**
- * The Class UClassifyClientTest.
- * 
- * @author Nabeel Mukhtar
+ * The Class WebExServiceTest.
  */
 public abstract class WebExServiceTest extends TestCase {
 
-    /** Field description. */
+    /** The factory. */
     protected WebExServiceFactory factory;
 
-    /** Field description. */
+    /** The Constant RESOURCE_MISSING_MESSAGE. */
 	protected static final String RESOURCE_MISSING_MESSAGE = "Please define a test %s in TestConstants.properties file."; 
     
 
     /**
      * Sets the up before class.
      * 
-     * @throws java.lang.Exception      * @throws Exception the exception
+     * @throws Exception the exception
      */
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {}
@@ -53,15 +51,13 @@ public abstract class WebExServiceTest extends TestCase {
     /**
      * Tear down after class.
      * 
-     * @throws java.lang.Exception      * @throws Exception the exception
+     * @throws Exception the exception
      */
     @AfterClass
     public static void tearDownAfterClass() throws Exception {}
 
-    /**
-     * Sets the up.
-     * 
-     * @throws java.lang.Exception      * @throws Exception the exception
+    /* (non-Javadoc)
+     * @see junit.framework.TestCase#setUp()
      */
     @Before
     public void setUp() throws Exception {
@@ -72,10 +68,8 @@ public abstract class WebExServiceTest extends TestCase {
 //                TestConstants.UCLASSIFY_TEST_WRITE_KEY);
     }
 
-    /**
-     * Tear down.
-     * 
-     * @throws java.lang.Exception      * @throws Exception the exception
+    /* (non-Javadoc)
+     * @see junit.framework.TestCase#tearDown()
      */
     @After
     public void tearDown() throws Exception {

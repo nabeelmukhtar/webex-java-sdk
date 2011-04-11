@@ -31,31 +31,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for checkboxGroupType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="checkboxGroupType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldType">
- *       &lt;sequence>
- *         &lt;element name="label">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="256"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="checkBox" type="{http://www.webex.com/schemas/2002/06/service/event}checkboxType" maxOccurs="unbounded"/>
- *         &lt;element name="index" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class CheckboxGroupType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "checkboxGroupType", propOrder = {
@@ -71,61 +47,45 @@ public class CheckboxGroupType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The label. */
     @XmlElement(required = true)
     protected String label;
+    
+    /** The check box. */
     @XmlElement(required = true)
     protected List<CheckboxType> checkBox;
+    
+    /** The index. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long index;
 
     /**
-     * Gets the value of the label property.
+     * Gets the label.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the label
      */
     public String getLabel() {
         return label;
     }
 
     /**
-     * Sets the value of the label property.
+     * Sets the label.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new label
      */
     public void setLabel(String value) {
         this.label = value;
     }
 
     /**
-     * Gets the value of the checkBox property.
+     * Gets the check box.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the checkBox property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getCheckBox().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CheckboxType }
-     * 
-     * 
+     * @return the check box
      */
     public List<CheckboxType> getCheckBox() {
         if (checkBox == null) {
@@ -135,24 +95,18 @@ public class CheckboxGroupType
     }
 
     /**
-     * Gets the value of the index property.
+     * Gets the index.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the index
      */
     public Long getIndex() {
         return index;
     }
 
     /**
-     * Sets the value of the index property.
+     * Sets the index.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new index
      */
     public void setIndex(Long value) {
         this.index = value;

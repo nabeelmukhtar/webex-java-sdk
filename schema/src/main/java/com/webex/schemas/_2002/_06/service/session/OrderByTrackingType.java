@@ -23,68 +23,89 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for orderByTrackingType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="orderByTrackingType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="HOSTWEBEXID"/>
- *     &lt;enumeration value="CONFNAME"/>
- *     &lt;enumeration value="STARTTIME"/>
- *     &lt;enumeration value="TRACKINGCODE1"/>
- *     &lt;enumeration value="TRACKINGCODE2"/>
- *     &lt;enumeration value="TRACKINGCODE3"/>
- *     &lt;enumeration value="TRACKINGCODE4"/>
- *     &lt;enumeration value="TRACKINGCODE5"/>
- *     &lt;enumeration value="TRACKINGCODE6"/>
- *     &lt;enumeration value="TRACKINGCODE7"/>
- *     &lt;enumeration value="TRACKINGCODE8"/>
- *     &lt;enumeration value="TRACKINGCODE9"/>
- *     &lt;enumeration value="TRACKINGCODE10"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum OrderByTrackingType.
  */
 @XmlType(name = "orderByTrackingType")
 @XmlEnum
 public enum OrderByTrackingType {
 
+    /** The HOSTWEBEXID. */
     HOSTWEBEXID("HOSTWEBEXID"),
+    
+    /** The CONFNAME. */
     CONFNAME("CONFNAME"),
+    
+    /** The STARTTIME. */
     STARTTIME("STARTTIME"),
+    
+    /** The TRACKINGCOD e_1. */
     @XmlEnumValue("TRACKINGCODE1")
     TRACKINGCODE_1("TRACKINGCODE1"),
+    
+    /** The TRACKINGCOD e_2. */
     @XmlEnumValue("TRACKINGCODE2")
     TRACKINGCODE_2("TRACKINGCODE2"),
+    
+    /** The TRACKINGCOD e_3. */
     @XmlEnumValue("TRACKINGCODE3")
     TRACKINGCODE_3("TRACKINGCODE3"),
+    
+    /** The TRACKINGCOD e_4. */
     @XmlEnumValue("TRACKINGCODE4")
     TRACKINGCODE_4("TRACKINGCODE4"),
+    
+    /** The TRACKINGCOD e_5. */
     @XmlEnumValue("TRACKINGCODE5")
     TRACKINGCODE_5("TRACKINGCODE5"),
+    
+    /** The TRACKINGCOD e_6. */
     @XmlEnumValue("TRACKINGCODE6")
     TRACKINGCODE_6("TRACKINGCODE6"),
+    
+    /** The TRACKINGCOD e_7. */
     @XmlEnumValue("TRACKINGCODE7")
     TRACKINGCODE_7("TRACKINGCODE7"),
+    
+    /** The TRACKINGCOD e_8. */
     @XmlEnumValue("TRACKINGCODE8")
     TRACKINGCODE_8("TRACKINGCODE8"),
+    
+    /** The TRACKINGCOD e_9. */
     @XmlEnumValue("TRACKINGCODE9")
     TRACKINGCODE_9("TRACKINGCODE9"),
+    
+    /** The TRACKINGCOD e_10. */
     @XmlEnumValue("TRACKINGCODE10")
     TRACKINGCODE_10("TRACKINGCODE10");
+    
+    /** The value. */
     private final String value;
 
+    /**
+     * Instantiates a new order by tracking type.
+     * 
+     * @param v the v
+     */
     OrderByTrackingType(String v) {
         value = v;
     }
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the order by tracking type
+     */
     public static OrderByTrackingType fromValue(String v) {
         for (OrderByTrackingType c: OrderByTrackingType.values()) {
             if (c.value.equals(v)) {

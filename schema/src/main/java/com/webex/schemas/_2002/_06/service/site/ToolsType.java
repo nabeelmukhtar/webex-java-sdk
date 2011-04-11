@@ -25,53 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for toolsType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="toolsType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="businessDirectory" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="officeCalendar" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="meetingCalendar" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="displayOnCallAssistLink" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="displayProfileLink" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="recordingAndPlayback" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="recordingEditor" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="publishRecordings" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="instantMeeting" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="emails" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="outlookIntegration" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="wirelessAccess" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="allowPublicAccess" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="ssl" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="e2e" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="handsOnLab" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="holMaxLabs" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="holMaxComputers" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="userLockDown" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="meetingAssist" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="sms" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="encryption" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="NONE"/>
- *               &lt;enumeration value="E2E"/>
- *               &lt;enumeration value="PKI"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="internalMeeting" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ToolsType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "toolsType", propOrder = {
@@ -103,580 +57,489 @@ public class ToolsType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The business directory. */
     protected Boolean businessDirectory;
+    
+    /** The office calendar. */
     protected Boolean officeCalendar;
+    
+    /** The meeting calendar. */
     protected Boolean meetingCalendar;
+    
+    /** The display on call assist link. */
     protected Boolean displayOnCallAssistLink;
+    
+    /** The display profile link. */
     @XmlElement(defaultValue = "false")
     protected Boolean displayProfileLink;
+    
+    /** The recording and playback. */
     protected Boolean recordingAndPlayback;
+    
+    /** The recording editor. */
     protected Boolean recordingEditor;
+    
+    /** The publish recordings. */
     protected Boolean publishRecordings;
+    
+    /** The instant meeting. */
     protected Boolean instantMeeting;
+    
+    /** The emails. */
     protected Boolean emails;
+    
+    /** The outlook integration. */
     protected Boolean outlookIntegration;
+    
+    /** The wireless access. */
     protected Boolean wirelessAccess;
+    
+    /** The allow public access. */
     protected Boolean allowPublicAccess;
+    
+    /** The ssl. */
     protected Boolean ssl;
+    
+    /** The e2 e. */
     @XmlElement(name = "e2e")
     protected Boolean e2E;
+    
+    /** The hands on lab. */
     protected Boolean handsOnLab;
+    
+    /** The hol max labs. */
     protected Long holMaxLabs;
+    
+    /** The hol max computers. */
     protected Long holMaxComputers;
+    
+    /** The user lock down. */
     protected Boolean userLockDown;
+    
+    /** The meeting assist. */
     protected Boolean meetingAssist;
+    
+    /** The sms. */
     protected Boolean sms;
+    
+    /** The encryption. */
     protected String encryption;
+    
+    /** The internal meeting. */
     protected Boolean internalMeeting;
 
     /**
-     * Gets the value of the businessDirectory property.
+     * Checks if is business directory.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isBusinessDirectory() {
         return businessDirectory;
     }
 
     /**
-     * Sets the value of the businessDirectory property.
+     * Sets the business directory.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new business directory
      */
     public void setBusinessDirectory(Boolean value) {
         this.businessDirectory = value;
     }
 
     /**
-     * Gets the value of the officeCalendar property.
+     * Checks if is office calendar.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isOfficeCalendar() {
         return officeCalendar;
     }
 
     /**
-     * Sets the value of the officeCalendar property.
+     * Sets the office calendar.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new office calendar
      */
     public void setOfficeCalendar(Boolean value) {
         this.officeCalendar = value;
     }
 
     /**
-     * Gets the value of the meetingCalendar property.
+     * Checks if is meeting calendar.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isMeetingCalendar() {
         return meetingCalendar;
     }
 
     /**
-     * Sets the value of the meetingCalendar property.
+     * Sets the meeting calendar.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new meeting calendar
      */
     public void setMeetingCalendar(Boolean value) {
         this.meetingCalendar = value;
     }
 
     /**
-     * Gets the value of the displayOnCallAssistLink property.
+     * Checks if is display on call assist link.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isDisplayOnCallAssistLink() {
         return displayOnCallAssistLink;
     }
 
     /**
-     * Sets the value of the displayOnCallAssistLink property.
+     * Sets the display on call assist link.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new display on call assist link
      */
     public void setDisplayOnCallAssistLink(Boolean value) {
         this.displayOnCallAssistLink = value;
     }
 
     /**
-     * Gets the value of the displayProfileLink property.
+     * Checks if is display profile link.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isDisplayProfileLink() {
         return displayProfileLink;
     }
 
     /**
-     * Sets the value of the displayProfileLink property.
+     * Sets the display profile link.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new display profile link
      */
     public void setDisplayProfileLink(Boolean value) {
         this.displayProfileLink = value;
     }
 
     /**
-     * Gets the value of the recordingAndPlayback property.
+     * Checks if is recording and playback.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isRecordingAndPlayback() {
         return recordingAndPlayback;
     }
 
     /**
-     * Sets the value of the recordingAndPlayback property.
+     * Sets the recording and playback.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new recording and playback
      */
     public void setRecordingAndPlayback(Boolean value) {
         this.recordingAndPlayback = value;
     }
 
     /**
-     * Gets the value of the recordingEditor property.
+     * Checks if is recording editor.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isRecordingEditor() {
         return recordingEditor;
     }
 
     /**
-     * Sets the value of the recordingEditor property.
+     * Sets the recording editor.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new recording editor
      */
     public void setRecordingEditor(Boolean value) {
         this.recordingEditor = value;
     }
 
     /**
-     * Gets the value of the publishRecordings property.
+     * Checks if is publish recordings.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isPublishRecordings() {
         return publishRecordings;
     }
 
     /**
-     * Sets the value of the publishRecordings property.
+     * Sets the publish recordings.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new publish recordings
      */
     public void setPublishRecordings(Boolean value) {
         this.publishRecordings = value;
     }
 
     /**
-     * Gets the value of the instantMeeting property.
+     * Checks if is instant meeting.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isInstantMeeting() {
         return instantMeeting;
     }
 
     /**
-     * Sets the value of the instantMeeting property.
+     * Sets the instant meeting.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new instant meeting
      */
     public void setInstantMeeting(Boolean value) {
         this.instantMeeting = value;
     }
 
     /**
-     * Gets the value of the emails property.
+     * Checks if is emails.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isEmails() {
         return emails;
     }
 
     /**
-     * Sets the value of the emails property.
+     * Sets the emails.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new emails
      */
     public void setEmails(Boolean value) {
         this.emails = value;
     }
 
     /**
-     * Gets the value of the outlookIntegration property.
+     * Checks if is outlook integration.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isOutlookIntegration() {
         return outlookIntegration;
     }
 
     /**
-     * Sets the value of the outlookIntegration property.
+     * Sets the outlook integration.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new outlook integration
      */
     public void setOutlookIntegration(Boolean value) {
         this.outlookIntegration = value;
     }
 
     /**
-     * Gets the value of the wirelessAccess property.
+     * Checks if is wireless access.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isWirelessAccess() {
         return wirelessAccess;
     }
 
     /**
-     * Sets the value of the wirelessAccess property.
+     * Sets the wireless access.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new wireless access
      */
     public void setWirelessAccess(Boolean value) {
         this.wirelessAccess = value;
     }
 
     /**
-     * Gets the value of the allowPublicAccess property.
+     * Checks if is allow public access.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isAllowPublicAccess() {
         return allowPublicAccess;
     }
 
     /**
-     * Sets the value of the allowPublicAccess property.
+     * Sets the allow public access.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new allow public access
      */
     public void setAllowPublicAccess(Boolean value) {
         this.allowPublicAccess = value;
     }
 
     /**
-     * Gets the value of the ssl property.
+     * Checks if is ssl.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isSsl() {
         return ssl;
     }
 
     /**
-     * Sets the value of the ssl property.
+     * Sets the ssl.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new ssl
      */
     public void setSsl(Boolean value) {
         this.ssl = value;
     }
 
     /**
-     * Gets the value of the e2E property.
+     * Checks if is e2 e.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isE2E() {
         return e2E;
     }
 
     /**
-     * Sets the value of the e2E property.
+     * Sets the e2 e.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new e2 e
      */
     public void setE2E(Boolean value) {
         this.e2E = value;
     }
 
     /**
-     * Gets the value of the handsOnLab property.
+     * Checks if is hands on lab.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isHandsOnLab() {
         return handsOnLab;
     }
 
     /**
-     * Sets the value of the handsOnLab property.
+     * Sets the hands on lab.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new hands on lab
      */
     public void setHandsOnLab(Boolean value) {
         this.handsOnLab = value;
     }
 
     /**
-     * Gets the value of the holMaxLabs property.
+     * Gets the hol max labs.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the hol max labs
      */
     public Long getHolMaxLabs() {
         return holMaxLabs;
     }
 
     /**
-     * Sets the value of the holMaxLabs property.
+     * Sets the hol max labs.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new hol max labs
      */
     public void setHolMaxLabs(Long value) {
         this.holMaxLabs = value;
     }
 
     /**
-     * Gets the value of the holMaxComputers property.
+     * Gets the hol max computers.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the hol max computers
      */
     public Long getHolMaxComputers() {
         return holMaxComputers;
     }
 
     /**
-     * Sets the value of the holMaxComputers property.
+     * Sets the hol max computers.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new hol max computers
      */
     public void setHolMaxComputers(Long value) {
         this.holMaxComputers = value;
     }
 
     /**
-     * Gets the value of the userLockDown property.
+     * Checks if is user lock down.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isUserLockDown() {
         return userLockDown;
     }
 
     /**
-     * Sets the value of the userLockDown property.
+     * Sets the user lock down.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new user lock down
      */
     public void setUserLockDown(Boolean value) {
         this.userLockDown = value;
     }
 
     /**
-     * Gets the value of the meetingAssist property.
+     * Checks if is meeting assist.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isMeetingAssist() {
         return meetingAssist;
     }
 
     /**
-     * Sets the value of the meetingAssist property.
+     * Sets the meeting assist.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new meeting assist
      */
     public void setMeetingAssist(Boolean value) {
         this.meetingAssist = value;
     }
 
     /**
-     * Gets the value of the sms property.
+     * Checks if is sms.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isSms() {
         return sms;
     }
 
     /**
-     * Sets the value of the sms property.
+     * Sets the sms.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new sms
      */
     public void setSms(Boolean value) {
         this.sms = value;
     }
 
     /**
-     * Gets the value of the encryption property.
+     * Gets the encryption.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the encryption
      */
     public String getEncryption() {
         return encryption;
     }
 
     /**
-     * Sets the value of the encryption property.
+     * Sets the encryption.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new encryption
      */
     public void setEncryption(String value) {
         this.encryption = value;
     }
 
     /**
-     * Gets the value of the internalMeeting property.
+     * Checks if is internal meeting.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isInternalMeeting() {
         return internalMeeting;
     }
 
     /**
-     * Sets the value of the internalMeeting property.
+     * Sets the internal meeting.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new internal meeting
      */
     public void setInternalMeeting(Boolean value) {
         this.internalMeeting = value;

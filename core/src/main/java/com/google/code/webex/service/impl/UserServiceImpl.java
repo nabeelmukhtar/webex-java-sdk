@@ -53,14 +53,29 @@ import com.webex.schemas._2002._06.service.user.TemplateTypeType;
 import com.webex.schemas._2002._06.service.user.UploadPMRImage;
 import com.webex.schemas._2002._06.service.user.UserSummaryInstanceType;
 
+/**
+ * The Class UserServiceImpl.
+ */
 public class UserServiceImpl extends WebExJaxbService implements
 	UserService {
 
+	/**
+	 * Instantiates a new user service impl.
+	 * 
+	 * @param webExId the web ex id
+	 * @param password the password
+	 * @param siteId the site id
+	 * @param siteName the site name
+	 * @param partnerId the partner id
+	 */
 	public UserServiceImpl(String webExId, String password,
 			Long siteId, String siteName, String partnerId) {
 		super(webExId, password, siteId, siteName, partnerId);
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.UserService#authenticateUser(java.lang.String)
+	 */
 	@Override
 	public String authenticateUser(String samlResponse) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -77,6 +92,9 @@ public class UserServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.UserService#createUser(com.webex.schemas._2002._06.service.user.CreateUser)
+	 */
 	@Override
 	public Long createUser(CreateUser user) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -90,6 +108,9 @@ public class UserServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.UserService#deleteUser(java.util.List, boolean)
+	 */
 	@Override
 	public void deleteUser(List<String> webExIds, boolean syncWebOffice) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -105,6 +126,9 @@ public class UserServiceImpl extends WebExJaxbService implements
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.UserService#deleteSessionTemplates(java.util.List, com.webex.schemas._2002._06.service.user.TemplateTypeType)
+	 */
 	@Override
 	public void deleteSessionTemplates(List<SessionTemplateType> sessionTemplates, TemplateTypeType templateType) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -119,6 +143,9 @@ public class UserServiceImpl extends WebExJaxbService implements
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.UserService#getLoginTicket()
+	 */
 	@Override
 	public String getLoginTicket() {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -134,6 +161,9 @@ public class UserServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.UserService#getLoginUrl(java.lang.String, java.lang.String)
+	 */
 	@Override
 	public String getLoginUrl(String webExId, String callbackUrl) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -151,6 +181,9 @@ public class UserServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.UserService#getLogoutUrl(java.lang.String, java.lang.String)
+	 */
 	@Override
 	public String getLogoutUrl(String webExId, String callbackUrl) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -168,6 +201,9 @@ public class UserServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.UserService#getUser(java.lang.String)
+	 */
 	@Override
 	public GetUserResponse getUser(String webExId) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -184,6 +220,9 @@ public class UserServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.UserService#getUserSummaryList()
+	 */
 	@Override
 	public List<UserSummaryInstanceType> getUserSummaryList() {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -206,6 +245,9 @@ public class UserServiceImpl extends WebExJaxbService implements
 		return new ArrayList<UserSummaryInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.UserService#setUser(com.webex.schemas._2002._06.service.user.SetUser)
+	 */
 	@Override
 	public void setUser(SetUser user) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -217,6 +259,9 @@ public class UserServiceImpl extends WebExJaxbService implements
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.UserService#uploadPmrImage(com.webex.schemas._2002._06.service.user.ImageForType, byte[])
+	 */
 	@Override
 	public void uploadPmrImage(ImageForType imageFor, byte[] imageData) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);

@@ -28,24 +28,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for registerMeetingAttendee complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="registerMeetingAttendee">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="attendees" type="{http://www.webex.com/schemas/2002/06/service/attendee}registerAttendeeType" maxOccurs="unbounded"/>
- *         &lt;element name="validateFormat" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class RegisterMeetingAttendee.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "registerMeetingAttendee", propOrder = {
@@ -57,32 +40,20 @@ public class RegisterMeetingAttendee
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The attendees. */
     @XmlElement(required = true)
     protected List<RegisterAttendeeType> attendees;
+    
+    /** The validate format. */
     protected Boolean validateFormat;
 
     /**
-     * Gets the value of the attendees property.
+     * Gets the attendees.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the attendees property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getAttendees().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link RegisterAttendeeType }
-     * 
-     * 
+     * @return the attendees
      */
     public List<RegisterAttendeeType> getAttendees() {
         if (attendees == null) {
@@ -92,24 +63,18 @@ public class RegisterMeetingAttendee
     }
 
     /**
-     * Gets the value of the validateFormat property.
+     * Checks if is validate format.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isValidateFormat() {
         return validateFormat;
     }
 
     /**
-     * Sets the value of the validateFormat property.
+     * Sets the validate format.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new validate format
      */
     public void setValidateFormat(Boolean value) {
         this.validateFormat = value;

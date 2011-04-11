@@ -24,27 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for displayTypeType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="displayTypeType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="prodSvcAnnounce" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="trainingInfo" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="eNewsletters" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="promotionsOffers" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="pressReleases" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class DisplayTypeType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "displayTypeType", propOrder = {
@@ -58,128 +38,109 @@ public class DisplayTypeType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The prod svc announce. */
     protected Boolean prodSvcAnnounce;
+    
+    /** The training info. */
     protected Boolean trainingInfo;
+    
+    /** The e newsletters. */
     protected Boolean eNewsletters;
+    
+    /** The promotions offers. */
     protected Boolean promotionsOffers;
+    
+    /** The press releases. */
     protected Boolean pressReleases;
 
     /**
-     * Gets the value of the prodSvcAnnounce property.
+     * Checks if is prod svc announce.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isProdSvcAnnounce() {
         return prodSvcAnnounce;
     }
 
     /**
-     * Sets the value of the prodSvcAnnounce property.
+     * Sets the prod svc announce.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new prod svc announce
      */
     public void setProdSvcAnnounce(Boolean value) {
         this.prodSvcAnnounce = value;
     }
 
     /**
-     * Gets the value of the trainingInfo property.
+     * Checks if is training info.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isTrainingInfo() {
         return trainingInfo;
     }
 
     /**
-     * Sets the value of the trainingInfo property.
+     * Sets the training info.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new training info
      */
     public void setTrainingInfo(Boolean value) {
         this.trainingInfo = value;
     }
 
     /**
-     * Gets the value of the eNewsletters property.
+     * Checks if is e newsletters.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isENewsletters() {
         return eNewsletters;
     }
 
     /**
-     * Sets the value of the eNewsletters property.
+     * Sets the e newsletters.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new e newsletters
      */
     public void setENewsletters(Boolean value) {
         this.eNewsletters = value;
     }
 
     /**
-     * Gets the value of the promotionsOffers property.
+     * Checks if is promotions offers.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isPromotionsOffers() {
         return promotionsOffers;
     }
 
     /**
-     * Sets the value of the promotionsOffers property.
+     * Sets the promotions offers.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new promotions offers
      */
     public void setPromotionsOffers(Boolean value) {
         this.promotionsOffers = value;
     }
 
     /**
-     * Gets the value of the pressReleases property.
+     * Checks if is press releases.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isPressReleases() {
         return pressReleases;
     }
 
     /**
-     * Sets the value of the pressReleases property.
+     * Sets the press releases.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new press releases
      */
     public void setPressReleases(Boolean value) {
         this.pressReleases = value;

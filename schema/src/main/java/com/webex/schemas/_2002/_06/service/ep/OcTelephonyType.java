@@ -26,30 +26,7 @@ import com.webex.schemas._2002._06.common.EntryExitToneType;
 
 
 /**
- * <p>Java class for ocTelephonyType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="ocTelephonyType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="telephonySupport" type="{http://www.webex.com/schemas/2002/06/service/ep}telephonySupportType"/>
- *         &lt;element name="extTelephonyDescription" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="tspAccountIndex" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="personalAccountIndex" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="intlLocalCallIn" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="tollfree" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="entryExitTone" type="{http://www.webex.com/schemas/2002/06/common}entryExitToneType" minOccurs="0"/>
- *         &lt;element name="isMPAudio" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class OcTelephonyType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ocTelephonyType", propOrder = {
@@ -66,204 +43,173 @@ public class OcTelephonyType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The telephony support. */
     @XmlElement(required = true)
     protected TelephonySupportType telephonySupport;
+    
+    /** The ext telephony description. */
     protected String extTelephonyDescription;
+    
+    /** The tsp account index. */
     protected Integer tspAccountIndex;
+    
+    /** The personal account index. */
     protected Integer personalAccountIndex;
+    
+    /** The intl local call in. */
     protected Boolean intlLocalCallIn;
+    
+    /** The tollfree. */
     protected Boolean tollfree;
+    
+    /** The entry exit tone. */
     protected EntryExitToneType entryExitTone;
+    
+    /** The is mp audio. */
     protected Boolean isMPAudio;
 
     /**
-     * Gets the value of the telephonySupport property.
+     * Gets the telephony support.
      * 
-     * @return
-     *     possible object is
-     *     {@link TelephonySupportType }
-     *     
+     * @return the telephony support
      */
     public TelephonySupportType getTelephonySupport() {
         return telephonySupport;
     }
 
     /**
-     * Sets the value of the telephonySupport property.
+     * Sets the telephony support.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TelephonySupportType }
-     *     
+     * @param value the new telephony support
      */
     public void setTelephonySupport(TelephonySupportType value) {
         this.telephonySupport = value;
     }
 
     /**
-     * Gets the value of the extTelephonyDescription property.
+     * Gets the ext telephony description.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the ext telephony description
      */
     public String getExtTelephonyDescription() {
         return extTelephonyDescription;
     }
 
     /**
-     * Sets the value of the extTelephonyDescription property.
+     * Sets the ext telephony description.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new ext telephony description
      */
     public void setExtTelephonyDescription(String value) {
         this.extTelephonyDescription = value;
     }
 
     /**
-     * Gets the value of the tspAccountIndex property.
+     * Gets the tsp account index.
      * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     * @return the tsp account index
      */
     public Integer getTspAccountIndex() {
         return tspAccountIndex;
     }
 
     /**
-     * Sets the value of the tspAccountIndex property.
+     * Sets the tsp account index.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     * @param value the new tsp account index
      */
     public void setTspAccountIndex(Integer value) {
         this.tspAccountIndex = value;
     }
 
     /**
-     * Gets the value of the personalAccountIndex property.
+     * Gets the personal account index.
      * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     * @return the personal account index
      */
     public Integer getPersonalAccountIndex() {
         return personalAccountIndex;
     }
 
     /**
-     * Sets the value of the personalAccountIndex property.
+     * Sets the personal account index.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     * @param value the new personal account index
      */
     public void setPersonalAccountIndex(Integer value) {
         this.personalAccountIndex = value;
     }
 
     /**
-     * Gets the value of the intlLocalCallIn property.
+     * Checks if is intl local call in.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isIntlLocalCallIn() {
         return intlLocalCallIn;
     }
 
     /**
-     * Sets the value of the intlLocalCallIn property.
+     * Sets the intl local call in.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new intl local call in
      */
     public void setIntlLocalCallIn(Boolean value) {
         this.intlLocalCallIn = value;
     }
 
     /**
-     * Gets the value of the tollfree property.
+     * Checks if is tollfree.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isTollfree() {
         return tollfree;
     }
 
     /**
-     * Sets the value of the tollfree property.
+     * Sets the tollfree.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new tollfree
      */
     public void setTollfree(Boolean value) {
         this.tollfree = value;
     }
 
     /**
-     * Gets the value of the entryExitTone property.
+     * Gets the entry exit tone.
      * 
-     * @return
-     *     possible object is
-     *     {@link EntryExitToneType }
-     *     
+     * @return the entry exit tone
      */
     public EntryExitToneType getEntryExitTone() {
         return entryExitTone;
     }
 
     /**
-     * Sets the value of the entryExitTone property.
+     * Sets the entry exit tone.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link EntryExitToneType }
-     *     
+     * @param value the new entry exit tone
      */
     public void setEntryExitTone(EntryExitToneType value) {
         this.entryExitTone = value;
     }
 
     /**
-     * Gets the value of the isMPAudio property.
+     * Checks if is is mp audio.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isIsMPAudio() {
         return isMPAudio;
     }
 
     /**
-     * Sets the value of the isMPAudio property.
+     * Sets the checks if is mp audio.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new checks if is mp audio
      */
     public void setIsMPAudio(Boolean value) {
         this.isMPAudio = value;

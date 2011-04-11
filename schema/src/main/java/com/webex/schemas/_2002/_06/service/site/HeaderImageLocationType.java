@@ -23,41 +23,52 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for headerImageLocationType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="headerImageLocationType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Above"/>
- *     &lt;enumeration value="Replace"/>
- *     &lt;enumeration value="Below"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum HeaderImageLocationType.
  */
 @XmlType(name = "headerImageLocationType")
 @XmlEnum
 public enum HeaderImageLocationType {
 
+    /** The ABOVE. */
     @XmlEnumValue("Above")
     ABOVE("Above"),
+    
+    /** The REPLACE. */
     @XmlEnumValue("Replace")
     REPLACE("Replace"),
+    
+    /** The BELOW. */
     @XmlEnumValue("Below")
     BELOW("Below");
+    
+    /** The value. */
     private final String value;
 
+    /**
+     * Instantiates a new header image location type.
+     * 
+     * @param v the v
+     */
     HeaderImageLocationType(String v) {
         value = v;
     }
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the header image location type
+     */
     public static HeaderImageLocationType fromValue(String v) {
         for (HeaderImageLocationType c: HeaderImageLocationType.values()) {
             if (c.value.equals(v)) {

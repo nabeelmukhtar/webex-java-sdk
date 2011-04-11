@@ -25,23 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for asi_metadata_item_resultType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="asi_metadata_item_resultType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="asi_metadatafield" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqti}asi_metadatafield_item_resultType"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class AsiMetadataItemResultType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "asi_metadata_item_resultType", propOrder = {
@@ -51,29 +35,26 @@ public class AsiMetadataItemResultType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The asi metadatafield. */
     @XmlElement(name = "asi_metadatafield", required = true)
     protected AsiMetadatafieldItemResultType asiMetadatafield;
 
     /**
-     * Gets the value of the asiMetadatafield property.
+     * Gets the asi metadatafield.
      * 
-     * @return
-     *     possible object is
-     *     {@link AsiMetadatafieldItemResultType }
-     *     
+     * @return the asi metadatafield
      */
     public AsiMetadatafieldItemResultType getAsiMetadatafield() {
         return asiMetadatafield;
     }
 
     /**
-     * Sets the value of the asiMetadatafield property.
+     * Sets the asi metadatafield.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link AsiMetadatafieldItemResultType }
-     *     
+     * @param value the new asi metadatafield
      */
     public void setAsiMetadatafield(AsiMetadatafieldItemResultType value) {
         this.asiMetadatafield = value;

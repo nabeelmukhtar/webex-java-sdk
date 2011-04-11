@@ -30,28 +30,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for trackingCodeType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="trackingCodeType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="index" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="inputMode" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="hostProfile" type="{http://www.webex.com/schemas/2002/06/service/site}codeDisplayType"/>
- *         &lt;element name="schedulingPage" type="{http://www.webex.com/schemas/2002/06/service/site}codeSchedulingType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="listValue" type="{http://www.webex.com/schemas/2002/06/service/site}codeListType" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class TrackingCodeType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "trackingCodeType", propOrder = {
@@ -66,137 +45,109 @@ public class TrackingCodeType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The index. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long index;
+    
+    /** The name. */
     @XmlElement(required = true)
     protected String name;
+    
+    /** The input mode. */
     @XmlElement(required = true)
     protected String inputMode;
+    
+    /** The host profile. */
     @XmlElement(required = true)
     protected CodeDisplayType hostProfile;
+    
+    /** The scheduling page. */
     protected List<CodeSchedulingType> schedulingPage;
+    
+    /** The list value. */
     protected List<CodeListType> listValue;
 
     /**
-     * Gets the value of the index property.
+     * Gets the index.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the index
      */
     public Long getIndex() {
         return index;
     }
 
     /**
-     * Sets the value of the index property.
+     * Sets the index.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new index
      */
     public void setIndex(Long value) {
         this.index = value;
     }
 
     /**
-     * Gets the value of the name property.
+     * Gets the name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the name
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Sets the value of the name property.
+     * Sets the name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new name
      */
     public void setName(String value) {
         this.name = value;
     }
 
     /**
-     * Gets the value of the inputMode property.
+     * Gets the input mode.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the input mode
      */
     public String getInputMode() {
         return inputMode;
     }
 
     /**
-     * Sets the value of the inputMode property.
+     * Sets the input mode.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new input mode
      */
     public void setInputMode(String value) {
         this.inputMode = value;
     }
 
     /**
-     * Gets the value of the hostProfile property.
+     * Gets the host profile.
      * 
-     * @return
-     *     possible object is
-     *     {@link CodeDisplayType }
-     *     
+     * @return the host profile
      */
     public CodeDisplayType getHostProfile() {
         return hostProfile;
     }
 
     /**
-     * Sets the value of the hostProfile property.
+     * Sets the host profile.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link CodeDisplayType }
-     *     
+     * @param value the new host profile
      */
     public void setHostProfile(CodeDisplayType value) {
         this.hostProfile = value;
     }
 
     /**
-     * Gets the value of the schedulingPage property.
+     * Gets the scheduling page.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the schedulingPage property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getSchedulingPage().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CodeSchedulingType }
-     * 
-     * 
+     * @return the scheduling page
      */
     public List<CodeSchedulingType> getSchedulingPage() {
         if (schedulingPage == null) {
@@ -206,26 +157,9 @@ public class TrackingCodeType
     }
 
     /**
-     * Gets the value of the listValue property.
+     * Gets the list value.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the listValue property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getListValue().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CodeListType }
-     * 
-     * 
+     * @return the list value
      */
     public List<CodeListType> getListValue() {
         if (listValue == null) {

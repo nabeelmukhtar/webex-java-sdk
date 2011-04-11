@@ -25,24 +25,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for delSession complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="delSession">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="sendEmail" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class DelSession.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "delSession", propOrder = {
@@ -54,45 +37,46 @@ public class DelSession
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The session key. */
     protected long sessionKey;
+    
+    /** The send email. */
     protected Boolean sendEmail;
 
     /**
-     * Gets the value of the sessionKey property.
+     * Gets the session key.
      * 
+     * @return the session key
      */
     public long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the value of the sessionKey property.
+     * Sets the session key.
      * 
+     * @param value the new session key
      */
     public void setSessionKey(long value) {
         this.sessionKey = value;
     }
 
     /**
-     * Gets the value of the sendEmail property.
+     * Checks if is send email.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isSendEmail() {
         return sendEmail;
     }
 
     /**
-     * Sets the value of the sendEmail property.
+     * Sets the send email.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new send email
      */
     public void setSendEmail(Boolean value) {
         this.sendEmail = value;

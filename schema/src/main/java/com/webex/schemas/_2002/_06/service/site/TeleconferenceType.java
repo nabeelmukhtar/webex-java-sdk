@@ -25,25 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for teleconferenceType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="teleconferenceType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="telephonySupport" type="{http://www.webex.com/schemas/2002/06/service/site}telephonySupportType"/>
- *         &lt;element name="tollFree" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="intlLocalCallIn" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class TeleconferenceType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "teleconferenceType", propOrder = {
@@ -55,79 +37,68 @@ public class TeleconferenceType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The telephony support. */
     @XmlElement(required = true)
     protected TelephonySupportType telephonySupport;
+    
+    /** The toll free. */
     protected Boolean tollFree;
+    
+    /** The intl local call in. */
     protected Boolean intlLocalCallIn;
 
     /**
-     * Gets the value of the telephonySupport property.
+     * Gets the telephony support.
      * 
-     * @return
-     *     possible object is
-     *     {@link TelephonySupportType }
-     *     
+     * @return the telephony support
      */
     public TelephonySupportType getTelephonySupport() {
         return telephonySupport;
     }
 
     /**
-     * Sets the value of the telephonySupport property.
+     * Sets the telephony support.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TelephonySupportType }
-     *     
+     * @param value the new telephony support
      */
     public void setTelephonySupport(TelephonySupportType value) {
         this.telephonySupport = value;
     }
 
     /**
-     * Gets the value of the tollFree property.
+     * Checks if is toll free.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isTollFree() {
         return tollFree;
     }
 
     /**
-     * Sets the value of the tollFree property.
+     * Sets the toll free.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new toll free
      */
     public void setTollFree(Boolean value) {
         this.tollFree = value;
     }
 
     /**
-     * Gets the value of the intlLocalCallIn property.
+     * Checks if is intl local call in.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isIntlLocalCallIn() {
         return intlLocalCallIn;
     }
 
     /**
-     * Sets the value of the intlLocalCallIn property.
+     * Sets the intl local call in.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new intl local call in
      */
     public void setIntlLocalCallIn(Boolean value) {
         this.intlLocalCallIn = value;

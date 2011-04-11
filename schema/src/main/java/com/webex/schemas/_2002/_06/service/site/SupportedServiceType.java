@@ -26,25 +26,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for supportedServiceType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="supportedServiceType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="enabled" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="pageVersion" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="clientVersion" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SupportedServiceType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "supportedServiceType", propOrder = {
@@ -60,72 +42,69 @@ public class SupportedServiceType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The enabled. */
     protected boolean enabled;
+    
+    /** The page version. */
     @XmlElement(required = true)
     protected String pageVersion;
+    
+    /** The client version. */
     @XmlElement(required = true)
     protected String clientVersion;
 
     /**
-     * Gets the value of the enabled property.
+     * Checks if is enabled.
      * 
+     * @return true, if is enabled
      */
     public boolean isEnabled() {
         return enabled;
     }
 
     /**
-     * Sets the value of the enabled property.
+     * Sets the enabled.
      * 
+     * @param value the new enabled
      */
     public void setEnabled(boolean value) {
         this.enabled = value;
     }
 
     /**
-     * Gets the value of the pageVersion property.
+     * Gets the page version.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the page version
      */
     public String getPageVersion() {
         return pageVersion;
     }
 
     /**
-     * Sets the value of the pageVersion property.
+     * Sets the page version.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new page version
      */
     public void setPageVersion(String value) {
         this.pageVersion = value;
     }
 
     /**
-     * Gets the value of the clientVersion property.
+     * Gets the client version.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the client version
      */
     public String getClientVersion() {
         return clientVersion;
     }
 
     /**
-     * Sets the value of the clientVersion property.
+     * Sets the client version.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new client version
      */
     public void setClientVersion(String value) {
         this.clientVersion = value;

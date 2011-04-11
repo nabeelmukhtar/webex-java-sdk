@@ -30,39 +30,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for render_choiceType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="render_choiceType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="response_label" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}response_labelType" maxOccurs="unbounded"/>
- *       &lt;/sequence>
- *       &lt;attribute name="minnumber">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}integer">
- *             &lt;minInclusive value="0"/>
- *             &lt;maxInclusive value="99"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="maxnumber">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}integer">
- *             &lt;minInclusive value="1"/>
- *             &lt;maxInclusive value="99"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class RenderChoiceType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "render_choiceType", propOrder = {
@@ -71,37 +39,27 @@ import org.w3._2001.xmlschema.Adapter1;
 public class RenderChoiceType implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The response label. */
     @XmlElement(name = "response_label", required = true)
     protected List<ResponseLabelType> responseLabel;
+    
+    /** The minnumber. */
     @XmlAttribute
     @XmlJavaTypeAdapter(Adapter1 .class)
     protected Long minnumber;
+    
+    /** The maxnumber. */
     @XmlAttribute
     @XmlJavaTypeAdapter(Adapter1 .class)
     protected Long maxnumber;
 
     /**
-     * Gets the value of the responseLabel property.
+     * Gets the response label.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the responseLabel property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getResponseLabel().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ResponseLabelType }
-     * 
-     * 
+     * @return the response label
      */
     public List<ResponseLabelType> getResponseLabel() {
         if (responseLabel == null) {
@@ -111,48 +69,36 @@ public class RenderChoiceType implements Serializable
     }
 
     /**
-     * Gets the value of the minnumber property.
+     * Gets the minnumber.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the minnumber
      */
     public Long getMinnumber() {
         return minnumber;
     }
 
     /**
-     * Sets the value of the minnumber property.
+     * Sets the minnumber.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new minnumber
      */
     public void setMinnumber(Long value) {
         this.minnumber = value;
     }
 
     /**
-     * Gets the value of the maxnumber property.
+     * Gets the maxnumber.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the maxnumber
      */
     public Long getMaxnumber() {
         return maxnumber;
     }
 
     /**
-     * Sets the value of the maxnumber property.
+     * Sets the maxnumber.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new maxnumber
      */
     public void setMaxnumber(Long value) {
         this.maxnumber = value;

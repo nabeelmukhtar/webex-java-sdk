@@ -27,44 +27,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for enrollmentInstanceType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="enrollmentInstanceType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="idReq" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="passwordReq" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="password" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="approvalReq" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="approvalRules" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="rule" type="{http://www.webex.com/schemas/2002/06/service/event}approvalRuleInstanceType" maxOccurs="unbounded" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="endURLAfterEnroll" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="128"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class EnrollmentInstanceType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "enrollmentInstanceType", propOrder = {
@@ -79,154 +42,131 @@ public class EnrollmentInstanceType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The id req. */
     protected Boolean idReq;
+    
+    /** The password req. */
     protected Boolean passwordReq;
+    
+    /** The password. */
     protected String password;
+    
+    /** The approval req. */
     @XmlElement(defaultValue = "true")
     protected Boolean approvalReq;
+    
+    /** The approval rules. */
     protected EnrollmentInstanceType.ApprovalRules approvalRules;
+    
+    /** The end url after enroll. */
     protected String endURLAfterEnroll;
 
     /**
-     * Gets the value of the idReq property.
+     * Checks if is id req.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isIdReq() {
         return idReq;
     }
 
     /**
-     * Sets the value of the idReq property.
+     * Sets the id req.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new id req
      */
     public void setIdReq(Boolean value) {
         this.idReq = value;
     }
 
     /**
-     * Gets the value of the passwordReq property.
+     * Checks if is password req.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isPasswordReq() {
         return passwordReq;
     }
 
     /**
-     * Sets the value of the passwordReq property.
+     * Sets the password req.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new password req
      */
     public void setPasswordReq(Boolean value) {
         this.passwordReq = value;
     }
 
     /**
-     * Gets the value of the password property.
+     * Gets the password.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the password
      */
     public String getPassword() {
         return password;
     }
 
     /**
-     * Sets the value of the password property.
+     * Sets the password.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new password
      */
     public void setPassword(String value) {
         this.password = value;
     }
 
     /**
-     * Gets the value of the approvalReq property.
+     * Checks if is approval req.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isApprovalReq() {
         return approvalReq;
     }
 
     /**
-     * Sets the value of the approvalReq property.
+     * Sets the approval req.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new approval req
      */
     public void setApprovalReq(Boolean value) {
         this.approvalReq = value;
     }
 
     /**
-     * Gets the value of the approvalRules property.
+     * Gets the approval rules.
      * 
-     * @return
-     *     possible object is
-     *     {@link EnrollmentInstanceType.ApprovalRules }
-     *     
+     * @return the approval rules
      */
     public EnrollmentInstanceType.ApprovalRules getApprovalRules() {
         return approvalRules;
     }
 
     /**
-     * Sets the value of the approvalRules property.
+     * Sets the approval rules.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link EnrollmentInstanceType.ApprovalRules }
-     *     
+     * @param value the new approval rules
      */
     public void setApprovalRules(EnrollmentInstanceType.ApprovalRules value) {
         this.approvalRules = value;
     }
 
     /**
-     * Gets the value of the endURLAfterEnroll property.
+     * Gets the end url after enroll.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the end url after enroll
      */
     public String getEndURLAfterEnroll() {
         return endURLAfterEnroll;
     }
 
     /**
-     * Sets the value of the endURLAfterEnroll property.
+     * Sets the end url after enroll.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new end url after enroll
      */
     public void setEndURLAfterEnroll(String value) {
         this.endURLAfterEnroll = value;
@@ -234,23 +174,7 @@ public class EnrollmentInstanceType
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="rule" type="{http://www.webex.com/schemas/2002/06/service/event}approvalRuleInstanceType" maxOccurs="unbounded" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class ApprovalRules.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -260,30 +184,16 @@ public class EnrollmentInstanceType
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The rule. */
         protected List<ApprovalRuleInstanceType> rule;
 
         /**
-         * Gets the value of the rule property.
+         * Gets the rule.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the rule property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getRule().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link ApprovalRuleInstanceType }
-         * 
-         * 
+         * @return the rule
          */
         public List<ApprovalRuleInstanceType> getRule() {
             if (rule == null) {

@@ -28,23 +28,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for lstTimeZoneResponse complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="lstTimeZoneResponse">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="timeZone" type="{http://www.webex.com/schemas/2002/06/service/site}timeZoneType" maxOccurs="unbounded"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class LstTimeZoneResponse.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstTimeZoneResponse", propOrder = {
@@ -55,31 +39,17 @@ public class LstTimeZoneResponse
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The time zone. */
     @XmlElement(required = true)
     protected List<TimeZoneType> timeZone;
 
     /**
-     * Gets the value of the timeZone property.
+     * Gets the time zone.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the timeZone property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTimeZone().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link TimeZoneType }
-     * 
-     * 
+     * @return the time zone
      */
     public List<TimeZoneType> getTimeZone() {
         if (timeZone == null) {

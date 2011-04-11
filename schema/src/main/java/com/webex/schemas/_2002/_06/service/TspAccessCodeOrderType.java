@@ -23,38 +23,48 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for tspAccessCodeOrderType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="tspAccessCodeOrderType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="SUBSCRIBER_1ST"/>
- *     &lt;enumeration value="PARTICIPANT_1ST"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum TspAccessCodeOrderType.
  */
 @XmlType(name = "tspAccessCodeOrderType")
 @XmlEnum
 public enum TspAccessCodeOrderType {
 
+    /** The SUBSCRIBE r_1_ st. */
     @XmlEnumValue("SUBSCRIBER_1ST")
     SUBSCRIBER_1_ST("SUBSCRIBER_1ST"),
+    
+    /** The PARTICIPAN t_1_ st. */
     @XmlEnumValue("PARTICIPANT_1ST")
     PARTICIPANT_1_ST("PARTICIPANT_1ST");
+    
+    /** The value. */
     private final String value;
 
+    /**
+     * Instantiates a new tsp access code order type.
+     * 
+     * @param v the v
+     */
     TspAccessCodeOrderType(String v) {
         value = v;
     }
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the tsp access code order type
+     */
     public static TspAccessCodeOrderType fromValue(String v) {
         for (TspAccessCodeOrderType c: TspAccessCodeOrderType.values()) {
             if (c.value.equals(v)) {

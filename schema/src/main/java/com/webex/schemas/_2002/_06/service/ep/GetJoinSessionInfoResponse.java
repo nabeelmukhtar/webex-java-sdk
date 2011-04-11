@@ -27,30 +27,7 @@ import com.webex.schemas._2002._06.service.meeting.TelephonyType;
 
 
 /**
- * <p>Java class for getJoinSessionInfoResponse complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="getJoinSessionInfoResponse">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="siteID" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="confID" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="confName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="attendeeID" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="mzmAddress" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="mccAddress" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="enableOptions" type="{http://www.webex.com/schemas/2002/06/service/ep}enableOptionsType" minOccurs="0"/>
- *         &lt;element name="telephony" type="{http://www.webex.com/schemas/2002/06/service/meeting}telephonyType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GetJoinSessionInfoResponse.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getJoinSessionInfoResponse", propOrder = {
@@ -68,182 +45,175 @@ public class GetJoinSessionInfoResponse
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The site id. */
     protected long siteID;
+    
+    /** The conf id. */
     protected long confID;
+    
+    /** The conf name. */
     @XmlElement(required = true)
     protected String confName;
+    
+    /** The attendee id. */
     protected long attendeeID;
+    
+    /** The mzm address. */
     @XmlElement(required = true)
     protected String mzmAddress;
+    
+    /** The mcc address. */
     @XmlElement(required = true)
     protected String mccAddress;
+    
+    /** The enable options. */
     protected EnableOptionsType enableOptions;
+    
+    /** The telephony. */
     protected TelephonyType telephony;
 
     /**
-     * Gets the value of the siteID property.
+     * Gets the site id.
      * 
+     * @return the site id
      */
     public long getSiteID() {
         return siteID;
     }
 
     /**
-     * Sets the value of the siteID property.
+     * Sets the site id.
      * 
+     * @param value the new site id
      */
     public void setSiteID(long value) {
         this.siteID = value;
     }
 
     /**
-     * Gets the value of the confID property.
+     * Gets the conf id.
      * 
+     * @return the conf id
      */
     public long getConfID() {
         return confID;
     }
 
     /**
-     * Sets the value of the confID property.
+     * Sets the conf id.
      * 
+     * @param value the new conf id
      */
     public void setConfID(long value) {
         this.confID = value;
     }
 
     /**
-     * Gets the value of the confName property.
+     * Gets the conf name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the conf name
      */
     public String getConfName() {
         return confName;
     }
 
     /**
-     * Sets the value of the confName property.
+     * Sets the conf name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new conf name
      */
     public void setConfName(String value) {
         this.confName = value;
     }
 
     /**
-     * Gets the value of the attendeeID property.
+     * Gets the attendee id.
      * 
+     * @return the attendee id
      */
     public long getAttendeeID() {
         return attendeeID;
     }
 
     /**
-     * Sets the value of the attendeeID property.
+     * Sets the attendee id.
      * 
+     * @param value the new attendee id
      */
     public void setAttendeeID(long value) {
         this.attendeeID = value;
     }
 
     /**
-     * Gets the value of the mzmAddress property.
+     * Gets the mzm address.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the mzm address
      */
     public String getMzmAddress() {
         return mzmAddress;
     }
 
     /**
-     * Sets the value of the mzmAddress property.
+     * Sets the mzm address.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new mzm address
      */
     public void setMzmAddress(String value) {
         this.mzmAddress = value;
     }
 
     /**
-     * Gets the value of the mccAddress property.
+     * Gets the mcc address.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the mcc address
      */
     public String getMccAddress() {
         return mccAddress;
     }
 
     /**
-     * Sets the value of the mccAddress property.
+     * Sets the mcc address.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new mcc address
      */
     public void setMccAddress(String value) {
         this.mccAddress = value;
     }
 
     /**
-     * Gets the value of the enableOptions property.
+     * Gets the enable options.
      * 
-     * @return
-     *     possible object is
-     *     {@link EnableOptionsType }
-     *     
+     * @return the enable options
      */
     public EnableOptionsType getEnableOptions() {
         return enableOptions;
     }
 
     /**
-     * Sets the value of the enableOptions property.
+     * Sets the enable options.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link EnableOptionsType }
-     *     
+     * @param value the new enable options
      */
     public void setEnableOptions(EnableOptionsType value) {
         this.enableOptions = value;
     }
 
     /**
-     * Gets the value of the telephony property.
+     * Gets the telephony.
      * 
-     * @return
-     *     possible object is
-     *     {@link TelephonyType }
-     *     
+     * @return the telephony
      */
     public TelephonyType getTelephony() {
         return telephony;
     }
 
     /**
-     * Sets the value of the telephony property.
+     * Sets the telephony.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TelephonyType }
-     *     
+     * @param value the new telephony
      */
     public void setTelephony(TelephonyType value) {
         this.telephony = value;

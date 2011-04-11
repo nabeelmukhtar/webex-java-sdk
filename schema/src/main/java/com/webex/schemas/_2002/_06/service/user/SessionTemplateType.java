@@ -26,24 +26,7 @@ import com.webex.schemas._2002._06.common.ServiceTypeType;
 
 
 /**
- * <p>Java class for sessionTemplateType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="sessionTemplateType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="serviceType" type="{http://www.webex.com/schemas/2002/06/common}serviceTypeType"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SessionTemplateType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "sessionTemplateType", propOrder = {
@@ -54,55 +37,48 @@ public class SessionTemplateType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The name. */
     @XmlElement(required = true)
     protected String name;
+    
+    /** The service type. */
     @XmlElement(required = true)
     protected ServiceTypeType serviceType;
 
     /**
-     * Gets the value of the name property.
+     * Gets the name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the name
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Sets the value of the name property.
+     * Sets the name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new name
      */
     public void setName(String value) {
         this.name = value;
     }
 
     /**
-     * Gets the value of the serviceType property.
+     * Gets the service type.
      * 
-     * @return
-     *     possible object is
-     *     {@link ServiceTypeType }
-     *     
+     * @return the service type
      */
     public ServiceTypeType getServiceType() {
         return serviceType;
     }
 
     /**
-     * Sets the value of the serviceType property.
+     * Sets the service type.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ServiceTypeType }
-     *     
+     * @param value the new service type
      */
     public void setServiceType(ServiceTypeType value) {
         this.serviceType = value;

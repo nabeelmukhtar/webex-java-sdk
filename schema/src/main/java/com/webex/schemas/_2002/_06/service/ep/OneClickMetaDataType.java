@@ -26,27 +26,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for oneClickMetaDataType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="oneClickMetaDataType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/ep}oneClickMetaData">
- *       &lt;sequence>
- *         &lt;element name="confName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="sessionPassword" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="listing" type="{http://www.webex.com/schemas/2002/06/service/ep}listingType" minOccurs="0"/>
- *         &lt;element name="CUVCMeetingID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="isInternal" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class OneClickMetaDataType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "oneClickMetaDataType", propOrder = {
@@ -64,130 +44,111 @@ public class OneClickMetaDataType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The conf name. */
     @XmlElement(required = true)
     protected String confName;
+    
+    /** The session password. */
     protected String sessionPassword;
+    
+    /** The listing. */
     protected ListingType listing;
+    
+    /** The cuvc meeting id. */
     @XmlElement(name = "CUVCMeetingID")
     protected String cuvcMeetingID;
+    
+    /** The is internal. */
     protected Boolean isInternal;
 
     /**
-     * Gets the value of the confName property.
+     * Gets the conf name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the conf name
      */
     public String getConfName() {
         return confName;
     }
 
     /**
-     * Sets the value of the confName property.
+     * Sets the conf name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new conf name
      */
     public void setConfName(String value) {
         this.confName = value;
     }
 
     /**
-     * Gets the value of the sessionPassword property.
+     * Gets the session password.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the session password
      */
     public String getSessionPassword() {
         return sessionPassword;
     }
 
     /**
-     * Sets the value of the sessionPassword property.
+     * Sets the session password.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new session password
      */
     public void setSessionPassword(String value) {
         this.sessionPassword = value;
     }
 
     /**
-     * Gets the value of the listing property.
+     * Gets the listing.
      * 
-     * @return
-     *     possible object is
-     *     {@link ListingType }
-     *     
+     * @return the listing
      */
     public ListingType getListing() {
         return listing;
     }
 
     /**
-     * Sets the value of the listing property.
+     * Sets the listing.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ListingType }
-     *     
+     * @param value the new listing
      */
     public void setListing(ListingType value) {
         this.listing = value;
     }
 
     /**
-     * Gets the value of the cuvcMeetingID property.
+     * Gets the cUVC meeting id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the cUVC meeting id
      */
     public String getCUVCMeetingID() {
         return cuvcMeetingID;
     }
 
     /**
-     * Sets the value of the cuvcMeetingID property.
+     * Sets the cUVC meeting id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new cUVC meeting id
      */
     public void setCUVCMeetingID(String value) {
         this.cuvcMeetingID = value;
     }
 
     /**
-     * Gets the value of the isInternal property.
+     * Checks if is is internal.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isIsInternal() {
         return isInternal;
     }
 
     /**
-     * Sets the value of the isInternal property.
+     * Sets the checks if is internal.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new checks if is internal
      */
     public void setIsInternal(Boolean value) {
         this.isInternal = value;

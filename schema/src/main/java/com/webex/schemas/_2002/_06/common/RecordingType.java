@@ -22,31 +22,34 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for recordingType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="recordingType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="NBR"/>
- *     &lt;enumeration value="LOCAL"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum RecordingType.
  */
 @XmlType(name = "recordingType")
 @XmlEnum
 public enum RecordingType {
 
+    /** The NBR. */
     NBR,
+    
+    /** The LOCAL. */
     LOCAL;
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the recording type
+     */
     public static RecordingType fromValue(String v) {
         return valueOf(v);
     }

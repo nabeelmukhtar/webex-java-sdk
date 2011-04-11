@@ -28,37 +28,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Java class for objectiveType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="objectiveType">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
- *       &lt;attribute name="view" default="All">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="All"/>
- *             &lt;enumeration value="Administrator"/>
- *             &lt;enumeration value="AdminAuthority"/>
- *             &lt;enumeration value="Assessor"/>
- *             &lt;enumeration value="Author"/>
- *             &lt;enumeration value="Candidate"/>
- *             &lt;enumeration value="InvigilatorProctor"/>
- *             &lt;enumeration value="Psychometrician"/>
- *             &lt;enumeration value="Scorer"/>
- *             &lt;enumeration value="Tutor"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="uri" type="{http://www.w3.org/2001/XMLSchema}string" />
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ObjectiveType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "objectiveType", propOrder = {
@@ -68,46 +38,44 @@ public class ObjectiveType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The value. */
     @XmlValue
     protected String value;
+    
+    /** The view. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String view;
+    
+    /** The uri. */
     @XmlAttribute
     protected String uri;
 
     /**
-     * Gets the value of the value property.
+     * Gets the value.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the value
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value of the value property.
+     * Sets the value.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new value
      */
     public void setValue(String value) {
         this.value = value;
     }
 
     /**
-     * Gets the value of the view property.
+     * Gets the view.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the view
      */
     public String getView() {
         if (view == null) {
@@ -118,36 +86,27 @@ public class ObjectiveType
     }
 
     /**
-     * Sets the value of the view property.
+     * Sets the view.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new view
      */
     public void setView(String value) {
         this.view = value;
     }
 
     /**
-     * Gets the value of the uri property.
+     * Gets the uri.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the uri
      */
     public String getUri() {
         return uri;
     }
 
     /**
-     * Sets the value of the uri property.
+     * Sets the uri.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new uri
      */
     public void setUri(String value) {
         this.uri = value;

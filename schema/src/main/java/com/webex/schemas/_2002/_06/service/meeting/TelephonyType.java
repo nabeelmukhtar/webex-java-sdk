@@ -31,36 +31,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for telephonyType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="telephonyType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="telephonySupport" type="{http://www.webex.com/schemas/2002/06/service/meeting}telephonySupportType" minOccurs="0"/>
- *         &lt;element name="numPhoneLines" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="extTelephonyURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="extTelephonyDescription" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="enableTSP" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="tspAccountIndex" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="personalAccountIndex" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="intlLocalCallIn" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="teleconfLocation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="callInNum" type="{http://www.webex.com/schemas/2002/06/service}callInNumType" minOccurs="0"/>
- *         &lt;element name="tspConference" type="{http://www.webex.com/schemas/2002/06/service}tspAccountType" minOccurs="0"/>
- *         &lt;element name="tspAccessCodeOrder" type="{http://www.webex.com/schemas/2002/06/service}tspAccessCodeOrderType" minOccurs="0"/>
- *         &lt;element name="tollFree" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="isMPAudio" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class TelephonyType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "telephonyType", propOrder = {
@@ -83,363 +54,308 @@ public class TelephonyType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The telephony support. */
     @XmlElement(defaultValue = "NONE")
     protected TelephonySupportType telephonySupport;
+    
+    /** The num phone lines. */
     @XmlElement(type = String.class, defaultValue = "4")
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long numPhoneLines;
+    
+    /** The ext telephony url. */
     protected String extTelephonyURL;
+    
+    /** The ext telephony description. */
     protected String extTelephonyDescription;
+    
+    /** The enable tsp. */
     protected Boolean enableTSP;
+    
+    /** The tsp account index. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long tspAccountIndex;
+    
+    /** The personal account index. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long personalAccountIndex;
+    
+    /** The intl local call in. */
     protected Boolean intlLocalCallIn;
+    
+    /** The teleconf location. */
     protected String teleconfLocation;
+    
+    /** The call in num. */
     protected CallInNumType callInNum;
+    
+    /** The tsp conference. */
     protected TspAccountType tspConference;
+    
+    /** The tsp access code order. */
     protected TspAccessCodeOrderType tspAccessCodeOrder;
+    
+    /** The toll free. */
     protected Boolean tollFree;
+    
+    /** The is mp audio. */
     protected Boolean isMPAudio;
 
     /**
-     * Gets the value of the telephonySupport property.
+     * Gets the telephony support.
      * 
-     * @return
-     *     possible object is
-     *     {@link TelephonySupportType }
-     *     
+     * @return the telephony support
      */
     public TelephonySupportType getTelephonySupport() {
         return telephonySupport;
     }
 
     /**
-     * Sets the value of the telephonySupport property.
+     * Sets the telephony support.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TelephonySupportType }
-     *     
+     * @param value the new telephony support
      */
     public void setTelephonySupport(TelephonySupportType value) {
         this.telephonySupport = value;
     }
 
     /**
-     * Gets the value of the numPhoneLines property.
+     * Gets the num phone lines.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the num phone lines
      */
     public Long getNumPhoneLines() {
         return numPhoneLines;
     }
 
     /**
-     * Sets the value of the numPhoneLines property.
+     * Sets the num phone lines.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new num phone lines
      */
     public void setNumPhoneLines(Long value) {
         this.numPhoneLines = value;
     }
 
     /**
-     * Gets the value of the extTelephonyURL property.
+     * Gets the ext telephony url.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the ext telephony url
      */
     public String getExtTelephonyURL() {
         return extTelephonyURL;
     }
 
     /**
-     * Sets the value of the extTelephonyURL property.
+     * Sets the ext telephony url.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new ext telephony url
      */
     public void setExtTelephonyURL(String value) {
         this.extTelephonyURL = value;
     }
 
     /**
-     * Gets the value of the extTelephonyDescription property.
+     * Gets the ext telephony description.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the ext telephony description
      */
     public String getExtTelephonyDescription() {
         return extTelephonyDescription;
     }
 
     /**
-     * Sets the value of the extTelephonyDescription property.
+     * Sets the ext telephony description.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new ext telephony description
      */
     public void setExtTelephonyDescription(String value) {
         this.extTelephonyDescription = value;
     }
 
     /**
-     * Gets the value of the enableTSP property.
+     * Checks if is enable tsp.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isEnableTSP() {
         return enableTSP;
     }
 
     /**
-     * Sets the value of the enableTSP property.
+     * Sets the enable tsp.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new enable tsp
      */
     public void setEnableTSP(Boolean value) {
         this.enableTSP = value;
     }
 
     /**
-     * Gets the value of the tspAccountIndex property.
+     * Gets the tsp account index.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the tsp account index
      */
     public Long getTspAccountIndex() {
         return tspAccountIndex;
     }
 
     /**
-     * Sets the value of the tspAccountIndex property.
+     * Sets the tsp account index.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new tsp account index
      */
     public void setTspAccountIndex(Long value) {
         this.tspAccountIndex = value;
     }
 
     /**
-     * Gets the value of the personalAccountIndex property.
+     * Gets the personal account index.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the personal account index
      */
     public Long getPersonalAccountIndex() {
         return personalAccountIndex;
     }
 
     /**
-     * Sets the value of the personalAccountIndex property.
+     * Sets the personal account index.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new personal account index
      */
     public void setPersonalAccountIndex(Long value) {
         this.personalAccountIndex = value;
     }
 
     /**
-     * Gets the value of the intlLocalCallIn property.
+     * Checks if is intl local call in.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isIntlLocalCallIn() {
         return intlLocalCallIn;
     }
 
     /**
-     * Sets the value of the intlLocalCallIn property.
+     * Sets the intl local call in.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new intl local call in
      */
     public void setIntlLocalCallIn(Boolean value) {
         this.intlLocalCallIn = value;
     }
 
     /**
-     * Gets the value of the teleconfLocation property.
+     * Gets the teleconf location.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the teleconf location
      */
     public String getTeleconfLocation() {
         return teleconfLocation;
     }
 
     /**
-     * Sets the value of the teleconfLocation property.
+     * Sets the teleconf location.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new teleconf location
      */
     public void setTeleconfLocation(String value) {
         this.teleconfLocation = value;
     }
 
     /**
-     * Gets the value of the callInNum property.
+     * Gets the call in num.
      * 
-     * @return
-     *     possible object is
-     *     {@link CallInNumType }
-     *     
+     * @return the call in num
      */
     public CallInNumType getCallInNum() {
         return callInNum;
     }
 
     /**
-     * Sets the value of the callInNum property.
+     * Sets the call in num.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link CallInNumType }
-     *     
+     * @param value the new call in num
      */
     public void setCallInNum(CallInNumType value) {
         this.callInNum = value;
     }
 
     /**
-     * Gets the value of the tspConference property.
+     * Gets the tsp conference.
      * 
-     * @return
-     *     possible object is
-     *     {@link TspAccountType }
-     *     
+     * @return the tsp conference
      */
     public TspAccountType getTspConference() {
         return tspConference;
     }
 
     /**
-     * Sets the value of the tspConference property.
+     * Sets the tsp conference.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TspAccountType }
-     *     
+     * @param value the new tsp conference
      */
     public void setTspConference(TspAccountType value) {
         this.tspConference = value;
     }
 
     /**
-     * Gets the value of the tspAccessCodeOrder property.
+     * Gets the tsp access code order.
      * 
-     * @return
-     *     possible object is
-     *     {@link TspAccessCodeOrderType }
-     *     
+     * @return the tsp access code order
      */
     public TspAccessCodeOrderType getTspAccessCodeOrder() {
         return tspAccessCodeOrder;
     }
 
     /**
-     * Sets the value of the tspAccessCodeOrder property.
+     * Sets the tsp access code order.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TspAccessCodeOrderType }
-     *     
+     * @param value the new tsp access code order
      */
     public void setTspAccessCodeOrder(TspAccessCodeOrderType value) {
         this.tspAccessCodeOrder = value;
     }
 
     /**
-     * Gets the value of the tollFree property.
+     * Checks if is toll free.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isTollFree() {
         return tollFree;
     }
 
     /**
-     * Sets the value of the tollFree property.
+     * Sets the toll free.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new toll free
      */
     public void setTollFree(Boolean value) {
         this.tollFree = value;
     }
 
     /**
-     * Gets the value of the isMPAudio property.
+     * Checks if is is mp audio.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isIsMPAudio() {
         return isMPAudio;
     }
 
     /**
-     * Sets the value of the isMPAudio property.
+     * Sets the checks if is mp audio.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new checks if is mp audio
      */
     public void setIsMPAudio(Boolean value) {
         this.isMPAudio = value;

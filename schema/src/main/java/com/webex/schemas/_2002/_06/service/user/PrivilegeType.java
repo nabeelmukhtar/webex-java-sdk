@@ -25,36 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for privilegeType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="privilegeType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="host" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="teleConfCallOut" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="teleConfCallOutInternational" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="teleConfCallIn" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="teleConfTollFreeCallIn" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="siteAdmin" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="voiceOverIp" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="roSiteAdmin" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="labAdmin" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="otherTelephony" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="teleConfCallInInternational" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="attendeeOnly" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="recordingEditor" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="meetingAssist" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class PrivilegeType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "privilegeType", propOrder = {
@@ -77,354 +48,299 @@ public class PrivilegeType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The host. */
     protected Boolean host;
+    
+    /** The tele conf call out. */
     protected Boolean teleConfCallOut;
+    
+    /** The tele conf call out international. */
     protected Boolean teleConfCallOutInternational;
+    
+    /** The tele conf call in. */
     protected Boolean teleConfCallIn;
+    
+    /** The tele conf toll free call in. */
     protected Boolean teleConfTollFreeCallIn;
+    
+    /** The site admin. */
     protected Boolean siteAdmin;
+    
+    /** The voice over ip. */
     protected Boolean voiceOverIp;
+    
+    /** The ro site admin. */
     protected Boolean roSiteAdmin;
+    
+    /** The lab admin. */
     protected Boolean labAdmin;
+    
+    /** The other telephony. */
     @XmlElement(defaultValue = "true")
     protected Boolean otherTelephony;
+    
+    /** The tele conf call in international. */
     protected Boolean teleConfCallInInternational;
+    
+    /** The attendee only. */
     protected Boolean attendeeOnly;
+    
+    /** The recording editor. */
     protected Boolean recordingEditor;
+    
+    /** The meeting assist. */
     protected Boolean meetingAssist;
 
     /**
-     * Gets the value of the host property.
+     * Checks if is host.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isHost() {
         return host;
     }
 
     /**
-     * Sets the value of the host property.
+     * Sets the host.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new host
      */
     public void setHost(Boolean value) {
         this.host = value;
     }
 
     /**
-     * Gets the value of the teleConfCallOut property.
+     * Checks if is tele conf call out.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isTeleConfCallOut() {
         return teleConfCallOut;
     }
 
     /**
-     * Sets the value of the teleConfCallOut property.
+     * Sets the tele conf call out.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new tele conf call out
      */
     public void setTeleConfCallOut(Boolean value) {
         this.teleConfCallOut = value;
     }
 
     /**
-     * Gets the value of the teleConfCallOutInternational property.
+     * Checks if is tele conf call out international.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isTeleConfCallOutInternational() {
         return teleConfCallOutInternational;
     }
 
     /**
-     * Sets the value of the teleConfCallOutInternational property.
+     * Sets the tele conf call out international.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new tele conf call out international
      */
     public void setTeleConfCallOutInternational(Boolean value) {
         this.teleConfCallOutInternational = value;
     }
 
     /**
-     * Gets the value of the teleConfCallIn property.
+     * Checks if is tele conf call in.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isTeleConfCallIn() {
         return teleConfCallIn;
     }
 
     /**
-     * Sets the value of the teleConfCallIn property.
+     * Sets the tele conf call in.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new tele conf call in
      */
     public void setTeleConfCallIn(Boolean value) {
         this.teleConfCallIn = value;
     }
 
     /**
-     * Gets the value of the teleConfTollFreeCallIn property.
+     * Checks if is tele conf toll free call in.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isTeleConfTollFreeCallIn() {
         return teleConfTollFreeCallIn;
     }
 
     /**
-     * Sets the value of the teleConfTollFreeCallIn property.
+     * Sets the tele conf toll free call in.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new tele conf toll free call in
      */
     public void setTeleConfTollFreeCallIn(Boolean value) {
         this.teleConfTollFreeCallIn = value;
     }
 
     /**
-     * Gets the value of the siteAdmin property.
+     * Checks if is site admin.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isSiteAdmin() {
         return siteAdmin;
     }
 
     /**
-     * Sets the value of the siteAdmin property.
+     * Sets the site admin.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new site admin
      */
     public void setSiteAdmin(Boolean value) {
         this.siteAdmin = value;
     }
 
     /**
-     * Gets the value of the voiceOverIp property.
+     * Checks if is voice over ip.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isVoiceOverIp() {
         return voiceOverIp;
     }
 
     /**
-     * Sets the value of the voiceOverIp property.
+     * Sets the voice over ip.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new voice over ip
      */
     public void setVoiceOverIp(Boolean value) {
         this.voiceOverIp = value;
     }
 
     /**
-     * Gets the value of the roSiteAdmin property.
+     * Checks if is ro site admin.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isRoSiteAdmin() {
         return roSiteAdmin;
     }
 
     /**
-     * Sets the value of the roSiteAdmin property.
+     * Sets the ro site admin.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new ro site admin
      */
     public void setRoSiteAdmin(Boolean value) {
         this.roSiteAdmin = value;
     }
 
     /**
-     * Gets the value of the labAdmin property.
+     * Checks if is lab admin.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isLabAdmin() {
         return labAdmin;
     }
 
     /**
-     * Sets the value of the labAdmin property.
+     * Sets the lab admin.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new lab admin
      */
     public void setLabAdmin(Boolean value) {
         this.labAdmin = value;
     }
 
     /**
-     * Gets the value of the otherTelephony property.
+     * Checks if is other telephony.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isOtherTelephony() {
         return otherTelephony;
     }
 
     /**
-     * Sets the value of the otherTelephony property.
+     * Sets the other telephony.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new other telephony
      */
     public void setOtherTelephony(Boolean value) {
         this.otherTelephony = value;
     }
 
     /**
-     * Gets the value of the teleConfCallInInternational property.
+     * Checks if is tele conf call in international.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isTeleConfCallInInternational() {
         return teleConfCallInInternational;
     }
 
     /**
-     * Sets the value of the teleConfCallInInternational property.
+     * Sets the tele conf call in international.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new tele conf call in international
      */
     public void setTeleConfCallInInternational(Boolean value) {
         this.teleConfCallInInternational = value;
     }
 
     /**
-     * Gets the value of the attendeeOnly property.
+     * Checks if is attendee only.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isAttendeeOnly() {
         return attendeeOnly;
     }
 
     /**
-     * Sets the value of the attendeeOnly property.
+     * Sets the attendee only.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new attendee only
      */
     public void setAttendeeOnly(Boolean value) {
         this.attendeeOnly = value;
     }
 
     /**
-     * Gets the value of the recordingEditor property.
+     * Checks if is recording editor.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isRecordingEditor() {
         return recordingEditor;
     }
 
     /**
-     * Sets the value of the recordingEditor property.
+     * Sets the recording editor.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new recording editor
      */
     public void setRecordingEditor(Boolean value) {
         this.recordingEditor = value;
     }
 
     /**
-     * Gets the value of the meetingAssist property.
+     * Checks if is meeting assist.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isMeetingAssist() {
         return meetingAssist;
     }
 
     /**
-     * Sets the value of the meetingAssist property.
+     * Sets the meeting assist.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new meeting assist
      */
     public void setMeetingAssist(Boolean value) {
         this.meetingAssist = value;

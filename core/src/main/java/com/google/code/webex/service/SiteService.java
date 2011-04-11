@@ -22,10 +22,26 @@ import com.webex.schemas._2002._06.service.site.SiteType;
 import com.webex.schemas._2002._06.service.site.TimeZoneType;
 
 /**
- * @author nmukhtar
- *
+ * The Interface SiteService.
  */
 public interface SiteService extends WebExService {
+	
+	/**
+	 * Gets the site.
+	 * 
+	 * @param eventCenter the event center
+	 * 
+	 * @return the site
+	 */
 	public SiteType getSite(boolean eventCenter);
+	
+	/**
+	 * Gets the timezones.
+	 * 
+	 * @param timeZoneID the time zone id
+	 * @param date the date
+	 * 
+	 * @return the timezones
+	 */
 	public List<TimeZoneType> getTimezones(List<Long> timeZoneID, String date);
 }

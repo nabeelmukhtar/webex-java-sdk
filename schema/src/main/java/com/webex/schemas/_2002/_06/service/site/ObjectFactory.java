@@ -21,593 +21,652 @@ import javax.xml.bind.annotation.XmlRegistry;
 
 
 /**
- * This object contains factory methods for each 
- * Java content interface and Java element interface 
- * generated in the com.webex.schemas._2002._06.service.site package. 
- * <p>An ObjectFactory allows you to programatically 
- * construct new instances of the Java representation 
- * for XML content. The Java representation of XML 
- * content can consist of schema derived interfaces 
- * and classes representing the binding of schema 
- * type definitions, element declarations and model 
- * groups.  Factory methods for each of these are 
- * provided in this class.
- * 
+ * A factory for creating Object objects.
  */
 @XmlRegistry
 public class ObjectFactory {
 
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.webex.schemas._2002._06.service.site
-     * 
+     * Instantiates a new object factory.
      */
     public ObjectFactory() {
     }
 
     /**
-     * Create an instance of {@link TSRouting }
+     * Creates a new Object object.
      * 
+     * @return the TS routing
      */
     public TSRouting createTSRouting() {
         return new TSRouting();
     }
 
     /**
-     * Create an instance of {@link TelephonyConfigType }
+     * Creates a new Object object.
      * 
+     * @return the telephony config type
      */
     public TelephonyConfigType createTelephonyConfigType() {
         return new TelephonyConfigType();
     }
 
     /**
-     * Create an instance of {@link SiteType }
+     * Creates a new Object object.
      * 
+     * @return the site type
      */
     public SiteType createSiteType() {
         return new SiteType();
     }
 
     /**
-     * Create an instance of {@link CommerceAndReportingType }
+     * Creates a new Object object.
      * 
+     * @return the commerce and reporting type
      */
     public CommerceAndReportingType createCommerceAndReportingType() {
         return new CommerceAndReportingType();
     }
 
     /**
-     * Create an instance of {@link DisplayMethodType }
+     * Creates a new Object object.
      * 
+     * @return the display method type
      */
     public DisplayMethodType createDisplayMethodType() {
         return new DisplayMethodType();
     }
 
     /**
-     * Create an instance of {@link GetSite.ReturnSettings }
+     * Creates a new Object object.
      * 
+     * @return the return settings
      */
     public GetSite.ReturnSettings createGetSiteReturnSettings() {
         return new GetSite.ReturnSettings();
     }
 
     /**
-     * Create an instance of {@link QueueType }
+     * Creates a new Object object.
      * 
+     * @return the queue type
      */
     public QueueType createQueueType() {
         return new QueueType();
     }
 
     /**
-     * Create an instance of {@link TeleconferenceType }
+     * Creates a new Object object.
      * 
+     * @return the teleconference type
      */
     public TeleconferenceType createTeleconferenceType() {
         return new TeleconferenceType();
     }
 
     /**
-     * Create an instance of {@link InstantMessengerType }
+     * Creates a new Object object.
      * 
+     * @return the instant messenger type
      */
     public InstantMessengerType createInstantMessengerType() {
         return new InstantMessengerType();
     }
 
     /**
-     * Create an instance of {@link CodeListType }
+     * Creates a new Object object.
      * 
+     * @return the code list type
      */
     public CodeListType createCodeListType() {
         return new CodeListType();
     }
 
     /**
-     * Create an instance of {@link GetSiteResponse }
+     * Creates a new Object object.
      * 
+     * @return the gets the site response
      */
     public GetSiteResponse createGetSiteResponse() {
         return new GetSiteResponse();
     }
 
     /**
-     * Create an instance of {@link ScheduleOptionsType }
+     * Creates a new Object object.
      * 
+     * @return the schedule options type
      */
     public ScheduleOptionsType createScheduleOptionsType() {
         return new ScheduleOptionsType();
     }
 
     /**
-     * Create an instance of {@link ImSettingsType }
+     * Creates a new Object object.
      * 
+     * @return the im settings type
      */
     public ImSettingsType createImSettingsType() {
         return new ImSettingsType();
     }
 
     /**
-     * Create an instance of {@link NavigationBarType }
+     * Creates a new Object object.
      * 
+     * @return the navigation bar type
      */
     public NavigationBarType createNavigationBarType() {
         return new NavigationBarType();
     }
 
     /**
-     * Create an instance of {@link SupportAPIType }
+     * Creates a new Object object.
      * 
+     * @return the support api type
      */
     public SupportAPIType createSupportAPIType() {
         return new SupportAPIType();
     }
 
     /**
-     * Create an instance of {@link TimeZoneType }
+     * Creates a new Object object.
      * 
+     * @return the time zone type
      */
     public TimeZoneType createTimeZoneType() {
         return new TimeZoneType();
     }
 
     /**
-     * Create an instance of {@link SupportedServicesType.SupportCenter }
+     * Creates a new Object object.
      * 
+     * @return the support center
      */
     public SupportedServicesType.SupportCenter createSupportedServicesTypeSupportCenter() {
         return new SupportedServicesType.SupportCenter();
     }
 
     /**
-     * Create an instance of {@link EventCenterType.StandardFields }
+     * Creates a new Object object.
      * 
+     * @return the standard fields
      */
     public EventCenterType.StandardFields createEventCenterTypeStandardFields() {
         return new EventCenterType.StandardFields();
     }
 
     /**
-     * Create an instance of {@link SupportedServicesType }
+     * Creates a new Object object.
      * 
+     * @return the supported services type
      */
     public SupportedServicesType createSupportedServicesType() {
         return new SupportedServicesType();
     }
 
     /**
-     * Create an instance of {@link SupportedServicesType.EventCenter }
+     * Creates a new Object object.
      * 
+     * @return the event center
      */
     public SupportedServicesType.EventCenter createSupportedServicesTypeEventCenter() {
         return new SupportedServicesType.EventCenter();
     }
 
     /**
-     * Create an instance of {@link SalesCenterType }
+     * Creates a new Object object.
      * 
+     * @return the sales center type
      */
     public SalesCenterType createSalesCenterType() {
         return new SalesCenterType();
     }
 
     /**
-     * Create an instance of {@link MyWebExBarType }
+     * Creates a new Object object.
      * 
+     * @return the my web ex bar type
      */
     public MyWebExBarType createMyWebExBarType() {
         return new MyWebExBarType();
     }
 
     /**
-     * Create an instance of {@link GetSite }
+     * Creates a new Object object.
      * 
+     * @return the gets the site
      */
     public GetSite createGetSite() {
         return new GetSite();
     }
 
     /**
-     * Create an instance of {@link MyWebExConfigType }
+     * Creates a new Object object.
      * 
+     * @return the my web ex config type
      */
     public MyWebExConfigType createMyWebExConfigType() {
         return new MyWebExConfigType();
     }
 
     /**
-     * Create an instance of {@link SupportedServiceType }
+     * Creates a new Object object.
      * 
+     * @return the supported service type
      */
     public SupportedServiceType createSupportedServiceType() {
         return new SupportedServiceType();
     }
 
     /**
-     * Create an instance of {@link GetWebACDQueuesResponse }
+     * Creates a new Object object.
      * 
+     * @return the gets the web acd queues response
      */
     public GetWebACDQueuesResponse createGetWebACDQueuesResponse() {
         return new GetWebACDQueuesResponse();
     }
 
     /**
-     * Create an instance of {@link ClientPlatformsType }
+     * Creates a new Object object.
      * 
+     * @return the client platforms type
      */
     public ClientPlatformsType createClientPlatformsType() {
         return new ClientPlatformsType();
     }
 
     /**
-     * Create an instance of {@link SetSite }
+     * Creates a new Object object.
      * 
+     * @return the sets the site
      */
     public SetSite createSetSite() {
         return new SetSite();
     }
 
     /**
-     * Create an instance of {@link MeetingPlaceType }
+     * Creates a new Object object.
      * 
+     * @return the meeting place type
      */
     public MeetingPlaceType createMeetingPlaceType() {
         return new MeetingPlaceType();
     }
 
     /**
-     * Create an instance of {@link MeetingPlaceTelephonyType }
+     * Creates a new Object object.
      * 
+     * @return the meeting place telephony type
      */
     public MeetingPlaceTelephonyType createMeetingPlaceTelephonyType() {
         return new MeetingPlaceTelephonyType();
     }
 
     /**
-     * Create an instance of {@link GetWebACDQueues }
+     * Creates a new Object object.
      * 
+     * @return the gets the web acd queues
      */
     public GetWebACDQueues createGetWebACDQueues() {
         return new GetWebACDQueues();
     }
 
     /**
-     * Create an instance of {@link SetSiteResponse }
+     * Creates a new Object object.
      * 
+     * @return the sets the site response
      */
     public SetSiteResponse createSetSiteResponse() {
         return new SetSiteResponse();
     }
 
     /**
-     * Create an instance of {@link OneClicksType }
+     * Creates a new Object object.
      * 
+     * @return the one clicks type
      */
     public OneClicksType createOneClicksType() {
         return new OneClicksType();
     }
 
     /**
-     * Create an instance of {@link IntegrationType }
+     * Creates a new Object object.
      * 
+     * @return the integration type
      */
     public IntegrationType createIntegrationType() {
         return new IntegrationType();
     }
 
     /**
-     * Create an instance of {@link LinkType }
+     * Creates a new Object object.
      * 
+     * @return the link type
      */
     public LinkType createLinkType() {
         return new LinkType();
     }
 
     /**
-     * Create an instance of {@link DefaultsType }
+     * Creates a new Object object.
      * 
+     * @return the defaults type
      */
     public DefaultsType createDefaultsType() {
         return new DefaultsType();
     }
 
     /**
-     * Create an instance of {@link LstTimeZone }
+     * Creates a new Object object.
      * 
+     * @return the lst time zone
      */
     public LstTimeZone createLstTimeZone() {
         return new LstTimeZone();
     }
 
     /**
-     * Create an instance of {@link InstallationOptionType }
+     * Creates a new Object object.
      * 
+     * @return the installation option type
      */
     public InstallationOptionType createInstallationOptionType() {
         return new InstallationOptionType();
     }
 
     /**
-     * Create an instance of {@link ToolsType }
+     * Creates a new Object object.
      * 
+     * @return the tools type
      */
     public ToolsType createToolsType() {
         return new ToolsType();
     }
 
     /**
-     * Create an instance of {@link TrackingCodeType }
+     * Creates a new Object object.
      * 
+     * @return the tracking code type
      */
     public TrackingCodeType createTrackingCodeType() {
         return new TrackingCodeType();
     }
 
     /**
-     * Create an instance of {@link MenuType }
+     * Creates a new Object object.
      * 
+     * @return the menu type
      */
     public MenuType createMenuType() {
         return new MenuType();
     }
 
     /**
-     * Create an instance of {@link TemplateType }
+     * Creates a new Object object.
      * 
+     * @return the template type
      */
     public TemplateType createTemplateType() {
         return new TemplateType();
     }
 
     /**
-     * Create an instance of {@link TelephonyConfigType.PersonalTeleconf }
+     * Creates a new Object object.
      * 
+     * @return the personal teleconf
      */
     public TelephonyConfigType.PersonalTeleconf createTelephonyConfigTypePersonalTeleconf() {
         return new TelephonyConfigType.PersonalTeleconf();
     }
 
     /**
-     * Create an instance of {@link TspServerType }
+     * Creates a new Object object.
      * 
+     * @return the tsp server type
      */
     public TspServerType createTspServerType() {
         return new TspServerType();
     }
 
     /**
-     * Create an instance of {@link TopBarType }
+     * Creates a new Object object.
      * 
+     * @return the top bar type
      */
     public TopBarType createTopBarType() {
         return new TopBarType();
     }
 
     /**
-     * Create an instance of {@link MsOfficeType }
+     * Creates a new Object object.
      * 
+     * @return the ms office type
      */
     public MsOfficeType createMsOfficeType() {
         return new MsOfficeType();
     }
 
     /**
-     * Create an instance of {@link AllServiceBarType }
+     * Creates a new Object object.
      * 
+     * @return the all service bar type
      */
     public AllServiceBarType createAllServiceBarType() {
         return new AllServiceBarType();
     }
 
     /**
-     * Create an instance of {@link CustomLinkType }
+     * Creates a new Object object.
      * 
+     * @return the custom link type
      */
     public CustomLinkType createCustomLinkType() {
         return new CustomLinkType();
     }
 
     /**
-     * Create an instance of {@link CustCommunicationsType }
+     * Creates a new Object object.
      * 
+     * @return the cust communications type
      */
     public CustCommunicationsType createCustCommunicationsType() {
         return new CustCommunicationsType();
     }
 
     /**
-     * Create an instance of {@link MetaDataType }
+     * Creates a new Object object.
      * 
+     * @return the meta data type
      */
     public MetaDataType createMetaDataType() {
         return new MetaDataType();
     }
 
     /**
-     * Create an instance of {@link OneClickType }
+     * Creates a new Object object.
      * 
+     * @return the one click type
      */
     public OneClickType createOneClickType() {
         return new OneClickType();
     }
 
     /**
-     * Create an instance of {@link DisplayTypeType }
+     * Creates a new Object object.
      * 
+     * @return the display type type
      */
     public DisplayTypeType createDisplayTypeType() {
         return new DisplayTypeType();
     }
 
     /**
-     * Create an instance of {@link ConnectIntegrationType }
+     * Creates a new Object object.
      * 
+     * @return the connect integration type
      */
     public ConnectIntegrationType createConnectIntegrationType() {
         return new ConnectIntegrationType();
     }
 
     /**
-     * Create an instance of {@link TelephonyConfigType.TspAdaptorSettings }
+     * Creates a new Object object.
      * 
+     * @return the tsp adaptor settings
      */
     public TelephonyConfigType.TspAdaptorSettings createTelephonyConfigTypeTspAdaptorSettings() {
         return new TelephonyConfigType.TspAdaptorSettings();
     }
 
     /**
-     * Create an instance of {@link PartnerLinkType }
+     * Creates a new Object object.
      * 
+     * @return the partner link type
      */
     public PartnerLinkType createPartnerLinkType() {
         return new PartnerLinkType();
     }
 
     /**
-     * Create an instance of {@link AllServiceBarType.CustomLinks }
+     * Creates a new Object object.
      * 
+     * @return the custom links
      */
     public AllServiceBarType.CustomLinks createAllServiceBarTypeCustomLinks() {
         return new AllServiceBarType.CustomLinks();
     }
 
     /**
-     * Create an instance of {@link MetaDataType.MeetingTypes }
+     * Creates a new Object object.
      * 
+     * @return the meeting types
      */
     public MetaDataType.MeetingTypes createMetaDataTypeMeetingTypes() {
         return new MetaDataType.MeetingTypes();
     }
 
     /**
-     * Create an instance of {@link SecurityOptionsType.Meetings }
+     * Creates a new Object object.
      * 
+     * @return the meetings
      */
     public SecurityOptionsType.Meetings createSecurityOptionsTypeMeetings() {
         return new SecurityOptionsType.Meetings();
     }
 
     /**
-     * Create an instance of {@link ProductivityToolType }
+     * Creates a new Object object.
      * 
+     * @return the productivity tool type
      */
     public ProductivityToolType createProductivityToolType() {
         return new ProductivityToolType();
     }
 
     /**
-     * Create an instance of {@link MpAudioType }
+     * Creates a new Object object.
      * 
+     * @return the mp audio type
      */
     public MpAudioType createMpAudioType() {
         return new MpAudioType();
     }
 
     /**
-     * Create an instance of {@link LockDownPTType }
+     * Creates a new Object object.
      * 
+     * @return the lock down pt type
      */
     public LockDownPTType createLockDownPTType() {
         return new LockDownPTType();
     }
 
     /**
-     * Create an instance of {@link SiteType.TrackingCodes }
+     * Creates a new Object object.
      * 
+     * @return the tracking codes
      */
     public SiteType.TrackingCodes createSiteTypeTrackingCodes() {
         return new SiteType.TrackingCodes();
     }
 
     /**
-     * Create an instance of {@link UcfType }
+     * Creates a new Object object.
      * 
+     * @return the ucf type
      */
     public UcfType createUcfType() {
         return new UcfType();
     }
 
     /**
-     * Create an instance of {@link LstTimeZoneResponse }
+     * Creates a new Object object.
      * 
+     * @return the lst time zone response
      */
     public LstTimeZoneResponse createLstTimeZoneResponse() {
         return new LstTimeZoneResponse();
     }
 
     /**
-     * Create an instance of {@link SecurityOptionsType }
+     * Creates a new Object object.
      * 
+     * @return the security options type
      */
     public SecurityOptionsType createSecurityOptionsType() {
         return new SecurityOptionsType();
     }
 
     /**
-     * Create an instance of {@link UrlType }
+     * Creates a new Object object.
      * 
+     * @return the url type
      */
     public UrlType createUrlType() {
         return new UrlType();
     }
 
     /**
-     * Create an instance of {@link EventCenterType }
+     * Creates a new Object object.
      * 
+     * @return the event center type
      */
     public EventCenterType createEventCenterType() {
         return new EventCenterType();
     }
 
     /**
-     * Create an instance of {@link PasswordCriteriaType }
+     * Creates a new Object object.
      * 
+     * @return the password criteria type
      */
     public PasswordCriteriaType createPasswordCriteriaType() {
         return new PasswordCriteriaType();
     }
 
     /**
-     * Create an instance of {@link AccountPasswordCriteriaType }
+     * Creates a new Object object.
      * 
+     * @return the account password criteria type
      */
     public AccountPasswordCriteriaType createAccountPasswordCriteriaType() {
         return new AccountPasswordCriteriaType();
     }
 
     /**
-     * Create an instance of {@link ResourceRestrictionsType }
+     * Creates a new Object object.
      * 
+     * @return the resource restrictions type
      */
     public ResourceRestrictionsType createResourceRestrictionsType() {
         return new ResourceRestrictionsType();
     }
 
     /**
-     * Create an instance of {@link CodeSchedulingType }
+     * Creates a new Object object.
      * 
+     * @return the code scheduling type
      */
     public CodeSchedulingType createCodeSchedulingType() {
         return new CodeSchedulingType();

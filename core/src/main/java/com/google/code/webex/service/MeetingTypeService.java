@@ -22,10 +22,25 @@ import com.webex.schemas._2002._06.service.meetingtype.GetMeetingTypeResponse;
 import com.webex.schemas._2002._06.service.meetingtype.MeetingTypeInstanceType;
 
 /**
- * @author nmukhtar
- *
+ * The Interface MeetingTypeService.
  */
 public interface MeetingTypeService extends WebExService {
+	
+	/**
+	 * Gets the meeting type.
+	 * 
+	 * @param meetingTypeID the meeting type id
+	 * 
+	 * @return the meeting type
+	 */
 	public GetMeetingTypeResponse getMeetingType(Long meetingTypeID);
+	
+	/**
+	 * Gets the meeting types.
+	 * 
+	 * @param meetingTypeIDs the meeting type i ds
+	 * 
+	 * @return the meeting types
+	 */
 	public List<MeetingTypeInstanceType> getMeetingTypes(List<Long> meetingTypeIDs);
 }

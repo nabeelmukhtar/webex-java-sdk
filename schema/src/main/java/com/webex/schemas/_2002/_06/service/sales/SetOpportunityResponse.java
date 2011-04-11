@@ -29,23 +29,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for setOpportunityResponse complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="setOpportunityResponse">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="intOpptyID" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SetOpportunityResponse.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "setOpportunityResponse", propOrder = {
@@ -56,31 +40,28 @@ public class SetOpportunityResponse
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The int oppty id. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long intOpptyID;
 
     /**
-     * Gets the value of the intOpptyID property.
+     * Gets the int oppty id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the int oppty id
      */
     public Long getIntOpptyID() {
         return intOpptyID;
     }
 
     /**
-     * Sets the value of the intOpptyID property.
+     * Sets the int oppty id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new int oppty id
      */
     public void setIntOpptyID(Long value) {
         this.intOpptyID = value;

@@ -23,16 +23,14 @@ import com.google.code.webex.service.WebExServiceFactory;
 import com.webex.schemas._2002._06.service.meeting.MeetingSummaryInstanceType;
 
 /**
- * The Class ClassifierExample.
- * 
- * @author Nabeel Mukhtar
+ * The Class MeetingServiceExample.
  */
 public class MeetingServiceExample {
 
     /**
      * The main method.
      * 
-     * @param args the args
+     * @param args the arguments
      */
 	public static void main(String[] args) {
 		final WebExServiceFactory factory = WebExServiceFactory.newInstance("nabeeltesting", "Olympic99", 243585L, "apidemoeu", "g0webx!");

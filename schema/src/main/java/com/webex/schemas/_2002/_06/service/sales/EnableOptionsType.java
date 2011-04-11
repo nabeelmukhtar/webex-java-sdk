@@ -24,25 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for enableOptionsType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="enableOptionsType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="autoDeleteAfterMeetingEnd" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="sendEmailByClient" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="displayQuickStartHost" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class EnableOptionsType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "enableOptionsType", propOrder = {
@@ -54,78 +36,67 @@ public class EnableOptionsType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The auto delete after meeting end. */
     protected Boolean autoDeleteAfterMeetingEnd;
+    
+    /** The send email by client. */
     protected Boolean sendEmailByClient;
+    
+    /** The display quick start host. */
     protected Boolean displayQuickStartHost;
 
     /**
-     * Gets the value of the autoDeleteAfterMeetingEnd property.
+     * Checks if is auto delete after meeting end.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isAutoDeleteAfterMeetingEnd() {
         return autoDeleteAfterMeetingEnd;
     }
 
     /**
-     * Sets the value of the autoDeleteAfterMeetingEnd property.
+     * Sets the auto delete after meeting end.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new auto delete after meeting end
      */
     public void setAutoDeleteAfterMeetingEnd(Boolean value) {
         this.autoDeleteAfterMeetingEnd = value;
     }
 
     /**
-     * Gets the value of the sendEmailByClient property.
+     * Checks if is send email by client.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isSendEmailByClient() {
         return sendEmailByClient;
     }
 
     /**
-     * Sets the value of the sendEmailByClient property.
+     * Sets the send email by client.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new send email by client
      */
     public void setSendEmailByClient(Boolean value) {
         this.sendEmailByClient = value;
     }
 
     /**
-     * Gets the value of the displayQuickStartHost property.
+     * Checks if is display quick start host.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isDisplayQuickStartHost() {
         return displayQuickStartHost;
     }
 
     /**
-     * Sets the value of the displayQuickStartHost property.
+     * Sets the display quick start host.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new display quick start host
      */
     public void setDisplayQuickStartHost(Boolean value) {
         this.displayQuickStartHost = value;

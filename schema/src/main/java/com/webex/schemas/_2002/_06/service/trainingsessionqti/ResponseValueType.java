@@ -28,30 +28,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Java class for response_valueType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="response_valueType">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
- *       &lt;attribute name="response_status" default="Valid">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="Null"/>
- *             &lt;enumeration value="Valid"/>
- *             &lt;enumeration value="NA"/>
- *             &lt;enumeration value="Invalid"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ResponseValueType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "response_valueType", propOrder = {
@@ -61,44 +38,40 @@ public class ResponseValueType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The value. */
     @XmlValue
     protected String value;
+    
+    /** The response status. */
     @XmlAttribute(name = "response_status")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String responseStatus;
 
     /**
-     * Gets the value of the value property.
+     * Gets the value.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the value
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value of the value property.
+     * Sets the value.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new value
      */
     public void setValue(String value) {
         this.value = value;
     }
 
     /**
-     * Gets the value of the responseStatus property.
+     * Gets the response status.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the response status
      */
     public String getResponseStatus() {
         if (responseStatus == null) {
@@ -109,12 +82,9 @@ public class ResponseValueType
     }
 
     /**
-     * Sets the value of the responseStatus property.
+     * Sets the response status.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new response status
      */
     public void setResponseStatus(String value) {
         this.responseStatus = value;

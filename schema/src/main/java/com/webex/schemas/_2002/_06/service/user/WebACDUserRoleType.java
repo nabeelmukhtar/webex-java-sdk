@@ -25,24 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for webACDUserRoleType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="webACDUserRoleType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="isAgent" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="isMgr" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class WebACDUserRoleType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "webACDUserRoleType", propOrder = {
@@ -57,53 +40,46 @@ public class WebACDUserRoleType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The is agent. */
     protected Boolean isAgent;
+    
+    /** The is mgr. */
     protected Boolean isMgr;
 
     /**
-     * Gets the value of the isAgent property.
+     * Checks if is is agent.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isIsAgent() {
         return isAgent;
     }
 
     /**
-     * Sets the value of the isAgent property.
+     * Sets the checks if is agent.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new checks if is agent
      */
     public void setIsAgent(Boolean value) {
         this.isAgent = value;
     }
 
     /**
-     * Gets the value of the isMgr property.
+     * Checks if is is mgr.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isIsMgr() {
         return isMgr;
     }
 
     /**
-     * Sets the value of the isMgr property.
+     * Sets the checks if is mgr.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new checks if is mgr
      */
     public void setIsMgr(Boolean value) {
         this.isMgr = value;

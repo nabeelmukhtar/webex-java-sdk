@@ -25,30 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for clientPlatformsType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="clientPlatformsType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="msWindows" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="macOS9" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="macOSX" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="sunSolaris" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="linux" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="hpUnix" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="java" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="palm" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ClientPlatformsType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "clientPlatformsType", propOrder = {
@@ -65,204 +42,173 @@ public class ClientPlatformsType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The ms windows. */
     protected Boolean msWindows;
+    
+    /** The mac o s9. */
     protected Boolean macOS9;
+    
+    /** The mac osx. */
     protected Boolean macOSX;
+    
+    /** The sun solaris. */
     protected Boolean sunSolaris;
+    
+    /** The linux. */
     @XmlElement(defaultValue = "false")
     protected Boolean linux;
+    
+    /** The hp unix. */
     protected Boolean hpUnix;
+    
+    /** The java. */
     protected Boolean java;
+    
+    /** The palm. */
     protected Boolean palm;
 
     /**
-     * Gets the value of the msWindows property.
+     * Checks if is ms windows.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isMsWindows() {
         return msWindows;
     }
 
     /**
-     * Sets the value of the msWindows property.
+     * Sets the ms windows.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new ms windows
      */
     public void setMsWindows(Boolean value) {
         this.msWindows = value;
     }
 
     /**
-     * Gets the value of the macOS9 property.
+     * Checks if is mac o s9.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isMacOS9() {
         return macOS9;
     }
 
     /**
-     * Sets the value of the macOS9 property.
+     * Sets the mac o s9.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new mac o s9
      */
     public void setMacOS9(Boolean value) {
         this.macOS9 = value;
     }
 
     /**
-     * Gets the value of the macOSX property.
+     * Checks if is mac osx.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isMacOSX() {
         return macOSX;
     }
 
     /**
-     * Sets the value of the macOSX property.
+     * Sets the mac osx.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new mac osx
      */
     public void setMacOSX(Boolean value) {
         this.macOSX = value;
     }
 
     /**
-     * Gets the value of the sunSolaris property.
+     * Checks if is sun solaris.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isSunSolaris() {
         return sunSolaris;
     }
 
     /**
-     * Sets the value of the sunSolaris property.
+     * Sets the sun solaris.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new sun solaris
      */
     public void setSunSolaris(Boolean value) {
         this.sunSolaris = value;
     }
 
     /**
-     * Gets the value of the linux property.
+     * Checks if is linux.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isLinux() {
         return linux;
     }
 
     /**
-     * Sets the value of the linux property.
+     * Sets the linux.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new linux
      */
     public void setLinux(Boolean value) {
         this.linux = value;
     }
 
     /**
-     * Gets the value of the hpUnix property.
+     * Checks if is hp unix.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isHpUnix() {
         return hpUnix;
     }
 
     /**
-     * Sets the value of the hpUnix property.
+     * Sets the hp unix.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new hp unix
      */
     public void setHpUnix(Boolean value) {
         this.hpUnix = value;
     }
 
     /**
-     * Gets the value of the java property.
+     * Checks if is java.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isJava() {
         return java;
     }
 
     /**
-     * Sets the value of the java property.
+     * Sets the java.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new java
      */
     public void setJava(Boolean value) {
         this.java = value;
     }
 
     /**
-     * Gets the value of the palm property.
+     * Checks if is palm.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isPalm() {
         return palm;
     }
 
     /**
-     * Sets the value of the palm property.
+     * Sets the palm.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new palm
      */
     public void setPalm(Boolean value) {
         this.palm = value;

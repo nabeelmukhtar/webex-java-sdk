@@ -32,35 +32,31 @@ import com.webex.schemas._2002._06.service.ObjectFactory;
 import com.webex.schemas._2002._06.service.SecurityContextType;
 
 /**
- * The Class UClassifyJaxbClient.
- * 
- * @author Nabeel Mukhtar
+ * The Class WebExJaxbService.
  */
 public class WebExJaxbService extends BaseWebExService {
 
-    /** Field description. */
+    /** The Constant OBJECT_FACTORY. */
     private static final ObjectFactory OBJECT_FACTORY = new ObjectFactory();
     
-    /** Do not access directly. It may be null!!!. Use {@link #getRequestJaxbContext()} */
+    /** The JAX b_ context. */
     private static JAXBContext JAXB_CONTEXT;
 
     /**
-     * Constructs ...
+     * Instantiates a new web ex jaxb service.
      * 
-     * @param readApiKey the read api key
-     * @param writeApiKey the write api key
+     * @param webExId the web ex id
+     * @param password the password
+     * @param siteId the site id
+     * @param siteName the site name
+     * @param partnerId the partner id
      */
     public WebExJaxbService(String webExId, String password, Long siteId, String siteName, String partnerId) {
         super(webExId, password, siteId, siteName, partnerId);
     }
 
-    /**
-     * Method description.
-     * 
-     * @param xmlContent the xml content
-     * @param clazz the clazz
-     * 
-     * @return the T
+    /* (non-Javadoc)
+     * @see com.google.code.webex.service.impl.BaseWebExService#unmarshallObject(java.lang.Class, java.io.InputStream)
      */
     @SuppressWarnings("unchecked")
     protected <T> T unmarshallObject(Class<T> clazz, InputStream xmlContent) {
@@ -73,12 +69,8 @@ public class WebExJaxbService extends BaseWebExService {
         }
     }
 
-    /**
-     * Method description.
-     * 
-     * @param element the element
-     * 
-     * @return the string
+    /* (non-Javadoc)
+     * @see com.google.code.webex.service.impl.BaseWebExService#marshallObject(java.lang.Object)
      */
 	protected String marshallObject(Object element) {
         try {
@@ -92,17 +84,20 @@ public class WebExJaxbService extends BaseWebExService {
         }
     }
 
-    /**
-     * Method description.
-     * 
-     * @param urlFormat the url format
-     * 
-     * @return the u classify url builder
+    /* (non-Javadoc)
+     * @see com.google.code.webex.service.impl.BaseWebExService#createWebExUrlBuilder(java.lang.String)
      */
     protected WebExUrlBuilder createWebExUrlBuilder(String urlFormat) {
         return new WebExUrlBuilder(urlFormat, getApiConsumer().getSiteName());
     }
     
+    /**
+     * Creates the request.
+     * 
+     * @param bodyContents the body contents
+     * 
+     * @return the message type
+     */
     protected MessageType createRequest(BodyContentType... bodyContents) {
 		MessageType message = OBJECT_FACTORY.createMessageType();
 		MessageType.Header header = OBJECT_FACTORY.createMessageTypeHeader();
@@ -125,9 +120,9 @@ public class WebExJaxbService extends BaseWebExService {
     }
 
     /**
-     * Method description.
+     * Gets the jaxb context.
      * 
-     * @return the request jaxb context
+     * @return the jaxb context
      * 
      * @throws JAXBException the JAXB exception
      */

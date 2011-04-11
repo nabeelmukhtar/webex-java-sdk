@@ -24,23 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for SalesCenterType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="SalesCenterType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="allowJoinWithoutLogin" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SalesCenterType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "SalesCenterType", propOrder = {
@@ -50,28 +34,25 @@ public class SalesCenterType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The allow join without login. */
     protected Boolean allowJoinWithoutLogin;
 
     /**
-     * Gets the value of the allowJoinWithoutLogin property.
+     * Checks if is allow join without login.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isAllowJoinWithoutLogin() {
         return allowJoinWithoutLogin;
     }
 
     /**
-     * Sets the value of the allowJoinWithoutLogin property.
+     * Sets the allow join without login.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new allow join without login
      */
     public void setAllowJoinWithoutLogin(Boolean value) {
         this.allowJoinWithoutLogin = value;

@@ -24,20 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for getMeetingTypeResponse complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="getMeetingTypeResponse">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/meetingtype}meetingTypeInstanceType">
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GetMeetingTypeResponse.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getMeetingTypeResponse")
@@ -46,6 +33,7 @@ public class GetMeetingTypeResponse
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
 
 }

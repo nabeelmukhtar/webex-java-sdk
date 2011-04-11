@@ -26,24 +26,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for topBarType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="topBarType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="button" type="{http://www.webex.com/schemas/2002/06/service/site}navigationBarType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="displayDisabledService" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class TopBarType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "topBarType", propOrder = {
@@ -54,31 +37,19 @@ public class TopBarType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The button. */
     protected List<NavigationBarType> button;
+    
+    /** The display disabled service. */
     protected Boolean displayDisabledService;
 
     /**
-     * Gets the value of the button property.
+     * Gets the button.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the button property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getButton().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link NavigationBarType }
-     * 
-     * 
+     * @return the button
      */
     public List<NavigationBarType> getButton() {
         if (button == null) {
@@ -88,24 +59,18 @@ public class TopBarType
     }
 
     /**
-     * Gets the value of the displayDisabledService property.
+     * Checks if is display disabled service.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isDisplayDisabledService() {
         return displayDisabledService;
     }
 
     /**
-     * Sets the value of the displayDisabledService property.
+     * Sets the display disabled service.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new display disabled service
      */
     public void setDisplayDisabledService(Boolean value) {
         this.displayDisabledService = value;

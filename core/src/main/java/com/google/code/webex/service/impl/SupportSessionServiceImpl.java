@@ -31,14 +31,29 @@ import com.webex.schemas._2002._06.service.attendee.GetFeedbackInfoResponse;
 import com.webex.schemas._2002._06.service.supportsession.CreateSupportSession;
 import com.webex.schemas._2002._06.service.supportsession.CreateSupportSessionResponse;
 
+/**
+ * The Class SupportSessionServiceImpl.
+ */
 public class SupportSessionServiceImpl extends WebExJaxbService implements
 	SupportSessionService {
 
+	/**
+	 * Instantiates a new support session service impl.
+	 * 
+	 * @param webExId the web ex id
+	 * @param password the password
+	 * @param siteId the site id
+	 * @param siteName the site name
+	 * @param partnerId the partner id
+	 */
 	public SupportSessionServiceImpl(String webExId, String password,
 			Long siteId, String siteName, String partnerId) {
 		super(webExId, password, siteId, siteName, partnerId);
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.SupportSessionService#createSupportSession(com.webex.schemas._2002._06.service.supportsession.CreateSupportSession)
+	 */
 	@Override
 	public Long createSupportSession(CreateSupportSession session) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -52,6 +67,9 @@ public class SupportSessionServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.SupportSessionService#getFeedbackInformation(long)
+	 */
 	@Override
 	public List<FeedbackSessionType> getFeedbackInformation(long confID) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);

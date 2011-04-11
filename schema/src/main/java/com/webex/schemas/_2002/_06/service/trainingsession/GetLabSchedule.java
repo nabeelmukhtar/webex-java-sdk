@@ -26,26 +26,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for getLabSchedule complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="getLabSchedule">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="labName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="sessionStartTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="sessionEndTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GetLabSchedule.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getLabSchedule", propOrder = {
@@ -59,99 +40,92 @@ public class GetLabSchedule
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The lab name. */
     @XmlElement(required = true)
     protected String labName;
+    
+    /** The time zone id. */
     @XmlElement(defaultValue = "-1")
     protected int timeZoneID;
+    
+    /** The session start time. */
     @XmlElement(required = true)
     protected String sessionStartTime;
+    
+    /** The session end time. */
     @XmlElement(required = true)
     protected String sessionEndTime;
 
     /**
-     * Gets the value of the labName property.
+     * Gets the lab name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the lab name
      */
     public String getLabName() {
         return labName;
     }
 
     /**
-     * Sets the value of the labName property.
+     * Sets the lab name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new lab name
      */
     public void setLabName(String value) {
         this.labName = value;
     }
 
     /**
-     * Gets the value of the timeZoneID property.
+     * Gets the time zone id.
      * 
+     * @return the time zone id
      */
     public int getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the value of the timeZoneID property.
+     * Sets the time zone id.
      * 
+     * @param value the new time zone id
      */
     public void setTimeZoneID(int value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the value of the sessionStartTime property.
+     * Gets the session start time.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the session start time
      */
     public String getSessionStartTime() {
         return sessionStartTime;
     }
 
     /**
-     * Sets the value of the sessionStartTime property.
+     * Sets the session start time.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new session start time
      */
     public void setSessionStartTime(String value) {
         this.sessionStartTime = value;
     }
 
     /**
-     * Gets the value of the sessionEndTime property.
+     * Gets the session end time.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the session end time
      */
     public String getSessionEndTime() {
         return sessionEndTime;
     }
 
     /**
-     * Sets the value of the sessionEndTime property.
+     * Sets the session end time.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new session end time
      */
     public void setSessionEndTime(String value) {
         this.sessionEndTime = value;

@@ -21,305 +21,328 @@ import javax.xml.bind.annotation.XmlRegistry;
 
 
 /**
- * This object contains factory methods for each 
- * Java content interface and Java element interface 
- * generated in the com.webex.schemas._2002._06.service.meeting package. 
- * <p>An ObjectFactory allows you to programatically 
- * construct new instances of the Java representation 
- * for XML content. The Java representation of XML 
- * content can consist of schema derived interfaces 
- * and classes representing the binding of schema 
- * type definitions, element declarations and model 
- * groups.  Factory methods for each of these are 
- * provided in this class.
- * 
+ * A factory for creating Object objects.
  */
 @XmlRegistry
 public class ObjectFactory {
 
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.webex.schemas._2002._06.service.meeting
-     * 
+     * Instantiates a new object factory.
      */
     public ObjectFactory() {
     }
 
     /**
-     * Create an instance of {@link RemindType }
+     * Creates a new Object object.
      * 
+     * @return the remind type
      */
     public RemindType createRemindType() {
         return new RemindType();
     }
 
     /**
-     * Create an instance of {@link AttendeeOptionsType }
+     * Creates a new Object object.
      * 
+     * @return the attendee options type
      */
     public AttendeeOptionsType createAttendeeOptionsType() {
         return new AttendeeOptionsType();
     }
 
     /**
-     * Create an instance of {@link GetMeeting }
+     * Creates a new Object object.
      * 
+     * @return the gets the meeting
      */
     public GetMeeting createGetMeeting() {
         return new GetMeeting();
     }
 
     /**
-     * Create an instance of {@link RepeatType }
+     * Creates a new Object object.
      * 
+     * @return the repeat type
      */
     public RepeatType createRepeatType() {
         return new RepeatType();
     }
 
     /**
-     * Create an instance of {@link DateScopeType }
+     * Creates a new Object object.
      * 
+     * @return the date scope type
      */
     public DateScopeType createDateScopeType() {
         return new DateScopeType();
     }
 
     /**
-     * Create an instance of {@link GethosturlMeeting }
+     * Creates a new Object object.
      * 
+     * @return the gethosturl meeting
      */
     public GethosturlMeeting createGethosturlMeeting() {
         return new GethosturlMeeting();
     }
 
     /**
-     * Create an instance of {@link MetaDataType }
+     * Creates a new Object object.
      * 
+     * @return the meta data type
      */
     public MetaDataType createMetaDataType() {
         return new MetaDataType();
     }
 
     /**
-     * Create an instance of {@link SetMeeting }
+     * Creates a new Object object.
      * 
+     * @return the sets the meeting
      */
     public SetMeeting createSetMeeting() {
         return new SetMeeting();
     }
 
     /**
-     * Create an instance of {@link DelMeeting }
+     * Creates a new Object object.
      * 
+     * @return the del meeting
      */
     public DelMeeting createDelMeeting() {
         return new DelMeeting();
     }
 
     /**
-     * Create an instance of {@link CreateMeetingResponse }
+     * Creates a new Object object.
      * 
+     * @return the creates the meeting response
      */
     public CreateMeetingResponse createCreateMeetingResponse() {
         return new CreateMeetingResponse();
     }
 
     /**
-     * Create an instance of {@link GetjoinurlMeetingResponse }
+     * Creates a new Object object.
      * 
+     * @return the getjoinurl meeting response
      */
     public GetjoinurlMeetingResponse createGetjoinurlMeetingResponse() {
         return new GetjoinurlMeetingResponse();
     }
 
     /**
-     * Create an instance of {@link ParticipantsType.Attendees }
+     * Creates a new Object object.
      * 
+     * @return the attendees
      */
     public ParticipantsType.Attendees createParticipantsTypeAttendees() {
         return new ParticipantsType.Attendees();
     }
 
     /**
-     * Create an instance of {@link SetMeetingResponse }
+     * Creates a new Object object.
      * 
+     * @return the sets the meeting response
      */
     public SetMeetingResponse createSetMeetingResponse() {
         return new SetMeetingResponse();
     }
 
     /**
-     * Create an instance of {@link RegistrationFieldType }
+     * Creates a new Object object.
      * 
+     * @return the registration field type
      */
     public RegistrationFieldType createRegistrationFieldType() {
         return new RegistrationFieldType();
     }
 
     /**
-     * Create an instance of {@link TelephonyType }
+     * Creates a new Object object.
      * 
+     * @return the telephony type
      */
     public TelephonyType createTelephonyType() {
         return new TelephonyType();
     }
 
     /**
-     * Create an instance of {@link GetjoinurlMeeting }
+     * Creates a new Object object.
      * 
+     * @return the getjoinurl meeting
      */
     public GetjoinurlMeeting createGetjoinurlMeeting() {
         return new GetjoinurlMeeting();
     }
 
     /**
-     * Create an instance of {@link MeetingType }
+     * Creates a new Object object.
      * 
+     * @return the meeting type
      */
     public MeetingType createMeetingType() {
         return new MeetingType();
     }
 
     /**
-     * Create an instance of {@link OrderType }
+     * Creates a new Object object.
      * 
+     * @return the order type
      */
     public OrderType createOrderType() {
         return new OrderType();
     }
 
     /**
-     * Create an instance of {@link LstsummaryMeetingResponse }
+     * Creates a new Object object.
      * 
+     * @return the lstsummary meeting response
      */
     public LstsummaryMeetingResponse createLstsummaryMeetingResponse() {
         return new LstsummaryMeetingResponse();
     }
 
     /**
-     * Create an instance of {@link RepeatType.DayInWeek }
+     * Creates a new Object object.
      * 
+     * @return the day in week
      */
     public RepeatType.DayInWeek createRepeatTypeDayInWeek() {
         return new RepeatType.DayInWeek();
     }
 
     /**
-     * Create an instance of {@link AccessControlType }
+     * Creates a new Object object.
      * 
+     * @return the access control type
      */
     public AccessControlType createAccessControlType() {
         return new AccessControlType();
     }
 
     /**
-     * Create an instance of {@link DelMeetingResponse }
+     * Creates a new Object object.
      * 
+     * @return the del meeting response
      */
     public DelMeetingResponse createDelMeetingResponse() {
         return new DelMeetingResponse();
     }
 
     /**
-     * Create an instance of {@link EnableOptionsType }
+     * Creates a new Object object.
      * 
+     * @return the enable options type
      */
     public EnableOptionsType createEnableOptionsType() {
         return new EnableOptionsType();
     }
 
     /**
-     * Create an instance of {@link ParticipantsType }
+     * Creates a new Object object.
      * 
+     * @return the participants type
      */
     public ParticipantsType createParticipantsType() {
         return new ParticipantsType();
     }
 
     /**
-     * Create an instance of {@link MeetingInstanceType }
+     * Creates a new Object object.
      * 
+     * @return the meeting instance type
      */
     public MeetingInstanceType createMeetingInstanceType() {
         return new MeetingInstanceType();
     }
 
     /**
-     * Create an instance of {@link MeetingSummaryInstanceType }
+     * Creates a new Object object.
      * 
+     * @return the meeting summary instance type
      */
     public MeetingSummaryInstanceType createMeetingSummaryInstanceType() {
         return new MeetingSummaryInstanceType();
     }
 
     /**
-     * Create an instance of {@link LstMeeting }
+     * Creates a new Object object.
      * 
+     * @return the lst meeting
      */
     public LstMeeting createLstMeeting() {
         return new LstMeeting();
     }
 
     /**
-     * Create an instance of {@link ScheduleType }
+     * Creates a new Object object.
      * 
+     * @return the schedule type
      */
     public ScheduleType createScheduleType() {
         return new ScheduleType();
     }
 
     /**
-     * Create an instance of {@link LstMeetingResponse }
+     * Creates a new Object object.
      * 
+     * @return the lst meeting response
      */
     public LstMeetingResponse createLstMeetingResponse() {
         return new LstMeetingResponse();
     }
 
     /**
-     * Create an instance of {@link LstsummaryMeeting }
+     * Creates a new Object object.
      * 
+     * @return the lstsummary meeting
      */
     public LstsummaryMeeting createLstsummaryMeeting() {
         return new LstsummaryMeeting();
     }
 
     /**
-     * Create an instance of {@link GethosturlMeetingResponse }
+     * Creates a new Object object.
      * 
+     * @return the gethosturl meeting response
      */
     public GethosturlMeetingResponse createGethosturlMeetingResponse() {
         return new GethosturlMeetingResponse();
     }
 
     /**
-     * Create an instance of {@link RemindType.Emails }
+     * Creates a new Object object.
      * 
+     * @return the emails
      */
     public RemindType.Emails createRemindTypeEmails() {
         return new RemindType.Emails();
     }
 
     /**
-     * Create an instance of {@link StandardFieldsType }
+     * Creates a new Object object.
      * 
+     * @return the standard fields type
      */
     public StandardFieldsType createStandardFieldsType() {
         return new StandardFieldsType();
     }
 
     /**
-     * Create an instance of {@link GetMeetingResponse }
+     * Creates a new Object object.
      * 
+     * @return the gets the meeting response
      */
     public GetMeetingResponse createGetMeetingResponse() {
         return new GetMeetingResponse();
     }
 
     /**
-     * Create an instance of {@link CreateMeeting }
+     * Creates a new Object object.
      * 
+     * @return the creates the meeting
      */
     public CreateMeeting createCreateMeeting() {
         return new CreateMeeting();

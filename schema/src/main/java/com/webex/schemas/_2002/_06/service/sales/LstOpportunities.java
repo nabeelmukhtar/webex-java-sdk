@@ -29,28 +29,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for lstOpportunities complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="lstOpportunities">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="webExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="intAccountID" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="extAccountID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="intOpptyID" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="extOpptyID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="extSystemID" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class LstOpportunities.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstOpportunities", propOrder = {
@@ -66,162 +45,139 @@ public class LstOpportunities
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The web ex id. */
     protected String webExID;
+    
+    /** The int account id. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long intAccountID;
+    
+    /** The ext account id. */
     protected String extAccountID;
+    
+    /** The int oppty id. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long intOpptyID;
+    
+    /** The ext oppty id. */
     protected String extOpptyID;
+    
+    /** The ext system id. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long extSystemID;
 
     /**
-     * Gets the value of the webExID property.
+     * Gets the web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the web ex id
      */
     public String getWebExID() {
         return webExID;
     }
 
     /**
-     * Sets the value of the webExID property.
+     * Sets the web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new web ex id
      */
     public void setWebExID(String value) {
         this.webExID = value;
     }
 
     /**
-     * Gets the value of the intAccountID property.
+     * Gets the int account id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the int account id
      */
     public Long getIntAccountID() {
         return intAccountID;
     }
 
     /**
-     * Sets the value of the intAccountID property.
+     * Sets the int account id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new int account id
      */
     public void setIntAccountID(Long value) {
         this.intAccountID = value;
     }
 
     /**
-     * Gets the value of the extAccountID property.
+     * Gets the ext account id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the ext account id
      */
     public String getExtAccountID() {
         return extAccountID;
     }
 
     /**
-     * Sets the value of the extAccountID property.
+     * Sets the ext account id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new ext account id
      */
     public void setExtAccountID(String value) {
         this.extAccountID = value;
     }
 
     /**
-     * Gets the value of the intOpptyID property.
+     * Gets the int oppty id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the int oppty id
      */
     public Long getIntOpptyID() {
         return intOpptyID;
     }
 
     /**
-     * Sets the value of the intOpptyID property.
+     * Sets the int oppty id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new int oppty id
      */
     public void setIntOpptyID(Long value) {
         this.intOpptyID = value;
     }
 
     /**
-     * Gets the value of the extOpptyID property.
+     * Gets the ext oppty id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the ext oppty id
      */
     public String getExtOpptyID() {
         return extOpptyID;
     }
 
     /**
-     * Sets the value of the extOpptyID property.
+     * Sets the ext oppty id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new ext oppty id
      */
     public void setExtOpptyID(String value) {
         this.extOpptyID = value;
     }
 
     /**
-     * Gets the value of the extSystemID property.
+     * Gets the ext system id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the ext system id
      */
     public Long getExtSystemID() {
         return extSystemID;
     }
 
     /**
-     * Sets the value of the extSystemID property.
+     * Sets the ext system id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new ext system id
      */
     public void setExtSystemID(Long value) {
         this.extSystemID = value;

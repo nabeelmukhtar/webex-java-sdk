@@ -28,24 +28,7 @@ import com.webex.schemas._2002._06.service.MatchingRecordsType;
 
 
 /**
- * <p>Java class for lstmeetingusageHistoryResponse complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="lstmeetingusageHistoryResponse">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="meetingUsageHistory" type="{http://www.webex.com/schemas/2002/06/service/history}meetingUsageHistoryInstanceType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="matchingRecords" type="{http://www.webex.com/schemas/2002/06/service}matchingRecordsType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class LstmeetingusageHistoryResponse.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstmeetingusageHistoryResponse", propOrder = {
@@ -57,31 +40,19 @@ public class LstmeetingusageHistoryResponse
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The meeting usage history. */
     protected List<MeetingUsageHistoryInstanceType> meetingUsageHistory;
+    
+    /** The matching records. */
     protected MatchingRecordsType matchingRecords;
 
     /**
-     * Gets the value of the meetingUsageHistory property.
+     * Gets the meeting usage history.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the meetingUsageHistory property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getMeetingUsageHistory().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link MeetingUsageHistoryInstanceType }
-     * 
-     * 
+     * @return the meeting usage history
      */
     public List<MeetingUsageHistoryInstanceType> getMeetingUsageHistory() {
         if (meetingUsageHistory == null) {
@@ -91,24 +62,18 @@ public class LstmeetingusageHistoryResponse
     }
 
     /**
-     * Gets the value of the matchingRecords property.
+     * Gets the matching records.
      * 
-     * @return
-     *     possible object is
-     *     {@link MatchingRecordsType }
-     *     
+     * @return the matching records
      */
     public MatchingRecordsType getMatchingRecords() {
         return matchingRecords;
     }
 
     /**
-     * Sets the value of the matchingRecords property.
+     * Sets the matching records.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link MatchingRecordsType }
-     *     
+     * @param value the new matching records
      */
     public void setMatchingRecords(MatchingRecordsType value) {
         this.matchingRecords = value;

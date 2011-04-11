@@ -22,10 +22,25 @@ import com.webex.schemas._2002._06.service.attendee.FeedbackSessionType;
 import com.webex.schemas._2002._06.service.supportsession.CreateSupportSession;
 
 /**
- * @author nmukhtar
- *
+ * The Interface SupportSessionService.
  */
 public interface SupportSessionService extends WebExService {
+	
+	/**
+	 * Creates the support session.
+	 * 
+	 * @param session the session
+	 * 
+	 * @return the long
+	 */
 	public Long createSupportSession(CreateSupportSession session);
+	
+	/**
+	 * Gets the feedback information.
+	 * 
+	 * @param confID the conf id
+	 * 
+	 * @return the feedback information
+	 */
 	public List<FeedbackSessionType> getFeedbackInformation(long confID);
 }

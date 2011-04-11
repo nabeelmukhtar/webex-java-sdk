@@ -25,23 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for approvalRuleInstanceType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="approvalRuleInstanceType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}approvalRuleType">
- *       &lt;sequence>
- *         &lt;element name="enrollField" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ApprovalRuleInstanceType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "approvalRuleInstanceType", propOrder = {
@@ -52,29 +36,26 @@ public class ApprovalRuleInstanceType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The enroll field. */
     @XmlElement(required = true)
     protected String enrollField;
 
     /**
-     * Gets the value of the enrollField property.
+     * Gets the enroll field.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the enroll field
      */
     public String getEnrollField() {
         return enrollField;
     }
 
     /**
-     * Sets the value of the enrollField property.
+     * Sets the enroll field.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new enroll field
      */
     public void setEnrollField(String value) {
         this.enrollField = value;

@@ -25,25 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for globalCallInNumType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="globalCallInNumType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="countryAlias" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="phoneNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="tollFree" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GlobalCallInNumType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "globalCallInNumType", propOrder = {
@@ -55,72 +37,69 @@ public class GlobalCallInNumType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The country alias. */
     @XmlElement(required = true)
     protected String countryAlias;
+    
+    /** The phone number. */
     @XmlElement(required = true)
     protected String phoneNumber;
+    
+    /** The toll free. */
     protected boolean tollFree;
 
     /**
-     * Gets the value of the countryAlias property.
+     * Gets the country alias.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the country alias
      */
     public String getCountryAlias() {
         return countryAlias;
     }
 
     /**
-     * Sets the value of the countryAlias property.
+     * Sets the country alias.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new country alias
      */
     public void setCountryAlias(String value) {
         this.countryAlias = value;
     }
 
     /**
-     * Gets the value of the phoneNumber property.
+     * Gets the phone number.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the phone number
      */
     public String getPhoneNumber() {
         return phoneNumber;
     }
 
     /**
-     * Sets the value of the phoneNumber property.
+     * Sets the phone number.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new phone number
      */
     public void setPhoneNumber(String value) {
         this.phoneNumber = value;
     }
 
     /**
-     * Gets the value of the tollFree property.
+     * Checks if is toll free.
      * 
+     * @return true, if is toll free
      */
     public boolean isTollFree() {
         return tollFree;
     }
 
     /**
-     * Sets the value of the tollFree property.
+     * Sets the toll free.
      * 
+     * @param value the new toll free
      */
     public void setTollFree(boolean value) {
         this.tollFree = value;

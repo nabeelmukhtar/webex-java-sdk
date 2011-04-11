@@ -23,41 +23,52 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for assistConfirmedType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="assistConfirmedType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Pending"/>
- *     &lt;enumeration value="Confirmed"/>
- *     &lt;enumeration value="Cancelled"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum AssistConfirmedType.
  */
 @XmlType(name = "assistConfirmedType")
 @XmlEnum
 public enum AssistConfirmedType {
 
+    /** The PENDING. */
     @XmlEnumValue("Pending")
     PENDING("Pending"),
+    
+    /** The CONFIRMED. */
     @XmlEnumValue("Confirmed")
     CONFIRMED("Confirmed"),
+    
+    /** The CANCELLED. */
     @XmlEnumValue("Cancelled")
     CANCELLED("Cancelled");
+    
+    /** The value. */
     private final String value;
 
+    /**
+     * Instantiates a new assist confirmed type.
+     * 
+     * @param v the v
+     */
     AssistConfirmedType(String v) {
         value = v;
     }
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the assist confirmed type
+     */
     public static AssistConfirmedType fromValue(String v) {
         for (AssistConfirmedType c: AssistConfirmedType.values()) {
             if (c.value.equals(v)) {

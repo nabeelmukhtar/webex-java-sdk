@@ -23,38 +23,48 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for imageForType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="imageForType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Photo"/>
- *     &lt;enumeration value="Header"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum ImageForType.
  */
 @XmlType(name = "imageForType")
 @XmlEnum
 public enum ImageForType {
 
+    /** The PHOTO. */
     @XmlEnumValue("Photo")
     PHOTO("Photo"),
+    
+    /** The HEADER. */
     @XmlEnumValue("Header")
     HEADER("Header");
+    
+    /** The value. */
     private final String value;
 
+    /**
+     * Instantiates a new image for type.
+     * 
+     * @param v the v
+     */
     ImageForType(String v) {
         value = v;
     }
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the image for type
+     */
     public static ImageForType fromValue(String v) {
         for (ImageForType c: ImageForType.values()) {
             if (c.value.equals(v)) {

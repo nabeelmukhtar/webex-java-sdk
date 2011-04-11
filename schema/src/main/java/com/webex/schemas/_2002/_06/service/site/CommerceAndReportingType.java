@@ -24,37 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for commerceAndReportingType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="commerceAndReportingType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="trackingCode" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="siteAdminReport" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="subScriptionService" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="isECommmerce" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="conferencePrice" type="{http://www.w3.org/2001/XMLSchema}float" minOccurs="0"/>
- *         &lt;element name="callInPrice" type="{http://www.w3.org/2001/XMLSchema}float" minOccurs="0"/>
- *         &lt;element name="callInTollFreePrice" type="{http://www.w3.org/2001/XMLSchema}float" minOccurs="0"/>
- *         &lt;element name="callOutPrice" type="{http://www.w3.org/2001/XMLSchema}float" minOccurs="0"/>
- *         &lt;element name="voIPPrice" type="{http://www.w3.org/2001/XMLSchema}float" minOccurs="0"/>
- *         &lt;element name="creditCardAuthorRetries" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="customereCommerce" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="isLocalTax" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="localTaxName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="localTaxtRate" type="{http://www.w3.org/2001/XMLSchema}float" minOccurs="0"/>
- *         &lt;element name="holReport" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class CommerceAndReportingType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "commerceAndReportingType", propOrder = {
@@ -78,378 +48,319 @@ public class CommerceAndReportingType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The tracking code. */
     protected Boolean trackingCode;
+    
+    /** The site admin report. */
     protected Boolean siteAdminReport;
+    
+    /** The sub scription service. */
     protected Boolean subScriptionService;
+    
+    /** The is e commmerce. */
     protected Boolean isECommmerce;
+    
+    /** The conference price. */
     protected Float conferencePrice;
+    
+    /** The call in price. */
     protected Float callInPrice;
+    
+    /** The call in toll free price. */
     protected Float callInTollFreePrice;
+    
+    /** The call out price. */
     protected Float callOutPrice;
+    
+    /** The vo ip price. */
     protected Float voIPPrice;
+    
+    /** The credit card author retries. */
     protected Long creditCardAuthorRetries;
+    
+    /** The customere commerce. */
     protected Boolean customereCommerce;
+    
+    /** The is local tax. */
     protected Boolean isLocalTax;
+    
+    /** The local tax name. */
     protected String localTaxName;
+    
+    /** The local taxt rate. */
     protected Float localTaxtRate;
+    
+    /** The hol report. */
     protected Long holReport;
 
     /**
-     * Gets the value of the trackingCode property.
+     * Checks if is tracking code.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isTrackingCode() {
         return trackingCode;
     }
 
     /**
-     * Sets the value of the trackingCode property.
+     * Sets the tracking code.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new tracking code
      */
     public void setTrackingCode(Boolean value) {
         this.trackingCode = value;
     }
 
     /**
-     * Gets the value of the siteAdminReport property.
+     * Checks if is site admin report.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isSiteAdminReport() {
         return siteAdminReport;
     }
 
     /**
-     * Sets the value of the siteAdminReport property.
+     * Sets the site admin report.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new site admin report
      */
     public void setSiteAdminReport(Boolean value) {
         this.siteAdminReport = value;
     }
 
     /**
-     * Gets the value of the subScriptionService property.
+     * Checks if is sub scription service.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isSubScriptionService() {
         return subScriptionService;
     }
 
     /**
-     * Sets the value of the subScriptionService property.
+     * Sets the sub scription service.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new sub scription service
      */
     public void setSubScriptionService(Boolean value) {
         this.subScriptionService = value;
     }
 
     /**
-     * Gets the value of the isECommmerce property.
+     * Checks if is is e commmerce.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isIsECommmerce() {
         return isECommmerce;
     }
 
     /**
-     * Sets the value of the isECommmerce property.
+     * Sets the checks if is e commmerce.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new checks if is e commmerce
      */
     public void setIsECommmerce(Boolean value) {
         this.isECommmerce = value;
     }
 
     /**
-     * Gets the value of the conferencePrice property.
+     * Gets the conference price.
      * 
-     * @return
-     *     possible object is
-     *     {@link Float }
-     *     
+     * @return the conference price
      */
     public Float getConferencePrice() {
         return conferencePrice;
     }
 
     /**
-     * Sets the value of the conferencePrice property.
+     * Sets the conference price.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Float }
-     *     
+     * @param value the new conference price
      */
     public void setConferencePrice(Float value) {
         this.conferencePrice = value;
     }
 
     /**
-     * Gets the value of the callInPrice property.
+     * Gets the call in price.
      * 
-     * @return
-     *     possible object is
-     *     {@link Float }
-     *     
+     * @return the call in price
      */
     public Float getCallInPrice() {
         return callInPrice;
     }
 
     /**
-     * Sets the value of the callInPrice property.
+     * Sets the call in price.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Float }
-     *     
+     * @param value the new call in price
      */
     public void setCallInPrice(Float value) {
         this.callInPrice = value;
     }
 
     /**
-     * Gets the value of the callInTollFreePrice property.
+     * Gets the call in toll free price.
      * 
-     * @return
-     *     possible object is
-     *     {@link Float }
-     *     
+     * @return the call in toll free price
      */
     public Float getCallInTollFreePrice() {
         return callInTollFreePrice;
     }
 
     /**
-     * Sets the value of the callInTollFreePrice property.
+     * Sets the call in toll free price.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Float }
-     *     
+     * @param value the new call in toll free price
      */
     public void setCallInTollFreePrice(Float value) {
         this.callInTollFreePrice = value;
     }
 
     /**
-     * Gets the value of the callOutPrice property.
+     * Gets the call out price.
      * 
-     * @return
-     *     possible object is
-     *     {@link Float }
-     *     
+     * @return the call out price
      */
     public Float getCallOutPrice() {
         return callOutPrice;
     }
 
     /**
-     * Sets the value of the callOutPrice property.
+     * Sets the call out price.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Float }
-     *     
+     * @param value the new call out price
      */
     public void setCallOutPrice(Float value) {
         this.callOutPrice = value;
     }
 
     /**
-     * Gets the value of the voIPPrice property.
+     * Gets the vo ip price.
      * 
-     * @return
-     *     possible object is
-     *     {@link Float }
-     *     
+     * @return the vo ip price
      */
     public Float getVoIPPrice() {
         return voIPPrice;
     }
 
     /**
-     * Sets the value of the voIPPrice property.
+     * Sets the vo ip price.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Float }
-     *     
+     * @param value the new vo ip price
      */
     public void setVoIPPrice(Float value) {
         this.voIPPrice = value;
     }
 
     /**
-     * Gets the value of the creditCardAuthorRetries property.
+     * Gets the credit card author retries.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the credit card author retries
      */
     public Long getCreditCardAuthorRetries() {
         return creditCardAuthorRetries;
     }
 
     /**
-     * Sets the value of the creditCardAuthorRetries property.
+     * Sets the credit card author retries.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new credit card author retries
      */
     public void setCreditCardAuthorRetries(Long value) {
         this.creditCardAuthorRetries = value;
     }
 
     /**
-     * Gets the value of the customereCommerce property.
+     * Checks if is customere commerce.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isCustomereCommerce() {
         return customereCommerce;
     }
 
     /**
-     * Sets the value of the customereCommerce property.
+     * Sets the customere commerce.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new customere commerce
      */
     public void setCustomereCommerce(Boolean value) {
         this.customereCommerce = value;
     }
 
     /**
-     * Gets the value of the isLocalTax property.
+     * Checks if is is local tax.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isIsLocalTax() {
         return isLocalTax;
     }
 
     /**
-     * Sets the value of the isLocalTax property.
+     * Sets the checks if is local tax.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new checks if is local tax
      */
     public void setIsLocalTax(Boolean value) {
         this.isLocalTax = value;
     }
 
     /**
-     * Gets the value of the localTaxName property.
+     * Gets the local tax name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the local tax name
      */
     public String getLocalTaxName() {
         return localTaxName;
     }
 
     /**
-     * Sets the value of the localTaxName property.
+     * Sets the local tax name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new local tax name
      */
     public void setLocalTaxName(String value) {
         this.localTaxName = value;
     }
 
     /**
-     * Gets the value of the localTaxtRate property.
+     * Gets the local taxt rate.
      * 
-     * @return
-     *     possible object is
-     *     {@link Float }
-     *     
+     * @return the local taxt rate
      */
     public Float getLocalTaxtRate() {
         return localTaxtRate;
     }
 
     /**
-     * Sets the value of the localTaxtRate property.
+     * Sets the local taxt rate.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Float }
-     *     
+     * @param value the new local taxt rate
      */
     public void setLocalTaxtRate(Float value) {
         this.localTaxtRate = value;
     }
 
     /**
-     * Gets the value of the holReport property.
+     * Gets the hol report.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the hol report
      */
     public Long getHolReport() {
         return holReport;
     }
 
     /**
-     * Sets the value of the holReport property.
+     * Sets the hol report.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new hol report
      */
     public void setHolReport(Long value) {
         this.holReport = value;

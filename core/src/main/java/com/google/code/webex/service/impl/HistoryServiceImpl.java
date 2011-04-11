@@ -69,14 +69,29 @@ import com.webex.schemas._2002._06.service.history.TrainSessionHistoryInstanceTy
 import com.webex.schemas._2002._06.service.history.TrainingAttendeeHistoryInstanceType;
 import com.webex.schemas._2002._06.service.history.ViewTimeScopeType;
 
+/**
+ * The Class HistoryServiceImpl.
+ */
 public class HistoryServiceImpl extends WebExJaxbService implements
 		HistoryService {
 
+	/**
+	 * Instantiates a new history service impl.
+	 * 
+	 * @param webExId the web ex id
+	 * @param password the password
+	 * @param siteId the site id
+	 * @param siteName the site name
+	 * @param partnerId the partner id
+	 */
 	public HistoryServiceImpl(String webExId, String password,
 			Long siteId, String siteName, String partnerId) {
 		super(webExId, password, siteId, siteName, partnerId);
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.HistoryService#getEventAttendeeHistory(com.webex.schemas._2002._06.service.history.StartTimeScopeType, com.webex.schemas._2002._06.service.history.EndTimeScopeType, java.lang.Long, java.lang.String, java.lang.Long, java.lang.Boolean)
+	 */
 	@Override
 	public List<EventAttendeeHistoryInstanceType> getEventAttendeeHistory(
 			StartTimeScopeType startTimeScope, EndTimeScopeType endTimeScope,
@@ -102,6 +117,9 @@ public class HistoryServiceImpl extends WebExJaxbService implements
 		return new ArrayList<EventAttendeeHistoryInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.HistoryService#getEventSessionHistory(java.lang.String, java.lang.String, com.webex.schemas._2002._06.service.history.StartTimeValueType, com.webex.schemas._2002._06.service.history.EndTimeScopeType, java.lang.Long, java.lang.Long, java.lang.Integer)
+	 */
 	@Override
 	public List<EventSessionHistoryInstanceType> getEventSessionHistory(
 			String hostWebExID, String confName,
@@ -129,6 +147,9 @@ public class HistoryServiceImpl extends WebExJaxbService implements
 		return new ArrayList<EventSessionHistoryInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.HistoryService#getMeetingAttendeeHistory(java.lang.Long, com.webex.schemas._2002._06.service.history.StartTimeValueType, com.webex.schemas._2002._06.service.history.EndTimeScopeType, java.lang.String, java.lang.Long, java.lang.Boolean)
+	 */
 	@Override
 	public List<MeetingAttendeeHistoryInstanceType> getMeetingAttendeeHistory(
 			Long meetingKey, StartTimeValueType startTimeScope,
@@ -155,6 +176,9 @@ public class HistoryServiceImpl extends WebExJaxbService implements
 		return new ArrayList<MeetingAttendeeHistoryInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.HistoryService#getMeetingUsageHistory(java.lang.String, java.lang.Long, java.lang.String, java.lang.Long, java.lang.Boolean, java.lang.Integer, com.webex.schemas._2002._06.service.history.StartTimeScopeType, com.webex.schemas._2002._06.service.history.EndTimeScopeType)
+	 */
 	@Override
 	public List<MeetingUsageHistoryInstanceType> getMeetingUsageHistory(
 			String confName, Long meetingKey, String hostWebExID, Long confID,
@@ -183,6 +207,9 @@ public class HistoryServiceImpl extends WebExJaxbService implements
 		return new ArrayList<MeetingUsageHistoryInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.HistoryService#getRecordAccessDetailHistory(java.lang.Long, java.lang.Integer, java.lang.Boolean)
+	 */
 	@Override
 	public List<RecordAccessDetailHistoryType> getRecordAccessDetailHistory(
 			Long recordID, Integer timeZoneID, Boolean returnRegFields) {
@@ -204,6 +231,9 @@ public class HistoryServiceImpl extends WebExJaxbService implements
 		return new ArrayList<RecordAccessDetailHistoryType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.HistoryService#getRecordAccessHistory(com.webex.schemas._2002._06.service.history.CreationTimeScopeType, com.webex.schemas._2002._06.service.history.ViewTimeScopeType, java.lang.Integer, java.lang.String, java.lang.String)
+	 */
 	@Override
 	public List<RecordAccessHistoryInstanceType> getRecordAccessHistory(
 			CreationTimeScopeType creationTimeScope,
@@ -229,6 +259,9 @@ public class HistoryServiceImpl extends WebExJaxbService implements
 		return new ArrayList<RecordAccessHistoryInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.HistoryService#getSalesAttendeeHistory(java.lang.Long, com.webex.schemas._2002._06.service.history.StartTimeValueType, com.webex.schemas._2002._06.service.history.EndTimeScopeType, java.lang.String, java.lang.Long, java.lang.Long, java.lang.Boolean)
+	 */
 	@Override
 	public List<SalesAttendeeHistoryInstanceType> getSalesAttendeeHistory(
 			Long meetingKey, StartTimeValueType startTimeScope,
@@ -256,6 +289,9 @@ public class HistoryServiceImpl extends WebExJaxbService implements
 		return new ArrayList<SalesAttendeeHistoryInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.HistoryService#getSalesSessionHistory(java.lang.String, java.lang.Long, java.lang.String, java.lang.Long, java.lang.Boolean, java.lang.Integer, com.webex.schemas._2002._06.service.history.StartTimeScopeType, com.webex.schemas._2002._06.service.history.EndTimeScopeType, java.lang.String, java.lang.String)
+	 */
 	@Override
 	public List<SalesSessionHistoryInstanceType> getSalesSessionHistory(
 			String confName, Long meetingKey, String hostWebExID, Long confID,
@@ -287,6 +323,9 @@ public class HistoryServiceImpl extends WebExJaxbService implements
 		return new ArrayList<SalesSessionHistoryInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.HistoryService#getSupportAttendeeHistory(java.lang.Long, com.webex.schemas._2002._06.service.history.StartTimeScopeType, com.webex.schemas._2002._06.service.history.EndTimeScopeType, java.lang.Long)
+	 */
 	@Override
 	public List<SupportAttendeeHistoryInstanceType> getSupportAttendeeHistory(
 			Long sessionKey, StartTimeScopeType startTimeScope,
@@ -310,6 +349,9 @@ public class HistoryServiceImpl extends WebExJaxbService implements
 		return new ArrayList<SupportAttendeeHistoryInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.HistoryService#getSupportSessionHistory(java.lang.Long, java.lang.String, com.webex.schemas._2002._06.service.history.StartTimeValueType, com.webex.schemas._2002._06.service.history.EndTimeScopeType, java.lang.Long, java.lang.Integer)
+	 */
 	@Override
 	public List<SupportSessionHistoryInstanceType> getSupportSessionHistory(
 			Long sessionKey, String hostWebExID,
@@ -336,6 +378,9 @@ public class HistoryServiceImpl extends WebExJaxbService implements
 		return new ArrayList<SupportSessionHistoryInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.HistoryService#getTrainingAttendeeHistory(java.lang.Long, com.webex.schemas._2002._06.service.history.StartTimeScopeType, com.webex.schemas._2002._06.service.history.EndTimeScopeType, java.lang.Long, java.lang.Integer)
+	 */
 	@Override
 	public List<TrainingAttendeeHistoryInstanceType> getTrainingAttendeeHistory(
 			Long sessionKey, StartTimeScopeType startTimeScope,
@@ -360,6 +405,9 @@ public class HistoryServiceImpl extends WebExJaxbService implements
 		return new ArrayList<TrainingAttendeeHistoryInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.HistoryService#getTrainingSessionHistory(java.lang.Long, java.lang.String, com.webex.schemas._2002._06.service.history.StartTimeScopeType, com.webex.schemas._2002._06.service.history.EndTimeScopeType, java.lang.String, java.lang.Long, java.lang.Integer, java.lang.Boolean, com.webex.schemas._2002._06.common.PsoFieldsType)
+	 */
 	@Override
 	public List<TrainSessionHistoryInstanceType> getTrainingSessionHistory(
 			Long sessionKey, String confName,

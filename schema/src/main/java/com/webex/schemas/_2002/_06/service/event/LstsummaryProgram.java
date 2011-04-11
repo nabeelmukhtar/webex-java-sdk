@@ -26,25 +26,7 @@ import com.webex.schemas._2002._06.service.LstControlType;
 
 
 /**
- * <p>Java class for lstsummaryProgram complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="lstsummaryProgram">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="listControl" type="{http://www.webex.com/schemas/2002/06/service}lstControlType" minOccurs="0"/>
- *         &lt;element name="order" type="{http://www.webex.com/schemas/2002/06/service/event}programOrderType" minOccurs="0"/>
- *         &lt;element name="programID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class LstsummaryProgram.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstsummaryProgram", propOrder = {
@@ -57,78 +39,67 @@ public class LstsummaryProgram
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The list control. */
     protected LstControlType listControl;
+    
+    /** The order. */
     protected ProgramOrderType order;
+    
+    /** The program id. */
     protected Long programID;
 
     /**
-     * Gets the value of the listControl property.
+     * Gets the list control.
      * 
-     * @return
-     *     possible object is
-     *     {@link LstControlType }
-     *     
+     * @return the list control
      */
     public LstControlType getListControl() {
         return listControl;
     }
 
     /**
-     * Sets the value of the listControl property.
+     * Sets the list control.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link LstControlType }
-     *     
+     * @param value the new list control
      */
     public void setListControl(LstControlType value) {
         this.listControl = value;
     }
 
     /**
-     * Gets the value of the order property.
+     * Gets the order.
      * 
-     * @return
-     *     possible object is
-     *     {@link ProgramOrderType }
-     *     
+     * @return the order
      */
     public ProgramOrderType getOrder() {
         return order;
     }
 
     /**
-     * Sets the value of the order property.
+     * Sets the order.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ProgramOrderType }
-     *     
+     * @param value the new order
      */
     public void setOrder(ProgramOrderType value) {
         this.order = value;
     }
 
     /**
-     * Gets the value of the programID property.
+     * Gets the program id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the program id
      */
     public Long getProgramID() {
         return programID;
     }
 
     /**
-     * Sets the value of the programID property.
+     * Sets the program id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new program id
      */
     public void setProgramID(Long value) {
         this.programID = value;

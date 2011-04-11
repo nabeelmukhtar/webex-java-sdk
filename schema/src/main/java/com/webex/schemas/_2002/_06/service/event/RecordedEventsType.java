@@ -26,24 +26,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for recordedEventsType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="recordedEventsType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="webExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="recordedEvent" type="{http://www.webex.com/schemas/2002/06/service/event}recordedEventType" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class RecordedEventsType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "recordedEventsType", propOrder = {
@@ -54,55 +37,37 @@ public class RecordedEventsType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The web ex id. */
     protected String webExID;
+    
+    /** The recorded event. */
     protected List<RecordedEventType> recordedEvent;
 
     /**
-     * Gets the value of the webExID property.
+     * Gets the web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the web ex id
      */
     public String getWebExID() {
         return webExID;
     }
 
     /**
-     * Sets the value of the webExID property.
+     * Sets the web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new web ex id
      */
     public void setWebExID(String value) {
         this.webExID = value;
     }
 
     /**
-     * Gets the value of the recordedEvent property.
+     * Gets the recorded event.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the recordedEvent property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getRecordedEvent().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link RecordedEventType }
-     * 
-     * 
+     * @return the recorded event
      */
     public List<RecordedEventType> getRecordedEvent() {
         if (recordedEvent == null) {

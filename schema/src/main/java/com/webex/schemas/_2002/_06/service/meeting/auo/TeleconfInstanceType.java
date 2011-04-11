@@ -31,35 +31,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for teleconfInstanceType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="teleconfInstanceType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="personalConferenceNumber" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="accountIndex" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="tollFreeCallInNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="tollCallInNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="intlLocalCallInNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="subscriberAccessCode" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="participantFullAccessCode" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="participantLimitedAccessCode" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="scheduleConfID" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="extTelephonyDescription" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="intlLocalCallIn" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="teleconfLocation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="globalNum" type="{http://www.webex.com/schemas/2002/06/service}globalCallInNumType" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class TeleconfInstanceType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "teleconfInstanceType", propOrder = {
@@ -81,334 +53,280 @@ public class TeleconfInstanceType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The personal conference number. */
     protected boolean personalConferenceNumber;
+    
+    /** The account index. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long accountIndex;
+    
+    /** The toll free call in number. */
     @XmlElement(required = true)
     protected String tollFreeCallInNumber;
+    
+    /** The toll call in number. */
     @XmlElement(required = true)
     protected String tollCallInNumber;
+    
+    /** The intl local call in number. */
     @XmlElement(required = true)
     protected String intlLocalCallInNumber;
+    
+    /** The subscriber access code. */
     @XmlElement(required = true)
     protected String subscriberAccessCode;
+    
+    /** The participant full access code. */
     @XmlElement(required = true)
     protected String participantFullAccessCode;
+    
+    /** The participant limited access code. */
     @XmlElement(required = true)
     protected String participantLimitedAccessCode;
+    
+    /** The schedule conf id. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long scheduleConfID;
+    
+    /** The ext telephony description. */
     protected String extTelephonyDescription;
+    
+    /** The intl local call in. */
     protected Boolean intlLocalCallIn;
+    
+    /** The teleconf location. */
     protected String teleconfLocation;
+    
+    /** The global num. */
     protected List<GlobalCallInNumType> globalNum;
 
     /**
-     * Gets the value of the personalConferenceNumber property.
+     * Checks if is personal conference number.
      * 
+     * @return true, if is personal conference number
      */
     public boolean isPersonalConferenceNumber() {
         return personalConferenceNumber;
     }
 
     /**
-     * Sets the value of the personalConferenceNumber property.
+     * Sets the personal conference number.
      * 
+     * @param value the new personal conference number
      */
     public void setPersonalConferenceNumber(boolean value) {
         this.personalConferenceNumber = value;
     }
 
     /**
-     * Gets the value of the accountIndex property.
+     * Gets the account index.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the account index
      */
     public Long getAccountIndex() {
         return accountIndex;
     }
 
     /**
-     * Sets the value of the accountIndex property.
+     * Sets the account index.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new account index
      */
     public void setAccountIndex(Long value) {
         this.accountIndex = value;
     }
 
     /**
-     * Gets the value of the tollFreeCallInNumber property.
+     * Gets the toll free call in number.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the toll free call in number
      */
     public String getTollFreeCallInNumber() {
         return tollFreeCallInNumber;
     }
 
     /**
-     * Sets the value of the tollFreeCallInNumber property.
+     * Sets the toll free call in number.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new toll free call in number
      */
     public void setTollFreeCallInNumber(String value) {
         this.tollFreeCallInNumber = value;
     }
 
     /**
-     * Gets the value of the tollCallInNumber property.
+     * Gets the toll call in number.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the toll call in number
      */
     public String getTollCallInNumber() {
         return tollCallInNumber;
     }
 
     /**
-     * Sets the value of the tollCallInNumber property.
+     * Sets the toll call in number.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new toll call in number
      */
     public void setTollCallInNumber(String value) {
         this.tollCallInNumber = value;
     }
 
     /**
-     * Gets the value of the intlLocalCallInNumber property.
+     * Gets the intl local call in number.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the intl local call in number
      */
     public String getIntlLocalCallInNumber() {
         return intlLocalCallInNumber;
     }
 
     /**
-     * Sets the value of the intlLocalCallInNumber property.
+     * Sets the intl local call in number.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new intl local call in number
      */
     public void setIntlLocalCallInNumber(String value) {
         this.intlLocalCallInNumber = value;
     }
 
     /**
-     * Gets the value of the subscriberAccessCode property.
+     * Gets the subscriber access code.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the subscriber access code
      */
     public String getSubscriberAccessCode() {
         return subscriberAccessCode;
     }
 
     /**
-     * Sets the value of the subscriberAccessCode property.
+     * Sets the subscriber access code.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new subscriber access code
      */
     public void setSubscriberAccessCode(String value) {
         this.subscriberAccessCode = value;
     }
 
     /**
-     * Gets the value of the participantFullAccessCode property.
+     * Gets the participant full access code.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the participant full access code
      */
     public String getParticipantFullAccessCode() {
         return participantFullAccessCode;
     }
 
     /**
-     * Sets the value of the participantFullAccessCode property.
+     * Sets the participant full access code.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new participant full access code
      */
     public void setParticipantFullAccessCode(String value) {
         this.participantFullAccessCode = value;
     }
 
     /**
-     * Gets the value of the participantLimitedAccessCode property.
+     * Gets the participant limited access code.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the participant limited access code
      */
     public String getParticipantLimitedAccessCode() {
         return participantLimitedAccessCode;
     }
 
     /**
-     * Sets the value of the participantLimitedAccessCode property.
+     * Sets the participant limited access code.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new participant limited access code
      */
     public void setParticipantLimitedAccessCode(String value) {
         this.participantLimitedAccessCode = value;
     }
 
     /**
-     * Gets the value of the scheduleConfID property.
+     * Gets the schedule conf id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the schedule conf id
      */
     public Long getScheduleConfID() {
         return scheduleConfID;
     }
 
     /**
-     * Sets the value of the scheduleConfID property.
+     * Sets the schedule conf id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new schedule conf id
      */
     public void setScheduleConfID(Long value) {
         this.scheduleConfID = value;
     }
 
     /**
-     * Gets the value of the extTelephonyDescription property.
+     * Gets the ext telephony description.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the ext telephony description
      */
     public String getExtTelephonyDescription() {
         return extTelephonyDescription;
     }
 
     /**
-     * Sets the value of the extTelephonyDescription property.
+     * Sets the ext telephony description.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new ext telephony description
      */
     public void setExtTelephonyDescription(String value) {
         this.extTelephonyDescription = value;
     }
 
     /**
-     * Gets the value of the intlLocalCallIn property.
+     * Checks if is intl local call in.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isIntlLocalCallIn() {
         return intlLocalCallIn;
     }
 
     /**
-     * Sets the value of the intlLocalCallIn property.
+     * Sets the intl local call in.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new intl local call in
      */
     public void setIntlLocalCallIn(Boolean value) {
         this.intlLocalCallIn = value;
     }
 
     /**
-     * Gets the value of the teleconfLocation property.
+     * Gets the teleconf location.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the teleconf location
      */
     public String getTeleconfLocation() {
         return teleconfLocation;
     }
 
     /**
-     * Sets the value of the teleconfLocation property.
+     * Sets the teleconf location.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new teleconf location
      */
     public void setTeleconfLocation(String value) {
         this.teleconfLocation = value;
     }
 
     /**
-     * Gets the value of the globalNum property.
+     * Gets the global num.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the globalNum property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getGlobalNum().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link GlobalCallInNumType }
-     * 
-     * 
+     * @return the global num
      */
     public List<GlobalCallInNumType> getGlobalNum() {
         if (globalNum == null) {

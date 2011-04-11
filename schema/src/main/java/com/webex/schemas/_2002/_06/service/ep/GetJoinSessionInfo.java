@@ -26,26 +26,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for getJoinSessionInfo complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="getJoinSessionInfo">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="sessionPassword" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="attendeeName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="attendeeEmail" type="{http://www.webex.com/schemas/2002/06/common}emailType"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GetJoinSessionInfo.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getJoinSessionInfo", propOrder = {
@@ -59,98 +40,91 @@ public class GetJoinSessionInfo
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The session key. */
     protected long sessionKey;
+    
+    /** The session password. */
     @XmlElement(required = true)
     protected String sessionPassword;
+    
+    /** The attendee name. */
     @XmlElement(required = true)
     protected String attendeeName;
+    
+    /** The attendee email. */
     @XmlElement(required = true)
     protected String attendeeEmail;
 
     /**
-     * Gets the value of the sessionKey property.
+     * Gets the session key.
      * 
+     * @return the session key
      */
     public long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the value of the sessionKey property.
+     * Sets the session key.
      * 
+     * @param value the new session key
      */
     public void setSessionKey(long value) {
         this.sessionKey = value;
     }
 
     /**
-     * Gets the value of the sessionPassword property.
+     * Gets the session password.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the session password
      */
     public String getSessionPassword() {
         return sessionPassword;
     }
 
     /**
-     * Sets the value of the sessionPassword property.
+     * Sets the session password.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new session password
      */
     public void setSessionPassword(String value) {
         this.sessionPassword = value;
     }
 
     /**
-     * Gets the value of the attendeeName property.
+     * Gets the attendee name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the attendee name
      */
     public String getAttendeeName() {
         return attendeeName;
     }
 
     /**
-     * Sets the value of the attendeeName property.
+     * Sets the attendee name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new attendee name
      */
     public void setAttendeeName(String value) {
         this.attendeeName = value;
     }
 
     /**
-     * Gets the value of the attendeeEmail property.
+     * Gets the attendee email.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the attendee email
      */
     public String getAttendeeEmail() {
         return attendeeEmail;
     }
 
     /**
-     * Sets the value of the attendeeEmail property.
+     * Sets the attendee email.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new attendee email
      */
     public void setAttendeeEmail(String value) {
         this.attendeeEmail = value;

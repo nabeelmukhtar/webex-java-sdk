@@ -30,35 +30,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for meetingSummaryInstanceType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="meetingSummaryInstanceType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="meetingKey" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="confName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="meetingType" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="hostWebExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="otherHostWebExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="timeZone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="startDate" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="duration" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="listStatus" type="{http://www.webex.com/schemas/2002/06/common}listingType" minOccurs="0"/>
- *         &lt;element name="hostJoined" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="participantsJoined" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class MeetingSummaryInstanceType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "meetingSummaryInstanceType", propOrder = {
@@ -81,317 +53,282 @@ public class MeetingSummaryInstanceType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The meeting key. */
     protected long meetingKey;
+    
+    /** The conf name. */
     @XmlElement(required = true)
     protected String confName;
+    
+    /** The meeting type. */
     protected long meetingType;
+    
+    /** The host web ex id. */
     protected String hostWebExID;
+    
+    /** The other host web ex id. */
     protected String otherHostWebExID;
+    
+    /** The time zone id. */
     protected Long timeZoneID;
+    
+    /** The time zone. */
     protected String timeZone;
+    
+    /** The status. */
     protected String status;
+    
+    /** The start date. */
     @XmlElement(required = true)
     protected String startDate;
+    
+    /** The duration. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long duration;
+    
+    /** The list status. */
     protected ListingType listStatus;
+    
+    /** The host joined. */
     protected Boolean hostJoined;
+    
+    /** The participants joined. */
     protected Boolean participantsJoined;
 
     /**
-     * Gets the value of the meetingKey property.
+     * Gets the meeting key.
      * 
+     * @return the meeting key
      */
     public long getMeetingKey() {
         return meetingKey;
     }
 
     /**
-     * Sets the value of the meetingKey property.
+     * Sets the meeting key.
      * 
+     * @param value the new meeting key
      */
     public void setMeetingKey(long value) {
         this.meetingKey = value;
     }
 
     /**
-     * Gets the value of the confName property.
+     * Gets the conf name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the conf name
      */
     public String getConfName() {
         return confName;
     }
 
     /**
-     * Sets the value of the confName property.
+     * Sets the conf name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new conf name
      */
     public void setConfName(String value) {
         this.confName = value;
     }
 
     /**
-     * Gets the value of the meetingType property.
+     * Gets the meeting type.
      * 
+     * @return the meeting type
      */
     public long getMeetingType() {
         return meetingType;
     }
 
     /**
-     * Sets the value of the meetingType property.
+     * Sets the meeting type.
      * 
+     * @param value the new meeting type
      */
     public void setMeetingType(long value) {
         this.meetingType = value;
     }
 
     /**
-     * Gets the value of the hostWebExID property.
+     * Gets the host web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the host web ex id
      */
     public String getHostWebExID() {
         return hostWebExID;
     }
 
     /**
-     * Sets the value of the hostWebExID property.
+     * Sets the host web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new host web ex id
      */
     public void setHostWebExID(String value) {
         this.hostWebExID = value;
     }
 
     /**
-     * Gets the value of the otherHostWebExID property.
+     * Gets the other host web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the other host web ex id
      */
     public String getOtherHostWebExID() {
         return otherHostWebExID;
     }
 
     /**
-     * Sets the value of the otherHostWebExID property.
+     * Sets the other host web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new other host web ex id
      */
     public void setOtherHostWebExID(String value) {
         this.otherHostWebExID = value;
     }
 
     /**
-     * Gets the value of the timeZoneID property.
+     * Gets the time zone id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the time zone id
      */
     public Long getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the value of the timeZoneID property.
+     * Sets the time zone id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new time zone id
      */
     public void setTimeZoneID(Long value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the value of the timeZone property.
+     * Gets the time zone.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the time zone
      */
     public String getTimeZone() {
         return timeZone;
     }
 
     /**
-     * Sets the value of the timeZone property.
+     * Sets the time zone.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new time zone
      */
     public void setTimeZone(String value) {
         this.timeZone = value;
     }
 
     /**
-     * Gets the value of the status property.
+     * Gets the status.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the status
      */
     public String getStatus() {
         return status;
     }
 
     /**
-     * Sets the value of the status property.
+     * Sets the status.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new status
      */
     public void setStatus(String value) {
         this.status = value;
     }
 
     /**
-     * Gets the value of the startDate property.
+     * Gets the start date.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the start date
      */
     public String getStartDate() {
         return startDate;
     }
 
     /**
-     * Sets the value of the startDate property.
+     * Sets the start date.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new start date
      */
     public void setStartDate(String value) {
         this.startDate = value;
     }
 
     /**
-     * Gets the value of the duration property.
+     * Gets the duration.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the duration
      */
     public Long getDuration() {
         return duration;
     }
 
     /**
-     * Sets the value of the duration property.
+     * Sets the duration.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new duration
      */
     public void setDuration(Long value) {
         this.duration = value;
     }
 
     /**
-     * Gets the value of the listStatus property.
+     * Gets the list status.
      * 
-     * @return
-     *     possible object is
-     *     {@link ListingType }
-     *     
+     * @return the list status
      */
     public ListingType getListStatus() {
         return listStatus;
     }
 
     /**
-     * Sets the value of the listStatus property.
+     * Sets the list status.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ListingType }
-     *     
+     * @param value the new list status
      */
     public void setListStatus(ListingType value) {
         this.listStatus = value;
     }
 
     /**
-     * Gets the value of the hostJoined property.
+     * Checks if is host joined.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isHostJoined() {
         return hostJoined;
     }
 
     /**
-     * Sets the value of the hostJoined property.
+     * Sets the host joined.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new host joined
      */
     public void setHostJoined(Boolean value) {
         this.hostJoined = value;
     }
 
     /**
-     * Gets the value of the participantsJoined property.
+     * Checks if is participants joined.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isParticipantsJoined() {
         return participantsJoined;
     }
 
     /**
-     * Sets the value of the participantsJoined property.
+     * Sets the participants joined.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new participants joined
      */
     public void setParticipantsJoined(Boolean value) {
         this.participantsJoined = value;

@@ -20,15 +20,13 @@ import java.util.Properties;
 
 /**
  * The Class TestConstants.
- * 
- * @author Nabeel Mukhtar
  */
 public final class TestConstants {
 
-    /** Field description. */
+    /** The Constant TEST_CONSTANTS_FILE. */
     public static final String TEST_CONSTANTS_FILE = "TestConstants.properties";
 
-    /** Field description. */
+    /** The Constant testConstants. */
     private static final Properties testConstants = new Properties();
 
     static {
@@ -39,28 +37,32 @@ public final class TestConstants {
         }
     }
     
-    /** Field description. */
+    /** The Constant UCLASSIFY_TEST_READ_KEY. */
     public static final String UCLASSIFY_TEST_READ_KEY =
         testConstants.getProperty("com.google.code.uclassify.client.readApiKey");
 
-    /** Field description. */
+    /** The Constant UCLASSIFY_TEST_WRITE_KEY. */
     public static final String UCLASSIFY_TEST_WRITE_KEY =
         testConstants.getProperty("com.google.code.uclassify.client.writeApiKey");
 
+	/** The Constant TEST_CLASSIFIER_NAME. */
 	public static final String TEST_CLASSIFIER_NAME = 
 		testConstants.getProperty("com.google.code.uclassify.client.classifierName");
 
+	/** The Constant TEST_CLASS_NAME. */
 	public static final String TEST_CLASS_NAME = 
 		testConstants.getProperty("com.google.code.uclassify.client.className");
     
+	/** The Constant CLASSIFICATION_TEXTS_FILE. */
 	public static final String CLASSIFICATION_TEXTS_FILE = 
 		testConstants.getProperty("com.google.code.uclassify.client.classificationTexts");
 	
+	/** The Constant TRAINING_TEXTS_FILE. */
 	public static final String TRAINING_TEXTS_FILE = 
 		testConstants.getProperty("com.google.code.uclassify.client.trainingTexts");
 	
     /**
-     * Constructs ...
+     * Instantiates a new test constants.
      */
     private TestConstants() {}
 }

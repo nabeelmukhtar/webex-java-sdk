@@ -22,37 +22,43 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for orderByType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="orderByType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="STARTTIME"/>
- *     &lt;enumeration value="FIRSTNAME"/>
- *     &lt;enumeration value="LASTNAME"/>
- *     &lt;enumeration value="CONFNAME"/>
- *     &lt;enumeration value="DURATION"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum OrderByType.
  */
 @XmlType(name = "orderByType")
 @XmlEnum
 public enum OrderByType {
 
+    /** The STARTTIME. */
     STARTTIME,
+    
+    /** The FIRSTNAME. */
     FIRSTNAME,
+    
+    /** The LASTNAME. */
     LASTNAME,
+    
+    /** The CONFNAME. */
     CONFNAME,
+    
+    /** The DURATION. */
     DURATION;
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the order by type
+     */
     public static OrderByType fromValue(String v) {
         return valueOf(v);
     }

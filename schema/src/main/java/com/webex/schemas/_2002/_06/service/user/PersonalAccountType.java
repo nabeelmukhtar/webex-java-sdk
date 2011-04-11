@@ -28,30 +28,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for personalAccountType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="personalAccountType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="subscriberAccessCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="participantFullAccessCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="participantLimitedAccessCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="accountIndex" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="defaultFlag" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="autoGenerate" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="joinBeforeHost" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="delete" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class PersonalAccountType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "personalAccountType", propOrder = {
@@ -68,206 +45,175 @@ public class PersonalAccountType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The subscriber access code. */
     protected String subscriberAccessCode;
+    
+    /** The participant full access code. */
     protected String participantFullAccessCode;
+    
+    /** The participant limited access code. */
     protected String participantLimitedAccessCode;
+    
+    /** The account index. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long accountIndex;
+    
+    /** The default flag. */
     protected Boolean defaultFlag;
+    
+    /** The auto generate. */
     protected Boolean autoGenerate;
+    
+    /** The join before host. */
     protected Boolean joinBeforeHost;
+    
+    /** The delete. */
     protected Boolean delete;
 
     /**
-     * Gets the value of the subscriberAccessCode property.
+     * Gets the subscriber access code.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the subscriber access code
      */
     public String getSubscriberAccessCode() {
         return subscriberAccessCode;
     }
 
     /**
-     * Sets the value of the subscriberAccessCode property.
+     * Sets the subscriber access code.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new subscriber access code
      */
     public void setSubscriberAccessCode(String value) {
         this.subscriberAccessCode = value;
     }
 
     /**
-     * Gets the value of the participantFullAccessCode property.
+     * Gets the participant full access code.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the participant full access code
      */
     public String getParticipantFullAccessCode() {
         return participantFullAccessCode;
     }
 
     /**
-     * Sets the value of the participantFullAccessCode property.
+     * Sets the participant full access code.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new participant full access code
      */
     public void setParticipantFullAccessCode(String value) {
         this.participantFullAccessCode = value;
     }
 
     /**
-     * Gets the value of the participantLimitedAccessCode property.
+     * Gets the participant limited access code.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the participant limited access code
      */
     public String getParticipantLimitedAccessCode() {
         return participantLimitedAccessCode;
     }
 
     /**
-     * Sets the value of the participantLimitedAccessCode property.
+     * Sets the participant limited access code.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new participant limited access code
      */
     public void setParticipantLimitedAccessCode(String value) {
         this.participantLimitedAccessCode = value;
     }
 
     /**
-     * Gets the value of the accountIndex property.
+     * Gets the account index.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the account index
      */
     public Long getAccountIndex() {
         return accountIndex;
     }
 
     /**
-     * Sets the value of the accountIndex property.
+     * Sets the account index.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new account index
      */
     public void setAccountIndex(Long value) {
         this.accountIndex = value;
     }
 
     /**
-     * Gets the value of the defaultFlag property.
+     * Checks if is default flag.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isDefaultFlag() {
         return defaultFlag;
     }
 
     /**
-     * Sets the value of the defaultFlag property.
+     * Sets the default flag.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new default flag
      */
     public void setDefaultFlag(Boolean value) {
         this.defaultFlag = value;
     }
 
     /**
-     * Gets the value of the autoGenerate property.
+     * Checks if is auto generate.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isAutoGenerate() {
         return autoGenerate;
     }
 
     /**
-     * Sets the value of the autoGenerate property.
+     * Sets the auto generate.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new auto generate
      */
     public void setAutoGenerate(Boolean value) {
         this.autoGenerate = value;
     }
 
     /**
-     * Gets the value of the joinBeforeHost property.
+     * Checks if is join before host.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isJoinBeforeHost() {
         return joinBeforeHost;
     }
 
     /**
-     * Sets the value of the joinBeforeHost property.
+     * Sets the join before host.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new join before host
      */
     public void setJoinBeforeHost(Boolean value) {
         this.joinBeforeHost = value;
     }
 
     /**
-     * Gets the value of the delete property.
+     * Checks if is delete.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isDelete() {
         return delete;
     }
 
     /**
-     * Sets the value of the delete property.
+     * Sets the delete.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new delete
      */
     public void setDelete(Boolean value) {
         this.delete = value;

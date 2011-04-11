@@ -31,17 +31,17 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * The Class UClassifyUrls.
+ * The Class WebExUrls.
  */
 public final class WebExUrls {
 
     /** The Constant API_URLS_FILE. */
     public static final String API_URLS_FILE = "WebExUrls.properties";
 
-    /** The static logger. */
+    /** The Constant LOG. */
     private static final Logger LOG = Logger.getLogger(WebExUrls.class.getCanonicalName());
     
-    /** The Constant linkedInApiUrls. */
+    /** The Constant webExUrls. */
     private static final Properties webExUrls = new Properties();
 
     static {
@@ -57,12 +57,12 @@ public final class WebExUrls {
         webExUrls.getProperty("com.google.code.webex.service.apiUrl");
 
     /**
-     * Instantiates a new linked in api urls.
+     * Instantiates a new web ex urls.
      */
     private WebExUrls() {}
 
     /**
-     * The Class UClassifyUrlBuilder.
+     * The Class WebExUrlBuilder.
      */
     public static class WebExUrlBuilder {
         
@@ -85,7 +85,7 @@ public final class WebExUrls {
 	    private Map<String, String> fieldsMap = new HashMap<String, String>();
     	
     	/**
-	     * Instantiates a new linked in api url builder.
+	     * Instantiates a new web ex url builder.
 	     * 
 	     * @param urlFormat the url format
 	     */
@@ -94,10 +94,10 @@ public final class WebExUrls {
     	}
     	
     	/**
-	     * Instantiates a new linked in api url builder.
+	     * Instantiates a new web ex url builder.
 	     * 
 	     * @param urlFormat the url format
-	     * @param urlType the url type
+	     * @param siteName the site name
 	     */
 	    public WebExUrlBuilder(String urlFormat, String siteName) {
     		this.urlFormat = urlFormat;
@@ -110,7 +110,7 @@ public final class WebExUrls {
 	     * @param name the name
 	     * @param value the value
 	     * 
-	     * @return the linked in api url builder
+	     * @return the web ex url builder
 	     */
 	    public WebExUrlBuilder withParameter(String name, String value) {
 	    	if (value != null && value.length() > 0) {
@@ -126,7 +126,7 @@ public final class WebExUrls {
 	     * @param name the name
 	     * @param values the values
 	     * 
-	     * @return the linked in api url builder
+	     * @return the web ex url builder
 	     */
 	    public WebExUrlBuilder withParameters(String name, Collection<String> values) {
 	    	List<String> encodedValues = new ArrayList<String>(values.size());
@@ -143,7 +143,7 @@ public final class WebExUrls {
 	     * 
 	     * @param name the name
 	     * 
-	     * @return the linked in api url builder
+	     * @return the web ex url builder
 	     */
 	    public WebExUrlBuilder withEmptyField(String name) {
     		fieldsMap.put(name, "");
@@ -157,7 +157,7 @@ public final class WebExUrls {
 	     * @param name the name
 	     * @param value the value
 	     * 
-	     * @return the linked in api url builder
+	     * @return the web ex url builder
 	     */
 	    public WebExUrlBuilder withField(String name, String value) {
 	    	withField(name, value, false);
@@ -172,7 +172,7 @@ public final class WebExUrls {
 	     * @param value the value
 	     * @param escape the escape
 	     * 
-	     * @return the linked in api url builder
+	     * @return the web ex url builder
 	     */
 	    public WebExUrlBuilder withField(String name, String value, boolean escape) {
 	    	if (escape) {

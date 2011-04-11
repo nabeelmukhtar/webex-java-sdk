@@ -24,194 +24,206 @@ import javax.xml.namespace.QName;
 
 
 /**
- * This object contains factory methods for each 
- * Java content interface and Java element interface 
- * generated in the com.webex.schemas._2002._06.service package. 
- * <p>An ObjectFactory allows you to programatically 
- * construct new instances of the Java representation 
- * for XML content. The Java representation of XML 
- * content can consist of schema derived interfaces 
- * and classes representing the binding of schema 
- * type definitions, element declarations and model 
- * groups.  Factory methods for each of these are 
- * provided in this class.
- * 
+ * A factory for creating Object objects.
  */
 @XmlRegistry
 public class ObjectFactory {
 
+    /** The Constant _Message_QNAME. */
     private final static QName _Message_QNAME = new QName("http://www.webex.com/schemas/2002/06/service", "message");
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.webex.schemas._2002._06.service
-     * 
+     * Instantiates a new object factory.
      */
     public ObjectFactory() {
     }
 
     /**
-     * Create an instance of {@link PersonalTeleServerType }
+     * Creates a new Object object.
      * 
+     * @return the personal tele server type
      */
     public PersonalTeleServerType createPersonalTeleServerType() {
         return new PersonalTeleServerType();
     }
 
     /**
-     * Create an instance of {@link BodyContentType }
+     * Creates a new Object object.
      * 
+     * @return the body content type
      */
     public BodyContentType createBodyContentType() {
         return new BodyContentType();
     }
 
     /**
-     * Create an instance of {@link GlobalCallInNumType }
+     * Creates a new Object object.
      * 
+     * @return the global call in num type
      */
     public GlobalCallInNumType createGlobalCallInNumType() {
         return new GlobalCallInNumType();
     }
 
     /**
-     * Create an instance of {@link ResponseType }
+     * Creates a new Object object.
      * 
+     * @return the response type
      */
     public ResponseType createResponseType() {
         return new ResponseType();
     }
 
     /**
-     * Create an instance of {@link MatchingRecordsType }
+     * Creates a new Object object.
      * 
+     * @return the matching records type
      */
     public MatchingRecordsType createMatchingRecordsType() {
         return new MatchingRecordsType();
     }
 
     /**
-     * Create an instance of {@link MeetingAssistType }
+     * Creates a new Object object.
      * 
+     * @return the meeting assist type
      */
     public MeetingAssistType createMeetingAssistType() {
         return new MeetingAssistType();
     }
 
     /**
-     * Create an instance of {@link TspAccountType }
+     * Creates a new Object object.
      * 
+     * @return the tsp account type
      */
     public TspAccountType createTspAccountType() {
         return new TspAccountType();
     }
 
     /**
-     * Create an instance of {@link MessageType.Body }
+     * Creates a new Object object.
      * 
+     * @return the body
      */
     public MessageType.Body createMessageTypeBody() {
         return new MessageType.Body();
     }
 
     /**
-     * Create an instance of {@link LstControlType }
+     * Creates a new Object object.
      * 
+     * @return the lst control type
      */
     public LstControlType createLstControlType() {
         return new LstControlType();
     }
 
     /**
-     * Create an instance of {@link DateScopeType }
+     * Creates a new Object object.
      * 
+     * @return the date scope type
      */
     public DateScopeType createDateScopeType() {
         return new DateScopeType();
     }
 
     /**
-     * Create an instance of {@link CallInNumType }
+     * Creates a new Object object.
      * 
+     * @return the call in num type
      */
     public CallInNumType createCallInNumType() {
         return new CallInNumType();
     }
 
     /**
-     * Create an instance of {@link OrderType }
+     * Creates a new Object object.
      * 
+     * @return the order type
      */
     public OrderType createOrderType() {
         return new OrderType();
     }
 
     /**
-     * Create an instance of {@link ResponseType.SubErrors }
+     * Creates a new Object object.
      * 
+     * @return the sub errors
      */
     public ResponseType.SubErrors createResponseTypeSubErrors() {
         return new ResponseType.SubErrors();
     }
 
     /**
-     * Create an instance of {@link ListControlType }
+     * Creates a new Object object.
      * 
+     * @return the list control type
      */
     public ListControlType createListControlType() {
         return new ListControlType();
     }
 
     /**
-     * Create an instance of {@link MessageType }
+     * Creates a new Object object.
      * 
+     * @return the message type
      */
     public MessageType createMessageType() {
         return new MessageType();
     }
 
     /**
-     * Create an instance of {@link MessageType.Header }
+     * Creates a new Object object.
      * 
+     * @return the header
      */
     public MessageType.Header createMessageTypeHeader() {
         return new MessageType.Header();
     }
 
     /**
-     * Create an instance of {@link SecurityContextType }
+     * Creates a new Object object.
      * 
+     * @return the security context type
      */
     public SecurityContextType createSecurityContextType() {
         return new SecurityContextType();
     }
 
     /**
-     * Create an instance of {@link TspAccountLabelType }
+     * Creates a new Object object.
      * 
+     * @return the tsp account label type
      */
     public TspAccountLabelType createTspAccountLabelType() {
         return new TspAccountLabelType();
     }
 
     /**
-     * Create an instance of {@link SubErrorType }
+     * Creates a new Object object.
      * 
+     * @return the sub error type
      */
     public SubErrorType createSubErrorType() {
         return new SubErrorType();
     }
 
     /**
-     * Create an instance of {@link ICalendarURLType }
+     * Creates a new Object object.
      * 
+     * @return the i calendar url type
      */
     public ICalendarURLType createICalendarURLType() {
         return new ICalendarURLType();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link MessageType }{@code >}}
+     * Creates a new Object object.
      * 
+     * @param value the value
+     * 
+     * @return the JAXB element< message type>
      */
     @XmlElementDecl(namespace = "http://www.webex.com/schemas/2002/06/service", name = "message")
     public JAXBElement<MessageType> createMessage(MessageType value) {

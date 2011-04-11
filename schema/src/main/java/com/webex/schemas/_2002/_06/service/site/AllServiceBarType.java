@@ -24,36 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for allServiceBarType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="allServiceBarType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="customLinks" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;extension base="{http://www.webex.com/schemas/2002/06/service/site}customLinkType">
- *                 &lt;sequence>
- *                   &lt;element name="groupLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/extension>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="support" type="{http://www.webex.com/schemas/2002/06/service/site}linkType" minOccurs="0"/>
- *         &lt;element name="training" type="{http://www.webex.com/schemas/2002/06/service/site}linkType" minOccurs="0"/>
- *         &lt;element name="supportMenu" type="{http://www.webex.com/schemas/2002/06/service/site}menuType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class AllServiceBarType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "allServiceBarType", propOrder = {
@@ -66,103 +37,88 @@ public class AllServiceBarType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The custom links. */
     protected AllServiceBarType.CustomLinks customLinks;
+    
+    /** The support. */
     protected LinkType support;
+    
+    /** The training. */
     protected LinkType training;
+    
+    /** The support menu. */
     protected MenuType supportMenu;
 
     /**
-     * Gets the value of the customLinks property.
+     * Gets the custom links.
      * 
-     * @return
-     *     possible object is
-     *     {@link AllServiceBarType.CustomLinks }
-     *     
+     * @return the custom links
      */
     public AllServiceBarType.CustomLinks getCustomLinks() {
         return customLinks;
     }
 
     /**
-     * Sets the value of the customLinks property.
+     * Sets the custom links.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link AllServiceBarType.CustomLinks }
-     *     
+     * @param value the new custom links
      */
     public void setCustomLinks(AllServiceBarType.CustomLinks value) {
         this.customLinks = value;
     }
 
     /**
-     * Gets the value of the support property.
+     * Gets the support.
      * 
-     * @return
-     *     possible object is
-     *     {@link LinkType }
-     *     
+     * @return the support
      */
     public LinkType getSupport() {
         return support;
     }
 
     /**
-     * Sets the value of the support property.
+     * Sets the support.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link LinkType }
-     *     
+     * @param value the new support
      */
     public void setSupport(LinkType value) {
         this.support = value;
     }
 
     /**
-     * Gets the value of the training property.
+     * Gets the training.
      * 
-     * @return
-     *     possible object is
-     *     {@link LinkType }
-     *     
+     * @return the training
      */
     public LinkType getTraining() {
         return training;
     }
 
     /**
-     * Sets the value of the training property.
+     * Sets the training.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link LinkType }
-     *     
+     * @param value the new training
      */
     public void setTraining(LinkType value) {
         this.training = value;
     }
 
     /**
-     * Gets the value of the supportMenu property.
+     * Gets the support menu.
      * 
-     * @return
-     *     possible object is
-     *     {@link MenuType }
-     *     
+     * @return the support menu
      */
     public MenuType getSupportMenu() {
         return supportMenu;
     }
 
     /**
-     * Sets the value of the supportMenu property.
+     * Sets the support menu.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link MenuType }
-     *     
+     * @param value the new support menu
      */
     public void setSupportMenu(MenuType value) {
         this.supportMenu = value;
@@ -170,23 +126,7 @@ public class AllServiceBarType
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/site}customLinkType">
-     *       &lt;sequence>
-     *         &lt;element name="groupLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/extension>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class CustomLinks.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -197,28 +137,25 @@ public class AllServiceBarType
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The group label. */
         protected String groupLabel;
 
         /**
-         * Gets the value of the groupLabel property.
+         * Gets the group label.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the group label
          */
         public String getGroupLabel() {
             return groupLabel;
         }
 
         /**
-         * Sets the value of the groupLabel property.
+         * Sets the group label.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new group label
          */
         public void setGroupLabel(String value) {
             this.groupLabel = value;

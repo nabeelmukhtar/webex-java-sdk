@@ -29,61 +29,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for salesSessionType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="salesSessionType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="accessControl" type="{http://www.webex.com/schemas/2002/06/service/sales}accessControlType" minOccurs="0"/>
- *         &lt;element name="metaData" type="{http://www.webex.com/schemas/2002/06/service/sales}metaDataType" minOccurs="0"/>
- *         &lt;element name="schedule" type="{http://www.webex.com/schemas/2002/06/service/sales}scheduleType" minOccurs="0"/>
- *         &lt;element name="enableOptions" type="{http://www.webex.com/schemas/2002/06/service/sales}enableOptionsType" minOccurs="0"/>
- *         &lt;element name="telephony" type="{http://www.webex.com/schemas/2002/06/service/sales}telephonyType" minOccurs="0"/>
- *         &lt;element name="tracking" type="{http://www.webex.com/schemas/2002/06/common}trackingType" minOccurs="0"/>
- *         &lt;element name="repeat" type="{http://www.webex.com/schemas/2002/06/service/sales}repeatType" minOccurs="0"/>
- *         &lt;element name="remind" type="{http://www.webex.com/schemas/2002/06/service/sales}remindType" minOccurs="0"/>
- *         &lt;element name="prospects" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="prospect" type="{http://www.webex.com/schemas/2002/06/service/sales}prospectType" maxOccurs="unbounded" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="salesTeam" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="webExID" maxOccurs="unbounded" minOccurs="0">
- *                     &lt;simpleType>
- *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                         &lt;maxLength value="128"/>
- *                       &lt;/restriction>
- *                     &lt;/simpleType>
- *                   &lt;/element>
- *                   &lt;element name="email" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
- *                   &lt;element name="altHosts" type="{http://www.webex.com/schemas/2002/06/service/sales}alternateHostType" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="attendeeOptions" type="{http://www.webex.com/schemas/2002/06/service/sales}attendeeOptionsType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SalesSessionType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "salesSessionType", propOrder = {
@@ -108,278 +54,235 @@ public class SalesSessionType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The access control. */
     protected AccessControlType accessControl;
+    
+    /** The meta data. */
     protected MetaDataType metaData;
+    
+    /** The schedule. */
     protected ScheduleType schedule;
+    
+    /** The enable options. */
     protected EnableOptionsType enableOptions;
+    
+    /** The telephony. */
     protected TelephonyType telephony;
+    
+    /** The tracking. */
     protected TrackingType tracking;
+    
+    /** The repeat. */
     protected RepeatType repeat;
+    
+    /** The remind. */
     protected RemindType remind;
+    
+    /** The prospects. */
     protected SalesSessionType.Prospects prospects;
+    
+    /** The sales team. */
     protected SalesSessionType.SalesTeam salesTeam;
+    
+    /** The attendee options. */
     protected AttendeeOptionsType attendeeOptions;
 
     /**
-     * Gets the value of the accessControl property.
+     * Gets the access control.
      * 
-     * @return
-     *     possible object is
-     *     {@link AccessControlType }
-     *     
+     * @return the access control
      */
     public AccessControlType getAccessControl() {
         return accessControl;
     }
 
     /**
-     * Sets the value of the accessControl property.
+     * Sets the access control.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link AccessControlType }
-     *     
+     * @param value the new access control
      */
     public void setAccessControl(AccessControlType value) {
         this.accessControl = value;
     }
 
     /**
-     * Gets the value of the metaData property.
+     * Gets the meta data.
      * 
-     * @return
-     *     possible object is
-     *     {@link MetaDataType }
-     *     
+     * @return the meta data
      */
     public MetaDataType getMetaData() {
         return metaData;
     }
 
     /**
-     * Sets the value of the metaData property.
+     * Sets the meta data.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link MetaDataType }
-     *     
+     * @param value the new meta data
      */
     public void setMetaData(MetaDataType value) {
         this.metaData = value;
     }
 
     /**
-     * Gets the value of the schedule property.
+     * Gets the schedule.
      * 
-     * @return
-     *     possible object is
-     *     {@link ScheduleType }
-     *     
+     * @return the schedule
      */
     public ScheduleType getSchedule() {
         return schedule;
     }
 
     /**
-     * Sets the value of the schedule property.
+     * Sets the schedule.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ScheduleType }
-     *     
+     * @param value the new schedule
      */
     public void setSchedule(ScheduleType value) {
         this.schedule = value;
     }
 
     /**
-     * Gets the value of the enableOptions property.
+     * Gets the enable options.
      * 
-     * @return
-     *     possible object is
-     *     {@link EnableOptionsType }
-     *     
+     * @return the enable options
      */
     public EnableOptionsType getEnableOptions() {
         return enableOptions;
     }
 
     /**
-     * Sets the value of the enableOptions property.
+     * Sets the enable options.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link EnableOptionsType }
-     *     
+     * @param value the new enable options
      */
     public void setEnableOptions(EnableOptionsType value) {
         this.enableOptions = value;
     }
 
     /**
-     * Gets the value of the telephony property.
+     * Gets the telephony.
      * 
-     * @return
-     *     possible object is
-     *     {@link TelephonyType }
-     *     
+     * @return the telephony
      */
     public TelephonyType getTelephony() {
         return telephony;
     }
 
     /**
-     * Sets the value of the telephony property.
+     * Sets the telephony.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TelephonyType }
-     *     
+     * @param value the new telephony
      */
     public void setTelephony(TelephonyType value) {
         this.telephony = value;
     }
 
     /**
-     * Gets the value of the tracking property.
+     * Gets the tracking.
      * 
-     * @return
-     *     possible object is
-     *     {@link TrackingType }
-     *     
+     * @return the tracking
      */
     public TrackingType getTracking() {
         return tracking;
     }
 
     /**
-     * Sets the value of the tracking property.
+     * Sets the tracking.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TrackingType }
-     *     
+     * @param value the new tracking
      */
     public void setTracking(TrackingType value) {
         this.tracking = value;
     }
 
     /**
-     * Gets the value of the repeat property.
+     * Gets the repeat.
      * 
-     * @return
-     *     possible object is
-     *     {@link RepeatType }
-     *     
+     * @return the repeat
      */
     public RepeatType getRepeat() {
         return repeat;
     }
 
     /**
-     * Sets the value of the repeat property.
+     * Sets the repeat.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RepeatType }
-     *     
+     * @param value the new repeat
      */
     public void setRepeat(RepeatType value) {
         this.repeat = value;
     }
 
     /**
-     * Gets the value of the remind property.
+     * Gets the remind.
      * 
-     * @return
-     *     possible object is
-     *     {@link RemindType }
-     *     
+     * @return the remind
      */
     public RemindType getRemind() {
         return remind;
     }
 
     /**
-     * Sets the value of the remind property.
+     * Sets the remind.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RemindType }
-     *     
+     * @param value the new remind
      */
     public void setRemind(RemindType value) {
         this.remind = value;
     }
 
     /**
-     * Gets the value of the prospects property.
+     * Gets the prospects.
      * 
-     * @return
-     *     possible object is
-     *     {@link SalesSessionType.Prospects }
-     *     
+     * @return the prospects
      */
     public SalesSessionType.Prospects getProspects() {
         return prospects;
     }
 
     /**
-     * Sets the value of the prospects property.
+     * Sets the prospects.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link SalesSessionType.Prospects }
-     *     
+     * @param value the new prospects
      */
     public void setProspects(SalesSessionType.Prospects value) {
         this.prospects = value;
     }
 
     /**
-     * Gets the value of the salesTeam property.
+     * Gets the sales team.
      * 
-     * @return
-     *     possible object is
-     *     {@link SalesSessionType.SalesTeam }
-     *     
+     * @return the sales team
      */
     public SalesSessionType.SalesTeam getSalesTeam() {
         return salesTeam;
     }
 
     /**
-     * Sets the value of the salesTeam property.
+     * Sets the sales team.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link SalesSessionType.SalesTeam }
-     *     
+     * @param value the new sales team
      */
     public void setSalesTeam(SalesSessionType.SalesTeam value) {
         this.salesTeam = value;
     }
 
     /**
-     * Gets the value of the attendeeOptions property.
+     * Gets the attendee options.
      * 
-     * @return
-     *     possible object is
-     *     {@link AttendeeOptionsType }
-     *     
+     * @return the attendee options
      */
     public AttendeeOptionsType getAttendeeOptions() {
         return attendeeOptions;
     }
 
     /**
-     * Sets the value of the attendeeOptions property.
+     * Sets the attendee options.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link AttendeeOptionsType }
-     *     
+     * @param value the new attendee options
      */
     public void setAttendeeOptions(AttendeeOptionsType value) {
         this.attendeeOptions = value;
@@ -387,23 +290,7 @@ public class SalesSessionType
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="prospect" type="{http://www.webex.com/schemas/2002/06/service/sales}prospectType" maxOccurs="unbounded" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class Prospects.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -413,30 +300,16 @@ public class SalesSessionType
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The prospect. */
         protected List<ProspectType> prospect;
 
         /**
-         * Gets the value of the prospect property.
+         * Gets the prospect.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the prospect property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getProspect().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link ProspectType }
-         * 
-         * 
+         * @return the prospect
          */
         public List<ProspectType> getProspect() {
             if (prospect == null) {
@@ -449,31 +322,7 @@ public class SalesSessionType
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="webExID" maxOccurs="unbounded" minOccurs="0">
-     *           &lt;simpleType>
-     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *               &lt;maxLength value="128"/>
-     *             &lt;/restriction>
-     *           &lt;/simpleType>
-     *         &lt;/element>
-     *         &lt;element name="email" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
-     *         &lt;element name="altHosts" type="{http://www.webex.com/schemas/2002/06/service/sales}alternateHostType" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class SalesTeam.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -485,32 +334,22 @@ public class SalesSessionType
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The web ex id. */
         protected List<String> webExID;
+        
+        /** The email. */
         protected List<String> email;
+        
+        /** The alt hosts. */
         protected AlternateHostType altHosts;
 
         /**
-         * Gets the value of the webExID property.
+         * Gets the web ex id.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the webExID property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getWebExID().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link String }
-         * 
-         * 
+         * @return the web ex id
          */
         public List<String> getWebExID() {
             if (webExID == null) {
@@ -520,26 +359,9 @@ public class SalesSessionType
         }
 
         /**
-         * Gets the value of the email property.
+         * Gets the email.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the email property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getEmail().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link String }
-         * 
-         * 
+         * @return the email
          */
         public List<String> getEmail() {
             if (email == null) {
@@ -549,24 +371,18 @@ public class SalesSessionType
         }
 
         /**
-         * Gets the value of the altHosts property.
+         * Gets the alt hosts.
          * 
-         * @return
-         *     possible object is
-         *     {@link AlternateHostType }
-         *     
+         * @return the alt hosts
          */
         public AlternateHostType getAltHosts() {
             return altHosts;
         }
 
         /**
-         * Sets the value of the altHosts property.
+         * Sets the alt hosts.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link AlternateHostType }
-         *     
+         * @param value the new alt hosts
          */
         public void setAltHosts(AlternateHostType value) {
             this.altHosts = value;

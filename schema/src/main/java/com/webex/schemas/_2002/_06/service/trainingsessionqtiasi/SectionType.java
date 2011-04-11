@@ -28,24 +28,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for sectionType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="sectionType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="item" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}itemType" maxOccurs="unbounded"/>
- *       &lt;/sequence>
- *       &lt;attribute name="ident" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SectionType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "sectionType", propOrder = {
@@ -54,33 +37,21 @@ import javax.xml.bind.annotation.XmlType;
 public class SectionType implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The item. */
     @XmlElement(required = true)
     protected List<ItemType> item;
+    
+    /** The ident. */
     @XmlAttribute(required = true)
     protected String ident;
 
     /**
-     * Gets the value of the item property.
+     * Gets the item.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the item property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getItem().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ItemType }
-     * 
-     * 
+     * @return the item
      */
     public List<ItemType> getItem() {
         if (item == null) {
@@ -90,24 +61,18 @@ public class SectionType implements Serializable
     }
 
     /**
-     * Gets the value of the ident property.
+     * Gets the ident.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the ident
      */
     public String getIdent() {
         return ident;
     }
 
     /**
-     * Sets the value of the ident property.
+     * Sets the ident.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new ident
      */
     public void setIdent(String value) {
         this.ident = value;

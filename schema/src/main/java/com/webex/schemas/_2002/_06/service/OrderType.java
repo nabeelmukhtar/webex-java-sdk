@@ -24,24 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for orderType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="orderType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="orderBy" type="{http://www.webex.com/schemas/2002/06/service}orderByType" minOccurs="0"/>
- *         &lt;element name="orderAD" type="{http://www.webex.com/schemas/2002/06/service}lstOrderADType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class OrderType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "orderType", propOrder = {
@@ -52,53 +35,46 @@ public class OrderType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The order by. */
     protected OrderByType orderBy;
+    
+    /** The order ad. */
     protected LstOrderADType orderAD;
 
     /**
-     * Gets the value of the orderBy property.
+     * Gets the order by.
      * 
-     * @return
-     *     possible object is
-     *     {@link OrderByType }
-     *     
+     * @return the order by
      */
     public OrderByType getOrderBy() {
         return orderBy;
     }
 
     /**
-     * Sets the value of the orderBy property.
+     * Sets the order by.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link OrderByType }
-     *     
+     * @param value the new order by
      */
     public void setOrderBy(OrderByType value) {
         this.orderBy = value;
     }
 
     /**
-     * Gets the value of the orderAD property.
+     * Gets the order ad.
      * 
-     * @return
-     *     possible object is
-     *     {@link LstOrderADType }
-     *     
+     * @return the order ad
      */
     public LstOrderADType getOrderAD() {
         return orderAD;
     }
 
     /**
-     * Sets the value of the orderAD property.
+     * Sets the order ad.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link LstOrderADType }
-     *     
+     * @param value the new order ad
      */
     public void setOrderAD(LstOrderADType value) {
         this.orderAD = value;

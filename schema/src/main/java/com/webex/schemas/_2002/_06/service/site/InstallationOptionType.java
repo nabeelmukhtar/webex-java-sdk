@@ -24,23 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for installationOptionType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="installationOptionType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="autoUpdate" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class InstallationOptionType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "installationOptionType", propOrder = {
@@ -50,28 +34,25 @@ public class InstallationOptionType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The auto update. */
     protected Boolean autoUpdate;
 
     /**
-     * Gets the value of the autoUpdate property.
+     * Checks if is auto update.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isAutoUpdate() {
         return autoUpdate;
     }
 
     /**
-     * Sets the value of the autoUpdate property.
+     * Sets the auto update.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new auto update
      */
     public void setAutoUpdate(Boolean value) {
         this.autoUpdate = value;

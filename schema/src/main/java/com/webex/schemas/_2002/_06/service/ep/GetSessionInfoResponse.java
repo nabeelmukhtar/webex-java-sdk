@@ -35,221 +35,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for getSessionInfoResponse complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="getSessionInfoResponse">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="presenter" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="panelistsInfo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="programName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="sessionkey" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="confID" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="verifyFlashMediaURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="verifyWinMediaURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="accessControl" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="sessionPassword" minOccurs="0">
- *                     &lt;simpleType>
- *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                         &lt;maxLength value="16"/>
- *                       &lt;/restriction>
- *                     &lt;/simpleType>
- *                   &lt;/element>
- *                   &lt;element name="listStatus" type="{http://www.webex.com/schemas/2002/06/service/ep}listingType"/>
- *                   &lt;element name="registration" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *                   &lt;element name="registrationURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="passwordReq" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="metaData" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="confName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="sessionType" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *                   &lt;element name="serviceType" type="{http://www.webex.com/schemas/2002/06/common}serviceTypeType"/>
- *                   &lt;element name="agenda" minOccurs="0">
- *                     &lt;simpleType>
- *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                         &lt;maxLength value="2500"/>
- *                       &lt;/restriction>
- *                     &lt;/simpleType>
- *                   &lt;/element>
- *                   &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="account" minOccurs="0">
- *                     &lt;simpleType>
- *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                         &lt;maxLength value="128"/>
- *                       &lt;/restriction>
- *                     &lt;/simpleType>
- *                   &lt;/element>
- *                   &lt;element name="opportunity" minOccurs="0">
- *                     &lt;simpleType>
- *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                         &lt;maxLength value="128"/>
- *                       &lt;/restriction>
- *                     &lt;/simpleType>
- *                   &lt;/element>
- *                   &lt;element name="isRecurring" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="telephony" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="telephonySupport" type="{http://www.webex.com/schemas/2002/06/service/meeting}telephonySupportType"/>
- *                   &lt;element name="extTelephonyDescription" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="globalCallInNumbersURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="tollFreeRestrictionsURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="callInNum" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;extension base="{http://www.webex.com/schemas/2002/06/service}callInNumType">
- *                           &lt;sequence>
- *                             &lt;element name="backupTollNum" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                           &lt;/sequence>
- *                         &lt;/extension>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                   &lt;element name="participantAccessCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="participantLimitedAccessCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="subscriberAccessCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="labels" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="tollFreeCallInLabel" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                             &lt;element name="tollCallInLabel" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                             &lt;element name="participantAccessLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="participantLimitedAccessLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="subscriberAccessLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="globalCallInNumbersLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                   &lt;element name="mpAudio" type="{http://www.webex.com/schemas/2002/06/common}phoneLabelNumType" maxOccurs="unbounded" minOccurs="0"/>
- *                   &lt;element name="mpProfileNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="isMPAudio" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="material" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="imageURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="document" maxOccurs="unbounded" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                             &lt;element name="URL" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                             &lt;element name="size" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="test" maxOccurs="unbounded" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="title" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="titleURL" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="delivery" type="{http://www.webex.com/schemas/2002/06/service/ep}testDeliveryType"/>
- *                   &lt;element name="status" type="{http://www.webex.com/schemas/2002/06/service/ep}testStatusType"/>
- *                   &lt;element name="action" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="actionURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="host">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="firstName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="lastName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="email">
- *                     &lt;simpleType>
- *                       &lt;restriction base="{http://www.webex.com/schemas/2002/06/common}emailType">
- *                         &lt;maxLength value="64"/>
- *                       &lt;/restriction>
- *                     &lt;/simpleType>
- *                   &lt;/element>
- *                   &lt;element name="webExId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="alternateHost" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="schedule">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="startDate" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="duration" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *                   &lt;element name="timeZone" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="attendeeOptions" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="joinRequiresAccount" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="audioStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="isAudioOnly" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GetSessionInfoResponse.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getSessionInfoResponse", propOrder = {
@@ -277,73 +63,87 @@ public class GetSessionInfoResponse
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The status. */
     protected String status;
+    
+    /** The presenter. */
     protected List<String> presenter;
+    
+    /** The panelists info. */
     protected String panelistsInfo;
+    
+    /** The program name. */
     protected String programName;
+    
+    /** The sessionkey. */
     protected long sessionkey;
+    
+    /** The conf id. */
     protected long confID;
+    
+    /** The verify flash media url. */
     protected String verifyFlashMediaURL;
+    
+    /** The verify win media url. */
     protected String verifyWinMediaURL;
+    
+    /** The access control. */
     protected GetSessionInfoResponse.AccessControl accessControl;
+    
+    /** The meta data. */
     protected GetSessionInfoResponse.MetaData metaData;
+    
+    /** The telephony. */
     protected GetSessionInfoResponse.Telephony telephony;
+    
+    /** The material. */
     protected GetSessionInfoResponse.Material material;
+    
+    /** The test. */
     protected List<GetSessionInfoResponse.Test> test;
+    
+    /** The host. */
     @XmlElement(required = true)
     protected GetSessionInfoResponse.Host host;
+    
+    /** The schedule. */
     @XmlElement(required = true)
     protected GetSessionInfoResponse.Schedule schedule;
+    
+    /** The attendee options. */
     protected GetSessionInfoResponse.AttendeeOptions attendeeOptions;
+    
+    /** The audio status. */
     protected String audioStatus;
+    
+    /** The is audio only. */
     protected Boolean isAudioOnly;
 
     /**
-     * Gets the value of the status property.
+     * Gets the status.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the status
      */
     public String getStatus() {
         return status;
     }
 
     /**
-     * Sets the value of the status property.
+     * Sets the status.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new status
      */
     public void setStatus(String value) {
         this.status = value;
     }
 
     /**
-     * Gets the value of the presenter property.
+     * Gets the presenter.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the presenter property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getPresenter().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
+     * @return the presenter
      */
     public List<String> getPresenter() {
         if (presenter == null) {
@@ -353,250 +153,189 @@ public class GetSessionInfoResponse
     }
 
     /**
-     * Gets the value of the panelistsInfo property.
+     * Gets the panelists info.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the panelists info
      */
     public String getPanelistsInfo() {
         return panelistsInfo;
     }
 
     /**
-     * Sets the value of the panelistsInfo property.
+     * Sets the panelists info.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new panelists info
      */
     public void setPanelistsInfo(String value) {
         this.panelistsInfo = value;
     }
 
     /**
-     * Gets the value of the programName property.
+     * Gets the program name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the program name
      */
     public String getProgramName() {
         return programName;
     }
 
     /**
-     * Sets the value of the programName property.
+     * Sets the program name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new program name
      */
     public void setProgramName(String value) {
         this.programName = value;
     }
 
     /**
-     * Gets the value of the sessionkey property.
+     * Gets the sessionkey.
      * 
+     * @return the sessionkey
      */
     public long getSessionkey() {
         return sessionkey;
     }
 
     /**
-     * Sets the value of the sessionkey property.
+     * Sets the sessionkey.
      * 
+     * @param value the new sessionkey
      */
     public void setSessionkey(long value) {
         this.sessionkey = value;
     }
 
     /**
-     * Gets the value of the confID property.
+     * Gets the conf id.
      * 
+     * @return the conf id
      */
     public long getConfID() {
         return confID;
     }
 
     /**
-     * Sets the value of the confID property.
+     * Sets the conf id.
      * 
+     * @param value the new conf id
      */
     public void setConfID(long value) {
         this.confID = value;
     }
 
     /**
-     * Gets the value of the verifyFlashMediaURL property.
+     * Gets the verify flash media url.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the verify flash media url
      */
     public String getVerifyFlashMediaURL() {
         return verifyFlashMediaURL;
     }
 
     /**
-     * Sets the value of the verifyFlashMediaURL property.
+     * Sets the verify flash media url.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new verify flash media url
      */
     public void setVerifyFlashMediaURL(String value) {
         this.verifyFlashMediaURL = value;
     }
 
     /**
-     * Gets the value of the verifyWinMediaURL property.
+     * Gets the verify win media url.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the verify win media url
      */
     public String getVerifyWinMediaURL() {
         return verifyWinMediaURL;
     }
 
     /**
-     * Sets the value of the verifyWinMediaURL property.
+     * Sets the verify win media url.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new verify win media url
      */
     public void setVerifyWinMediaURL(String value) {
         this.verifyWinMediaURL = value;
     }
 
     /**
-     * Gets the value of the accessControl property.
+     * Gets the access control.
      * 
-     * @return
-     *     possible object is
-     *     {@link GetSessionInfoResponse.AccessControl }
-     *     
+     * @return the access control
      */
     public GetSessionInfoResponse.AccessControl getAccessControl() {
         return accessControl;
     }
 
     /**
-     * Sets the value of the accessControl property.
+     * Sets the access control.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link GetSessionInfoResponse.AccessControl }
-     *     
+     * @param value the new access control
      */
     public void setAccessControl(GetSessionInfoResponse.AccessControl value) {
         this.accessControl = value;
     }
 
     /**
-     * Gets the value of the metaData property.
+     * Gets the meta data.
      * 
-     * @return
-     *     possible object is
-     *     {@link GetSessionInfoResponse.MetaData }
-     *     
+     * @return the meta data
      */
     public GetSessionInfoResponse.MetaData getMetaData() {
         return metaData;
     }
 
     /**
-     * Sets the value of the metaData property.
+     * Sets the meta data.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link GetSessionInfoResponse.MetaData }
-     *     
+     * @param value the new meta data
      */
     public void setMetaData(GetSessionInfoResponse.MetaData value) {
         this.metaData = value;
     }
 
     /**
-     * Gets the value of the telephony property.
+     * Gets the telephony.
      * 
-     * @return
-     *     possible object is
-     *     {@link GetSessionInfoResponse.Telephony }
-     *     
+     * @return the telephony
      */
     public GetSessionInfoResponse.Telephony getTelephony() {
         return telephony;
     }
 
     /**
-     * Sets the value of the telephony property.
+     * Sets the telephony.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link GetSessionInfoResponse.Telephony }
-     *     
+     * @param value the new telephony
      */
     public void setTelephony(GetSessionInfoResponse.Telephony value) {
         this.telephony = value;
     }
 
     /**
-     * Gets the value of the material property.
+     * Gets the material.
      * 
-     * @return
-     *     possible object is
-     *     {@link GetSessionInfoResponse.Material }
-     *     
+     * @return the material
      */
     public GetSessionInfoResponse.Material getMaterial() {
         return material;
     }
 
     /**
-     * Sets the value of the material property.
+     * Sets the material.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link GetSessionInfoResponse.Material }
-     *     
+     * @param value the new material
      */
     public void setMaterial(GetSessionInfoResponse.Material value) {
         this.material = value;
     }
 
     /**
-     * Gets the value of the test property.
+     * Gets the test.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the test property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTest().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link GetSessionInfoResponse.Test }
-     * 
-     * 
+     * @return the test
      */
     public List<GetSessionInfoResponse.Test> getTest() {
         if (test == null) {
@@ -606,120 +345,90 @@ public class GetSessionInfoResponse
     }
 
     /**
-     * Gets the value of the host property.
+     * Gets the host.
      * 
-     * @return
-     *     possible object is
-     *     {@link GetSessionInfoResponse.Host }
-     *     
+     * @return the host
      */
     public GetSessionInfoResponse.Host getHost() {
         return host;
     }
 
     /**
-     * Sets the value of the host property.
+     * Sets the host.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link GetSessionInfoResponse.Host }
-     *     
+     * @param value the new host
      */
     public void setHost(GetSessionInfoResponse.Host value) {
         this.host = value;
     }
 
     /**
-     * Gets the value of the schedule property.
+     * Gets the schedule.
      * 
-     * @return
-     *     possible object is
-     *     {@link GetSessionInfoResponse.Schedule }
-     *     
+     * @return the schedule
      */
     public GetSessionInfoResponse.Schedule getSchedule() {
         return schedule;
     }
 
     /**
-     * Sets the value of the schedule property.
+     * Sets the schedule.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link GetSessionInfoResponse.Schedule }
-     *     
+     * @param value the new schedule
      */
     public void setSchedule(GetSessionInfoResponse.Schedule value) {
         this.schedule = value;
     }
 
     /**
-     * Gets the value of the attendeeOptions property.
+     * Gets the attendee options.
      * 
-     * @return
-     *     possible object is
-     *     {@link GetSessionInfoResponse.AttendeeOptions }
-     *     
+     * @return the attendee options
      */
     public GetSessionInfoResponse.AttendeeOptions getAttendeeOptions() {
         return attendeeOptions;
     }
 
     /**
-     * Sets the value of the attendeeOptions property.
+     * Sets the attendee options.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link GetSessionInfoResponse.AttendeeOptions }
-     *     
+     * @param value the new attendee options
      */
     public void setAttendeeOptions(GetSessionInfoResponse.AttendeeOptions value) {
         this.attendeeOptions = value;
     }
 
     /**
-     * Gets the value of the audioStatus property.
+     * Gets the audio status.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the audio status
      */
     public String getAudioStatus() {
         return audioStatus;
     }
 
     /**
-     * Sets the value of the audioStatus property.
+     * Sets the audio status.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new audio status
      */
     public void setAudioStatus(String value) {
         this.audioStatus = value;
     }
 
     /**
-     * Gets the value of the isAudioOnly property.
+     * Checks if is is audio only.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isIsAudioOnly() {
         return isAudioOnly;
     }
 
     /**
-     * Sets the value of the isAudioOnly property.
+     * Sets the checks if is audio only.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new checks if is audio only
      */
     public void setIsAudioOnly(Boolean value) {
         this.isAudioOnly = value;
@@ -727,33 +436,7 @@ public class GetSessionInfoResponse
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="sessionPassword" minOccurs="0">
-     *           &lt;simpleType>
-     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *               &lt;maxLength value="16"/>
-     *             &lt;/restriction>
-     *           &lt;/simpleType>
-     *         &lt;/element>
-     *         &lt;element name="listStatus" type="{http://www.webex.com/schemas/2002/06/service/ep}listingType"/>
-     *         &lt;element name="registration" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
-     *         &lt;element name="registrationURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="passwordReq" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class AccessControl.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -767,121 +450,110 @@ public class GetSessionInfoResponse
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The session password. */
         protected String sessionPassword;
+        
+        /** The list status. */
         @XmlElement(required = true)
         protected ListingType listStatus;
+        
+        /** The registration. */
         protected boolean registration;
+        
+        /** The registration url. */
         protected String registrationURL;
+        
+        /** The password req. */
         protected Boolean passwordReq;
 
         /**
-         * Gets the value of the sessionPassword property.
+         * Gets the session password.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the session password
          */
         public String getSessionPassword() {
             return sessionPassword;
         }
 
         /**
-         * Sets the value of the sessionPassword property.
+         * Sets the session password.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new session password
          */
         public void setSessionPassword(String value) {
             this.sessionPassword = value;
         }
 
         /**
-         * Gets the value of the listStatus property.
+         * Gets the list status.
          * 
-         * @return
-         *     possible object is
-         *     {@link ListingType }
-         *     
+         * @return the list status
          */
         public ListingType getListStatus() {
             return listStatus;
         }
 
         /**
-         * Sets the value of the listStatus property.
+         * Sets the list status.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link ListingType }
-         *     
+         * @param value the new list status
          */
         public void setListStatus(ListingType value) {
             this.listStatus = value;
         }
 
         /**
-         * Gets the value of the registration property.
+         * Checks if is registration.
          * 
+         * @return true, if is registration
          */
         public boolean isRegistration() {
             return registration;
         }
 
         /**
-         * Sets the value of the registration property.
+         * Sets the registration.
          * 
+         * @param value the new registration
          */
         public void setRegistration(boolean value) {
             this.registration = value;
         }
 
         /**
-         * Gets the value of the registrationURL property.
+         * Gets the registration url.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the registration url
          */
         public String getRegistrationURL() {
             return registrationURL;
         }
 
         /**
-         * Sets the value of the registrationURL property.
+         * Sets the registration url.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new registration url
          */
         public void setRegistrationURL(String value) {
             this.registrationURL = value;
         }
 
         /**
-         * Gets the value of the passwordReq property.
+         * Checks if is password req.
          * 
-         * @return
-         *     possible object is
-         *     {@link Boolean }
-         *     
+         * @return the boolean
          */
         public Boolean isPasswordReq() {
             return passwordReq;
         }
 
         /**
-         * Sets the value of the passwordReq property.
+         * Sets the password req.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link Boolean }
-         *     
+         * @param value the new password req
          */
         public void setPasswordReq(Boolean value) {
             this.passwordReq = value;
@@ -891,23 +563,7 @@ public class GetSessionInfoResponse
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="joinRequiresAccount" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class AttendeeOptions.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -917,28 +573,25 @@ public class GetSessionInfoResponse
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The join requires account. */
         protected Boolean joinRequiresAccount;
 
         /**
-         * Gets the value of the joinRequiresAccount property.
+         * Checks if is join requires account.
          * 
-         * @return
-         *     possible object is
-         *     {@link Boolean }
-         *     
+         * @return the boolean
          */
         public Boolean isJoinRequiresAccount() {
             return joinRequiresAccount;
         }
 
         /**
-         * Sets the value of the joinRequiresAccount property.
+         * Sets the join requires account.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link Boolean }
-         *     
+         * @param value the new join requires account
          */
         public void setJoinRequiresAccount(Boolean value) {
             this.joinRequiresAccount = value;
@@ -948,33 +601,7 @@ public class GetSessionInfoResponse
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="firstName" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="lastName" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="email">
-     *           &lt;simpleType>
-     *             &lt;restriction base="{http://www.webex.com/schemas/2002/06/common}emailType">
-     *               &lt;maxLength value="64"/>
-     *             &lt;/restriction>
-     *           &lt;/simpleType>
-     *         &lt;/element>
-     *         &lt;element name="webExId" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="alternateHost" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class Host.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -988,134 +615,104 @@ public class GetSessionInfoResponse
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The first name. */
         @XmlElement(required = true)
         protected String firstName;
+        
+        /** The last name. */
         @XmlElement(required = true)
         protected String lastName;
+        
+        /** The email. */
         @XmlElement(required = true)
         protected String email;
+        
+        /** The web ex id. */
         @XmlElement(required = true)
         protected String webExId;
+        
+        /** The alternate host. */
         protected List<String> alternateHost;
 
         /**
-         * Gets the value of the firstName property.
+         * Gets the first name.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the first name
          */
         public String getFirstName() {
             return firstName;
         }
 
         /**
-         * Sets the value of the firstName property.
+         * Sets the first name.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new first name
          */
         public void setFirstName(String value) {
             this.firstName = value;
         }
 
         /**
-         * Gets the value of the lastName property.
+         * Gets the last name.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the last name
          */
         public String getLastName() {
             return lastName;
         }
 
         /**
-         * Sets the value of the lastName property.
+         * Sets the last name.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new last name
          */
         public void setLastName(String value) {
             this.lastName = value;
         }
 
         /**
-         * Gets the value of the email property.
+         * Gets the email.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the email
          */
         public String getEmail() {
             return email;
         }
 
         /**
-         * Sets the value of the email property.
+         * Sets the email.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new email
          */
         public void setEmail(String value) {
             this.email = value;
         }
 
         /**
-         * Gets the value of the webExId property.
+         * Gets the web ex id.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the web ex id
          */
         public String getWebExId() {
             return webExId;
         }
 
         /**
-         * Sets the value of the webExId property.
+         * Sets the web ex id.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new web ex id
          */
         public void setWebExId(String value) {
             this.webExId = value;
         }
 
         /**
-         * Gets the value of the alternateHost property.
+         * Gets the alternate host.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the alternateHost property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getAlternateHost().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link String }
-         * 
-         * 
+         * @return the alternate host
          */
         public List<String> getAlternateHost() {
             if (alternateHost == null) {
@@ -1128,36 +725,7 @@ public class GetSessionInfoResponse
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="imageURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="document" maxOccurs="unbounded" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *                   &lt;element name="URL" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *                   &lt;element name="size" type="{http://www.w3.org/2001/XMLSchema}integer"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class Material.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -1168,55 +736,37 @@ public class GetSessionInfoResponse
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The image url. */
         protected String imageURL;
+        
+        /** The document. */
         protected List<GetSessionInfoResponse.Material.Document> document;
 
         /**
-         * Gets the value of the imageURL property.
+         * Gets the image url.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the image url
          */
         public String getImageURL() {
             return imageURL;
         }
 
         /**
-         * Sets the value of the imageURL property.
+         * Sets the image url.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new image url
          */
         public void setImageURL(String value) {
             this.imageURL = value;
         }
 
         /**
-         * Gets the value of the document property.
+         * Gets the document.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the document property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getDocument().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link GetSessionInfoResponse.Material.Document }
-         * 
-         * 
+         * @return the document
          */
         public List<GetSessionInfoResponse.Material.Document> getDocument() {
             if (document == null) {
@@ -1227,25 +777,7 @@ public class GetSessionInfoResponse
 
 
         /**
-         * <p>Java class for anonymous complex type.
-         * 
-         * <p>The following schema fragment specifies the expected content contained within this class.
-         * 
-         * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
-         *         &lt;element name="URL" type="{http://www.w3.org/2001/XMLSchema}string"/>
-         *         &lt;element name="size" type="{http://www.w3.org/2001/XMLSchema}integer"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
-         * </pre>
-         * 
-         * 
+         * The Class Document.
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -1257,83 +789,72 @@ public class GetSessionInfoResponse
             implements Serializable
         {
 
+            /** The Constant serialVersionUID. */
             private final static long serialVersionUID = 2461660169443089969L;
+            
+            /** The name. */
             @XmlElement(required = true)
             protected String name;
+            
+            /** The url. */
             @XmlElement(name = "URL", required = true)
             protected String url;
+            
+            /** The size. */
             @XmlElement(required = true, type = String.class)
             @XmlJavaTypeAdapter(Adapter1 .class)
             @XmlSchemaType(name = "integer")
             protected Long size;
 
             /**
-             * Gets the value of the name property.
+             * Gets the name.
              * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             * @return the name
              */
             public String getName() {
                 return name;
             }
 
             /**
-             * Sets the value of the name property.
+             * Sets the name.
              * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             * @param value the new name
              */
             public void setName(String value) {
                 this.name = value;
             }
 
             /**
-             * Gets the value of the url property.
+             * Gets the uRL.
              * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             * @return the uRL
              */
             public String getURL() {
                 return url;
             }
 
             /**
-             * Sets the value of the url property.
+             * Sets the uRL.
              * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             * @param value the new uRL
              */
             public void setURL(String value) {
                 this.url = value;
             }
 
             /**
-             * Gets the value of the size property.
+             * Gets the size.
              * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             * @return the size
              */
             public Long getSize() {
                 return size;
             }
 
             /**
-             * Sets the value of the size property.
+             * Sets the size.
              * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             * @param value the new size
              */
             public void setSize(Long value) {
                 this.size = value;
@@ -1345,48 +866,7 @@ public class GetSessionInfoResponse
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="confName" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="sessionType" type="{http://www.w3.org/2001/XMLSchema}integer"/>
-     *         &lt;element name="serviceType" type="{http://www.webex.com/schemas/2002/06/common}serviceTypeType"/>
-     *         &lt;element name="agenda" minOccurs="0">
-     *           &lt;simpleType>
-     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *               &lt;maxLength value="2500"/>
-     *             &lt;/restriction>
-     *           &lt;/simpleType>
-     *         &lt;/element>
-     *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="account" minOccurs="0">
-     *           &lt;simpleType>
-     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *               &lt;maxLength value="128"/>
-     *             &lt;/restriction>
-     *           &lt;/simpleType>
-     *         &lt;/element>
-     *         &lt;element name="opportunity" minOccurs="0">
-     *           &lt;simpleType>
-     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *               &lt;maxLength value="128"/>
-     *             &lt;/restriction>
-     *           &lt;/simpleType>
-     *         &lt;/element>
-     *         &lt;element name="isRecurring" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class MetaData.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -1403,200 +883,177 @@ public class GetSessionInfoResponse
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The conf name. */
         @XmlElement(required = true)
         protected String confName;
+        
+        /** The session type. */
         @XmlElement(required = true, type = String.class, defaultValue = "-1")
         @XmlJavaTypeAdapter(Adapter1 .class)
         @XmlSchemaType(name = "integer")
         protected Long sessionType;
+        
+        /** The service type. */
         @XmlElement(required = true)
         protected ServiceTypeType serviceType;
+        
+        /** The agenda. */
         protected String agenda;
+        
+        /** The description. */
         protected String description;
+        
+        /** The account. */
         protected String account;
+        
+        /** The opportunity. */
         protected String opportunity;
+        
+        /** The is recurring. */
         protected boolean isRecurring;
 
         /**
-         * Gets the value of the confName property.
+         * Gets the conf name.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the conf name
          */
         public String getConfName() {
             return confName;
         }
 
         /**
-         * Sets the value of the confName property.
+         * Sets the conf name.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new conf name
          */
         public void setConfName(String value) {
             this.confName = value;
         }
 
         /**
-         * Gets the value of the sessionType property.
+         * Gets the session type.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the session type
          */
         public Long getSessionType() {
             return sessionType;
         }
 
         /**
-         * Sets the value of the sessionType property.
+         * Sets the session type.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new session type
          */
         public void setSessionType(Long value) {
             this.sessionType = value;
         }
 
         /**
-         * Gets the value of the serviceType property.
+         * Gets the service type.
          * 
-         * @return
-         *     possible object is
-         *     {@link ServiceTypeType }
-         *     
+         * @return the service type
          */
         public ServiceTypeType getServiceType() {
             return serviceType;
         }
 
         /**
-         * Sets the value of the serviceType property.
+         * Sets the service type.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link ServiceTypeType }
-         *     
+         * @param value the new service type
          */
         public void setServiceType(ServiceTypeType value) {
             this.serviceType = value;
         }
 
         /**
-         * Gets the value of the agenda property.
+         * Gets the agenda.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the agenda
          */
         public String getAgenda() {
             return agenda;
         }
 
         /**
-         * Sets the value of the agenda property.
+         * Sets the agenda.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new agenda
          */
         public void setAgenda(String value) {
             this.agenda = value;
         }
 
         /**
-         * Gets the value of the description property.
+         * Gets the description.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the description
          */
         public String getDescription() {
             return description;
         }
 
         /**
-         * Sets the value of the description property.
+         * Sets the description.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new description
          */
         public void setDescription(String value) {
             this.description = value;
         }
 
         /**
-         * Gets the value of the account property.
+         * Gets the account.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the account
          */
         public String getAccount() {
             return account;
         }
 
         /**
-         * Sets the value of the account property.
+         * Sets the account.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new account
          */
         public void setAccount(String value) {
             this.account = value;
         }
 
         /**
-         * Gets the value of the opportunity property.
+         * Gets the opportunity.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the opportunity
          */
         public String getOpportunity() {
             return opportunity;
         }
 
         /**
-         * Sets the value of the opportunity property.
+         * Sets the opportunity.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new opportunity
          */
         public void setOpportunity(String value) {
             this.opportunity = value;
         }
 
         /**
-         * Gets the value of the isRecurring property.
+         * Checks if is checks if is recurring.
          * 
+         * @return true, if is checks if is recurring
          */
         public boolean isIsRecurring() {
             return isRecurring;
         }
 
         /**
-         * Sets the value of the isRecurring property.
+         * Sets the checks if is recurring.
          * 
+         * @param value the new checks if is recurring
          */
         public void setIsRecurring(boolean value) {
             this.isRecurring = value;
@@ -1606,25 +1063,7 @@ public class GetSessionInfoResponse
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="startDate" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="duration" type="{http://www.w3.org/2001/XMLSchema}integer"/>
-     *         &lt;element name="timeZone" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class Schedule.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -1636,83 +1075,72 @@ public class GetSessionInfoResponse
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The start date. */
         @XmlElement(required = true)
         protected String startDate;
+        
+        /** The duration. */
         @XmlElement(required = true, type = String.class)
         @XmlJavaTypeAdapter(Adapter1 .class)
         @XmlSchemaType(name = "integer")
         protected Long duration;
+        
+        /** The time zone. */
         @XmlElement(required = true)
         protected String timeZone;
 
         /**
-         * Gets the value of the startDate property.
+         * Gets the start date.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the start date
          */
         public String getStartDate() {
             return startDate;
         }
 
         /**
-         * Sets the value of the startDate property.
+         * Sets the start date.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new start date
          */
         public void setStartDate(String value) {
             this.startDate = value;
         }
 
         /**
-         * Gets the value of the duration property.
+         * Gets the duration.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the duration
          */
         public Long getDuration() {
             return duration;
         }
 
         /**
-         * Sets the value of the duration property.
+         * Sets the duration.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new duration
          */
         public void setDuration(Long value) {
             this.duration = value;
         }
 
         /**
-         * Gets the value of the timeZone property.
+         * Gets the time zone.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the time zone
          */
         public String getTimeZone() {
             return timeZone;
         }
 
         /**
-         * Sets the value of the timeZone property.
+         * Sets the time zone.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new time zone
          */
         public void setTimeZone(String value) {
             this.timeZone = value;
@@ -1722,59 +1150,7 @@ public class GetSessionInfoResponse
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="telephonySupport" type="{http://www.webex.com/schemas/2002/06/service/meeting}telephonySupportType"/>
-     *         &lt;element name="extTelephonyDescription" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="globalCallInNumbersURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="tollFreeRestrictionsURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="callInNum" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;extension base="{http://www.webex.com/schemas/2002/06/service}callInNumType">
-     *                 &lt;sequence>
-     *                   &lt;element name="backupTollNum" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                 &lt;/sequence>
-     *               &lt;/extension>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *         &lt;element name="participantAccessCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="participantLimitedAccessCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="subscriberAccessCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="labels" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="tollFreeCallInLabel" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *                   &lt;element name="tollCallInLabel" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *                   &lt;element name="participantAccessLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="participantLimitedAccessLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="subscriberAccessLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="globalCallInNumbersLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *         &lt;element name="mpAudio" type="{http://www.webex.com/schemas/2002/06/common}phoneLabelNumType" maxOccurs="unbounded" minOccurs="0"/>
-     *         &lt;element name="mpProfileNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="isMPAudio" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class Telephony.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -1795,258 +1171,212 @@ public class GetSessionInfoResponse
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The telephony support. */
         @XmlElement(required = true)
         protected TelephonySupportType telephonySupport;
+        
+        /** The ext telephony description. */
         protected String extTelephonyDescription;
+        
+        /** The global call in numbers url. */
         protected String globalCallInNumbersURL;
+        
+        /** The toll free restrictions url. */
         protected String tollFreeRestrictionsURL;
+        
+        /** The call in num. */
         protected GetSessionInfoResponse.Telephony.CallInNum callInNum;
+        
+        /** The participant access code. */
         protected String participantAccessCode;
+        
+        /** The participant limited access code. */
         protected String participantLimitedAccessCode;
+        
+        /** The subscriber access code. */
         protected String subscriberAccessCode;
+        
+        /** The labels. */
         protected GetSessionInfoResponse.Telephony.Labels labels;
+        
+        /** The mp audio. */
         protected List<PhoneLabelNumType> mpAudio;
+        
+        /** The mp profile number. */
         protected String mpProfileNumber;
+        
+        /** The is mp audio. */
         protected Boolean isMPAudio;
 
         /**
-         * Gets the value of the telephonySupport property.
+         * Gets the telephony support.
          * 
-         * @return
-         *     possible object is
-         *     {@link TelephonySupportType }
-         *     
+         * @return the telephony support
          */
         public TelephonySupportType getTelephonySupport() {
             return telephonySupport;
         }
 
         /**
-         * Sets the value of the telephonySupport property.
+         * Sets the telephony support.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link TelephonySupportType }
-         *     
+         * @param value the new telephony support
          */
         public void setTelephonySupport(TelephonySupportType value) {
             this.telephonySupport = value;
         }
 
         /**
-         * Gets the value of the extTelephonyDescription property.
+         * Gets the ext telephony description.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the ext telephony description
          */
         public String getExtTelephonyDescription() {
             return extTelephonyDescription;
         }
 
         /**
-         * Sets the value of the extTelephonyDescription property.
+         * Sets the ext telephony description.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new ext telephony description
          */
         public void setExtTelephonyDescription(String value) {
             this.extTelephonyDescription = value;
         }
 
         /**
-         * Gets the value of the globalCallInNumbersURL property.
+         * Gets the global call in numbers url.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the global call in numbers url
          */
         public String getGlobalCallInNumbersURL() {
             return globalCallInNumbersURL;
         }
 
         /**
-         * Sets the value of the globalCallInNumbersURL property.
+         * Sets the global call in numbers url.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new global call in numbers url
          */
         public void setGlobalCallInNumbersURL(String value) {
             this.globalCallInNumbersURL = value;
         }
 
         /**
-         * Gets the value of the tollFreeRestrictionsURL property.
+         * Gets the toll free restrictions url.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the toll free restrictions url
          */
         public String getTollFreeRestrictionsURL() {
             return tollFreeRestrictionsURL;
         }
 
         /**
-         * Sets the value of the tollFreeRestrictionsURL property.
+         * Sets the toll free restrictions url.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new toll free restrictions url
          */
         public void setTollFreeRestrictionsURL(String value) {
             this.tollFreeRestrictionsURL = value;
         }
 
         /**
-         * Gets the value of the callInNum property.
+         * Gets the call in num.
          * 
-         * @return
-         *     possible object is
-         *     {@link GetSessionInfoResponse.Telephony.CallInNum }
-         *     
+         * @return the call in num
          */
         public GetSessionInfoResponse.Telephony.CallInNum getCallInNum() {
             return callInNum;
         }
 
         /**
-         * Sets the value of the callInNum property.
+         * Sets the call in num.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link GetSessionInfoResponse.Telephony.CallInNum }
-         *     
+         * @param value the new call in num
          */
         public void setCallInNum(GetSessionInfoResponse.Telephony.CallInNum value) {
             this.callInNum = value;
         }
 
         /**
-         * Gets the value of the participantAccessCode property.
+         * Gets the participant access code.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the participant access code
          */
         public String getParticipantAccessCode() {
             return participantAccessCode;
         }
 
         /**
-         * Sets the value of the participantAccessCode property.
+         * Sets the participant access code.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new participant access code
          */
         public void setParticipantAccessCode(String value) {
             this.participantAccessCode = value;
         }
 
         /**
-         * Gets the value of the participantLimitedAccessCode property.
+         * Gets the participant limited access code.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the participant limited access code
          */
         public String getParticipantLimitedAccessCode() {
             return participantLimitedAccessCode;
         }
 
         /**
-         * Sets the value of the participantLimitedAccessCode property.
+         * Sets the participant limited access code.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new participant limited access code
          */
         public void setParticipantLimitedAccessCode(String value) {
             this.participantLimitedAccessCode = value;
         }
 
         /**
-         * Gets the value of the subscriberAccessCode property.
+         * Gets the subscriber access code.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the subscriber access code
          */
         public String getSubscriberAccessCode() {
             return subscriberAccessCode;
         }
 
         /**
-         * Sets the value of the subscriberAccessCode property.
+         * Sets the subscriber access code.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new subscriber access code
          */
         public void setSubscriberAccessCode(String value) {
             this.subscriberAccessCode = value;
         }
 
         /**
-         * Gets the value of the labels property.
+         * Gets the labels.
          * 
-         * @return
-         *     possible object is
-         *     {@link GetSessionInfoResponse.Telephony.Labels }
-         *     
+         * @return the labels
          */
         public GetSessionInfoResponse.Telephony.Labels getLabels() {
             return labels;
         }
 
         /**
-         * Sets the value of the labels property.
+         * Sets the labels.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link GetSessionInfoResponse.Telephony.Labels }
-         *     
+         * @param value the new labels
          */
         public void setLabels(GetSessionInfoResponse.Telephony.Labels value) {
             this.labels = value;
         }
 
         /**
-         * Gets the value of the mpAudio property.
+         * Gets the mp audio.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the mpAudio property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getMpAudio().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link PhoneLabelNumType }
-         * 
-         * 
+         * @return the mp audio
          */
         public List<PhoneLabelNumType> getMpAudio() {
             if (mpAudio == null) {
@@ -2056,48 +1386,36 @@ public class GetSessionInfoResponse
         }
 
         /**
-         * Gets the value of the mpProfileNumber property.
+         * Gets the mp profile number.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the mp profile number
          */
         public String getMpProfileNumber() {
             return mpProfileNumber;
         }
 
         /**
-         * Sets the value of the mpProfileNumber property.
+         * Sets the mp profile number.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new mp profile number
          */
         public void setMpProfileNumber(String value) {
             this.mpProfileNumber = value;
         }
 
         /**
-         * Gets the value of the isMPAudio property.
+         * Checks if is is mp audio.
          * 
-         * @return
-         *     possible object is
-         *     {@link Boolean }
-         *     
+         * @return the boolean
          */
         public Boolean isIsMPAudio() {
             return isMPAudio;
         }
 
         /**
-         * Sets the value of the isMPAudio property.
+         * Sets the checks if is mp audio.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link Boolean }
-         *     
+         * @param value the new checks if is mp audio
          */
         public void setIsMPAudio(Boolean value) {
             this.isMPAudio = value;
@@ -2105,23 +1423,7 @@ public class GetSessionInfoResponse
 
 
         /**
-         * <p>Java class for anonymous complex type.
-         * 
-         * <p>The following schema fragment specifies the expected content contained within this class.
-         * 
-         * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}callInNumType">
-         *       &lt;sequence>
-         *         &lt;element name="backupTollNum" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *       &lt;/sequence>
-         *     &lt;/extension>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
-         * </pre>
-         * 
-         * 
+         * The Class CallInNum.
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -2132,28 +1434,25 @@ public class GetSessionInfoResponse
             implements Serializable
         {
 
+            /** The Constant serialVersionUID. */
             private final static long serialVersionUID = 2461660169443089969L;
+            
+            /** The backup toll num. */
             protected String backupTollNum;
 
             /**
-             * Gets the value of the backupTollNum property.
+             * Gets the backup toll num.
              * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             * @return the backup toll num
              */
             public String getBackupTollNum() {
                 return backupTollNum;
             }
 
             /**
-             * Sets the value of the backupTollNum property.
+             * Sets the backup toll num.
              * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             * @param value the new backup toll num
              */
             public void setBackupTollNum(String value) {
                 this.backupTollNum = value;
@@ -2163,28 +1462,7 @@ public class GetSessionInfoResponse
 
 
         /**
-         * <p>Java class for anonymous complex type.
-         * 
-         * <p>The following schema fragment specifies the expected content contained within this class.
-         * 
-         * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="tollFreeCallInLabel" type="{http://www.w3.org/2001/XMLSchema}string"/>
-         *         &lt;element name="tollCallInLabel" type="{http://www.w3.org/2001/XMLSchema}string"/>
-         *         &lt;element name="participantAccessLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="participantLimitedAccessLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="subscriberAccessLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="globalCallInNumbersLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
-         * </pre>
-         * 
-         * 
+         * The Class Labels.
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -2199,155 +1477,132 @@ public class GetSessionInfoResponse
             implements Serializable
         {
 
+            /** The Constant serialVersionUID. */
             private final static long serialVersionUID = 2461660169443089969L;
+            
+            /** The toll free call in label. */
             @XmlElement(required = true)
             protected String tollFreeCallInLabel;
+            
+            /** The toll call in label. */
             @XmlElement(required = true)
             protected String tollCallInLabel;
+            
+            /** The participant access label. */
             protected String participantAccessLabel;
+            
+            /** The participant limited access label. */
             protected String participantLimitedAccessLabel;
+            
+            /** The subscriber access label. */
             protected String subscriberAccessLabel;
+            
+            /** The global call in numbers label. */
             protected String globalCallInNumbersLabel;
 
             /**
-             * Gets the value of the tollFreeCallInLabel property.
+             * Gets the toll free call in label.
              * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             * @return the toll free call in label
              */
             public String getTollFreeCallInLabel() {
                 return tollFreeCallInLabel;
             }
 
             /**
-             * Sets the value of the tollFreeCallInLabel property.
+             * Sets the toll free call in label.
              * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             * @param value the new toll free call in label
              */
             public void setTollFreeCallInLabel(String value) {
                 this.tollFreeCallInLabel = value;
             }
 
             /**
-             * Gets the value of the tollCallInLabel property.
+             * Gets the toll call in label.
              * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             * @return the toll call in label
              */
             public String getTollCallInLabel() {
                 return tollCallInLabel;
             }
 
             /**
-             * Sets the value of the tollCallInLabel property.
+             * Sets the toll call in label.
              * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             * @param value the new toll call in label
              */
             public void setTollCallInLabel(String value) {
                 this.tollCallInLabel = value;
             }
 
             /**
-             * Gets the value of the participantAccessLabel property.
+             * Gets the participant access label.
              * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             * @return the participant access label
              */
             public String getParticipantAccessLabel() {
                 return participantAccessLabel;
             }
 
             /**
-             * Sets the value of the participantAccessLabel property.
+             * Sets the participant access label.
              * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             * @param value the new participant access label
              */
             public void setParticipantAccessLabel(String value) {
                 this.participantAccessLabel = value;
             }
 
             /**
-             * Gets the value of the participantLimitedAccessLabel property.
+             * Gets the participant limited access label.
              * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             * @return the participant limited access label
              */
             public String getParticipantLimitedAccessLabel() {
                 return participantLimitedAccessLabel;
             }
 
             /**
-             * Sets the value of the participantLimitedAccessLabel property.
+             * Sets the participant limited access label.
              * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             * @param value the new participant limited access label
              */
             public void setParticipantLimitedAccessLabel(String value) {
                 this.participantLimitedAccessLabel = value;
             }
 
             /**
-             * Gets the value of the subscriberAccessLabel property.
+             * Gets the subscriber access label.
              * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             * @return the subscriber access label
              */
             public String getSubscriberAccessLabel() {
                 return subscriberAccessLabel;
             }
 
             /**
-             * Sets the value of the subscriberAccessLabel property.
+             * Sets the subscriber access label.
              * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             * @param value the new subscriber access label
              */
             public void setSubscriberAccessLabel(String value) {
                 this.subscriberAccessLabel = value;
             }
 
             /**
-             * Gets the value of the globalCallInNumbersLabel property.
+             * Gets the global call in numbers label.
              * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             * @return the global call in numbers label
              */
             public String getGlobalCallInNumbersLabel() {
                 return globalCallInNumbersLabel;
             }
 
             /**
-             * Sets the value of the globalCallInNumbersLabel property.
+             * Sets the global call in numbers label.
              * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             * @param value the new global call in numbers label
              */
             public void setGlobalCallInNumbersLabel(String value) {
                 this.globalCallInNumbersLabel = value;
@@ -2359,28 +1614,7 @@ public class GetSessionInfoResponse
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="title" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="titleURL" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="delivery" type="{http://www.webex.com/schemas/2002/06/service/ep}testDeliveryType"/>
-     *         &lt;element name="status" type="{http://www.webex.com/schemas/2002/06/service/ep}testStatusType"/>
-     *         &lt;element name="action" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="actionURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class Test.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -2395,157 +1629,134 @@ public class GetSessionInfoResponse
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The title. */
         @XmlElement(required = true)
         protected String title;
+        
+        /** The title url. */
         @XmlElement(required = true)
         protected String titleURL;
+        
+        /** The delivery. */
         @XmlElement(required = true, defaultValue = "IN_SESSION")
         protected TestDeliveryType delivery;
+        
+        /** The status. */
         @XmlElement(required = true, defaultValue = "NOT_STARTED")
         protected TestStatusType status;
+        
+        /** The action. */
         protected String action;
+        
+        /** The action url. */
         protected String actionURL;
 
         /**
-         * Gets the value of the title property.
+         * Gets the title.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the title
          */
         public String getTitle() {
             return title;
         }
 
         /**
-         * Sets the value of the title property.
+         * Sets the title.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new title
          */
         public void setTitle(String value) {
             this.title = value;
         }
 
         /**
-         * Gets the value of the titleURL property.
+         * Gets the title url.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the title url
          */
         public String getTitleURL() {
             return titleURL;
         }
 
         /**
-         * Sets the value of the titleURL property.
+         * Sets the title url.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new title url
          */
         public void setTitleURL(String value) {
             this.titleURL = value;
         }
 
         /**
-         * Gets the value of the delivery property.
+         * Gets the delivery.
          * 
-         * @return
-         *     possible object is
-         *     {@link TestDeliveryType }
-         *     
+         * @return the delivery
          */
         public TestDeliveryType getDelivery() {
             return delivery;
         }
 
         /**
-         * Sets the value of the delivery property.
+         * Sets the delivery.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link TestDeliveryType }
-         *     
+         * @param value the new delivery
          */
         public void setDelivery(TestDeliveryType value) {
             this.delivery = value;
         }
 
         /**
-         * Gets the value of the status property.
+         * Gets the status.
          * 
-         * @return
-         *     possible object is
-         *     {@link TestStatusType }
-         *     
+         * @return the status
          */
         public TestStatusType getStatus() {
             return status;
         }
 
         /**
-         * Sets the value of the status property.
+         * Sets the status.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link TestStatusType }
-         *     
+         * @param value the new status
          */
         public void setStatus(TestStatusType value) {
             this.status = value;
         }
 
         /**
-         * Gets the value of the action property.
+         * Gets the action.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the action
          */
         public String getAction() {
             return action;
         }
 
         /**
-         * Sets the value of the action property.
+         * Sets the action.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new action
          */
         public void setAction(String value) {
             this.action = value;
         }
 
         /**
-         * Gets the value of the actionURL property.
+         * Gets the action url.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the action url
          */
         public String getActionURL() {
             return actionURL;
         }
 
         /**
-         * Sets the value of the actionURL property.
+         * Sets the action url.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new action url
          */
         public void setActionURL(String value) {
             this.actionURL = value;

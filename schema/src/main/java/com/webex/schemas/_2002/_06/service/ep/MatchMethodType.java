@@ -22,33 +22,37 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for matchMethodType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="matchMethodType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="EXACT"/>
- *     &lt;enumeration value="STARTWITH"/>
- *     &lt;enumeration value="CONTAIN"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum MatchMethodType.
  */
 @XmlType(name = "matchMethodType")
 @XmlEnum
 public enum MatchMethodType {
 
+    /** The EXACT. */
     EXACT,
+    
+    /** The STARTWITH. */
     STARTWITH,
+    
+    /** The CONTAIN. */
     CONTAIN;
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the match method type
+     */
     public static MatchMethodType fromValue(String v) {
         return valueOf(v);
     }

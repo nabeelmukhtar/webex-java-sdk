@@ -25,26 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for recordingFileAccessType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="recordingFileAccessType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="registration" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="attendeeView" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="attendeeDownload" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="endPlayURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class RecordingFileAccessType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "recordingFileAccessType", propOrder = {
@@ -60,103 +41,88 @@ public class RecordingFileAccessType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The registration. */
     protected Boolean registration;
+    
+    /** The attendee view. */
     protected Boolean attendeeView;
+    
+    /** The attendee download. */
     protected Boolean attendeeDownload;
+    
+    /** The end play url. */
     protected String endPlayURL;
 
     /**
-     * Gets the value of the registration property.
+     * Checks if is registration.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isRegistration() {
         return registration;
     }
 
     /**
-     * Sets the value of the registration property.
+     * Sets the registration.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new registration
      */
     public void setRegistration(Boolean value) {
         this.registration = value;
     }
 
     /**
-     * Gets the value of the attendeeView property.
+     * Checks if is attendee view.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isAttendeeView() {
         return attendeeView;
     }
 
     /**
-     * Sets the value of the attendeeView property.
+     * Sets the attendee view.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new attendee view
      */
     public void setAttendeeView(Boolean value) {
         this.attendeeView = value;
     }
 
     /**
-     * Gets the value of the attendeeDownload property.
+     * Checks if is attendee download.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isAttendeeDownload() {
         return attendeeDownload;
     }
 
     /**
-     * Sets the value of the attendeeDownload property.
+     * Sets the attendee download.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new attendee download
      */
     public void setAttendeeDownload(Boolean value) {
         this.attendeeDownload = value;
     }
 
     /**
-     * Gets the value of the endPlayURL property.
+     * Gets the end play url.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the end play url
      */
     public String getEndPlayURL() {
         return endPlayURL;
     }
 
     /**
-     * Sets the value of the endPlayURL property.
+     * Sets the end play url.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new end play url
      */
     public void setEndPlayURL(String value) {
         this.endPlayURL = value;

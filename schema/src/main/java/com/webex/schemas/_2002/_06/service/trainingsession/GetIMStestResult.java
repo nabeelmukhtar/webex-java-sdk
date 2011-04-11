@@ -29,24 +29,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for getIMStestResult complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="getIMStestResult">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="testID" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="participantEmail" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GetIMStestResult.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getIMStestResult", propOrder = {
@@ -58,57 +41,50 @@ public class GetIMStestResult
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The test id. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long testID;
+    
+    /** The participant email. */
     @XmlElement(required = true)
     protected String participantEmail;
 
     /**
-     * Gets the value of the testID property.
+     * Gets the test id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the test id
      */
     public Long getTestID() {
         return testID;
     }
 
     /**
-     * Sets the value of the testID property.
+     * Sets the test id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new test id
      */
     public void setTestID(Long value) {
         this.testID = value;
     }
 
     /**
-     * Gets the value of the participantEmail property.
+     * Gets the participant email.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the participant email
      */
     public String getParticipantEmail() {
         return participantEmail;
     }
 
     /**
-     * Sets the value of the participantEmail property.
+     * Sets the participant email.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new participant email
      */
     public void setParticipantEmail(String value) {
         this.participantEmail = value;

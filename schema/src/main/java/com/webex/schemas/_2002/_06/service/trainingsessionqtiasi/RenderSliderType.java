@@ -31,51 +31,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Java class for render_sliderType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="render_sliderType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;choice maxOccurs="unbounded" minOccurs="0">
- *           &lt;element name="material" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}materialType"/>
- *           &lt;element name="material_ref" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}material_refType"/>
- *           &lt;element name="response_label" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}response_labelType"/>
- *           &lt;element name="flow_label" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}flow_labelType"/>
- *         &lt;/choice>
- *         &lt;element name="response_na" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}response_naType" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute name="orientation" default="Horizontal">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="Horizontal"/>
- *             &lt;enumeration value="Vertical"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="lowerbound" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="upperbound" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="step" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="startval" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="steplabel" default="No">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="Yes"/>
- *             &lt;enumeration value="No"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="maxnumber" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="minnumber" type="{http://www.w3.org/2001/XMLSchema}string" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class RenderSliderType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "render_sliderType", propOrder = {
@@ -85,7 +41,10 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 public class RenderSliderType implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The material or material ref or response label. */
     @XmlElements({
         @XmlElement(name = "flow_label", type = FlowLabelType.class),
         @XmlElement(name = "response_label", type = ResponseLabelType.class),
@@ -93,51 +52,49 @@ public class RenderSliderType implements Serializable
         @XmlElement(name = "material_ref", type = MaterialRefType.class)
     })
     protected List<Serializable> materialOrMaterialRefOrResponseLabel;
+    
+    /** The response na. */
     @XmlElement(name = "response_na")
     protected ResponseNaType responseNa;
+    
+    /** The orientation. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String orientation;
+    
+    /** The lowerbound. */
     @XmlAttribute(required = true)
     protected String lowerbound;
+    
+    /** The upperbound. */
     @XmlAttribute(required = true)
     protected String upperbound;
+    
+    /** The step. */
     @XmlAttribute
     protected String step;
+    
+    /** The startval. */
     @XmlAttribute
     protected String startval;
+    
+    /** The steplabel. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String steplabel;
+    
+    /** The maxnumber. */
     @XmlAttribute
     protected String maxnumber;
+    
+    /** The minnumber. */
     @XmlAttribute
     protected String minnumber;
 
     /**
-     * Gets the value of the materialOrMaterialRefOrResponseLabel property.
+     * Gets the material or material ref or response label.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the materialOrMaterialRefOrResponseLabel property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getMaterialOrMaterialRefOrResponseLabel().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link FlowLabelType }
-     * {@link ResponseLabelType }
-     * {@link MaterialType }
-     * {@link MaterialRefType }
-     * 
-     * 
+     * @return the material or material ref or response label
      */
     public List<Serializable> getMaterialOrMaterialRefOrResponseLabel() {
         if (materialOrMaterialRefOrResponseLabel == null) {
@@ -147,36 +104,27 @@ public class RenderSliderType implements Serializable
     }
 
     /**
-     * Gets the value of the responseNa property.
+     * Gets the response na.
      * 
-     * @return
-     *     possible object is
-     *     {@link ResponseNaType }
-     *     
+     * @return the response na
      */
     public ResponseNaType getResponseNa() {
         return responseNa;
     }
 
     /**
-     * Sets the value of the responseNa property.
+     * Sets the response na.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ResponseNaType }
-     *     
+     * @param value the new response na
      */
     public void setResponseNa(ResponseNaType value) {
         this.responseNa = value;
     }
 
     /**
-     * Gets the value of the orientation property.
+     * Gets the orientation.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the orientation
      */
     public String getOrientation() {
         if (orientation == null) {
@@ -187,120 +135,90 @@ public class RenderSliderType implements Serializable
     }
 
     /**
-     * Sets the value of the orientation property.
+     * Sets the orientation.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new orientation
      */
     public void setOrientation(String value) {
         this.orientation = value;
     }
 
     /**
-     * Gets the value of the lowerbound property.
+     * Gets the lowerbound.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the lowerbound
      */
     public String getLowerbound() {
         return lowerbound;
     }
 
     /**
-     * Sets the value of the lowerbound property.
+     * Sets the lowerbound.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new lowerbound
      */
     public void setLowerbound(String value) {
         this.lowerbound = value;
     }
 
     /**
-     * Gets the value of the upperbound property.
+     * Gets the upperbound.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the upperbound
      */
     public String getUpperbound() {
         return upperbound;
     }
 
     /**
-     * Sets the value of the upperbound property.
+     * Sets the upperbound.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new upperbound
      */
     public void setUpperbound(String value) {
         this.upperbound = value;
     }
 
     /**
-     * Gets the value of the step property.
+     * Gets the step.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the step
      */
     public String getStep() {
         return step;
     }
 
     /**
-     * Sets the value of the step property.
+     * Sets the step.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new step
      */
     public void setStep(String value) {
         this.step = value;
     }
 
     /**
-     * Gets the value of the startval property.
+     * Gets the startval.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the startval
      */
     public String getStartval() {
         return startval;
     }
 
     /**
-     * Sets the value of the startval property.
+     * Sets the startval.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new startval
      */
     public void setStartval(String value) {
         this.startval = value;
     }
 
     /**
-     * Gets the value of the steplabel property.
+     * Gets the steplabel.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the steplabel
      */
     public String getSteplabel() {
         if (steplabel == null) {
@@ -311,60 +229,45 @@ public class RenderSliderType implements Serializable
     }
 
     /**
-     * Sets the value of the steplabel property.
+     * Sets the steplabel.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new steplabel
      */
     public void setSteplabel(String value) {
         this.steplabel = value;
     }
 
     /**
-     * Gets the value of the maxnumber property.
+     * Gets the maxnumber.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the maxnumber
      */
     public String getMaxnumber() {
         return maxnumber;
     }
 
     /**
-     * Sets the value of the maxnumber property.
+     * Sets the maxnumber.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new maxnumber
      */
     public void setMaxnumber(String value) {
         this.maxnumber = value;
     }
 
     /**
-     * Gets the value of the minnumber property.
+     * Gets the minnumber.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the minnumber
      */
     public String getMinnumber() {
         return minnumber;
     }
 
     /**
-     * Sets the value of the minnumber property.
+     * Sets the minnumber.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new minnumber
      */
     public void setMinnumber(String value) {
         this.minnumber = value;

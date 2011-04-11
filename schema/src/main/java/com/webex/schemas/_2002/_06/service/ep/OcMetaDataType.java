@@ -24,23 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for ocMetaDataType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="ocMetaDataType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/ep}oneClickMetaDataType">
- *       &lt;sequence>
- *         &lt;element name="sessionTemplate" type="{http://www.webex.com/schemas/2002/06/service/ep}sessionTemplateType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class OcMetaDataType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ocMetaDataType", propOrder = {
@@ -51,28 +35,25 @@ public class OcMetaDataType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The session template. */
     protected SessionTemplateType sessionTemplate;
 
     /**
-     * Gets the value of the sessionTemplate property.
+     * Gets the session template.
      * 
-     * @return
-     *     possible object is
-     *     {@link SessionTemplateType }
-     *     
+     * @return the session template
      */
     public SessionTemplateType getSessionTemplate() {
         return sessionTemplate;
     }
 
     /**
-     * Sets the value of the sessionTemplate property.
+     * Sets the session template.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link SessionTemplateType }
-     *     
+     * @param value the new session template
      */
     public void setSessionTemplate(SessionTemplateType value) {
         this.sessionTemplate = value;

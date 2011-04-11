@@ -26,26 +26,7 @@ import com.webex.schemas._2002._06.service.session.DateScopeType;
 
 
 /**
- * <p>Java class for lstScheduledTests complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="lstScheduledTests">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="dateScope" type="{http://www.webex.com/schemas/2002/06/service/session}dateScopeType" minOccurs="0"/>
- *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="status" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}testStatusType" minOccurs="0"/>
- *         &lt;element name="author" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class LstScheduledTests.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstScheduledTests", propOrder = {
@@ -59,103 +40,88 @@ public class LstScheduledTests
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The date scope. */
     protected DateScopeType dateScope;
+    
+    /** The session key. */
     protected Long sessionKey;
+    
+    /** The status. */
     protected TestStatusType status;
+    
+    /** The author. */
     protected String author;
 
     /**
-     * Gets the value of the dateScope property.
+     * Gets the date scope.
      * 
-     * @return
-     *     possible object is
-     *     {@link DateScopeType }
-     *     
+     * @return the date scope
      */
     public DateScopeType getDateScope() {
         return dateScope;
     }
 
     /**
-     * Sets the value of the dateScope property.
+     * Sets the date scope.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link DateScopeType }
-     *     
+     * @param value the new date scope
      */
     public void setDateScope(DateScopeType value) {
         this.dateScope = value;
     }
 
     /**
-     * Gets the value of the sessionKey property.
+     * Gets the session key.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the session key
      */
     public Long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the value of the sessionKey property.
+     * Sets the session key.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new session key
      */
     public void setSessionKey(Long value) {
         this.sessionKey = value;
     }
 
     /**
-     * Gets the value of the status property.
+     * Gets the status.
      * 
-     * @return
-     *     possible object is
-     *     {@link TestStatusType }
-     *     
+     * @return the status
      */
     public TestStatusType getStatus() {
         return status;
     }
 
     /**
-     * Sets the value of the status property.
+     * Sets the status.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TestStatusType }
-     *     
+     * @param value the new status
      */
     public void setStatus(TestStatusType value) {
         this.status = value;
     }
 
     /**
-     * Gets the value of the author property.
+     * Gets the author.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the author
      */
     public String getAuthor() {
         return author;
     }
 
     /**
-     * Sets the value of the author property.
+     * Sets the author.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new author
      */
     public void setAuthor(String value) {
         this.author = value;

@@ -29,34 +29,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for setAccount complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="setAccount">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="webExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="account">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;extension base="{http://www.webex.com/schemas/2002/06/service/sales}accountType">
- *                 &lt;sequence>
- *                   &lt;element name="intAccountID" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *                 &lt;/sequence>
- *               &lt;/extension>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SetAccount.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "setAccount", propOrder = {
@@ -68,54 +41,47 @@ public class SetAccount
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The web ex id. */
     protected String webExID;
+    
+    /** The account. */
     @XmlElement(required = true)
     protected SetAccount.Account account;
 
     /**
-     * Gets the value of the webExID property.
+     * Gets the web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the web ex id
      */
     public String getWebExID() {
         return webExID;
     }
 
     /**
-     * Sets the value of the webExID property.
+     * Sets the web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new web ex id
      */
     public void setWebExID(String value) {
         this.webExID = value;
     }
 
     /**
-     * Gets the value of the account property.
+     * Gets the account.
      * 
-     * @return
-     *     possible object is
-     *     {@link SetAccount.Account }
-     *     
+     * @return the account
      */
     public SetAccount.Account getAccount() {
         return account;
     }
 
     /**
-     * Sets the value of the account property.
+     * Sets the account.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link SetAccount.Account }
-     *     
+     * @param value the new account
      */
     public void setAccount(SetAccount.Account value) {
         this.account = value;
@@ -123,23 +89,7 @@ public class SetAccount
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/sales}accountType">
-     *       &lt;sequence>
-     *         &lt;element name="intAccountID" type="{http://www.w3.org/2001/XMLSchema}integer"/>
-     *       &lt;/sequence>
-     *     &lt;/extension>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class Account.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -150,31 +100,28 @@ public class SetAccount
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The int account id. */
         @XmlElement(required = true, type = String.class)
         @XmlJavaTypeAdapter(Adapter1 .class)
         @XmlSchemaType(name = "integer")
         protected Long intAccountID;
 
         /**
-         * Gets the value of the intAccountID property.
+         * Gets the int account id.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the int account id
          */
         public Long getIntAccountID() {
             return intAccountID;
         }
 
         /**
-         * Sets the value of the intAccountID property.
+         * Sets the int account id.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new int account id
          */
         public void setIntAccountID(Long value) {
             this.intAccountID = value;

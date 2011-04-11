@@ -30,37 +30,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for trainingMetaDataType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="trainingMetaDataType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/session}metaDataType">
- *       &lt;sequence>
- *         &lt;element name="agenda" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="2500"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="greeting" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="location" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="invitation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="sessionType" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="defaultHighestMT" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="sessionTemplate" type="{http://www.webex.com/schemas/2002/06/common}sessionTemplateType" minOccurs="0"/>
- *         &lt;element name="enableGreeting" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class TrainingMetaDataType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "trainingMetaDataType", propOrder = {
@@ -79,232 +49,197 @@ public class TrainingMetaDataType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The agenda. */
     protected String agenda;
+    
+    /** The description. */
     protected String description;
+    
+    /** The greeting. */
     protected String greeting;
+    
+    /** The location. */
     protected String location;
+    
+    /** The invitation. */
     protected String invitation;
+    
+    /** The session type. */
     @XmlElement(type = String.class, defaultValue = "-1")
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long sessionType;
+    
+    /** The default highest mt. */
     @XmlElement(defaultValue = "true")
     protected Boolean defaultHighestMT;
+    
+    /** The session template. */
     protected SessionTemplateType sessionTemplate;
+    
+    /** The enable greeting. */
     protected Boolean enableGreeting;
 
     /**
-     * Gets the value of the agenda property.
+     * Gets the agenda.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the agenda
      */
     public String getAgenda() {
         return agenda;
     }
 
     /**
-     * Sets the value of the agenda property.
+     * Sets the agenda.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new agenda
      */
     public void setAgenda(String value) {
         this.agenda = value;
     }
 
     /**
-     * Gets the value of the description property.
+     * Gets the description.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the description
      */
     public String getDescription() {
         return description;
     }
 
     /**
-     * Sets the value of the description property.
+     * Sets the description.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new description
      */
     public void setDescription(String value) {
         this.description = value;
     }
 
     /**
-     * Gets the value of the greeting property.
+     * Gets the greeting.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the greeting
      */
     public String getGreeting() {
         return greeting;
     }
 
     /**
-     * Sets the value of the greeting property.
+     * Sets the greeting.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new greeting
      */
     public void setGreeting(String value) {
         this.greeting = value;
     }
 
     /**
-     * Gets the value of the location property.
+     * Gets the location.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the location
      */
     public String getLocation() {
         return location;
     }
 
     /**
-     * Sets the value of the location property.
+     * Sets the location.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new location
      */
     public void setLocation(String value) {
         this.location = value;
     }
 
     /**
-     * Gets the value of the invitation property.
+     * Gets the invitation.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the invitation
      */
     public String getInvitation() {
         return invitation;
     }
 
     /**
-     * Sets the value of the invitation property.
+     * Sets the invitation.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new invitation
      */
     public void setInvitation(String value) {
         this.invitation = value;
     }
 
     /**
-     * Gets the value of the sessionType property.
+     * Gets the session type.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the session type
      */
     public Long getSessionType() {
         return sessionType;
     }
 
     /**
-     * Sets the value of the sessionType property.
+     * Sets the session type.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new session type
      */
     public void setSessionType(Long value) {
         this.sessionType = value;
     }
 
     /**
-     * Gets the value of the defaultHighestMT property.
+     * Checks if is default highest mt.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isDefaultHighestMT() {
         return defaultHighestMT;
     }
 
     /**
-     * Sets the value of the defaultHighestMT property.
+     * Sets the default highest mt.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new default highest mt
      */
     public void setDefaultHighestMT(Boolean value) {
         this.defaultHighestMT = value;
     }
 
     /**
-     * Gets the value of the sessionTemplate property.
+     * Gets the session template.
      * 
-     * @return
-     *     possible object is
-     *     {@link SessionTemplateType }
-     *     
+     * @return the session template
      */
     public SessionTemplateType getSessionTemplate() {
         return sessionTemplate;
     }
 
     /**
-     * Sets the value of the sessionTemplate property.
+     * Sets the session template.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link SessionTemplateType }
-     *     
+     * @param value the new session template
      */
     public void setSessionTemplate(SessionTemplateType value) {
         this.sessionTemplate = value;
     }
 
     /**
-     * Gets the value of the enableGreeting property.
+     * Checks if is enable greeting.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isEnableGreeting() {
         return enableGreeting;
     }
 
     /**
-     * Sets the value of the enableGreeting property.
+     * Sets the enable greeting.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new enable greeting
      */
     public void setEnableGreeting(Boolean value) {
         this.enableGreeting = value;

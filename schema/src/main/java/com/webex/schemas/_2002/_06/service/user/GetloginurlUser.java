@@ -26,24 +26,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for getloginurlUser complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="getloginurlUser">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="webExID" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="backURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GetloginurlUser.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getloginurlUser", propOrder = {
@@ -55,54 +38,47 @@ public class GetloginurlUser
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The web ex id. */
     @XmlElement(required = true)
     protected String webExID;
+    
+    /** The back url. */
     protected String backURL;
 
     /**
-     * Gets the value of the webExID property.
+     * Gets the web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the web ex id
      */
     public String getWebExID() {
         return webExID;
     }
 
     /**
-     * Sets the value of the webExID property.
+     * Sets the web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new web ex id
      */
     public void setWebExID(String value) {
         this.webExID = value;
     }
 
     /**
-     * Gets the value of the backURL property.
+     * Gets the back url.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the back url
      */
     public String getBackURL() {
         return backURL;
     }
 
     /**
-     * Sets the value of the backURL property.
+     * Sets the back url.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new back url
      */
     public void setBackURL(String value) {
         this.backURL = value;

@@ -39,32 +39,33 @@ import com.google.code.webex.service.util.ApplicationConstants;
 import com.google.code.webex.service.util.WebExUrls.WebExUrlBuilder;
 
 /**
- * The Class BaseUClassifyClient.
- * 
- * @author Nabeel Mukhtar
+ * The Class BaseWebExService.
  */
 public abstract class BaseWebExService implements WebExService {
 
-    /** Field description. */
+    /** The Constant GZIP_ENCODING. */
     private static final String GZIP_ENCODING = "gzip";
 
-    /** Field description. */
+    /** The LOG. */
 //    private final SchemaElementFactory OBJECT_FACTORY = createObjectFactory();
 
     /** The static logger. */
     protected final Logger LOG = Logger.getLogger(getClass().getCanonicalName());
     
-    /** Field description. */
+    /** The api consumer. */
     private WebExConsumer apiConsumer;
 
-    /** Field description. */
+    /** The request headers. */
     private Map<String, String> requestHeaders;
 
     /**
-     * Constructs ...
+     * Instantiates a new base web ex service.
      * 
-     * @param readApiKey the read api key
-     * @param writeApiKey the write api key
+     * @param webExId the web ex id
+     * @param password the password
+     * @param siteId the site id
+     * @param siteName the site name
+     * @param partnerId the partner id
      */
     protected BaseWebExService(String webExId, String password, Long siteId, String siteName, String partnerId) {
         requestHeaders = new HashMap<String, String>();
@@ -74,55 +75,55 @@ public abstract class BaseWebExService implements WebExService {
         apiConsumer = new WebExConsumer(webExId, password, siteId, siteName, partnerId);
     }
 
-    /**
-     * {@inheritDoc}
+    /* (non-Javadoc)
+     * @see com.google.code.webex.service.WebExCommunicationClient#setRequestHeaders(java.util.Map)
      */
     public void setRequestHeaders(Map<String, String> requestHeaders) {
         this.requestHeaders = requestHeaders;
     }
 
-    /**
-     * {@inheritDoc}
+    /* (non-Javadoc)
+     * @see com.google.code.webex.service.WebExCommunicationClient#getRequestHeaders()
      */
     public Map<String, String> getRequestHeaders() {
         return requestHeaders;
     }
 
-    /**
-     * {@inheritDoc}
+    /* (non-Javadoc)
+     * @see com.google.code.webex.service.WebExCommunicationClient#addRequestHeader(java.lang.String, java.lang.String)
      */
     public void addRequestHeader(String headerName, String headerValue) {
         requestHeaders.put(headerName, headerValue);
     }
 
-    /**
-     * {@inheritDoc}
+    /* (non-Javadoc)
+     * @see com.google.code.webex.service.WebExCommunicationClient#removeRequestHeader(java.lang.String)
      */
     public void removeRequestHeader(String headerName) {
         requestHeaders.remove(headerName);
     }
 
-    /**
-     * {@inheritDoc}
+    /* (non-Javadoc)
+     * @see com.google.code.webex.service.WebExAuthenticationClient#setApiConsumer(com.google.code.webex.service.WebExConsumer)
      */
     public void setApiConsumer(WebExConsumer apiConsumer) {
         this.apiConsumer = apiConsumer;
     }
 
-    /**
-     * {@inheritDoc}
+    /* (non-Javadoc)
+     * @see com.google.code.webex.service.WebExAuthenticationClient#getApiConsumer()
      */
     public WebExConsumer getApiConsumer() {
         return apiConsumer;
     }
     
     /**
-     * Method description.
+     * Read response.
      * 
      * @param clazz the clazz
      * @param is the is
      * 
-     * @return the T
+     * @return the t
      */
     protected <T> T readResponse(Class<T> clazz, InputStream is) {
         try {
@@ -133,11 +134,15 @@ public abstract class BaseWebExService implements WebExService {
     }
 
     /**
-     * Read response.
+     * Call api method.
      * 
-     * @param is the is
+     * @param apiUrl the api url
+     * @param xmlContent the xml content
+     * @param contentType the content type
+     * @param method the method
+     * @param expected the expected
      * 
-     * @return the list< response entity>
+     * @return the input stream
      */
 //    protected List<ResponseEntity> readResponse(InputStream is) {
 //    	com.uclassify.api._1.responseschema.Uclassify response = readResponse(com.uclassify.api._1.responseschema.Uclassify.class, is);
@@ -212,7 +217,7 @@ public abstract class BaseWebExService implements WebExService {
     }
 
     /**
-     * Method description.
+     * Close stream.
      * 
      * @param is the is
      */
@@ -225,7 +230,7 @@ public abstract class BaseWebExService implements WebExService {
     }
 
     /**
-     * Method description.
+     * Close connection.
      * 
      * @param connection the connection
      */
@@ -240,7 +245,7 @@ public abstract class BaseWebExService implements WebExService {
     }
     
     /**
-     * Method description.
+     * Gets the wrapped input stream.
      * 
      * @param is the is
      * @param gzip the gzip
@@ -258,11 +263,11 @@ public abstract class BaseWebExService implements WebExService {
     }
 
     /**
-     * Get property as long.
+     * Checks if is null or empty.
      * 
      * @param s the s
      * 
-     * @return true, if checks if is null or empty
+     * @return true, if is null or empty
      */
     protected boolean isNullOrEmpty(String s) {
         return ((s == null) || (s.length() == 0));
@@ -364,17 +369,17 @@ public abstract class BaseWebExService implements WebExService {
 	}
     
     /**
-     * Method description.
+     * Unmarshall object.
      * 
      * @param clazz the clazz
      * @param xmlContent the xml content
      * 
-     * @return the T
+     * @return the t
      */
     protected abstract <T> T unmarshallObject(Class<T> clazz, InputStream xmlContent);
 
     /**
-     * Method description.
+     * Marshall object.
      * 
      * @param element the element
      * 
@@ -383,11 +388,11 @@ public abstract class BaseWebExService implements WebExService {
     protected abstract String marshallObject(Object element);
 
     /**
-     * Method description.
+     * Creates the web ex url builder.
      * 
      * @param urlFormat the url format
      * 
-     * @return the u classify url builder
+     * @return the web ex url builder
      */
     protected abstract WebExUrlBuilder createWebExUrlBuilder(String urlFormat);
 

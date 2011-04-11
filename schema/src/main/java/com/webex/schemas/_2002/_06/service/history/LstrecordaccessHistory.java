@@ -27,29 +27,7 @@ import com.webex.schemas._2002._06.service.LstControlType;
 
 
 /**
- * <p>Java class for lstrecordaccessHistory complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="lstrecordaccessHistory">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="creationTimeScope" type="{http://www.webex.com/schemas/2002/06/service/history}creationTimeScopeType" minOccurs="0"/>
- *         &lt;element name="viewTimeScope" type="{http://www.webex.com/schemas/2002/06/service/history}viewTimeScopeType" minOccurs="0"/>
- *         &lt;element name="order" type="{http://www.webex.com/schemas/2002/06/service/history}orderRecAccHisType" minOccurs="0"/>
- *         &lt;element name="listControl" type="{http://www.webex.com/schemas/2002/06/service}lstControlType" minOccurs="0"/>
- *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="recordName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="hostWebExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class LstrecordaccessHistory.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstrecordaccessHistory", propOrder = {
@@ -66,179 +44,152 @@ public class LstrecordaccessHistory
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The creation time scope. */
     protected CreationTimeScopeType creationTimeScope;
+    
+    /** The view time scope. */
     protected ViewTimeScopeType viewTimeScope;
+    
+    /** The order. */
     protected OrderRecAccHisType order;
+    
+    /** The list control. */
     protected LstControlType listControl;
+    
+    /** The time zone id. */
     @XmlElement(defaultValue = "-1")
     protected Integer timeZoneID;
+    
+    /** The record name. */
     protected String recordName;
+    
+    /** The host web ex id. */
     protected String hostWebExID;
 
     /**
-     * Gets the value of the creationTimeScope property.
+     * Gets the creation time scope.
      * 
-     * @return
-     *     possible object is
-     *     {@link CreationTimeScopeType }
-     *     
+     * @return the creation time scope
      */
     public CreationTimeScopeType getCreationTimeScope() {
         return creationTimeScope;
     }
 
     /**
-     * Sets the value of the creationTimeScope property.
+     * Sets the creation time scope.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link CreationTimeScopeType }
-     *     
+     * @param value the new creation time scope
      */
     public void setCreationTimeScope(CreationTimeScopeType value) {
         this.creationTimeScope = value;
     }
 
     /**
-     * Gets the value of the viewTimeScope property.
+     * Gets the view time scope.
      * 
-     * @return
-     *     possible object is
-     *     {@link ViewTimeScopeType }
-     *     
+     * @return the view time scope
      */
     public ViewTimeScopeType getViewTimeScope() {
         return viewTimeScope;
     }
 
     /**
-     * Sets the value of the viewTimeScope property.
+     * Sets the view time scope.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ViewTimeScopeType }
-     *     
+     * @param value the new view time scope
      */
     public void setViewTimeScope(ViewTimeScopeType value) {
         this.viewTimeScope = value;
     }
 
     /**
-     * Gets the value of the order property.
+     * Gets the order.
      * 
-     * @return
-     *     possible object is
-     *     {@link OrderRecAccHisType }
-     *     
+     * @return the order
      */
     public OrderRecAccHisType getOrder() {
         return order;
     }
 
     /**
-     * Sets the value of the order property.
+     * Sets the order.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link OrderRecAccHisType }
-     *     
+     * @param value the new order
      */
     public void setOrder(OrderRecAccHisType value) {
         this.order = value;
     }
 
     /**
-     * Gets the value of the listControl property.
+     * Gets the list control.
      * 
-     * @return
-     *     possible object is
-     *     {@link LstControlType }
-     *     
+     * @return the list control
      */
     public LstControlType getListControl() {
         return listControl;
     }
 
     /**
-     * Sets the value of the listControl property.
+     * Sets the list control.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link LstControlType }
-     *     
+     * @param value the new list control
      */
     public void setListControl(LstControlType value) {
         this.listControl = value;
     }
 
     /**
-     * Gets the value of the timeZoneID property.
+     * Gets the time zone id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     * @return the time zone id
      */
     public Integer getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the value of the timeZoneID property.
+     * Sets the time zone id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     * @param value the new time zone id
      */
     public void setTimeZoneID(Integer value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the value of the recordName property.
+     * Gets the record name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the record name
      */
     public String getRecordName() {
         return recordName;
     }
 
     /**
-     * Sets the value of the recordName property.
+     * Sets the record name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new record name
      */
     public void setRecordName(String value) {
         this.recordName = value;
     }
 
     /**
-     * Gets the value of the hostWebExID property.
+     * Gets the host web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the host web ex id
      */
     public String getHostWebExID() {
         return hostWebExID;
     }
 
     /**
-     * Sets the value of the hostWebExID property.
+     * Sets the host web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new host web ex id
      */
     public void setHostWebExID(String value) {
         this.hostWebExID = value;

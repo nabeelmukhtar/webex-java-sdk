@@ -25,25 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for createTimeScopeType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="createTimeScopeType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="createTimeStart" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="createTimeEnd" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class CreateTimeScopeType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "createTimeScopeType", propOrder = {
@@ -55,81 +37,70 @@ public class CreateTimeScopeType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The create time start. */
     @XmlElement(required = true)
     protected String createTimeStart;
+    
+    /** The create time end. */
     @XmlElement(required = true)
     protected String createTimeEnd;
+    
+    /** The time zone id. */
     @XmlElement(defaultValue = "-1")
     protected Integer timeZoneID;
 
     /**
-     * Gets the value of the createTimeStart property.
+     * Gets the creates the time start.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the creates the time start
      */
     public String getCreateTimeStart() {
         return createTimeStart;
     }
 
     /**
-     * Sets the value of the createTimeStart property.
+     * Sets the creates the time start.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new creates the time start
      */
     public void setCreateTimeStart(String value) {
         this.createTimeStart = value;
     }
 
     /**
-     * Gets the value of the createTimeEnd property.
+     * Gets the creates the time end.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the creates the time end
      */
     public String getCreateTimeEnd() {
         return createTimeEnd;
     }
 
     /**
-     * Sets the value of the createTimeEnd property.
+     * Sets the creates the time end.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new creates the time end
      */
     public void setCreateTimeEnd(String value) {
         this.createTimeEnd = value;
     }
 
     /**
-     * Gets the value of the timeZoneID property.
+     * Gets the time zone id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     * @return the time zone id
      */
     public Integer getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the value of the timeZoneID property.
+     * Sets the time zone id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     * @param value the new time zone id
      */
     public void setTimeZoneID(Integer value) {
         this.timeZoneID = value;

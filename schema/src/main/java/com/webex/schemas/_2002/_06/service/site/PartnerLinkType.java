@@ -26,23 +26,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for partnerLinkType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="partnerLinkType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="partnerLink" type="{http://www.webex.com/schemas/2002/06/service/site}linkType" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class PartnerLinkType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "partnerLinkType", propOrder = {
@@ -52,30 +36,16 @@ public class PartnerLinkType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The partner link. */
     protected List<LinkType> partnerLink;
 
     /**
-     * Gets the value of the partnerLink property.
+     * Gets the partner link.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the partnerLink property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getPartnerLink().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link LinkType }
-     * 
-     * 
+     * @return the partner link
      */
     public List<LinkType> getPartnerLink() {
         if (partnerLink == null) {

@@ -28,44 +28,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Java class for controlType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="controlType">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
- *       &lt;attribute name="hint_switch" default="No">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="Yes"/>
- *             &lt;enumeration value="No"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="solution_switch" default="No">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="Yes"/>
- *             &lt;enumeration value="No"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="feedback_switch" default="No">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="Yes"/>
- *             &lt;enumeration value="No"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ControlType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "controlType", propOrder = {
@@ -75,50 +38,50 @@ public class ControlType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The value. */
     @XmlValue
     protected String value;
+    
+    /** The hint switch. */
     @XmlAttribute(name = "hint_switch")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String hintSwitch;
+    
+    /** The solution switch. */
     @XmlAttribute(name = "solution_switch")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String solutionSwitch;
+    
+    /** The feedback switch. */
     @XmlAttribute(name = "feedback_switch")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String feedbackSwitch;
 
     /**
-     * Gets the value of the value property.
+     * Gets the value.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the value
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value of the value property.
+     * Sets the value.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new value
      */
     public void setValue(String value) {
         this.value = value;
     }
 
     /**
-     * Gets the value of the hintSwitch property.
+     * Gets the hint switch.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the hint switch
      */
     public String getHintSwitch() {
         if (hintSwitch == null) {
@@ -129,24 +92,18 @@ public class ControlType
     }
 
     /**
-     * Sets the value of the hintSwitch property.
+     * Sets the hint switch.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new hint switch
      */
     public void setHintSwitch(String value) {
         this.hintSwitch = value;
     }
 
     /**
-     * Gets the value of the solutionSwitch property.
+     * Gets the solution switch.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the solution switch
      */
     public String getSolutionSwitch() {
         if (solutionSwitch == null) {
@@ -157,24 +114,18 @@ public class ControlType
     }
 
     /**
-     * Sets the value of the solutionSwitch property.
+     * Sets the solution switch.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new solution switch
      */
     public void setSolutionSwitch(String value) {
         this.solutionSwitch = value;
     }
 
     /**
-     * Gets the value of the feedbackSwitch property.
+     * Gets the feedback switch.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the feedback switch
      */
     public String getFeedbackSwitch() {
         if (feedbackSwitch == null) {
@@ -185,12 +136,9 @@ public class ControlType
     }
 
     /**
-     * Sets the value of the feedbackSwitch property.
+     * Sets the feedback switch.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new feedback switch
      */
     public void setFeedbackSwitch(String value) {
         this.feedbackSwitch = value;

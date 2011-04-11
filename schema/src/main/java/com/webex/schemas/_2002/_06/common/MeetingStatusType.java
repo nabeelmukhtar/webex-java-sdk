@@ -22,33 +22,37 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for meetingStatusType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="meetingStatusType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="NOT_STARTED"/>
- *     &lt;enumeration value="IN_PROGRESS"/>
- *     &lt;enumeration value="ENDED"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum MeetingStatusType.
  */
 @XmlType(name = "meetingStatusType")
 @XmlEnum
 public enum MeetingStatusType {
 
+    /** The NO t_ started. */
     NOT_STARTED,
+    
+    /** The I n_ progress. */
     IN_PROGRESS,
+    
+    /** The ENDED. */
     ENDED;
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the meeting status type
+     */
     public static MeetingStatusType fromValue(String v) {
         return valueOf(v);
     }

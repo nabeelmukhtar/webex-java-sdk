@@ -28,26 +28,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for callInNumType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="callInNumType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="tollNum" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="tollFreeNum" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="intlLocalNum" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="globalNum" type="{http://www.webex.com/schemas/2002/06/service}globalCallInNumType" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class CallInNumType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "callInNumType", propOrder = {
@@ -64,106 +45,80 @@ public class CallInNumType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The toll num. */
     @XmlElement(required = true)
     protected String tollNum;
+    
+    /** The toll free num. */
     protected String tollFreeNum;
+    
+    /** The intl local num. */
     protected String intlLocalNum;
+    
+    /** The global num. */
     protected List<GlobalCallInNumType> globalNum;
 
     /**
-     * Gets the value of the tollNum property.
+     * Gets the toll num.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the toll num
      */
     public String getTollNum() {
         return tollNum;
     }
 
     /**
-     * Sets the value of the tollNum property.
+     * Sets the toll num.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new toll num
      */
     public void setTollNum(String value) {
         this.tollNum = value;
     }
 
     /**
-     * Gets the value of the tollFreeNum property.
+     * Gets the toll free num.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the toll free num
      */
     public String getTollFreeNum() {
         return tollFreeNum;
     }
 
     /**
-     * Sets the value of the tollFreeNum property.
+     * Sets the toll free num.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new toll free num
      */
     public void setTollFreeNum(String value) {
         this.tollFreeNum = value;
     }
 
     /**
-     * Gets the value of the intlLocalNum property.
+     * Gets the intl local num.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the intl local num
      */
     public String getIntlLocalNum() {
         return intlLocalNum;
     }
 
     /**
-     * Sets the value of the intlLocalNum property.
+     * Sets the intl local num.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new intl local num
      */
     public void setIntlLocalNum(String value) {
         this.intlLocalNum = value;
     }
 
     /**
-     * Gets the value of the globalNum property.
+     * Gets the global num.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the globalNum property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getGlobalNum().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link GlobalCallInNumType }
-     * 
-     * 
+     * @return the global num
      */
     public List<GlobalCallInNumType> getGlobalNum() {
         if (globalNum == null) {

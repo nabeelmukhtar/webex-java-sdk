@@ -29,38 +29,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for accountType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="accountType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="name" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="128"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="extAccountID" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="512"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="extSystemID" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="parentIntID" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class AccountType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "accountType", propOrder = {
@@ -77,109 +46,94 @@ public class AccountType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The name. */
     protected String name;
+    
+    /** The ext account id. */
     protected String extAccountID;
+    
+    /** The ext system id. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long extSystemID;
+    
+    /** The parent int id. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long parentIntID;
 
     /**
-     * Gets the value of the name property.
+     * Gets the name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the name
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Sets the value of the name property.
+     * Sets the name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new name
      */
     public void setName(String value) {
         this.name = value;
     }
 
     /**
-     * Gets the value of the extAccountID property.
+     * Gets the ext account id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the ext account id
      */
     public String getExtAccountID() {
         return extAccountID;
     }
 
     /**
-     * Sets the value of the extAccountID property.
+     * Sets the ext account id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new ext account id
      */
     public void setExtAccountID(String value) {
         this.extAccountID = value;
     }
 
     /**
-     * Gets the value of the extSystemID property.
+     * Gets the ext system id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the ext system id
      */
     public Long getExtSystemID() {
         return extSystemID;
     }
 
     /**
-     * Sets the value of the extSystemID property.
+     * Sets the ext system id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new ext system id
      */
     public void setExtSystemID(Long value) {
         this.extSystemID = value;
     }
 
     /**
-     * Gets the value of the parentIntID property.
+     * Gets the parent int id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the parent int id
      */
     public Long getParentIntID() {
         return parentIntID;
     }
 
     /**
-     * Sets the value of the parentIntID property.
+     * Sets the parent int id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new parent int id
      */
     public void setParentIntID(Long value) {
         this.parentIntID = value;

@@ -25,33 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for standardFieldsType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="standardFieldsType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="phone" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldType" minOccurs="0"/>
- *         &lt;element name="company" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldType" minOccurs="0"/>
- *         &lt;element name="title" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldType" minOccurs="0"/>
- *         &lt;element name="numEmployees" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldType" minOccurs="0"/>
- *         &lt;element name="futureInfo" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldType" minOccurs="0"/>
- *         &lt;element name="address1" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldType" minOccurs="0"/>
- *         &lt;element name="address2" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldType" minOccurs="0"/>
- *         &lt;element name="city" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldType" minOccurs="0"/>
- *         &lt;element name="state" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldType" minOccurs="0"/>
- *         &lt;element name="postalCode" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldType" minOccurs="0"/>
- *         &lt;element name="country" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class StandardFieldsType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "standardFieldsType", propOrder = {
@@ -74,278 +48,235 @@ public class StandardFieldsType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The phone. */
     protected EnrollmentFieldType phone;
+    
+    /** The company. */
     protected EnrollmentFieldType company;
+    
+    /** The title. */
     protected EnrollmentFieldType title;
+    
+    /** The num employees. */
     protected EnrollmentFieldType numEmployees;
+    
+    /** The future info. */
     protected EnrollmentFieldType futureInfo;
+    
+    /** The address1. */
     protected EnrollmentFieldType address1;
+    
+    /** The address2. */
     protected EnrollmentFieldType address2;
+    
+    /** The city. */
     protected EnrollmentFieldType city;
+    
+    /** The state. */
     protected EnrollmentFieldType state;
+    
+    /** The postal code. */
     protected EnrollmentFieldType postalCode;
+    
+    /** The country. */
     protected EnrollmentFieldType country;
 
     /**
-     * Gets the value of the phone property.
+     * Gets the phone.
      * 
-     * @return
-     *     possible object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @return the phone
      */
     public EnrollmentFieldType getPhone() {
         return phone;
     }
 
     /**
-     * Sets the value of the phone property.
+     * Sets the phone.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @param value the new phone
      */
     public void setPhone(EnrollmentFieldType value) {
         this.phone = value;
     }
 
     /**
-     * Gets the value of the company property.
+     * Gets the company.
      * 
-     * @return
-     *     possible object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @return the company
      */
     public EnrollmentFieldType getCompany() {
         return company;
     }
 
     /**
-     * Sets the value of the company property.
+     * Sets the company.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @param value the new company
      */
     public void setCompany(EnrollmentFieldType value) {
         this.company = value;
     }
 
     /**
-     * Gets the value of the title property.
+     * Gets the title.
      * 
-     * @return
-     *     possible object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @return the title
      */
     public EnrollmentFieldType getTitle() {
         return title;
     }
 
     /**
-     * Sets the value of the title property.
+     * Sets the title.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @param value the new title
      */
     public void setTitle(EnrollmentFieldType value) {
         this.title = value;
     }
 
     /**
-     * Gets the value of the numEmployees property.
+     * Gets the num employees.
      * 
-     * @return
-     *     possible object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @return the num employees
      */
     public EnrollmentFieldType getNumEmployees() {
         return numEmployees;
     }
 
     /**
-     * Sets the value of the numEmployees property.
+     * Sets the num employees.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @param value the new num employees
      */
     public void setNumEmployees(EnrollmentFieldType value) {
         this.numEmployees = value;
     }
 
     /**
-     * Gets the value of the futureInfo property.
+     * Gets the future info.
      * 
-     * @return
-     *     possible object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @return the future info
      */
     public EnrollmentFieldType getFutureInfo() {
         return futureInfo;
     }
 
     /**
-     * Sets the value of the futureInfo property.
+     * Sets the future info.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @param value the new future info
      */
     public void setFutureInfo(EnrollmentFieldType value) {
         this.futureInfo = value;
     }
 
     /**
-     * Gets the value of the address1 property.
+     * Gets the address1.
      * 
-     * @return
-     *     possible object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @return the address1
      */
     public EnrollmentFieldType getAddress1() {
         return address1;
     }
 
     /**
-     * Sets the value of the address1 property.
+     * Sets the address1.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @param value the new address1
      */
     public void setAddress1(EnrollmentFieldType value) {
         this.address1 = value;
     }
 
     /**
-     * Gets the value of the address2 property.
+     * Gets the address2.
      * 
-     * @return
-     *     possible object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @return the address2
      */
     public EnrollmentFieldType getAddress2() {
         return address2;
     }
 
     /**
-     * Sets the value of the address2 property.
+     * Sets the address2.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @param value the new address2
      */
     public void setAddress2(EnrollmentFieldType value) {
         this.address2 = value;
     }
 
     /**
-     * Gets the value of the city property.
+     * Gets the city.
      * 
-     * @return
-     *     possible object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @return the city
      */
     public EnrollmentFieldType getCity() {
         return city;
     }
 
     /**
-     * Sets the value of the city property.
+     * Sets the city.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @param value the new city
      */
     public void setCity(EnrollmentFieldType value) {
         this.city = value;
     }
 
     /**
-     * Gets the value of the state property.
+     * Gets the state.
      * 
-     * @return
-     *     possible object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @return the state
      */
     public EnrollmentFieldType getState() {
         return state;
     }
 
     /**
-     * Sets the value of the state property.
+     * Sets the state.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @param value the new state
      */
     public void setState(EnrollmentFieldType value) {
         this.state = value;
     }
 
     /**
-     * Gets the value of the postalCode property.
+     * Gets the postal code.
      * 
-     * @return
-     *     possible object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @return the postal code
      */
     public EnrollmentFieldType getPostalCode() {
         return postalCode;
     }
 
     /**
-     * Sets the value of the postalCode property.
+     * Sets the postal code.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @param value the new postal code
      */
     public void setPostalCode(EnrollmentFieldType value) {
         this.postalCode = value;
     }
 
     /**
-     * Gets the value of the country property.
+     * Gets the country.
      * 
-     * @return
-     *     possible object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @return the country
      */
     public EnrollmentFieldType getCountry() {
         return country;
     }
 
     /**
-     * Sets the value of the country property.
+     * Sets the country.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link EnrollmentFieldType }
-     *     
+     * @param value the new country
      */
     public void setCountry(EnrollmentFieldType value) {
         this.country = value;

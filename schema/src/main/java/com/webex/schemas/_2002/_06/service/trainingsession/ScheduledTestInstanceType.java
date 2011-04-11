@@ -30,28 +30,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for scheduledTestInstanceType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="scheduledTestInstanceType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="testID" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="title" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="delivery" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}testDeliveryType"/>
- *         &lt;element name="status" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}testStatusType"/>
- *         &lt;element name="dueDate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ScheduledTestInstanceType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "scheduledTestInstanceType", propOrder = {
@@ -70,151 +49,136 @@ public class ScheduledTestInstanceType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The test id. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long testID;
+    
+    /** The title. */
     @XmlElement(required = true)
     protected String title;
+    
+    /** The delivery. */
     @XmlElement(required = true, defaultValue = "IN_SESSION")
     protected TestDeliveryType delivery;
+    
+    /** The status. */
     @XmlElement(required = true, defaultValue = "NOT_STARTED")
     protected TestStatusType status;
+    
+    /** The due date. */
     protected String dueDate;
+    
+    /** The session key. */
     protected long sessionKey;
 
     /**
-     * Gets the value of the testID property.
+     * Gets the test id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the test id
      */
     public Long getTestID() {
         return testID;
     }
 
     /**
-     * Sets the value of the testID property.
+     * Sets the test id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new test id
      */
     public void setTestID(Long value) {
         this.testID = value;
     }
 
     /**
-     * Gets the value of the title property.
+     * Gets the title.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the title
      */
     public String getTitle() {
         return title;
     }
 
     /**
-     * Sets the value of the title property.
+     * Sets the title.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new title
      */
     public void setTitle(String value) {
         this.title = value;
     }
 
     /**
-     * Gets the value of the delivery property.
+     * Gets the delivery.
      * 
-     * @return
-     *     possible object is
-     *     {@link TestDeliveryType }
-     *     
+     * @return the delivery
      */
     public TestDeliveryType getDelivery() {
         return delivery;
     }
 
     /**
-     * Sets the value of the delivery property.
+     * Sets the delivery.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TestDeliveryType }
-     *     
+     * @param value the new delivery
      */
     public void setDelivery(TestDeliveryType value) {
         this.delivery = value;
     }
 
     /**
-     * Gets the value of the status property.
+     * Gets the status.
      * 
-     * @return
-     *     possible object is
-     *     {@link TestStatusType }
-     *     
+     * @return the status
      */
     public TestStatusType getStatus() {
         return status;
     }
 
     /**
-     * Sets the value of the status property.
+     * Sets the status.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TestStatusType }
-     *     
+     * @param value the new status
      */
     public void setStatus(TestStatusType value) {
         this.status = value;
     }
 
     /**
-     * Gets the value of the dueDate property.
+     * Gets the due date.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the due date
      */
     public String getDueDate() {
         return dueDate;
     }
 
     /**
-     * Sets the value of the dueDate property.
+     * Sets the due date.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new due date
      */
     public void setDueDate(String value) {
         this.dueDate = value;
     }
 
     /**
-     * Gets the value of the sessionKey property.
+     * Gets the session key.
      * 
+     * @return the session key
      */
     public long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the value of the sessionKey property.
+     * Sets the session key.
      * 
+     * @param value the new session key
      */
     public void setSessionKey(long value) {
         this.sessionKey = value;

@@ -22,39 +22,46 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for repeatTypeType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="repeatTypeType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="WEEKLY"/>
- *     &lt;enumeration value="DAILY"/>
- *     &lt;enumeration value="NO_REPEAT"/>
- *     &lt;enumeration value="CONSTANT"/>
- *     &lt;enumeration value="MONTHLY"/>
- *     &lt;enumeration value="YEARLY"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum RepeatTypeType.
  */
 @XmlType(name = "repeatTypeType")
 @XmlEnum
 public enum RepeatTypeType {
 
+    /** The WEEKLY. */
     WEEKLY,
+    
+    /** The DAILY. */
     DAILY,
+    
+    /** The N o_ repeat. */
     NO_REPEAT,
+    
+    /** The CONSTANT. */
     CONSTANT,
+    
+    /** The MONTHLY. */
     MONTHLY,
+    
+    /** The YEARLY. */
     YEARLY;
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the repeat type type
+     */
     public static RepeatTypeType fromValue(String v) {
         return valueOf(v);
     }

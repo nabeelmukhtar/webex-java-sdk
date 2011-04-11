@@ -24,27 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for menuType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="menuType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="userGuides" type="{http://www.webex.com/schemas/2002/06/service/site}urlType" minOccurs="0"/>
- *         &lt;element name="downloads" type="{http://www.webex.com/schemas/2002/06/service/site}urlType" minOccurs="0"/>
- *         &lt;element name="training" type="{http://www.webex.com/schemas/2002/06/service/site}urlType" minOccurs="0"/>
- *         &lt;element name="contactUs" type="{http://www.webex.com/schemas/2002/06/service/site}urlType" minOccurs="0"/>
- *         &lt;element name="supportMyResources" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class MenuType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "menuType", propOrder = {
@@ -58,128 +38,109 @@ public class MenuType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The user guides. */
     protected UrlType userGuides;
+    
+    /** The downloads. */
     protected UrlType downloads;
+    
+    /** The training. */
     protected UrlType training;
+    
+    /** The contact us. */
     protected UrlType contactUs;
+    
+    /** The support my resources. */
     protected Boolean supportMyResources;
 
     /**
-     * Gets the value of the userGuides property.
+     * Gets the user guides.
      * 
-     * @return
-     *     possible object is
-     *     {@link UrlType }
-     *     
+     * @return the user guides
      */
     public UrlType getUserGuides() {
         return userGuides;
     }
 
     /**
-     * Sets the value of the userGuides property.
+     * Sets the user guides.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link UrlType }
-     *     
+     * @param value the new user guides
      */
     public void setUserGuides(UrlType value) {
         this.userGuides = value;
     }
 
     /**
-     * Gets the value of the downloads property.
+     * Gets the downloads.
      * 
-     * @return
-     *     possible object is
-     *     {@link UrlType }
-     *     
+     * @return the downloads
      */
     public UrlType getDownloads() {
         return downloads;
     }
 
     /**
-     * Sets the value of the downloads property.
+     * Sets the downloads.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link UrlType }
-     *     
+     * @param value the new downloads
      */
     public void setDownloads(UrlType value) {
         this.downloads = value;
     }
 
     /**
-     * Gets the value of the training property.
+     * Gets the training.
      * 
-     * @return
-     *     possible object is
-     *     {@link UrlType }
-     *     
+     * @return the training
      */
     public UrlType getTraining() {
         return training;
     }
 
     /**
-     * Sets the value of the training property.
+     * Sets the training.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link UrlType }
-     *     
+     * @param value the new training
      */
     public void setTraining(UrlType value) {
         this.training = value;
     }
 
     /**
-     * Gets the value of the contactUs property.
+     * Gets the contact us.
      * 
-     * @return
-     *     possible object is
-     *     {@link UrlType }
-     *     
+     * @return the contact us
      */
     public UrlType getContactUs() {
         return contactUs;
     }
 
     /**
-     * Sets the value of the contactUs property.
+     * Sets the contact us.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link UrlType }
-     *     
+     * @param value the new contact us
      */
     public void setContactUs(UrlType value) {
         this.contactUs = value;
     }
 
     /**
-     * Gets the value of the supportMyResources property.
+     * Checks if is support my resources.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isSupportMyResources() {
         return supportMyResources;
     }
 
     /**
-     * Sets the value of the supportMyResources property.
+     * Sets the support my resources.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new support my resources
      */
     public void setSupportMyResources(Boolean value) {
         this.supportMyResources = value;

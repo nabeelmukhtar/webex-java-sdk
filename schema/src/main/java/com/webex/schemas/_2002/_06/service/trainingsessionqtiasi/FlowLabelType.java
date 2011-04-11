@@ -29,25 +29,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for flow_labelType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="flow_labelType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice maxOccurs="unbounded">
- *         &lt;element name="flow_label" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}flow_labelType"/>
- *         &lt;element name="response_label" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}response_labelType"/>
- *       &lt;/choice>
- *       &lt;attribute name="class" type="{http://www.w3.org/2001/XMLSchema}string" default="Block" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class FlowLabelType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "flow_labelType", propOrder = {
@@ -56,37 +38,24 @@ import javax.xml.bind.annotation.XmlType;
 public class FlowLabelType implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The flow label or response label. */
     @XmlElements({
         @XmlElement(name = "response_label", type = ResponseLabelType.class),
         @XmlElement(name = "flow_label", type = FlowLabelType.class)
     })
     protected List<Object> flowLabelOrResponseLabel;
+    
+    /** The clazz. */
     @XmlAttribute(name = "class")
     protected String clazz;
 
     /**
-     * Gets the value of the flowLabelOrResponseLabel property.
+     * Gets the flow label or response label.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the flowLabelOrResponseLabel property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getFlowLabelOrResponseLabel().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ResponseLabelType }
-     * {@link FlowLabelType }
-     * 
-     * 
+     * @return the flow label or response label
      */
     public List<Object> getFlowLabelOrResponseLabel() {
         if (flowLabelOrResponseLabel == null) {
@@ -96,12 +65,9 @@ public class FlowLabelType implements Serializable
     }
 
     /**
-     * Gets the value of the clazz property.
+     * Gets the clazz.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the clazz
      */
     public String getClazz() {
         if (clazz == null) {
@@ -112,12 +78,9 @@ public class FlowLabelType implements Serializable
     }
 
     /**
-     * Sets the value of the clazz property.
+     * Sets the clazz.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new clazz
      */
     public void setClazz(String value) {
         this.clazz = value;

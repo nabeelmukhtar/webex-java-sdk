@@ -26,36 +26,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for supportSessionHistoryInstanceType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="supportSessionHistoryInstanceType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="confName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="sessionStartTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="sessionEndTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="duration" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="timezone" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="meetingType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="hostWebExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="hostName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="hostEmail" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="totalPeopleMinutes" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="confID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="peakAttendee" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="trackingCode" type="{http://www.webex.com/schemas/2002/06/common}trackingType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SupportSessionHistoryInstanceType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "supportSessionHistoryInstanceType", propOrder = {
@@ -79,353 +50,298 @@ public class SupportSessionHistoryInstanceType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The session key. */
     protected Long sessionKey;
+    
+    /** The conf name. */
     protected String confName;
+    
+    /** The session start time. */
     protected String sessionStartTime;
+    
+    /** The session end time. */
     protected String sessionEndTime;
+    
+    /** The duration. */
     protected Integer duration;
+    
+    /** The timezone. */
     protected Long timezone;
+    
+    /** The meeting type. */
     protected String meetingType;
+    
+    /** The host web ex id. */
     protected String hostWebExID;
+    
+    /** The host name. */
     protected String hostName;
+    
+    /** The host email. */
     protected String hostEmail;
+    
+    /** The total people minutes. */
     protected Integer totalPeopleMinutes;
+    
+    /** The conf id. */
     protected Long confID;
+    
+    /** The peak attendee. */
     protected Long peakAttendee;
+    
+    /** The tracking code. */
     protected TrackingType trackingCode;
 
     /**
-     * Gets the value of the sessionKey property.
+     * Gets the session key.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the session key
      */
     public Long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the value of the sessionKey property.
+     * Sets the session key.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new session key
      */
     public void setSessionKey(Long value) {
         this.sessionKey = value;
     }
 
     /**
-     * Gets the value of the confName property.
+     * Gets the conf name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the conf name
      */
     public String getConfName() {
         return confName;
     }
 
     /**
-     * Sets the value of the confName property.
+     * Sets the conf name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new conf name
      */
     public void setConfName(String value) {
         this.confName = value;
     }
 
     /**
-     * Gets the value of the sessionStartTime property.
+     * Gets the session start time.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the session start time
      */
     public String getSessionStartTime() {
         return sessionStartTime;
     }
 
     /**
-     * Sets the value of the sessionStartTime property.
+     * Sets the session start time.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new session start time
      */
     public void setSessionStartTime(String value) {
         this.sessionStartTime = value;
     }
 
     /**
-     * Gets the value of the sessionEndTime property.
+     * Gets the session end time.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the session end time
      */
     public String getSessionEndTime() {
         return sessionEndTime;
     }
 
     /**
-     * Sets the value of the sessionEndTime property.
+     * Sets the session end time.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new session end time
      */
     public void setSessionEndTime(String value) {
         this.sessionEndTime = value;
     }
 
     /**
-     * Gets the value of the duration property.
+     * Gets the duration.
      * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     * @return the duration
      */
     public Integer getDuration() {
         return duration;
     }
 
     /**
-     * Sets the value of the duration property.
+     * Sets the duration.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     * @param value the new duration
      */
     public void setDuration(Integer value) {
         this.duration = value;
     }
 
     /**
-     * Gets the value of the timezone property.
+     * Gets the timezone.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the timezone
      */
     public Long getTimezone() {
         return timezone;
     }
 
     /**
-     * Sets the value of the timezone property.
+     * Sets the timezone.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new timezone
      */
     public void setTimezone(Long value) {
         this.timezone = value;
     }
 
     /**
-     * Gets the value of the meetingType property.
+     * Gets the meeting type.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the meeting type
      */
     public String getMeetingType() {
         return meetingType;
     }
 
     /**
-     * Sets the value of the meetingType property.
+     * Sets the meeting type.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new meeting type
      */
     public void setMeetingType(String value) {
         this.meetingType = value;
     }
 
     /**
-     * Gets the value of the hostWebExID property.
+     * Gets the host web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the host web ex id
      */
     public String getHostWebExID() {
         return hostWebExID;
     }
 
     /**
-     * Sets the value of the hostWebExID property.
+     * Sets the host web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new host web ex id
      */
     public void setHostWebExID(String value) {
         this.hostWebExID = value;
     }
 
     /**
-     * Gets the value of the hostName property.
+     * Gets the host name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the host name
      */
     public String getHostName() {
         return hostName;
     }
 
     /**
-     * Sets the value of the hostName property.
+     * Sets the host name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new host name
      */
     public void setHostName(String value) {
         this.hostName = value;
     }
 
     /**
-     * Gets the value of the hostEmail property.
+     * Gets the host email.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the host email
      */
     public String getHostEmail() {
         return hostEmail;
     }
 
     /**
-     * Sets the value of the hostEmail property.
+     * Sets the host email.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new host email
      */
     public void setHostEmail(String value) {
         this.hostEmail = value;
     }
 
     /**
-     * Gets the value of the totalPeopleMinutes property.
+     * Gets the total people minutes.
      * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     * @return the total people minutes
      */
     public Integer getTotalPeopleMinutes() {
         return totalPeopleMinutes;
     }
 
     /**
-     * Sets the value of the totalPeopleMinutes property.
+     * Sets the total people minutes.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     * @param value the new total people minutes
      */
     public void setTotalPeopleMinutes(Integer value) {
         this.totalPeopleMinutes = value;
     }
 
     /**
-     * Gets the value of the confID property.
+     * Gets the conf id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the conf id
      */
     public Long getConfID() {
         return confID;
     }
 
     /**
-     * Sets the value of the confID property.
+     * Sets the conf id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new conf id
      */
     public void setConfID(Long value) {
         this.confID = value;
     }
 
     /**
-     * Gets the value of the peakAttendee property.
+     * Gets the peak attendee.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the peak attendee
      */
     public Long getPeakAttendee() {
         return peakAttendee;
     }
 
     /**
-     * Sets the value of the peakAttendee property.
+     * Sets the peak attendee.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new peak attendee
      */
     public void setPeakAttendee(Long value) {
         this.peakAttendee = value;
     }
 
     /**
-     * Gets the value of the trackingCode property.
+     * Gets the tracking code.
      * 
-     * @return
-     *     possible object is
-     *     {@link TrackingType }
-     *     
+     * @return the tracking code
      */
     public TrackingType getTrackingCode() {
         return trackingCode;
     }
 
     /**
-     * Sets the value of the trackingCode property.
+     * Sets the tracking code.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TrackingType }
-     *     
+     * @param value the new tracking code
      */
     public void setTrackingCode(TrackingType value) {
         this.trackingCode = value;

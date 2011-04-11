@@ -23,105 +23,146 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for orderByType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="orderByType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="UID"/>
- *     &lt;enumeration value="WEBEXID"/>
- *     &lt;enumeration value="FIRSTNAME"/>
- *     &lt;enumeration value="LASTNAME"/>
- *     &lt;enumeration value="EMAIL"/>
- *     &lt;enumeration value="ACTIVE"/>
- *     &lt;enumeration value="REGDATE"/>
- *     &lt;enumeration value="REGEXPDATE"/>
- *     &lt;enumeration value="PRIVILEGE"/>
- *     &lt;enumeration value="PERSONALURL"/>
- *     &lt;enumeration value="ADDRESS1"/>
- *     &lt;enumeration value="ADDRESS2"/>
- *     &lt;enumeration value="CITY"/>
- *     &lt;enumeration value="STATE"/>
- *     &lt;enumeration value="ZIPCODE"/>
- *     &lt;enumeration value="COUNTRY"/>
- *     &lt;enumeration value="PHONE1"/>
- *     &lt;enumeration value="PHONE2"/>
- *     &lt;enumeration value="MOBILE1"/>
- *     &lt;enumeration value="MOBILE2"/>
- *     &lt;enumeration value="FAX"/>
- *     &lt;enumeration value="PAGER"/>
- *     &lt;enumeration value="EMAIL2"/>
- *     &lt;enumeration value="DIVISION"/>
- *     &lt;enumeration value="DEPARTMENT"/>
- *     &lt;enumeration value="PROJECT"/>
- *     &lt;enumeration value="OTHER"/>
- *     &lt;enumeration value="TIMEZONE"/>
- *     &lt;enumeration value="OFFICENAME"/>
- *     &lt;enumeration value="OFFICETITLE"/>
- *     &lt;enumeration value="OFFICEURL"/>
- *     &lt;enumeration value="CATEGORYID"/>
- *     &lt;enumeration value="VISITCOUNT"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum OrderByType.
  */
 @XmlType(name = "orderByType")
 @XmlEnum
 public enum OrderByType {
 
+    /** The UID. */
     UID("UID"),
+    
+    /** The WEBEXID. */
     WEBEXID("WEBEXID"),
+    
+    /** The FIRSTNAME. */
     FIRSTNAME("FIRSTNAME"),
+    
+    /** The LASTNAME. */
     LASTNAME("LASTNAME"),
+    
+    /** The EMAIL. */
     EMAIL("EMAIL"),
+    
+    /** The ACTIVE. */
     ACTIVE("ACTIVE"),
+    
+    /** The REGDATE. */
     REGDATE("REGDATE"),
+    
+    /** The REGEXPDATE. */
     REGEXPDATE("REGEXPDATE"),
+    
+    /** The PRIVILEGE. */
     PRIVILEGE("PRIVILEGE"),
+    
+    /** The PERSONALURL. */
     PERSONALURL("PERSONALURL"),
+    
+    /** The ADDRES s_1. */
     @XmlEnumValue("ADDRESS1")
     ADDRESS_1("ADDRESS1"),
+    
+    /** The ADDRES s_2. */
     @XmlEnumValue("ADDRESS2")
     ADDRESS_2("ADDRESS2"),
+    
+    /** The CITY. */
     CITY("CITY"),
+    
+    /** The STATE. */
     STATE("STATE"),
+    
+    /** The ZIPCODE. */
     ZIPCODE("ZIPCODE"),
+    
+    /** The COUNTRY. */
     COUNTRY("COUNTRY"),
+    
+    /** The PHON e_1. */
     @XmlEnumValue("PHONE1")
     PHONE_1("PHONE1"),
+    
+    /** The PHON e_2. */
     @XmlEnumValue("PHONE2")
     PHONE_2("PHONE2"),
+    
+    /** The MOBIL e_1. */
     @XmlEnumValue("MOBILE1")
     MOBILE_1("MOBILE1"),
+    
+    /** The MOBIL e_2. */
     @XmlEnumValue("MOBILE2")
     MOBILE_2("MOBILE2"),
+    
+    /** The FAX. */
     FAX("FAX"),
+    
+    /** The PAGER. */
     PAGER("PAGER"),
+    
+    /** The EMAI l_2. */
     @XmlEnumValue("EMAIL2")
     EMAIL_2("EMAIL2"),
+    
+    /** The DIVISION. */
     DIVISION("DIVISION"),
+    
+    /** The DEPARTMENT. */
     DEPARTMENT("DEPARTMENT"),
+    
+    /** The PROJECT. */
     PROJECT("PROJECT"),
+    
+    /** The OTHER. */
     OTHER("OTHER"),
+    
+    /** The TIMEZONE. */
     TIMEZONE("TIMEZONE"),
+    
+    /** The OFFICENAME. */
     OFFICENAME("OFFICENAME"),
+    
+    /** The OFFICETITLE. */
     OFFICETITLE("OFFICETITLE"),
+    
+    /** The OFFICEURL. */
     OFFICEURL("OFFICEURL"),
+    
+    /** The CATEGORYID. */
     CATEGORYID("CATEGORYID"),
+    
+    /** The VISITCOUNT. */
     VISITCOUNT("VISITCOUNT");
+    
+    /** The value. */
     private final String value;
 
+    /**
+     * Instantiates a new order by type.
+     * 
+     * @param v the v
+     */
     OrderByType(String v) {
         value = v;
     }
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the order by type
+     */
     public static OrderByType fromValue(String v) {
         for (OrderByType c: OrderByType.values()) {
             if (c.value.equals(v)) {

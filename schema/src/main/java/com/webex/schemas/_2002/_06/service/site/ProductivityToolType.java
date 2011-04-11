@@ -24,29 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for productivityToolType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="productivityToolType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="enable" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="installOpts" type="{http://www.webex.com/schemas/2002/06/service/site}installationOptionType" minOccurs="0"/>
- *         &lt;element name="integrations" type="{http://www.webex.com/schemas/2002/06/service/site}integrationType" minOccurs="0"/>
- *         &lt;element name="oneClick" type="{http://www.webex.com/schemas/2002/06/service/site}oneClickType" minOccurs="0"/>
- *         &lt;element name="templates" type="{http://www.webex.com/schemas/2002/06/service/site}templateType" minOccurs="0"/>
- *         &lt;element name="lockDownPT" type="{http://www.webex.com/schemas/2002/06/service/site}lockDownPTType" minOccurs="0"/>
- *         &lt;element name="imSettings" type="{http://www.webex.com/schemas/2002/06/service/site}imSettingsType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ProductivityToolType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "productivityToolType", propOrder = {
@@ -62,178 +40,151 @@ public class ProductivityToolType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The enable. */
     protected Boolean enable;
+    
+    /** The install opts. */
     protected InstallationOptionType installOpts;
+    
+    /** The integrations. */
     protected IntegrationType integrations;
+    
+    /** The one click. */
     protected OneClickType oneClick;
+    
+    /** The templates. */
     protected TemplateType templates;
+    
+    /** The lock down pt. */
     protected LockDownPTType lockDownPT;
+    
+    /** The im settings. */
     protected ImSettingsType imSettings;
 
     /**
-     * Gets the value of the enable property.
+     * Checks if is enable.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isEnable() {
         return enable;
     }
 
     /**
-     * Sets the value of the enable property.
+     * Sets the enable.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new enable
      */
     public void setEnable(Boolean value) {
         this.enable = value;
     }
 
     /**
-     * Gets the value of the installOpts property.
+     * Gets the install opts.
      * 
-     * @return
-     *     possible object is
-     *     {@link InstallationOptionType }
-     *     
+     * @return the install opts
      */
     public InstallationOptionType getInstallOpts() {
         return installOpts;
     }
 
     /**
-     * Sets the value of the installOpts property.
+     * Sets the install opts.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link InstallationOptionType }
-     *     
+     * @param value the new install opts
      */
     public void setInstallOpts(InstallationOptionType value) {
         this.installOpts = value;
     }
 
     /**
-     * Gets the value of the integrations property.
+     * Gets the integrations.
      * 
-     * @return
-     *     possible object is
-     *     {@link IntegrationType }
-     *     
+     * @return the integrations
      */
     public IntegrationType getIntegrations() {
         return integrations;
     }
 
     /**
-     * Sets the value of the integrations property.
+     * Sets the integrations.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link IntegrationType }
-     *     
+     * @param value the new integrations
      */
     public void setIntegrations(IntegrationType value) {
         this.integrations = value;
     }
 
     /**
-     * Gets the value of the oneClick property.
+     * Gets the one click.
      * 
-     * @return
-     *     possible object is
-     *     {@link OneClickType }
-     *     
+     * @return the one click
      */
     public OneClickType getOneClick() {
         return oneClick;
     }
 
     /**
-     * Sets the value of the oneClick property.
+     * Sets the one click.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link OneClickType }
-     *     
+     * @param value the new one click
      */
     public void setOneClick(OneClickType value) {
         this.oneClick = value;
     }
 
     /**
-     * Gets the value of the templates property.
+     * Gets the templates.
      * 
-     * @return
-     *     possible object is
-     *     {@link TemplateType }
-     *     
+     * @return the templates
      */
     public TemplateType getTemplates() {
         return templates;
     }
 
     /**
-     * Sets the value of the templates property.
+     * Sets the templates.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TemplateType }
-     *     
+     * @param value the new templates
      */
     public void setTemplates(TemplateType value) {
         this.templates = value;
     }
 
     /**
-     * Gets the value of the lockDownPT property.
+     * Gets the lock down pt.
      * 
-     * @return
-     *     possible object is
-     *     {@link LockDownPTType }
-     *     
+     * @return the lock down pt
      */
     public LockDownPTType getLockDownPT() {
         return lockDownPT;
     }
 
     /**
-     * Sets the value of the lockDownPT property.
+     * Sets the lock down pt.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link LockDownPTType }
-     *     
+     * @param value the new lock down pt
      */
     public void setLockDownPT(LockDownPTType value) {
         this.lockDownPT = value;
     }
 
     /**
-     * Gets the value of the imSettings property.
+     * Gets the im settings.
      * 
-     * @return
-     *     possible object is
-     *     {@link ImSettingsType }
-     *     
+     * @return the im settings
      */
     public ImSettingsType getImSettings() {
         return imSettings;
     }
 
     /**
-     * Sets the value of the imSettings property.
+     * Sets the im settings.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ImSettingsType }
-     *     
+     * @param value the new im settings
      */
     public void setImSettings(ImSettingsType value) {
         this.imSettings = value;

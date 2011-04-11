@@ -23,59 +23,76 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for myWebExPageType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="myWebExPageType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="My Meetings"/>
- *     &lt;enumeration value="My Computers"/>
- *     &lt;enumeration value="My Files:Folders"/>
- *     &lt;enumeration value="My Files:Training Recordings"/>
- *     &lt;enumeration value="My Files:Recorded Events"/>
- *     &lt;enumeration value="My Reports"/>
- *     &lt;enumeration value="My Profile"/>
- *     &lt;enumeration value="My Contacts"/>
- *     &lt;enumeration value="My Workspaces"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum MyWebExPageType.
  */
 @XmlType(name = "myWebExPageType")
 @XmlEnum
 public enum MyWebExPageType {
 
+    /** The M y_ meetings. */
     @XmlEnumValue("My Meetings")
     MY_MEETINGS("My Meetings"),
+    
+    /** The M y_ computers. */
     @XmlEnumValue("My Computers")
     MY_COMPUTERS("My Computers"),
+    
+    /** The M y_ file s_ folders. */
     @XmlEnumValue("My Files:Folders")
     MY_FILES_FOLDERS("My Files:Folders"),
+    
+    /** The M y_ file s_ trainin g_ recordings. */
     @XmlEnumValue("My Files:Training Recordings")
     MY_FILES_TRAINING_RECORDINGS("My Files:Training Recordings"),
+    
+    /** The M y_ file s_ recorde d_ events. */
     @XmlEnumValue("My Files:Recorded Events")
     MY_FILES_RECORDED_EVENTS("My Files:Recorded Events"),
+    
+    /** The M y_ reports. */
     @XmlEnumValue("My Reports")
     MY_REPORTS("My Reports"),
+    
+    /** The M y_ profile. */
     @XmlEnumValue("My Profile")
     MY_PROFILE("My Profile"),
+    
+    /** The M y_ contacts. */
     @XmlEnumValue("My Contacts")
     MY_CONTACTS("My Contacts"),
+    
+    /** The M y_ workspaces. */
     @XmlEnumValue("My Workspaces")
     MY_WORKSPACES("My Workspaces");
+    
+    /** The value. */
     private final String value;
 
+    /**
+     * Instantiates a new my web ex page type.
+     * 
+     * @param v the v
+     */
     MyWebExPageType(String v) {
         value = v;
     }
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the my web ex page type
+     */
     public static MyWebExPageType fromValue(String v) {
         for (MyWebExPageType c: MyWebExPageType.values()) {
             if (c.value.equals(v)) {

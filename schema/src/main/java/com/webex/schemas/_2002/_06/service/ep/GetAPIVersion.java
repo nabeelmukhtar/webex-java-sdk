@@ -25,23 +25,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for getAPIVersion complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="getAPIVersion">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="returnTrainReleaseVersion" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GetAPIVersion.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getAPIVersion", propOrder = {
@@ -52,28 +36,25 @@ public class GetAPIVersion
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The return train release version. */
     protected Boolean returnTrainReleaseVersion;
 
     /**
-     * Gets the value of the returnTrainReleaseVersion property.
+     * Checks if is return train release version.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isReturnTrainReleaseVersion() {
         return returnTrainReleaseVersion;
     }
 
     /**
-     * Sets the value of the returnTrainReleaseVersion property.
+     * Sets the return train release version.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new return train release version
      */
     public void setReturnTrainReleaseVersion(Boolean value) {
         this.returnTrainReleaseVersion = value;

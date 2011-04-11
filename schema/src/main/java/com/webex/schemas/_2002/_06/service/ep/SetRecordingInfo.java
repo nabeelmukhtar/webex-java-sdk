@@ -26,39 +26,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for setRecordingInfo complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="setRecordingInfo">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="recording">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="recordingID" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *                   &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="password" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="isServiceRecording" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="basic" type="{http://www.webex.com/schemas/2002/06/service/ep}recordingBasicType" minOccurs="0"/>
- *         &lt;element name="playback" type="{http://www.webex.com/schemas/2002/06/service/ep}recordingPlaybackType" minOccurs="0"/>
- *         &lt;element name="fileAccess" type="{http://www.webex.com/schemas/2002/06/service/ep}recordingFileAccessType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SetRecordingInfo.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "setRecordingInfo", propOrder = {
@@ -73,129 +41,110 @@ public class SetRecordingInfo
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The recording. */
     @XmlElement(required = true)
     protected SetRecordingInfo.Recording recording;
+    
+    /** The is service recording. */
     protected Boolean isServiceRecording;
+    
+    /** The basic. */
     protected RecordingBasicType basic;
+    
+    /** The playback. */
     protected RecordingPlaybackType playback;
+    
+    /** The file access. */
     protected RecordingFileAccessType fileAccess;
 
     /**
-     * Gets the value of the recording property.
+     * Gets the recording.
      * 
-     * @return
-     *     possible object is
-     *     {@link SetRecordingInfo.Recording }
-     *     
+     * @return the recording
      */
     public SetRecordingInfo.Recording getRecording() {
         return recording;
     }
 
     /**
-     * Sets the value of the recording property.
+     * Sets the recording.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link SetRecordingInfo.Recording }
-     *     
+     * @param value the new recording
      */
     public void setRecording(SetRecordingInfo.Recording value) {
         this.recording = value;
     }
 
     /**
-     * Gets the value of the isServiceRecording property.
+     * Checks if is is service recording.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isIsServiceRecording() {
         return isServiceRecording;
     }
 
     /**
-     * Sets the value of the isServiceRecording property.
+     * Sets the checks if is service recording.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new checks if is service recording
      */
     public void setIsServiceRecording(Boolean value) {
         this.isServiceRecording = value;
     }
 
     /**
-     * Gets the value of the basic property.
+     * Gets the basic.
      * 
-     * @return
-     *     possible object is
-     *     {@link RecordingBasicType }
-     *     
+     * @return the basic
      */
     public RecordingBasicType getBasic() {
         return basic;
     }
 
     /**
-     * Sets the value of the basic property.
+     * Sets the basic.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RecordingBasicType }
-     *     
+     * @param value the new basic
      */
     public void setBasic(RecordingBasicType value) {
         this.basic = value;
     }
 
     /**
-     * Gets the value of the playback property.
+     * Gets the playback.
      * 
-     * @return
-     *     possible object is
-     *     {@link RecordingPlaybackType }
-     *     
+     * @return the playback
      */
     public RecordingPlaybackType getPlayback() {
         return playback;
     }
 
     /**
-     * Sets the value of the playback property.
+     * Sets the playback.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RecordingPlaybackType }
-     *     
+     * @param value the new playback
      */
     public void setPlayback(RecordingPlaybackType value) {
         this.playback = value;
     }
 
     /**
-     * Gets the value of the fileAccess property.
+     * Gets the file access.
      * 
-     * @return
-     *     possible object is
-     *     {@link RecordingFileAccessType }
-     *     
+     * @return the file access
      */
     public RecordingFileAccessType getFileAccess() {
         return fileAccess;
     }
 
     /**
-     * Sets the value of the fileAccess property.
+     * Sets the file access.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RecordingFileAccessType }
-     *     
+     * @param value the new file access
      */
     public void setFileAccess(RecordingFileAccessType value) {
         this.fileAccess = value;
@@ -203,25 +152,7 @@ public class SetRecordingInfo
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="recordingID" type="{http://www.w3.org/2001/XMLSchema}int"/>
-     *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="password" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class Recording.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -233,70 +164,67 @@ public class SetRecordingInfo
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The recording id. */
         protected int recordingID;
+        
+        /** The description. */
         protected String description;
+        
+        /** The password. */
         protected String password;
 
         /**
-         * Gets the value of the recordingID property.
+         * Gets the recording id.
          * 
+         * @return the recording id
          */
         public int getRecordingID() {
             return recordingID;
         }
 
         /**
-         * Sets the value of the recordingID property.
+         * Sets the recording id.
          * 
+         * @param value the new recording id
          */
         public void setRecordingID(int value) {
             this.recordingID = value;
         }
 
         /**
-         * Gets the value of the description property.
+         * Gets the description.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the description
          */
         public String getDescription() {
             return description;
         }
 
         /**
-         * Sets the value of the description property.
+         * Sets the description.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new description
          */
         public void setDescription(String value) {
             this.description = value;
         }
 
         /**
-         * Gets the value of the password property.
+         * Gets the password.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the password
          */
         public String getPassword() {
             return password;
         }
 
         /**
-         * Sets the value of the password property.
+         * Sets the password.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new password
          */
         public void setPassword(String value) {
             this.password = value;

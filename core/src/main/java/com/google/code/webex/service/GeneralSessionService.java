@@ -33,24 +33,150 @@ import com.webex.schemas._2002._06.service.ep.SetRecordingInfo;
 import com.webex.schemas._2002._06.service.ep.SetupOneClickSettings;
 
 /**
- * @author nmukhtar
- *
+ * The Interface GeneralSessionService.
  */
 public interface GeneralSessionService extends WebExService {
+	
+	/**
+	 * Creates the contacts.
+	 * 
+	 * @param contacts the contacts
+	 * 
+	 * @return the list< long>
+	 */
 	public List<Long> createContacts(List<ContactType> contacts);
+	
+	/**
+	 * Creates the distribution list.
+	 * 
+	 * @param name the name
+	 * @param description the description
+	 * @param contactIds the contact ids
+	 * 
+	 * @return the long
+	 */
 	public Long createDistributionList(String name, String description, List<Long> contactIds);
+	
+	/**
+	 * Delete recording.
+	 * 
+	 * @param recordingId the recording id
+	 * 
+	 * @return the integer
+	 */
 	public Integer deleteRecording(Integer recordingId);
+	
+	/**
+	 * Delete session.
+	 * 
+	 * @param sessionKey the session key
+	 * @param sendEmail the send email
+	 */
 	public void deleteSession(Long sessionKey, boolean sendEmail);
+	
+	/**
+	 * Gets the api version.
+	 * 
+	 * @return the api version
+	 */
 	public String getApiVersion();
+	
+	/**
+	 * Gets the distribution lists.
+	 * 
+	 * @param distListID the dist list id
+	 * @param name the name
+	 * @param addressType the address type
+	 * @param hostWebExID the host web ex id
+	 * 
+	 * @return the distribution lists
+	 */
 	public List<DistListInstanceType> getDistributionLists(Long distListID, String name, AddressTypeType addressType, String hostWebExID);
+	
+	/**
+	 * Gets the open sessions.
+	 * 
+	 * @param serviceTypes the service types
+	 * 
+	 * @return the open sessions
+	 */
 	public List<LstOpenSessionResponse.Services> getOpenSessions(ServiceTypeType... serviceTypes);
 	// TODO-NM: Some parameters remaining
+	/**
+	 * Gets the recordings.
+	 * 
+	 * @param hostWebExID the host web ex id
+	 * @param sessionKey the session key
+	 * @param returnSessionDetails the return session details
+	 * 
+	 * @return the recordings
+	 */
 	public List<RecordingType> getRecordings(String hostWebExID, Long sessionKey, boolean returnSessionDetails);
+	
+	/**
+	 * Gets the session summaries.
+	 * 
+	 * @param sessionRequest the session request
+	 * 
+	 * @return the session summaries
+	 */
 	public List<SessionSummaryInstanceType> getSessionSummaries(LstsummarySession sessionRequest);
+	
+	/**
+	 * Sets the distribution list.
+	 * 
+	 * @param distListID the dist list id
+	 * @param name the name
+	 * @param description the description
+	 * @param contactIds the contact ids
+	 * @param operationType the operation type
+	 */
 	public void setDistributionList(Long distListID, String name, String description, List<Long> contactIds, ContactOperationType operationType);
+	
+	/**
+	 * Gets the one click settings.
+	 * 
+	 * @param hostWebExID the host web ex id
+	 * 
+	 * @return the one click settings
+	 */
 	public GetOneClickSettingsResponse getOneClickSettings(String hostWebExID);
+	
+	/**
+	 * Sets the up one click settings.
+	 * 
+	 * @param oneClickSettings the new up one click settings
+	 */
 	public void setupOneClickSettings(SetupOneClickSettings oneClickSettings);
+	
+	/**
+	 * Gets the session info.
+	 * 
+	 * @param sessionKey the session key
+	 * @param sessionPassword the session password
+	 * 
+	 * @return the session info
+	 */
 	public GetSessionInfoResponse getSessionInfo(long sessionKey, String sessionPassword);
+	
+	/**
+	 * Gets the contacts.
+	 * 
+	 * @param distListID the dist list id
+	 * @param distListName the dist list name
+	 * @param addressType the address type
+	 * @param hostWebExID the host web ex id
+	 * 
+	 * @return the contacts
+	 */
 	public List<ContactType> getContacts(Long distListID, String distListName, AddressTypeType addressType, String hostWebExID);
+	
+	/**
+	 * Sets the recording info.
+	 * 
+	 * @param recordingInfo the recording info
+	 * 
+	 * @return the integer
+	 */
 	public Integer setRecordingInfo(SetRecordingInfo recordingInfo);
 }

@@ -26,23 +26,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for getSiteResponse complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="getSiteResponse">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="siteInstance" type="{http://www.webex.com/schemas/2002/06/service/site}siteType"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GetSiteResponse.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getSiteResponse", propOrder = {
@@ -53,29 +37,26 @@ public class GetSiteResponse
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The site instance. */
     @XmlElement(required = true)
     protected SiteType siteInstance;
 
     /**
-     * Gets the value of the siteInstance property.
+     * Gets the site instance.
      * 
-     * @return
-     *     possible object is
-     *     {@link SiteType }
-     *     
+     * @return the site instance
      */
     public SiteType getSiteInstance() {
         return siteInstance;
     }
 
     /**
-     * Sets the value of the siteInstance property.
+     * Sets the site instance.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link SiteType }
-     *     
+     * @param value the new site instance
      */
     public void setSiteInstance(SiteType value) {
         this.siteInstance = value;

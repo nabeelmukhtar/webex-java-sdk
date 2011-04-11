@@ -30,29 +30,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for optionButtonTagType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="optionButtonTagType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="fieldID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="lable" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="defaultValue" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="value" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="isRequired" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="isDisplay" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="items" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class OptionButtonTagType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "optionButtonTagType", propOrder = {
@@ -68,171 +46,149 @@ public class OptionButtonTagType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The field id. */
     protected Long fieldID;
+    
+    /** The lable. */
     protected String lable;
+    
+    /** The default value. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long defaultValue;
+    
+    /** The value. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long value;
+    
+    /** The is required. */
     protected boolean isRequired;
+    
+    /** The is display. */
     protected boolean isDisplay;
+    
+    /** The items. */
     @XmlElement(required = true)
     protected List<String> items;
 
     /**
-     * Gets the value of the fieldID property.
+     * Gets the field id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the field id
      */
     public Long getFieldID() {
         return fieldID;
     }
 
     /**
-     * Sets the value of the fieldID property.
+     * Sets the field id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new field id
      */
     public void setFieldID(Long value) {
         this.fieldID = value;
     }
 
     /**
-     * Gets the value of the lable property.
+     * Gets the lable.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the lable
      */
     public String getLable() {
         return lable;
     }
 
     /**
-     * Sets the value of the lable property.
+     * Sets the lable.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new lable
      */
     public void setLable(String value) {
         this.lable = value;
     }
 
     /**
-     * Gets the value of the defaultValue property.
+     * Gets the default value.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the default value
      */
     public Long getDefaultValue() {
         return defaultValue;
     }
 
     /**
-     * Sets the value of the defaultValue property.
+     * Sets the default value.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new default value
      */
     public void setDefaultValue(Long value) {
         this.defaultValue = value;
     }
 
     /**
-     * Gets the value of the value property.
+     * Gets the value.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the value
      */
     public Long getValue() {
         return value;
     }
 
     /**
-     * Sets the value of the value property.
+     * Sets the value.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new value
      */
     public void setValue(Long value) {
         this.value = value;
     }
 
     /**
-     * Gets the value of the isRequired property.
+     * Checks if is checks if is required.
      * 
+     * @return true, if is checks if is required
      */
     public boolean isIsRequired() {
         return isRequired;
     }
 
     /**
-     * Sets the value of the isRequired property.
+     * Sets the checks if is required.
      * 
+     * @param value the new checks if is required
      */
     public void setIsRequired(boolean value) {
         this.isRequired = value;
     }
 
     /**
-     * Gets the value of the isDisplay property.
+     * Checks if is checks if is display.
      * 
+     * @return true, if is checks if is display
      */
     public boolean isIsDisplay() {
         return isDisplay;
     }
 
     /**
-     * Sets the value of the isDisplay property.
+     * Sets the checks if is display.
      * 
+     * @param value the new checks if is display
      */
     public void setIsDisplay(boolean value) {
         this.isDisplay = value;
     }
 
     /**
-     * Gets the value of the items property.
+     * Gets the items.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the items property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getItems().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
+     * @return the items
      */
     public List<String> getItems() {
         if (items == null) {

@@ -23,44 +23,56 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for browserType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="browserType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="IE5X"/>
- *     &lt;enumeration value="NAX6X"/>
- *     &lt;enumeration value="NAX4X"/>
- *     &lt;enumeration value="IE4X"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum BrowserType.
  */
 @XmlType(name = "browserType")
 @XmlEnum
 public enum BrowserType {
 
+    /** The I e_5_ x. */
     @XmlEnumValue("IE5X")
     IE_5_X("IE5X"),
+    
+    /** The NA x_6_ x. */
     @XmlEnumValue("NAX6X")
     NAX_6_X("NAX6X"),
+    
+    /** The NA x_4_ x. */
     @XmlEnumValue("NAX4X")
     NAX_4_X("NAX4X"),
+    
+    /** The I e_4_ x. */
     @XmlEnumValue("IE4X")
     IE_4_X("IE4X");
+    
+    /** The value. */
     private final String value;
 
+    /**
+     * Instantiates a new browser type.
+     * 
+     * @param v the v
+     */
     BrowserType(String v) {
         value = v;
     }
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the browser type
+     */
     public static BrowserType fromValue(String v) {
         for (BrowserType c: BrowserType.values()) {
             if (c.value.equals(v)) {

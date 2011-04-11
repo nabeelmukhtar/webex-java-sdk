@@ -26,30 +26,7 @@ import com.webex.schemas._2002._06.service.LstControlType;
 
 
 /**
- * <p>Java class for lstUser complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="lstUser">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="firstName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="lastName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="email" type="{http://www.webex.com/schemas/2002/06/common}emailType" minOccurs="0"/>
- *         &lt;element name="active" type="{http://www.webex.com/schemas/2002/06/service/user}activeType" minOccurs="0"/>
- *         &lt;element name="webExId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="listControl" type="{http://www.webex.com/schemas/2002/06/service}lstControlType" minOccurs="0"/>
- *         &lt;element name="order" type="{http://www.webex.com/schemas/2002/06/service/user}orderType" minOccurs="0"/>
- *         &lt;element name="dataScope" type="{http://www.webex.com/schemas/2002/06/service/user}dataScopeType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class LstUser.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstUser", propOrder = {
@@ -67,203 +44,172 @@ public class LstUser
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The first name. */
     protected String firstName;
+    
+    /** The last name. */
     protected String lastName;
+    
+    /** The email. */
     protected String email;
+    
+    /** The active. */
     protected ActiveType active;
+    
+    /** The web ex id. */
     protected String webExId;
+    
+    /** The list control. */
     protected LstControlType listControl;
+    
+    /** The order. */
     protected OrderType order;
+    
+    /** The data scope. */
     protected DataScopeType dataScope;
 
     /**
-     * Gets the value of the firstName property.
+     * Gets the first name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the first name
      */
     public String getFirstName() {
         return firstName;
     }
 
     /**
-     * Sets the value of the firstName property.
+     * Sets the first name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new first name
      */
     public void setFirstName(String value) {
         this.firstName = value;
     }
 
     /**
-     * Gets the value of the lastName property.
+     * Gets the last name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the last name
      */
     public String getLastName() {
         return lastName;
     }
 
     /**
-     * Sets the value of the lastName property.
+     * Sets the last name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new last name
      */
     public void setLastName(String value) {
         this.lastName = value;
     }
 
     /**
-     * Gets the value of the email property.
+     * Gets the email.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the email
      */
     public String getEmail() {
         return email;
     }
 
     /**
-     * Sets the value of the email property.
+     * Sets the email.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new email
      */
     public void setEmail(String value) {
         this.email = value;
     }
 
     /**
-     * Gets the value of the active property.
+     * Gets the active.
      * 
-     * @return
-     *     possible object is
-     *     {@link ActiveType }
-     *     
+     * @return the active
      */
     public ActiveType getActive() {
         return active;
     }
 
     /**
-     * Sets the value of the active property.
+     * Sets the active.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ActiveType }
-     *     
+     * @param value the new active
      */
     public void setActive(ActiveType value) {
         this.active = value;
     }
 
     /**
-     * Gets the value of the webExId property.
+     * Gets the web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the web ex id
      */
     public String getWebExId() {
         return webExId;
     }
 
     /**
-     * Sets the value of the webExId property.
+     * Sets the web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new web ex id
      */
     public void setWebExId(String value) {
         this.webExId = value;
     }
 
     /**
-     * Gets the value of the listControl property.
+     * Gets the list control.
      * 
-     * @return
-     *     possible object is
-     *     {@link LstControlType }
-     *     
+     * @return the list control
      */
     public LstControlType getListControl() {
         return listControl;
     }
 
     /**
-     * Sets the value of the listControl property.
+     * Sets the list control.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link LstControlType }
-     *     
+     * @param value the new list control
      */
     public void setListControl(LstControlType value) {
         this.listControl = value;
     }
 
     /**
-     * Gets the value of the order property.
+     * Gets the order.
      * 
-     * @return
-     *     possible object is
-     *     {@link OrderType }
-     *     
+     * @return the order
      */
     public OrderType getOrder() {
         return order;
     }
 
     /**
-     * Sets the value of the order property.
+     * Sets the order.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link OrderType }
-     *     
+     * @param value the new order
      */
     public void setOrder(OrderType value) {
         this.order = value;
     }
 
     /**
-     * Gets the value of the dataScope property.
+     * Gets the data scope.
      * 
-     * @return
-     *     possible object is
-     *     {@link DataScopeType }
-     *     
+     * @return the data scope
      */
     public DataScopeType getDataScope() {
         return dataScope;
     }
 
     /**
-     * Sets the value of the dataScope property.
+     * Sets the data scope.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link DataScopeType }
-     *     
+     * @param value the new data scope
      */
     public void setDataScope(DataScopeType value) {
         this.dataScope = value;

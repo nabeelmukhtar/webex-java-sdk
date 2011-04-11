@@ -28,36 +28,7 @@ import com.webex.schemas._2002._06.service.event.StandardFieldsType;
 
 
 /**
- * <p>Java class for eventCenterType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="eventCenterType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="standardFields" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}standardFieldsType">
- *                 &lt;sequence>
- *                   &lt;element name="firstName" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldType"/>
- *                   &lt;element name="lastName" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldType"/>
- *                   &lt;element name="emailAddress" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldType"/>
- *                 &lt;/sequence>
- *               &lt;/extension>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="customFields" type="{http://www.webex.com/schemas/2002/06/service/event}customFieldsType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class EventCenterType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "eventCenterType", propOrder = {
@@ -68,53 +39,46 @@ public class EventCenterType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The standard fields. */
     protected EventCenterType.StandardFields standardFields;
+    
+    /** The custom fields. */
     protected CustomFieldsType customFields;
 
     /**
-     * Gets the value of the standardFields property.
+     * Gets the standard fields.
      * 
-     * @return
-     *     possible object is
-     *     {@link EventCenterType.StandardFields }
-     *     
+     * @return the standard fields
      */
     public EventCenterType.StandardFields getStandardFields() {
         return standardFields;
     }
 
     /**
-     * Sets the value of the standardFields property.
+     * Sets the standard fields.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link EventCenterType.StandardFields }
-     *     
+     * @param value the new standard fields
      */
     public void setStandardFields(EventCenterType.StandardFields value) {
         this.standardFields = value;
     }
 
     /**
-     * Gets the value of the customFields property.
+     * Gets the custom fields.
      * 
-     * @return
-     *     possible object is
-     *     {@link CustomFieldsType }
-     *     
+     * @return the custom fields
      */
     public CustomFieldsType getCustomFields() {
         return customFields;
     }
 
     /**
-     * Sets the value of the customFields property.
+     * Sets the custom fields.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link CustomFieldsType }
-     *     
+     * @param value the new custom fields
      */
     public void setCustomFields(CustomFieldsType value) {
         this.customFields = value;
@@ -122,25 +86,7 @@ public class EventCenterType
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/event}standardFieldsType">
-     *       &lt;sequence>
-     *         &lt;element name="firstName" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldType"/>
-     *         &lt;element name="lastName" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldType"/>
-     *         &lt;element name="emailAddress" type="{http://www.webex.com/schemas/2002/06/service/event}enrollmentFieldType"/>
-     *       &lt;/sequence>
-     *     &lt;/extension>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class StandardFields.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -153,81 +99,70 @@ public class EventCenterType
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The first name. */
         @XmlElement(required = true)
         protected EnrollmentFieldType firstName;
+        
+        /** The last name. */
         @XmlElement(required = true)
         protected EnrollmentFieldType lastName;
+        
+        /** The email address. */
         @XmlElement(required = true)
         protected EnrollmentFieldType emailAddress;
 
         /**
-         * Gets the value of the firstName property.
+         * Gets the first name.
          * 
-         * @return
-         *     possible object is
-         *     {@link EnrollmentFieldType }
-         *     
+         * @return the first name
          */
         public EnrollmentFieldType getFirstName() {
             return firstName;
         }
 
         /**
-         * Sets the value of the firstName property.
+         * Sets the first name.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link EnrollmentFieldType }
-         *     
+         * @param value the new first name
          */
         public void setFirstName(EnrollmentFieldType value) {
             this.firstName = value;
         }
 
         /**
-         * Gets the value of the lastName property.
+         * Gets the last name.
          * 
-         * @return
-         *     possible object is
-         *     {@link EnrollmentFieldType }
-         *     
+         * @return the last name
          */
         public EnrollmentFieldType getLastName() {
             return lastName;
         }
 
         /**
-         * Sets the value of the lastName property.
+         * Sets the last name.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link EnrollmentFieldType }
-         *     
+         * @param value the new last name
          */
         public void setLastName(EnrollmentFieldType value) {
             this.lastName = value;
         }
 
         /**
-         * Gets the value of the emailAddress property.
+         * Gets the email address.
          * 
-         * @return
-         *     possible object is
-         *     {@link EnrollmentFieldType }
-         *     
+         * @return the email address
          */
         public EnrollmentFieldType getEmailAddress() {
             return emailAddress;
         }
 
         /**
-         * Sets the value of the emailAddress property.
+         * Sets the email address.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link EnrollmentFieldType }
-         *     
+         * @param value the new email address
          */
         public void setEmailAddress(EnrollmentFieldType value) {
             this.emailAddress = value;

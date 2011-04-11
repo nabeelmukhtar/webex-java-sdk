@@ -28,36 +28,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for recordedEventType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="recordedEventType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="eventName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="eventType" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="recordingStartTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="playTime" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="panelistsInfo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="recordFilePath" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="destinationURL" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="size" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="isAccessPassword" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="isEnrollmentPassword" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="hostWebExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="viewURL" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class RecordedEventType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "recordedEventType", propOrder = {
@@ -80,363 +51,308 @@ public class RecordedEventType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The event name. */
     @XmlElement(required = true)
     protected String eventName;
+    
+    /** The event type. */
     @XmlElement(required = true)
     protected String eventType;
+    
+    /** The recording start time. */
     protected String recordingStartTime;
+    
+    /** The time zone id. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long timeZoneID;
+    
+    /** The play time. */
     protected Long playTime;
+    
+    /** The panelists info. */
     protected String panelistsInfo;
+    
+    /** The description. */
     protected String description;
+    
+    /** The record file path. */
     protected String recordFilePath;
+    
+    /** The destination url. */
     @XmlElement(required = true)
     protected String destinationURL;
+    
+    /** The size. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long size;
+    
+    /** The is access password. */
     protected Boolean isAccessPassword;
+    
+    /** The is enrollment password. */
     protected Boolean isEnrollmentPassword;
+    
+    /** The host web ex id. */
     protected String hostWebExID;
+    
+    /** The view url. */
     @XmlElement(required = true)
     protected String viewURL;
 
     /**
-     * Gets the value of the eventName property.
+     * Gets the event name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the event name
      */
     public String getEventName() {
         return eventName;
     }
 
     /**
-     * Sets the value of the eventName property.
+     * Sets the event name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new event name
      */
     public void setEventName(String value) {
         this.eventName = value;
     }
 
     /**
-     * Gets the value of the eventType property.
+     * Gets the event type.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the event type
      */
     public String getEventType() {
         return eventType;
     }
 
     /**
-     * Sets the value of the eventType property.
+     * Sets the event type.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new event type
      */
     public void setEventType(String value) {
         this.eventType = value;
     }
 
     /**
-     * Gets the value of the recordingStartTime property.
+     * Gets the recording start time.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the recording start time
      */
     public String getRecordingStartTime() {
         return recordingStartTime;
     }
 
     /**
-     * Sets the value of the recordingStartTime property.
+     * Sets the recording start time.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new recording start time
      */
     public void setRecordingStartTime(String value) {
         this.recordingStartTime = value;
     }
 
     /**
-     * Gets the value of the timeZoneID property.
+     * Gets the time zone id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the time zone id
      */
     public Long getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the value of the timeZoneID property.
+     * Sets the time zone id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new time zone id
      */
     public void setTimeZoneID(Long value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the value of the playTime property.
+     * Gets the play time.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the play time
      */
     public Long getPlayTime() {
         return playTime;
     }
 
     /**
-     * Sets the value of the playTime property.
+     * Sets the play time.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new play time
      */
     public void setPlayTime(Long value) {
         this.playTime = value;
     }
 
     /**
-     * Gets the value of the panelistsInfo property.
+     * Gets the panelists info.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the panelists info
      */
     public String getPanelistsInfo() {
         return panelistsInfo;
     }
 
     /**
-     * Sets the value of the panelistsInfo property.
+     * Sets the panelists info.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new panelists info
      */
     public void setPanelistsInfo(String value) {
         this.panelistsInfo = value;
     }
 
     /**
-     * Gets the value of the description property.
+     * Gets the description.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the description
      */
     public String getDescription() {
         return description;
     }
 
     /**
-     * Sets the value of the description property.
+     * Sets the description.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new description
      */
     public void setDescription(String value) {
         this.description = value;
     }
 
     /**
-     * Gets the value of the recordFilePath property.
+     * Gets the record file path.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the record file path
      */
     public String getRecordFilePath() {
         return recordFilePath;
     }
 
     /**
-     * Sets the value of the recordFilePath property.
+     * Sets the record file path.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new record file path
      */
     public void setRecordFilePath(String value) {
         this.recordFilePath = value;
     }
 
     /**
-     * Gets the value of the destinationURL property.
+     * Gets the destination url.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the destination url
      */
     public String getDestinationURL() {
         return destinationURL;
     }
 
     /**
-     * Sets the value of the destinationURL property.
+     * Sets the destination url.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new destination url
      */
     public void setDestinationURL(String value) {
         this.destinationURL = value;
     }
 
     /**
-     * Gets the value of the size property.
+     * Gets the size.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the size
      */
     public Long getSize() {
         return size;
     }
 
     /**
-     * Sets the value of the size property.
+     * Sets the size.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new size
      */
     public void setSize(Long value) {
         this.size = value;
     }
 
     /**
-     * Gets the value of the isAccessPassword property.
+     * Checks if is is access password.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isIsAccessPassword() {
         return isAccessPassword;
     }
 
     /**
-     * Sets the value of the isAccessPassword property.
+     * Sets the checks if is access password.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new checks if is access password
      */
     public void setIsAccessPassword(Boolean value) {
         this.isAccessPassword = value;
     }
 
     /**
-     * Gets the value of the isEnrollmentPassword property.
+     * Checks if is is enrollment password.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isIsEnrollmentPassword() {
         return isEnrollmentPassword;
     }
 
     /**
-     * Sets the value of the isEnrollmentPassword property.
+     * Sets the checks if is enrollment password.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new checks if is enrollment password
      */
     public void setIsEnrollmentPassword(Boolean value) {
         this.isEnrollmentPassword = value;
     }
 
     /**
-     * Gets the value of the hostWebExID property.
+     * Gets the host web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the host web ex id
      */
     public String getHostWebExID() {
         return hostWebExID;
     }
 
     /**
-     * Sets the value of the hostWebExID property.
+     * Sets the host web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new host web ex id
      */
     public void setHostWebExID(String value) {
         this.hostWebExID = value;
     }
 
     /**
-     * Gets the value of the viewURL property.
+     * Gets the view url.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the view url
      */
     public String getViewURL() {
         return viewURL;
     }
 
     /**
-     * Sets the value of the viewURL property.
+     * Sets the view url.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new view url
      */
     public void setViewURL(String value) {
         this.viewURL = value;

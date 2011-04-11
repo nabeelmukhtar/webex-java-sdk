@@ -25,26 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for test_variableType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="test_variableType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice>
- *         &lt;element name="variable_test" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}variable_testType"/>
- *         &lt;element name="and_test" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}and_testType"/>
- *         &lt;element name="or_test" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}or_testType"/>
- *         &lt;element name="not_test" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}not_testType"/>
- *       &lt;/choice>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class TestVariableType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "test_variableType", propOrder = {
@@ -57,107 +38,92 @@ public class TestVariableType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The variable test. */
     @XmlElement(name = "variable_test")
     protected VariableTestType variableTest;
+    
+    /** The and test. */
     @XmlElement(name = "and_test")
     protected AndTestType andTest;
+    
+    /** The or test. */
     @XmlElement(name = "or_test")
     protected OrTestType orTest;
+    
+    /** The not test. */
     @XmlElement(name = "not_test")
     protected NotTestType notTest;
 
     /**
-     * Gets the value of the variableTest property.
+     * Gets the variable test.
      * 
-     * @return
-     *     possible object is
-     *     {@link VariableTestType }
-     *     
+     * @return the variable test
      */
     public VariableTestType getVariableTest() {
         return variableTest;
     }
 
     /**
-     * Sets the value of the variableTest property.
+     * Sets the variable test.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link VariableTestType }
-     *     
+     * @param value the new variable test
      */
     public void setVariableTest(VariableTestType value) {
         this.variableTest = value;
     }
 
     /**
-     * Gets the value of the andTest property.
+     * Gets the and test.
      * 
-     * @return
-     *     possible object is
-     *     {@link AndTestType }
-     *     
+     * @return the and test
      */
     public AndTestType getAndTest() {
         return andTest;
     }
 
     /**
-     * Sets the value of the andTest property.
+     * Sets the and test.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link AndTestType }
-     *     
+     * @param value the new and test
      */
     public void setAndTest(AndTestType value) {
         this.andTest = value;
     }
 
     /**
-     * Gets the value of the orTest property.
+     * Gets the or test.
      * 
-     * @return
-     *     possible object is
-     *     {@link OrTestType }
-     *     
+     * @return the or test
      */
     public OrTestType getOrTest() {
         return orTest;
     }
 
     /**
-     * Sets the value of the orTest property.
+     * Sets the or test.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link OrTestType }
-     *     
+     * @param value the new or test
      */
     public void setOrTest(OrTestType value) {
         this.orTest = value;
     }
 
     /**
-     * Gets the value of the notTest property.
+     * Gets the not test.
      * 
-     * @return
-     *     possible object is
-     *     {@link NotTestType }
-     *     
+     * @return the not test
      */
     public NotTestType getNotTest() {
         return notTest;
     }
 
     /**
-     * Sets the value of the notTest property.
+     * Sets the not test.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link NotTestType }
-     *     
+     * @param value the new not test
      */
     public void setNotTest(NotTestType value) {
         this.notTest = value;

@@ -26,28 +26,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for getjoinurlMeeting complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="getjoinurlMeeting">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="meetingKey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="attendeeName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="attendeeEmail" type="{http://www.webex.com/schemas/2002/06/common}emailType" minOccurs="0"/>
- *         &lt;element name="meetingPW" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="RegID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GetjoinurlMeeting.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getjoinurlMeeting", propOrder = {
@@ -63,154 +42,131 @@ public class GetjoinurlMeeting
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The meeting key. */
     protected Long meetingKey;
+    
+    /** The session key. */
     protected Long sessionKey;
+    
+    /** The attendee name. */
     protected String attendeeName;
+    
+    /** The attendee email. */
     protected String attendeeEmail;
+    
+    /** The meeting pw. */
     protected String meetingPW;
+    
+    /** The reg id. */
     @XmlElement(name = "RegID")
     protected String regID;
 
     /**
-     * Gets the value of the meetingKey property.
+     * Gets the meeting key.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the meeting key
      */
     public Long getMeetingKey() {
         return meetingKey;
     }
 
     /**
-     * Sets the value of the meetingKey property.
+     * Sets the meeting key.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new meeting key
      */
     public void setMeetingKey(Long value) {
         this.meetingKey = value;
     }
 
     /**
-     * Gets the value of the sessionKey property.
+     * Gets the session key.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the session key
      */
     public Long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the value of the sessionKey property.
+     * Sets the session key.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new session key
      */
     public void setSessionKey(Long value) {
         this.sessionKey = value;
     }
 
     /**
-     * Gets the value of the attendeeName property.
+     * Gets the attendee name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the attendee name
      */
     public String getAttendeeName() {
         return attendeeName;
     }
 
     /**
-     * Sets the value of the attendeeName property.
+     * Sets the attendee name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new attendee name
      */
     public void setAttendeeName(String value) {
         this.attendeeName = value;
     }
 
     /**
-     * Gets the value of the attendeeEmail property.
+     * Gets the attendee email.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the attendee email
      */
     public String getAttendeeEmail() {
         return attendeeEmail;
     }
 
     /**
-     * Sets the value of the attendeeEmail property.
+     * Sets the attendee email.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new attendee email
      */
     public void setAttendeeEmail(String value) {
         this.attendeeEmail = value;
     }
 
     /**
-     * Gets the value of the meetingPW property.
+     * Gets the meeting pw.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the meeting pw
      */
     public String getMeetingPW() {
         return meetingPW;
     }
 
     /**
-     * Sets the value of the meetingPW property.
+     * Sets the meeting pw.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new meeting pw
      */
     public void setMeetingPW(String value) {
         this.meetingPW = value;
     }
 
     /**
-     * Gets the value of the regID property.
+     * Gets the reg id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the reg id
      */
     public String getRegID() {
         return regID;
     }
 
     /**
-     * Sets the value of the regID property.
+     * Sets the reg id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new reg id
      */
     public void setRegID(String value) {
         this.regID = value;

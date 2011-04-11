@@ -24,23 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for setSalesSession complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="setSalesSession">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/sales}salesSessionInstanceType">
- *       &lt;sequence>
- *         &lt;element name="validateFormat" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SetSalesSession.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "setSalesSession", propOrder = {
@@ -51,28 +35,25 @@ public class SetSalesSession
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The validate format. */
     protected Boolean validateFormat;
 
     /**
-     * Gets the value of the validateFormat property.
+     * Checks if is validate format.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isValidateFormat() {
         return validateFormat;
     }
 
     /**
-     * Sets the value of the validateFormat property.
+     * Sets the validate format.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new validate format
      */
     public void setValidateFormat(Boolean value) {
         this.validateFormat = value;

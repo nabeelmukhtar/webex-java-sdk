@@ -27,31 +27,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for registerAttendeeType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="registerAttendeeType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="person" type="{http://www.webex.com/schemas/2002/06/common}personType"/>
- *         &lt;element name="joinStatus" type="{http://www.webex.com/schemas/2002/06/service/attendee}joinStatusType" minOccurs="0"/>
- *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="role" type="{http://www.webex.com/schemas/2002/06/service/attendee}roleType" minOccurs="0"/>
- *         &lt;element name="confID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="emailInvitations" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="language" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="locale" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class RegisterAttendeeType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "registerAttendeeType", propOrder = {
@@ -70,230 +46,195 @@ public class RegisterAttendeeType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The person. */
     @XmlElement(required = true)
     protected PersonType person;
+    
+    /** The join status. */
     protected JoinStatusType joinStatus;
+    
+    /** The session key. */
     protected Long sessionKey;
+    
+    /** The role. */
     protected RoleType role;
+    
+    /** The conf id. */
     protected Long confID;
+    
+    /** The email invitations. */
     @XmlElement(defaultValue = "false")
     protected Boolean emailInvitations;
+    
+    /** The language. */
     protected String language;
+    
+    /** The locale. */
     protected String locale;
+    
+    /** The time zone id. */
     protected Long timeZoneID;
 
     /**
-     * Gets the value of the person property.
+     * Gets the person.
      * 
-     * @return
-     *     possible object is
-     *     {@link PersonType }
-     *     
+     * @return the person
      */
     public PersonType getPerson() {
         return person;
     }
 
     /**
-     * Sets the value of the person property.
+     * Sets the person.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link PersonType }
-     *     
+     * @param value the new person
      */
     public void setPerson(PersonType value) {
         this.person = value;
     }
 
     /**
-     * Gets the value of the joinStatus property.
+     * Gets the join status.
      * 
-     * @return
-     *     possible object is
-     *     {@link JoinStatusType }
-     *     
+     * @return the join status
      */
     public JoinStatusType getJoinStatus() {
         return joinStatus;
     }
 
     /**
-     * Sets the value of the joinStatus property.
+     * Sets the join status.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link JoinStatusType }
-     *     
+     * @param value the new join status
      */
     public void setJoinStatus(JoinStatusType value) {
         this.joinStatus = value;
     }
 
     /**
-     * Gets the value of the sessionKey property.
+     * Gets the session key.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the session key
      */
     public Long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the value of the sessionKey property.
+     * Sets the session key.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new session key
      */
     public void setSessionKey(Long value) {
         this.sessionKey = value;
     }
 
     /**
-     * Gets the value of the role property.
+     * Gets the role.
      * 
-     * @return
-     *     possible object is
-     *     {@link RoleType }
-     *     
+     * @return the role
      */
     public RoleType getRole() {
         return role;
     }
 
     /**
-     * Sets the value of the role property.
+     * Sets the role.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RoleType }
-     *     
+     * @param value the new role
      */
     public void setRole(RoleType value) {
         this.role = value;
     }
 
     /**
-     * Gets the value of the confID property.
+     * Gets the conf id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the conf id
      */
     public Long getConfID() {
         return confID;
     }
 
     /**
-     * Sets the value of the confID property.
+     * Sets the conf id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new conf id
      */
     public void setConfID(Long value) {
         this.confID = value;
     }
 
     /**
-     * Gets the value of the emailInvitations property.
+     * Checks if is email invitations.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isEmailInvitations() {
         return emailInvitations;
     }
 
     /**
-     * Sets the value of the emailInvitations property.
+     * Sets the email invitations.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new email invitations
      */
     public void setEmailInvitations(Boolean value) {
         this.emailInvitations = value;
     }
 
     /**
-     * Gets the value of the language property.
+     * Gets the language.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the language
      */
     public String getLanguage() {
         return language;
     }
 
     /**
-     * Sets the value of the language property.
+     * Sets the language.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new language
      */
     public void setLanguage(String value) {
         this.language = value;
     }
 
     /**
-     * Gets the value of the locale property.
+     * Gets the locale.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the locale
      */
     public String getLocale() {
         return locale;
     }
 
     /**
-     * Sets the value of the locale property.
+     * Sets the locale.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new locale
      */
     public void setLocale(String value) {
         this.locale = value;
     }
 
     /**
-     * Gets the value of the timeZoneID property.
+     * Gets the time zone id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the time zone id
      */
     public Long getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the value of the timeZoneID property.
+     * Sets the time zone id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new time zone id
      */
     public void setTimeZoneID(Long value) {
         this.timeZoneID = value;

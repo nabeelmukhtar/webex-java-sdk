@@ -28,27 +28,7 @@ import com.webex.schemas._2002._06.service.TspAccountType;
 
 
 /**
- * <p>Java class for oneClickAccountType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="oneClickAccountType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}tspAccountType">
- *       &lt;sequence>
- *         &lt;element name="participantLimitedAccessCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="intlLocalCallInNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="tollFreeCallInData" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="tollCallInData" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="globalNum" type="{http://www.webex.com/schemas/2002/06/service}globalCallInNumType" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class OneClickAccountType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "oneClickAccountType", propOrder = {
@@ -63,130 +43,100 @@ public class OneClickAccountType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The participant limited access code. */
     protected String participantLimitedAccessCode;
+    
+    /** The intl local call in number. */
     protected String intlLocalCallInNumber;
+    
+    /** The toll free call in data. */
     protected String tollFreeCallInData;
+    
+    /** The toll call in data. */
     protected String tollCallInData;
+    
+    /** The global num. */
     protected List<GlobalCallInNumType> globalNum;
 
     /**
-     * Gets the value of the participantLimitedAccessCode property.
+     * Gets the participant limited access code.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the participant limited access code
      */
     public String getParticipantLimitedAccessCode() {
         return participantLimitedAccessCode;
     }
 
     /**
-     * Sets the value of the participantLimitedAccessCode property.
+     * Sets the participant limited access code.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new participant limited access code
      */
     public void setParticipantLimitedAccessCode(String value) {
         this.participantLimitedAccessCode = value;
     }
 
     /**
-     * Gets the value of the intlLocalCallInNumber property.
+     * Gets the intl local call in number.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the intl local call in number
      */
     public String getIntlLocalCallInNumber() {
         return intlLocalCallInNumber;
     }
 
     /**
-     * Sets the value of the intlLocalCallInNumber property.
+     * Sets the intl local call in number.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new intl local call in number
      */
     public void setIntlLocalCallInNumber(String value) {
         this.intlLocalCallInNumber = value;
     }
 
     /**
-     * Gets the value of the tollFreeCallInData property.
+     * Gets the toll free call in data.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the toll free call in data
      */
     public String getTollFreeCallInData() {
         return tollFreeCallInData;
     }
 
     /**
-     * Sets the value of the tollFreeCallInData property.
+     * Sets the toll free call in data.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new toll free call in data
      */
     public void setTollFreeCallInData(String value) {
         this.tollFreeCallInData = value;
     }
 
     /**
-     * Gets the value of the tollCallInData property.
+     * Gets the toll call in data.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the toll call in data
      */
     public String getTollCallInData() {
         return tollCallInData;
     }
 
     /**
-     * Sets the value of the tollCallInData property.
+     * Sets the toll call in data.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new toll call in data
      */
     public void setTollCallInData(String value) {
         this.tollCallInData = value;
     }
 
     /**
-     * Gets the value of the globalNum property.
+     * Gets the global num.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the globalNum property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getGlobalNum().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link GlobalCallInNumType }
-     * 
-     * 
+     * @return the global num
      */
     public List<GlobalCallInNumType> getGlobalNum() {
         if (globalNum == null) {

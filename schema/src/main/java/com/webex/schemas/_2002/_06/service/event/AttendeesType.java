@@ -28,33 +28,7 @@ import com.webex.schemas._2002._06.common.PersonType;
 
 
 /**
- * <p>Java class for attendeesType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="attendeesType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="attendee" maxOccurs="unbounded" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;extension base="{http://www.webex.com/schemas/2002/06/common}personType">
- *                 &lt;sequence>
- *                   &lt;element name="joinStatus" type="{http://www.webex.com/schemas/2002/06/common}joinStatusType" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/extension>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class AttendeesType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "attendeesType", propOrder = {
@@ -64,30 +38,16 @@ public class AttendeesType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The attendee. */
     protected List<AttendeesType.Attendee> attendee;
 
     /**
-     * Gets the value of the attendee property.
+     * Gets the attendee.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the attendee property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getAttendee().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link AttendeesType.Attendee }
-     * 
-     * 
+     * @return the attendee
      */
     public List<AttendeesType.Attendee> getAttendee() {
         if (attendee == null) {
@@ -98,23 +58,7 @@ public class AttendeesType
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;extension base="{http://www.webex.com/schemas/2002/06/common}personType">
-     *       &lt;sequence>
-     *         &lt;element name="joinStatus" type="{http://www.webex.com/schemas/2002/06/common}joinStatusType" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/extension>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class Attendee.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -125,28 +69,25 @@ public class AttendeesType
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The join status. */
         protected JoinStatusType joinStatus;
 
         /**
-         * Gets the value of the joinStatus property.
+         * Gets the join status.
          * 
-         * @return
-         *     possible object is
-         *     {@link JoinStatusType }
-         *     
+         * @return the join status
          */
         public JoinStatusType getJoinStatus() {
             return joinStatus;
         }
 
         /**
-         * Sets the value of the joinStatus property.
+         * Sets the join status.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link JoinStatusType }
-         *     
+         * @param value the new join status
          */
         public void setJoinStatus(JoinStatusType value) {
             this.joinStatus = value;

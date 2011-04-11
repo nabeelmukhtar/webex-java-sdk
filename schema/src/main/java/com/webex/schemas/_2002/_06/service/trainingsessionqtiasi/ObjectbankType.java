@@ -29,29 +29,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for objectbankType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="objectbankType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="qticomment" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qticommentType" minOccurs="0"/>
- *         &lt;element name="qtimetadata" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qtimetadataType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;choice maxOccurs="unbounded">
- *           &lt;element name="section" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}sectionType"/>
- *           &lt;element name="item" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}itemType"/>
- *         &lt;/choice>
- *       &lt;/sequence>
- *       &lt;attribute name="ident" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ObjectbankType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "objectbankType", propOrder = {
@@ -63,62 +41,48 @@ public class ObjectbankType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The qticomment. */
     protected QticommentType qticomment;
+    
+    /** The qtimetadata. */
     protected List<QtimetadataType> qtimetadata;
+    
+    /** The section or item. */
     @XmlElements({
         @XmlElement(name = "item", type = ItemType.class),
         @XmlElement(name = "section", type = SectionType.class)
     })
     protected List<Object> sectionOrItem;
+    
+    /** The ident. */
     @XmlAttribute(required = true)
     protected String ident;
 
     /**
-     * Gets the value of the qticomment property.
+     * Gets the qticomment.
      * 
-     * @return
-     *     possible object is
-     *     {@link QticommentType }
-     *     
+     * @return the qticomment
      */
     public QticommentType getQticomment() {
         return qticomment;
     }
 
     /**
-     * Sets the value of the qticomment property.
+     * Sets the qticomment.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link QticommentType }
-     *     
+     * @param value the new qticomment
      */
     public void setQticomment(QticommentType value) {
         this.qticomment = value;
     }
 
     /**
-     * Gets the value of the qtimetadata property.
+     * Gets the qtimetadata.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the qtimetadata property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getQtimetadata().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link QtimetadataType }
-     * 
-     * 
+     * @return the qtimetadata
      */
     public List<QtimetadataType> getQtimetadata() {
         if (qtimetadata == null) {
@@ -128,27 +92,9 @@ public class ObjectbankType
     }
 
     /**
-     * Gets the value of the sectionOrItem property.
+     * Gets the section or item.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the sectionOrItem property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getSectionOrItem().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ItemType }
-     * {@link SectionType }
-     * 
-     * 
+     * @return the section or item
      */
     public List<Object> getSectionOrItem() {
         if (sectionOrItem == null) {
@@ -158,24 +104,18 @@ public class ObjectbankType
     }
 
     /**
-     * Gets the value of the ident property.
+     * Gets the ident.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the ident
      */
     public String getIdent() {
         return ident;
     }
 
     /**
-     * Sets the value of the ident property.
+     * Sets the ident.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new ident
      */
     public void setIdent(String value) {
         this.ident = value;

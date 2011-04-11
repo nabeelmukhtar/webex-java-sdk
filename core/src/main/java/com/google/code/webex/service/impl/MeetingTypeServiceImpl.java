@@ -32,14 +32,29 @@ import com.webex.schemas._2002._06.service.meetingtype.LstMeetingTypeResponse;
 import com.webex.schemas._2002._06.service.meetingtype.MeetingTypeInstanceType;
 import com.webex.schemas._2002._06.service.meetingtype.ObjectFactory;
 
+/**
+ * The Class MeetingTypeServiceImpl.
+ */
 public class MeetingTypeServiceImpl extends WebExJaxbService implements
 	MeetingTypeService {
 
+	/**
+	 * Instantiates a new meeting type service impl.
+	 * 
+	 * @param webExId the web ex id
+	 * @param password the password
+	 * @param siteId the site id
+	 * @param siteName the site name
+	 * @param partnerId the partner id
+	 */
 	public MeetingTypeServiceImpl(String webExId, String password,
 			Long siteId, String siteName, String partnerId) {
 		super(webExId, password, siteId, siteName, partnerId);
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.MeetingTypeService#getMeetingType(java.lang.Long)
+	 */
 	@Override
 	public GetMeetingTypeResponse getMeetingType(Long meetingTypeID) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -57,6 +72,9 @@ public class MeetingTypeServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.MeetingTypeService#getMeetingTypes(java.util.List)
+	 */
 	@Override
 	public List<MeetingTypeInstanceType> getMeetingTypes(
 			List<Long> meetingTypeIDs) {

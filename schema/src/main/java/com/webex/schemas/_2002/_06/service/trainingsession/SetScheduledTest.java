@@ -26,91 +26,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for setScheduledTest complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="setScheduledTest">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="testID" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="deliveryMethod">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;choice>
- *                   &lt;element name="session">
- *                     &lt;simpleType>
- *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                         &lt;pattern value="true|TRUE"/>
- *                       &lt;/restriction>
- *                     &lt;/simpleType>
- *                   &lt;/element>
- *                   &lt;element name="website" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}webSiteType"/>
- *                 &lt;/choice>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="timeLimit">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;choice>
- *                   &lt;element name="noLimit">
- *                     &lt;simpleType>
- *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                         &lt;pattern value="true|TRUE"/>
- *                       &lt;/restriction>
- *                     &lt;/simpleType>
- *                   &lt;/element>
- *                   &lt;element name="withinMinutes">
- *                     &lt;simpleType>
- *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}int">
- *                         &lt;minInclusive value="1"/>
- *                       &lt;/restriction>
- *                     &lt;/simpleType>
- *                   &lt;/element>
- *                 &lt;/choice>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="sendReport" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="attemptLimit">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;choice>
- *                   &lt;element name="noLimit">
- *                     &lt;simpleType>
- *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                         &lt;pattern value="true|TRUE"/>
- *                       &lt;/restriction>
- *                     &lt;/simpleType>
- *                   &lt;/element>
- *                   &lt;element name="attemptTimes">
- *                     &lt;simpleType>
- *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}int">
- *                         &lt;minInclusive value="1"/>
- *                       &lt;/restriction>
- *                     &lt;/simpleType>
- *                   &lt;/element>
- *                 &lt;/choice>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SetScheduledTest.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "setScheduledTest", propOrder = {
@@ -126,140 +42,133 @@ public class SetScheduledTest
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The session key. */
     protected long sessionKey;
+    
+    /** The test id. */
     protected long testID;
+    
+    /** The delivery method. */
     @XmlElement(required = true)
     protected SetScheduledTest.DeliveryMethod deliveryMethod;
+    
+    /** The time limit. */
     @XmlElement(required = true)
     protected SetScheduledTest.TimeLimit timeLimit;
+    
+    /** The send report. */
     protected Boolean sendReport;
+    
+    /** The attempt limit. */
     @XmlElement(required = true)
     protected SetScheduledTest.AttemptLimit attemptLimit;
 
     /**
-     * Gets the value of the sessionKey property.
+     * Gets the session key.
      * 
+     * @return the session key
      */
     public long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the value of the sessionKey property.
+     * Sets the session key.
      * 
+     * @param value the new session key
      */
     public void setSessionKey(long value) {
         this.sessionKey = value;
     }
 
     /**
-     * Gets the value of the testID property.
+     * Gets the test id.
      * 
+     * @return the test id
      */
     public long getTestID() {
         return testID;
     }
 
     /**
-     * Sets the value of the testID property.
+     * Sets the test id.
      * 
+     * @param value the new test id
      */
     public void setTestID(long value) {
         this.testID = value;
     }
 
     /**
-     * Gets the value of the deliveryMethod property.
+     * Gets the delivery method.
      * 
-     * @return
-     *     possible object is
-     *     {@link SetScheduledTest.DeliveryMethod }
-     *     
+     * @return the delivery method
      */
     public SetScheduledTest.DeliveryMethod getDeliveryMethod() {
         return deliveryMethod;
     }
 
     /**
-     * Sets the value of the deliveryMethod property.
+     * Sets the delivery method.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link SetScheduledTest.DeliveryMethod }
-     *     
+     * @param value the new delivery method
      */
     public void setDeliveryMethod(SetScheduledTest.DeliveryMethod value) {
         this.deliveryMethod = value;
     }
 
     /**
-     * Gets the value of the timeLimit property.
+     * Gets the time limit.
      * 
-     * @return
-     *     possible object is
-     *     {@link SetScheduledTest.TimeLimit }
-     *     
+     * @return the time limit
      */
     public SetScheduledTest.TimeLimit getTimeLimit() {
         return timeLimit;
     }
 
     /**
-     * Sets the value of the timeLimit property.
+     * Sets the time limit.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link SetScheduledTest.TimeLimit }
-     *     
+     * @param value the new time limit
      */
     public void setTimeLimit(SetScheduledTest.TimeLimit value) {
         this.timeLimit = value;
     }
 
     /**
-     * Gets the value of the sendReport property.
+     * Checks if is send report.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isSendReport() {
         return sendReport;
     }
 
     /**
-     * Sets the value of the sendReport property.
+     * Sets the send report.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new send report
      */
     public void setSendReport(Boolean value) {
         this.sendReport = value;
     }
 
     /**
-     * Gets the value of the attemptLimit property.
+     * Gets the attempt limit.
      * 
-     * @return
-     *     possible object is
-     *     {@link SetScheduledTest.AttemptLimit }
-     *     
+     * @return the attempt limit
      */
     public SetScheduledTest.AttemptLimit getAttemptLimit() {
         return attemptLimit;
     }
 
     /**
-     * Sets the value of the attemptLimit property.
+     * Sets the attempt limit.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link SetScheduledTest.AttemptLimit }
-     *     
+     * @param value the new attempt limit
      */
     public void setAttemptLimit(SetScheduledTest.AttemptLimit value) {
         this.attemptLimit = value;
@@ -267,36 +176,7 @@ public class SetScheduledTest
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;choice>
-     *         &lt;element name="noLimit">
-     *           &lt;simpleType>
-     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *               &lt;pattern value="true|TRUE"/>
-     *             &lt;/restriction>
-     *           &lt;/simpleType>
-     *         &lt;/element>
-     *         &lt;element name="attemptTimes">
-     *           &lt;simpleType>
-     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}int">
-     *               &lt;minInclusive value="1"/>
-     *             &lt;/restriction>
-     *           &lt;/simpleType>
-     *         &lt;/element>
-     *       &lt;/choice>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class AttemptLimit.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -307,53 +187,46 @@ public class SetScheduledTest
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The no limit. */
         protected String noLimit;
+        
+        /** The attempt times. */
         protected Integer attemptTimes;
 
         /**
-         * Gets the value of the noLimit property.
+         * Gets the no limit.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the no limit
          */
         public String getNoLimit() {
             return noLimit;
         }
 
         /**
-         * Sets the value of the noLimit property.
+         * Sets the no limit.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new no limit
          */
         public void setNoLimit(String value) {
             this.noLimit = value;
         }
 
         /**
-         * Gets the value of the attemptTimes property.
+         * Gets the attempt times.
          * 
-         * @return
-         *     possible object is
-         *     {@link Integer }
-         *     
+         * @return the attempt times
          */
         public Integer getAttemptTimes() {
             return attemptTimes;
         }
 
         /**
-         * Sets the value of the attemptTimes property.
+         * Sets the attempt times.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link Integer }
-         *     
+         * @param value the new attempt times
          */
         public void setAttemptTimes(Integer value) {
             this.attemptTimes = value;
@@ -363,30 +236,7 @@ public class SetScheduledTest
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;choice>
-     *         &lt;element name="session">
-     *           &lt;simpleType>
-     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *               &lt;pattern value="true|TRUE"/>
-     *             &lt;/restriction>
-     *           &lt;/simpleType>
-     *         &lt;/element>
-     *         &lt;element name="website" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}webSiteType"/>
-     *       &lt;/choice>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class DeliveryMethod.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -397,53 +247,46 @@ public class SetScheduledTest
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The session. */
         protected String session;
+        
+        /** The website. */
         protected WebSiteType website;
 
         /**
-         * Gets the value of the session property.
+         * Gets the session.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the session
          */
         public String getSession() {
             return session;
         }
 
         /**
-         * Sets the value of the session property.
+         * Sets the session.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new session
          */
         public void setSession(String value) {
             this.session = value;
         }
 
         /**
-         * Gets the value of the website property.
+         * Gets the website.
          * 
-         * @return
-         *     possible object is
-         *     {@link WebSiteType }
-         *     
+         * @return the website
          */
         public WebSiteType getWebsite() {
             return website;
         }
 
         /**
-         * Sets the value of the website property.
+         * Sets the website.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link WebSiteType }
-         *     
+         * @param value the new website
          */
         public void setWebsite(WebSiteType value) {
             this.website = value;
@@ -453,36 +296,7 @@ public class SetScheduledTest
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;choice>
-     *         &lt;element name="noLimit">
-     *           &lt;simpleType>
-     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *               &lt;pattern value="true|TRUE"/>
-     *             &lt;/restriction>
-     *           &lt;/simpleType>
-     *         &lt;/element>
-     *         &lt;element name="withinMinutes">
-     *           &lt;simpleType>
-     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}int">
-     *               &lt;minInclusive value="1"/>
-     *             &lt;/restriction>
-     *           &lt;/simpleType>
-     *         &lt;/element>
-     *       &lt;/choice>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class TimeLimit.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -493,53 +307,46 @@ public class SetScheduledTest
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The no limit. */
         protected String noLimit;
+        
+        /** The within minutes. */
         protected Integer withinMinutes;
 
         /**
-         * Gets the value of the noLimit property.
+         * Gets the no limit.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the no limit
          */
         public String getNoLimit() {
             return noLimit;
         }
 
         /**
-         * Sets the value of the noLimit property.
+         * Sets the no limit.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new no limit
          */
         public void setNoLimit(String value) {
             this.noLimit = value;
         }
 
         /**
-         * Gets the value of the withinMinutes property.
+         * Gets the within minutes.
          * 
-         * @return
-         *     possible object is
-         *     {@link Integer }
-         *     
+         * @return the within minutes
          */
         public Integer getWithinMinutes() {
             return withinMinutes;
         }
 
         /**
-         * Sets the value of the withinMinutes property.
+         * Sets the within minutes.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link Integer }
-         *     
+         * @param value the new within minutes
          */
         public void setWithinMinutes(Integer value) {
             this.withinMinutes = value;

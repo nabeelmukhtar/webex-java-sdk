@@ -30,40 +30,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for remindType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="remindType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="enableReminder" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="emails" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="email" type="{http://www.webex.com/schemas/2002/06/common}emailType" maxOccurs="unbounded" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="sendEmail" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="mobile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="sendMobile" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="daysAhead" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="hoursAhead" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="minutesAhead" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class RemindType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "remindType", propOrder = {
@@ -80,214 +47,183 @@ public class RemindType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The enable reminder. */
     protected Boolean enableReminder;
+    
+    /** The emails. */
     protected RemindType.Emails emails;
+    
+    /** The send email. */
     @XmlElement(defaultValue = "false")
     protected Boolean sendEmail;
+    
+    /** The mobile. */
     protected String mobile;
+    
+    /** The send mobile. */
     @XmlElement(defaultValue = "false")
     protected Boolean sendMobile;
+    
+    /** The days ahead. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long daysAhead;
+    
+    /** The hours ahead. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long hoursAhead;
+    
+    /** The minutes ahead. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long minutesAhead;
 
     /**
-     * Gets the value of the enableReminder property.
+     * Checks if is enable reminder.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isEnableReminder() {
         return enableReminder;
     }
 
     /**
-     * Sets the value of the enableReminder property.
+     * Sets the enable reminder.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new enable reminder
      */
     public void setEnableReminder(Boolean value) {
         this.enableReminder = value;
     }
 
     /**
-     * Gets the value of the emails property.
+     * Gets the emails.
      * 
-     * @return
-     *     possible object is
-     *     {@link RemindType.Emails }
-     *     
+     * @return the emails
      */
     public RemindType.Emails getEmails() {
         return emails;
     }
 
     /**
-     * Sets the value of the emails property.
+     * Sets the emails.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RemindType.Emails }
-     *     
+     * @param value the new emails
      */
     public void setEmails(RemindType.Emails value) {
         this.emails = value;
     }
 
     /**
-     * Gets the value of the sendEmail property.
+     * Checks if is send email.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isSendEmail() {
         return sendEmail;
     }
 
     /**
-     * Sets the value of the sendEmail property.
+     * Sets the send email.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new send email
      */
     public void setSendEmail(Boolean value) {
         this.sendEmail = value;
     }
 
     /**
-     * Gets the value of the mobile property.
+     * Gets the mobile.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the mobile
      */
     public String getMobile() {
         return mobile;
     }
 
     /**
-     * Sets the value of the mobile property.
+     * Sets the mobile.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new mobile
      */
     public void setMobile(String value) {
         this.mobile = value;
     }
 
     /**
-     * Gets the value of the sendMobile property.
+     * Checks if is send mobile.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isSendMobile() {
         return sendMobile;
     }
 
     /**
-     * Sets the value of the sendMobile property.
+     * Sets the send mobile.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new send mobile
      */
     public void setSendMobile(Boolean value) {
         this.sendMobile = value;
     }
 
     /**
-     * Gets the value of the daysAhead property.
+     * Gets the days ahead.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the days ahead
      */
     public Long getDaysAhead() {
         return daysAhead;
     }
 
     /**
-     * Sets the value of the daysAhead property.
+     * Sets the days ahead.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new days ahead
      */
     public void setDaysAhead(Long value) {
         this.daysAhead = value;
     }
 
     /**
-     * Gets the value of the hoursAhead property.
+     * Gets the hours ahead.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the hours ahead
      */
     public Long getHoursAhead() {
         return hoursAhead;
     }
 
     /**
-     * Sets the value of the hoursAhead property.
+     * Sets the hours ahead.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new hours ahead
      */
     public void setHoursAhead(Long value) {
         this.hoursAhead = value;
     }
 
     /**
-     * Gets the value of the minutesAhead property.
+     * Gets the minutes ahead.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the minutes ahead
      */
     public Long getMinutesAhead() {
         return minutesAhead;
     }
 
     /**
-     * Sets the value of the minutesAhead property.
+     * Sets the minutes ahead.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new minutes ahead
      */
     public void setMinutesAhead(Long value) {
         this.minutesAhead = value;
@@ -295,23 +231,7 @@ public class RemindType
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="email" type="{http://www.webex.com/schemas/2002/06/common}emailType" maxOccurs="unbounded" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class Emails.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -321,30 +241,16 @@ public class RemindType
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The email. */
         protected List<String> email;
 
         /**
-         * Gets the value of the email property.
+         * Gets the email.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the email property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getEmail().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link String }
-         * 
-         * 
+         * @return the email
          */
         public List<String> getEmail() {
             if (email == null) {

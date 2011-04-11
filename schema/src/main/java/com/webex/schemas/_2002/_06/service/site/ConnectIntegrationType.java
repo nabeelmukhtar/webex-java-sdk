@@ -24,25 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for connectIntegrationType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="connectIntegrationType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="connectServerURL" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="connectOrganization" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="connectNameSpaceID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ConnectIntegrationType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "connectIntegrationType", propOrder = {
@@ -54,78 +36,67 @@ public class ConnectIntegrationType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The connect server url. */
     protected String connectServerURL;
+    
+    /** The connect organization. */
     protected String connectOrganization;
+    
+    /** The connect name space id. */
     protected String connectNameSpaceID;
 
     /**
-     * Gets the value of the connectServerURL property.
+     * Gets the connect server url.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the connect server url
      */
     public String getConnectServerURL() {
         return connectServerURL;
     }
 
     /**
-     * Sets the value of the connectServerURL property.
+     * Sets the connect server url.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new connect server url
      */
     public void setConnectServerURL(String value) {
         this.connectServerURL = value;
     }
 
     /**
-     * Gets the value of the connectOrganization property.
+     * Gets the connect organization.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the connect organization
      */
     public String getConnectOrganization() {
         return connectOrganization;
     }
 
     /**
-     * Sets the value of the connectOrganization property.
+     * Sets the connect organization.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new connect organization
      */
     public void setConnectOrganization(String value) {
         this.connectOrganization = value;
     }
 
     /**
-     * Gets the value of the connectNameSpaceID property.
+     * Gets the connect name space id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the connect name space id
      */
     public String getConnectNameSpaceID() {
         return connectNameSpaceID;
     }
 
     /**
-     * Sets the value of the connectNameSpaceID property.
+     * Sets the connect name space id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new connect name space id
      */
     public void setConnectNameSpaceID(String value) {
         this.connectNameSpaceID = value;

@@ -22,35 +22,40 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for recurrenceType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="recurrenceType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="WEEKLY"/>
- *     &lt;enumeration value="DAILY"/>
- *     &lt;enumeration value="NO_REPEAT"/>
- *     &lt;enumeration value="MONTHLY"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum RecurrenceType.
  */
 @XmlType(name = "recurrenceType")
 @XmlEnum
 public enum RecurrenceType {
 
+    /** The WEEKLY. */
     WEEKLY,
+    
+    /** The DAILY. */
     DAILY,
+    
+    /** The N o_ repeat. */
     NO_REPEAT,
+    
+    /** The MONTHLY. */
     MONTHLY;
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the recurrence type
+     */
     public static RecurrenceType fromValue(String v) {
         return valueOf(v);
     }

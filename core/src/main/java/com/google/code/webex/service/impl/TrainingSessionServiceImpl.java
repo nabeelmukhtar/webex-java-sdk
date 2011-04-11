@@ -58,14 +58,29 @@ import com.webex.schemas._2002._06.service.trainingsession.TrainingSessionSummar
 import com.webex.schemas._2002._06.service.trainingsessionqti.QtiResultReportType;
 import com.webex.schemas._2002._06.service.trainingsessionqtiasi.QuestestinteropType;
 
+/**
+ * The Class TrainingSessionServiceImpl.
+ */
 public class TrainingSessionServiceImpl extends WebExJaxbService implements
 	TrainingSessionService {
 
+	/**
+	 * Instantiates a new training session service impl.
+	 * 
+	 * @param webExId the web ex id
+	 * @param password the password
+	 * @param siteId the site id
+	 * @param siteName the site name
+	 * @param partnerId the partner id
+	 */
 	public TrainingSessionServiceImpl(String webExId, String password,
 			Long siteId, String siteName, String partnerId) {
 		super(webExId, password, siteId, siteName, partnerId);
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.TrainingSessionService#checkLabAvailability(java.lang.String, int, java.lang.String, java.lang.String, int)
+	 */
 	@Override
 	public List<AvailabilityLabType> checkLabAvailability(String labName,
 			int timeZoneID, String sessionStartTime, String sessionEndTime,
@@ -88,6 +103,9 @@ public class TrainingSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<AvailabilityLabType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.TrainingSessionService#createTrainingSession(com.webex.schemas._2002._06.service.trainingsession.CreateTrainingSession)
+	 */
 	@Override
 	public CreateTrainingSessionResponse createTrainingSession(
 			CreateTrainingSession trainingSession) {
@@ -102,6 +120,9 @@ public class TrainingSessionServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.TrainingSessionService#deleteTrainingSession(long)
+	 */
 	@Override
 	public void deleteTrainingSession(long sessionKey) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -116,6 +137,9 @@ public class TrainingSessionServiceImpl extends WebExJaxbService implements
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.TrainingSessionService#getImsTestDetails(java.lang.Long)
+	 */
 	@Override
 	public QuestestinteropType getImsTestDetails(Long testID) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -132,6 +156,9 @@ public class TrainingSessionServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.TrainingSessionService#getImsTestResult(java.lang.Long, java.lang.String)
+	 */
 	@Override
 	public QtiResultReportType getImsTestResult(Long testID,
 			String participantEmail) {
@@ -150,6 +177,9 @@ public class TrainingSessionServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.TrainingSessionService#getLabInformation(java.lang.String)
+	 */
 	@Override
 	public List<LabInfoType> getLabInformation(String labName) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -166,6 +196,9 @@ public class TrainingSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<LabInfoType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.TrainingSessionService#getLabSchedule(java.lang.String, int, java.lang.String, java.lang.String)
+	 */
 	@Override
 	public List<ScheduleLabType> getLabSchedule(String labName, int timeZoneID,
 			String sessionStartTime, String sessionEndTime) {
@@ -186,6 +219,9 @@ public class TrainingSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<ScheduleLabType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.TrainingSessionService#getTestInformation(java.lang.Long)
+	 */
 	@Override
 	public GetTestInformationResponse getTestInformation(Long testID) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -203,6 +239,9 @@ public class TrainingSessionServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.TrainingSessionService#getTrainingSession(long)
+	 */
 	@Override
 	public GetTrainingSessionResponse getTrainingSession(long sessionKey) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -220,6 +259,9 @@ public class TrainingSessionServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.TrainingSessionService#getScheduledTests(com.webex.schemas._2002._06.service.session.DateScopeType, java.lang.Long, com.webex.schemas._2002._06.service.trainingsession.TestStatusType, java.lang.String)
+	 */
 	@Override
 	public List<ScheduledTestInstanceType> getScheduledTests(
 			DateScopeType dateScope, Long sessionKey, TestStatusType status,
@@ -241,6 +283,9 @@ public class TrainingSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<ScheduledTestInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.TrainingSessionService#getTrainingSessionSummaries(com.webex.schemas._2002._06.service.session.DateScopeType, java.lang.Long, java.lang.String)
+	 */
 	@Override
 	public List<TrainingSessionSummaryInstanceType> getTrainingSessionSummaries(
 			DateScopeType dateScope, Long sessionKey, String hostWebExID) {
@@ -260,6 +305,9 @@ public class TrainingSessionServiceImpl extends WebExJaxbService implements
 		return new ArrayList<TrainingSessionSummaryInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.TrainingSessionService#setTrainingSession(com.webex.schemas._2002._06.service.trainingsession.SetTrainingSession)
+	 */
 	@Override
 	public void setTrainingSession(SetTrainingSession trainingSession) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);

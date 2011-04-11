@@ -22,35 +22,40 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for telephonySupportType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="telephonySupportType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="NONE"/>
- *     &lt;enumeration value="CALLIN"/>
- *     &lt;enumeration value="CALLBACK"/>
- *     &lt;enumeration value="OTHER"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum TelephonySupportType.
  */
 @XmlType(name = "telephonySupportType")
 @XmlEnum
 public enum TelephonySupportType {
 
+    /** The NONE. */
     NONE,
+    
+    /** The CALLIN. */
     CALLIN,
+    
+    /** The CALLBACK. */
     CALLBACK,
+    
+    /** The OTHER. */
     OTHER;
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the telephony support type
+     */
     public static TelephonySupportType fromValue(String v) {
         return valueOf(v);
     }

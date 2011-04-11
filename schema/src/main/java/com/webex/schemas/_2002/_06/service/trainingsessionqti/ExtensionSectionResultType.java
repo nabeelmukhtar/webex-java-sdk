@@ -33,24 +33,7 @@ import org.w3c.dom.Element;
 
 
 /**
- * <p>Java class for extension_section_resultType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="extension_section_resultType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;any processContents='lax' maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;anyAttribute processContents='lax'/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ExtensionSectionResultType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "extension_section_resultType", propOrder = {
@@ -60,36 +43,22 @@ public class ExtensionSectionResultType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The content. */
     @XmlMixed
     @XmlAnyElement(lax = true)
     protected List<Object> content;
+    
+    /** The other attributes. */
     @XmlAnyAttribute
     private Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
     /**
-     * Gets the value of the content property.
+     * Gets the content.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the content property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getContent().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Element }
-     * {@link String }
-     * {@link Object }
-     * 
-     * 
+     * @return the content
      */
     public List<Object> getContent() {
         if (content == null) {
@@ -99,18 +68,9 @@ public class ExtensionSectionResultType
     }
 
     /**
-     * Gets a map that contains attributes that aren't bound to any typed property on this class.
+     * Gets the other attributes.
      * 
-     * <p>
-     * the map is keyed by the name of the attribute and 
-     * the value is the string value of the attribute.
-     * 
-     * the map returned by this method is live, and you can add new attribute
-     * by updating the map directly. Because of this design, there's no setter.
-     * 
-     * 
-     * @return
-     *     always non-null
+     * @return the other attributes
      */
     public Map<QName, String> getOtherAttributes() {
         return otherAttributes;

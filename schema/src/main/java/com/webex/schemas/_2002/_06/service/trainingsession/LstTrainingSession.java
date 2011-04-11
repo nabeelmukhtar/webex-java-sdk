@@ -27,27 +27,7 @@ import com.webex.schemas._2002._06.service.session.DateScopeType;
 
 
 /**
- * <p>Java class for lstTrainingSession complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="lstTrainingSession">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="listControl" type="{http://www.webex.com/schemas/2002/06/service}lstControlType" minOccurs="0"/>
- *         &lt;element name="order" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}orderType" minOccurs="0"/>
- *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="dateScope" type="{http://www.webex.com/schemas/2002/06/service/session}dateScopeType" minOccurs="0"/>
- *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class LstTrainingSession.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstTrainingSession", propOrder = {
@@ -62,128 +42,109 @@ public class LstTrainingSession
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The list control. */
     protected LstControlType listControl;
+    
+    /** The order. */
     protected OrderType order;
+    
+    /** The time zone id. */
     protected Long timeZoneID;
+    
+    /** The date scope. */
     protected DateScopeType dateScope;
+    
+    /** The session key. */
     protected Long sessionKey;
 
     /**
-     * Gets the value of the listControl property.
+     * Gets the list control.
      * 
-     * @return
-     *     possible object is
-     *     {@link LstControlType }
-     *     
+     * @return the list control
      */
     public LstControlType getListControl() {
         return listControl;
     }
 
     /**
-     * Sets the value of the listControl property.
+     * Sets the list control.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link LstControlType }
-     *     
+     * @param value the new list control
      */
     public void setListControl(LstControlType value) {
         this.listControl = value;
     }
 
     /**
-     * Gets the value of the order property.
+     * Gets the order.
      * 
-     * @return
-     *     possible object is
-     *     {@link OrderType }
-     *     
+     * @return the order
      */
     public OrderType getOrder() {
         return order;
     }
 
     /**
-     * Sets the value of the order property.
+     * Sets the order.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link OrderType }
-     *     
+     * @param value the new order
      */
     public void setOrder(OrderType value) {
         this.order = value;
     }
 
     /**
-     * Gets the value of the timeZoneID property.
+     * Gets the time zone id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the time zone id
      */
     public Long getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the value of the timeZoneID property.
+     * Sets the time zone id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new time zone id
      */
     public void setTimeZoneID(Long value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the value of the dateScope property.
+     * Gets the date scope.
      * 
-     * @return
-     *     possible object is
-     *     {@link DateScopeType }
-     *     
+     * @return the date scope
      */
     public DateScopeType getDateScope() {
         return dateScope;
     }
 
     /**
-     * Sets the value of the dateScope property.
+     * Sets the date scope.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link DateScopeType }
-     *     
+     * @param value the new date scope
      */
     public void setDateScope(DateScopeType value) {
         this.dateScope = value;
     }
 
     /**
-     * Gets the value of the sessionKey property.
+     * Gets the session key.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the session key
      */
     public Long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the value of the sessionKey property.
+     * Sets the session key.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new session key
      */
     public void setSessionKey(Long value) {
         this.sessionKey = value;

@@ -28,29 +28,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for scheduleLabType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="scheduleLabType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="labName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="confName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="sessionStartTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="sessionEndTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="hostWebExID" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="numComputers" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ScheduleLabType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "scheduleLabType", propOrder = {
@@ -66,189 +44,162 @@ public class ScheduleLabType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The lab name. */
     @XmlElement(required = true)
     protected String labName;
+    
+    /** The conf name. */
     @XmlElement(required = true)
     protected String confName;
+    
+    /** The time zone id. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long timeZoneID;
+    
+    /** The session start time. */
     @XmlElement(required = true)
     protected String sessionStartTime;
+    
+    /** The session end time. */
     @XmlElement(required = true)
     protected String sessionEndTime;
+    
+    /** The host web ex id. */
     @XmlElement(required = true)
     protected String hostWebExID;
+    
+    /** The num computers. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long numComputers;
 
     /**
-     * Gets the value of the labName property.
+     * Gets the lab name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the lab name
      */
     public String getLabName() {
         return labName;
     }
 
     /**
-     * Sets the value of the labName property.
+     * Sets the lab name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new lab name
      */
     public void setLabName(String value) {
         this.labName = value;
     }
 
     /**
-     * Gets the value of the confName property.
+     * Gets the conf name.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the conf name
      */
     public String getConfName() {
         return confName;
     }
 
     /**
-     * Sets the value of the confName property.
+     * Sets the conf name.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new conf name
      */
     public void setConfName(String value) {
         this.confName = value;
     }
 
     /**
-     * Gets the value of the timeZoneID property.
+     * Gets the time zone id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the time zone id
      */
     public Long getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the value of the timeZoneID property.
+     * Sets the time zone id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new time zone id
      */
     public void setTimeZoneID(Long value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the value of the sessionStartTime property.
+     * Gets the session start time.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the session start time
      */
     public String getSessionStartTime() {
         return sessionStartTime;
     }
 
     /**
-     * Sets the value of the sessionStartTime property.
+     * Sets the session start time.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new session start time
      */
     public void setSessionStartTime(String value) {
         this.sessionStartTime = value;
     }
 
     /**
-     * Gets the value of the sessionEndTime property.
+     * Gets the session end time.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the session end time
      */
     public String getSessionEndTime() {
         return sessionEndTime;
     }
 
     /**
-     * Sets the value of the sessionEndTime property.
+     * Sets the session end time.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new session end time
      */
     public void setSessionEndTime(String value) {
         this.sessionEndTime = value;
     }
 
     /**
-     * Gets the value of the hostWebExID property.
+     * Gets the host web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the host web ex id
      */
     public String getHostWebExID() {
         return hostWebExID;
     }
 
     /**
-     * Sets the value of the hostWebExID property.
+     * Sets the host web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new host web ex id
      */
     public void setHostWebExID(String value) {
         this.hostWebExID = value;
     }
 
     /**
-     * Gets the value of the numComputers property.
+     * Gets the num computers.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the num computers
      */
     public Long getNumComputers() {
         return numComputers;
     }
 
     /**
-     * Sets the value of the numComputers property.
+     * Sets the num computers.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new num computers
      */
     public void setNumComputers(Long value) {
         this.numComputers = value;

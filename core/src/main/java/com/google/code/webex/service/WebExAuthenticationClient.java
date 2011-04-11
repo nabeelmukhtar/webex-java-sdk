@@ -18,21 +18,19 @@ package com.google.code.webex.service;
 
 
 /**
- * The Interface UClassifyAuthenticationClient.
- * 
- * @author Nabeel Mukhtar
+ * The Interface WebExAuthenticationClient.
  */
 public interface WebExAuthenticationClient extends WebExCommunicationClient {
 
     /**
-     * Method description.
+     * Sets the api consumer.
      * 
-     * @param apiConsumer the api consumer
+     * @param apiConsumer the new api consumer
      */
     public void setApiConsumer(WebExConsumer apiConsumer);
 
     /**
-     * Method description.
+     * Gets the api consumer.
      * 
      * @return the api consumer
      */

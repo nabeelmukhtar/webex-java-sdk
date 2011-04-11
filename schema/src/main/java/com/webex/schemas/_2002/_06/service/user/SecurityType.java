@@ -24,25 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for securityType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="securityType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="forceChangePassword" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="resetPassword" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="lockAccount" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SecurityType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "securityType", propOrder = {
@@ -54,78 +36,67 @@ public class SecurityType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The force change password. */
     protected Boolean forceChangePassword;
+    
+    /** The reset password. */
     protected Boolean resetPassword;
+    
+    /** The lock account. */
     protected Boolean lockAccount;
 
     /**
-     * Gets the value of the forceChangePassword property.
+     * Checks if is force change password.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isForceChangePassword() {
         return forceChangePassword;
     }
 
     /**
-     * Sets the value of the forceChangePassword property.
+     * Sets the force change password.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new force change password
      */
     public void setForceChangePassword(Boolean value) {
         this.forceChangePassword = value;
     }
 
     /**
-     * Gets the value of the resetPassword property.
+     * Checks if is reset password.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isResetPassword() {
         return resetPassword;
     }
 
     /**
-     * Sets the value of the resetPassword property.
+     * Sets the reset password.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new reset password
      */
     public void setResetPassword(Boolean value) {
         this.resetPassword = value;
     }
 
     /**
-     * Gets the value of the lockAccount property.
+     * Checks if is lock account.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isLockAccount() {
         return lockAccount;
     }
 
     /**
-     * Sets the value of the lockAccount property.
+     * Sets the lock account.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new lock account
      */
     public void setLockAccount(Boolean value) {
         this.lockAccount = value;

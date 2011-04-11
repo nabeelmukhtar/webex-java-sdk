@@ -24,24 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for notType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="notType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice>
- *         &lt;element name="varequal" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}varequalType"/>
- *         &lt;element ref="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}and"/>
- *       &lt;/choice>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class NotType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "notType", propOrder = {
@@ -51,53 +34,46 @@ import javax.xml.bind.annotation.XmlType;
 public class NotType implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The varequal. */
     protected VarequalType varequal;
+    
+    /** The and. */
     protected AndType and;
 
     /**
-     * Gets the value of the varequal property.
+     * Gets the varequal.
      * 
-     * @return
-     *     possible object is
-     *     {@link VarequalType }
-     *     
+     * @return the varequal
      */
     public VarequalType getVarequal() {
         return varequal;
     }
 
     /**
-     * Sets the value of the varequal property.
+     * Sets the varequal.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link VarequalType }
-     *     
+     * @param value the new varequal
      */
     public void setVarequal(VarequalType value) {
         this.varequal = value;
     }
 
     /**
-     * Gets the value of the and property.
+     * Gets the and.
      * 
-     * @return
-     *     possible object is
-     *     {@link AndType }
-     *     
+     * @return the and
      */
     public AndType getAnd() {
         return and;
     }
 
     /**
-     * Sets the value of the and property.
+     * Sets the and.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link AndType }
-     *     
+     * @param value the new and
      */
     public void setAnd(AndType value) {
         this.and = value;

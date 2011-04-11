@@ -30,33 +30,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for getTestInformationResponse complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="getTestInformationResponse">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/trainingsession}scheduledTestInstanceType">
- *       &lt;sequence>
- *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="startDate" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="timeLimit" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="author" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="numQuestions" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="numSubmitted" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="numStarted" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="numSubmittedUnscroed" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="numSubmittedUnscored" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *         &lt;element name="submittedTest" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}submittedTestType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="maxScore" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GetTestInformationResponse.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getTestInformationResponse", propOrder = {
@@ -77,279 +51,231 @@ public class GetTestInformationResponse
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The description. */
     protected String description;
+    
+    /** The start date. */
     @XmlElement(required = true)
     protected String startDate;
+    
+    /** The time limit. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long timeLimit;
+    
+    /** The author. */
     @XmlElement(required = true)
     protected String author;
+    
+    /** The num questions. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long numQuestions;
+    
+    /** The num submitted. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long numSubmitted;
+    
+    /** The num started. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long numStarted;
+    
+    /** The num submitted unscroed. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long numSubmittedUnscroed;
+    
+    /** The num submitted unscored. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long numSubmittedUnscored;
+    
+    /** The submitted test. */
     protected List<SubmittedTestType> submittedTest;
+    
+    /** The max score. */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long maxScore;
 
     /**
-     * Gets the value of the description property.
+     * Gets the description.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the description
      */
     public String getDescription() {
         return description;
     }
 
     /**
-     * Sets the value of the description property.
+     * Sets the description.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new description
      */
     public void setDescription(String value) {
         this.description = value;
     }
 
     /**
-     * Gets the value of the startDate property.
+     * Gets the start date.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the start date
      */
     public String getStartDate() {
         return startDate;
     }
 
     /**
-     * Sets the value of the startDate property.
+     * Sets the start date.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new start date
      */
     public void setStartDate(String value) {
         this.startDate = value;
     }
 
     /**
-     * Gets the value of the timeLimit property.
+     * Gets the time limit.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the time limit
      */
     public Long getTimeLimit() {
         return timeLimit;
     }
 
     /**
-     * Sets the value of the timeLimit property.
+     * Sets the time limit.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new time limit
      */
     public void setTimeLimit(Long value) {
         this.timeLimit = value;
     }
 
     /**
-     * Gets the value of the author property.
+     * Gets the author.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the author
      */
     public String getAuthor() {
         return author;
     }
 
     /**
-     * Sets the value of the author property.
+     * Sets the author.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new author
      */
     public void setAuthor(String value) {
         this.author = value;
     }
 
     /**
-     * Gets the value of the numQuestions property.
+     * Gets the num questions.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the num questions
      */
     public Long getNumQuestions() {
         return numQuestions;
     }
 
     /**
-     * Sets the value of the numQuestions property.
+     * Sets the num questions.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new num questions
      */
     public void setNumQuestions(Long value) {
         this.numQuestions = value;
     }
 
     /**
-     * Gets the value of the numSubmitted property.
+     * Gets the num submitted.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the num submitted
      */
     public Long getNumSubmitted() {
         return numSubmitted;
     }
 
     /**
-     * Sets the value of the numSubmitted property.
+     * Sets the num submitted.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new num submitted
      */
     public void setNumSubmitted(Long value) {
         this.numSubmitted = value;
     }
 
     /**
-     * Gets the value of the numStarted property.
+     * Gets the num started.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the num started
      */
     public Long getNumStarted() {
         return numStarted;
     }
 
     /**
-     * Sets the value of the numStarted property.
+     * Sets the num started.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new num started
      */
     public void setNumStarted(Long value) {
         this.numStarted = value;
     }
 
     /**
-     * Gets the value of the numSubmittedUnscroed property.
+     * Gets the num submitted unscroed.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the num submitted unscroed
      */
     public Long getNumSubmittedUnscroed() {
         return numSubmittedUnscroed;
     }
 
     /**
-     * Sets the value of the numSubmittedUnscroed property.
+     * Sets the num submitted unscroed.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new num submitted unscroed
      */
     public void setNumSubmittedUnscroed(Long value) {
         this.numSubmittedUnscroed = value;
     }
 
     /**
-     * Gets the value of the numSubmittedUnscored property.
+     * Gets the num submitted unscored.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the num submitted unscored
      */
     public Long getNumSubmittedUnscored() {
         return numSubmittedUnscored;
     }
 
     /**
-     * Sets the value of the numSubmittedUnscored property.
+     * Sets the num submitted unscored.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new num submitted unscored
      */
     public void setNumSubmittedUnscored(Long value) {
         this.numSubmittedUnscored = value;
     }
 
     /**
-     * Gets the value of the submittedTest property.
+     * Gets the submitted test.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the submittedTest property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getSubmittedTest().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link SubmittedTestType }
-     * 
-     * 
+     * @return the submitted test
      */
     public List<SubmittedTestType> getSubmittedTest() {
         if (submittedTest == null) {
@@ -359,24 +285,18 @@ public class GetTestInformationResponse
     }
 
     /**
-     * Gets the value of the maxScore property.
+     * Gets the max score.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the max score
      */
     public Long getMaxScore() {
         return maxScore;
     }
 
     /**
-     * Sets the value of the maxScore property.
+     * Sets the max score.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new max score
      */
     public void setMaxScore(Long value) {
         this.maxScore = value;

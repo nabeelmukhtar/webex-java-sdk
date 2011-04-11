@@ -19,20 +19,14 @@ package com.google.code.webex.service;
 import com.google.code.webex.service.constant.TestConstants;
 
 /**
- * The Class UClassifyJaxbClientTest.
- * 
- * @author Nabeel Mukhtar
+ * The Class WebExJaxbServiceTest.
  */
 public class WebExJaxbServiceTest extends WebExServiceTest {
 	
 	/** The client. */
 	private WebExService client;
 	
-	/**
-	 * Sets the up.
-	 * 
-	 * @throws Exception the exception
-	 * 
+	/* (non-Javadoc)
 	 * @see com.google.code.webex.service.WebExServiceTest#setUp()
 	 */
 	public void setUp() throws Exception {
@@ -40,11 +34,7 @@ public class WebExJaxbServiceTest extends WebExServiceTest {
 //		client = factory.createUClassifyClient(WebExJaxbService.class);
 	}
 
-	/**
-	 * Tear down.
-	 * 
-	 * @throws Exception the exception
-	 * 
+	/* (non-Javadoc)
 	 * @see com.google.code.webex.service.WebExServiceTest#tearDown()
 	 */
 	public void tearDown() throws Exception {

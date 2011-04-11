@@ -24,26 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for customFieldsType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="customFieldsType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="textBox" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}textboxType" minOccurs="0"/>
- *         &lt;element name="checkBoxGroup" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}checkboxGroupType" minOccurs="0"/>
- *         &lt;element name="optionButtonGroup" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}choiceGroupType" minOccurs="0"/>
- *         &lt;element name="dropDownGroup" type="{http://www.webex.com/schemas/2002/06/service/trainingsession}choiceGroupType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class CustomFieldsType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "customFieldsType", propOrder = {
@@ -56,103 +37,88 @@ public class CustomFieldsType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The text box. */
     protected TextboxType textBox;
+    
+    /** The check box group. */
     protected CheckboxGroupType checkBoxGroup;
+    
+    /** The option button group. */
     protected ChoiceGroupType optionButtonGroup;
+    
+    /** The drop down group. */
     protected ChoiceGroupType dropDownGroup;
 
     /**
-     * Gets the value of the textBox property.
+     * Gets the text box.
      * 
-     * @return
-     *     possible object is
-     *     {@link TextboxType }
-     *     
+     * @return the text box
      */
     public TextboxType getTextBox() {
         return textBox;
     }
 
     /**
-     * Sets the value of the textBox property.
+     * Sets the text box.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link TextboxType }
-     *     
+     * @param value the new text box
      */
     public void setTextBox(TextboxType value) {
         this.textBox = value;
     }
 
     /**
-     * Gets the value of the checkBoxGroup property.
+     * Gets the check box group.
      * 
-     * @return
-     *     possible object is
-     *     {@link CheckboxGroupType }
-     *     
+     * @return the check box group
      */
     public CheckboxGroupType getCheckBoxGroup() {
         return checkBoxGroup;
     }
 
     /**
-     * Sets the value of the checkBoxGroup property.
+     * Sets the check box group.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link CheckboxGroupType }
-     *     
+     * @param value the new check box group
      */
     public void setCheckBoxGroup(CheckboxGroupType value) {
         this.checkBoxGroup = value;
     }
 
     /**
-     * Gets the value of the optionButtonGroup property.
+     * Gets the option button group.
      * 
-     * @return
-     *     possible object is
-     *     {@link ChoiceGroupType }
-     *     
+     * @return the option button group
      */
     public ChoiceGroupType getOptionButtonGroup() {
         return optionButtonGroup;
     }
 
     /**
-     * Sets the value of the optionButtonGroup property.
+     * Sets the option button group.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ChoiceGroupType }
-     *     
+     * @param value the new option button group
      */
     public void setOptionButtonGroup(ChoiceGroupType value) {
         this.optionButtonGroup = value;
     }
 
     /**
-     * Gets the value of the dropDownGroup property.
+     * Gets the drop down group.
      * 
-     * @return
-     *     possible object is
-     *     {@link ChoiceGroupType }
-     *     
+     * @return the drop down group
      */
     public ChoiceGroupType getDropDownGroup() {
         return dropDownGroup;
     }
 
     /**
-     * Sets the value of the dropDownGroup property.
+     * Sets the drop down group.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ChoiceGroupType }
-     *     
+     * @param value the new drop down group
      */
     public void setDropDownGroup(ChoiceGroupType value) {
         this.dropDownGroup = value;

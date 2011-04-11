@@ -28,25 +28,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for matchingRecordsType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="matchingRecordsType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="total" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="returned" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="startFrom" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class MatchingRecordsType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "matchingRecordsType", propOrder = {
@@ -58,87 +40,76 @@ public class MatchingRecordsType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The total. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long total;
+    
+    /** The returned. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long returned;
+    
+    /** The start from. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long startFrom;
 
     /**
-     * Gets the value of the total property.
+     * Gets the total.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the total
      */
     public Long getTotal() {
         return total;
     }
 
     /**
-     * Sets the value of the total property.
+     * Sets the total.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new total
      */
     public void setTotal(Long value) {
         this.total = value;
     }
 
     /**
-     * Gets the value of the returned property.
+     * Gets the returned.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the returned
      */
     public Long getReturned() {
         return returned;
     }
 
     /**
-     * Sets the value of the returned property.
+     * Sets the returned.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new returned
      */
     public void setReturned(Long value) {
         this.returned = value;
     }
 
     /**
-     * Gets the value of the startFrom property.
+     * Gets the start from.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the start from
      */
     public Long getStartFrom() {
         return startFrom;
     }
 
     /**
-     * Sets the value of the startFrom property.
+     * Sets the start from.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new start from
      */
     public void setStartFrom(Long value) {
         this.startFrom = value;

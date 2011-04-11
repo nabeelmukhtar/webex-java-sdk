@@ -27,26 +27,7 @@ import com.webex.schemas._2002._06.service.MatchingRecordsType;
 
 
 /**
- * <p>Java class for enrollSessionType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="enrollSessionType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="confID" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="attendee" type="{http://www.webex.com/schemas/2002/06/service/attendee}enrollAttendeeType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="matchingRecords" type="{http://www.webex.com/schemas/2002/06/service}matchingRecordsType" minOccurs="0"/>
- *         &lt;element name="sessionKey" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class EnrollSessionType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "enrollSessionType", propOrder = {
@@ -59,49 +40,43 @@ public class EnrollSessionType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The conf id. */
     protected long confID;
+    
+    /** The attendee. */
     protected List<EnrollAttendeeType> attendee;
+    
+    /** The matching records. */
     protected MatchingRecordsType matchingRecords;
+    
+    /** The session key. */
     protected long sessionKey;
 
     /**
-     * Gets the value of the confID property.
+     * Gets the conf id.
      * 
+     * @return the conf id
      */
     public long getConfID() {
         return confID;
     }
 
     /**
-     * Sets the value of the confID property.
+     * Sets the conf id.
      * 
+     * @param value the new conf id
      */
     public void setConfID(long value) {
         this.confID = value;
     }
 
     /**
-     * Gets the value of the attendee property.
+     * Gets the attendee.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the attendee property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getAttendee().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link EnrollAttendeeType }
-     * 
-     * 
+     * @return the attendee
      */
     public List<EnrollAttendeeType> getAttendee() {
         if (attendee == null) {
@@ -111,40 +86,36 @@ public class EnrollSessionType
     }
 
     /**
-     * Gets the value of the matchingRecords property.
+     * Gets the matching records.
      * 
-     * @return
-     *     possible object is
-     *     {@link MatchingRecordsType }
-     *     
+     * @return the matching records
      */
     public MatchingRecordsType getMatchingRecords() {
         return matchingRecords;
     }
 
     /**
-     * Sets the value of the matchingRecords property.
+     * Sets the matching records.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link MatchingRecordsType }
-     *     
+     * @param value the new matching records
      */
     public void setMatchingRecords(MatchingRecordsType value) {
         this.matchingRecords = value;
     }
 
     /**
-     * Gets the value of the sessionKey property.
+     * Gets the session key.
      * 
+     * @return the session key
      */
     public long getSessionKey() {
         return sessionKey;
     }
 
     /**
-     * Sets the value of the sessionKey property.
+     * Sets the session key.
      * 
+     * @param value the new session key
      */
     public void setSessionKey(long value) {
         this.sessionKey = value;

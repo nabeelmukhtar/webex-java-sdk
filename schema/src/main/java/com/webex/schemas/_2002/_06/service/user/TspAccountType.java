@@ -24,36 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for tspAccountType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="tspAccountType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="tollFreeCallInNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="accountIndex" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="tollCallInNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="subscriberAccessCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="participantAccessCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="createOnBridge" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="defaultFlag" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="custom1" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="custom2" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="custom3" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="tollFreeCallInData" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="tollCallInData" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="nbrDialOut" type="{http://www.webex.com/schemas/2002/06/service/user}nbrDialOutType" minOccurs="0"/>
- *         &lt;element name="delete" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class TspAccountType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "tspAccountType", propOrder = {
@@ -76,353 +47,298 @@ public class TspAccountType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The toll free call in number. */
     protected String tollFreeCallInNumber;
+    
+    /** The account index. */
     protected Integer accountIndex;
+    
+    /** The toll call in number. */
     protected String tollCallInNumber;
+    
+    /** The subscriber access code. */
     protected String subscriberAccessCode;
+    
+    /** The participant access code. */
     protected String participantAccessCode;
+    
+    /** The create on bridge. */
     protected Boolean createOnBridge;
+    
+    /** The default flag. */
     protected Boolean defaultFlag;
+    
+    /** The custom1. */
     protected String custom1;
+    
+    /** The custom2. */
     protected String custom2;
+    
+    /** The custom3. */
     protected String custom3;
+    
+    /** The toll free call in data. */
     protected String tollFreeCallInData;
+    
+    /** The toll call in data. */
     protected String tollCallInData;
+    
+    /** The nbr dial out. */
     protected NbrDialOutType nbrDialOut;
+    
+    /** The delete. */
     protected Boolean delete;
 
     /**
-     * Gets the value of the tollFreeCallInNumber property.
+     * Gets the toll free call in number.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the toll free call in number
      */
     public String getTollFreeCallInNumber() {
         return tollFreeCallInNumber;
     }
 
     /**
-     * Sets the value of the tollFreeCallInNumber property.
+     * Sets the toll free call in number.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new toll free call in number
      */
     public void setTollFreeCallInNumber(String value) {
         this.tollFreeCallInNumber = value;
     }
 
     /**
-     * Gets the value of the accountIndex property.
+     * Gets the account index.
      * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     * @return the account index
      */
     public Integer getAccountIndex() {
         return accountIndex;
     }
 
     /**
-     * Sets the value of the accountIndex property.
+     * Sets the account index.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     * @param value the new account index
      */
     public void setAccountIndex(Integer value) {
         this.accountIndex = value;
     }
 
     /**
-     * Gets the value of the tollCallInNumber property.
+     * Gets the toll call in number.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the toll call in number
      */
     public String getTollCallInNumber() {
         return tollCallInNumber;
     }
 
     /**
-     * Sets the value of the tollCallInNumber property.
+     * Sets the toll call in number.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new toll call in number
      */
     public void setTollCallInNumber(String value) {
         this.tollCallInNumber = value;
     }
 
     /**
-     * Gets the value of the subscriberAccessCode property.
+     * Gets the subscriber access code.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the subscriber access code
      */
     public String getSubscriberAccessCode() {
         return subscriberAccessCode;
     }
 
     /**
-     * Sets the value of the subscriberAccessCode property.
+     * Sets the subscriber access code.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new subscriber access code
      */
     public void setSubscriberAccessCode(String value) {
         this.subscriberAccessCode = value;
     }
 
     /**
-     * Gets the value of the participantAccessCode property.
+     * Gets the participant access code.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the participant access code
      */
     public String getParticipantAccessCode() {
         return participantAccessCode;
     }
 
     /**
-     * Sets the value of the participantAccessCode property.
+     * Sets the participant access code.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new participant access code
      */
     public void setParticipantAccessCode(String value) {
         this.participantAccessCode = value;
     }
 
     /**
-     * Gets the value of the createOnBridge property.
+     * Checks if is create on bridge.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isCreateOnBridge() {
         return createOnBridge;
     }
 
     /**
-     * Sets the value of the createOnBridge property.
+     * Sets the creates the on bridge.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new creates the on bridge
      */
     public void setCreateOnBridge(Boolean value) {
         this.createOnBridge = value;
     }
 
     /**
-     * Gets the value of the defaultFlag property.
+     * Checks if is default flag.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isDefaultFlag() {
         return defaultFlag;
     }
 
     /**
-     * Sets the value of the defaultFlag property.
+     * Sets the default flag.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new default flag
      */
     public void setDefaultFlag(Boolean value) {
         this.defaultFlag = value;
     }
 
     /**
-     * Gets the value of the custom1 property.
+     * Gets the custom1.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the custom1
      */
     public String getCustom1() {
         return custom1;
     }
 
     /**
-     * Sets the value of the custom1 property.
+     * Sets the custom1.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new custom1
      */
     public void setCustom1(String value) {
         this.custom1 = value;
     }
 
     /**
-     * Gets the value of the custom2 property.
+     * Gets the custom2.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the custom2
      */
     public String getCustom2() {
         return custom2;
     }
 
     /**
-     * Sets the value of the custom2 property.
+     * Sets the custom2.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new custom2
      */
     public void setCustom2(String value) {
         this.custom2 = value;
     }
 
     /**
-     * Gets the value of the custom3 property.
+     * Gets the custom3.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the custom3
      */
     public String getCustom3() {
         return custom3;
     }
 
     /**
-     * Sets the value of the custom3 property.
+     * Sets the custom3.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new custom3
      */
     public void setCustom3(String value) {
         this.custom3 = value;
     }
 
     /**
-     * Gets the value of the tollFreeCallInData property.
+     * Gets the toll free call in data.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the toll free call in data
      */
     public String getTollFreeCallInData() {
         return tollFreeCallInData;
     }
 
     /**
-     * Sets the value of the tollFreeCallInData property.
+     * Sets the toll free call in data.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new toll free call in data
      */
     public void setTollFreeCallInData(String value) {
         this.tollFreeCallInData = value;
     }
 
     /**
-     * Gets the value of the tollCallInData property.
+     * Gets the toll call in data.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the toll call in data
      */
     public String getTollCallInData() {
         return tollCallInData;
     }
 
     /**
-     * Sets the value of the tollCallInData property.
+     * Sets the toll call in data.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new toll call in data
      */
     public void setTollCallInData(String value) {
         this.tollCallInData = value;
     }
 
     /**
-     * Gets the value of the nbrDialOut property.
+     * Gets the nbr dial out.
      * 
-     * @return
-     *     possible object is
-     *     {@link NbrDialOutType }
-     *     
+     * @return the nbr dial out
      */
     public NbrDialOutType getNbrDialOut() {
         return nbrDialOut;
     }
 
     /**
-     * Sets the value of the nbrDialOut property.
+     * Sets the nbr dial out.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link NbrDialOutType }
-     *     
+     * @param value the new nbr dial out
      */
     public void setNbrDialOut(NbrDialOutType value) {
         this.nbrDialOut = value;
     }
 
     /**
-     * Gets the value of the delete property.
+     * Checks if is delete.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isDelete() {
         return delete;
     }
 
     /**
-     * Sets the value of the delete property.
+     * Sets the delete.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new delete
      */
     public void setDelete(Boolean value) {
         this.delete = value;

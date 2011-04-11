@@ -26,24 +26,7 @@ import javax.xml.bind.annotation.XmlValue;
 
 
 /**
- * <p>Java class for mataudioType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="mataudioType">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
- *       &lt;attribute name="audiotype" type="{http://www.w3.org/2001/XMLSchema}string" default="audio/base" />
- *       &lt;attribute name="label" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="uri" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="embedded" type="{http://www.w3.org/2001/XMLSchema}string" default="base64" />
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class MataudioType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "mataudioType", propOrder = {
@@ -52,49 +35,51 @@ import javax.xml.bind.annotation.XmlValue;
 public class MataudioType implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The value. */
     @XmlValue
     protected String value;
+    
+    /** The audiotype. */
     @XmlAttribute
     protected String audiotype;
+    
+    /** The label. */
     @XmlAttribute
     protected String label;
+    
+    /** The uri. */
     @XmlAttribute
     protected String uri;
+    
+    /** The embedded. */
     @XmlAttribute
     protected String embedded;
 
     /**
-     * Gets the value of the value property.
+     * Gets the value.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the value
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value of the value property.
+     * Sets the value.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new value
      */
     public void setValue(String value) {
         this.value = value;
     }
 
     /**
-     * Gets the value of the audiotype property.
+     * Gets the audiotype.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the audiotype
      */
     public String getAudiotype() {
         if (audiotype == null) {
@@ -105,72 +90,54 @@ public class MataudioType implements Serializable
     }
 
     /**
-     * Sets the value of the audiotype property.
+     * Sets the audiotype.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new audiotype
      */
     public void setAudiotype(String value) {
         this.audiotype = value;
     }
 
     /**
-     * Gets the value of the label property.
+     * Gets the label.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the label
      */
     public String getLabel() {
         return label;
     }
 
     /**
-     * Sets the value of the label property.
+     * Sets the label.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new label
      */
     public void setLabel(String value) {
         this.label = value;
     }
 
     /**
-     * Gets the value of the uri property.
+     * Gets the uri.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the uri
      */
     public String getUri() {
         return uri;
     }
 
     /**
-     * Sets the value of the uri property.
+     * Sets the uri.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new uri
      */
     public void setUri(String value) {
         this.uri = value;
     }
 
     /**
-     * Gets the value of the embedded property.
+     * Gets the embedded.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the embedded
      */
     public String getEmbedded() {
         if (embedded == null) {
@@ -181,12 +148,9 @@ public class MataudioType implements Serializable
     }
 
     /**
-     * Sets the value of the embedded property.
+     * Sets the embedded.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new embedded
      */
     public void setEmbedded(String value) {
         this.embedded = value;

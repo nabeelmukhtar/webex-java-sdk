@@ -19,9 +19,7 @@ package com.google.code.webex.service;
 import java.util.Map;
 
 /**
- * The Interface LinkedInCommunicationClient.
- * 
- * @author Nabeel Mukhtar
+ * The Interface WebExCommunicationClient.
  */
 public interface WebExCommunicationClient {
 	
@@ -32,10 +30,13 @@ public interface WebExCommunicationClient {
 		
 		/** The GET. */
 		GET, 
+ 
  /** The POST. */
  POST, 
+ 
  /** The PUT. */
  PUT, 
+ 
  /** The DELETE. */
  DELETE;
 	}

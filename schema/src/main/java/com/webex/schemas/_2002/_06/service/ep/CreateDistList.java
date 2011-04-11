@@ -28,23 +28,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for createDistList complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="createDistList">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="distList" type="{http://www.webex.com/schemas/2002/06/service/ep}distListWithContactType"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class CreateDistList.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "createDistList", propOrder = {
@@ -55,29 +39,26 @@ public class CreateDistList
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The dist list. */
     @XmlElement(required = true)
     protected DistListWithContactType distList;
 
     /**
-     * Gets the value of the distList property.
+     * Gets the dist list.
      * 
-     * @return
-     *     possible object is
-     *     {@link DistListWithContactType }
-     *     
+     * @return the dist list
      */
     public DistListWithContactType getDistList() {
         return distList;
     }
 
     /**
-     * Sets the value of the distList property.
+     * Sets the dist list.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link DistListWithContactType }
-     *     
+     * @param value the new dist list
      */
     public void setDistList(DistListWithContactType value) {
         this.distList = value;

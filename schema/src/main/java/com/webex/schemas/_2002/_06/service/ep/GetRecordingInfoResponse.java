@@ -25,45 +25,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for getRecordingInfoResponse complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="getRecordingInfoResponse">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="basic" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;extension base="{http://www.webex.com/schemas/2002/06/service/ep}recordingBasicType">
- *                 &lt;sequence>
- *                   &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/extension>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="playback" type="{http://www.webex.com/schemas/2002/06/service/ep}recordingPlaybackType" minOccurs="0"/>
- *         &lt;element name="fileAccess" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;extension base="{http://www.webex.com/schemas/2002/06/service/ep}recordingFileAccessType">
- *                 &lt;sequence>
- *                   &lt;element name="password" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/extension>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class GetRecordingInfoResponse.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getRecordingInfoResponse", propOrder = {
@@ -76,78 +38,67 @@ public class GetRecordingInfoResponse
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The basic. */
     protected GetRecordingInfoResponse.Basic basic;
+    
+    /** The playback. */
     protected RecordingPlaybackType playback;
+    
+    /** The file access. */
     protected GetRecordingInfoResponse.FileAccess fileAccess;
 
     /**
-     * Gets the value of the basic property.
+     * Gets the basic.
      * 
-     * @return
-     *     possible object is
-     *     {@link GetRecordingInfoResponse.Basic }
-     *     
+     * @return the basic
      */
     public GetRecordingInfoResponse.Basic getBasic() {
         return basic;
     }
 
     /**
-     * Sets the value of the basic property.
+     * Sets the basic.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link GetRecordingInfoResponse.Basic }
-     *     
+     * @param value the new basic
      */
     public void setBasic(GetRecordingInfoResponse.Basic value) {
         this.basic = value;
     }
 
     /**
-     * Gets the value of the playback property.
+     * Gets the playback.
      * 
-     * @return
-     *     possible object is
-     *     {@link RecordingPlaybackType }
-     *     
+     * @return the playback
      */
     public RecordingPlaybackType getPlayback() {
         return playback;
     }
 
     /**
-     * Sets the value of the playback property.
+     * Sets the playback.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link RecordingPlaybackType }
-     *     
+     * @param value the new playback
      */
     public void setPlayback(RecordingPlaybackType value) {
         this.playback = value;
     }
 
     /**
-     * Gets the value of the fileAccess property.
+     * Gets the file access.
      * 
-     * @return
-     *     possible object is
-     *     {@link GetRecordingInfoResponse.FileAccess }
-     *     
+     * @return the file access
      */
     public GetRecordingInfoResponse.FileAccess getFileAccess() {
         return fileAccess;
     }
 
     /**
-     * Sets the value of the fileAccess property.
+     * Sets the file access.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link GetRecordingInfoResponse.FileAccess }
-     *     
+     * @param value the new file access
      */
     public void setFileAccess(GetRecordingInfoResponse.FileAccess value) {
         this.fileAccess = value;
@@ -155,23 +106,7 @@ public class GetRecordingInfoResponse
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/ep}recordingBasicType">
-     *       &lt;sequence>
-     *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/extension>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class Basic.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -182,28 +117,25 @@ public class GetRecordingInfoResponse
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The description. */
         protected String description;
 
         /**
-         * Gets the value of the description property.
+         * Gets the description.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the description
          */
         public String getDescription() {
             return description;
         }
 
         /**
-         * Sets the value of the description property.
+         * Sets the description.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new description
          */
         public void setDescription(String value) {
             this.description = value;
@@ -213,23 +145,7 @@ public class GetRecordingInfoResponse
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/ep}recordingFileAccessType">
-     *       &lt;sequence>
-     *         &lt;element name="password" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/extension>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class FileAccess.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -240,28 +156,25 @@ public class GetRecordingInfoResponse
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The password. */
         protected String password;
 
         /**
-         * Gets the value of the password property.
+         * Gets the password.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the password
          */
         public String getPassword() {
             return password;
         }
 
         /**
-         * Sets the value of the password property.
+         * Sets the password.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new password
          */
         public void setPassword(String value) {
             this.password = value;

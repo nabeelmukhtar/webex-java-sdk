@@ -24,23 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for choiceGroupInstanceType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="choiceGroupInstanceType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/trainingsession}choiceGroupType">
- *       &lt;sequence>
- *         &lt;element name="fieldID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ChoiceGroupInstanceType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "choiceGroupInstanceType", propOrder = {
@@ -51,28 +35,25 @@ public class ChoiceGroupInstanceType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The field id. */
     protected Long fieldID;
 
     /**
-     * Gets the value of the fieldID property.
+     * Gets the field id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the field id
      */
     public Long getFieldID() {
         return fieldID;
     }
 
     /**
-     * Sets the value of the fieldID property.
+     * Sets the field id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new field id
      */
     public void setFieldID(Long value) {
         this.fieldID = value;

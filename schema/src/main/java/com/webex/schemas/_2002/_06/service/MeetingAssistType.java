@@ -24,24 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for meetingAssistType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="meetingAssistType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="assistRequest" type="{http://www.webex.com/schemas/2002/06/service}assistRequestType" minOccurs="0"/>
- *         &lt;element name="assistConfirm" type="{http://www.webex.com/schemas/2002/06/service}assistConfirmedType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class MeetingAssistType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "meetingAssistType", propOrder = {
@@ -52,53 +35,46 @@ public class MeetingAssistType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The assist request. */
     protected AssistRequestType assistRequest;
+    
+    /** The assist confirm. */
     protected AssistConfirmedType assistConfirm;
 
     /**
-     * Gets the value of the assistRequest property.
+     * Gets the assist request.
      * 
-     * @return
-     *     possible object is
-     *     {@link AssistRequestType }
-     *     
+     * @return the assist request
      */
     public AssistRequestType getAssistRequest() {
         return assistRequest;
     }
 
     /**
-     * Sets the value of the assistRequest property.
+     * Sets the assist request.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link AssistRequestType }
-     *     
+     * @param value the new assist request
      */
     public void setAssistRequest(AssistRequestType value) {
         this.assistRequest = value;
     }
 
     /**
-     * Gets the value of the assistConfirm property.
+     * Gets the assist confirm.
      * 
-     * @return
-     *     possible object is
-     *     {@link AssistConfirmedType }
-     *     
+     * @return the assist confirm
      */
     public AssistConfirmedType getAssistConfirm() {
         return assistConfirm;
     }
 
     /**
-     * Sets the value of the assistConfirm property.
+     * Sets the assist confirm.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link AssistConfirmedType }
-     *     
+     * @param value the new assist confirm
      */
     public void setAssistConfirm(AssistConfirmedType value) {
         this.assistConfirm = value;

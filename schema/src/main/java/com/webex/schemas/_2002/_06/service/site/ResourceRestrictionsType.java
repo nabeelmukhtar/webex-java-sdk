@@ -24,27 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for resourceRestrictionsType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="resourceRestrictionsType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="isLicenseManager" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="concurrentLicense" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="fileFolderCapacity" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="maxConcurrentEvents" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="archiveStorageLimit" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ResourceRestrictionsType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "resourceRestrictionsType", propOrder = {
@@ -58,120 +38,109 @@ public class ResourceRestrictionsType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The is license manager. */
     protected boolean isLicenseManager;
+    
+    /** The concurrent license. */
     protected Long concurrentLicense;
+    
+    /** The file folder capacity. */
     protected Long fileFolderCapacity;
+    
+    /** The max concurrent events. */
     protected Long maxConcurrentEvents;
+    
+    /** The archive storage limit. */
     protected Long archiveStorageLimit;
 
     /**
-     * Gets the value of the isLicenseManager property.
+     * Checks if is checks if is license manager.
      * 
+     * @return true, if is checks if is license manager
      */
     public boolean isIsLicenseManager() {
         return isLicenseManager;
     }
 
     /**
-     * Sets the value of the isLicenseManager property.
+     * Sets the checks if is license manager.
      * 
+     * @param value the new checks if is license manager
      */
     public void setIsLicenseManager(boolean value) {
         this.isLicenseManager = value;
     }
 
     /**
-     * Gets the value of the concurrentLicense property.
+     * Gets the concurrent license.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the concurrent license
      */
     public Long getConcurrentLicense() {
         return concurrentLicense;
     }
 
     /**
-     * Sets the value of the concurrentLicense property.
+     * Sets the concurrent license.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new concurrent license
      */
     public void setConcurrentLicense(Long value) {
         this.concurrentLicense = value;
     }
 
     /**
-     * Gets the value of the fileFolderCapacity property.
+     * Gets the file folder capacity.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the file folder capacity
      */
     public Long getFileFolderCapacity() {
         return fileFolderCapacity;
     }
 
     /**
-     * Sets the value of the fileFolderCapacity property.
+     * Sets the file folder capacity.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new file folder capacity
      */
     public void setFileFolderCapacity(Long value) {
         this.fileFolderCapacity = value;
     }
 
     /**
-     * Gets the value of the maxConcurrentEvents property.
+     * Gets the max concurrent events.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the max concurrent events
      */
     public Long getMaxConcurrentEvents() {
         return maxConcurrentEvents;
     }
 
     /**
-     * Sets the value of the maxConcurrentEvents property.
+     * Sets the max concurrent events.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new max concurrent events
      */
     public void setMaxConcurrentEvents(Long value) {
         this.maxConcurrentEvents = value;
     }
 
     /**
-     * Gets the value of the archiveStorageLimit property.
+     * Gets the archive storage limit.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the archive storage limit
      */
     public Long getArchiveStorageLimit() {
         return archiveStorageLimit;
     }
 
     /**
-     * Sets the value of the archiveStorageLimit property.
+     * Sets the archive storage limit.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new archive storage limit
      */
     public void setArchiveStorageLimit(Long value) {
         this.archiveStorageLimit = value;

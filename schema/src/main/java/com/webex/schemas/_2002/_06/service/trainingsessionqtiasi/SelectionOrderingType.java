@@ -28,27 +28,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for selection_orderingType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="selection_orderingType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="qticomment" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}qticommentType" minOccurs="0"/>
- *         &lt;element name="sequence_parameter" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}sequence_parameterType" minOccurs="0"/>
- *         &lt;element name="selection" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}selectionType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="order" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}orderType" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute name="sequence_type" type="{http://www.w3.org/2001/XMLSchema}string" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SelectionOrderingType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "selection_orderingType", propOrder = {
@@ -61,84 +41,66 @@ public class SelectionOrderingType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The qticomment. */
     protected QticommentType qticomment;
+    
+    /** The sequence parameter. */
     @XmlElement(name = "sequence_parameter")
     protected SequenceParameterType sequenceParameter;
+    
+    /** The selection. */
     protected List<SelectionType> selection;
+    
+    /** The order. */
     protected OrderType order;
+    
+    /** The sequence type. */
     @XmlAttribute(name = "sequence_type")
     protected String sequenceType;
 
     /**
-     * Gets the value of the qticomment property.
+     * Gets the qticomment.
      * 
-     * @return
-     *     possible object is
-     *     {@link QticommentType }
-     *     
+     * @return the qticomment
      */
     public QticommentType getQticomment() {
         return qticomment;
     }
 
     /**
-     * Sets the value of the qticomment property.
+     * Sets the qticomment.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link QticommentType }
-     *     
+     * @param value the new qticomment
      */
     public void setQticomment(QticommentType value) {
         this.qticomment = value;
     }
 
     /**
-     * Gets the value of the sequenceParameter property.
+     * Gets the sequence parameter.
      * 
-     * @return
-     *     possible object is
-     *     {@link SequenceParameterType }
-     *     
+     * @return the sequence parameter
      */
     public SequenceParameterType getSequenceParameter() {
         return sequenceParameter;
     }
 
     /**
-     * Sets the value of the sequenceParameter property.
+     * Sets the sequence parameter.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link SequenceParameterType }
-     *     
+     * @param value the new sequence parameter
      */
     public void setSequenceParameter(SequenceParameterType value) {
         this.sequenceParameter = value;
     }
 
     /**
-     * Gets the value of the selection property.
+     * Gets the selection.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the selection property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getSelection().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link SelectionType }
-     * 
-     * 
+     * @return the selection
      */
     public List<SelectionType> getSelection() {
         if (selection == null) {
@@ -148,48 +110,36 @@ public class SelectionOrderingType
     }
 
     /**
-     * Gets the value of the order property.
+     * Gets the order.
      * 
-     * @return
-     *     possible object is
-     *     {@link OrderType }
-     *     
+     * @return the order
      */
     public OrderType getOrder() {
         return order;
     }
 
     /**
-     * Sets the value of the order property.
+     * Sets the order.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link OrderType }
-     *     
+     * @param value the new order
      */
     public void setOrder(OrderType value) {
         this.order = value;
     }
 
     /**
-     * Gets the value of the sequenceType property.
+     * Gets the sequence type.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the sequence type
      */
     public String getSequenceType() {
         return sequenceType;
     }
 
     /**
-     * Sets the value of the sequenceType property.
+     * Sets the sequence type.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new sequence type
      */
     public void setSequenceType(String value) {
         this.sequenceType = value;

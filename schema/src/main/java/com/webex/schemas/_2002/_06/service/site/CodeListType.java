@@ -28,25 +28,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for codeListType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="codeListType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="index" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="value" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="active" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class CodeListType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "codeListType", propOrder = {
@@ -58,74 +40,71 @@ public class CodeListType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The index. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long index;
+    
+    /** The value. */
     @XmlElement(required = true)
     protected String value;
+    
+    /** The active. */
     protected boolean active;
 
     /**
-     * Gets the value of the index property.
+     * Gets the index.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the index
      */
     public Long getIndex() {
         return index;
     }
 
     /**
-     * Sets the value of the index property.
+     * Sets the index.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new index
      */
     public void setIndex(Long value) {
         this.index = value;
     }
 
     /**
-     * Gets the value of the value property.
+     * Gets the value.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the value
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * Sets the value of the value property.
+     * Sets the value.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new value
      */
     public void setValue(String value) {
         this.value = value;
     }
 
     /**
-     * Gets the value of the active property.
+     * Checks if is active.
      * 
+     * @return true, if is active
      */
     public boolean isActive() {
         return active;
     }
 
     /**
-     * Sets the value of the active property.
+     * Sets the active.
      * 
+     * @param value the new active
      */
     public void setActive(boolean value) {
         this.active = value;

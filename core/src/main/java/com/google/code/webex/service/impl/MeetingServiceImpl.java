@@ -51,14 +51,29 @@ import com.webex.schemas._2002._06.service.meeting.auo.GetTeleconferenceSession;
 import com.webex.schemas._2002._06.service.meeting.auo.GetTeleconferenceSessionResponse;
 import com.webex.schemas._2002._06.service.meeting.auo.SetTeleconferenceSession;
 
+/**
+ * The Class MeetingServiceImpl.
+ */
 public class MeetingServiceImpl extends WebExJaxbService implements
 	MeetingService {
 
+	/**
+	 * Instantiates a new meeting service impl.
+	 * 
+	 * @param webExId the web ex id
+	 * @param password the password
+	 * @param siteId the site id
+	 * @param siteName the site name
+	 * @param partnerId the partner id
+	 */
 	public MeetingServiceImpl(String webExId, String password,
 			Long siteId, String siteName, String partnerId) {
 		super(webExId, password, siteId, siteName, partnerId);
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.MeetingService#getMeetingSummaries()
+	 */
 	@Override
 	public List<MeetingSummaryInstanceType> getMeetingSummaries() {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -81,6 +96,9 @@ public class MeetingServiceImpl extends WebExJaxbService implements
 		return new ArrayList<MeetingSummaryInstanceType>();
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.MeetingService#createMeeting(com.webex.schemas._2002._06.service.meeting.CreateMeeting)
+	 */
 	@Override
 	public CreateMeetingResponse createMeeting(CreateMeeting meeting) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -94,6 +112,9 @@ public class MeetingServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.MeetingService#createTeleconferenceSession(com.webex.schemas._2002._06.service.meeting.auo.CreateTeleconferenceSession)
+	 */
 	@Override
 	public Long createTeleconferenceSession(
 			CreateTeleconferenceSession teleconference) {
@@ -108,6 +129,9 @@ public class MeetingServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.MeetingService#deleteMeeting(long)
+	 */
 	@Override
 	public ICalendarURLType deleteMeeting(long meetingKey) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -124,6 +148,9 @@ public class MeetingServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.MeetingService#getMeetingHostUrl(java.lang.Long, java.lang.Long)
+	 */
 	@Override
 	public String getMeetingHostUrl(Long meetingKey, Long sessionKey) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -141,6 +168,9 @@ public class MeetingServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.MeetingService#getMeetingJoinUrl(java.lang.Long, java.lang.Long, java.lang.String, java.lang.String, java.lang.String, java.lang.String)
+	 */
 	@Override
 	public GetjoinurlMeetingResponse getMeetingJoinUrl(Long meetingKey,
 			Long sessionKey, String attendeeName, String attendeeEmail,
@@ -164,6 +194,9 @@ public class MeetingServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.MeetingService#getMeeting(java.lang.Long)
+	 */
 	@Override
 	public GetMeetingResponse getMeeting(Long meetingKey) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -180,6 +213,9 @@ public class MeetingServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.MeetingService#getTeleconferenceSession(java.lang.Long)
+	 */
 	@Override
 	public GetTeleconferenceSessionResponse getTeleconferenceSession(
 			Long sessionKey) {
@@ -197,6 +233,9 @@ public class MeetingServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.MeetingService#setMeeting(com.webex.schemas._2002._06.service.meeting.SetMeeting)
+	 */
 	@Override
 	public ICalendarURLType setMeeting(SetMeeting setMeeting) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);
@@ -210,6 +249,9 @@ public class MeetingServiceImpl extends WebExJaxbService implements
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.google.code.webex.service.MeetingService#setTeleconferenceSession(com.webex.schemas._2002._06.service.meeting.auo.SetTeleconferenceSession)
+	 */
 	@Override
 	public void setTeleconferenceSession(SetTeleconferenceSession setSession) {
 		WebExUrlBuilder builder = createWebExUrlBuilder(WebExUrls.API_URL);

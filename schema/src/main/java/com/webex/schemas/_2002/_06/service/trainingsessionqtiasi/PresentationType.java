@@ -25,23 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for presentationType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="presentationType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="flow" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}flowType"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class PresentationType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "presentationType", propOrder = {
@@ -51,29 +35,26 @@ public class PresentationType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The flow. */
     @XmlElement(required = true)
     protected FlowType flow;
 
     /**
-     * Gets the value of the flow property.
+     * Gets the flow.
      * 
-     * @return
-     *     possible object is
-     *     {@link FlowType }
-     *     
+     * @return the flow
      */
     public FlowType getFlow() {
         return flow;
     }
 
     /**
-     * Sets the value of the flow property.
+     * Sets the flow.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link FlowType }
-     *     
+     * @param value the new flow
      */
     public void setFlow(FlowType value) {
         this.flow = value;

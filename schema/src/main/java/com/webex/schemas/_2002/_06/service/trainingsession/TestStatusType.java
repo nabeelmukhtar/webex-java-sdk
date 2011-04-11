@@ -22,33 +22,37 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for testStatusType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="testStatusType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="NOT_STARTED"/>
- *     &lt;enumeration value="STARTED"/>
- *     &lt;enumeration value="ENDED"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum TestStatusType.
  */
 @XmlType(name = "testStatusType")
 @XmlEnum
 public enum TestStatusType {
 
+    /** The NO t_ started. */
     NOT_STARTED,
+    
+    /** The STARTED. */
     STARTED,
+    
+    /** The ENDED. */
     ENDED;
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return name();
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the test status type
+     */
     public static TestStatusType fromValue(String v) {
         return valueOf(v);
     }

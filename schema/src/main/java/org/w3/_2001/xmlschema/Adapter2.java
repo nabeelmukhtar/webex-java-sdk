@@ -19,15 +19,24 @@ package org.w3._2001.xmlschema;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
+/**
+ * The Class Adapter2.
+ */
 public class Adapter2
     extends XmlAdapter<String, Double>
 {
 
 
+    /* (non-Javadoc)
+     * @see javax.xml.bind.annotation.adapters.XmlAdapter#unmarshal(java.lang.Object)
+     */
     public Double unmarshal(String value) {
         return ((double)javax.xml.bind.DatatypeConverter.parseDouble(value));
     }
 
+    /* (non-Javadoc)
+     * @see javax.xml.bind.annotation.adapters.XmlAdapter#marshal(java.lang.Object)
+     */
     public String marshal(Double value) {
         if (value == null) {
             return null;

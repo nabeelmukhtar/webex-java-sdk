@@ -28,14 +28,58 @@ import com.webex.schemas._2002._06.service.attendee.RegisterAttendeeType;
 import com.webex.schemas._2002._06.service.attendee.RegisterMeetingAttendeeResponse;
 
 /**
- * @author nmukhtar
- *
+ * The Interface MeetingAttendeeService.
  */
 public interface MeetingAttendeeService extends WebExService {
+	
+	/**
+	 * Creates the meeting attendee.
+	 * 
+	 * @param attendee the attendee
+	 * 
+	 * @return the creates the meeting attendee response
+	 */
 	public CreateMeetingAttendeeResponse createMeetingAttendee(CreateMeetingAttendee attendee);
+	
+	/**
+	 * Delete meeting attendees.
+	 * 
+	 * @param attendeeIDs the attendee i ds
+	 * @param attendeeEmail the attendee email
+	 * @param sendEmail the send email
+	 */
 	public void deleteMeetingAttendees(List<Long> attendeeIDs, List<AttendeeEmailType> attendeeEmail, Boolean sendEmail);
+	
+	/**
+	 * Gets the enrollment information.
+	 * 
+	 * @param confID the conf id
+	 * @param sessionKey the session key
+	 * 
+	 * @return the enrollment information
+	 */
 	public List<EnrollSessionType> getEnrollmentInformation(Long confID, Long sessionKey);
+	
+	/**
+	 * Gets the meeting attendees.
+	 * 
+	 * @param meetingKey the meeting key
+	 * @param sessionKey the session key
+	 * @param joinStatus the join status
+	 * @param confID the conf id
+	 * @param inclHistory the incl history
+	 * 
+	 * @return the meeting attendees
+	 */
 	public List<AttendeeInstanceType> getMeetingAttendees(Long meetingKey, Long sessionKey, JoinStatusType joinStatus, Long confID, Boolean inclHistory);
+	
+	/**
+	 * Register meeting attendees.
+	 * 
+	 * @param attendees the attendees
+	 * 
+	 * @return the list< register meeting attendee response. register>
+	 */
 	public List<RegisterMeetingAttendeeResponse.Register> registerMeetingAttendees(List<RegisterAttendeeType> attendees);
 
 }

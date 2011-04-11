@@ -30,34 +30,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for salesProductsInstanceType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="salesProductsInstanceType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="product" maxOccurs="unbounded">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="prodID" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *                   &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SalesProductsInstanceType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "salesProductsInstanceType", propOrder = {
@@ -67,31 +40,17 @@ public class SalesProductsInstanceType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The product. */
     @XmlElement(required = true)
     protected List<SalesProductsInstanceType.Product> product;
 
     /**
-     * Gets the value of the product property.
+     * Gets the product.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the product property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getProduct().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link SalesProductsInstanceType.Product }
-     * 
-     * 
+     * @return the product
      */
     public List<SalesProductsInstanceType.Product> getProduct() {
         if (product == null) {
@@ -102,24 +61,7 @@ public class SalesProductsInstanceType
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="prodID" type="{http://www.w3.org/2001/XMLSchema}integer"/>
-     *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class Product.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -130,57 +72,50 @@ public class SalesProductsInstanceType
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The prod id. */
         @XmlElement(required = true, type = String.class)
         @XmlJavaTypeAdapter(Adapter1 .class)
         @XmlSchemaType(name = "integer")
         protected Long prodID;
+        
+        /** The name. */
         @XmlElement(required = true)
         protected String name;
 
         /**
-         * Gets the value of the prodID property.
+         * Gets the prod id.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the prod id
          */
         public Long getProdID() {
             return prodID;
         }
 
         /**
-         * Sets the value of the prodID property.
+         * Sets the prod id.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new prod id
          */
         public void setProdID(Long value) {
             this.prodID = value;
         }
 
         /**
-         * Gets the value of the name property.
+         * Gets the name.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         * @return the name
          */
         public String getName() {
             return name;
         }
 
         /**
-         * Sets the value of the name property.
+         * Sets the name.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         * @param value the new name
          */
         public void setName(String value) {
             this.name = value;

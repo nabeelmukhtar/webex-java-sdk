@@ -24,15 +24,13 @@ import java.util.regex.Pattern;
 
 /**
  * The Class ApplicationConstants.
- * 
- * @author Nabeel Mukhtar
  */
 public final class ApplicationConstants {
 
     /** The Constant APP_CONSTANTS_FILE. */
     public static final String APP_CONSTANTS_FILE = "ApplicationConstants.properties";
 
-    /** The static logger. */
+    /** The Constant LOG. */
     private static final Logger LOG = Logger.getLogger(ApplicationConstants.class.getCanonicalName());
     
     /** The Constant applicationConstants. */
@@ -71,7 +69,7 @@ public final class ApplicationConstants {
     private ApplicationConstants() {}
 
     /**
-     * Get property as int.
+     * Gets the property.
      * 
      * @param key the key
      * 
@@ -82,7 +80,7 @@ public final class ApplicationConstants {
     }
 
     /**
-     * Get property as int.
+     * Gets the int property.
      * 
      * @param key the key
      * 
@@ -99,7 +97,7 @@ public final class ApplicationConstants {
     }
 
     /**
-     * Get property as boolean.
+     * Gets the boolean property.
      * 
      * @param key the key
      * 
@@ -116,7 +114,7 @@ public final class ApplicationConstants {
     }
 
     /**
-     * Get property as double.
+     * Gets the double property.
      * 
      * @param key the key
      * 
@@ -133,7 +131,7 @@ public final class ApplicationConstants {
     }
 
     /**
-     * Get property as long.
+     * Gets the long property.
      * 
      * @param key the key
      * 
@@ -167,11 +165,11 @@ public final class ApplicationConstants {
     }
     
     /**
-     * Get property as long.
+     * Checks if is null or empty.
      * 
      * @param s the s
      * 
-     * @return true, if checks if is null or empty
+     * @return true, if is null or empty
      */
     private static boolean isNullOrEmpty(String s) {
         return ((s == null) || s.length() == 0);

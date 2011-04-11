@@ -26,24 +26,7 @@ import com.webex.schemas._2002._06.service.BodyContentType;
 
 
 /**
- * <p>Java class for createAccount complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="createAccount">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="webExID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="account" type="{http://www.webex.com/schemas/2002/06/service/sales}accountType"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class CreateAccount.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "createAccount", propOrder = {
@@ -55,54 +38,47 @@ public class CreateAccount
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The web ex id. */
     protected String webExID;
+    
+    /** The account. */
     @XmlElement(required = true)
     protected AccountType account;
 
     /**
-     * Gets the value of the webExID property.
+     * Gets the web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the web ex id
      */
     public String getWebExID() {
         return webExID;
     }
 
     /**
-     * Sets the value of the webExID property.
+     * Sets the web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new web ex id
      */
     public void setWebExID(String value) {
         this.webExID = value;
     }
 
     /**
-     * Gets the value of the account property.
+     * Gets the account.
      * 
-     * @return
-     *     possible object is
-     *     {@link AccountType }
-     *     
+     * @return the account
      */
     public AccountType getAccount() {
         return account;
     }
 
     /**
-     * Sets the value of the account property.
+     * Sets the account.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link AccountType }
-     *     
+     * @param value the new account
      */
     public void setAccount(AccountType value) {
         this.account = value;

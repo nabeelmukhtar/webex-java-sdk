@@ -19,7 +19,7 @@ package com.google.code.webex.service;
 import java.util.Date;
 
 /**
- * Class description.
+ * The Class WebExException.
  */
 public class WebExException extends RuntimeException {
 	
@@ -33,14 +33,14 @@ public class WebExException extends RuntimeException {
 	private static final long serialVersionUID = -4345556572105572685L;
 
 	/**
-	 * Constructs ...
+	 * Instantiates a new web ex exception.
 	 */
     public WebExException() {
         super();
     }
 
     /**
-     * Constructs ...
+     * Instantiates a new web ex exception.
      * 
      * @param message the message
      */
@@ -49,7 +49,7 @@ public class WebExException extends RuntimeException {
     }
 
     /**
-     * Constructs ...
+     * Instantiates a new web ex exception.
      * 
      * @param cause the cause
      */
@@ -58,7 +58,7 @@ public class WebExException extends RuntimeException {
     }
 
     /**
-     * Constructs ...
+     * Instantiates a new web ex exception.
      * 
      * @param message the message
      * @param cause the cause
@@ -68,7 +68,7 @@ public class WebExException extends RuntimeException {
     }
 
     /**
-     * Constructs ...
+     * Instantiates a new web ex exception.
      * 
      * @param message the message
      * @param statusCode the status code
@@ -83,7 +83,7 @@ public class WebExException extends RuntimeException {
 	/**
 	 * Gets the status code.
 	 * 
-	 * @return the statusCode
+	 * @return the status code
 	 */
 	public int getStatusCode() {
 		return statusCode;
@@ -92,7 +92,7 @@ public class WebExException extends RuntimeException {
 	/**
 	 * Sets the status code.
 	 * 
-	 * @param statusCode the statusCode to set
+	 * @param statusCode the new status code
 	 */
 	public void setStatusCode(int statusCode) {
 		this.statusCode = statusCode;
@@ -110,7 +110,7 @@ public class WebExException extends RuntimeException {
 	/**
 	 * Sets the timestamp.
 	 * 
-	 * @param timestamp the timestamp to set
+	 * @param timestamp the new timestamp
 	 */
 	public void setTimestamp(Date timestamp) {
 		this.timestamp = timestamp;

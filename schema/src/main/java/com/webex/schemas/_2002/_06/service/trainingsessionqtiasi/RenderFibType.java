@@ -30,45 +30,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for render_fibType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="render_fibType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="response_label" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}response_labelType"/>
- *       &lt;/sequence>
- *       &lt;attribute name="fibtype" default="String">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="String"/>
- *             &lt;enumeration value="Integer"/>
- *             &lt;enumeration value="Decimal"/>
- *             &lt;enumeration value="Scientific"/>
- *             &lt;enumeration value="Boolean"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="prompt" default="Box">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="Box"/>
- *             &lt;enumeration value="Dashline"/>
- *             &lt;enumeration value="Asterisk"/>
- *             &lt;enumeration value="Underline"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="maxchars" type="{http://www.w3.org/2001/XMLSchema}integer" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class RenderFibType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "render_fibType", propOrder = {
@@ -77,51 +39,51 @@ import org.w3._2001.xmlschema.Adapter1;
 public class RenderFibType implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The response label. */
     @XmlElement(name = "response_label", required = true)
     protected ResponseLabelType responseLabel;
+    
+    /** The fibtype. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String fibtype;
+    
+    /** The prompt. */
     @XmlAttribute
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String prompt;
+    
+    /** The maxchars. */
     @XmlAttribute
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long maxchars;
 
     /**
-     * Gets the value of the responseLabel property.
+     * Gets the response label.
      * 
-     * @return
-     *     possible object is
-     *     {@link ResponseLabelType }
-     *     
+     * @return the response label
      */
     public ResponseLabelType getResponseLabel() {
         return responseLabel;
     }
 
     /**
-     * Sets the value of the responseLabel property.
+     * Sets the response label.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ResponseLabelType }
-     *     
+     * @param value the new response label
      */
     public void setResponseLabel(ResponseLabelType value) {
         this.responseLabel = value;
     }
 
     /**
-     * Gets the value of the fibtype property.
+     * Gets the fibtype.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the fibtype
      */
     public String getFibtype() {
         if (fibtype == null) {
@@ -132,24 +94,18 @@ public class RenderFibType implements Serializable
     }
 
     /**
-     * Sets the value of the fibtype property.
+     * Sets the fibtype.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new fibtype
      */
     public void setFibtype(String value) {
         this.fibtype = value;
     }
 
     /**
-     * Gets the value of the prompt property.
+     * Gets the prompt.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the prompt
      */
     public String getPrompt() {
         if (prompt == null) {
@@ -160,36 +116,27 @@ public class RenderFibType implements Serializable
     }
 
     /**
-     * Sets the value of the prompt property.
+     * Sets the prompt.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new prompt
      */
     public void setPrompt(String value) {
         this.prompt = value;
     }
 
     /**
-     * Gets the value of the maxchars property.
+     * Gets the maxchars.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the maxchars
      */
     public Long getMaxchars() {
         return maxchars;
     }
 
     /**
-     * Sets the value of the maxchars property.
+     * Sets the maxchars.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new maxchars
      */
     public void setMaxchars(Long value) {
         this.maxchars = value;

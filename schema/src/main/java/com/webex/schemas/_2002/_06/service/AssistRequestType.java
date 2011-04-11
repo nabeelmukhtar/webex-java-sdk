@@ -23,50 +23,64 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for assistRequestType.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="assistRequestType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="None"/>
- *     &lt;enumeration value="Dry Run"/>
- *     &lt;enumeration value="Consult"/>
- *     &lt;enumeration value="Live Event Support"/>
- *     &lt;enumeration value="Audio Streaming"/>
- *     &lt;enumeration value="Video"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
- * </pre>
- * 
+ * The Enum AssistRequestType.
  */
 @XmlType(name = "assistRequestType")
 @XmlEnum
 public enum AssistRequestType {
 
+    /** The NONE. */
     @XmlEnumValue("None")
     NONE("None"),
+    
+    /** The DR y_ run. */
     @XmlEnumValue("Dry Run")
     DRY_RUN("Dry Run"),
+    
+    /** The CONSULT. */
     @XmlEnumValue("Consult")
     CONSULT("Consult"),
+    
+    /** The LIV e_ even t_ support. */
     @XmlEnumValue("Live Event Support")
     LIVE_EVENT_SUPPORT("Live Event Support"),
+    
+    /** The AUDI o_ streaming. */
     @XmlEnumValue("Audio Streaming")
     AUDIO_STREAMING("Audio Streaming"),
+    
+    /** The VIDEO. */
     @XmlEnumValue("Video")
     VIDEO("Video");
+    
+    /** The value. */
     private final String value;
 
+    /**
+     * Instantiates a new assist request type.
+     * 
+     * @param v the v
+     */
     AssistRequestType(String v) {
         value = v;
     }
 
+    /**
+     * Value.
+     * 
+     * @return the string
+     */
     public String value() {
         return value;
     }
 
+    /**
+     * From value.
+     * 
+     * @param v the v
+     * 
+     * @return the assist request type
+     */
     public static AssistRequestType fromValue(String v) {
         for (AssistRequestType c: AssistRequestType.values()) {
             if (c.value.equals(v)) {

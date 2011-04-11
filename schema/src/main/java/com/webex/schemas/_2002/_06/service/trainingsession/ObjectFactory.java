@@ -21,665 +21,733 @@ import javax.xml.bind.annotation.XmlRegistry;
 
 
 /**
- * This object contains factory methods for each 
- * Java content interface and Java element interface 
- * generated in the com.webex.schemas._2002._06.service.trainingsession package. 
- * <p>An ObjectFactory allows you to programatically 
- * construct new instances of the Java representation 
- * for XML content. The Java representation of XML 
- * content can consist of schema derived interfaces 
- * and classes representing the binding of schema 
- * type definitions, element declarations and model 
- * groups.  Factory methods for each of these are 
- * provided in this class.
- * 
+ * A factory for creating Object objects.
  */
 @XmlRegistry
 public class ObjectFactory {
 
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.webex.schemas._2002._06.service.trainingsession
-     * 
+     * Instantiates a new object factory.
      */
     public ObjectFactory() {
     }
 
     /**
-     * Create an instance of {@link ScheduleLabType }
+     * Creates a new Object object.
      * 
+     * @return the schedule lab type
      */
     public ScheduleLabType createScheduleLabType() {
         return new ScheduleLabType();
     }
 
     /**
-     * Create an instance of {@link ScheduledTestType }
+     * Creates a new Object object.
      * 
+     * @return the scheduled test type
      */
     public ScheduledTestType createScheduledTestType() {
         return new ScheduledTestType();
     }
 
     /**
-     * Create an instance of {@link CheckboxGroupType }
+     * Creates a new Object object.
      * 
+     * @return the checkbox group type
      */
     public CheckboxGroupType createCheckboxGroupType() {
         return new CheckboxGroupType();
     }
 
     /**
-     * Create an instance of {@link CheckboxType }
+     * Creates a new Object object.
      * 
+     * @return the checkbox type
      */
     public CheckboxType createCheckboxType() {
         return new CheckboxType();
     }
 
     /**
-     * Create an instance of {@link CopyLibTests }
+     * Creates a new Object object.
      * 
+     * @return the copy lib tests
      */
     public CopyLibTests createCopyLibTests() {
         return new CopyLibTests();
     }
 
     /**
-     * Create an instance of {@link ChoiceType }
+     * Creates a new Object object.
      * 
+     * @return the choice type
      */
     public ChoiceType createChoiceType() {
         return new ChoiceType();
     }
 
     /**
-     * Create an instance of {@link CopyLibTestsResponse }
+     * Creates a new Object object.
      * 
+     * @return the copy lib tests response
      */
     public CopyLibTestsResponse createCopyLibTestsResponse() {
         return new CopyLibTestsResponse();
     }
 
     /**
-     * Create an instance of {@link RegistrationFormInstanceType }
+     * Creates a new Object object.
      * 
+     * @return the registration form instance type
      */
     public RegistrationFormInstanceType createRegistrationFormInstanceType() {
         return new RegistrationFormInstanceType();
     }
 
     /**
-     * Create an instance of {@link DelTrainingSessionResponse }
+     * Creates a new Object object.
      * 
+     * @return the del training session response
      */
     public DelTrainingSessionResponse createDelTrainingSessionResponse() {
         return new DelTrainingSessionResponse();
     }
 
     /**
-     * Create an instance of {@link GetIMStestResult }
+     * Creates a new Object object.
      * 
+     * @return the gets the im stest result
      */
     public GetIMStestResult createGetIMStestResult() {
         return new GetIMStestResult();
     }
 
     /**
-     * Create an instance of {@link GetTrainingSession }
+     * Creates a new Object object.
      * 
+     * @return the gets the training session
      */
     public GetTrainingSession createGetTrainingSession() {
         return new GetTrainingSession();
     }
 
     /**
-     * Create an instance of {@link UploadIMStest }
+     * Creates a new Object object.
      * 
+     * @return the upload im stest
      */
     public UploadIMStest createUploadIMStest() {
         return new UploadIMStest();
     }
 
     /**
-     * Create an instance of {@link TrainRepeatType }
+     * Creates a new Object object.
      * 
+     * @return the train repeat type
      */
     public TrainRepeatType createTrainRepeatType() {
         return new TrainRepeatType();
     }
 
     /**
-     * Create an instance of {@link DelTrainingSession }
+     * Creates a new Object object.
      * 
+     * @return the del training session
      */
     public DelTrainingSession createDelTrainingSession() {
         return new DelTrainingSession();
     }
 
     /**
-     * Create an instance of {@link GetIMStestDetailsResponse }
+     * Creates a new Object object.
      * 
+     * @return the gets the im stest details response
      */
     public GetIMStestDetailsResponse createGetIMStestDetailsResponse() {
         return new GetIMStestDetailsResponse();
     }
 
     /**
-     * Create an instance of {@link RepeatSessionType }
+     * Creates a new Object object.
      * 
+     * @return the repeat session type
      */
     public RepeatSessionType createRepeatSessionType() {
         return new RepeatSessionType();
     }
 
     /**
-     * Create an instance of {@link LstsummaryTrainingSessionResponse }
+     * Creates a new Object object.
      * 
+     * @return the lstsummary training session response
      */
     public LstsummaryTrainingSessionResponse createLstsummaryTrainingSessionResponse() {
         return new LstsummaryTrainingSessionResponse();
     }
 
     /**
-     * Create an instance of {@link LstTrainingSession }
+     * Creates a new Object object.
      * 
+     * @return the lst training session
      */
     public LstTrainingSession createLstTrainingSession() {
         return new LstTrainingSession();
     }
 
     /**
-     * Create an instance of {@link TrainingSessionType.PreAssignBreakout }
+     * Creates a new Object object.
      * 
+     * @return the pre assign breakout
      */
     public TrainingSessionType.PreAssignBreakout createTrainingSessionTypePreAssignBreakout() {
         return new TrainingSessionType.PreAssignBreakout();
     }
 
     /**
-     * Create an instance of {@link TrainingMetaDataType }
+     * Creates a new Object object.
      * 
+     * @return the training meta data type
      */
     public TrainingMetaDataType createTrainingMetaDataType() {
         return new TrainingMetaDataType();
     }
 
     /**
-     * Create an instance of {@link CreateTrainingSession }
+     * Creates a new Object object.
      * 
+     * @return the creates the training session
      */
     public CreateTrainingSession createCreateTrainingSession() {
         return new CreateTrainingSession();
     }
 
     /**
-     * Create an instance of {@link TrainRepeatType.DayInWeek }
+     * Creates a new Object object.
      * 
+     * @return the day in week
      */
     public TrainRepeatType.DayInWeek createTrainRepeatTypeDayInWeek() {
         return new TrainRepeatType.DayInWeek();
     }
 
     /**
-     * Create an instance of {@link LstLibTestsResponse }
+     * Creates a new Object object.
      * 
+     * @return the lst lib tests response
      */
     public LstLibTestsResponse createLstLibTestsResponse() {
         return new LstLibTestsResponse();
     }
 
     /**
-     * Create an instance of {@link CreateTrainingSessionResponse.AdditionalInfo }
+     * Creates a new Object object.
      * 
+     * @return the additional info
      */
     public CreateTrainingSessionResponse.AdditionalInfo createCreateTrainingSessionResponseAdditionalInfo() {
         return new CreateTrainingSessionResponse.AdditionalInfo();
     }
 
     /**
-     * Create an instance of {@link GetLabInfo }
+     * Creates a new Object object.
      * 
+     * @return the gets the lab info
      */
     public GetLabInfo createGetLabInfo() {
         return new GetLabInfo();
     }
 
     /**
-     * Create an instance of {@link SubmittedTestType }
+     * Creates a new Object object.
      * 
+     * @return the submitted test type
      */
     public SubmittedTestType createSubmittedTestType() {
         return new SubmittedTestType();
     }
 
     /**
-     * Create an instance of {@link TrainingSessionSummaryInstanceType }
+     * Creates a new Object object.
      * 
+     * @return the training session summary instance type
      */
     public TrainingSessionSummaryInstanceType createTrainingSessionSummaryInstanceType() {
         return new TrainingSessionSummaryInstanceType();
     }
 
     /**
-     * Create an instance of {@link DelScheduledTestResponse }
+     * Creates a new Object object.
      * 
+     * @return the del scheduled test response
      */
     public DelScheduledTestResponse createDelScheduledTestResponse() {
         return new DelScheduledTestResponse();
     }
 
     /**
-     * Create an instance of {@link GetTrainingSessionResponse }
+     * Creates a new Object object.
      * 
+     * @return the gets the training session response
      */
     public GetTrainingSessionResponse createGetTrainingSessionResponse() {
         return new GetTrainingSessionResponse();
     }
 
     /**
-     * Create an instance of {@link GetIMStestDetails }
+     * Creates a new Object object.
      * 
+     * @return the gets the im stest details
      */
     public GetIMStestDetails createGetIMStestDetails() {
         return new GetIMStestDetails();
     }
 
     /**
-     * Create an instance of {@link TrainingSessionType }
+     * Creates a new Object object.
      * 
+     * @return the training session type
      */
     public TrainingSessionType createTrainingSessionType() {
         return new TrainingSessionType();
     }
 
     /**
-     * Create an instance of {@link TrainingSessionInstanceType }
+     * Creates a new Object object.
      * 
+     * @return the training session instance type
      */
     public TrainingSessionInstanceType createTrainingSessionInstanceType() {
         return new TrainingSessionInstanceType();
     }
 
     /**
-     * Create an instance of {@link CreateTrainingSessionResponse }
+     * Creates a new Object object.
      * 
+     * @return the creates the training session response
      */
     public CreateTrainingSessionResponse createCreateTrainingSessionResponse() {
         return new CreateTrainingSessionResponse();
     }
 
     /**
-     * Create an instance of {@link TrainingEnableOptionsType }
+     * Creates a new Object object.
      * 
+     * @return the training enable options type
      */
     public TrainingEnableOptionsType createTrainingEnableOptionsType() {
         return new TrainingEnableOptionsType();
     }
 
     /**
-     * Create an instance of {@link SetTrainingSessionResponse }
+     * Creates a new Object object.
      * 
+     * @return the sets the training session response
      */
     public SetTrainingSessionResponse createSetTrainingSessionResponse() {
         return new SetTrainingSessionResponse();
     }
 
     /**
-     * Create an instance of {@link SetScheduledTest.DeliveryMethod }
+     * Creates a new Object object.
      * 
+     * @return the delivery method
      */
     public SetScheduledTest.DeliveryMethod createSetScheduledTestDeliveryMethod() {
         return new SetScheduledTest.DeliveryMethod();
     }
 
     /**
-     * Create an instance of {@link OrderType }
+     * Creates a new Object object.
      * 
+     * @return the order type
      */
     public OrderType createOrderType() {
         return new OrderType();
     }
 
     /**
-     * Create an instance of {@link GetTestInformation }
+     * Creates a new Object object.
      * 
+     * @return the gets the test information
      */
     public GetTestInformation createGetTestInformation() {
         return new GetTestInformation();
     }
 
     /**
-     * Create an instance of {@link TextboxType }
+     * Creates a new Object object.
      * 
+     * @return the textbox type
      */
     public TextboxType createTextboxType() {
         return new TextboxType();
     }
 
     /**
-     * Create an instance of {@link CheckboxGroupInstanceType }
+     * Creates a new Object object.
      * 
+     * @return the checkbox group instance type
      */
     public CheckboxGroupInstanceType createCheckboxGroupInstanceType() {
         return new CheckboxGroupInstanceType();
     }
 
     /**
-     * Create an instance of {@link LstScheduledTests }
+     * Creates a new Object object.
      * 
+     * @return the lst scheduled tests
      */
     public LstScheduledTests createLstScheduledTests() {
         return new LstScheduledTests();
     }
 
     /**
-     * Create an instance of {@link EmailAttendeeType }
+     * Creates a new Object object.
      * 
+     * @return the email attendee type
      */
     public EmailAttendeeType createEmailAttendeeType() {
         return new EmailAttendeeType();
     }
 
     /**
-     * Create an instance of {@link CustomFieldsType }
+     * Creates a new Object object.
      * 
+     * @return the custom fields type
      */
     public CustomFieldsType createCustomFieldsType() {
         return new CustomFieldsType();
     }
 
     /**
-     * Create an instance of {@link TextboxInstanceType }
+     * Creates a new Object object.
      * 
+     * @return the textbox instance type
      */
     public TextboxInstanceType createTextboxInstanceType() {
         return new TextboxInstanceType();
     }
 
     /**
-     * Create an instance of {@link LibTestInstanceType }
+     * Creates a new Object object.
      * 
+     * @return the lib test instance type
      */
     public LibTestInstanceType createLibTestInstanceType() {
         return new LibTestInstanceType();
     }
 
     /**
-     * Create an instance of {@link SetScheduledTest.TimeLimit }
+     * Creates a new Object object.
      * 
+     * @return the time limit
      */
     public SetScheduledTest.TimeLimit createSetScheduledTestTimeLimit() {
         return new SetScheduledTest.TimeLimit();
     }
 
     /**
-     * Create an instance of {@link ChoiceGroupType }
+     * Creates a new Object object.
      * 
+     * @return the choice group type
      */
     public ChoiceGroupType createChoiceGroupType() {
         return new ChoiceGroupType();
     }
 
     /**
-     * Create an instance of {@link DelLibTests }
+     * Creates a new Object object.
      * 
+     * @return the del lib tests
      */
     public DelLibTests createDelLibTests() {
         return new DelLibTests();
     }
 
     /**
-     * Create an instance of {@link CustomFieldsInstanceType }
+     * Creates a new Object object.
      * 
+     * @return the custom fields instance type
      */
     public CustomFieldsInstanceType createCustomFieldsInstanceType() {
         return new CustomFieldsInstanceType();
     }
 
     /**
-     * Create an instance of {@link DelLibTestsResponse }
+     * Creates a new Object object.
      * 
+     * @return the del lib tests response
      */
     public DelLibTestsResponse createDelLibTestsResponse() {
         return new DelLibTestsResponse();
     }
 
     /**
-     * Create an instance of {@link HandsOnLabType }
+     * Creates a new Object object.
      * 
+     * @return the hands on lab type
      */
     public HandsOnLabType createHandsOnLabType() {
         return new HandsOnLabType();
     }
 
     /**
-     * Create an instance of {@link SetScheduledTest.AttemptLimit }
+     * Creates a new Object object.
      * 
+     * @return the attempt limit
      */
     public SetScheduledTest.AttemptLimit createSetScheduledTestAttemptLimit() {
         return new SetScheduledTest.AttemptLimit();
     }
 
     /**
-     * Create an instance of {@link GetLabScheduleResponse }
+     * Creates a new Object object.
      * 
+     * @return the gets the lab schedule response
      */
     public GetLabScheduleResponse createGetLabScheduleResponse() {
         return new GetLabScheduleResponse();
     }
 
     /**
-     * Create an instance of {@link DelScheduledTest }
+     * Creates a new Object object.
      * 
+     * @return the del scheduled test
      */
     public DelScheduledTest createDelScheduledTest() {
         return new DelScheduledTest();
     }
 
     /**
-     * Create an instance of {@link ChoiceGroupInstanceType }
+     * Creates a new Object object.
      * 
+     * @return the choice group instance type
      */
     public ChoiceGroupInstanceType createChoiceGroupInstanceType() {
         return new ChoiceGroupInstanceType();
     }
 
     /**
-     * Create an instance of {@link AttendeeOptionsType }
+     * Creates a new Object object.
      * 
+     * @return the attendee options type
      */
     public AttendeeOptionsType createAttendeeOptionsType() {
         return new AttendeeOptionsType();
     }
 
     /**
-     * Create an instance of {@link AddScheduledTest }
+     * Creates a new Object object.
      * 
+     * @return the adds the scheduled test
      */
     public AddScheduledTest createAddScheduledTest() {
         return new AddScheduledTest();
     }
 
     /**
-     * Create an instance of {@link UploadIMStestResponse }
+     * Creates a new Object object.
      * 
+     * @return the upload im stest response
      */
     public UploadIMStestResponse createUploadIMStestResponse() {
         return new UploadIMStestResponse();
     }
 
     /**
-     * Create an instance of {@link RegistrationFormType }
+     * Creates a new Object object.
      * 
+     * @return the registration form type
      */
     public RegistrationFormType createRegistrationFormType() {
         return new RegistrationFormType();
     }
 
     /**
-     * Create an instance of {@link StandardFieldsType }
+     * Creates a new Object object.
      * 
+     * @return the standard fields type
      */
     public StandardFieldsType createStandardFieldsType() {
         return new StandardFieldsType();
     }
 
     /**
-     * Create an instance of {@link CheckLabAvailability }
+     * Creates a new Object object.
      * 
+     * @return the check lab availability
      */
     public CheckLabAvailability createCheckLabAvailability() {
         return new CheckLabAvailability();
     }
 
     /**
-     * Create an instance of {@link AvailabilityLabType }
+     * Creates a new Object object.
      * 
+     * @return the availability lab type
      */
     public AvailabilityLabType createAvailabilityLabType() {
         return new AvailabilityLabType();
     }
 
     /**
-     * Create an instance of {@link AddScheduledTestResponse }
+     * Creates a new Object object.
      * 
+     * @return the adds the scheduled test response
      */
     public AddScheduledTestResponse createAddScheduledTestResponse() {
         return new AddScheduledTestResponse();
     }
 
     /**
-     * Create an instance of {@link LstLibTests }
+     * Creates a new Object object.
      * 
+     * @return the lst lib tests
      */
     public LstLibTests createLstLibTests() {
         return new LstLibTests();
     }
 
     /**
-     * Create an instance of {@link GetLabInfoResponse }
+     * Creates a new Object object.
      * 
+     * @return the gets the lab info response
      */
     public GetLabInfoResponse createGetLabInfoResponse() {
         return new GetLabInfoResponse();
     }
 
     /**
-     * Create an instance of {@link EnrollmentFieldType }
+     * Creates a new Object object.
      * 
+     * @return the enrollment field type
      */
     public EnrollmentFieldType createEnrollmentFieldType() {
         return new EnrollmentFieldType();
     }
 
     /**
-     * Create an instance of {@link SetTrainingSession }
+     * Creates a new Object object.
      * 
+     * @return the sets the training session
      */
     public SetTrainingSession createSetTrainingSession() {
         return new SetTrainingSession();
     }
 
     /**
-     * Create an instance of {@link UploadIMStest.Display }
+     * Creates a new Object object.
      * 
+     * @return the display
      */
     public UploadIMStest.Display createUploadIMStestDisplay() {
         return new UploadIMStest.Display();
     }
 
     /**
-     * Create an instance of {@link GetTestInformationResponse }
+     * Creates a new Object object.
      * 
+     * @return the gets the test information response
      */
     public GetTestInformationResponse createGetTestInformationResponse() {
         return new GetTestInformationResponse();
     }
 
     /**
-     * Create an instance of {@link ScheduledTestInstanceType }
+     * Creates a new Object object.
      * 
+     * @return the scheduled test instance type
      */
     public ScheduledTestInstanceType createScheduledTestInstanceType() {
         return new ScheduledTestInstanceType();
     }
 
     /**
-     * Create an instance of {@link LstScheduledTestsResponse }
+     * Creates a new Object object.
      * 
+     * @return the lst scheduled tests response
      */
     public LstScheduledTestsResponse createLstScheduledTestsResponse() {
         return new LstScheduledTestsResponse();
     }
 
     /**
-     * Create an instance of {@link LstsummaryTrainingSession }
+     * Creates a new Object object.
      * 
+     * @return the lstsummary training session
      */
     public LstsummaryTrainingSession createLstsummaryTrainingSession() {
         return new LstsummaryTrainingSession();
     }
 
     /**
-     * Create an instance of {@link CheckLabAvailabilityResponse }
+     * Creates a new Object object.
      * 
+     * @return the check lab availability response
      */
     public CheckLabAvailabilityResponse createCheckLabAvailabilityResponse() {
         return new CheckLabAvailabilityResponse();
     }
 
     /**
-     * Create an instance of {@link LabInfoType }
+     * Creates a new Object object.
      * 
+     * @return the lab info type
      */
     public LabInfoType createLabInfoType() {
         return new LabInfoType();
     }
 
     /**
-     * Create an instance of {@link WebSiteType }
+     * Creates a new Object object.
      * 
+     * @return the web site type
      */
     public WebSiteType createWebSiteType() {
         return new WebSiteType();
     }
 
     /**
-     * Create an instance of {@link GetLabSchedule }
+     * Creates a new Object object.
      * 
+     * @return the gets the lab schedule
      */
     public GetLabSchedule createGetLabSchedule() {
         return new GetLabSchedule();
     }
 
     /**
-     * Create an instance of {@link SetScheduledTestResponse }
+     * Creates a new Object object.
      * 
+     * @return the sets the scheduled test response
      */
     public SetScheduledTestResponse createSetScheduledTestResponse() {
         return new SetScheduledTestResponse();
     }
 
     /**
-     * Create an instance of {@link SetScheduledTest }
+     * Creates a new Object object.
      * 
+     * @return the sets the scheduled test
      */
     public SetScheduledTest createSetScheduledTest() {
         return new SetScheduledTest();
     }
 
     /**
-     * Create an instance of {@link LstTrainingSessionResponse }
+     * Creates a new Object object.
      * 
+     * @return the lst training session response
      */
     public LstTrainingSessionResponse createLstTrainingSessionResponse() {
         return new LstTrainingSessionResponse();
     }
 
     /**
-     * Create an instance of {@link GetIMStestResultResponse }
+     * Creates a new Object object.
      * 
+     * @return the gets the im stest result response
      */
     public GetIMStestResultResponse createGetIMStestResultResponse() {
         return new GetIMStestResultResponse();

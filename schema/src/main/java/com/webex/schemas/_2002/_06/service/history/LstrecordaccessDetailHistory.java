@@ -27,26 +27,7 @@ import com.webex.schemas._2002._06.service.LstControlType;
 
 
 /**
- * <p>Java class for lstrecordaccessDetailHistory complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="lstrecordaccessDetailHistory">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service}bodyContentType">
- *       &lt;sequence>
- *         &lt;element name="recordID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="listControl" type="{http://www.webex.com/schemas/2002/06/service}lstControlType" minOccurs="0"/>
- *         &lt;element name="timeZoneID" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="returnRegFields" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class LstrecordaccessDetailHistory.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "lstrecordaccessDetailHistory", propOrder = {
@@ -60,104 +41,89 @@ public class LstrecordaccessDetailHistory
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The record id. */
     protected Long recordID;
+    
+    /** The list control. */
     protected LstControlType listControl;
+    
+    /** The time zone id. */
     @XmlElement(defaultValue = "-1")
     protected Integer timeZoneID;
+    
+    /** The return reg fields. */
     protected Boolean returnRegFields;
 
     /**
-     * Gets the value of the recordID property.
+     * Gets the record id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the record id
      */
     public Long getRecordID() {
         return recordID;
     }
 
     /**
-     * Sets the value of the recordID property.
+     * Sets the record id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new record id
      */
     public void setRecordID(Long value) {
         this.recordID = value;
     }
 
     /**
-     * Gets the value of the listControl property.
+     * Gets the list control.
      * 
-     * @return
-     *     possible object is
-     *     {@link LstControlType }
-     *     
+     * @return the list control
      */
     public LstControlType getListControl() {
         return listControl;
     }
 
     /**
-     * Sets the value of the listControl property.
+     * Sets the list control.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link LstControlType }
-     *     
+     * @param value the new list control
      */
     public void setListControl(LstControlType value) {
         this.listControl = value;
     }
 
     /**
-     * Gets the value of the timeZoneID property.
+     * Gets the time zone id.
      * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     * @return the time zone id
      */
     public Integer getTimeZoneID() {
         return timeZoneID;
     }
 
     /**
-     * Sets the value of the timeZoneID property.
+     * Sets the time zone id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     * @param value the new time zone id
      */
     public void setTimeZoneID(Integer value) {
         this.timeZoneID = value;
     }
 
     /**
-     * Gets the value of the returnRegFields property.
+     * Checks if is return reg fields.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isReturnRegFields() {
         return returnRegFields;
     }
 
     /**
-     * Sets the value of the returnRegFields property.
+     * Sets the return reg fields.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new return reg fields
      */
     public void setReturnRegFields(Boolean value) {
         this.returnRegFields = value;

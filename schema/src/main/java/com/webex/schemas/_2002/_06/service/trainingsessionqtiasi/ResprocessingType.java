@@ -28,25 +28,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for resprocessingType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="resprocessingType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="outcomes" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}outcomesType"/>
- *         &lt;element name="respcondition" type="{http://www.webex.com/schemas/2002/06/service/trainingsessionqtiasi}respconditionType" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute name="scoremodel" type="{http://www.w3.org/2001/XMLSchema}string" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ResprocessingType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "resprocessingType", propOrder = {
@@ -57,58 +39,42 @@ public class ResprocessingType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The outcomes. */
     @XmlElement(required = true)
     protected OutcomesType outcomes;
+    
+    /** The respcondition. */
     protected List<RespconditionType> respcondition;
+    
+    /** The scoremodel. */
     @XmlAttribute
     protected String scoremodel;
 
     /**
-     * Gets the value of the outcomes property.
+     * Gets the outcomes.
      * 
-     * @return
-     *     possible object is
-     *     {@link OutcomesType }
-     *     
+     * @return the outcomes
      */
     public OutcomesType getOutcomes() {
         return outcomes;
     }
 
     /**
-     * Sets the value of the outcomes property.
+     * Sets the outcomes.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link OutcomesType }
-     *     
+     * @param value the new outcomes
      */
     public void setOutcomes(OutcomesType value) {
         this.outcomes = value;
     }
 
     /**
-     * Gets the value of the respcondition property.
+     * Gets the respcondition.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the respcondition property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getRespcondition().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link RespconditionType }
-     * 
-     * 
+     * @return the respcondition
      */
     public List<RespconditionType> getRespcondition() {
         if (respcondition == null) {
@@ -118,24 +84,18 @@ public class ResprocessingType
     }
 
     /**
-     * Gets the value of the scoremodel property.
+     * Gets the scoremodel.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the scoremodel
      */
     public String getScoremodel() {
         return scoremodel;
     }
 
     /**
-     * Sets the value of the scoremodel property.
+     * Sets the scoremodel.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new scoremodel
      */
     public void setScoremodel(String value) {
         this.scoremodel = value;

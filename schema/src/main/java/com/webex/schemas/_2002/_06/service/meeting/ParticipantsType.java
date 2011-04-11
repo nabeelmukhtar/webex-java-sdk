@@ -27,34 +27,7 @@ import com.webex.schemas._2002._06.service.attendee.AttendeeType;
 
 
 /**
- * <p>Java class for participantsType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="participantsType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="maxUserNumber" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="attendees" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="attendee" type="{http://www.webex.com/schemas/2002/06/service/attendee}attendeeType" maxOccurs="unbounded" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class ParticipantsType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "participantsType", propOrder = {
@@ -65,53 +38,46 @@ public class ParticipantsType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The max user number. */
     protected Long maxUserNumber;
+    
+    /** The attendees. */
     protected ParticipantsType.Attendees attendees;
 
     /**
-     * Gets the value of the maxUserNumber property.
+     * Gets the max user number.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the max user number
      */
     public Long getMaxUserNumber() {
         return maxUserNumber;
     }
 
     /**
-     * Sets the value of the maxUserNumber property.
+     * Sets the max user number.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new max user number
      */
     public void setMaxUserNumber(Long value) {
         this.maxUserNumber = value;
     }
 
     /**
-     * Gets the value of the attendees property.
+     * Gets the attendees.
      * 
-     * @return
-     *     possible object is
-     *     {@link ParticipantsType.Attendees }
-     *     
+     * @return the attendees
      */
     public ParticipantsType.Attendees getAttendees() {
         return attendees;
     }
 
     /**
-     * Sets the value of the attendees property.
+     * Sets the attendees.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link ParticipantsType.Attendees }
-     *     
+     * @param value the new attendees
      */
     public void setAttendees(ParticipantsType.Attendees value) {
         this.attendees = value;
@@ -119,23 +85,7 @@ public class ParticipantsType
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="attendee" type="{http://www.webex.com/schemas/2002/06/service/attendee}attendeeType" maxOccurs="unbounded" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class Attendees.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -145,30 +95,16 @@ public class ParticipantsType
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The attendee. */
         protected List<AttendeeType> attendee;
 
         /**
-         * Gets the value of the attendee property.
+         * Gets the attendee.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the attendee property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getAttendee().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link AttendeeType }
-         * 
-         * 
+         * @return the attendee
          */
         public List<AttendeeType> getAttendee() {
             if (attendee == null) {

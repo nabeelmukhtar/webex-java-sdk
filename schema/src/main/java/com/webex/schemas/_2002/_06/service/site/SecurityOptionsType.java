@@ -28,48 +28,7 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for securityOptionsType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="securityOptionsType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="passwordExpires" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="passwordLifetime" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *         &lt;element name="allMeetingsUnlisted" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="allMeetingsPassword" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="joinBeforeHost" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="audioBeforeHost" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="changePersonalURL" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="changeUserName" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="meetings">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="strictPasswords" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="strictUserPassword" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="accountNotify" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="requireLoginBeforeSiteAccess" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="changePWDWhenAutoLogin" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="enforceBaseline" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="passwordChangeIntervalOpt" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="passwordChangeInterval" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SecurityOptionsType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "securityOptionsType", propOrder = {
@@ -94,322 +53,347 @@ public class SecurityOptionsType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The password expires. */
     protected boolean passwordExpires;
+    
+    /** The password lifetime. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long passwordLifetime;
+    
+    /** The all meetings unlisted. */
     protected boolean allMeetingsUnlisted;
+    
+    /** The all meetings password. */
     protected boolean allMeetingsPassword;
+    
+    /** The join before host. */
     protected boolean joinBeforeHost;
+    
+    /** The audio before host. */
     protected boolean audioBeforeHost;
+    
+    /** The change personal url. */
     protected boolean changePersonalURL;
+    
+    /** The change user name. */
     protected boolean changeUserName;
+    
+    /** The meetings. */
     @XmlElement(required = true)
     protected SecurityOptionsType.Meetings meetings;
+    
+    /** The strict user password. */
     protected boolean strictUserPassword;
+    
+    /** The account notify. */
     protected Boolean accountNotify;
+    
+    /** The require login before site access. */
     protected Boolean requireLoginBeforeSiteAccess;
+    
+    /** The change pwd when auto login. */
     protected boolean changePWDWhenAutoLogin;
+    
+    /** The enforce baseline. */
     protected boolean enforceBaseline;
+    
+    /** The password change interval opt. */
     protected boolean passwordChangeIntervalOpt;
+    
+    /** The password change interval. */
     @XmlElement(required = true, type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "integer")
     protected Long passwordChangeInterval;
 
     /**
-     * Gets the value of the passwordExpires property.
+     * Checks if is password expires.
      * 
+     * @return true, if is password expires
      */
     public boolean isPasswordExpires() {
         return passwordExpires;
     }
 
     /**
-     * Sets the value of the passwordExpires property.
+     * Sets the password expires.
      * 
+     * @param value the new password expires
      */
     public void setPasswordExpires(boolean value) {
         this.passwordExpires = value;
     }
 
     /**
-     * Gets the value of the passwordLifetime property.
+     * Gets the password lifetime.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the password lifetime
      */
     public Long getPasswordLifetime() {
         return passwordLifetime;
     }
 
     /**
-     * Sets the value of the passwordLifetime property.
+     * Sets the password lifetime.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new password lifetime
      */
     public void setPasswordLifetime(Long value) {
         this.passwordLifetime = value;
     }
 
     /**
-     * Gets the value of the allMeetingsUnlisted property.
+     * Checks if is all meetings unlisted.
      * 
+     * @return true, if is all meetings unlisted
      */
     public boolean isAllMeetingsUnlisted() {
         return allMeetingsUnlisted;
     }
 
     /**
-     * Sets the value of the allMeetingsUnlisted property.
+     * Sets the all meetings unlisted.
      * 
+     * @param value the new all meetings unlisted
      */
     public void setAllMeetingsUnlisted(boolean value) {
         this.allMeetingsUnlisted = value;
     }
 
     /**
-     * Gets the value of the allMeetingsPassword property.
+     * Checks if is all meetings password.
      * 
+     * @return true, if is all meetings password
      */
     public boolean isAllMeetingsPassword() {
         return allMeetingsPassword;
     }
 
     /**
-     * Sets the value of the allMeetingsPassword property.
+     * Sets the all meetings password.
      * 
+     * @param value the new all meetings password
      */
     public void setAllMeetingsPassword(boolean value) {
         this.allMeetingsPassword = value;
     }
 
     /**
-     * Gets the value of the joinBeforeHost property.
+     * Checks if is join before host.
      * 
+     * @return true, if is join before host
      */
     public boolean isJoinBeforeHost() {
         return joinBeforeHost;
     }
 
     /**
-     * Sets the value of the joinBeforeHost property.
+     * Sets the join before host.
      * 
+     * @param value the new join before host
      */
     public void setJoinBeforeHost(boolean value) {
         this.joinBeforeHost = value;
     }
 
     /**
-     * Gets the value of the audioBeforeHost property.
+     * Checks if is audio before host.
      * 
+     * @return true, if is audio before host
      */
     public boolean isAudioBeforeHost() {
         return audioBeforeHost;
     }
 
     /**
-     * Sets the value of the audioBeforeHost property.
+     * Sets the audio before host.
      * 
+     * @param value the new audio before host
      */
     public void setAudioBeforeHost(boolean value) {
         this.audioBeforeHost = value;
     }
 
     /**
-     * Gets the value of the changePersonalURL property.
+     * Checks if is change personal url.
      * 
+     * @return true, if is change personal url
      */
     public boolean isChangePersonalURL() {
         return changePersonalURL;
     }
 
     /**
-     * Sets the value of the changePersonalURL property.
+     * Sets the change personal url.
      * 
+     * @param value the new change personal url
      */
     public void setChangePersonalURL(boolean value) {
         this.changePersonalURL = value;
     }
 
     /**
-     * Gets the value of the changeUserName property.
+     * Checks if is change user name.
      * 
+     * @return true, if is change user name
      */
     public boolean isChangeUserName() {
         return changeUserName;
     }
 
     /**
-     * Sets the value of the changeUserName property.
+     * Sets the change user name.
      * 
+     * @param value the new change user name
      */
     public void setChangeUserName(boolean value) {
         this.changeUserName = value;
     }
 
     /**
-     * Gets the value of the meetings property.
+     * Gets the meetings.
      * 
-     * @return
-     *     possible object is
-     *     {@link SecurityOptionsType.Meetings }
-     *     
+     * @return the meetings
      */
     public SecurityOptionsType.Meetings getMeetings() {
         return meetings;
     }
 
     /**
-     * Sets the value of the meetings property.
+     * Sets the meetings.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link SecurityOptionsType.Meetings }
-     *     
+     * @param value the new meetings
      */
     public void setMeetings(SecurityOptionsType.Meetings value) {
         this.meetings = value;
     }
 
     /**
-     * Gets the value of the strictUserPassword property.
+     * Checks if is strict user password.
      * 
+     * @return true, if is strict user password
      */
     public boolean isStrictUserPassword() {
         return strictUserPassword;
     }
 
     /**
-     * Sets the value of the strictUserPassword property.
+     * Sets the strict user password.
      * 
+     * @param value the new strict user password
      */
     public void setStrictUserPassword(boolean value) {
         this.strictUserPassword = value;
     }
 
     /**
-     * Gets the value of the accountNotify property.
+     * Checks if is account notify.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isAccountNotify() {
         return accountNotify;
     }
 
     /**
-     * Sets the value of the accountNotify property.
+     * Sets the account notify.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new account notify
      */
     public void setAccountNotify(Boolean value) {
         this.accountNotify = value;
     }
 
     /**
-     * Gets the value of the requireLoginBeforeSiteAccess property.
+     * Checks if is require login before site access.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isRequireLoginBeforeSiteAccess() {
         return requireLoginBeforeSiteAccess;
     }
 
     /**
-     * Sets the value of the requireLoginBeforeSiteAccess property.
+     * Sets the require login before site access.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new require login before site access
      */
     public void setRequireLoginBeforeSiteAccess(Boolean value) {
         this.requireLoginBeforeSiteAccess = value;
     }
 
     /**
-     * Gets the value of the changePWDWhenAutoLogin property.
+     * Checks if is change pwd when auto login.
      * 
+     * @return true, if is change pwd when auto login
      */
     public boolean isChangePWDWhenAutoLogin() {
         return changePWDWhenAutoLogin;
     }
 
     /**
-     * Sets the value of the changePWDWhenAutoLogin property.
+     * Sets the change pwd when auto login.
      * 
+     * @param value the new change pwd when auto login
      */
     public void setChangePWDWhenAutoLogin(boolean value) {
         this.changePWDWhenAutoLogin = value;
     }
 
     /**
-     * Gets the value of the enforceBaseline property.
+     * Checks if is enforce baseline.
      * 
+     * @return true, if is enforce baseline
      */
     public boolean isEnforceBaseline() {
         return enforceBaseline;
     }
 
     /**
-     * Sets the value of the enforceBaseline property.
+     * Sets the enforce baseline.
      * 
+     * @param value the new enforce baseline
      */
     public void setEnforceBaseline(boolean value) {
         this.enforceBaseline = value;
     }
 
     /**
-     * Gets the value of the passwordChangeIntervalOpt property.
+     * Checks if is password change interval opt.
      * 
+     * @return true, if is password change interval opt
      */
     public boolean isPasswordChangeIntervalOpt() {
         return passwordChangeIntervalOpt;
     }
 
     /**
-     * Sets the value of the passwordChangeIntervalOpt property.
+     * Sets the password change interval opt.
      * 
+     * @param value the new password change interval opt
      */
     public void setPasswordChangeIntervalOpt(boolean value) {
         this.passwordChangeIntervalOpt = value;
     }
 
     /**
-     * Gets the value of the passwordChangeInterval property.
+     * Gets the password change interval.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the password change interval
      */
     public Long getPasswordChangeInterval() {
         return passwordChangeInterval;
     }
 
     /**
-     * Sets the value of the passwordChangeInterval property.
+     * Sets the password change interval.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new password change interval
      */
     public void setPasswordChangeInterval(Long value) {
         this.passwordChangeInterval = value;
@@ -417,23 +401,7 @@ public class SecurityOptionsType
 
 
     /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="strictPasswords" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
+     * The Class Meetings.
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -443,20 +411,25 @@ public class SecurityOptionsType
         implements Serializable
     {
 
+        /** The Constant serialVersionUID. */
         private final static long serialVersionUID = 2461660169443089969L;
+        
+        /** The strict passwords. */
         protected boolean strictPasswords;
 
         /**
-         * Gets the value of the strictPasswords property.
+         * Checks if is strict passwords.
          * 
+         * @return true, if is strict passwords
          */
         public boolean isStrictPasswords() {
             return strictPasswords;
         }
 
         /**
-         * Sets the value of the strictPasswords property.
+         * Sets the strict passwords.
          * 
+         * @param value the new strict passwords
          */
         public void setStrictPasswords(boolean value) {
             this.strictPasswords = value;

@@ -25,24 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for meetingPlaceTelephonyType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="meetingPlaceTelephonyType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="persistentTSP" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="mpAudioConferencing" type="{http://www.webex.com/schemas/2002/06/service/site}directoryServiceType"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class MeetingPlaceTelephonyType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "meetingPlaceTelephonyType", propOrder = {
@@ -53,46 +36,47 @@ public class MeetingPlaceTelephonyType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The persistent tsp. */
     protected boolean persistentTSP;
+    
+    /** The mp audio conferencing. */
     @XmlElement(required = true)
     protected DirectoryServiceType mpAudioConferencing;
 
     /**
-     * Gets the value of the persistentTSP property.
+     * Checks if is persistent tsp.
      * 
+     * @return true, if is persistent tsp
      */
     public boolean isPersistentTSP() {
         return persistentTSP;
     }
 
     /**
-     * Sets the value of the persistentTSP property.
+     * Sets the persistent tsp.
      * 
+     * @param value the new persistent tsp
      */
     public void setPersistentTSP(boolean value) {
         this.persistentTSP = value;
     }
 
     /**
-     * Gets the value of the mpAudioConferencing property.
+     * Gets the mp audio conferencing.
      * 
-     * @return
-     *     possible object is
-     *     {@link DirectoryServiceType }
-     *     
+     * @return the mp audio conferencing
      */
     public DirectoryServiceType getMpAudioConferencing() {
         return mpAudioConferencing;
     }
 
     /**
-     * Sets the value of the mpAudioConferencing property.
+     * Sets the mp audio conferencing.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link DirectoryServiceType }
-     *     
+     * @param value the new mp audio conferencing
      */
     public void setMpAudioConferencing(DirectoryServiceType value) {
         this.mpAudioConferencing = value;

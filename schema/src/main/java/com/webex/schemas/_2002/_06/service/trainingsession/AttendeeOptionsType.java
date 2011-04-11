@@ -25,36 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for attendeeOptionsType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="attendeeOptionsType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="request" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="registration" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="auto" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="registrationPWD" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="maxRegistrations" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="registrationCloseDate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="emailInvitations" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="participantLimit" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}int">
- *               &lt;minInclusive value="0"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class AttendeeOptionsType.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "attendeeOptionsType", propOrder = {
@@ -71,204 +42,173 @@ public class AttendeeOptionsType
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The request. */
     protected Boolean request;
+    
+    /** The registration. */
     protected Boolean registration;
+    
+    /** The auto. */
     protected Boolean auto;
+    
+    /** The registration pwd. */
     protected String registrationPWD;
+    
+    /** The max registrations. */
     protected Long maxRegistrations;
+    
+    /** The registration close date. */
     protected String registrationCloseDate;
+    
+    /** The email invitations. */
     @XmlElement(defaultValue = "false")
     protected Boolean emailInvitations;
+    
+    /** The participant limit. */
     protected Integer participantLimit;
 
     /**
-     * Gets the value of the request property.
+     * Checks if is request.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isRequest() {
         return request;
     }
 
     /**
-     * Sets the value of the request property.
+     * Sets the request.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new request
      */
     public void setRequest(Boolean value) {
         this.request = value;
     }
 
     /**
-     * Gets the value of the registration property.
+     * Checks if is registration.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isRegistration() {
         return registration;
     }
 
     /**
-     * Sets the value of the registration property.
+     * Sets the registration.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new registration
      */
     public void setRegistration(Boolean value) {
         this.registration = value;
     }
 
     /**
-     * Gets the value of the auto property.
+     * Checks if is auto.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isAuto() {
         return auto;
     }
 
     /**
-     * Sets the value of the auto property.
+     * Sets the auto.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new auto
      */
     public void setAuto(Boolean value) {
         this.auto = value;
     }
 
     /**
-     * Gets the value of the registrationPWD property.
+     * Gets the registration pwd.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the registration pwd
      */
     public String getRegistrationPWD() {
         return registrationPWD;
     }
 
     /**
-     * Sets the value of the registrationPWD property.
+     * Sets the registration pwd.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new registration pwd
      */
     public void setRegistrationPWD(String value) {
         this.registrationPWD = value;
     }
 
     /**
-     * Gets the value of the maxRegistrations property.
+     * Gets the max registrations.
      * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
+     * @return the max registrations
      */
     public Long getMaxRegistrations() {
         return maxRegistrations;
     }
 
     /**
-     * Sets the value of the maxRegistrations property.
+     * Sets the max registrations.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
+     * @param value the new max registrations
      */
     public void setMaxRegistrations(Long value) {
         this.maxRegistrations = value;
     }
 
     /**
-     * Gets the value of the registrationCloseDate property.
+     * Gets the registration close date.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the registration close date
      */
     public String getRegistrationCloseDate() {
         return registrationCloseDate;
     }
 
     /**
-     * Sets the value of the registrationCloseDate property.
+     * Sets the registration close date.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new registration close date
      */
     public void setRegistrationCloseDate(String value) {
         this.registrationCloseDate = value;
     }
 
     /**
-     * Gets the value of the emailInvitations property.
+     * Checks if is email invitations.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isEmailInvitations() {
         return emailInvitations;
     }
 
     /**
-     * Sets the value of the emailInvitations property.
+     * Sets the email invitations.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new email invitations
      */
     public void setEmailInvitations(Boolean value) {
         this.emailInvitations = value;
     }
 
     /**
-     * Gets the value of the participantLimit property.
+     * Gets the participant limit.
      * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     * @return the participant limit
      */
     public Integer getParticipantLimit() {
         return participantLimit;
     }
 
     /**
-     * Sets the value of the participantLimit property.
+     * Sets the participant limit.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     * @param value the new participant limit
      */
     public void setParticipantLimit(Integer value) {
         this.participantLimit = value;

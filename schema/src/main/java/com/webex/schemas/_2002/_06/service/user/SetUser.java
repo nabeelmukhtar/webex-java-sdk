@@ -24,26 +24,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for setUser complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="setUser">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.webex.com/schemas/2002/06/service/user}userInstanceType">
- *       &lt;sequence>
- *         &lt;element name="salesCenter" type="{http://www.webex.com/schemas/2002/06/service/user}salesCenterType" minOccurs="0"/>
- *         &lt;element name="newWebExId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="syncWebOffice" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="validateFormat" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
+ * The Class SetUser.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "setUser", propOrder = {
@@ -57,103 +38,88 @@ public class SetUser
     implements Serializable
 {
 
+    /** The Constant serialVersionUID. */
     private final static long serialVersionUID = 2461660169443089969L;
+    
+    /** The sales center. */
     protected SalesCenterType salesCenter;
+    
+    /** The new web ex id. */
     protected String newWebExId;
+    
+    /** The sync web office. */
     protected Boolean syncWebOffice;
+    
+    /** The validate format. */
     protected Boolean validateFormat;
 
     /**
-     * Gets the value of the salesCenter property.
+     * Gets the sales center.
      * 
-     * @return
-     *     possible object is
-     *     {@link SalesCenterType }
-     *     
+     * @return the sales center
      */
     public SalesCenterType getSalesCenter() {
         return salesCenter;
     }
 
     /**
-     * Sets the value of the salesCenter property.
+     * Sets the sales center.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link SalesCenterType }
-     *     
+     * @param value the new sales center
      */
     public void setSalesCenter(SalesCenterType value) {
         this.salesCenter = value;
     }
 
     /**
-     * Gets the value of the newWebExId property.
+     * Gets the new web ex id.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @return the new web ex id
      */
     public String getNewWebExId() {
         return newWebExId;
     }
 
     /**
-     * Sets the value of the newWebExId property.
+     * Sets the new web ex id.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param value the new new web ex id
      */
     public void setNewWebExId(String value) {
         this.newWebExId = value;
     }
 
     /**
-     * Gets the value of the syncWebOffice property.
+     * Checks if is sync web office.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isSyncWebOffice() {
         return syncWebOffice;
     }
 
     /**
-     * Sets the value of the syncWebOffice property.
+     * Sets the sync web office.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new sync web office
      */
     public void setSyncWebOffice(Boolean value) {
         this.syncWebOffice = value;
     }
 
     /**
-     * Gets the value of the validateFormat property.
+     * Checks if is validate format.
      * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     * @return the boolean
      */
     public Boolean isValidateFormat() {
         return validateFormat;
     }
 
     /**
-     * Sets the value of the validateFormat property.
+     * Sets the validate format.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     * @param value the new validate format
      */
     public void setValidateFormat(Boolean value) {
         this.validateFormat = value;
