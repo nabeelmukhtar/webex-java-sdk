@@ -144,31 +144,6 @@ public abstract class BaseWebExService implements WebExService {
      * 
      * @return the input stream
      */
-//    protected List<ResponseEntity> readResponse(InputStream is) {
-//    	com.uclassify.api._1.responseschema.Uclassify response = readResponse(com.uclassify.api._1.responseschema.Uclassify.class, is);
-//    	if (response != null) {
-//    		if (response.getStatus() != null) {
-//    			if (response.getStatus().isSuccess()) {
-//                	return response.getReadCalls().getClassifyAndGetInformation();
-//    			} else {
-//    				throw new WebExException(response.getStatus().getValue(), response.getStatus().getStatusCode().intValue(), new Date());  				
-//    			}
-//    		}
-//    	}
-//		throw new WebExException("Unable to unmarshal response.");    		
-//    }
-    
-    /**
-     * Call api method.
-     * 
-     * @param apiUrl the api url
-     * @param xmlContent the xml content
-     * @param contentType the content type
-     * @param method the method
-     * @param expected the expected
-     * 
-     * @return the input stream
-     */
     protected InputStream callApiMethod(String apiUrl, String xmlContent, String contentType, HttpMethod method,
             int expected) {
         try {

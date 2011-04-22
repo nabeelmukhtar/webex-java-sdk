@@ -16,126 +16,23 @@
  */
 package com.google.code.webex.service.examples;
 
-import java.text.MessageFormat;
-
-import org.apache.commons.cli.BasicParser;
-import org.apache.commons.cli.CommandLine;
-import org.apache.commons.cli.HelpFormatter;
-import org.apache.commons.cli.Option;
-import org.apache.commons.cli.OptionBuilder;
-import org.apache.commons.cli.Options;
-import org.apache.commons.cli.ParseException;
+import com.google.code.webex.service.UserService;
+import com.google.code.webex.service.WebExServiceFactory;
+import com.google.code.webex.service.constant.TestConstants;
 
 /**
  * The Class UserServiceExample.
  */
 public class UserServiceExample {
 
-    /** The Constant WRITE_KEY. */
-    private static final String WRITE_KEY = "writeKey";
-	
-    /** The Constant CLASSIFIER. */
-    private static final String CLASSIFIER = "classifier";
-    
-    /** The Constant HELP_OPTION. */
-    private static final String HELP_OPTION = "help";
-    
     /**
      * The main method.
      * 
      * @param args the arguments
      */
 	public static void main(String[] args) {
-		Options options = buildOptions();
-        try {
-            CommandLine line = new BasicParser().parse(options, args);
-            processCommandLine(line, options);
-        } catch(ParseException exp ) {
-            System.err.println(exp.getMessage());
-            printHelp(options);
-        }
+		final WebExServiceFactory factory = WebExServiceFactory.newInstance(TestConstants.TEST_WEBEX_ID, TestConstants.TEST_PASSWORD, TestConstants.TEST_SITE_ID, TestConstants.TEST_SITE_NAME, TestConstants.TEST_PARTNER_ID);
+		UserService service = factory.createUserService();
+		System.out.println(service.getLoginUrl("nabeeltesting", "http://linkedhub.appsot.com"));
 	}
-	
-    /**
-     * Process command line.
-     * 
-     * @param line the line
-     * @param options the options
-     */
-    private static void processCommandLine(CommandLine line, Options options) {
-        if(line.hasOption(HELP_OPTION)) {
-            printHelp(options);            
-        } else if(line.hasOption(WRITE_KEY)) {
-//    		final String writeKeyValue = line.getOptionValue(WRITE_KEY);
-    		
-//    		final WebExServiceFactory factory = WebExServiceFactory.newInstance(null, writeKeyValue);
-//    		final WebExService client = factory.createUClassifyClient();
-    		
-    		if(line.hasOption(CLASSIFIER)) {
-//    			String classifier = line.getOptionValue(CLASSIFIER);
-//    			System.out.println("Creating classifier:" + classifier);
-//    			client.createClassifier(classifier);
-//    			client.addClass(classifier, "ClassA");
-//    			client.addClass(classifier, "ClassB");
-//    			client.addClass(classifier, "ClassC");
-//    			client.addClass(classifier, "ClassD");
-//				System.out.println("Classifier created.");
-//				System.out.println("Press D to remove this classifier. Press any other key to continue.");
-//				try {
-//					int read = System.in.read();
-//					if (read == (int) 'D') {
-//						client.removeClassifier(classifier);
-//						System.out.println("Deleted classifier:" + classifier);
-//					}
-//				} catch (IOException e) {
-//					e.printStackTrace();
-//				}
-    		}
-        } else {
-            printHelp(options);
-        }
-    }
-	
-	/**
-	 * Builds the options.
-	 * 
-	 * @return the options
-	 */
-    private static Options buildOptions() {
-       
-        Options opts = new Options();
-        
-        String helpMsg = "Print this message.";
-        Option help = new Option(HELP_OPTION, helpMsg);
-        opts.addOption(help);
-
-        String consumerKeyMsg = "You API Write Key.";
-        OptionBuilder.withArgName("readKey");
-        OptionBuilder.hasArg();
-        OptionBuilder.withDescription(consumerKeyMsg);
-        Option consumerKey = OptionBuilder.create(WRITE_KEY);
-        opts.addOption(consumerKey);
-        
-        String idMsg = "Classifier Name";
-        OptionBuilder.withArgName("classifier");
-        OptionBuilder.hasArg();
-        OptionBuilder.withDescription(idMsg);
-        Option id = OptionBuilder.create(CLASSIFIER);
-        opts.addOption(id);
-        
-        return opts;
-    }
-    
-    /**
-     * Prints the help.
-     * 
-     * @param options the options
-     */
-    private static void printHelp(Options options) {
-        int width = 80;
-        String syntax = UserServiceExample.class.getName() + " <options>";
-        String header = MessageFormat.format("\nThe -{0}, -{1}, -{2} and -{3} options are required. All others are optional.", WRITE_KEY);
-        String footer = MessageFormat.format("\nIf you do not specify any of -{0} or -{1} options, the profile of current user is returned. You can only specify one of these options. If you do not specify -{2} option, standard profile is returned.", CLASSIFIER);
-        new HelpFormatter().printHelp(width, syntax, header, options, footer, false);
-    }
 }

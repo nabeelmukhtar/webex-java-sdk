@@ -17,6 +17,7 @@
 package com.google.code.webex.service.constant;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.regex.Pattern;
 
 /**
  * The Class TestConstants.
@@ -37,32 +38,126 @@ public final class TestConstants {
         }
     }
     
-    /** The Constant UCLASSIFY_TEST_READ_KEY. */
-    public static final String UCLASSIFY_TEST_READ_KEY =
-        testConstants.getProperty("com.google.code.uclassify.client.readApiKey");
-
-    /** The Constant UCLASSIFY_TEST_WRITE_KEY. */
-    public static final String UCLASSIFY_TEST_WRITE_KEY =
-        testConstants.getProperty("com.google.code.uclassify.client.writeApiKey");
-
-	/** The Constant TEST_CLASSIFIER_NAME. */
-	public static final String TEST_CLASSIFIER_NAME = 
-		testConstants.getProperty("com.google.code.uclassify.client.classifierName");
-
-	/** The Constant TEST_CLASS_NAME. */
-	public static final String TEST_CLASS_NAME = 
-		testConstants.getProperty("com.google.code.uclassify.client.className");
-    
-	/** The Constant CLASSIFICATION_TEXTS_FILE. */
-	public static final String CLASSIFICATION_TEXTS_FILE = 
-		testConstants.getProperty("com.google.code.uclassify.client.classificationTexts");
-	
-	/** The Constant TRAINING_TEXTS_FILE. */
-	public static final String TRAINING_TEXTS_FILE = 
-		testConstants.getProperty("com.google.code.uclassify.client.trainingTexts");
-	
+    /** The Constant TEST_SITE_ID. */
+    public static final long TEST_SITE_ID =
+        getLongProperty("com.google.code.webex.service.siteId");
+    public static final String TEST_PARTNER_ID =
+        getProperty("com.google.code.webex.service.partnerId");
+    public static final String TEST_SITE_NAME =
+        getProperty("com.google.code.webex.service.siteName");
+    public static final String TEST_WEBEX_ID =
+        getProperty("com.google.code.webex.service.webExId");
+    public static final String TEST_PASSWORD =
+        getProperty("com.google.code.webex.service.password");
     /**
      * Instantiates a new test constants.
      */
     private TestConstants() {}
+    
+    /**
+     * Gets the property.
+     * 
+     * @param key the key
+     * 
+     * @return the property
+     */
+    public static String getProperty(String key) {
+        return testConstants.getProperty(key);
+    }
+
+    /**
+     * Gets the int property.
+     * 
+     * @param key the key
+     * 
+     * @return the int property
+     */
+    public static int getIntProperty(String key) {
+        String property = testConstants.getProperty(key);
+
+        if (isNullOrEmpty(property)) {
+            return 0;
+        } else {
+            return Integer.parseInt(property);
+        }
+    }
+
+    /**
+     * Gets the boolean property.
+     * 
+     * @param key the key
+     * 
+     * @return the boolean property
+     */
+    public static boolean getBooleanProperty(String key) {
+        String property = testConstants.getProperty(key);
+
+        if (isNullOrEmpty(property)) {
+            return false;
+        } else {
+            return Boolean.parseBoolean(property);
+        }
+    }
+
+    /**
+     * Gets the double property.
+     * 
+     * @param key the key
+     * 
+     * @return the double property
+     */
+    public static double getDoubleProperty(String key) {
+        String property = testConstants.getProperty(key);
+
+        if (isNullOrEmpty(property)) {
+            return 0;
+        } else {
+            return Double.parseDouble(property);
+        }
+    }
+
+    /**
+     * Gets the long property.
+     * 
+     * @param key the key
+     * 
+     * @return the long property
+     */
+    public static long getLongProperty(String key) {
+        String property = testConstants.getProperty(key);
+
+        if (isNullOrEmpty(property)) {
+            return 0;
+        } else {
+            return Long.parseLong(property);
+        }
+    }
+
+    /**
+     * Gets the pattern property.
+     * 
+     * @param key the key
+     * 
+     * @return the pattern property
+     */
+    public static Pattern getPatternProperty(String key) {
+        String property = testConstants.getProperty(key);
+
+        if (isNullOrEmpty(property)) {
+            return null;
+        } else {
+            return Pattern.compile(property);
+        }
+    }
+    
+    /**
+     * Checks if is null or empty.
+     * 
+     * @param s the s
+     * 
+     * @return true, if is null or empty
+     */
+    private static boolean isNullOrEmpty(String s) {
+        return ((s == null) || s.length() == 0);
+    }
 }

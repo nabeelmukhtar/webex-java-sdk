@@ -18,6 +18,7 @@ package com.google.code.webex.service.examples;
 
 import com.google.code.webex.service.GeneralSessionService;
 import com.google.code.webex.service.WebExServiceFactory;
+import com.google.code.webex.service.constant.TestConstants;
 
 /**
  * The Class GeneralSessionServiceExample.
@@ -30,7 +31,7 @@ public class GeneralSessionServiceExample {
      * @param args the arguments
      */
 	public static void main(String[] args) {
-		final WebExServiceFactory factory = WebExServiceFactory.newInstance("nabeeltesting", "Olympic99", 243585L, "apidemoeu", "g0webx!");
+		final WebExServiceFactory factory = WebExServiceFactory.newInstance(TestConstants.TEST_WEBEX_ID, TestConstants.TEST_PASSWORD, TestConstants.TEST_SITE_ID, TestConstants.TEST_SITE_NAME, TestConstants.TEST_PARTNER_ID);
 		GeneralSessionService service = factory.createGeneralSessionService();
 		System.out.println(service.getApiVersion());
 	}

@@ -16,17 +16,14 @@
  */
 package com.google.code.webex.service.examples;
 
-import java.util.List;
-
-import com.google.code.webex.service.MeetingService;
+import com.google.code.webex.service.MeetingTypeService;
 import com.google.code.webex.service.WebExServiceFactory;
 import com.google.code.webex.service.constant.TestConstants;
-import com.webex.schemas._2002._06.service.meeting.MeetingSummaryInstanceType;
 
 /**
- * The Class MeetingServiceExample.
+ * The Class MeetingTypeServiceExample.
  */
-public class MeetingServiceExample {
+public class MeetingTypeServiceExample {
 
     /**
      * The main method.
@@ -35,16 +32,7 @@ public class MeetingServiceExample {
      */
 	public static void main(String[] args) {
 		final WebExServiceFactory factory = WebExServiceFactory.newInstance(TestConstants.TEST_WEBEX_ID, TestConstants.TEST_PASSWORD, TestConstants.TEST_SITE_ID, TestConstants.TEST_SITE_NAME, TestConstants.TEST_PARTNER_ID);
-		MeetingService service = factory.createMeetingService();
-		List<MeetingSummaryInstanceType> meetingSummaries = service.getMeetingSummaries();
-		for (MeetingSummaryInstanceType meetingSummary : meetingSummaries) {
-			System.out.println(meetingSummary.getConfName());
-			System.out.println(meetingSummary.getMeetingKey());
-			System.out.println(meetingSummary.getMeetingType());
-			System.out.println(meetingSummary.getStartDate());
-			System.out.println(meetingSummary.getDuration());
-			System.out.println(meetingSummary.getListStatus());
-		}
+		MeetingTypeService service = factory.createMeetingTypeService();
+//		System.out.println(service.getEventSessionHistory("", confName, startTimeScope, endTimeScope, sessionKey, confID, timeZoneID));
 	}
-	
 }

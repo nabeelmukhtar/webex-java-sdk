@@ -61,11 +61,12 @@ public abstract class WebExServiceTest extends TestCase {
      */
     @Before
     public void setUp() throws Exception {
-    	assertNotNull(String.format(RESOURCE_MISSING_MESSAGE, "Read Key"), TestConstants.UCLASSIFY_TEST_READ_KEY);
-    	assertNotNull(String.format(RESOURCE_MISSING_MESSAGE, "Write Key"), TestConstants.UCLASSIFY_TEST_WRITE_KEY);
-//    	factory =
-//            WebExServiceFactory.newInstance(TestConstants.UCLASSIFY_TEST_READ_KEY,
-//                TestConstants.UCLASSIFY_TEST_WRITE_KEY);
+    	assertNotNull(String.format(RESOURCE_MISSING_MESSAGE, "Site ID"), TestConstants.TEST_SITE_ID);
+    	assertNotNull(String.format(RESOURCE_MISSING_MESSAGE, "Site Name"), TestConstants.TEST_SITE_NAME);
+    	assertNotNull(String.format(RESOURCE_MISSING_MESSAGE, "Partner ID"), TestConstants.TEST_PARTNER_ID);
+    	assertNotNull(String.format(RESOURCE_MISSING_MESSAGE, "WebEx ID"), TestConstants.TEST_WEBEX_ID);
+    	assertNotNull(String.format(RESOURCE_MISSING_MESSAGE, "Password"), TestConstants.TEST_PASSWORD);
+    	factory = WebExServiceFactory.newInstance(TestConstants.TEST_WEBEX_ID, TestConstants.TEST_PASSWORD, TestConstants.TEST_SITE_ID, TestConstants.TEST_SITE_NAME, TestConstants.TEST_PARTNER_ID);
     }
 
     /* (non-Javadoc)

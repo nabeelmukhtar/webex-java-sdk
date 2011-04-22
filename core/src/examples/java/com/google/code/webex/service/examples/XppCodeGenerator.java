@@ -41,10 +41,10 @@ public class XppCodeGenerator {
 	/** The Constant SOURCE_DIR. */
 	private static final String SOURCE_DIR = "E:\\workspace\\opensource\\webex-java-sdk\\schema\\src\\main\\java";
 	
-	/** The Constant SOURCE_DIR. */
+	/** The Constant DESTINATION_DIR. */
 	private static final String DESTINATION_DIR = "E:\\workspace\\opensource\\webex-java-sdk\\schema\\src\\main\\andoid";
 	
-	/** The Constant SOURCE_PACKAGE_NAME. */
+	/** The Constant PACKAGE_NAME. */
 	private static final String PACKAGE_NAME = "com.webex.schemas._2002._06.common";
 	
 	/** The Constant EXCLUDED_FILES. */
@@ -87,6 +87,14 @@ public class XppCodeGenerator {
 		}
 	}
 
+	/**
+	 * Generate enum code.
+	 * 
+	 * @param clazz the clazz
+	 * @param out the out
+	 * 
+	 * @throws Exception the exception
+	 */
 	private static void generateEnumCode(Class<?> clazz, Writer out) throws Exception {
 		out.write("package " + PACKAGE_NAME + ";\r\n");
 		out.write("public enum " + clazz.getSimpleName() + " {\r\n");
@@ -119,8 +127,9 @@ public class XppCodeGenerator {
 		out.write("    }\r\n");
 		out.write("}\r\n");
 	}
+	
 	/**
-	 * Generate code.
+	 * Generate class code.
 	 * 
 	 * @param clazz the clazz
 	 * @param out the out
@@ -148,9 +157,12 @@ public class XppCodeGenerator {
 	}
 
 	/**
-	 * @param fields
-	 * @param out
-	 * @throws IOException
+	 * Generate getter setters.
+	 * 
+	 * @param clazz the clazz
+	 * @param out the out
+	 * 
+	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	private static void generateGetterSetters(Class<?> clazz, Writer out) throws IOException {
 		Field[] fields = clazz.getDeclaredFields();		
@@ -196,9 +208,12 @@ public class XppCodeGenerator {
 	}
 
 	/**
-	 * @param clazz
-	 * @param out
-	 * @throws IOException
+	 * Generate field decrataions.
+	 * 
+	 * @param clazz the clazz
+	 * @param out the out
+	 * 
+	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	private static void generateFieldDecrataions(Class<?> clazz, Writer out)
 			throws IOException {
@@ -226,9 +241,12 @@ public class XppCodeGenerator {
 	}
 
 	/**
-	 * @param out
-	 * @param fields
-	 * @throws IOException
+	 * Generate init method.
+	 * 
+	 * @param clazz the clazz
+	 * @param out the out
+	 * 
+	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	private static void generateInitMethod(Class<?> clazz, Writer out)
 			throws IOException {
@@ -324,9 +342,12 @@ public class XppCodeGenerator {
 	}
 
 	/**
-	 * @param fields
-	 * @param out
-	 * @throws IOException
+	 * Generate to xml method.
+	 * 
+	 * @param clazz the clazz
+	 * @param out the out
+	 * 
+	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	private static void generateToXmlMethod(Class<?> clazz, Writer out) throws IOException {
 		String tagName = clazz.getSimpleName();
