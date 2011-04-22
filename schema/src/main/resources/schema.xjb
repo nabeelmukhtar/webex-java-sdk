@@ -2,7 +2,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
     extensionBindingPrefixes="xjc">
-	<globalBindings>
+	<globalBindings generateValueClass="false">
 		<javaType name="double" xmlType="xs:double"/>
 		<javaType name="long" xmlType="xs:integer"/>
 		<xjc:serializable uid="2461660169443089969"/>

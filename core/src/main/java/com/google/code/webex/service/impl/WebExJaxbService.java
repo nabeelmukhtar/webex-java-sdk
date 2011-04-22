@@ -22,6 +22,7 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
+import javax.xml.bind.PropertyException;
 import javax.xml.bind.Unmarshaller;
 
 import com.google.code.webex.service.WebExException;
@@ -76,7 +77,23 @@ public class WebExJaxbService extends BaseWebExService {
         try {
             StringWriter writer = new StringWriter();
             Marshaller   marshaller = getJaxbContext().createMarshaller();
-
+            
+            // to specify the URI->prefix mapping, you'll need to provide an
+            // implementation of NamespaecPrefixMapper, which determines the
+            // prefixes used for marshalling.
+            // 
+            // you specify this as a property of Marshaller to
+            // tell the marshaller to consult your mapper
+            // to assign a prefix for a namespace.
+            try {
+                marshaller.setProperty("com.sun.xml.bind.namespacePrefixMapper",new NamespacePrefixMapperImpl());
+            } catch(PropertyException e ) {
+                // if the JAXB provider doesn't recognize the prefix mapper,
+                // it will throw this exception. Since being unable to specify
+                // a human friendly prefix is not really a fatal problem,
+                // you can just continue marshalling without failing
+                ;
+            }
             marshaller.marshal(element, writer);
             return writer.toString();
         } catch (JAXBException e) {
