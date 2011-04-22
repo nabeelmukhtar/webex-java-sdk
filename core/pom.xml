@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.google.code.webex</groupId>
+    <artifactId>webex-java-sdk</artifactId>
+    <version>1.0</version>
+  </parent>
+  <artifactId>webex-java-core</artifactId>
+  <packaging>jar</packaging>
+	
+<build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <configuration>
+            <testFailureIgnore>true</testFailureIgnore>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement> 
+  </build>
+  <dependencies>
+	<dependency>
+	    <groupId>net.sf.kxml</groupId>
+	    <artifactId>kxml2</artifactId>
+	    <version>2.2.2</version>
+	</dependency>
+    <dependency>
+      <groupId>com.google.code.webex</groupId>
+      <artifactId>webex-java-schema</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.5</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>

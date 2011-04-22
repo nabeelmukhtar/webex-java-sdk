@@ -12,7 +12,6 @@
     <path id="webex-java-sdk.classpath">
         <pathelement location="bin"/>
         <pathelement location="dev-lib/junit-4.5.jar"/>
-        <pathelement location="lib/commons-cli-1.2.jar"/>
     </path>
     <target name="init">
         <mkdir dir="bin"/>
@@ -76,22 +75,4 @@
         </javac>
     </target>
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
-    <target name="ClassifyExample">
-        <java classname="com.google.code.webex.client.examples.ClassifyExample" failonerror="true" fork="yes">
-            <arg line="-readKey HSPjrhBwu6pTssGKOLzCUqI -classifier Topics -user webex -text &quot;I am working on hadoop.&quot;"/>
-            <classpath refid="webex-java-sdk.classpath"/>
-        </java>
-    </target>
-    <target name="TrainExample">
-        <java classname="com.google.code.webex.client.examples.TrainExample" failonerror="true" fork="yes">
-            <arg line="-writeKey 8f5MSmbrmcyaaGhyUFU6MiPOrw -classifier testclassifier -text C:\\train.csv"/>
-            <classpath refid="webex-java-sdk.classpath"/>
-        </java>
-    </target>
-    <target name="ClassifierExample">
-        <java classname="com.google.code.webex.client.examples.ClassifierExample" failonerror="true" fork="yes">
-            <arg line="-writeKey 8f5MSmbrmcyaaGhyUFU6MiPOrw -classifier nabeelclassifier"/>
-            <classpath refid="webex-java-sdk.classpath"/>
-        </java>
-    </target>
 </project>

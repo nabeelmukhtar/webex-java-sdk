@@ -45,10 +45,10 @@ public class XppCodeGenerator {
 	private static final String DESTINATION_DIR = "E:\\workspace\\opensource\\webex-java-sdk\\schema\\src\\main\\andoid";
 	
 	/** The Constant PACKAGE_NAME. */
-	private static final String PACKAGE_NAME = "com.webex.schemas._2002._06.common";
+	private static final String PACKAGE_NAME = "com.webex.schemas._2002._06.service.common";
 	
 	/** The Constant EXCLUDED_FILES. */
-	private static final List<String> EXCLUDED_FILES = Arrays.asList("XppUtils.java", "ObjectFactory.java", "BaseSchemaEntity.java");
+	private static final List<String> EXCLUDED_FILES = Arrays.asList("XppUtils.java", "ObjectFactory.java", "BaseSchemaEntity.java", "package-info.java");
 	
 	/** The Constant INCLUDED_FILES. */
 	private static final List<String> INCLUDED_FILES = new ArrayList<String>();
@@ -144,8 +144,9 @@ public class XppCodeGenerator {
 		out.write("import org.xmlpull.v1.XmlPullParser;\r\n");
 		out.write("import org.xmlpull.v1.XmlPullParserException;\r\n");
 		out.write("import org.xmlpull.v1.XmlSerializer;\r\n");
-		out.write("import com.springer.api.schema.*;\r\n");
-		out.write("public class " + clazz.getSimpleName() + " extends BaseSchemaEntity implements " + inter(clazz.getSimpleName()) + " {\r\n");
+		out.write("import com.webex.schemas._2002._06.common.BaseSchemaEntity;\r\n");
+		out.write("import com.webex.schemas._2002._06.common.XppUtils;\r\n");
+		out.write("public class " + clazz.getSimpleName() + " extends BaseSchemaEntity {\r\n");
 		out.write("    private final static long serialVersionUID = 2461660169443089969L;\r\n");
 		
 		generateFieldDecrataions(clazz, out);
@@ -298,6 +299,8 @@ public class XppCodeGenerator {
 				out.write("                set" + camel(field.getName()) + "(" + field.getType().getSimpleName() + ".fromValue(XppUtils.getElementValueFromNode(parser)));\r\n");
 			} else if (field.getType().isPrimitive()) {
 				out.write("                set" + camel(field.getName()) + "(XppUtils.getElementValueFromNode(parser));\r\n");
+			} else if (field.getType().getPackage() == null) {
+				out.write("                //TODO-NM: Populate this field.\r\n");
 			} else if (field.getType().getPackage().equals(Package.getPackage(PACKAGE_NAME))) {
 				out.write("                " + field.getType().getSimpleName() + " node = new " + field.getType().getSimpleName() + "();\r\n");
 				out.write("                node.init(parser);\r\n");
