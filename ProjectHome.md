@@ -1,0 +1,1 @@
+This project is a Java wrapper for Cisco WebEx API. It is intended to work on App Engine and Android platforms as well.
